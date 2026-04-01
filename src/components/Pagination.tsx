@@ -11,6 +11,20 @@ interface PaginationProps {
 const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
   if (totalPages <= 1) return null;
 
+  const maxPagesToShow = 7;
+  let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+  let endPage = startPage + maxPagesToShow - 1;
+
+  if (endPage > totalPages) {
+    endPage = totalPages;
+    startPage = Math.max(1, endPage - maxPagesToShow + 1);
+  }
+
+  const pages = [];
+  for (let i = startPage; i <= endPage; i++) {
+    pages.push(i);
+  }
+
   return (
     <div className="pagination-container fade-in">
       <button 
@@ -21,9 +35,21 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         <ChevronLeft size={20} />
       </button>
       
-      <span className="page-info">
-        第 {currentPage} 頁，共 {totalPages} 頁
-      </span>
+      <div className="page-numbers">
+        {startPage > 1 && <span className="ellipsis">...</span>}
+        
+        {pages.map(p => (
+          <button 
+            key={p}
+            className={`page-num-btn ${currentPage === p ? 'active' : ''}`}
+            onClick={() => onPageChange(p)}
+          >
+            {p}
+          </button>
+        ))}
+        
+        {endPage < totalPages && <span className="ellipsis">...</span>}
+      </div>
 
       <button 
         className="page-nav-btn" 

@@ -86,13 +86,20 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
         <h3 className="card-title">{displayTitle}</h3>
         <p className="card-year">{anime.yearSeason}</p>
         
-        <div className="card-tags">
-          {anime.genres.slice(0, 4).map(genre => (
-            <span key={genre} className="genre-tag mini">{genre}</span>
-          ))}
-          {anime.genres.length > 4 && (
-            <span className="genre-tag mini">+{anime.genres.length - 4}</span>
-          )}
+        <div className="card-tags-container">
+          <div className="card-tags-summary">
+            {anime.genres.slice(0, 4).map(genre => (
+              <span key={genre} className="genre-tag mini">{genre}</span>
+            ))}
+            {anime.genres.length > 4 && (
+              <span className="genre-tag mini count">+{anime.genres.length - 4}</span>
+            )}
+          </div>
+          <div className="card-tags-full">
+            {anime.genres.map(genre => (
+              <span key={genre} className="genre-tag mini">{genre}</span>
+            ))}
+          </div>
         </div>
 
         {isWatched && (anime as WatchedAnime).userComment && (

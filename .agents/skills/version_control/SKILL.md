@@ -117,13 +117,13 @@ git checkout -b feature/<name>
 
 📋 **預計分成 N 個 Commit，請確認後執行：**
 
-| # | Type | Commit 訊息 | 包含檔案 |
-|---|------|------------|---------|
-| 1 | `feat` | `feat(card): 新增評分星號與 hover 動畫效果` | `AnimeCard.tsx`, `AnimeCard.css` |
-| 2 | `refactor` | `refactor(api): 統一錯誤處理為 Result 型別` | `api.ts` |
-| 3 | `docs` | `docs: 更新 CHANGELOG 說明新版卡片設計` | `CHANGELOG.md` |
+| # | Type | Commit 訊息 | 包含檔案 | 變更細節與內容摘要 |
+|---|------|------------|---------|-------------------|
+| 1 | `feat` | `feat(card): 新增評分星號與 hover 動畫效果` | `AnimeCard.tsx`, `AnimeCard.css` | 實作雙標籤容器與 hover 展開邏輯 |
+| 2 | `refactor` | `refactor(api): 統一錯誤處理為 Result 型別` | `api.ts` | 將所有 try-catch 封裝進 Result pattern |
+| 3 | `docs` | `docs: 更新 CHANGELOG 說明新版卡片設計` | `CHANGELOG.md` | 新增 v1.2.0 版本更新日誌 |
 
-**確認後將依序執行所有 commit 並推送至 `<branch-name>`。**
+**確認後將依序執行所有「本地」提交。請注意：提交指令不包含推送 (Push) 行為。**
 
 ---
 
@@ -153,6 +153,9 @@ git push origin <branch-name>
 
 # 首次推送新建分支（尚未存在於遠端）
 git push -u origin feature/<name>
+
+# 分支管理建議：若在 Dev 推送且功能已里程碑，可詢問是否合併至 Pro
+# git checkout Pro ; git merge Dev ; git push origin Pro ; git checkout Dev
 ```
 
 ---
@@ -193,6 +196,7 @@ git restore src/components/AnimeCard.tsx
 - [ ] `.env`、密鑰、個人設定檔未被納入（確認 `.gitignore`）
 - [ ] 沒有遺留 `console.log` / 除錯用程式碼
 - [ ] 分支名稱明確反映功能內容
+- [ ] **Commit 階段不包含 Push 行為**
 
 ---
 

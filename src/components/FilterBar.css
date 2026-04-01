@@ -189,3 +189,27 @@
   box-shadow: 0 4px 10px rgba(100, 108, 255, 0.3);
   font-weight: 500;
 }
+
+.quick-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.quick-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.quick-btn:hover {
+  background: var(--accent-color);
+  color: white;
+  border-color: transparent;
+}

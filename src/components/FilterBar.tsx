@@ -17,6 +17,17 @@ interface FilterBarProps {
   on18PlusChange: (show: boolean) => void;
 }
 
+function getRelativeSeasonString(offset: number) {
+  const date = new Date();
+  let year = date.getFullYear();
+  let currentSeasonIndex = Math.floor(date.getMonth() / 3);
+  let newIndex = currentSeasonIndex + offset;
+  while (newIndex > 3) { newIndex -= 4; year++; }
+  while (newIndex < 0) { newIndex += 4; year--; }
+  const seasonZh = ['冬', '春', '夏', '秋'][newIndex];
+  return `${year} ${seasonZh}`;
+}
+
 const FilterBar: React.FC<FilterBarProps> = ({
   years,
   genres,
@@ -66,6 +77,11 @@ const FilterBar: React.FC<FilterBarProps> = ({
                 <option key={year} value={year}>{year}</option>
               ))}
             </select>
+            <div className="quick-filters">
+              <button className="quick-btn" onClick={() => onYearChange(getRelativeSeasonString(-1))}>上季動畫</button>
+              <button className="quick-btn" onClick={() => onYearChange(getRelativeSeasonString(0))}>本季新番</button>
+              <button className="quick-btn" onClick={() => onYearChange(getRelativeSeasonString(1))}>下季新番</button>
+            </div>
           </div>
 
           <div className="filter-group right-aligned">

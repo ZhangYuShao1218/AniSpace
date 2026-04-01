@@ -64,6 +64,13 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
             )}
           </button>
         </div>
+
+        <div className="anime-hover-overlay">
+          <h3 className="hover-title">{anime.titleZh}</h3>
+          <div className="hover-tags">
+            {anime.genres.map(g => <span key={g} className="hover-tag">{g}</span>)}
+          </div>
+        </div>
         
         {isWatched && watchedAnime.userRating && (
           <div className="rating-badge">

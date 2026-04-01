@@ -1,6 +1,6 @@
 import React from 'react';
 import './Pagination.css';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronFirst, ChevronLeft, ChevronRight, ChevronLast } from 'lucide-react';
 
 interface PaginationProps {
   currentPage: number;
@@ -27,6 +27,14 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
 
   return (
     <div className="pagination-container fade-in">
+      <button 
+        className="page-nav-btn" 
+        onClick={() => onPageChange(1)} 
+        disabled={currentPage === 1}
+      >
+        <ChevronFirst size={20} />
+      </button>
+
       <button 
         className="page-nav-btn" 
         onClick={() => onPageChange(currentPage - 1)} 
@@ -57,6 +65,14 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         disabled={currentPage === totalPages}
       >
         <ChevronRight size={20} />
+      </button>
+
+      <button 
+        className="page-nav-btn" 
+        onClick={() => onPageChange(totalPages)} 
+        disabled={currentPage === totalPages}
+      >
+        <ChevronLast size={20} />
       </button>
     </div>
   );

@@ -43,8 +43,7 @@ const WatchedPage = () => {
     setIsModalOpen(true);
   }
 
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
+  useEffect(() => {
     const headerElement = document.querySelector('.page-header');
     if (headerElement) {
       const yOffset = 5;
@@ -53,6 +52,10 @@ const WatchedPage = () => {
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+  }, [currentPage]);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
   };
 
   useEffect(() => {

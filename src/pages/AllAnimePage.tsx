@@ -83,17 +83,17 @@ const AllAnimePage = () => {
     setIsModalOpen(true);
   };
 
+  useEffect(() => {
+    const filterEl = document.querySelector('.filter-bar-container');
+    const targetY = filterEl
+      ? filterEl.getBoundingClientRect().top + window.pageYOffset + 5
+      : 0;
+    
+    window.scrollTo({ top: targetY, behavior: 'smooth' });
+  }, [currentPage]);
+
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    // Scroll to the filter bar but slightly past its top to perfectly hide the main header
-    const filterElement = document.querySelector('.filter-bar-container');
-    if (filterElement) {
-      const yOffset = 5; // Positive offset scrolls slightly past the top
-      const y = filterElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
   };
 
   return (

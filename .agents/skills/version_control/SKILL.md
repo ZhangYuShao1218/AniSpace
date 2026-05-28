@@ -1,6 +1,6 @@
 ---
 name: version_control
-description: 🛑 CRITICAL: Before running ANY git command (commit, checkout, push, merge), you MUST read this skill file first. It contains mandatory branching and commit preview rules.
+description: "🛑 CRITICAL: Before running ANY git command (commit, checkout, push, merge), you MUST read this skill file first. It contains mandatory branching and commit preview rules."
 ---
 
 # Version Control Skill

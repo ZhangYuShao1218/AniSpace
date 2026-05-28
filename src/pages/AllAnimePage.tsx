@@ -29,7 +29,15 @@ const AllAnimePage = () => {
   const [selectedAnime, setSelectedAnime] = useState<Anime | WatchedAnime | null>(null);
 
   const availableYears = useMemo(() => {
-    const years = new Set(allAnime.map(a => a.yearSeason));
+    const years = new Set<string>();
+    allAnime.forEach(a => {
+      const yearMatch = a.yearSeason.match(/\d+/);
+      if (yearMatch && parseInt(yearMatch[0], 10) <= 2009) {
+        // Skip adding specific years 2009 and older because they will fall under the ~ 2009 category
+      } else {
+        years.add(a.yearSeason);
+      }
+    });
     return Array.from(years).sort((a, b) => parseSeason(b) - parseSeason(a));
   }, [allAnime]);
 
@@ -45,8 +53,15 @@ const AllAnimePage = () => {
 
   const filteredData = useMemo(() => {
     let result = allAnime.filter(anime => {
-
-      const matchYear = selectedYear ? anime.yearSeason === selectedYear : true;
+      let matchYear = true;
+      if (selectedYear) {
+        if (selectedYear === '~ 2009') {
+          const yearMatch = anime.yearSeason.match(/\d+/);
+          matchYear = yearMatch ? parseInt(yearMatch[0], 10) <= 2009 : false;
+        } else {
+          matchYear = anime.yearSeason === selectedYear;
+        }
+      }
       const matchGenre = selectedGenres.length === 0 ? true : selectedGenres.some(sg => {
         if (sg === '紳士') return anime.genres.includes('紳士') || anime.genres.includes('Hentai') || anime.genres.includes('Ecchi') || anime.genres.includes('福利');
         return anime.genres.includes(sg);

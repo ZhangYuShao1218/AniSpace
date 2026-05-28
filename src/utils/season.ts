@@ -1,4 +1,4 @@
-export const seasonWeight: Record<string, number> = { '冬': 4, '秋': 3, '夏': 2, '春': 1 };
+export const seasonWeight: Record<string, number> = { '秋': 4, '夏': 3, '春': 2, '冬': 1 };
 
 export const parseSeason = (ys: string) => {
   if (!ys) return 0;

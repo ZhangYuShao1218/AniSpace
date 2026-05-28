@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './FilterBar.css';
-import { Search, SlidersHorizontal, ArrowDownAZ, AlertTriangle, Globe } from 'lucide-react';
+import { Search, SlidersHorizontal, ArrowDownAZ, AlertTriangle, Plus } from 'lucide-react';
 import { getRelativeSeasonString } from '../utils/season';
-import OnlineSearchModal from './OnlineSearchModal';
+import AddAnimeModal from './AddAnimeModal';
 
 interface FilterBarProps {
   years: string[];
@@ -26,7 +26,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
   onSearchChange,
   onSortChange
 }) => {
-  const [isOnlineSearchOpen, setIsOnlineSearchOpen] = useState(false);
+  const [isAddAnimeOpen, setIsAddAnimeOpen] = useState(false);
 
   const toggleGenre = (genre: string) => {
     if (selectedGenres.includes(genre)) {
@@ -65,10 +65,10 @@ const FilterBar: React.FC<FilterBarProps> = ({
           />
           <button 
             className="online-search-trigger" 
-            onClick={() => setIsOnlineSearchOpen(true)}
-            title="線上搜尋新番資訊"
+            onClick={() => setIsAddAnimeOpen(true)}
+            title="手動新增動畫"
           >
-            <Globe size={18} />
+            <Plus size={18} />
           </button>
         </div>
         
@@ -76,14 +76,27 @@ const FilterBar: React.FC<FilterBarProps> = ({
           <div className="filter-group">
             <SlidersHorizontal size={18} className="filter-icon" />
             <select 
-              value={years.includes(selectedYear) ? selectedYear : ""} 
+              value={years.includes(selectedYear) || selectedYear === '~ 2009' ? selectedYear : ""} 
               onChange={(e) => handleYearSelect(e.target.value)}
               className="filter-select"
             >
               <option value="">所有年份</option>
-              {years.map(year => (
-                <option key={year} value={year}>{year}</option>
-              ))}
+              {(() => {
+                const elements: JSX.Element[] = [];
+                let currentYear = '';
+                years.forEach((ys, index) => {
+                  const y = ys.match(/\d+/)?.[0] || '';
+                  if (currentYear !== '' && currentYear !== y) {
+                    elements.push(<option key={`sep-${index}`} disabled>──────────</option>);
+                  }
+                  currentYear = y;
+                  elements.push(<option key={ys} value={ys}>{ys}</option>);
+                });
+                return elements;
+              })()}
+              <option disabled>──────────</option>
+              <option value="~ 2009">~ 2009</option>
+              <option disabled>&nbsp;</option>
             </select>
             <div className="quick-tabs">
               <button 
@@ -145,9 +158,9 @@ const FilterBar: React.FC<FilterBarProps> = ({
         </div>
       </div>
 
-      <OnlineSearchModal 
-        isOpen={isOnlineSearchOpen} 
-        onClose={() => setIsOnlineSearchOpen(false)} 
+      <AddAnimeModal 
+        isOpen={isAddAnimeOpen} 
+        onClose={() => setIsAddAnimeOpen(false)} 
       />
     </div>
   );

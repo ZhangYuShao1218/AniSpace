@@ -4,6 +4,8 @@ import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY } from '../utils/
 import { parseSeason, getSeasonInfo } from '../utils/season';
 import { useTitleCorrections } from '../hooks/useTitleCorrections';
 
+const REMOTE_DB_URL = 'https://raw.githubusercontent.com/YIYUCHEN1218/AniSpace/main/public/anime_data.json';
+
 interface AnimeContextType {
   allAnime: Anime[];
   watchedList: WatchedAnime[];
@@ -11,7 +13,7 @@ interface AnimeContextType {
   isScraping: boolean;
   scrapeProgress: string;
   handleSync: () => Promise<void>;
-  handleSearchOnline: (query: string) => Promise<Anime[]>;
+  handleAddCustomAnime: (anime: Anime) => void;
   handleSaveReview: (watchedAnime: WatchedAnime) => void;
   handlePlanToWatchToggle: (anime: Anime) => void;
   handleImport: (importedData: WatchedAnime[]) => void;
@@ -46,7 +48,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
 
     if (loadedData.length === 0) {
-      fetch('/anime_data.json?v=' + new Date().getTime())
+      fetch(`${REMOTE_DB_URL}?v=` + new Date().getTime())
         .then(res => res.ok ? res.json() : [])
         .then(data => {
           if (data && data.length > 0) {
@@ -79,7 +81,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     setIsScraping(true);
     setScrapeProgress('正在從遠端同步最新資料庫...');
     try {
-      const res = await fetch('/anime_data.json?v=' + new Date().getTime());
+      const res = await fetch(`${REMOTE_DB_URL}?v=` + new Date().getTime());
       if (res.ok) {
         const data = await res.json();
         if (data && data.length > 0) {
@@ -103,9 +105,12 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
   };
 
-  const handleSearchOnline = async (query: string) => {
-    // Optional: Could implement direct Anilist search if really needed for manual additions
-    return []; 
+  const handleAddCustomAnime = (anime: Anime) => {
+    setAllAnime(prev => {
+      const newList = [anime, ...prev];
+      localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(newList));
+      return newList;
+    });
   };
 
   const handleSaveReview = (watchedAnime: WatchedAnime) => {
@@ -150,7 +155,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       isScraping,
       scrapeProgress,
       handleSync,
-      handleSearchOnline,
+      handleAddCustomAnime,
       handleSaveReview,
       handlePlanToWatchToggle,
       handleImport,

@@ -80,7 +80,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       </button>
 
       <div className="card-image-container">
-        <img src={anime.coverImage} alt={displayTitle} className="card-image" loading="lazy" />
+        <img src={anime.coverImage} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />
 
         {isWatched && (anime as WatchedAnime).userRating && (
           <div className="rating-badge">

@@ -140,7 +140,7 @@ const AllAnimePage = () => {
             {paginatedData.map(anime => (
               <AnimeCard
                 key={anime.id}
-                anime={anime}
+                anime={watchedList.find(w => w.id === anime.id) || anime}
                 isWatched={watchedList.some(w => w.id === anime.id)}
                 isPlanToWatch={planToWatchList.some(p => p.id === anime.id)}
                 onActionClick={handleActionClick}

@@ -10,6 +10,7 @@ import { Search } from 'lucide-react';
 const WatchedPage = () => {
   const { 
     watchedList, 
+    planToWatchList,
     handleSaveReview, 
     handlePlanToWatchToggle 
   } = useAnime();
@@ -104,7 +105,7 @@ const WatchedPage = () => {
                 key={anime.id}
                 anime={anime}
                 isWatched={true}
-                isPlanToWatch={false}
+                isPlanToWatch={planToWatchList.some(p => p.id === anime.id)}
                 onActionClick={handleActionClick}
                 onPlanToWatchToggle={handlePlanToWatchToggle}
               />

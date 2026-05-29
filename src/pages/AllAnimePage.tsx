@@ -63,7 +63,7 @@ const AllAnimePage = () => {
         }
       }
       const matchGenre = selectedGenres.length === 0 ? true : selectedGenres.some(sg => {
-        if (sg === '紳士') return anime.genres.includes('紳士') || anime.genres.includes('Hentai') || anime.genres.includes('Ecchi') || anime.genres.includes('福利');
+        if (sg === '福利') return anime.genres.includes('福利') || anime.genres.includes('Hentai') || anime.genres.includes('Ecchi') || anime.genres.includes('紳士');
         return anime.genres.includes(sg);
       });
       const matchSearch = searchQuery ? anime.titleZh.toLowerCase().includes(searchQuery.toLowerCase()) : true;

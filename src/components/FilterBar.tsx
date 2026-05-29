@@ -149,11 +149,11 @@ const FilterBar: React.FC<FilterBarProps> = ({
             </button>
           ))}
           <button
-            className={`genre-tag ${selectedGenres.includes('紳士') ? 'active' : ''}`}
-            onClick={() => toggleGenre('紳士')}
-            style={{ borderColor: 'rgba(255, 50, 50, 0.4)', color: selectedGenres.includes('紳士') ? '#fff' : '#ff5555', backgroundColor: selectedGenres.includes('紳士') ? '#ff3333' : 'transparent' }}
+            className={`genre-tag ${selectedGenres.includes('福利') ? 'active' : ''}`}
+            onClick={() => toggleGenre('福利')}
+            style={{ borderColor: 'rgba(255, 50, 50, 0.4)', color: selectedGenres.includes('福利') ? '#fff' : '#ff5555', backgroundColor: selectedGenres.includes('福利') ? '#ff3333' : 'transparent' }}
           >
-            紳士
+            福利
           </button>
         </div>
       </div>

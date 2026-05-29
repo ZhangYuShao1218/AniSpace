@@ -12,7 +12,7 @@ const genreMap = {
   'Sci-Fi': '科幻', 'Slice of Life': '日常', 'Sports': '運動', 'Supernatural': '超自然',
   'Suspense': '懸疑', 'Award Winning': '獲獎', 'Avant Garde': '前衛', 'Boys Love': '耽美',
   'Girls Love': '百合', 'Gourmet': '美食', 'Mecha': '機甲', 'Music': '音樂', 'Psychological': '心理',
-  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '紳士', 'Ecchi': '福利'
+  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '福利', 'Ecchi': '福利'
 };
 
 const SEASON_MONTH_MAP = {
@@ -52,6 +52,20 @@ async function getBahamutCover(gamerId) {
   try {
     const res = await axios.head(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 3000 });
     if (res.status === 200) return url;
+  } catch (e) {
+    return null;
+  }
+  return null;
+}
+
+// Fetch Bilibili Cover
+async function getBilibiliCover(bilibiliId) {
+  try {
+    const url = `https://api.bilibili.com/pgc/view/web/season?season_id=${bilibiliId}`;
+    const res = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 3000 });
+    if (res.data && res.data.result && res.data.result.cover) {
+      return res.data.result.cover;
+    }
   } catch (e) {
     return null;
   }
@@ -161,15 +175,24 @@ async function main() {
         // Convert to Traditional Chinese
         titleZh = converter(titleZh);
         
-        // Smart Cover Image Strategy (Priority: Bahamut (TW Official) > AniList (High Res))
+        // Smart Cover Image Strategy (Priority: Bahamut > Bilibili > AniList)
         let finalCover = "";
         let gamerSite = null;
+        let bilibiliSite = null;
         if (bgmMap.has(aniListId)) {
-          gamerSite = bgmMap.get(aniListId).sites?.find(s => s.site === 'gamer');
+          const sites = bgmMap.get(aniListId).sites || [];
+          gamerSite = sites.find(s => s.site === 'gamer');
+          bilibiliSite = sites.find(s => s.site === 'bilibili_tw') || 
+                         sites.find(s => s.site === 'bilibili_hk_mo_tw') || 
+                         sites.find(s => s.site === 'bilibili');
         }
         
         if (gamerSite && gamerSite.id) {
           finalCover = await getBahamutCover(gamerSite.id) || "";
+        }
+        
+        if (!finalCover && bilibiliSite && bilibiliSite.id) {
+          finalCover = await getBilibiliCover(bilibiliSite.id) || "";
         }
         
         if (!finalCover) {
@@ -178,9 +201,9 @@ async function main() {
         
         // Genres & Tags
         let genres = (item.genres || []).map(g => genreMap[g] || g);
-        const isAdult = item.tags?.some(t => t.name === 'Nudity' || t.name === 'Explicit' || t.name === 'Sexual Content') || genres.includes('福利') || genres.includes('紳士');
-        if (isAdult && !genres.includes('紳士')) {
-          genres.push('紳士');
+        const isAdult = item.tags?.some(t => t.name === 'Nudity' || t.name === 'Sexual Content') || genres.includes('福利');
+        if (isAdult && !genres.includes('福利')) {
+          genres.push('福利');
         }
 
         const seasonMap = { 'WINTER': '冬', 'SPRING': '春', 'SUMMER': '夏', 'FALL': '秋' };

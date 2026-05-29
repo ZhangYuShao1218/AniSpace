@@ -18,7 +18,7 @@ const genreMap = {
   'Sci-Fi': '科幻', 'Slice of Life': '日常', 'Sports': '運動', 'Supernatural': '超自然',
   'Suspense': '懸疑', 'Award Winning': '獲獎', 'Avant Garde': '前衛', 'Boys Love': '耽美',
   'Girls Love': '百合', 'Gourmet': '美食', 'Mecha': '機甲', 'Music': '音樂', 'Psychological': '心理',
-  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '紳士'
+  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '福利'
 };
 
 async function fetchFromAniList(year, season) {
@@ -148,12 +148,12 @@ async function main() {
       }
 
       // 年齡分級判定
-      const needsAgeCheck = anime.genres?.includes('Ecchi') || anime.genres?.includes('Hentai') || anime.tags?.some(t => t.name === 'Nudity' || t.name === 'Explicit');
+      const needsAgeCheck = anime.genres?.includes('Ecchi') || anime.genres?.includes('Hentai') || anime.tags?.some(t => t.name === 'Nudity' || t.name === 'Sexual Content');
       let genres = (anime.genres || []).map((g) => genreMap[g] || g);
       if (needsAgeCheck) {
         const ageRating = await getJikanAgeRating(romaji || native || english);
         if (ageRating.includes('R+') || ageRating.includes('Rx')) {
-          if (!genres.includes('紳士')) genres.push('紳士');
+          if (!genres.includes('福利')) genres.push('福利');
         }
       }
 

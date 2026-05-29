@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "scrape": "node scraper/index.js"
+    "crawler": "node scraper/index.js",
+    "aniupdate": "node -e \"fetch('https://raw.githubusercontent.com/YIYUCHEN1218/AniSpace/main/public/anime_data.json').then(res => res.text()).then(text => require('fs').writeFileSync('public/anime_data.json', text)); console.log('Successfully updated local anime_data.json from remote!');\""
   },
   "dependencies": {
     "@react-oauth/google": "^0.13.5",

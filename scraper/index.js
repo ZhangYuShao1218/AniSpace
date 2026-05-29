@@ -2,13 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
 import * as OpenCC from 'opencc-js';
-import * as cheerio from 'cheerio';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const START_YEAR = 2010; 
-const END_YEAR = new Date().getFullYear(); // Up to current year
-
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 const genreMap = {
   'Action': '動作', 'Adventure': '冒險', 'Comedy': '喜劇', 'Drama': '劇情',
@@ -26,45 +22,55 @@ const SEASON_MONTH_MAP = {
   'FALL': '10'
 };
 
+// ACG Secrets for fallback translation
 async function fetchACGSecretsTitles(year, season) {
   const month = SEASON_MONTH_MAP[season.toUpperCase()];
   if (!month) return new Map();
-  
   try {
     const url = `https://acgsecrets.hk/bangumi/${year}${month}/`;
-    const res = await axios.get(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-      }
-    });
+    const res = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
     const html = res.data;
-    
     const titleMap = new Map();
     const regex = /"name":"([^"]+)","alternateName":\["([^"]+)"/g;
     let match;
     while ((match = regex.exec(html)) !== null) {
-      const zh = match[1].trim();
-      const jp = match[2].trim();
-      if (zh && jp) titleMap.set(jp, zh);
+      if (match[1].trim() && match[2].trim()) titleMap.set(match[2].trim(), match[1].trim());
     }
-    
     return titleMap;
   } catch (e) {
-    console.warn(`Failed to fetch acgsecrets.hk titles for ${year} ${season}:`, e.message);
     return new Map();
   }
+}
+
+// Check if Bahamut ACG cover exists via HEAD request
+async function getBahamutCover(gamerId) {
+  const idStr = String(gamerId);
+  const folder = idStr.slice(-2).padStart(2, '0');
+  const paddedId = idStr.padStart(10, '0');
+  const url = `https://p2.bahamut.com.tw/B/ACG/c/${folder}/${paddedId}.JPG`;
+  
+  try {
+    const res = await axios.head(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 3000 });
+    if (res.status === 200) return url;
+  } catch (e) {
+    return null;
+  }
+  return null;
 }
 
 async function fetchAniListBySeason(year, season) {
   const query = `
     query ($season: MediaSeason, $seasonYear: Int) {
-      Page(page: 1, perPage: 50) {
+      Page(page: 1, perPage: 100) {
         media(season: $season, seasonYear: $seasonYear, type: ANIME, sort: POPULARITY_DESC, isAdult: false) {
           id
           title { romaji english native }
           genres
           tags { name rank }
           coverImage { large extraLarge }
+          relations {
+            edges { relationType node { id title { romaji native english } } }
+          }
         }
       }
     }
@@ -81,151 +87,114 @@ async function fetchAniListBySeason(year, season) {
   }
 }
 
-async function getBangumiDataInfo(nativeTitle) {
-  try {
-    const url = `https://api.bgm.tv/search/subject/${encodeURIComponent(nativeTitle)}?type=2&responseGroup=small`;
-    const res = await axios.get(url, {
-        headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        }
-    });
-    const json = res.data;
-    if (json && json.list && json.list.length > 0) {
-      const item = json.list[0];
-      return { 
-        title: item.name_cn || item.name || "",
-        image: item.images?.large || item.images?.common || ""
-      };
-    }
-  } catch (e) {}
-  return { title: "", image: "" };
-}
-
-async function getJikanAgeRating(title, retries = 3, delay = 1000) {
-  try {
-    const res = await axios.get(`https://api.jikan.moe/v4/anime?q=${encodeURIComponent(title)}&limit=1`, {
-        validateStatus: (status) => status < 500
-    });
-    if (res.status === 429 && retries > 0) {
-      await sleep(delay);
-      return getJikanAgeRating(title, retries - 1, delay * 2);
-    }
-    if (res.status !== 200) return "";
-    const json = res.data;
-    if (json && json.data && json.data.length > 0) {
-      return json.data[0].rating || "";
-    }
-  } catch(e) {}
-  return "";
-}
-
-async function parallelLimit(items, limit, fn) {
-  const results = [];
-  const executing = [];
-  for (const item of items) {
-    const p = Promise.resolve().then(() => fn(item));
-    results.push(p);
-    if (limit <= items.length) {
-      const e = p.then(() => executing.splice(executing.indexOf(e), 1));
-      executing.push(e);
-      if (executing.length >= limit) {
-        await Promise.race(executing);
-      }
-    }
-  }
-  return Promise.all(results);
-}
-
 async function main() {
   const ALL_SEASONS = ['WINTER', 'SPRING', 'SUMMER', 'FALL'];
   const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
   let finalAnimeList = [];
 
-  // Pre-fetch bangumi-data
-  console.log('正在準備翻譯引擎與字典檔...');
-  let bgmData = { items: [] };
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth() + 1; // 1-12
+  const END_YEAR = currentYear;
+
+  console.log('📦 正在下載 bangumi-data 字典檔...');
+  let bgmMap = new Map(); // aniListId -> translation Object
   try {
     const res = await axios.get("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
-    if (res.status === 200) bgmData = res.data;
+    if (res.status === 200 && res.data.items) {
+      res.data.items.forEach(item => {
+        const aniListSite = item.sites?.find(s => s.site === 'aniList');
+        if (aniListSite && aniListSite.id) {
+          bgmMap.set(aniListSite.id, item);
+        }
+      });
+      console.log(`✅ 字典檔載入完成，共建立 ${bgmMap.size} 筆精確映射。`);
+    }
   } catch(e) {
-    console.warn("Failed to fetch bangumi-data");
+    console.warn("⚠️ 無法獲取 bangumi-data，將退回使用 ACG Secrets 與原生標題。");
   }
 
   for (let year = START_YEAR; year <= END_YEAR; year++) {
     for (const currentSeason of ALL_SEASONS) {
+      // Time-Aware Filtering
+      if (year === currentYear) {
+        const seasonStartMonth = parseInt(SEASON_MONTH_MAP[currentSeason], 10);
+        if (currentMonth < seasonStartMonth) {
+          console.log(`⏭️ 跳過 ${year} ${currentSeason} (尚未開播)`);
+          continue;
+        }
+      }
+
       console.log(`\n🔍 正在爬取: ${year} 年 ${currentSeason} 季...`);
-      
-      // Fetch ACG Secrets titles map
       const acgTitlesMap = await fetchACGSecretsTitles(year, currentSeason);
-      
       const seasonData = await fetchAniListBySeason(year, currentSeason);
-      console.log(`🚀 正在並行處理 ${seasonData.length} 部動畫資料...`);
+      console.log(`🚀 取得 ${seasonData.length} 部動畫資料，進行本地超高速清洗...`);
       
-      const processedResults = await parallelLimit(seasonData, 5, async (item) => {
+      for (const item of seasonData) {
         const nativeTitle = item.title.native || item.title.romaji;
-
+        const aniListId = String(item.id);
+        
         let titleZh = "";
-        let finalCover = "";
-
-        // Priority 0: ACG Secrets.HK
-        if (acgTitlesMap.has(nativeTitle)) {
-          titleZh = acgTitlesMap.get(nativeTitle);
-        }
-
-        // Phase 1: bangumi-data
-        if (!titleZh && bgmData.items.length > 0) {
-           const bgmItem = bgmData.items.find(bgm => bgm.title === nativeTitle || (bgm.titleTranslate && Object.values(bgm.titleTranslate).flat().includes(nativeTitle)));
-           if (bgmItem && bgmItem.titleTranslate) {
-              if (bgmItem.titleTranslate['zh-Hant']) {
-                titleZh = bgmItem.titleTranslate['zh-Hant'][0];
-              } else if (bgmItem.titleTranslate['zh-Hans']) {
-                titleZh = bgmItem.titleTranslate['zh-Hans'][0];
-              }
-           }
-        }
-
-        // Phase 2: Bangumi API
-        const bgmInfo = await getBangumiDataInfo(nativeTitle);
-        if (bgmInfo.image) {
-           finalCover = bgmInfo.image.replace(/\/c\/|\/m\/|\/s\//g, '/l/');
-        } else {
-           finalCover = item.coverImage?.extraLarge || item.coverImage?.large || "";
+        
+        // Priority 1: bangumi-data exact ID mapping
+        if (bgmMap.has(aniListId)) {
+          const bgmItem = bgmMap.get(aniListId);
+          if (bgmItem.titleTranslate) {
+            if (bgmItem.titleTranslate['zh-Hant']) {
+              titleZh = bgmItem.titleTranslate['zh-Hant'][0];
+            } else if (bgmItem.titleTranslate['zh-Hans']) {
+              titleZh = bgmItem.titleTranslate['zh-Hans'][0];
+            }
+          }
         }
         
-        if (!titleZh && bgmInfo.title) {
-           titleZh = bgmInfo.title;
+        // Priority 2: ACG Secrets exact string match
+        if (!titleZh && acgTitlesMap.has(nativeTitle)) {
+          titleZh = acgTitlesMap.get(nativeTitle);
         }
 
         // Fallback
         if (!titleZh) {
-           titleZh = nativeTitle || item.title.english || "未知動畫";
+          titleZh = nativeTitle || item.title.english || "未知動畫";
         }
         
-        // Force Traditional Chinese
+        // Convert to Traditional Chinese
         titleZh = converter(titleZh);
         
-        // Age Rating & Genres
-        let genres = (item.genres || []).map(g => genreMap[g] || g);
-        const needsAgeCheck = item.genres?.includes('Ecchi') || item.genres?.includes('Hentai') || item.tags?.some(t => t.name === 'Nudity' || t.name === 'Explicit');
+        // Smart Cover Image Strategy (Priority: Bahamut (TW Official) > AniList (High Res))
+        let finalCover = "";
+        let gamerSite = null;
+        if (bgmMap.has(aniListId)) {
+          gamerSite = bgmMap.get(aniListId).sites?.find(s => s.site === 'gamer');
+        }
         
-        if (needsAgeCheck) {
-           const ageRating = await getJikanAgeRating(item.title.romaji || nativeTitle || item.title.english || '');
-           if (ageRating.includes('R+') || ageRating.includes('Rx')) {
-              if (!genres.includes('紳士')) genres.push('紳士');
-           }
+        if (gamerSite && gamerSite.id) {
+          finalCover = await getBahamutCover(gamerSite.id) || "";
+        }
+        
+        if (!finalCover) {
+          finalCover = item.coverImage?.extraLarge || item.coverImage?.large || "";
+        }
+        
+        // Genres & Tags
+        let genres = (item.genres || []).map(g => genreMap[g] || g);
+        const isAdult = item.tags?.some(t => t.name === 'Nudity' || t.name === 'Explicit' || t.name === 'Sexual Content') || genres.includes('福利') || genres.includes('紳士');
+        if (isAdult && !genres.includes('紳士')) {
+          genres.push('紳士');
         }
 
         const seasonMap = { 'WINTER': '冬', 'SPRING': '春', 'SUMMER': '夏', 'FALL': '秋' };
-        return {
+        finalAnimeList.push({
           id: `anilist-${item.id}`,
           titleZh,
           coverImage: finalCover,
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
           genres
-        };
-      });
-
-      finalAnimeList = [...finalAnimeList, ...processedResults];
+        });
+      }
+      
+      // Delay to avoid AniList & ACG Secrets Rate Limit (429)
+      await new Promise(r => setTimeout(r, 1000));
     }
   }
 
@@ -236,7 +205,8 @@ async function main() {
   }
 
   // Sort by date descending (Year DESC, Season priority)
-  const seasonOrder = { '冬': 4, '秋': 3, '夏': 2, '春': 1 };
+  // Autumn(4) > Summer(3) > Spring(2) > Winter(1) to match frontend logic
+  const seasonOrder = { '秋': 4, '夏': 3, '春': 2, '冬': 1 };
   const parseSeasonScore = (yearSeason) => {
     const parts = yearSeason.split(' ');
     if (parts.length !== 2) return 0;
@@ -247,7 +217,7 @@ async function main() {
   finalAnimeList.sort((a, b) => parseSeasonScore(b.yearSeason) - parseSeasonScore(a.yearSeason));
 
   fs.writeFileSync(DATA_FILE, JSON.stringify(finalAnimeList, null, 2), 'utf-8');
-  console.log(`\n✨ 抓取與翻譯完成！共 ${finalAnimeList.length} 筆資料已儲存至 ${DATA_FILE}`);
+  console.log(`\n✨ 抓取與清洗完成！極速處理完畢。共 ${finalAnimeList.length} 筆資料已儲存至 ${DATA_FILE}`);
 }
 
 main();

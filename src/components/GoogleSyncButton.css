@@ -1,0 +1,59 @@
+.google-sync-btn-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  background: rgba(66, 133, 244, 0.15);
+  border: 1px solid rgba(66, 133, 244, 0.3);
+  color: #fff;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--border-radius-md);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.btn-google:hover {
+  background: rgba(66, 133, 244, 0.25);
+  border-color: rgba(66, 133, 244, 0.5);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+}
+
+.btn-google:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.sync-time-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.logout-icon-btn {
+  background: rgba(255, 85, 85, 0.1);
+  border: 1px solid rgba(255, 85, 85, 0.3);
+  color: #ff5555;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.logout-icon-btn:hover {
+  color: #ff3333;
+  background: rgba(255, 85, 85, 0.2);
+  border-color: rgba(255, 85, 85, 0.5);
+}

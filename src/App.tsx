@@ -1,13 +1,12 @@
-import { useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import './App.css';
 import AllAnimePage from './pages/AllAnimePage';
 import PlanToWatchPage from './pages/PlanToWatchPage';
 import WatchedPage from './pages/WatchedPage';
 import ImportExportButtons from './components/ImportExportButtons';
+import GoogleSyncButton from './components/GoogleSyncButton';
 import { Layers, DownloadCloud, Loader2 } from 'lucide-react';
 import { useAnime } from './contexts/AnimeContext';
-import { getCurrentSeasonInfo } from './utils/season';
 
 function App() {
   const {
@@ -32,7 +31,9 @@ function App() {
         </div>
 
         <div className="header-right">
-          <div className="nav-tabs">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+            <GoogleSyncButton />
+            <div className="nav-tabs">
             <Link
               to="/"
               className={`nav-tab ${currentPath === '/' ? 'active' : ''}`}
@@ -52,23 +53,24 @@ function App() {
               動畫紀錄
             </Link>
           </div>
-
-          <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-            <button
-              className="btn-glass"
-              onClick={handleSync}
-              disabled={isScraping}
-              style={{ fontSize: '0.85rem', padding: 'var(--spacing-2) var(--spacing-4)' }}
-            >
-              {isScraping ? <Loader2 className="animate-spin" size={16} /> : <DownloadCloud size={16} />}
-              {isScraping ? scrapeProgress : '同步最新資料'}
-            </button>
-            <ImportExportButtons
-              watchedData={watchedList}
-              onImport={handleImport}
-            />
-          </div>
         </div>
+
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+            <button
+                className="btn-glass"
+                onClick={handleSync}
+                disabled={isScraping}
+                style={{ fontSize: '0.85rem', padding: 'var(--spacing-2) var(--spacing-4)' }}
+              >
+                {isScraping ? <Loader2 className="animate-spin" size={16} /> : <DownloadCloud size={16} />}
+                {isScraping ? scrapeProgress : '同步最新動漫'}
+              </button>
+              <ImportExportButtons
+                watchedData={watchedList}
+                onImport={handleImport}
+              />
+            </div>
+          </div>
       </header>
 
       <main className="container wrapper">

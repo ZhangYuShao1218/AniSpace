@@ -4,7 +4,9 @@ import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY } from '../utils/
 import { parseSeason, getSeasonInfo } from '../utils/season';
 import { useTitleCorrections } from '../hooks/useTitleCorrections';
 
-const REMOTE_DB_URL = 'https://raw.githubusercontent.com/YIYUCHEN1218/AniSpace/main/public/anime_data.json';
+const REMOTE_DB_URL = import.meta.env.DEV 
+  ? '/anime_data.json' 
+  : 'https://raw.githubusercontent.com/YIYUCHEN1218/AniSpace/main/public/anime_data.json';
 
 interface AnimeContextType {
   allAnime: Anime[];

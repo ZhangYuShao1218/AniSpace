@@ -71,16 +71,6 @@
     ]
   },
   {
-    "id": "anilist-170019",
-    "titleZh": "關於我在無意間被隔壁的天使變成廢柴這件事 2",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000136023.JPG",
-    "yearSeason": "2026 春",
-    "genres": [
-      "愛情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-169580",
     "titleZh": "和班上第二可愛的女孩成為朋友",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/39/0000135739.JPG",
@@ -88,6 +78,16 @@
     "genres": [
       "喜劇",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-170019",
+    "titleZh": "關於我在無意間被隔壁的天使變成廢柴這件事 2",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000136023.JPG",
+    "yearSeason": "2026 春",
+    "genres": [
+      "愛情",
+      "日常"
     ]
   },
   {
@@ -148,16 +148,6 @@
     ]
   },
   {
-    "id": "anilist-197824",
-    "titleZh": "異世界悠閒農家 2",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/29/0000146929.JPG",
-    "yearSeason": "2026 春",
-    "genres": [
-      "奇幻",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-206914",
     "titleZh": "日本三國",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206914-SHKX08LarRzB.jpg",
@@ -167,6 +157,16 @@
       "劇情",
       "科幻",
       "福利"
+    ]
+  },
+  {
+    "id": "anilist-197824",
+    "titleZh": "異世界悠閒農家 2",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/29/0000146929.JPG",
+    "yearSeason": "2026 春",
+    "genres": [
+      "奇幻",
+      "日常"
     ]
   },
   {
@@ -273,8 +273,8 @@
   },
   {
     "id": "anilist-204356",
-    "titleZh": "僕のヒーローアカデミア No. 170+1 「More」",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204356-RNYmxUVVz3Z2.png",
+    "titleZh": "『我的英雄學院』No.170＋1『More』",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/57/0000143057.JPG",
     "yearSeason": "2026 春",
     "genres": [
       "動作",
@@ -1077,7 +1077,7 @@
   },
   {
     "id": "anilist-187892",
-    "titleZh": "ALL YOU NEED IS KILL",
+    "titleZh": "殺戮輪迴",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187892-8xwQPygNv9SG.jpg",
     "yearSeason": "2026 冬",
     "genres": [
@@ -1579,17 +1579,6 @@
     ]
   },
   {
-    "id": "anilist-140337",
-    "titleZh": "ゾンビランドサガ ゆめぎんがパラダイス",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140337-8EtbiPurofcC.jpg",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "喜劇",
-      "音樂",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-204066",
     "titleZh": "呪術廻戦『渋谷事変 特別編集版』×『死滅迴游 先行上映』",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204066-Gb5k7j6Cpbng.jpg",
@@ -1597,6 +1586,17 @@
     "genres": [
       "動作",
       "劇情",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-140337",
+    "titleZh": "ゾンビランドサガ ゆめぎんがパラダイス",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140337-8EtbiPurofcC.jpg",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "喜劇",
+      "音樂",
       "超自然"
     ]
   },
@@ -1689,7 +1689,7 @@
   },
   {
     "id": "anilist-185773",
-    "titleZh": "果てしなきスカーレット",
+    "titleZh": "無盡的施嘉莉",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185773-N7dLeWyB14VA.png",
     "yearSeason": "2025 秋",
     "genres": [
@@ -1786,6 +1786,17 @@
     ]
   },
   {
+    "id": "anilist-185407",
+    "titleZh": "章魚嗶的原罪",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/75/0000142775.JPG",
+    "yearSeason": "2025 夏",
+    "genres": [
+      "劇情",
+      "心理",
+      "科幻"
+    ]
+  },
+  {
     "id": "anilist-177689",
     "titleZh": "光逝去的夏天",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177689-d0mB5nYgdnhi.jpg",
@@ -1796,17 +1807,6 @@
       "心理",
       "超自然",
       "驚悚"
-    ]
-  },
-  {
-    "id": "anilist-185407",
-    "titleZh": "章魚嗶的原罪",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/75/0000142775.JPG",
-    "yearSeason": "2025 夏",
-    "genres": [
-      "劇情",
-      "心理",
-      "科幻"
     ]
   },
   {
@@ -2026,8 +2026,8 @@
   },
   {
     "id": "anilist-179344",
-    "titleZh": "租借女友 第四季",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179344-GQzJfehpQI72.png",
+    "titleZh": "出租女友 第四季",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/16/0000140416.JPG",
     "yearSeason": "2025 夏",
     "genres": [
       "喜劇",
@@ -2628,17 +2628,6 @@
     ]
   },
   {
-    "id": "anilist-150654",
-    "titleZh": "月出之戰",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150654-pgima1BrY7N0.jpg",
-    "yearSeason": "2025 春",
-    "genres": [
-      "動作",
-      "冒險",
-      "科幻"
-    ]
-  },
-  {
     "id": "anilist-181839",
     "titleZh": "電影版小林家的龍女僕：害怕寂寞的龍",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181839-pgM02tCNM2ae.png",
@@ -2647,6 +2636,17 @@
       "劇情",
       "奇幻",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-150654",
+    "titleZh": "月出之戰",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150654-pgima1BrY7N0.jpg",
+    "yearSeason": "2025 春",
+    "genres": [
+      "動作",
+      "冒險",
+      "科幻"
     ]
   },
   {
@@ -2684,6 +2684,17 @@
     ]
   },
   {
+    "id": "anilist-192809",
+    "titleZh": "咒術回戰 懷玉·玉折 總集篇",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192809-wRlqABGsx2Qs.jpg",
+    "yearSeason": "2025 春",
+    "genres": [
+      "動作",
+      "劇情",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-177476",
     "titleZh": "真·武士傳 YAIBA",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/20/0000139420.JPG",
@@ -2693,17 +2704,6 @@
       "冒險",
       "喜劇",
       "奇幻"
-    ]
-  },
-  {
-    "id": "anilist-192809",
-    "titleZh": "咒術回戰 懷玉·玉折 總集篇",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192809-wRlqABGsx2Qs.jpg",
-    "yearSeason": "2025 春",
-    "genres": [
-      "動作",
-      "劇情",
-      "超自然"
     ]
   },
   {
@@ -3147,8 +3147,8 @@
   },
   {
     "id": "anilist-180052",
-    "titleZh": "戰隊紅戰士在異世界當冒險者",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180052-i29SxOyEBtXB.jpg",
+    "titleZh": "紅戰士在異世界成了冒險者",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/91/0000140791.JPG",
     "yearSeason": "2025 冬",
     "genres": [
       "動作",
@@ -3340,7 +3340,7 @@
   },
   {
     "id": "anilist-154392",
-    "titleZh": "劇場版 ベルサイユのばら",
+    "titleZh": "凡爾賽玫瑰",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154392-I35rrWRu9KlY.jpg",
     "yearSeason": "2025 冬",
     "genres": [
@@ -4438,17 +4438,6 @@
     ]
   },
   {
-    "id": "anilist-167991",
-    "titleZh": "TRUMP 系列 Delicoʼs Nursery",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/32/0000134732.JPG",
-    "yearSeason": "2024 夏",
-    "genres": [
-      "奇幻",
-      "懸疑",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-177191",
     "titleZh": "五等分的新娘＊",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177191-ovNZsq8EbIPY.jpg",
@@ -4457,6 +4446,17 @@
       "喜劇",
       "劇情",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-167991",
+    "titleZh": "TRUMP 系列 Delicoʼs Nursery",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/32/0000134732.JPG",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "奇幻",
+      "懸疑",
+      "超自然"
     ]
   },
   {
@@ -4624,8 +4624,7 @@
     "genres": [
       "動作",
       "冒險",
-      "奇幻",
-      "福利"
+      "奇幻"
     ]
   },
   {
@@ -5410,7 +5409,8 @@
     "yearSeason": "2024 冬",
     "genres": [
       "喜劇",
-      "奇幻"
+      "奇幻",
+      "魔法少女"
     ]
   },
   {
@@ -5917,7 +5917,7 @@
   {
     "id": "anilist-158926",
     "titleZh": "鴨乃橋論的禁忌推理",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158926-u3Sb0d0jagoI.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/79/0000129279.JPG",
     "yearSeason": "2023 秋",
     "genres": [
       "劇情",
@@ -6037,6 +6037,16 @@
     ]
   },
   {
+    "id": "anilist-156184",
+    "titleZh": "想當冒險者前往都市的女兒成為 S 級",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/19/0000133419.JPG",
+    "yearSeason": "2023 秋",
+    "genres": [
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-155389",
     "titleZh": "SHY 靦腆英雄",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/29/0000127829.JPG",
@@ -6045,16 +6055,6 @@
       "動作",
       "劇情",
       "心理"
-    ]
-  },
-  {
-    "id": "anilist-156184",
-    "titleZh": "想當冒險者前往都市的女兒成為 S 級",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/19/0000133419.JPG",
-    "yearSeason": "2023 秋",
-    "genres": [
-      "冒險",
-      "奇幻"
     ]
   },
   {
@@ -6376,7 +6376,7 @@
   {
     "id": "anilist-153360",
     "titleZh": "轉生成自動販賣機的我今天也在迷宮徘徊",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153360-VM22UwGEz8Ir.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/13/0000130813.JPG",
     "yearSeason": "2023 夏",
     "genres": [
       "冒險",
@@ -9205,16 +9205,6 @@
     ]
   },
   {
-    "id": "anilist-132052",
-    "titleZh": "杜鵑婚約",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/03/0000116803.JPG",
-    "yearSeason": "2022 春",
-    "genres": [
-      "喜劇",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-132474",
     "titleZh": "骸骨騎士大人異世界冒險中",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000117023.JPG",
@@ -9225,6 +9215,16 @@
       "喜劇",
       "奇幻",
       "福利"
+    ]
+  },
+  {
+    "id": "anilist-132052",
+    "titleZh": "杜鵑婚約",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/03/0000116803.JPG",
+    "yearSeason": "2022 春",
+    "genres": [
+      "喜劇",
+      "愛情"
     ]
   },
   {
@@ -11758,7 +11758,7 @@
   },
   {
     "id": "anilist-131930",
-    "titleZh": "Yasuke -ヤスケ-",
+    "titleZh": "武士彌助",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131930-Us7lsOPyNfAX.png",
     "yearSeason": "2021 春",
     "genres": [
@@ -14102,7 +14102,8 @@
     "genres": [
       "喜劇",
       "日常",
-      "超自然"
+      "超自然",
+      "福利"
     ]
   },
   {
@@ -17890,7 +17891,7 @@
   },
   {
     "id": "anilist-100665",
-    "titleZh": "后街女孩",
+    "titleZh": "後街女孩",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100665-rbfp9LH6Swe6.jpg",
     "yearSeason": "2018 夏",
     "genres": [
@@ -19366,18 +19367,6 @@
     ]
   },
   {
-    "id": "anilist-99726",
-    "titleZh": "網路勝利組",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99726-tta6v7TKGYKa.jpg",
-    "yearSeason": "2017 秋",
-    "genres": [
-      "喜劇",
-      "奇幻",
-      "愛情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-99420",
     "titleZh": "少女終末旅行",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/80/0000089980.JPG",
@@ -19387,6 +19376,18 @@
       "科幻",
       "日常",
       "福利"
+    ]
+  },
+  {
+    "id": "anilist-99726",
+    "titleZh": "網路勝利組",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99726-tta6v7TKGYKa.jpg",
+    "yearSeason": "2017 秋",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "愛情",
+      "日常"
     ]
   },
   {
@@ -19446,16 +19447,6 @@
     ]
   },
   {
-    "id": "anilist-98443",
-    "titleZh": "十二大戰",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98443-1d7qImgzb6Dj.jpg",
-    "yearSeason": "2017 秋",
-    "genres": [
-      "動作",
-      "驚悚"
-    ]
-  },
-  {
     "id": "anilist-98951",
     "titleZh": "我的女友是個過度認真的處女bitch",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/40/0000089340.JPG",
@@ -19464,6 +19455,16 @@
       "喜劇",
       "福利",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-98443",
+    "titleZh": "十二大戰",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98443-1d7qImgzb6Dj.jpg",
+    "yearSeason": "2017 秋",
+    "genres": [
+      "動作",
+      "驚悚"
     ]
   },
   {
@@ -21366,16 +21367,6 @@
     ]
   },
   {
-    "id": "anilist-87539",
-    "titleZh": "龍之牙醫",
-    "coverImage": "http://i0.hdslb.com/bfs/bangumi/909c6b7bde4e761b05d266dfbb4d33d98b78c5ce.jpg",
-    "yearSeason": "2017 冬",
-    "genres": [
-      "冒險",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-20919",
     "titleZh": "虐殺器官",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx20919-2gAgdEKPWl6E.jpg",
@@ -21385,6 +21376,16 @@
       "心理",
       "科幻",
       "福利"
+    ]
+  },
+  {
+    "id": "anilist-87539",
+    "titleZh": "龍之牙醫",
+    "coverImage": "http://i0.hdslb.com/bfs/bangumi/909c6b7bde4e761b05d266dfbb4d33d98b78c5ce.jpg",
+    "yearSeason": "2017 冬",
+    "genres": [
+      "冒險",
+      "奇幻"
     ]
   },
   {
@@ -21746,16 +21747,6 @@
     ]
   },
   {
-    "id": "anilist-21838",
-    "titleZh": "終末的伊澤塔",
-    "coverImage": "http://i0.hdslb.com/bfs/bangumi/27b426240a5cef004b98ba9825cc1dced1f3e8ea.jpg",
-    "yearSeason": "2016 秋",
-    "genres": [
-      "動作",
-      "劇情"
-    ]
-  },
-  {
     "id": "anilist-21708",
     "titleZh": "超自然9人組",
     "coverImage": "http://i0.hdslb.com/bfs/bangumi/5d1364ae198c6e29c2daa64e48ad539fe5094496.jpg",
@@ -21765,6 +21756,16 @@
       "科幻",
       "超自然",
       "驚悚"
+    ]
+  },
+  {
+    "id": "anilist-21838",
+    "titleZh": "終末的伊澤塔",
+    "coverImage": "http://i0.hdslb.com/bfs/bangumi/27b426240a5cef004b98ba9825cc1dced1f3e8ea.jpg",
+    "yearSeason": "2016 秋",
+    "genres": [
+      "動作",
+      "劇情"
     ]
   },
   {
@@ -21853,7 +21854,7 @@
   {
     "id": "anilist-21749",
     "titleZh": "機動戰士鋼彈：鐵血孤兒 第二季",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21749-tO6zfDKFesgl.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/53/0000081653.JPG",
     "yearSeason": "2016 秋",
     "genres": [
       "動作",
@@ -22267,7 +22268,7 @@
   {
     "id": "anilist-21659",
     "titleZh": "天真與閃電",
-    "coverImage": "http://i0.hdslb.com/bfs/bangumi/5626f7afbd39a0b4561dea5bd267ba1ef2248c0d.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/26/0000082326.JPG",
     "yearSeason": "2016 夏",
     "genres": [
       "喜劇",
@@ -23534,7 +23535,7 @@
   },
   {
     "id": "anilist-21050",
-    "titleZh": "小桃小慄Love Love物語",
+    "titleZh": "小桃小栗Love Love物語",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/35/0000076535.JPG",
     "yearSeason": "2016 冬",
     "genres": [
@@ -23948,7 +23949,7 @@
   {
     "id": "anilist-21268",
     "titleZh": "機動戰士鋼彈：鐵血孤兒",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21268-6dKrz26PPUvk.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/16/0000078416.JPG",
     "yearSeason": "2015 秋",
     "genres": [
       "動作",
@@ -27870,8 +27871,8 @@
   },
   {
     "id": "anilist-18139",
-    "titleZh": "上課小動作",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18139-Pp6vurRu1rGf.jpg",
+    "titleZh": "鄰座同學是怪咖",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/41/0000061041.JPG",
     "yearSeason": "2014 冬",
     "genres": [
       "喜劇"
@@ -28819,7 +28820,7 @@
   {
     "id": "anilist-19319",
     "titleZh": "高達創戰者",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19319-0YuU672PSgix.jpg",
+    "coverImage": "http://i0.hdslb.com/bfs/bangumi/01214a7f71f8c08e640630d27a0b83562d899c07.jpg",
     "yearSeason": "2013 秋",
     "genres": [
       "動作",
@@ -31626,16 +31627,6 @@
     ]
   },
   {
-    "id": "anilist-10928",
-    "titleZh": "乃木坂春香的秘密 Finale♪",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10928-1XCxOJ9N7WwT.jpg",
-    "yearSeason": "2012 夏",
-    "genres": [
-      "喜劇",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-14073",
     "titleZh": "えびてん 公立海老棲川高校天悶部",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/14073.jpg",
@@ -31643,6 +31634,16 @@
     "genres": [
       "喜劇",
       "福利"
+    ]
+  },
+  {
+    "id": "anilist-10928",
+    "titleZh": "乃木坂春香的秘密 Finale♪",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10928-1XCxOJ9N7WwT.jpg",
+    "yearSeason": "2012 夏",
+    "genres": [
+      "喜劇",
+      "愛情"
     ]
   },
   {
@@ -32277,7 +32278,7 @@
   {
     "id": "anilist-11013",
     "titleZh": "妖狐×僕SS",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11013-EBA11hztD2yi.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/24/0000049924.JPG",
     "yearSeason": "2012 冬",
     "genres": [
       "喜劇",
@@ -35506,15 +35507,16 @@
     ]
   },
   {
-    "id": "anilist-9288",
-    "titleZh": "Heart Catch光之美少女 超級時尚秀在花之都...真的嗎！？",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9288-KBl1SCRhk7Xn.jpg",
+    "id": "anilist-8666",
+    "titleZh": "魔神凱撒SKL",
+    "coverImage": "http://i0.hdslb.com/bfs/bangumi/9f1031b57641e80d3b9caeded632e05a32245cfa.jpg",
     "yearSeason": "2010 秋",
     "genres": [
       "動作",
-      "劇情",
-      "奇幻",
-      "魔法少女"
+      "冒險",
+      "機甲",
+      "科幻",
+      "福利"
     ]
   },
   {
@@ -35825,6 +35827,16 @@
     ]
   },
   {
+    "id": "anilist-9355",
+    "titleZh": "セキレイ～Pure Engagement～第零羽 閑話弐題(鶺鴒診斷/鶺鴒餘暇)",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/9355.jpg",
+    "yearSeason": "2010 夏",
+    "genres": [
+      "喜劇",
+      "福利"
+    ]
+  },
+  {
     "id": "anilist-6634",
     "titleZh": "戰國BASARA 貳",
     "coverImage": "http://i0.hdslb.com/bfs/bangumi/d04a360c301a51a179b614f897112206e0e47dc4.jpg",
@@ -35833,16 +35845,6 @@
       "動作",
       "劇情",
       "奇幻"
-    ]
-  },
-  {
-    "id": "anilist-9355",
-    "titleZh": "セキレイ～Pure Engagement～第零羽 閑話弐題(鶺鴒診斷/鶺鴒餘暇)",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/9355.jpg",
-    "yearSeason": "2010 夏",
-    "genres": [
-      "喜劇",
-      "福利"
     ]
   },
   {

@@ -3,9 +3,10 @@ import type { Anime, WatchedAnime } from '../types';
 import AnimeCard from '../components/AnimeCard';
 import Pagination from '../components/Pagination';
 import ReviewModal from '../components/ReviewModal';
+import { ShareModal } from '../components/ShareModal';
 import { useAnime } from '../contexts/AnimeContext';
 import { ITEMS_PER_PAGE } from '../utils/constants';
-import { Search } from 'lucide-react';
+import { Search, ThumbsUp } from 'lucide-react';
 
 const PlanToWatchPage = () => {
   const { 
@@ -18,6 +19,7 @@ const PlanToWatchPage = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [selectedAnime, setSelectedAnime] = useState<Anime | WatchedAnime | null>(null);
 
   const filteredData = useMemo(() => {
@@ -60,7 +62,33 @@ const PlanToWatchPage = () => {
   return (
     <>
       <div className="page-header" style={{ marginBottom: 'var(--spacing-6)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-        <h2 className="section-title">期待動畫 ({filteredData.length})</h2>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <h2 className="section-title" style={{ margin: 0 }}>期待動畫 ({filteredData.length})</h2>
+          <button 
+            onClick={() => setIsShareModalOpen(true)}
+            style={{ 
+              padding: '8px 18px', 
+              fontSize: '1rem', 
+              display: 'inline-flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              lineHeight: '1.2',
+              gap: '8px',
+              background: 'linear-gradient(135deg, #10b981, #059669)',
+              color: 'white',
+              border: 'none',
+              borderRadius: 'var(--radius-md)',
+              boxShadow: '0 4px 15px rgba(16, 185, 129, 0.3)',
+              cursor: 'pointer',
+              fontWeight: 600,
+              transition: 'all 0.2s'
+            }}
+            onMouseOver={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+            onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}
+          >
+            <ThumbsUp size={20} style={{ display: 'block', marginTop: '-2px' }} /> 推坑別人
+          </button>
+        </div>
         <div className="search-box glass-panel" style={{ flex: '1', maxWidth: '400px', padding: '0', background: 'transparent', border: 'none' }}>
            <div style={{ position: 'relative' }}>
             <Search size={20} className="search-icon" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
@@ -109,6 +137,13 @@ const PlanToWatchPage = () => {
         onClose={() => setIsModalOpen(false)}
         anime={selectedAnime}
         onSave={handleSaveReview}
+      />
+
+      <ShareModal
+        isOpen={isShareModalOpen}
+        onClose={() => setIsShareModalOpen(false)}
+        animes={planToWatchList}
+        isWatched={false}
       />
     </>
   );

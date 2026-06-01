@@ -10,6 +10,7 @@ interface GoogleSyncContextType {
   logout: () => void;
   syncToDrive: () => Promise<void>;
   restoreFromDrive: () => Promise<void>;
+  accessToken: string | null;
 }
 
 const GoogleSyncContext = createContext<GoogleSyncContextType | undefined>(undefined);
@@ -48,7 +49,7 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       setAccessToken(tokenResponse.access_token);
       setTimeout(() => restoreFlow(tokenResponse.access_token), 500);
     },
-    scope: 'https://www.googleapis.com/auth/drive.appdata',
+    scope: 'https://www.googleapis.com/auth/drive.appdata https://www.googleapis.com/auth/drive.file',
     onError: (error) => console.error('Login Failed:', error)
   });
 
@@ -200,7 +201,8 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       login,
       logout,
       syncToDrive,
-      restoreFromDrive
+      restoreFromDrive,
+      accessToken
     }}>
       {children}
     </GoogleSyncContext.Provider>

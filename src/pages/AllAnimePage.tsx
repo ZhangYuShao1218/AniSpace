@@ -1,32 +1,18 @@
-import { useState, useMemo, useEffect } from 'react';
-import type { Anime, WatchedAnime, SortOption } from '../types';
-import AnimeCard from '../components/AnimeCard';
+import { useState, useMemo } from 'react';
+import type { SortOption } from '../types';
 import FilterBar from '../components/FilterBar';
-import Pagination from '../components/Pagination';
-import ReviewModal from '../components/ReviewModal';
-import { Loader2 } from 'lucide-react';
+import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
-import { NSFW_GENRES, ITEMS_PER_PAGE } from '../utils/constants';
+import { NSFW_GENRES } from '../utils/constants';
 import { parseSeason } from '../utils/season';
 
 const AllAnimePage = () => {
-  const { 
-    allAnime, 
-    watchedList, 
-    planToWatchList, 
-    handleSaveReview, 
-    handlePlanToWatchToggle,
-    isScraping
-  } = useAnime();
+  const { allAnime } = useAnime();
 
   const [selectedYear, setSelectedYear] = useState<string>('');
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<SortOption>('date_desc');
-  const [currentPage, setCurrentPage] = useState<number>(1);
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedAnime, setSelectedAnime] = useState<Anime | WatchedAnime | null>(null);
 
   const availableYears = useMemo(() => {
     const years = new Set<string>();
@@ -79,91 +65,32 @@ const AllAnimePage = () => {
     return result;
   }, [allAnime, selectedYear, selectedGenres, searchQuery, sortBy]);
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [selectedYear, selectedGenres, searchQuery, sortBy]);
-
-  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
-  const paginatedData = useMemo(() => {
-    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-    return filteredData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-  }, [filteredData, currentPage]);
-
-  const handleActionClick = (anime: Anime) => {
-    const existingWatched = watchedList.find(w => w.id === anime.id);
-    setSelectedAnime(existingWatched || anime);
-    setIsModalOpen(true);
-  };
-
-  useEffect(() => {
-    const filterEl = document.querySelector('.filter-bar-container');
-    const targetY = filterEl
-      ? filterEl.getBoundingClientRect().top + window.pageYOffset + 5
-      : 0;
-    
-    window.scrollTo({ top: targetY, behavior: 'smooth' });
-  }, [currentPage]);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-  };
+  const topBarContent = (
+    <FilterBar
+      years={availableYears}
+      genres={availableGenres}
+      selectedYear={selectedYear}
+      selectedGenres={selectedGenres}
+      searchQuery={searchQuery}
+      sortBy={sortBy}
+      onYearChange={setSelectedYear}
+      onGenreChange={setSelectedGenres}
+      onSearchChange={setSearchQuery}
+      onSortChange={(s) => setSortBy(s as SortOption)}
+    />
+  );
 
   return (
-    <>
-      <FilterBar
-        years={availableYears}
-        genres={availableGenres}
-        selectedYear={selectedYear}
-        selectedGenres={selectedGenres}
-        searchQuery={searchQuery}
-        sortBy={sortBy}
-        onYearChange={setSelectedYear}
-        onGenreChange={setSelectedGenres}
-        onSearchChange={setSearchQuery}
-        onSortChange={(s) => setSortBy(s as SortOption)}
-      />
-
-      {filteredData.length === 0 ? (
-          <div className="empty-state glass-panel fade-in" id="main-content">
-            <h2>沒有找到符合的動畫</h2>
-            <p>請嘗試其他搜尋關鍵字或調整過濾條件。</p>
-            {isScraping && (
-            <p style={{ color: 'var(--accent-color)', marginTop: 'var(--spacing-4)' }}>
-              <Loader2 className="animate-spin" size={24} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} /> 
-              正在努力抓取中，請不要關閉頁面...
-            </p>
-          )}
-        </div>
-      ) : (
-        <div id="main-content">
-          <div className="anime-grid">
-            {paginatedData.map(anime => (
-              <AnimeCard
-                key={anime.id}
-                anime={watchedList.find(w => w.id === anime.id) || anime}
-                isWatched={watchedList.some(w => w.id === anime.id)}
-                isPlanToWatch={planToWatchList.some(p => p.id === anime.id)}
-                onActionClick={handleActionClick}
-                onPlanToWatchToggle={handlePlanToWatchToggle}
-              />
-            ))}
-          </div>
-
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={handlePageChange}
-          />
-        </div>
-      )}
-
-      <ReviewModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        anime={selectedAnime}
-        onSave={handleSaveReview}
-      />
-    </>
+    <AnimeListLayout
+      title="所有動畫"
+      totalCount={filteredData.length}
+      filteredData={filteredData}
+      topBarContent={topBarContent}
+      emptyStateTitle="沒有找到符合的動畫"
+      emptyStateMessage="請嘗試其他搜尋關鍵字或調整過濾條件。"
+      shareData={[]} // No share logic heavily utilized here, just empty
+      isWatchedShare={false}
+    />
   );
 };
 

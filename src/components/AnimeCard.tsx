@@ -240,4 +240,4 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   );
 };
 
-export default AnimeCard;
+export default React.memo(AnimeCard);

@@ -6,11 +6,11 @@ import { useTitleCorrections } from '../hooks/useTitleCorrections';
 
 const getDbUrl = () => {
   const source = import.meta.env.VITE_DATA_SOURCE;
-  if (source === 'remote') return 'https://raw.githubusercontent.com/YIYUCHEN1218/AniSpace/main/public/anime_data.json';
+  if (source === 'remote') return 'https://raw.githubusercontent.com/ZhangYuShao1218/AniSpace/main/public/anime_data.json';
   if (source === 'local') return '/anime_data.json';
   return import.meta.env.DEV 
     ? '/anime_data.json' 
-    : 'https://raw.githubusercontent.com/YIYUCHEN1218/AniSpace/main/public/anime_data.json';
+    : 'https://raw.githubusercontent.com/ZhangYuShao1218/AniSpace/main/public/anime_data.json';
 };
 const REMOTE_DB_URL = getDbUrl();
 

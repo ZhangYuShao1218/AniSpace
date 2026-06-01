@@ -1,0 +1,188 @@
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
+import type { Anime, WatchedAnime } from '../types';
+import AnimeCard from './AnimeCard';
+import Pagination from './Pagination';
+import ReviewModal from './ReviewModal';
+import { ShareModal } from './ShareModal';
+import { useAnime } from '../contexts/AnimeContext';
+import { ITEMS_PER_PAGE } from '../utils/constants';
+import { ThumbsUp, Loader2 } from 'lucide-react';
+
+interface AnimeListLayoutProps {
+  title: string;
+  totalCount: number;
+  filteredData: (Anime | WatchedAnime)[];
+  
+  // For Search/Sort inputs in the header
+  headerRightContent?: React.ReactNode;
+  
+  // For FilterBar (AllAnimePage)
+  topBarContent?: React.ReactNode;
+  
+  // Empty state
+  emptyStateTitle: string;
+  emptyStateMessage: React.ReactNode;
+  
+  // Context & Share flags
+  isWatchedContext?: boolean; 
+  shareData: (Anime | WatchedAnime)[];
+  isWatchedShare: boolean;
+}
+
+const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
+  title,
+  totalCount,
+  filteredData,
+  headerRightContent,
+  topBarContent,
+  emptyStateTitle,
+  emptyStateMessage,
+  isWatchedContext = false,
+  shareData,
+  isWatchedShare
+}) => {
+  const { 
+    watchedList, 
+    planToWatchList,
+    handleSaveReview, 
+    handlePlanToWatchToggle,
+    isScraping
+  } = useAnime();
+
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
+  const [selectedAnime, setSelectedAnime] = useState<Anime | WatchedAnime | null>(null);
+
+  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+  const paginatedData = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [filteredData, currentPage]);
+
+  const handleActionClick = useCallback((anime: Anime | WatchedAnime) => {
+    const existingWatched = watchedList.find(w => w.id === anime.id);
+    setSelectedAnime(existingWatched || anime);
+    setIsModalOpen(true);
+  }, [watchedList]);
+
+  useEffect(() => {
+    const headerElement = document.querySelector('.layout-scroll-anchor') || document.querySelector('.page-header');
+    if (headerElement) {
+      const yOffset = 5;
+      const y = headerElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [currentPage]);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filteredData.length]);
+
+  return (
+    <>
+      {topBarContent && (
+        <div className="layout-scroll-anchor">
+          {topBarContent}
+        </div>
+      )}
+
+      {/* Header section (only if title is provided, some pages might use FilterBar for title/header) */}
+      {!topBarContent && (
+        <div className="page-header layout-scroll-anchor" style={{ marginBottom: 'var(--spacing-6)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <h2 className="section-title" style={{ margin: 0 }}>{title} ({totalCount})</h2>
+            <button 
+              onClick={() => setIsShareModalOpen(true)}
+              style={{ 
+                padding: '8px 18px', 
+                fontSize: '1rem', 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                lineHeight: '1.2',
+                gap: '8px',
+                background: 'linear-gradient(135deg, #10b981, #059669)',
+                color: 'white',
+                border: 'none',
+                borderRadius: 'var(--radius-md)',
+                boxShadow: '0 4px 15px rgba(16, 185, 129, 0.3)',
+                cursor: 'pointer',
+                fontWeight: 600,
+                transition: 'all 0.2s'
+              }}
+              onMouseOver={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}
+            >
+              <ThumbsUp size={20} style={{ display: 'block', marginTop: '-2px' }} /> 推坑別人
+            </button>
+          </div>
+          {headerRightContent && (
+            <div style={{ display: 'flex', gap: '12px', flex: '1', maxWidth: '600px', alignItems: 'center' }}>
+              {headerRightContent}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Empty State vs Grid */}
+      {filteredData.length === 0 ? (
+        <div className="empty-state glass-panel fade-in" id="main-content">
+          <h2>{emptyStateTitle}</h2>
+          <p>{emptyStateMessage}</p>
+          {isScraping && (
+            <p style={{ color: 'var(--accent-color)', marginTop: 'var(--spacing-4)' }}>
+              <Loader2 className="animate-spin" size={24} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} /> 
+              正在努力抓取中，請不要關閉頁面...
+            </p>
+          )}
+        </div>
+      ) : (
+        <div id="main-content">
+          <div className="anime-grid">
+            {paginatedData.map(anime => (
+              <AnimeCard
+                key={anime.id}
+                anime={isWatchedContext ? anime : (watchedList.find(w => w.id === anime.id) || anime)}
+                isWatched={watchedList.some(w => w.id === anime.id)}
+                isPlanToWatch={planToWatchList.some(p => p.id === anime.id)}
+                onActionClick={handleActionClick}
+                onPlanToWatchToggle={handlePlanToWatchToggle}
+              />
+            ))}
+          </div>
+
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
+        </div>
+      )}
+
+      {/* Modals */}
+      <ReviewModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        anime={selectedAnime}
+        onSave={handleSaveReview}
+      />
+
+      {/* For AllAnimePage, the share button is in FilterBar, but we can still provide the modal here */}
+      <ShareModal
+        isOpen={isShareModalOpen}
+        onClose={() => setIsShareModalOpen(false)}
+        animes={shareData}
+        isWatched={isWatchedShare}
+      />
+    </>
+  );
+};
+
+export default AnimeListLayout;

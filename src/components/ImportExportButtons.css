@@ -97,3 +97,9 @@
   background: var(--bg-glass-hover);
 }
 
+.dropdown-item.active {
+  background: var(--bg-glass-active);
+  color: var(--accent-color);
+  font-weight: 600;
+}
+

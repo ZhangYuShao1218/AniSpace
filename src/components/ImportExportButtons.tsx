@@ -4,6 +4,7 @@ import { Upload, Download, ArrowRightLeft, Menu, Moon, Sun } from 'lucide-react'
 import Papa from 'papaparse';
 import type { WatchedAnime, Anime } from '../types';
 import { useAnime } from '../contexts/AnimeContext';
+import ThemeToggle from './ThemeToggle';
 
 const ImportExportButtons: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -231,14 +232,7 @@ const ImportExportButtons: React.FC = () => {
         
         {isSettingsOpen && (
           <div className="settings-dropdown-menu fade-in glass-panel">
-            <button className="dropdown-item">
-              <Moon size={16} />
-              深色模式
-            </button>
-            <button className="dropdown-item">
-              <Sun size={16} />
-              淺色模式
-            </button>
+            <ThemeToggle />
           </div>
         )}
       </div>

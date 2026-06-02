@@ -33,4 +33,4 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add public/anime_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: 🔄 Auto-update anime data" && git push)
+          git diff --staged --quiet || (git commit -m "chore: 🔄 Auto-update anime data" && git push)

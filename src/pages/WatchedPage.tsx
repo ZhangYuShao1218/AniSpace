@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import type { SortOption } from '../types';
 import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
-import { Search } from 'lucide-react';
+import SearchBar from '../components/SearchBar';
 
 const WatchedPage = () => {
   const { watchedList } = useAnime();
@@ -23,17 +23,12 @@ const WatchedPage = () => {
 
   const searchAndSort = (
     <>
-      <div className="search-box" style={{ flex: '1', position: 'relative' }}>
-        <Search size={20} className="search-icon" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-        <input 
-          type="text" 
-          placeholder="搜尋觀看紀錄..." 
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="search-input"
-          style={{ width: '100%', paddingLeft: '40px' }}
-        />
-      </div>
+      <SearchBar 
+        placeholder="搜尋觀看紀錄..." 
+        value={searchQuery} 
+        onChange={setSearchQuery} 
+        maxWidth="none"
+      />
       <select 
         value={sortBy} 
         onChange={(e) => setSortBy(e.target.value as SortOption)}

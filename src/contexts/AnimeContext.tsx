@@ -14,6 +14,40 @@ const getDbUrl = () => {
 };
 const REMOTE_DB_URL = getDbUrl();
 
+const OVERRIDE_DB_URL = REMOTE_DB_URL.replace('anime_data.json', 'custom_override.json');
+
+const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
+  const timestamp = new Date().getTime();
+  try {
+    const [baseRes, overrideRes] = await Promise.all([
+      fetch(`${REMOTE_DB_URL}?v=${timestamp}`),
+      fetch(`${OVERRIDE_DB_URL}?v=${timestamp}`).catch(() => null)
+    ]);
+    
+    let baseData: Anime[] = [];
+    if (baseRes.ok) baseData = await baseRes.json();
+    
+    let overrideData: Record<string, Partial<Anime>> = {};
+    if (overrideRes && overrideRes.ok) {
+      try {
+        overrideData = await overrideRes.json();
+      } catch (e) { }
+    }
+    
+    if (baseData && baseData.length > 0) {
+      return baseData.map((anime) => {
+        if (overrideData[anime.id]) {
+          return { ...anime, ...overrideData[anime.id] };
+        }
+        return anime;
+      });
+    }
+  } catch (err) {
+    console.error('Failed to fetch anime data:', err);
+  }
+  return null;
+};
+
 interface AnimeContextType {
   allAnime: Anime[];
   customAnimeList: Anime[];
@@ -73,14 +107,12 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
 
     if (loadedData.length === 0) {
-      fetch(`${REMOTE_DB_URL}?v=` + new Date().getTime())
-        .then(res => res.ok ? res.json() : [])
-        .then(data => {
-          if (data && data.length > 0) {
-            setRemoteAnime(data);
-            localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(data));
-          }
-        }).catch(() => {});
+      fetchAndMergeAnimeData().then(data => {
+        if (data && data.length > 0) {
+          setRemoteAnime(data);
+          localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(data));
+        }
+      });
     }
 
   }, []);
@@ -101,18 +133,13 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     setIsScraping(true);
     setScrapeProgress('正在從遠端同步最新資料庫...');
     try {
-      const res = await fetch(`${REMOTE_DB_URL}?v=` + new Date().getTime());
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.length > 0) {
-          setRemoteAnime(data);
-          localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(data));
-          setScrapeProgress('同步成功！');
-        } else {
-           setScrapeProgress('獲取資料為空...');
-        }
+      const data = await fetchAndMergeAnimeData();
+      if (data && data.length > 0) {
+        setRemoteAnime(data);
+        localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(data));
+        setScrapeProgress('同步成功！');
       } else {
-        setScrapeProgress('同步失敗，伺服器錯誤...');
+        setScrapeProgress('獲取資料為空或失敗...');
       }
     } catch (err) {
       console.error(err);

@@ -1,10 +1,10 @@
 :root {
   /* Color Palette - Premium Dark Theme */
   --bg-primary: #0a0a0c;
-  --bg-secondary: #141416;
-  --bg-glass: rgba(255, 255, 255, 0.03);
-  --bg-glass-hover: rgba(255, 255, 255, 0.08);
-  --bg-glass-active: rgba(255, 255, 255, 0.12);
+  --bg-secondary: #202024;
+  --bg-glass: rgba(255, 255, 255, 0.07);
+  --bg-glass-hover: rgba(255, 255, 255, 0.12);
+  --bg-glass-active: rgba(255, 255, 255, 0.18);
   
   --border-glass: rgba(255, 255, 255, 0.05);
   --border-glass-light: rgba(255, 255, 255, 0.15);
@@ -46,6 +46,24 @@
   --transition-fast: 0.15s ease-out;
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] {
+  /* Color Palette - Premium Light Theme (Glassmorphism style) */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.7);
+  --bg-glass-hover: rgba(255, 255, 255, 0.9);
+  --bg-glass-active: rgba(255, 255, 255, 1);
+  
+  --border-glass: rgba(0, 0, 0, 0.15);
+  --border-glass-light: rgba(0, 0, 0, 0.25);
+  
+  --text-primary: #1e293b;
+  --text-secondary: #334155;
+  --text-muted: #94a3b8;
+  
+  /* Accent colors remain identical based on user instruction */
 }
 
 * {
@@ -161,7 +179,7 @@ button {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-glass);
-  color: white;
+  color: var(--text-primary);
   padding: var(--spacing-3) var(--spacing-6);
   border-radius: var(--radius-full);
   font-weight: 500;
@@ -248,6 +266,11 @@ input:focus, select:focus, textarea:focus {
   background: var(--bg-glass-active);
   color: var(--text-primary);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .nav-tab.active {
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Animations */

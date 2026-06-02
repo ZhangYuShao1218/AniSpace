@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
-import { Search } from 'lucide-react';
+import SearchBar from '../components/SearchBar';
 
 const PlanToWatchPage = () => {
   const { planToWatchList } = useAnime();
@@ -14,19 +14,11 @@ const PlanToWatchPage = () => {
   }, [planToWatchList, searchQuery]);
 
   const searchBox = (
-    <div className="search-box glass-panel" style={{ flex: '1', maxWidth: '400px', padding: '0', background: 'transparent', border: 'none' }}>
-      <div style={{ position: 'relative' }}>
-        <Search size={20} className="search-icon" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-        <input 
-          type="text" 
-          placeholder="搜尋期待清單..." 
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="search-input"
-          style={{ width: '100%', paddingLeft: '40px' }}
-        />
-      </div>
-    </div>
+    <SearchBar 
+      placeholder="搜尋期待清單..." 
+      value={searchQuery} 
+      onChange={setSearchQuery} 
+    />
   );
 
   return (

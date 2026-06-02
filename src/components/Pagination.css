@@ -75,3 +75,9 @@
   letter-spacing: 2px;
   padding: 0 0.25rem;
 }
+
+[data-theme="light"] .page-num-btn.active {
+  background: rgba(99, 102, 241, 0.15);
+  color: #4f46e5;
+  border-color: rgba(99, 102, 241, 0.4);
+}

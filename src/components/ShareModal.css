@@ -16,8 +16,8 @@
 }
 
 .share-modal-content {
-  background: rgba(15, 23, 42, 0.98); /* Almost completely opaque dark blue background */
-  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-lg);
   padding: var(--spacing-6);
   width: 100%;
@@ -26,8 +26,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border-glass-light);
   animation: slideUpFade 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 .share-modal-close {
@@ -73,7 +75,7 @@
 
 .share-mode-btn {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   padding: var(--spacing-3);
   display: flex;
@@ -130,7 +132,7 @@
   visibility: hidden;
   transition: all 0.2s;
   z-index: 10;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-glass);
   text-align: center;
 }
 
@@ -146,7 +148,7 @@
   flex-direction: column;
   gap: var(--spacing-3);
   min-height: 0; /* important for flex scrolling */
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   background: rgba(0, 0, 0, 0.2);
   padding: var(--spacing-3);
@@ -169,7 +171,7 @@
 
 .share-search-input {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-glass);
   border-radius: var(--radius-sm);
   padding: var(--spacing-2) var(--spacing-3);
   color: var(--text-primary);
@@ -273,4 +275,37 @@
 .share-modal-actions {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] .share-mode-btn {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .share-mode-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .share-mode-btn.active {
+  background: rgba(217, 119, 6, 0.15); /* amber tint */
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+[data-theme="light"] .share-selection-area {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .share-anime-item {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .share-anime-item:hover:not(.disabled) {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .share-anime-item.selected {
+  background: rgba(217, 119, 6, 0.1);
+  border-color: var(--accent-color);
 }

@@ -237,24 +237,31 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           <hr style={{ border: 'none', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', margin: '12px 0 16px 0' }} />
 
           <div className="share-anime-list">
-            {filteredAnimes.map(anime => {
-              const isSelected = selectedIds.has(anime.id);
-              const isDisabled = !isSelected && mode !== 'SHEET' && selectedIds.size >= requiredCount;
-              
-              return (
-                <div 
-                  key={anime.id} 
-                  className={`share-anime-item ${isSelected ? 'selected' : ''} ${isDisabled ? 'disabled' : ''}`}
-                  onClick={() => !isDisabled && handleToggleSelect(anime.id)}
-                >
-                  <img src={anime.coverImage} alt={anime.titleZh} className="share-item-cover" />
-                  <span className="share-item-title">{anime.titleZh}</span>
-                  <div className="share-item-check">
-                    {isSelected && <Check size={14} />}
+            {filteredAnimes.length === 0 ? (
+              <div style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)', gridColumn: '1 / -1', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', justifyContent: 'center' }}>
+                <ImageIcon size={32} style={{ opacity: 0.3 }} />
+                <span style={{ fontSize: '0.95rem' }}>找不到符合的動畫，或目前尚未有動畫可供分享。</span>
+              </div>
+            ) : (
+              filteredAnimes.map(anime => {
+                const isSelected = selectedIds.has(anime.id);
+                const isDisabled = !isSelected && mode !== 'SHEET' && selectedIds.size >= requiredCount;
+                
+                return (
+                  <div 
+                    key={anime.id} 
+                    className={`share-anime-item ${isSelected ? 'selected' : ''} ${isDisabled ? 'disabled' : ''}`}
+                    onClick={() => !isDisabled && handleToggleSelect(anime.id)}
+                  >
+                    <img src={anime.coverImage} alt={anime.titleZh} className="share-item-cover" />
+                    <span className="share-item-title">{anime.titleZh}</span>
+                    <div className="share-item-check">
+                      {isSelected && <Check size={14} />}
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })
+            )}
           </div>
         </div>
 
@@ -267,7 +274,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
                 value={customTitle} 
                 onChange={e => setCustomTitle(e.target.value)} 
                 className="share-search-input" 
-                style={{ flex: '1', padding: '8px 12px', fontSize: '0.9rem', background: 'rgba(0,0,0,0.2)' }}
+                style={{ flex: '1', padding: '8px 12px', fontSize: '0.9rem' }}
                 placeholder="在此輸入專屬標題..."
               />
             </div>

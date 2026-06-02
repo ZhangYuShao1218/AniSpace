@@ -16,14 +16,14 @@
 .add-anime-modal {
   width: 90%;
   max-width: 500px;
-  background: rgba(30, 30, 35, 0.95);
-  border-radius: 16px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6), 0 0 0 1px var(--border-glass-light);
+  border: 1px solid var(--border-glass-light);
   animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   max-height: 90vh;
   overflow-y: auto;
@@ -47,14 +47,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid var(--border-glass);
   padding-bottom: 16px;
 }
 
 .add-anime-header h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -72,7 +72,7 @@
 
 .form-group label {
   font-size: 0.9rem;
-  color: #aaa;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
@@ -80,9 +80,9 @@
 .year-season-group select {
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(0,0,0,0.3);
-  color: #fff;
+  border: 1px solid var(--border-glass);
+  background: var(--bg-glass);
+  color: var(--text-primary);
   font-size: 1rem;
   transition: border-color 0.2s;
 }
@@ -90,12 +90,12 @@
 .form-group input:focus,
 .year-season-group select:focus {
   outline: none;
-  border-color: #646cff;
+  border-color: var(--accent-color);
 }
 
 .year-season-group select option {
-  background: #1e1e23;
-  color: #fff;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .year-season-group {
@@ -154,10 +154,10 @@
 
 .add-genre-btn {
   padding: 0 16px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
   border-radius: 8px;
-  color: #fff;
+  color: var(--text-primary);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -166,7 +166,7 @@
 }
 
 .add-genre-btn:hover:not(:disabled) {
-  background: rgba(100,108,255,0.4);
+  background: var(--bg-glass-hover);
 }
 
 .add-genre-btn:disabled {
@@ -185,12 +185,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: rgba(100,108,255,0.2);
-  border: 1px solid rgba(100,108,255,0.4);
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.4);
   padding: 6px 14px;
   border-radius: 16px;
   font-size: 0.85rem;
-  color: #e0e7ff;
+  color: var(--accent-color);
 }
 
 .remove-genre-btn {
@@ -225,7 +225,7 @@
 .submit-btn {
   margin-top: 10px;
   padding: 14px;
-  background: linear-gradient(135deg, #646cff 0%, #8b5cf6 100%);
+  background: var(--accent-gradient);
   border: none;
   border-radius: 8px;
   color: white;

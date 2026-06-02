@@ -220,8 +220,8 @@
 }
 
 .genre-tag {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-glass);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--text-primary);
   padding: 0.4rem 0.8rem;
   border-radius: var(--radius-full);
@@ -231,7 +231,7 @@
 }
 
 .genre-tag:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.22);
   transform: translateY(-2px);
 }
 
@@ -242,10 +242,47 @@
   box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
 }
 
-[data-theme="light"] .genre-tag.active {
+/* NSFW Tag */
+.genre-tag.nsfw {
+  border-color: rgba(255, 60, 60, 0.3);
+  color: #ef4444;
+  background: rgba(255, 60, 60, 0.15);
+  /* More prominent pink */
+}
+
+.genre-tag.nsfw:hover {
+  background: rgba(255, 50, 50, 0.35);
+}
+
+.genre-tag.nsfw.active,
+.genre-tag.nsfw.active:hover {
+  background: rgba(255, 50, 50, 0.3);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.7);
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.15);
+}
+
+[data-theme="light"] .genre-tag.active,
+[data-theme="light"] .genre-tag.active:hover {
   background: rgba(99, 102, 241, 0.15);
   color: #4f46e5;
   border-color: rgba(99, 102, 241, 0.4);
+}
+
+[data-theme="light"] .genre-tag.nsfw {
+  background: rgba(255, 50, 50, 0.15);
+  border-color: rgba(255, 50, 50, 0.5);
+}
+
+[data-theme="light"] .genre-tag.nsfw:hover {
+  background: rgba(255, 50, 50, 0.25);
+}
+
+[data-theme="light"] .genre-tag.nsfw.active,
+[data-theme="light"] .genre-tag.nsfw.active:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.6);
 }
 
 [data-theme="light"] .search-input,
@@ -255,8 +292,33 @@
 
 [data-theme="light"] .genre-tag {
   background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .genre-tag:hover {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.25);
 }
 
 [data-theme="light"] .quick-tab:hover {
   background: rgba(0, 0, 0, 0.05);
+}
+
+/* Vertical Divider */
+.vertical-divider {
+  width: 1.5px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 0 8px;
+  display: none;
+}
+
+[data-theme="light"] .vertical-divider {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .vertical-divider {
+    display: block;
+  }
 }

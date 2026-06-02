@@ -121,6 +121,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
           </div>
 
           <div className="filter-group right-aligned">
+            <div className="vertical-divider" />
             <ArrowDownAZ size={18} className="filter-icon" />
             <select 
               value={sortBy} 
@@ -155,9 +156,8 @@ const FilterBar: React.FC<FilterBarProps> = ({
             </button>
           ))}
           <button
-            className={`genre-tag ${selectedGenres.includes('福利') ? 'active' : ''}`}
+            className={`genre-tag nsfw ${selectedGenres.includes('福利') ? 'active' : ''}`}
             onClick={() => toggleGenre('福利')}
-            style={{ borderColor: 'rgba(255, 50, 50, 0.4)', color: selectedGenres.includes('福利') ? '#fff' : '#ff5555', backgroundColor: selectedGenres.includes('福利') ? '#ef4444' : 'rgba(255, 50, 50, 0.08)' }}
           >
             福利
           </button>

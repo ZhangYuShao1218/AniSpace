@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './ImportExportButtons.css';
-import { Upload, Download, ArrowRightLeft, Menu, Moon, Sun } from 'lucide-react';
+import { Upload, Download, ArrowRightLeft, Menu } from 'lucide-react';
 import Papa from 'papaparse';
 import type { WatchedAnime, Anime } from '../types';
 import { useAnime } from '../contexts/AnimeContext';

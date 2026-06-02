@@ -35,12 +35,14 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
     }
     
     if (baseData && baseData.length > 0) {
-      return baseData.map((anime) => {
+      const mergedData = baseData.map((anime) => {
         if (overrideData[anime.id]) {
           return { ...anime, ...overrideData[anime.id] };
         }
         return anime;
       });
+      // Filter out anime marked with show: false
+      return mergedData.filter((anime) => anime.show !== false && anime.show !== "false");
     }
   } catch (err) {
     console.error('Failed to fetch anime data:', err);

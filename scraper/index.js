@@ -201,9 +201,19 @@ async function main() {
         
         // Genres & Tags
         let genres = (item.genres || []).map(g => genreMap[g] || g);
-        const isAdult = item.tags?.some(t => t.name === 'Nudity' || t.name === 'Sexual Content') || genres.includes('福利');
+        const isAdult = item.tags?.some(t => (t.name === 'Nudity' || t.name === 'Sexual Content') && t.rank > 75) || genres.includes('福利');
         if (isAdult && !genres.includes('福利')) {
           genres.push('福利');
+        }
+
+        const isIsekai = item.tags?.some(t => t.name === 'Isekai' && t.rank >= 75);
+        if (isIsekai && !genres.includes('異世界')) {
+          genres.push('異世界');
+        }
+
+        const hasSuperPower = item.tags?.some(t => t.name === 'Super Power' && t.rank >= 75);
+        if (hasSuperPower && !genres.includes('超能力')) {
+          genres.push('超能力');
         }
 
         const seasonMap = { 'WINTER': '冬', 'SPRING': '春', 'SUMMER': '夏', 'FALL': '秋' };

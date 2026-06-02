@@ -49,7 +49,13 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     isScraping
   } = useAnime();
 
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const currentPath = window.location.pathname;
+  const isInitialMount = React.useRef(true);
+  
+  const [currentPage, setCurrentPage] = useState<number>(() => {
+    const saved = sessionStorage.getItem(`page_${currentPath}`);
+    return saved ? parseInt(saved, 10) : 1;
+  });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [selectedAnime, setSelectedAnime] = useState<Anime | WatchedAnime | null>(null);
@@ -79,11 +85,30 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
+    sessionStorage.setItem(`page_${currentPath}`, page.toString());
   };
 
+  const prevLengthRef = React.useRef(filteredData.length);
+
   useEffect(() => {
-    setCurrentPage(1);
-  }, [filteredData.length]);
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+    
+    // 當從遠端載入資料時（數量從 0 變為 N），不應重置頁碼，讓 sessionStorage 生效
+    if (prevLengthRef.current === 0 && filteredData.length > 0) {
+      prevLengthRef.current = filteredData.length;
+      return;
+    }
+
+    // 若是因為使用者切換篩選條件導致數量改變，則將頁碼重置為 1
+    if (prevLengthRef.current !== filteredData.length) {
+      setCurrentPage(1);
+      sessionStorage.setItem(`page_${currentPath}`, '1');
+      prevLengthRef.current = filteredData.length;
+    }
+  }, [filteredData.length, currentPath]);
 
   return (
     <>

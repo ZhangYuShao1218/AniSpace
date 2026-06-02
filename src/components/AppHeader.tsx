@@ -21,7 +21,12 @@ const AppHeader: React.FC = () => {
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <h1 className="app-title"><Layers className="header-icon" /> AniSpace 動畫庫</h1>
         </Link>
-        <p className="subtitle">為您記錄每一場感動</p>
+        <p className="subtitle" style={{ 
+          letterSpacing: '0.1em', 
+          fontStyle: 'italic', 
+          fontWeight: '500',
+          opacity: 0.8
+        }}>— 為您記錄每一場感動 —</p>
       </div>
 
       <div className="header-right">
@@ -51,7 +56,7 @@ const AppHeader: React.FC = () => {
 
         <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
           <button
-            className="btn-glass"
+            className="btn-glass settings-btn"
             onClick={handleSync}
             disabled={isScraping}
             style={{ fontSize: '0.85rem', padding: 'var(--spacing-2) var(--spacing-4)' }}

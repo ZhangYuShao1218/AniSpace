@@ -38,8 +38,8 @@
   width: 100%;
   padding: 0.5rem 1rem;
   padding: 0 40px 0 calc(var(--spacing-3) * 3 + 20px);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
   border-radius: 12px;
   color: var(--text-primary);
   height: 40px;
@@ -58,8 +58,8 @@
   right: 6px;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
   border-radius: 8px;
   color: var(--text-muted);
   width: 28px;
@@ -106,8 +106,8 @@
 }
 
 .filter-select {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
   color: var(--text-primary);
   min-width: 140px;
   max-width: 140px;
@@ -133,18 +133,18 @@
 .quick-tabs {
   display: flex;
   gap: 8px;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--bg-glass);
   padding: 4px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-glass);
 }
 
 .quick-tab {
   background: transparent;
   border: none;
-  color: var(--text-muted);
-  padding: 6px 12px;
-  border-radius: 8px;
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
@@ -154,7 +154,7 @@
 
 .quick-tab:hover {
   color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-glass-hover);
 }
 
 .quick-tab.active {
@@ -221,10 +221,10 @@
 
 .genre-tag {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-glass);
   color: var(--text-primary);
   padding: 0.4rem 0.8rem;
-  border-radius: 20px;
+  border-radius: var(--radius-full);
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.2s;
@@ -240,4 +240,23 @@
   color: #a5b4fc;
   border-color: rgba(99, 102, 241, 0.5);
   box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+}
+
+[data-theme="light"] .genre-tag.active {
+  background: rgba(99, 102, 241, 0.15);
+  color: #4f46e5;
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+[data-theme="light"] .search-input,
+[data-theme="light"] .filter-select {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .genre-tag {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .quick-tab:hover {
+  background: rgba(0, 0, 0, 0.05);
 }

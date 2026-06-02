@@ -4,6 +4,7 @@ import { Search, SlidersHorizontal, ArrowDownAZ, Plus } from 'lucide-react';
 import { getRelativeSeasonString } from '../utils/season';
 import AddAnimeModal from './AddAnimeModal';
 
+
 interface FilterBarProps {
   years: string[];
   genres: string[];
@@ -53,6 +54,8 @@ const FilterBar: React.FC<FilterBarProps> = ({
       onYearChange(target);
     }
   };
+
+
 
   return (
     <div className="filter-bar-container">
@@ -154,7 +157,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
           <button
             className={`genre-tag ${selectedGenres.includes('福利') ? 'active' : ''}`}
             onClick={() => toggleGenre('福利')}
-            style={{ borderColor: 'rgba(255, 50, 50, 0.4)', color: selectedGenres.includes('福利') ? '#fff' : '#ff5555', backgroundColor: selectedGenres.includes('福利') ? '#ff3333' : 'transparent' }}
+            style={{ borderColor: 'rgba(255, 50, 50, 0.4)', color: selectedGenres.includes('福利') ? '#fff' : '#ff5555', backgroundColor: selectedGenres.includes('福利') ? '#ef4444' : 'rgba(255, 50, 50, 0.08)' }}
           >
             福利
           </button>

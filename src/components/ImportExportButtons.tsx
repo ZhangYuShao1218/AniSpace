@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './ImportExportButtons.css';
-import { Upload, Download, ArrowRightLeft } from 'lucide-react';
+import { Upload, Download, ArrowRightLeft, Menu, Moon, Sun } from 'lucide-react';
 import Papa from 'papaparse';
 import type { WatchedAnime, Anime } from '../types';
 import { useAnime } from '../contexts/AnimeContext';
@@ -182,6 +182,19 @@ const ImportExportButtons: React.FC = () => {
     });
   };
 
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const settingsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (settingsRef.current && !settingsRef.current.contains(event.target as Node)) {
+        setIsSettingsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
     <div className="import-export-container">
       <input
@@ -205,6 +218,30 @@ const ImportExportButtons: React.FC = () => {
         <Download size={18} />
         <span className="btn-text">本地備份</span>
       </button>
+      
+      <div className="settings-dropdown-container" ref={settingsRef}>
+        <button 
+          className="btn-glass settings-btn" 
+          onClick={() => setIsSettingsOpen(!isSettingsOpen)} 
+          title="設定"
+        >
+          <Menu size={18} />
+          <span className="btn-text">設定</span>
+        </button>
+        
+        {isSettingsOpen && (
+          <div className="settings-dropdown-menu fade-in glass-panel">
+            <button className="dropdown-item">
+              <Moon size={16} />
+              深色模式
+            </button>
+            <button className="dropdown-item">
+              <Sun size={16} />
+              淺色模式
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

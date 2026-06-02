@@ -109,7 +109,16 @@ async function main() {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   const currentMonth = currentDate.getMonth() + 1; // 1-12
-  const END_YEAR = currentYear;
+  const END_YEAR = currentYear + 1; // Allows fetching next year if next season crosses year boundary
+
+  // Define season indices: 0=WINTER, 1=SPRING, 2=SUMMER, 3=FALL
+  const currentSeasonIndex = Math.floor((currentMonth - 1) / 3);
+  let nextSeasonYear = currentYear;
+  let nextSeasonIndex = currentSeasonIndex + 1;
+  if (nextSeasonIndex > 3) {
+    nextSeasonIndex = 0;
+    nextSeasonYear++;
+  }
 
   console.log('📦 正在下載 bangumi-data 字典檔...');
   let bgmMap = new Map(); // aniListId -> translation Object
@@ -129,14 +138,13 @@ async function main() {
   }
 
   for (let year = START_YEAR; year <= END_YEAR; year++) {
-    for (const currentSeason of ALL_SEASONS) {
-      // Time-Aware Filtering
-      if (year === currentYear) {
-        const seasonStartMonth = parseInt(SEASON_MONTH_MAP[currentSeason], 10);
-        if (currentMonth < seasonStartMonth) {
-          console.log(`⏭️ 跳過 ${year} ${currentSeason} (尚未開播)`);
-          continue;
-        }
+    for (let seasonIdx = 0; seasonIdx < 4; seasonIdx++) {
+      const currentSeason = ALL_SEASONS[seasonIdx];
+      
+      // Time-Aware Filtering: fetch up to NEXT season
+      if (year > nextSeasonYear || (year === nextSeasonYear && seasonIdx > nextSeasonIndex)) {
+        // Skip silently to avoid spamming console
+        continue;
       }
 
       console.log(`\n🔍 正在爬取: ${year} 年 ${currentSeason} 季...`);

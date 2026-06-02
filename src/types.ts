@@ -4,6 +4,7 @@ export interface Anime {
   coverImage: string;
   yearSeason: string;
   genres: string[];
+  show?: string | boolean;
 }
 
 export interface WatchedAnime extends Anime {

@@ -42,6 +42,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
 
   const prevSeason = getRelativeSeasonString(-1);
   const currentSeason = getRelativeSeasonString(0);
+  const nextSeason = getRelativeSeasonString(1);
 
   const handleYearSelect = (year: string) => {
     onYearChange(year);
@@ -116,6 +117,12 @@ const FilterBar: React.FC<FilterBarProps> = ({
                 onClick={() => handleSeasonToggle(currentSeason)}
               >
                 本季新番
+              </button>
+              <button 
+                className={`quick-tab ${selectedYear === nextSeason ? 'active' : ''}`} 
+                onClick={() => handleSeasonToggle(nextSeason)}
+              >
+                下季預告
               </button>
             </div>
           </div>

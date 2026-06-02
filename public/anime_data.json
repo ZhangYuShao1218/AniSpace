@@ -1,5 +1,549 @@
 [
   {
+    "id": "anilist-178789",
+    "titleZh": "無職轉生III～到了異世界就拿出真本事～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-Gam1EpzXlrUv.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "冒險",
+      "劇情",
+      "福利",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-135865",
+    "titleZh": "幼女戰記 第2季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-9b3Nn8nmGZIG.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-133007",
+    "titleZh": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133007-5gOUXDvzxy9S.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "魔法少女",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-185874",
+    "titleZh": "BLEACH 千年血戰篇-禍進譚-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-Oxopn5t9hZj1.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-196187",
+    "titleZh": "躲在超市後門抽菸的兩人",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-cXhET893v3Ag.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-187260",
+    "titleZh": "與妳相戀到生命盡頭",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187260-ZGbR8hF953lj.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-159309",
+    "titleZh": "女性向遊戲世界對路人角色很不友好2",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-RRmu7sh7bE5o.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "奇幻",
+      "機甲",
+      "愛情",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-103303",
+    "titleZh": "二十世紀電氣目錄",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103303-qWzNx2EaWT78.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "冒險",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-199111",
+    "titleZh": "GRANDBLUE 碧藍之海3",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "日常",
+      "運動"
+    ]
+  },
+  {
+    "id": "anilist-210031",
+    "titleZh": "相反的你和我 第2季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-KX5ojmxY7XtY.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-185542",
+    "titleZh": "骸骨騎士大人異世界冒險中 第2季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-utMlUqavmtZU.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-198946",
+    "titleZh": "Clevatess II -魔獸之王與虛假的勇者傳承-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-h4A2P7LYvotz.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-177699",
+    "titleZh": "攻殼機動隊THE GHOST IN THE SHELL",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177699-hnzc1CS5ZSM2.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "心理",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-194829",
+    "titleZh": "鄉下大叔成為劍聖 第2季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194829-aBGjk68756e4.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-200637",
+    "titleZh": "超超超超超喜歡你的100個女朋友 第3季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200637-eWk93doU70he.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "福利",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-182616",
+    "titleZh": "擅長逃跑的殿下 第二季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-ZOCgArw9cgqI.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險"
+    ]
+  },
+  {
+    "id": "anilist-187538",
+    "titleZh": "BLACK TORCH闇黑燈火",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-rPuvj09LMjdC.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "科幻",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-190569",
+    "titleZh": "穹廬下的魔女",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-xkFjq9u9IeSr.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情"
+    ]
+  },
+  {
+    "id": "anilist-180136",
+    "titleZh": "遭到流放的轉生重騎士憑藉遊戲知識大開無雙",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-128757",
+    "titleZh": "感謝對戰。 ～大小姐才不玩格鬥遊戲～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-0YhOnKG6aRs1.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情"
+    ]
+  },
+  {
+    "id": "anilist-209983",
+    "titleZh": "地獄模式 ～喜歡挑戰特殊成就的玩家在廢設定的異世界成為無雙～ 第2季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209983-goWdl95cx0cG.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-207141",
+    "titleZh": "尼古喵喵",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-188139",
+    "titleZh": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188139-5QWn8R7yvjY4.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-177637",
+    "titleZh": "さよなら ララ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-201514",
+    "titleZh": "才女のお世話 高嶺の花だらけな名門校で、學院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201514-BHAeWhSbcBrT.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-206521",
+    "titleZh": "The World is Dancing 世界在起舞",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206521-ecJuDgjth84C.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情"
+    ]
+  },
+  {
+    "id": "anilist-211711",
+    "titleZh": "僕のヒーローアカデミア I am a hero too",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211711-Oy6R5cmGHLCL.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-209961",
+    "titleZh": "死亡遊戱で飯を食う。44:CLOUDY BEACH",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209961-EKMAWTp299Kt.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "懸疑",
+      "驚悚"
+    ]
+  },
+  {
+    "id": "anilist-197715",
+    "titleZh": "LV999的村民",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197715-KLFLxU24U1uL.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-169583",
+    "titleZh": "轉學後班上的清純可愛美少女，竟是小時候玩在一起的哥兒們",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-t2r7Aw0EN5NY.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-197178",
+    "titleZh": "ONE PIECE HEROINES",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
+    "yearSeason": "2026 夏",
+    "genres": []
+  },
+  {
+    "id": "anilist-199748",
+    "titleZh": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199748-PAFk9pGSUmFL.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-208044",
+    "titleZh": "落第賢者の學院無雙～二度目の転生、Sランクチート魔術師冒険録～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208044-jweYvjbGKnCo.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-202269",
+    "titleZh": "與奔馳於透明之夜的你，談一場看不見的戀愛。",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-YLPqiMg2nsTr.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-204466",
+    "titleZh": "少女怪獸焦糖戀心",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-3aANb2egzoBk.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-211308",
+    "titleZh": "THE RIBBON HERO",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211308-DHKjEEttkfkT.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "奇幻",
+      "魔法少女"
+    ]
+  },
+  {
+    "id": "anilist-108992",
+    "titleZh": "MEBIUS DUST",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-aKpjh4JVayhd.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-186863",
+    "titleZh": "貓與龍",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186863-AO4efoB8HuzA.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-185692",
+    "titleZh": "魔法光源股份有限公司 第2季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "魔法少女"
+    ]
+  },
+  {
+    "id": "anilist-169582",
+    "titleZh": "最強廢渣皇子暗中活躍於帝位之爭 佯裝無能的SS級皇子背地支配王位繼承戰",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169582-CUvez7DjwPf7.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-207809",
+    "titleZh": "赤河戀影",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207809-cpS7CAyjN7iP.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-185875",
+    "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185875-wC9yup8velFS.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "奇幻",
+      "魔法少女"
+    ]
+  },
+  {
+    "id": "anilist-196218",
+    "titleZh": "領民0人スタートの辺境領主様",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-GuO62b9WnV43.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "奇幻",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-198409",
+    "titleZh": "世界最強後衛～迷宮國的新人探索者～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-199408",
+    "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-208754",
+    "titleZh": "Unanswered//butterfly: Sword Art Online",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險"
+    ]
+  },
+  {
+    "id": "anilist-199066",
+    "titleZh": "花織同學轉生後還是想幹架",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-192800",
+    "titleZh": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-qLTy3WwvfQFi.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-198709",
+    "titleZh": "奇招百出的維多利亞",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-KnZCqdH7fu3F.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-201667",
+    "titleZh": "文豪ストレイドッグス わん！２",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201667-5VIyzugCtcKs.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "日常",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-147105",
     "titleZh": "魔法帽的工作室",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147105-rwOX8qyUy8gV.jpg",

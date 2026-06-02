@@ -4,7 +4,7 @@ import FilterBar from '../components/FilterBar';
 import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
 import { NSFW_GENRES } from '../utils/constants';
-import { parseSeason } from '../utils/season';
+import { parseSeason, getRelativeSeasonString } from '../utils/season';
 
 const AllAnimePage = () => {
   const { allAnime } = useAnime();
@@ -38,7 +38,14 @@ const AllAnimePage = () => {
   }, [allAnime]);
 
   const filteredData = useMemo(() => {
+    const nextSeason = getRelativeSeasonString(1);
+
     let result = allAnime.filter(anime => {
+      // Hide next season anime by default UNLESS explicitly selected
+      if (selectedYear !== nextSeason && anime.yearSeason === nextSeason) {
+        return false;
+      }
+
       let matchYear = true;
       if (selectedYear) {
         if (selectedYear === '~ 2009') {

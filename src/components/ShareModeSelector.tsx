@@ -1,5 +1,5 @@
 import React from 'react';
-import { HelpCircle, FileSpreadsheet, ImageIcon } from 'lucide-react';
+import { HelpCircle, FileSpreadsheet, ImageIcon, Grid3X3 } from 'lucide-react';
 import type { ExportMode } from './ShareModal';
 
 interface ShareModeSelectorProps {
@@ -19,8 +19,8 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
 }) => {
   const handleModeChange = (newMode: ExportMode) => {
     if (isProcessing) return;
-    setMode(newMode);
-    if (newMode !== 'SHEET') {
+    if (newMode !== mode) {
+      setMode(newMode);
       onClearSelection();
     }
   };
@@ -33,9 +33,9 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
         onClick={() => handleModeChange('SHEET')}
       >
         <FileSpreadsheet size={18} />
-        <span>A. 試算表輸出</span>
+        <span>A. 試算表</span>
         <div className="share-tooltip-container">
-          <HelpCircle size={14} className="help-icon" />
+          <HelpCircle size={16} className="help-icon" />
           <div className="share-tooltip">完整輸出所有資料至 Google Drive 試算表。</div>
         </div>
       </div>
@@ -46,9 +46,9 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
         onClick={() => handleModeChange('GRID_4')}
       >
         <ImageIcon size={18} />
-        <span>B. 4格輸出</span>
+        <span>B. 4格圖片</span>
         <div className="share-tooltip-container">
-          <HelpCircle size={14} className="help-icon" />
+          <HelpCircle size={16} className="help-icon" />
           <div className="share-tooltip">挑選 4 部動畫產生圖片，<br/>並和好友一同分享你的神作</div>
         </div>
       </div>
@@ -59,9 +59,9 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
         onClick={() => handleModeChange('GRID_9')}
       >
         <ImageIcon size={18} />
-        <span>C. 9格輸出</span>
+        <span>C. 9格圖片</span>
         <div className="share-tooltip-container">
-          <HelpCircle size={14} className="help-icon" />
+          <HelpCircle size={16} className="help-icon" />
           <div className="share-tooltip">挑選 9 部動畫產生圖片，<br/>並和好友一同分享你的神作</div>
         </div>
       </div>
@@ -73,13 +73,26 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
           onClick={() => handleModeChange('GRID_16')}
         >
           <ImageIcon size={18} />
-          <span>D. 16格輸出</span>
+          <span>D. 16格圖片</span>
           <div className="share-tooltip-container">
-            <HelpCircle size={14} className="help-icon" />
+            <HelpCircle size={16} className="help-icon" />
             <div className="share-tooltip">挑選 16 部動畫產生圖片，<br/>並和好友一同分享你的神作</div>
           </div>
         </div>
       )}
+
+      <div 
+        className={`share-mode-btn ${mode === 'GRID_25' ? 'active' : ''} ${isProcessing ? 'disabled' : ''}`} 
+        style={{ opacity: isProcessing ? 0.5 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }} 
+        onClick={() => handleModeChange('GRID_25')}
+      >
+        <Grid3X3 size={18} />
+        <span>{isWatched ? 'D.' : 'E.'} 25格賓果</span>
+        <div className="share-tooltip-container">
+          <HelpCircle size={16} className="help-icon" />
+          <div className="share-tooltip">生成專屬動畫清單，<br/>問問朋友們看過幾部！</div>
+        </div>
+      </div>
     </div>
   );
 });

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
-import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2 } from 'lucide-react';
+import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2, Search, Shuffle, ImageIcon } from 'lucide-react';
 import { toPng } from 'html-to-image';
 import type { Anime, WatchedAnime } from '../types';
 import { ShareImageGenerator } from './ShareImageGenerator';
@@ -10,7 +10,7 @@ import { ShareModeSelector } from './ShareModeSelector';
 import { ShareList } from './ShareList';
 import './ShareModal.css';
 
-export type ExportMode = 'SHEET' | 'GRID_4' | 'GRID_9' | 'GRID_16';
+export type ExportMode = 'SHEET' | 'GRID_4' | 'GRID_9' | 'GRID_16' | 'GRID_25';
 
 interface ShareModalProps {
   isOpen: boolean;
@@ -33,6 +33,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
     if (mode === 'GRID_4') return 4;
     if (mode === 'GRID_9') return 9;
     if (mode === 'GRID_16') return 16;
+    if (mode === 'GRID_25') return 25;
     return 0;
   }, [mode]);
 
@@ -72,6 +73,12 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
     } else {
       setSelectedIds(new Set(animes.map(a => a.id)));
     }
+  };
+
+  const handleRandomSelect = () => {
+    const shuffled = [...animes].sort(() => 0.5 - Math.random());
+    const randomIds = shuffled.slice(0, requiredCount).map(a => a.id);
+    setSelectedIds(new Set(randomIds));
   };
 
   if (!isOpen) return null;
@@ -185,28 +192,32 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           />
 
           <div className="share-selection-area">
-            <div className="selection-header" style={{ display: 'flex', alignItems: 'flex-end', gap: '12px', justifyContent: 'space-between' }}>
+            <div className="selection-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'space-between', minHeight: '40px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                 <h3 style={{ margin: 0 }}>
-                  分享動畫 ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
+                  {mode === 'GRID_25' ? '動畫賓果' : mode === 'SHEET' ? '動畫清單' : '分享動畫'} ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
                 </h3>
                 {mode === 'SHEET' && (
                   <div 
+                    className="share-action-btn"
                     onClick={handleSelectAll}
-                    style={{ 
-                      display: 'flex', alignItems: 'center', gap: '6px', 
-                      cursor: 'pointer', fontSize: '0.95rem', color: 'var(--text-muted)',
-                      transition: 'color 0.2s'
-                    }}
-                    onMouseEnter={e => e.currentTarget.style.color = '#fff'}
-                    onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
                   >
                     {selectedIds.size === animes.length && animes.length > 0 ? (
-                      <CheckCircle2 size={20} color="#818cf8" fill="rgba(129, 140, 248, 0.2)" />
+                      <CheckCircle2 size={20} className="select-all-icon-checked" />
                     ) : (
-                      <Circle size={20} color="rgba(255, 255, 255, 0.3)" />
+                      <Circle size={20} color="currentColor" />
                     )}
-                    <span style={{ fontWeight: 600 }}>全選</span>
+                    <span>全選</span>
+                  </div>
+                )}
+                {mode === 'GRID_25' && (
+                  <div 
+                    className="random-select-btn"
+                    onClick={handleRandomSelect}
+                    title="隨機抽選動畫來填滿賓果卡"
+                  >
+                    <Shuffle size={16} />
+                    <span>隨機挑選</span>
                   </div>
                 )}
               </div>
@@ -219,7 +230,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
                 style={{ flex: '1', maxWidth: '200px' }}
               />
             </div>
-            <hr style={{ border: 'none', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', margin: '12px 0 16px 0' }} />
+            <hr className="share-divider" />
 
             <div className="share-anime-list">
               <ShareList 
@@ -267,7 +278,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           ref={imageGeneratorRef}
           animes={selectedAnimes} 
           isWatched={isWatched} 
-          gridCount={requiredCount as 4|9|16} 
+          gridCount={requiredCount as 4|9|16|25} 
           customTitle={customTitle}
         />
       )}

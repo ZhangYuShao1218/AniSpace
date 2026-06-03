@@ -62,7 +62,7 @@ const AppHeader: React.FC = () => {
             style={{ fontSize: '0.85rem', padding: 'var(--spacing-2) var(--spacing-4)' }}
           >
             {isScraping ? <Loader2 className="animate-spin" size={16} /> : <DownloadCloud size={16} />}
-            {isScraping ? scrapeProgress : '同步最新動漫'}
+            {isScraping ? scrapeProgress : '同步最新動畫'}
           </button>
           <ImportExportButtons />
         </div>

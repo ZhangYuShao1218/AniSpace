@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Menu, Trash2, AlertTriangle } from 'lucide-react';
+import { Menu, Trash2, AlertTriangle, Languages, Check } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import ConfirmModal from './ConfirmModal';
 import { useGoogleSync } from '../contexts/GoogleSyncContext';
 import { useAnime } from '../contexts/AnimeContext';
+import { useLanguage, type Language } from '../contexts/LanguageContext';
 
 const SettingsDropdown: React.FC = () => {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -11,6 +12,7 @@ const SettingsDropdown: React.FC = () => {
   
   const { isAutoSyncEnabled, toggleAutoSync } = useGoogleSync();
   const { handleClearRecords, handleClearAllData } = useAnime();
+  const { language, setLanguage } = useLanguage();
   
   const [isClearRecordsModalOpen, setIsClearRecordsModalOpen] = useState(false);
   const [isClearAllModalOpen, setIsClearAllModalOpen] = useState(false);
@@ -40,40 +42,58 @@ const SettingsDropdown: React.FC = () => {
         <div className="settings-dropdown-menu fade-in glass-panel">
           <ThemeToggle />
           
+          <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '6px', padding: '0 10px', marginBottom: '4px' }}>
+            <span style={{ fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: 500, letterSpacing: '0.02em' }}>自動備份</span>
+            <label style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer', position: 'relative' }}>
+              <input 
+                type="checkbox" 
+                checked={isAutoSyncEnabled} 
+                onChange={toggleAutoSync}
+                style={{ opacity: 0, position: 'absolute', width: '100%', height: '100%', cursor: 'pointer', zIndex: 2, margin: 0 }}
+              />
+              <div style={{
+                width: '38px',
+                height: '22px',
+                backgroundColor: isAutoSyncEnabled ? 'var(--accent-color)' : 'rgba(255,255,255,0.1)',
+                borderRadius: '20px',
+                position: 'relative',
+                transition: 'background-color 0.3s',
+                border: '1px solid var(--border-glass-light)'
+              }}>
+                <div style={{
+                  width: '16px',
+                  height: '16px',
+                  backgroundColor: 'white',
+                  borderRadius: '50%',
+                  position: 'absolute',
+                  top: '2px',
+                  left: isAutoSyncEnabled ? '18px' : '2px',
+                  transition: 'left 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.3)'
+                }}></div>
+              </div>
+            </label>
+          </div>
+
           <>
             <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '6px', padding: '0 10px', marginBottom: '4px' }}>
-              <span style={{ fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: 500, letterSpacing: '0.02em' }}>自動備份</span>
-              <label style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer', position: 'relative' }}>
-                <input 
-                  type="checkbox" 
-                  checked={isAutoSyncEnabled} 
-                  onChange={toggleAutoSync}
-                  style={{ opacity: 0, position: 'absolute', width: '100%', height: '100%', cursor: 'pointer', zIndex: 2, margin: 0 }}
-                />
-                <div style={{
-                  width: '38px',
-                  height: '22px',
-                  backgroundColor: isAutoSyncEnabled ? 'var(--accent-color)' : 'rgba(255,255,255,0.1)',
-                  borderRadius: '20px',
-                  position: 'relative',
-                  transition: 'background-color 0.3s',
-                  border: '1px solid var(--border-glass-light)'
-                }}>
-                  <div style={{
-                    width: '16px',
-                    height: '16px',
-                    backgroundColor: 'white',
-                    borderRadius: '50%',
-                    position: 'absolute',
-                    top: '2px',
-                    left: isAutoSyncEnabled ? '18px' : '2px',
-                    transition: 'left 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-                    boxShadow: '0 1px 3px rgba(0,0,0,0.3)'
-                  }}></div>
-                </div>
-              </label>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '4px', padding: '4px 10px', color: 'var(--text-secondary)' }}>
+              <Languages size={16} />
+              <span style={{ fontSize: '0.95rem', fontWeight: 500, letterSpacing: '0.02em' }}>Language</span>
             </div>
+            <button className="dropdown-item lang-item" onClick={() => setLanguage('zh-TW')} style={{ fontSize: '0.85rem' }}>
+              <span style={{ width: '20px', display: 'inline-flex', justifyContent: 'center' }}>{language === 'zh-TW' && <Check size={14} color="var(--accent-color)" />}</span>
+              繁體中文
+            </button>
+            <button className="dropdown-item lang-item" onClick={() => setLanguage('en')} style={{ fontSize: '0.85rem' }}>
+              <span style={{ width: '20px', display: 'inline-flex', justifyContent: 'center' }}>{language === 'en' && <Check size={14} color="var(--accent-color)" />}</span>
+              English
+            </button>
+            <button className="dropdown-item lang-item" onClick={() => setLanguage('ja')} style={{ fontSize: '0.85rem' }}>
+              <span style={{ width: '20px', display: 'inline-flex', justifyContent: 'center' }}>{language === 'ja' && <Check size={14} color="var(--accent-color)" />}</span>
+              日本語
+            </button>
             <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
             <button 
               className="dropdown-item danger-item" 

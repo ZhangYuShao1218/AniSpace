@@ -8,6 +8,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google'
 import { GoogleSyncProvider } from './contexts/GoogleSyncContext'
 import { AlertProvider } from './contexts/AlertContext'
 import { ThemeProvider } from './contexts/ThemeContext'
+import { LanguageProvider } from './contexts/LanguageContext'
 
 const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
 
@@ -16,13 +17,15 @@ createRoot(document.getElementById('root')!).render(
     <GoogleOAuthProvider clientId={clientId}>
       <BrowserRouter>
         <ThemeProvider>
-          <AnimeProvider>
-            <AlertProvider>
-              <GoogleSyncProvider>
-                <App />
-              </GoogleSyncProvider>
-            </AlertProvider>
-          </AnimeProvider>
+          <LanguageProvider>
+            <AnimeProvider>
+              <AlertProvider>
+                <GoogleSyncProvider>
+                  <App />
+                </GoogleSyncProvider>
+              </AlertProvider>
+            </AnimeProvider>
+          </LanguageProvider>
         </ThemeProvider>
       </BrowserRouter>
     </GoogleOAuthProvider>

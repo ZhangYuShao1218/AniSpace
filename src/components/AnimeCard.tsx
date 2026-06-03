@@ -4,6 +4,7 @@ import './AnimeCard.css';
 import type { Anime, WatchedAnime } from '../types';
 import { Star, Heart, Edit2, Check, X, Trash2 } from 'lucide-react';
 import { useAnime } from '../contexts/AnimeContext';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface AnimeCardProps {
   anime: Anime | WatchedAnime;
@@ -27,6 +28,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   onPlanToWatchToggle,
 }) => {
   const { setCorrection, getCorrectedTitle, handleRemoveReview } = useAnime();
+  const { language } = useLanguage();
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [newTitle, setNewTitle] = useState('');
   const [isConfirmingRemove, setIsConfirmingRemove] = useState(false);
@@ -34,7 +36,18 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   const [popoverPos, setPopoverPos] = useState<PopoverPos>({ top: 0, left: 0, width: 0 });
   const cardRef = useRef<HTMLDivElement>(null);
 
-  const displayTitle = getCorrectedTitle(anime.titleZh);
+  let baseTitle = anime.titleZh;
+  if (language === 'en' && anime.titleEn) {
+    baseTitle = anime.titleEn;
+  } else if (language === 'ja' && anime.titleJa) {
+    baseTitle = anime.titleJa;
+  }
+  
+  const displayTitle = getCorrectedTitle(baseTitle);
+
+  const displayCover = language !== 'zh-TW' && anime.coverImageAniList 
+    ? anime.coverImageAniList 
+    : anime.coverImage;
 
   const handleTitleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -120,7 +133,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       </button>
 
       <div className="card-image-container">
-        <img src={anime.coverImage} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />
+        <img src={displayCover} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />
 
         {isWatched && (anime as WatchedAnime).userRating && (
           <div className="rating-badge">

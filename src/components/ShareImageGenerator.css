@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+/* Light Mode Overrides */
+[data-theme="light"] .share-generator-container {
+  background: #fcf9f2;
+  color: #4a3f35;
+}
+
 .share-header {
   text-align: center;
   margin-bottom: 40px;
@@ -22,11 +28,22 @@
   letter-spacing: 2px;
 }
 
+[data-theme="light"] .share-header h2 {
+  background: linear-gradient(135deg, #f59e0b, #d97706, #b45309);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .share-brand {
   font-size: 26px;
   color: #c084fc;
   font-weight: 700;
   letter-spacing: 4px;
+}
+
+[data-theme="light"] .share-brand {
+  color: #3b3026; /* Darker brown/grey */
+  opacity: 0.75;
 }
 
 .share-grid {
@@ -84,6 +101,10 @@
   overflow: hidden;
   text-shadow: 0 3px 6px rgba(0,0,0,0.9);
   line-height: 1.3;
+}
+
+[data-theme="light"] .share-title {
+  color: white; /* Keep white for the image overlay */
 }
 
 .share-watched-details {

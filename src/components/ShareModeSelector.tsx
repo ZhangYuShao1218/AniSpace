@@ -1,5 +1,5 @@
 import React from 'react';
-import { HelpCircle, FileSpreadsheet, ImageIcon, Grid3X3 } from 'lucide-react';
+import { HelpCircle, FileSpreadsheet, ImageIcon } from 'lucide-react';
 import type { ExportMode } from './ShareModal';
 
 interface ShareModeSelectorProps {
@@ -86,7 +86,7 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
         style={{ opacity: isProcessing ? 0.5 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }} 
         onClick={() => handleModeChange('GRID_25')}
       >
-        <Grid3X3 size={18} />
+        <span style={{ fontSize: '1.1rem', marginRight: '4px' }}>🔲</span>
         <span>{isWatched ? 'D.' : 'E.'} 25格賓果</span>
         <div className="share-tooltip-container">
           <HelpCircle size={16} className="help-icon" />

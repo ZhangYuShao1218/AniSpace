@@ -4,6 +4,7 @@ import { Upload, Download, ArrowRightLeft, Menu } from 'lucide-react';
 import Papa from 'papaparse';
 import type { WatchedAnime, Anime } from '../types';
 import { useAnime } from '../contexts/AnimeContext';
+import { useGoogleSync } from '../contexts/GoogleSyncContext';
 import ThemeToggle from './ThemeToggle';
 
 const ImportExportButtons: React.FC = () => {
@@ -19,6 +20,8 @@ const ImportExportButtons: React.FC = () => {
     handleImportCustomAnime,
     handleImportCorrections
   } = useAnime();
+
+  const { isAutoSyncEnabled, toggleAutoSync, isLoggedIn } = useGoogleSync();
 
   const handleExport = () => {
     const exportData: any[] = [];
@@ -233,6 +236,44 @@ const ImportExportButtons: React.FC = () => {
         {isSettingsOpen && (
           <div className="settings-dropdown-menu fade-in glass-panel">
             <ThemeToggle />
+            
+            {isLoggedIn && (
+              <>
+                <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '6px', padding: '0 10px', marginBottom: '4px' }}>
+                <span style={{ fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: 500, letterSpacing: '0.02em' }}>自動備份</span>
+                <label style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer', position: 'relative' }}>
+                  <input 
+                    type="checkbox" 
+                    checked={isAutoSyncEnabled} 
+                    onChange={toggleAutoSync}
+                    style={{ opacity: 0, position: 'absolute', width: '100%', height: '100%', cursor: 'pointer', zIndex: 2, margin: 0 }}
+                  />
+                  <div style={{
+                    width: '38px',
+                    height: '22px',
+                    backgroundColor: isAutoSyncEnabled ? 'var(--accent-color)' : 'rgba(255,255,255,0.1)',
+                    borderRadius: '20px',
+                    position: 'relative',
+                    transition: 'background-color 0.3s',
+                    border: '1px solid var(--border-glass-light)'
+                  }}>
+                    <div style={{
+                      width: '16px',
+                      height: '16px',
+                      backgroundColor: 'white',
+                      borderRadius: '50%',
+                      position: 'absolute',
+                      top: '2px',
+                      left: isAutoSyncEnabled ? '18px' : '2px',
+                      transition: 'left 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+                      boxShadow: '0 1px 3px rgba(0,0,0,0.3)'
+                    }}></div>
+                  </div>
+                </label>
+              </div>
+              </>
+            )}
           </div>
         )}
       </div>

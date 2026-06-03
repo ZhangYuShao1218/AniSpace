@@ -1,5 +1,26 @@
 import React from 'react';
-import { HelpCircle, FileSpreadsheet, ImageIcon, Grid3X3 } from 'lucide-react';
+import { HelpCircle, FileSpreadsheet, ImageIcon } from 'lucide-react';
+
+const Grid3X3Icon = ({ size = 24, className = '' }: { size?: number | string, className?: string }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className={className}
+  >
+    <rect width="18" height="18" x="3" y="3" rx="2" />
+    <path d="M3 9h18" />
+    <path d="M3 15h18" />
+    <path d="M9 3v18" />
+    <path d="M15 3v18" />
+  </svg>
+);
 import type { ExportMode } from './ShareModal';
 
 interface ShareModeSelectorProps {
@@ -86,7 +107,7 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
         style={{ opacity: isProcessing ? 0.5 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }} 
         onClick={() => handleModeChange('GRID_25')}
       >
-        <Grid3X3 size={18} />
+        <Grid3X3Icon size={18} />
         <span>{isWatched ? 'D.' : 'E.'} 25格賓果</span>
         <div className="share-tooltip-container">
           <HelpCircle size={16} className="help-icon" />

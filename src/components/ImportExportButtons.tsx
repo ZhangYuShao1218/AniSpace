@@ -6,6 +6,8 @@ import type { WatchedAnime, Anime } from '../types';
 import { useAnime } from '../contexts/AnimeContext';
 import { useGoogleSync } from '../contexts/GoogleSyncContext';
 import ThemeToggle from './ThemeToggle';
+import ConfirmModal from './ConfirmModal';
+import { Trash2, AlertTriangle } from 'lucide-react';
 
 const ImportExportButtons: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -18,10 +20,14 @@ const ImportExportButtons: React.FC = () => {
     handleImport,
     handleImportPlan,
     handleImportCustomAnime,
-    handleImportCorrections
+    handleImportCorrections,
+    handleClearRecords,
+    handleClearAllData
   } = useAnime();
 
   const { isAutoSyncEnabled, toggleAutoSync, isLoggedIn } = useGoogleSync();
+  const [isClearRecordsModalOpen, setIsClearRecordsModalOpen] = useState(false);
+  const [isClearAllModalOpen, setIsClearAllModalOpen] = useState(false);
 
   const handleExport = () => {
     const exportData: any[] = [];
@@ -237,10 +243,9 @@ const ImportExportButtons: React.FC = () => {
           <div className="settings-dropdown-menu fade-in glass-panel">
             <ThemeToggle />
             
-            {isLoggedIn && (
-              <>
-                <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '6px', padding: '0 10px', marginBottom: '4px' }}>
+            <>
+              <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '6px', padding: '0 10px', marginBottom: '4px' }}>
                 <span style={{ fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: 500, letterSpacing: '0.02em' }}>自動備份</span>
                 <label style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer', position: 'relative' }}>
                   <input 
@@ -272,11 +277,68 @@ const ImportExportButtons: React.FC = () => {
                   </div>
                 </label>
               </div>
-              </>
-            )}
+              <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+              <button 
+                className="dropdown-item" 
+                style={{ fontSize: '0.95rem', fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
+                onClick={() => setIsClearRecordsModalOpen(true)}
+              >
+                <Trash2 size={16} className="danger-icon" />
+                清除動畫紀錄
+              </button>
+              <button 
+                className="dropdown-item" 
+                style={{ fontSize: '0.95rem', fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
+                onClick={() => setIsClearAllModalOpen(true)}
+              >
+                <AlertTriangle size={16} className="danger-icon" />
+                清除所有資料
+              </button>
+            </>
           </div>
         )}
       </div>
+
+      <ConfirmModal
+        isOpen={isClearRecordsModalOpen}
+        onClose={() => setIsClearRecordsModalOpen(false)}
+        onConfirm={() => {
+          handleClearRecords();
+          setIsSettingsOpen(false);
+        }}
+        title="清除動畫紀錄"
+        message={
+          <>
+            <p>確定要清除動畫紀錄嗎？這項操作將徹底清空：</p>
+            <ul className="confirm-list">
+              <li>動畫紀錄</li>
+              <li>期待動畫</li>
+            </ul>
+            <p>您的期待動畫及動畫紀錄將會全部清空，可以重新添加喜愛的動畫。</p>
+          </>
+        }
+      />
+      <ConfirmModal
+        isOpen={isClearAllModalOpen}
+        onClose={() => setIsClearAllModalOpen(false)}
+        onConfirm={() => {
+          handleClearAllData();
+          setIsSettingsOpen(false);
+        }}
+        title="清除所有資料"
+        message={
+          <>
+            <p>確定要清除所有資料嗎？這項操作將徹底清空：</p>
+            <ul className="confirm-list">
+              <li>動畫紀錄</li>
+              <li>期待動畫</li>
+              <li>自行新增的動畫</li>
+              <li>自訂的動畫名稱</li>
+            </ul>
+            <p>您的系統將完全恢復為預設的乾淨狀態。</p>
+          </>
+        }
+      />
     </div>
   );
 };

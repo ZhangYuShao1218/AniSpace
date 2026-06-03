@@ -127,3 +127,21 @@
   color: #047857;
 }
 
+.danger-icon {
+  color: rgba(239, 68, 68, 0.8);
+  transition: color 0.2s;
+}
+
+.dropdown-item:hover .danger-icon {
+  color: #ef4444;
+}
+
+.dropdown-item:has(.danger-icon):hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+[data-theme="light"] .dropdown-item:has(.danger-icon):hover {
+  background: rgba(239, 68, 68, 0.08);
+}
+

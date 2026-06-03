@@ -271,21 +271,21 @@
     ]
   },
   {
-    "id": "anilist-206521",
-    "titleZh": "The World is Dancing 世界在起舞",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206521-ecJuDgjth84C.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情"
-    ]
-  },
-  {
     "id": "anilist-211711",
     "titleZh": "僕のヒーローアカデミア I am a hero too",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211711-Oy6R5cmGHLCL.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "超能力"
+    ]
+  },
+  {
+    "id": "anilist-206521",
+    "titleZh": "The World is Dancing 世界在起舞",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206521-ecJuDgjth84C.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情"
     ]
   },
   {
@@ -364,7 +364,7 @@
   {
     "id": "anilist-204466",
     "titleZh": "少女怪獸焦糖戀心",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-3aANb2egzoBk.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-vXMvIs4VOoQd.png",
     "yearSeason": "2026 夏",
     "genres": [
       "喜劇",
@@ -429,6 +429,20 @@
     ]
   },
   {
+    "id": "anilist-196218",
+    "titleZh": "領民0人スタートの辺境領主様",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-GuO62b9WnV43.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "奇幻",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
     "id": "anilist-207809",
     "titleZh": "赤河戀影",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207809-cpS7CAyjN7iP.jpg",
@@ -452,20 +466,6 @@
       "劇情",
       "奇幻",
       "魔法少女"
-    ]
-  },
-  {
-    "id": "anilist-196218",
-    "titleZh": "領民0人スタートの辺境領主様",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-GuO62b9WnV43.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "喜劇",
-      "劇情",
-      "奇幻",
-      "愛情",
-      "日常"
     ]
   },
   {
@@ -965,6 +965,15 @@
     ]
   },
   {
+    "id": "anilist-196974",
+    "titleZh": "黑貓與魔女的教室",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
+    "yearSeason": "2026 春",
+    "genres": [
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-195268",
     "titleZh": "成為悲劇元兇的最強異端，最後頭目女王為了人民犧牲奉獻 第二季",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/56/0000146056.JPG",
@@ -973,15 +982,6 @@
       "喜劇",
       "奇幻",
       "愛情"
-    ]
-  },
-  {
-    "id": "anilist-196974",
-    "titleZh": "黑貓與魔女的教室",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
-    "yearSeason": "2026 春",
-    "genres": [
-      "奇幻"
     ]
   },
   {
@@ -2189,15 +2189,6 @@
     ]
   },
   {
-    "id": "anilist-162890",
-    "titleZh": "3年Z班銀八老師",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000131066.JPG",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "喜劇"
-    ]
-  },
-  {
     "id": "anilist-193968",
     "titleZh": "Let's Play 充滿挑戰的人生",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/04/0000147104.JPG",
@@ -2206,6 +2197,15 @@
       "喜劇",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-162890",
+    "titleZh": "3年Z班銀八老師",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000131066.JPG",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "喜劇"
     ]
   },
   {
@@ -10073,17 +10073,6 @@
     ]
   },
   {
-    "id": "anilist-117074",
-    "titleZh": "劇場版 異世界四重奏 ～Another World～",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/47/0000118547.JPG",
-    "yearSeason": "2022 春",
-    "genres": [
-      "喜劇",
-      "奇幻",
-      "異世界"
-    ]
-  },
-  {
     "id": "anilist-138425",
     "titleZh": "劇場版 擅長捉弄人的高木同學",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/82/0000123482.JPG",
@@ -10092,6 +10081,17 @@
       "喜劇",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-117074",
+    "titleZh": "劇場版 異世界四重奏 ～Another World～",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/47/0000118547.JPG",
+    "yearSeason": "2022 春",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "異世界"
     ]
   },
   {
@@ -12009,13 +12009,12 @@
     ]
   },
   {
-    "id": "anilist-116676",
-    "titleZh": "劇場版 黃金拼圖 謝謝你!!",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116676-SmbBAKOS6XUw.jpg",
+    "id": "anilist-125838",
+    "titleZh": "海岬的迷途之家",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/74/0000114474.JPG",
     "yearSeason": "2021 夏",
     "genres": [
-      "喜劇",
-      "日常"
+      "奇幻"
     ]
   },
   {

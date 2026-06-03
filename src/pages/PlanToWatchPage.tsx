@@ -1,11 +1,12 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
 import SearchBar from '../components/SearchBar';
+import { useUrlParams } from '../hooks/useUrlParams';
 
 const PlanToWatchPage = () => {
   const { planToWatchList } = useAnime();
-  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [searchQuery, setSearchQuery] = useUrlParams<string>('search', '');
 
   const filteredData = useMemo(() => {
     return planToWatchList.filter(anime => 

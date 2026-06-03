@@ -1,18 +1,22 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import type { SortOption } from '../types';
 import FilterBar from '../components/FilterBar';
 import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
 import { NSFW_GENRES } from '../utils/constants';
 import { parseSeason, getRelativeSeasonString } from '../utils/season';
+import { useUrlParams } from '../hooks/useUrlParams';
 
 const AllAnimePage = () => {
   const { allAnime } = useAnime();
 
-  const [selectedYear, setSelectedYear] = useState<string>('');
-  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  const [sortBy, setSortBy] = useState<SortOption>('date_desc');
+  const [selectedYear, setSelectedYear] = useUrlParams<string>('year', '');
+  const [selectedGenres, setSelectedGenres] = useUrlParams<string[]>('genres', [], 
+    (val) => val.join(','), 
+    (val) => val ? val.split(',') : []
+  );
+  const [searchQuery, setSearchQuery] = useUrlParams<string>('search', '');
+  const [sortBy, setSortBy] = useUrlParams<SortOption>('sort', 'date_desc');
 
   const availableYears = useMemo(() => {
     const years = new Set<string>();

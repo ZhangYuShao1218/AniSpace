@@ -53,8 +53,8 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   const isInitialMount = React.useRef(true);
   
   const [currentPage, setCurrentPage] = useUrlParams<number>('page', 1);
-  const [isModalOpen, ReactSetIsModalOpen] = React.useState(false);
-  const [isShareModalOpen, ReactSetIsShareModalOpen] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [isShareModalOpen, setIsShareModalOpen] = React.useState(false);
   const [selectedAnime, setSelectedAnime] = React.useState<Anime | WatchedAnime | null>(null);
 
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
@@ -66,7 +66,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   const handleActionClick = useCallback((anime: Anime | WatchedAnime) => {
     const existingWatched = watchedList.find(w => w.id === anime.id);
     setSelectedAnime(existingWatched || anime);
-    ReactSetIsModalOpen(true);
+    setIsModalOpen(true);
   }, [watchedList]);
 
   const handlePageChange = (page: number) => {
@@ -187,7 +187,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
       {/* Modals */}
       <ReviewModal
         isOpen={isModalOpen}
-        onClose={() => ReactSetIsModalOpen(false)}
+        onClose={() => setIsModalOpen(false)}
         anime={selectedAnime}
         onSave={handleSaveReview}
       />
@@ -195,7 +195,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
       {/* For AllAnimePage, the share button is in FilterBar, but we can still provide the modal here */}
       <ShareModal
         isOpen={isShareModalOpen}
-        onClose={() => ReactSetIsShareModalOpen(false)}
+        onClose={() => setIsShareModalOpen(false)}
         animes={shareData}
         isWatched={isWatchedShare}
       />

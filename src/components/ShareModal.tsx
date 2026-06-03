@@ -1,6 +1,6 @@
 import React, { useState, useRef, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
-import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2 } from 'lucide-react';
+import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2, Shuffle } from 'lucide-react';
 import { toPng } from 'html-to-image';
 import type { Anime, WatchedAnime } from '../types';
 import { ShareImageGenerator } from './ShareImageGenerator';
@@ -216,7 +216,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
                     onClick={handleRandomSelect}
                     title="隨機抽選動畫來填滿賓果卡"
                   >
-                    <span style={{ fontSize: '1rem', lineHeight: 1 }}>🔀</span>
+                    <Shuffle size={16} />
                     <span>隨機挑選</span>
                   </div>
                 )}

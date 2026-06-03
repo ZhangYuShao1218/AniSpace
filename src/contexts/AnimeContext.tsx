@@ -70,6 +70,9 @@ interface AnimeContextType {
   setCorrection: (original: string, corrected: string) => void;
   getCorrectedTitle: (original: string) => string;
   handleImportCorrections: (importedCorrections: Record<string, string>) => void;
+  clearCorrections: () => void;
+  handleClearRecords: () => void;
+  handleClearAllData: () => void;
 }
 
 const AnimeContext = createContext<AnimeContextType | undefined>(undefined);
@@ -93,7 +96,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [scrapeProgress, setScrapeProgress] = useState<string>('');
   
 
-  const { corrections, setCorrection, getCorrectedTitle, handleImportCorrections } = useTitleCorrections();
+  const { corrections, setCorrection, getCorrectedTitle, handleImportCorrections, clearCorrections } = useTitleCorrections();
 
   useEffect(() => {
     let loadedData: Anime[] = [];
@@ -212,6 +215,18 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     });
   };
 
+  const handleClearRecords = () => {
+    setWatchedList([]);
+    setPlanToWatchList([]);
+  };
+
+  const handleClearAllData = () => {
+    setWatchedList([]);
+    setPlanToWatchList([]);
+    setCustomAnimeList([]);
+    clearCorrections();
+  };
+
   return (
     <AnimeContext.Provider value={{
       allAnime,
@@ -231,7 +246,10 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       corrections,
       setCorrection,
       getCorrectedTitle,
-      handleImportCorrections
+      handleImportCorrections,
+      clearCorrections,
+      handleClearRecords,
+      handleClearAllData
     }}>
       {children}
     </AnimeContext.Provider>

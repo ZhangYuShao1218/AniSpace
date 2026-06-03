@@ -163,12 +163,15 @@ async function main() {
       return {
         sourceId: `anilist-${anime.id}`,
         titleZh: titleZh,
+        titleEn: english,
+        titleJa: native,
         titleRomaji: romaji,
         titleEnglish: english,
         titleNative: native,
         episodes: anime.episodes,
         genres: genres,
         coverImage: finalCover,
+        coverImageAniList: anime.coverImage?.extraLarge || anime.coverImage?.large || "",
         yearSeason: `${YEAR} ${SEASON}`,
         airTime: acgMatch?.timeInfo || ""
       };

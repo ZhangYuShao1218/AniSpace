@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import axios from 'axios';
 import * as OpenCC from 'opencc-js';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
@@ -28,8 +27,8 @@ async function fetchACGSecretsTitles(year, season) {
   if (!month) return new Map();
   try {
     const url = `https://acgsecrets.hk/bangumi/${year}${month}/`;
-    const res = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-    const html = res.data;
+    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+    const html = await res.text();
     const titleMap = new Map();
     const regex = /"name":"([^"]+)","alternateName":\["([^"]+)"/g;
     let match;
@@ -50,8 +49,8 @@ async function getBahamutCover(gamerId) {
   const url = `https://p2.bahamut.com.tw/B/ACG/c/${folder}/${paddedId}.JPG`;
   
   try {
-    const res = await axios.head(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 3000 });
-    if (res.status === 200) return url;
+    const res = await fetch(url, { method: 'HEAD', headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(3000) });
+    if (res.ok) return url;
   } catch (e) {
     return null;
   }
@@ -61,10 +60,10 @@ async function getBahamutCover(gamerId) {
 // Fetch Bilibili Cover
 async function getBilibiliCover(bilibiliId) {
   try {
-    const url = `https://api.bilibili.com/pgc/view/web/season?season_id=${bilibiliId}`;
-    const res = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 3000 });
-    if (res.data && res.data.result && res.data.result.cover) {
-      return res.data.result.cover;
+    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(3000) });
+    const data = await res.json();
+    if (data && data.result && data.result.cover) {
+      return data.result.cover;
     }
   } catch (e) {
     return null;
@@ -90,11 +89,13 @@ async function fetchAniListBySeason(year, season) {
     }
   `;
   try {
-    const res = await axios.post('https://graphql.anilist.co', 
-      { query, variables: { season, seasonYear: year } },
-      { headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' } }
-    );
-    return res.data.data.Page.media || [];
+    const res = await fetch('https://graphql.anilist.co', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ query, variables: { season, seasonYear: year } })
+    });
+    const json = await res.json();
+    return json.data.Page.media || [];
   } catch (e) {
     console.error(`AniList API error for ${year} ${season}:`, e.message);
     return [];
@@ -123,9 +124,10 @@ async function main() {
   console.log('📦 正在下載 bangumi-data 字典檔...');
   let bgmMap = new Map(); // aniListId -> translation Object
   try {
-    const res = await axios.get("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
-    if (res.status === 200 && res.data.items) {
-      res.data.items.forEach(item => {
+    const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
+    if (res.ok) {
+      const data = await res.json();
+      (data.items || []).forEach(item => {
         const aniListSite = item.sites?.find(s => s.site === 'aniList');
         if (aniListSite && aniListSite.id) {
           bgmMap.set(aniListSite.id, item);
@@ -228,7 +230,10 @@ async function main() {
         finalAnimeList.push({
           id: `anilist-${item.id}`,
           titleZh,
+          titleEn: item.title.english || "",
+          titleJa: nativeTitle || "",
           coverImage: finalCover,
+          coverImageAniList: item.coverImage?.extraLarge || item.coverImage?.large || "",
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
           genres
         });

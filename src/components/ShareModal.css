@@ -142,6 +142,21 @@
   transform: translateX(-50%) translateY(-4px);
 }
 
+[data-theme="light"] .share-tooltip {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.share-divider {
+  border: none;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+  margin: 8px 0 8px 0;
+}
+
+[data-theme="light"] .share-divider {
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+}
+
 .share-selection-area {
   flex: 1;
   display: flex;
@@ -167,6 +182,68 @@
   color: var(--text-primary);
   margin: 0;
   font-weight: 600;
+}
+
+.share-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.share-action-btn:hover {
+  color: var(--text-primary);
+}
+
+.share-action-btn:hover svg {
+  stroke: var(--text-primary);
+}
+
+.select-all-icon-checked {
+  color: #818cf8;
+  fill: rgba(129, 140, 248, 0.2);
+}
+
+[data-theme="light"] .select-all-icon-checked {
+  color: var(--accent-color);
+  fill: rgba(217, 119, 6, 0.2);
+}
+
+.random-select-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(129, 140, 248, 0.2);
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.random-select-btn:hover {
+  background-color: rgba(129, 140, 248, 0.3);
+  border-color: rgba(129, 140, 248, 0.6);
+}
+
+/* Light mode redesign for random button */
+[data-theme="light"] .random-select-btn {
+  color: var(--accent-color);
+  background-color: rgba(217, 119, 6, 0.1);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+
+[data-theme="light"] .random-select-btn:hover {
+  background-color: rgba(217, 119, 6, 0.15);
+  border-color: rgba(217, 119, 6, 0.5);
+  color: var(--accent-hover);
 }
 
 .share-search-input {

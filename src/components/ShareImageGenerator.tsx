@@ -6,7 +6,7 @@ import './ShareImageGenerator.css';
 export interface ShareImageGeneratorProps {
   animes: (Anime | WatchedAnime)[];
   isWatched: boolean;
-  gridCount: 4 | 9 | 16;
+  gridCount: 4 | 9 | 16 | 25;
   customTitle?: string;
 }
 
@@ -44,7 +44,9 @@ export const ShareImageGenerator = forwardRef<HTMLDivElement, ShareImageGenerato
           <h2>
             {customTitle || (isWatched ? '我的神作動畫紀錄' : '此生必看清單')}
           </h2>
-          <div className="share-brand">AniSpace</div>
+          <div className={`share-brand ${gridCount === 25 ? 'bingo-instruction' : ''}`}>
+            {gridCount === 25 ? 'AniSpace 動畫賓果🎯來試試你看過幾部動畫！' : 'AniSpace 動畫庫'}
+          </div>
         </div>
         
         <div className="share-grid">
@@ -61,25 +63,27 @@ export const ShareImageGenerator = forwardRef<HTMLDivElement, ShareImageGenerato
                       alt={anime.titleZh} 
                       className="share-cover" 
                     />
-                    <div className="share-info-overlay">
-                      <div className="share-title">{anime.titleZh}</div>
-                      {watched && (
-                        <div className="share-watched-details">
-                          <div className="share-rating">
-                            {Array.from({ length: 5 }).map((_, i) => (
-                              <Star
-                                key={i}
-                                size={12}
-                                className={i < watched.userRating ? 'star-filled' : 'star-empty'}
-                              />
-                            ))}
+                    {gridCount !== 25 && (
+                      <div className="share-info-overlay">
+                        <div className="share-title">{anime.titleZh}</div>
+                        {watched && (
+                          <div className="share-watched-details">
+                            <div className="share-rating">
+                              {Array.from({ length: 5 }).map((_, i) => (
+                                <Star
+                                  key={i}
+                                  size={12}
+                                  className={i < watched.userRating ? 'star-filled' : 'star-empty'}
+                                />
+                              ))}
+                            </div>
+                            {watched.userComment && (
+                              <div className="share-comment">"{watched.userComment}"</div>
+                            )}
                           </div>
-                          {watched.userComment && (
-                            <div className="share-comment">"{watched.userComment}"</div>
-                          )}
-                        </div>
-                      )}
-                    </div>
+                        )}
+                      </div>
+                    )}
                   </>
                 )}
               </div>

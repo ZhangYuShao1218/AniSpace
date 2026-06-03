@@ -41,6 +41,11 @@
   letter-spacing: 4px;
 }
 
+.share-brand.bingo-instruction {
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
 [data-theme="light"] .share-brand {
   color: #3b3026; /* Darker brown/grey */
   opacity: 0.75;
@@ -149,3 +154,6 @@
 
 .grid-16 .share-title { font-size: 26px; padding-bottom: 4px; }
 .grid-16 .share-info-overlay { padding: 20px 10px 10px; }
+
+/* Bingo specific styles */
+.grid-25 .share-grid { gap: 15px; }

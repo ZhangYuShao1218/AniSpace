@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
 import type { Anime, WatchedAnime } from '../types';
 import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY } from '../utils/constants';
 
@@ -134,7 +134,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     localStorage.setItem(CUSTOM_ANIME_KEY, JSON.stringify(customAnimeList));
   }, [customAnimeList]);
 
-  const handleSync = async () => {
+  const handleSync = useCallback(async () => {
     setIsScraping(true);
     setScrapeProgress('正在從遠端同步最新資料庫...');
     try {
@@ -155,21 +155,21 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         setScrapeProgress('');
       }, 2000);
     }
-  };
+  }, []);
 
-  const handleAddCustomAnime = (anime: Anime) => {
+  const handleAddCustomAnime = useCallback((anime: Anime) => {
     setCustomAnimeList(prev => [anime, ...prev]);
-  };
+  }, []);
 
-  const handleImportCustomAnime = (importedData: Anime[]) => {
+  const handleImportCustomAnime = useCallback((importedData: Anime[]) => {
     setCustomAnimeList(prev => {
       const newMap = new Map(importedData.map(i => [i.id, i]));
       prev.forEach(item => newMap.set(item.id, item));
       return Array.from(newMap.values());
     });
-  };
+  }, []);
 
-  const handleSaveReview = (watchedAnime: WatchedAnime) => {
+  const handleSaveReview = useCallback((watchedAnime: WatchedAnime) => {
     setWatchedList(prev => {
       const existingIdx = prev.findIndex(w => w.id === watchedAnime.id);
       if (existingIdx !== -1) {
@@ -181,13 +181,13 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }
     });
     setPlanToWatchList(prev => prev.filter(p => p.id !== watchedAnime.id));
-  };
+  }, []);
 
-  const handleRemoveReview = (animeId: string) => {
+  const handleRemoveReview = useCallback((animeId: string) => {
     setWatchedList(prev => prev.filter(w => w.id !== animeId));
-  };
+  }, []);
 
-  const handlePlanToWatchToggle = (anime: Anime) => {
+  const handlePlanToWatchToggle = useCallback((anime: Anime) => {
     setPlanToWatchList(prev => {
       if (prev.some(p => p.id === anime.id)) {
         return prev.filter(p => p.id !== anime.id);
@@ -195,9 +195,9 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         return [anime, ...prev];
       }
     });
-  };
+  }, []);
 
-  const handleImport = (importedData: WatchedAnime[]) => {
+  const handleImport = useCallback((importedData: WatchedAnime[]) => {
     setWatchedList(prev => {
       const newMap = new Map(importedData.map(i => [i.id, i]));
       prev.forEach(item => newMap.set(item.id, item));
@@ -205,52 +205,59 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     });
     const importedIds = new Set(importedData.map(i => i.id));
     setPlanToWatchList(prev => prev.filter(p => !importedIds.has(p.id)));
-  };
+  }, []);
 
-  const handleImportPlan = (importedData: Anime[]) => {
+  const handleImportPlan = useCallback((importedData: Anime[]) => {
     setPlanToWatchList(prev => {
       const newMap = new Map(importedData.map(i => [i.id, i]));
       prev.forEach(item => newMap.set(item.id, item));
       return Array.from(newMap.values());
     });
-  };
+  }, []);
 
-  const handleClearRecords = () => {
+  const handleClearRecords = useCallback(() => {
     setWatchedList([]);
     setPlanToWatchList([]);
-  };
+  }, []);
 
-  const handleClearAllData = () => {
+  const handleClearAllData = useCallback(() => {
     setWatchedList([]);
     setPlanToWatchList([]);
     setCustomAnimeList([]);
     clearCorrections();
-  };
+  }, [clearCorrections]);
+
+  const contextValue = useMemo(() => ({
+    allAnime,
+    customAnimeList,
+    watchedList,
+    planToWatchList,
+    isScraping,
+    scrapeProgress,
+    handleSync,
+    handleAddCustomAnime,
+    handleImportCustomAnime,
+    handleSaveReview,
+    handleRemoveReview,
+    handlePlanToWatchToggle,
+    handleImport,
+    handleImportPlan,
+    corrections,
+    setCorrection,
+    getCorrectedTitle,
+    handleImportCorrections,
+    clearCorrections,
+    handleClearRecords,
+    handleClearAllData
+  }), [
+    allAnime, customAnimeList, watchedList, planToWatchList, isScraping, scrapeProgress, corrections,
+    handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
+    handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, getCorrectedTitle,
+    handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData
+  ]);
 
   return (
-    <AnimeContext.Provider value={{
-      allAnime,
-      customAnimeList,
-      watchedList,
-      planToWatchList,
-      isScraping,
-      scrapeProgress,
-      handleSync,
-      handleAddCustomAnime,
-      handleImportCustomAnime,
-      handleSaveReview,
-      handleRemoveReview,
-      handlePlanToWatchToggle,
-      handleImport,
-      handleImportPlan,
-      corrections,
-      setCorrection,
-      getCorrectedTitle,
-      handleImportCorrections,
-      clearCorrections,
-      handleClearRecords,
-      handleClearAllData
-    }}>
+    <AnimeContext.Provider value={contextValue}>
       {children}
     </AnimeContext.Provider>
   );

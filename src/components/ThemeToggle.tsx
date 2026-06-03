@@ -8,7 +8,7 @@ const ThemeToggle: React.FC = () => {
 
   return (
     <div className="theme-toggle-container">
-      <Moon size={18} className={`side-icon ${theme === 'dark' ? 'active' : ''}`} />
+      <Moon size={16} className={`side-icon ${theme === 'dark' ? 'active' : ''}`} />
       <button 
         className={`theme-toggle ${theme}`} 
         onClick={(e) => {
@@ -22,7 +22,7 @@ const ThemeToggle: React.FC = () => {
           <div className="toggle-thumb"></div>
         </div>
       </button>
-      <Sun size={18} className={`side-icon ${theme === 'light' ? 'active' : ''}`} />
+      <Sun size={16} className={`side-icon ${theme === 'light' ? 'active' : ''}`} />
     </div>
   );
 };

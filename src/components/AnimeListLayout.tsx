@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useCallback } from 'react';
+import React, { useMemo, useEffect, useCallback } from 'react';
 import type { Anime, WatchedAnime } from '../types';
 import AnimeCard from './AnimeCard';
 import Pagination from './Pagination';
@@ -7,6 +7,7 @@ import { ShareModal } from './ShareModal';
 import { useAnime } from '../contexts/AnimeContext';
 import { ITEMS_PER_PAGE } from '../utils/constants';
 import { ThumbsUp, Loader2 } from 'lucide-react';
+import { useUrlParams } from '../hooks/useUrlParams';
 
 interface AnimeListLayoutProps {
   title: string;
@@ -49,16 +50,12 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     isScraping
   } = useAnime();
 
-  const currentPath = window.location.pathname;
   const isInitialMount = React.useRef(true);
   
-  const [currentPage, setCurrentPage] = useState<number>(() => {
-    const saved = sessionStorage.getItem(`page_${currentPath}`);
-    return saved ? parseInt(saved, 10) : 1;
-  });
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
-  const [selectedAnime, setSelectedAnime] = useState<Anime | WatchedAnime | null>(null);
+  const [currentPage, setCurrentPage] = useUrlParams<number>('page', 1);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [isShareModalOpen, setIsShareModalOpen] = React.useState(false);
+  const [selectedAnime, setSelectedAnime] = React.useState<Anime | WatchedAnime | null>(null);
 
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
   const paginatedData = useMemo(() => {
@@ -72,7 +69,9 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     setIsModalOpen(true);
   }, [watchedList]);
 
-  useEffect(() => {
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    
     const headerElement = document.querySelector('.layout-scroll-anchor') || document.querySelector('.page-header');
     if (headerElement) {
       const yOffset = 5;
@@ -81,11 +80,6 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  }, [currentPage]);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    sessionStorage.setItem(`page_${currentPath}`, page.toString());
   };
 
   const prevLengthRef = React.useRef(filteredData.length);
@@ -105,10 +99,9 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     // 若是因為使用者切換篩選條件導致數量改變，則將頁碼重置為 1
     if (prevLengthRef.current !== filteredData.length) {
       setCurrentPage(1);
-      sessionStorage.setItem(`page_${currentPath}`, '1');
       prevLengthRef.current = filteredData.length;
     }
-  }, [filteredData.length, currentPath]);
+  }, [filteredData.length, setCurrentPage]);
 
   return (
     <>

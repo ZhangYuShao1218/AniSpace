@@ -31,5 +31,9 @@ export function useTitleCorrections() {
     }));
   };
 
-  return { corrections, setCorrection, getCorrectedTitle, handleImportCorrections };
+  const clearCorrections = () => {
+    setCorrections({});
+  };
+
+  return { corrections, setCorrection, getCorrectedTitle, handleImportCorrections, clearCorrections };
 }

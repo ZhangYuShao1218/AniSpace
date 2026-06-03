@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useGoogleLogin, googleLogout } from '@react-oauth/google';
 import { useAnime } from './AnimeContext';
 import { useAlert } from './AlertContext';
@@ -12,6 +12,8 @@ interface GoogleSyncContextType {
   syncToDrive: () => Promise<void>;
   restoreFromDrive: () => Promise<void>;
   accessToken: string | null;
+  isAutoSyncEnabled: boolean;
+  toggleAutoSync: () => void;
 }
 
 const GoogleSyncContext = createContext<GoogleSyncContextType | undefined>(undefined);
@@ -43,6 +45,32 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const { showAlert } = useAlert();
 
   const isLoggedIn = !!accessToken;
+
+  const [isAutoSyncEnabled, setIsAutoSyncEnabled] = useState(() => {
+    const saved = localStorage.getItem('google_auto_sync_enabled');
+    return saved !== 'false';
+  });
+
+  const toggleAutoSync = () => {
+    setIsAutoSyncEnabled(prev => {
+      const next = !prev;
+      localStorage.setItem('google_auto_sync_enabled', next.toString());
+      return next;
+    });
+  };
+
+  // 自動備份機制
+  useEffect(() => {
+    if (!accessToken || !isLoggedIn || !isAutoSyncEnabled) return;
+
+    // 使用 setTimeout 進行防抖 (debounce)，避免頻繁變動時連續觸發 API
+    const timer = setTimeout(() => {
+      // 偷偷進行備份 (傳入 isAutoSync = true)
+      syncToDrive(true).catch(err => console.error('Auto sync failed:', err));
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [watchedList, planToWatchList, customAnimeList, corrections, accessToken, isLoggedIn]);
 
   const login = useGoogleLogin({
     onSuccess: (tokenResponse) => {
@@ -83,7 +111,7 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     return data.files && data.files.length > 0 ? data.files[0].id : null;
   };
 
-  const syncToDrive = async () => {
+  const syncToDrive = async (isAutoSync = false) => {
     if (!accessToken) return;
     setIsSyncing(true);
     try {
@@ -132,7 +160,7 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       if (uploadRes.ok) {
         updateSyncTime();
-        showAlert('雲端備份成功！');
+        if (!isAutoSync) showAlert('雲端備份成功！');
       } else {
         throw new Error('Upload failed');
       }
@@ -140,9 +168,9 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     } catch (error: any) {
       console.error('Sync Error:', error);
       if (error.message !== 'Unauthorized') {
-        showAlert('同步失敗，請稍後再試。', '錯誤');
+        if (!isAutoSync) showAlert('同步失敗，請稍後再試。', '錯誤');
       } else {
-        showAlert('登入狀態已過期，請重新登入。', '錯誤');
+        if (!isAutoSync) showAlert('登入狀態已過期，請重新登入。', '錯誤');
       }
     } finally {
       setIsSyncing(false);
@@ -202,9 +230,11 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       lastSyncTime,
       login,
       logout,
-      syncToDrive,
+      syncToDrive: () => syncToDrive(false),
       restoreFromDrive,
-      accessToken
+      accessToken,
+      isAutoSyncEnabled,
+      toggleAutoSync
     }}>
       {children}
     </GoogleSyncContext.Provider>

@@ -1,13 +1,14 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import type { SortOption } from '../types';
 import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
 import SearchBar from '../components/SearchBar';
+import { useUrlParams } from '../hooks/useUrlParams';
 
 const WatchedPage = () => {
   const { watchedList } = useAnime();
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  const [sortBy, setSortBy] = useState<SortOption>('date_desc');
+  const [searchQuery, setSearchQuery] = useUrlParams<string>('search', '');
+  const [sortBy, setSortBy] = useUrlParams<SortOption>('sort', 'date_desc');
 
   const filteredData = useMemo(() => {
     let result = watchedList.filter(anime => 

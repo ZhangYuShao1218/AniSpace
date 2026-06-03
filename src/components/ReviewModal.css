@@ -66,11 +66,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing-1);
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .modal-subtitle {
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .modal-body {
@@ -125,6 +128,10 @@
   justify-content: flex-end;
   gap: var(--spacing-3);
   background: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .modal-footer {
+  background: rgba(0, 0, 0, 0.03);
 }
 
 textarea {

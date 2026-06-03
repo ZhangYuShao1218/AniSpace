@@ -75,8 +75,8 @@
   min-width: 150px;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-2);
-  gap: var(--spacing-1);
+  padding: 6px;
+  gap: 2px;
   z-index: 100;
   border-radius: var(--radius-md);
 }
@@ -86,7 +86,7 @@
   align-items: center;
   gap: var(--spacing-2);
   width: 100%;
-  padding: var(--spacing-2) var(--spacing-3);
+  padding: 6px 10px;
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   font-size: 0.9rem;
@@ -125,5 +125,23 @@
   background: rgba(16, 185, 129, 0.25);
   border-color: rgba(16, 185, 129, 0.6);
   color: #047857;
+}
+
+.danger-icon {
+  color: rgba(239, 68, 68, 0.8);
+  transition: color 0.2s;
+}
+
+.dropdown-item:hover .danger-icon {
+  color: #ef4444;
+}
+
+.dropdown-item:has(.danger-icon):hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+[data-theme="light"] .dropdown-item:has(.danger-icon):hover {
+  background: rgba(239, 68, 68, 0.08);
 }
 

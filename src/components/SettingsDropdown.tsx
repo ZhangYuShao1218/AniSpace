@@ -38,7 +38,13 @@ const SettingsDropdown: React.FC = () => {
       </button>
       
       {isSettingsOpen && (
-        <div className="settings-dropdown-menu fade-in glass-panel">
+        <div className="settings-dropdown-menu fade-in" style={{
+          background: 'var(--bg-dropdown)',
+          backdropFilter: 'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
+          border: '1px solid var(--border-glass-light)',
+          boxShadow: '0 10px 40px rgba(0, 0, 0, 0.2)',
+        }}>
           <ThemeToggle />
           
           <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />

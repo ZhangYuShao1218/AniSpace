@@ -19,6 +19,9 @@
   background: rgba(99, 102, 241, 0.1);
   border-color: rgba(99, 102, 241, 0.3);
   color: #a5b4fc;
+  flex: 1;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .import-btn:hover {
@@ -31,6 +34,9 @@
   background: rgba(16, 185, 129, 0.1);
   border-color: rgba(16, 185, 129, 0.3);
   color: #6ee7b7;
+  flex: 1;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .export-btn:hover:not(:disabled) {
@@ -101,6 +107,19 @@
   background: var(--bg-glass-active);
   color: var(--accent-color);
   font-weight: 600;
+}
+
+.lang-item {
+  transition: all 0.2s;
+}
+
+.lang-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(2px);
+}
+
+[data-theme="light"] .lang-item:hover {
+  background: rgba(0, 0, 0, 0.06);
 }
 
 [data-theme="light"] .import-btn {

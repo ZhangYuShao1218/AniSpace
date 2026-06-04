@@ -1,7 +1,10 @@
 export interface Anime {
   id: string;
   titleZh: string;
+  titleEn?: string;
+  titleJa?: string;
   coverImage: string;
+  coverImageAniList?: string;
   yearSeason: string;
   genres: string[];
   show?: string | boolean;

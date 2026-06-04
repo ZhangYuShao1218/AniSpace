@@ -3,10 +3,12 @@ import AnimeListLayout from '../components/AnimeListLayout';
 import { useAnime } from '../contexts/AnimeContext';
 import SearchBar from '../components/SearchBar';
 import { useUrlParams } from '../hooks/useUrlParams';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const PlanToWatchPage = () => {
   const { planToWatchList } = useAnime();
   const [searchQuery, setSearchQuery] = useUrlParams<string>('search', '');
+  const { t } = useLanguage();
 
   const filteredData = useMemo(() => {
     return planToWatchList.filter(anime => 
@@ -16,7 +18,7 @@ const PlanToWatchPage = () => {
 
   const searchBox = (
     <SearchBar 
-      placeholder="搜尋期待清單..." 
+      placeholder={t('searchPlanPlaceholder')} 
       value={searchQuery} 
       onChange={setSearchQuery} 
     />
@@ -24,12 +26,12 @@ const PlanToWatchPage = () => {
 
   return (
     <AnimeListLayout
-      title="期待動畫"
+      title={t('navPlanToWatch')}
       totalCount={filteredData.length}
       filteredData={filteredData}
       headerRightContent={searchBox}
-      emptyStateTitle={searchQuery ? "找不到符合的動畫" : "尚未添加任何期待動畫"}
-      emptyStateMessage={searchQuery ? "請嘗試其他搜尋關鍵字。" : "在所有動畫中點擊 ❤️ 圖示，即可在此查看。"}
+      emptyStateTitle={searchQuery ? t('emptySearchTitle') : t('emptyPlanTitle')}
+      emptyStateMessage={searchQuery ? t('emptySearchMsg') : t('emptyPlanMsg')}
       shareData={planToWatchList}
       isWatchedShare={false}
     />

@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useGoogleLogin, googleLogout } from '@react-oauth/google';
 import { useAnime } from './AnimeContext';
 import { useAlert } from './AlertContext';
+import { useLanguage } from './LanguageContext';
 
 interface GoogleSyncContextType {
   isLoggedIn: boolean;
@@ -43,6 +44,7 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   } = useAnime();
 
   const { showAlert } = useAlert();
+  const { t } = useLanguage();
 
   const isLoggedIn = !!accessToken;
 
@@ -160,7 +162,7 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       if (uploadRes.ok) {
         updateSyncTime();
-        if (!isAutoSync) showAlert('雲端備份成功！');
+        if (!isAutoSync) showAlert(t('syncSuccessAlert'));
       } else {
         throw new Error('Upload failed');
       }
@@ -168,9 +170,9 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     } catch (error: any) {
       console.error('Sync Error:', error);
       if (error.message !== 'Unauthorized') {
-        if (!isAutoSync) showAlert('同步失敗，請稍後再試。', '錯誤');
+        if (!isAutoSync) showAlert(t('syncFailedAlert'), t('warning'));
       } else {
-        if (!isAutoSync) showAlert('登入狀態已過期，請重新登入。', '錯誤');
+        if (!isAutoSync) showAlert(t('loginExpiredAlert'), t('warning'));
       }
     } finally {
       setIsSyncing(false);
@@ -203,11 +205,11 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
            if (data.corrections) handleImportCorrections(data.corrections);
            updateSyncTime();
 
-           let confirmMsg = `在雲端找到了備份資料：\n`;
-           if (data.watchedList) confirmMsg += `- ${data.watchedList.length} 筆已觀看\n`;
-           if (data.customAnimeList) confirmMsg += `- ${data.customAnimeList.length} 筆自訂動畫\n`;
-           if (data.corrections) confirmMsg += `- ${Object.keys(data.corrections).length} 筆名稱修改\n`;
-           confirmMsg += `\n已與本地資料合併儲存。`;
+           let confirmMsg = t('foundCloudBackup');
+           if (data.watchedList) confirmMsg += `- ${data.watchedList.length}${t('itemsWatched')}`;
+           if (data.customAnimeList) confirmMsg += `- ${data.customAnimeList.length}${t('itemsCustom')}`;
+           if (data.corrections) confirmMsg += `- ${Object.keys(data.corrections).length}${t('itemsCorrection')}`;
+           confirmMsg += t('mergedWithLocal');
            
            showAlert(confirmMsg);
         }

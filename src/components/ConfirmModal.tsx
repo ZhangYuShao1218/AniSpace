@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AlertTriangle } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './ConfirmModal.css';
 
 interface ConfirmModalProps {
@@ -18,10 +19,14 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
   onConfirm,
   title,
   message,
-  confirmText = '確認刪除資料',
-  dangerText = '確認永久刪除'
+  confirmText,
+  dangerText
 }) => {
+  const { t } = useLanguage();
   const [isConfirming, setIsConfirming] = useState(false);
+
+  const finalConfirmText = confirmText || t('confirmDeleteData');
+  const finalDangerText = dangerText || t('confirmDeleteForever');
 
   useEffect(() => {
     if (!isOpen) {
@@ -57,10 +62,10 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
             className={`confirm-btn-primary ${isConfirming ? 'danger-active' : 'danger-idle'}`}
             onClick={handleConfirmClick}
           >
-            {isConfirming ? dangerText : confirmText}
+            {isConfirming ? finalDangerText : finalConfirmText}
           </button>
           <button className="confirm-btn-secondary" onClick={onClose}>
-            取消
+            {t('cancel')}
           </button>
         </div>
       </div>

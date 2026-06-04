@@ -8,6 +8,7 @@ import { useAnime } from '../contexts/AnimeContext';
 import { ITEMS_PER_PAGE } from '../utils/constants';
 import { ThumbsUp, Loader2 } from 'lucide-react';
 import { useUrlParams } from '../hooks/useUrlParams';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface AnimeListLayoutProps {
   title: string;
@@ -49,6 +50,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     handlePlanToWatchToggle,
     isScraping
   } = useAnime();
+  const { t } = useLanguage();
 
   const isInitialMount = React.useRef(true);
   
@@ -138,7 +140,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
               onMouseOver={e => e.currentTarget.style.transform = 'translateY(-2px)'}
               onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}
             >
-              <ThumbsUp size={20} style={{ display: 'block', marginTop: '-2px' }} /> 推坑別人
+              <ThumbsUp size={20} style={{ display: 'block', marginTop: '-2px' }} /> {t('recommendToOthers')}
             </button>
           </div>
           {headerRightContent && (

@@ -22,7 +22,18 @@
   --danger: #ef4444;
 
   /* Typography */
+  --font-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root[lang="zh-TW"] {
   --font-base: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root[lang="ja"] {
+  --font-base: 'Inter', 'Noto Sans JP', 'Noto Sans TC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
 
   /* Spacing */
   --spacing-1: 4px;

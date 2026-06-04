@@ -89,8 +89,8 @@
     "titleZh": "女性向遊戲世界對路人角色很不友好2",
     "titleEn": "",
     "titleJa": "乙女ゲー世界はモブに厳しい世界です2",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-RRmu7sh7bE5o.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-RRmu7sh7bE5o.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-lgzVE2LnHelv.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-lgzVE2LnHelv.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -582,6 +582,20 @@
     ]
   },
   {
+    "id": "anilist-198409",
+    "titleZh": "世界最強後衛～迷宮國的新人探索者～",
+    "titleEn": "",
+    "titleJa": "世界最強の後衛 ～迷宮国の新人探索者～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-185875",
     "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
     "titleEn": "",
@@ -595,20 +609,6 @@
       "劇情",
       "奇幻",
       "魔法少女"
-    ]
-  },
-  {
-    "id": "anilist-198409",
-    "titleZh": "世界最強後衛～迷宮國的新人探索者～",
-    "titleEn": "",
-    "titleJa": "世界最強の後衛 ～迷宮国の新人探索者～",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻"
     ]
   },
   {
@@ -2357,7 +2357,7 @@
     "titleZh": "無職英雄：技能什麼的毫無用處",
     "titleEn": "Hero Without a Class: Who Even Needs Skills?!",
     "titleJa": "無職の英雄 別にスキルなんか要らなかったんだが",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169969-SqCjoqYT4A6Z.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/71/0000144171.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169969-SqCjoqYT4A6Z.jpg",
     "yearSeason": "2025 秋",
     "genres": [
@@ -2975,20 +2975,6 @@
     ]
   },
   {
-    "id": "anilist-185407",
-    "titleZh": "章魚嗶的原罪",
-    "titleEn": "Takopi's Original Sin",
-    "titleJa": "タコピーの原罪",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/75/0000142775.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185407-7uzY4fA3hokP.jpg",
-    "yearSeason": "2025 夏",
-    "genres": [
-      "劇情",
-      "心理",
-      "科幻"
-    ]
-  },
-  {
     "id": "anilist-177689",
     "titleZh": "光逝去的夏天",
     "titleEn": "The Summer Hikaru Died",
@@ -3002,6 +2988,20 @@
       "心理",
       "超自然",
       "驚悚"
+    ]
+  },
+  {
+    "id": "anilist-185407",
+    "titleZh": "章魚嗶的原罪",
+    "titleEn": "Takopi's Original Sin",
+    "titleJa": "タコピーの原罪",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/75/0000142775.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185407-7uzY4fA3hokP.jpg",
+    "yearSeason": "2025 夏",
+    "genres": [
+      "劇情",
+      "心理",
+      "科幻"
     ]
   },
   {
@@ -4568,19 +4568,6 @@
     ]
   },
   {
-    "id": "anilist-176642",
-    "titleZh": "天久鷹央的推理病歷表",
-    "titleEn": "Ameku M.D.: Doctor Detective",
-    "titleJa": "天久鷹央の推理カルテ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/40/0000138640.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176642-lgDtPlodCMRm.jpg",
-    "yearSeason": "2025 冬",
-    "genres": [
-      "懸疑",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-172439",
     "titleZh": "歡迎來到日本，妖精小姐",
     "titleEn": "Welcome to Japan, Ms. Elf!",
@@ -4594,6 +4581,19 @@
       "愛情",
       "日常",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-176642",
+    "titleZh": "天久鷹央的推理病歷表",
+    "titleEn": "Ameku M.D.: Doctor Detective",
+    "titleJa": "天久鷹央の推理カルテ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/40/0000138640.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176642-lgDtPlodCMRm.jpg",
+    "yearSeason": "2025 冬",
+    "genres": [
+      "懸疑",
+      "日常"
     ]
   },
   {
@@ -4938,7 +4938,7 @@
     "titleZh": "MOMENTARY LILY 剎那之花",
     "titleEn": "Momentary Lily",
     "titleJa": "もめんたりー・リリィ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/19/0000139019.JPG",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177159-Yt7VNCVjlnxR.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177159-Yt7VNCVjlnxR.jpg",
     "yearSeason": "2025 冬",
     "genres": [
@@ -5993,7 +5993,7 @@
     "titleZh": "小市民系列",
     "titleEn": "SHOSHIMIN: How to Become Ordinary",
     "titleJa": "小市民シリーズ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/26/0000137326.JPG",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173295-5DIOnrTYiF0a.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173295-5DIOnrTYiF0a.jpg",
     "yearSeason": "2024 夏",
     "genres": [
@@ -17130,19 +17130,6 @@
     ]
   },
   {
-    "id": "anilist-122807",
-    "titleZh": "體操武士",
-    "titleEn": "The Gymnastics Samurai",
-    "titleJa": "体操ザムライ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/96/0000113096.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx122807-m8jdQLQRSSUI.jpg",
-    "yearSeason": "2020 秋",
-    "genres": [
-      "劇情",
-      "運動"
-    ]
-  },
-  {
     "id": "anilist-118376",
     "titleZh": "王之逆襲：意志的繼承者",
     "titleEn": "KING's RAID: Successors of the Will",
@@ -17154,6 +17141,19 @@
       "動作",
       "冒險",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-122807",
+    "titleZh": "體操武士",
+    "titleEn": "The Gymnastics Samurai",
+    "titleJa": "体操ザムライ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/96/0000113096.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx122807-m8jdQLQRSSUI.jpg",
+    "yearSeason": "2020 秋",
+    "genres": [
+      "劇情",
+      "運動"
     ]
   },
   {
@@ -24011,20 +24011,6 @@
     ]
   },
   {
-    "id": "anilist-100179",
-    "titleZh": "多田君不戀愛",
-    "titleEn": "Tada Never Falls In Love",
-    "titleJa": "多田くんは恋をしない",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/70/0000091870.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx100179-jDGTOMxtoDkt.jpg",
-    "yearSeason": "2018 春",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-98514",
     "titleZh": "賽馬娘",
     "titleEn": "Umamusume: Pretty Derby",
@@ -24036,6 +24022,20 @@
       "劇情",
       "日常",
       "運動"
+    ]
+  },
+  {
+    "id": "anilist-100179",
+    "titleZh": "多田君不戀愛",
+    "titleEn": "Tada Never Falls In Love",
+    "titleJa": "多田くんは恋をしない",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/70/0000091870.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx100179-jDGTOMxtoDkt.jpg",
+    "yearSeason": "2018 春",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
     ]
   },
   {
@@ -33123,6 +33123,18 @@
     ]
   },
   {
+    "id": "anilist-21007",
+    "titleZh": "狼少女與黑王子 OAD",
+    "titleEn": "",
+    "titleJa": "オオカミ少女と黒王子「疑心暗鬼 -Happening kiss-」",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21007-Lxe781aqfwIG.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21007-Lxe781aqfwIG.jpg",
+    "yearSeason": "2015 春",
+    "genres": [
+      "喜劇"
+    ]
+  },
+  {
     "id": "anilist-20772",
     "titleZh": "忍者殺手",
     "titleEn": "Ninja Slayer from Animation",
@@ -33133,18 +33145,6 @@
     "genres": [
       "動作",
       "科幻"
-    ]
-  },
-  {
-    "id": "anilist-21007",
-    "titleZh": "狼少女與黑王子 OAD",
-    "titleEn": "",
-    "titleJa": "オオカミ少女と黒王子「疑心暗鬼 -Happening kiss-」",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21007-Lxe781aqfwIG.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21007-Lxe781aqfwIG.jpg",
-    "yearSeason": "2015 春",
-    "genres": [
-      "喜劇"
     ]
   },
   {
@@ -47476,20 +47476,6 @@
     ]
   },
   {
-    "id": "anilist-6802",
-    "titleZh": "空之音",
-    "titleEn": "Sound of the Sky",
-    "titleJa": "ソ・ラ・ノ・ヲ・ト",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
-    "yearSeason": "2010 冬",
-    "genres": [
-      "音樂",
-      "科幻",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-7148",
     "titleZh": "管家後宮學園",
     "titleEn": "Ladies Versus Butlers",
@@ -47501,6 +47487,20 @@
       "喜劇",
       "福利",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-6802",
+    "titleZh": "空之音",
+    "titleEn": "Sound of the Sky",
+    "titleJa": "ソ・ラ・ノ・ヲ・ト",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
+    "yearSeason": "2010 冬",
+    "genres": [
+      "音樂",
+      "科幻",
+      "日常"
     ]
   },
   {

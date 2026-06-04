@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, X, Image as ImageIcon, Minus } from 'lucide-react';
 import { useAnime } from '../contexts/AnimeContext';
+import { useLanguage } from '../contexts/LanguageContext';
 import './AddAnimeModal.css';
 
 interface AddAnimeModalProps {
@@ -10,6 +11,7 @@ interface AddAnimeModalProps {
 
 const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
   const { handleAddCustomAnime, handlePlanToWatchToggle } = useAnime();
+  const { t, language } = useLanguage();
   
   const currentYear = new Date().getFullYear();
   const yearOptions = [];
@@ -18,8 +20,6 @@ const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
   }
   yearOptions.push('~ 2009');
   
-  const seasonOptions = ['春', '夏', '秋', '冬'];
-
   const [titleZh, setTitleZh] = useState('');
   const [selectedYear, setSelectedYear] = useState(currentYear.toString());
   const [selectedSeason, setSelectedSeason] = useState('春');
@@ -52,11 +52,19 @@ const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!titleZh.trim()) {
-      alert('名稱為必填欄位');
+      alert(t('nameRequiredAlert'));
       return;
     }
 
-    const yearSeason = `${selectedYear} ${selectedSeason}`;
+    const seasonLabel = {
+      '春': t('seasonSpring'),
+      '夏': t('seasonSummer'),
+      '秋': t('seasonAutumn'),
+      '冬': t('seasonWinter')
+    }[selectedSeason] || selectedSeason;
+
+    const yearLabel = language === 'en' ? selectedYear : `${selectedYear} 年`;
+    const yearSeason = selectedYear === '~ 2009' ? '~ 2009' : `${yearLabel} ${seasonLabel}`;
 
     const newAnime = {
       id: `custom_${Date.now()}`,
@@ -68,7 +76,8 @@ const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
 
     handleAddCustomAnime(newAnime);
     
-    if(window.confirm(`已成功新增「${newAnime.titleZh}」至資料庫！\n是否直接將它加入您的「待看清單」？`)) {
+    const confirmMsg = t('addCustomSuccess').replace('{title}', newAnime.titleZh);
+    if(window.confirm(confirmMsg)) {
         handlePlanToWatchToggle(newAnime);
     }
     
@@ -86,7 +95,7 @@ const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
     <div className="add-anime-modal-overlay" onClick={onClose}>
       <div className="add-anime-modal glass-panel" onClick={e => e.stopPropagation()}>
         <div className="add-anime-header">
-          <h2>新增動畫</h2>
+          <h2>{t('addAnimeTitle')}</h2>
           <button className="close-button" onClick={onClose}>
             <X size={24} />
           </button>
@@ -94,40 +103,42 @@ const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
 
         <form className="add-anime-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>動畫名稱 *</label>
+            <label>{t('animeNameLabel')}</label>
             <input
               type="text"
               required
-              placeholder="例如: 葬送的芙莉蓮"
+              placeholder={t('animeNamePlaceholder')}
               value={titleZh}
               onChange={e => setTitleZh(e.target.value)}
             />
           </div>
           
           <div className="form-group">
-            <label>年份 *</label>
+            <label>{t('yearLabel')}</label>
             <div className="year-season-group">
               <select 
                 value={selectedYear} 
                 onChange={e => setSelectedYear(e.target.value)}
               >
-                {yearOptions.map(year => (
-                  <option key={year} value={year}>{year === '~ 2009' ? '~ 2009 年' : `${year} 年`}</option>
-                ))}
+                {yearOptions.map(year => {
+                  const label = year === '~ 2009' ? '~ 2009' : (language === 'en' ? year : `${year} 年`);
+                  return <option key={year} value={year}>{label}</option>;
+                })}
               </select>
               <select 
                 value={selectedSeason} 
                 onChange={e => setSelectedSeason(e.target.value)}
               >
-                {seasonOptions.map(season => (
-                  <option key={season} value={season}>{season}季</option>
-                ))}
+                <option value="春">{t('seasonSpring')}</option>
+                <option value="夏">{t('seasonSummer')}</option>
+                <option value="秋">{t('seasonAutumn')}</option>
+                <option value="冬">{t('seasonWinter')}</option>
               </select>
             </div>
           </div>
 
           <div className="form-group">
-            <label>封面圖片網址</label>
+            <label>{t('coverUrl')}</label>
             <div className="input-with-icon">
               <ImageIcon size={18} />
               <input
@@ -139,17 +150,17 @@ const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
             </div>
             {coverImage && (
                 <div className="image-preview">
-                    <img src={coverImage} alt="預覽" onError={(e) => (e.currentTarget.style.display = 'none')} />
+                    <img src={coverImage} alt={t('preview')} onError={(e) => (e.currentTarget.style.display = 'none')} />
                 </div>
             )}
           </div>
 
           <div className="form-group">
-            <label>分類標籤</label>
+            <label>{t('genreLabel')}</label>
             <div className="genre-input-group">
               <input
                 type="text"
-                placeholder="輸入標籤名稱..."
+                placeholder={t('genreInputPlaceholder')}
                 value={genreInput}
                 onChange={e => setGenreInput(e.target.value)}
                 onKeyDown={handleGenreKeyDown}
@@ -183,7 +194,7 @@ const AddAnimeModal: React.FC<AddAnimeModalProps> = ({ isOpen, onClose }) => {
 
           <button type="submit" className="submit-btn btn-glass">
             <Plus size={18} />
-            新增至資料庫
+            {t('addToDatabase')}
           </button>
         </form>
       </div>

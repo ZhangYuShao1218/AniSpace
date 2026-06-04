@@ -27,6 +27,7 @@ import type { Anime, WatchedAnime } from '../types';
 import { ShareImageGenerator } from './ShareImageGenerator';
 import { exportToGoogleSheet } from '../utils/googleSheets';
 import { useGoogleSync } from '../contexts/GoogleSyncContext';
+import { useLanguage } from '../contexts/LanguageContext';
 import { ShareModeSelector } from './ShareModeSelector';
 import { ShareList } from './ShareList';
 import './ShareModal.css';
@@ -45,9 +46,9 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [isProcessing, setIsProcessing] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [customTitle, setCustomTitle] = useState(isWatched ? '我的神作動畫紀錄' : '此生必看清單');
-  
   const { accessToken, login } = useGoogleSync();
+  const { t, tTitle } = useLanguage();
+  const [customTitle, setCustomTitle] = useState('');
   const imageGeneratorRef = useRef<HTMLDivElement>(null);
 
   const requiredCount = useMemo(() => {
@@ -61,8 +62,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
   const filteredAnimes = useMemo(() => {
     if (!searchTerm) return animes;
     const lowerTerm = searchTerm.toLowerCase();
-    return animes.filter(a => a.titleZh.toLowerCase().includes(lowerTerm));
-  }, [animes, searchTerm]);
+    return animes.filter(a => tTitle(a).toLowerCase().includes(lowerTerm));
+  }, [animes, searchTerm, tTitle]);
 
   const selectedAnimes = useMemo(() => {
     if (selectedIds.size === 0) return [];
@@ -106,7 +107,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
 
   const handleExportSheet = async () => {
     if (!accessToken) {
-      alert('請先登入 Google 帳號以建立試算表！');
+      alert(t('loginRequiredAlert'));
       login();
       return;
     }
@@ -118,7 +119,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
       window.open(url, '_blank');
     } catch (error) {
       console.error(error);
-      alert('匯出失敗，請重試或確認權限。');
+      alert(t('exportFailedAlert'));
     } finally {
       setIsProcessing(false);
     }
@@ -126,7 +127,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
 
   const handleGenerateImage = async () => {
     if (selectedIds.size === 0 || selectedIds.size > requiredCount) {
-      alert(`請選擇 1 到 ${requiredCount} 部動畫！`);
+      alert(t('selectAnimeAlert').replace('{count}', requiredCount.toString()));
       return;
     }
     
@@ -180,7 +181,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
       }
     } catch (err) {
       console.error(err);
-      alert('圖片產生失敗，可能是圖片跨網域 (CORS) 問題，請稍後再試。');
+      alert(t('generateImageFailedAlert'));
     } finally {
       setIsProcessing(false);
     }
@@ -200,9 +201,9 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           </button>
         
           <h2 className="share-modal-title" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
-            <ThumbsUp size={28} /> 推坑別人
+            <ThumbsUp size={28} /> {t('recommendToOthers')}
           </h2>
-          <p className="share-modal-subtitle" style={{ marginBottom: '24px' }}>選擇一種方式，將您的寶藏動畫分享出去吧！</p>
+          <p className="share-modal-subtitle" style={{ marginBottom: '24px' }}>{t('shareModalSubtitle')}</p>
 
           <ShareModeSelector 
             mode={mode} 
@@ -216,7 +217,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
             <div className="selection-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'space-between', minHeight: '40px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                 <h3 style={{ margin: 0 }}>
-                  {mode === 'GRID_25' ? '動畫賓果' : mode === 'SHEET' ? '動畫清單' : '分享動畫'} ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
+                  {mode === 'GRID_25' ? t('animeBingo') : mode === 'SHEET' ? t('animeList') : t('shareAnime')} ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
                 </h3>
                 {mode === 'SHEET' && (
                   <div 
@@ -228,23 +229,23 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
                     ) : (
                       <Circle size={20} color="currentColor" />
                     )}
-                    <span>全選</span>
+                    <span>{t('selectAll')}</span>
                   </div>
                 )}
                 {mode === 'GRID_25' && (
                   <div 
                     className="random-select-btn"
                     onClick={handleRandomSelect}
-                    title="隨機抽選動畫來填滿賓果卡"
+                    title={t('randomSelectTooltip')}
                   >
                     <ShuffleIcon size={16} />
-                    <span>隨機挑選</span>
+                    <span>{t('randomSelect')}</span>
                   </div>
                 )}
               </div>
               <input 
                 type="text" 
-                placeholder="搜尋動畫名稱..." 
+                placeholder={t('searchPlaceholder')} 
                 value={searchTerm}
                 onChange={e => setSearchTerm(e.target.value)}
                 className="share-search-input"
@@ -267,26 +268,26 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           <div className="share-modal-actions" style={{ display: 'flex', alignItems: 'center', justifyContent: mode !== 'SHEET' ? 'space-between' : 'flex-end', gap: '16px' }}>
             {mode !== 'SHEET' && (
               <div className="share-custom-title-section" style={{ flex: '1', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <label style={{ fontSize: '0.9rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', fontWeight: 600 }}>為你的神作賜名：</label>
+                <label style={{ fontSize: '0.9rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', fontWeight: 600 }}>{t('customTitleLabel')}</label>
                 <input 
                   type="text" 
                   value={customTitle} 
                   onChange={e => setCustomTitle(e.target.value)} 
                   className="share-search-input" 
                   style={{ flex: '1', padding: '8px 12px', fontSize: '0.9rem' }}
-                  placeholder="在此輸入專屬標題..."
+                  placeholder={isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan')}
                 />
               </div>
             )}
             {mode === 'SHEET' ? (
               <button className="btn-primary" onClick={handleExportSheet} disabled={isProcessing}>
                 {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <FileSpreadsheet size={18} />}
-                {isProcessing ? '正在建立試算表...' : '建立清單'}
+                {isProcessing ? t('creatingSheet') : t('createList')}
               </button>
             ) : (
               <button className="btn-primary" onClick={handleGenerateImage} disabled={isProcessing || selectedIds.size === 0 || selectedIds.size > requiredCount}>
                 {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <Share2 size={18} />}
-                {isProcessing ? '處理中...' : '分享'}
+                {isProcessing ? t('processing') : t('share')}
               </button>
             )}
           </div>
@@ -299,8 +300,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           ref={imageGeneratorRef}
           animes={selectedAnimes} 
           isWatched={isWatched} 
+          customTitle={customTitle || (isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan'))}
           gridCount={requiredCount as 4|9|16|25} 
-          customTitle={customTitle}
         />
       )}
     </>,

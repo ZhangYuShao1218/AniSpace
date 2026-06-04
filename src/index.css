@@ -74,6 +74,10 @@
                     radial-gradient(circle at 85% 30%, rgba(217, 119, 6, 0.08), transparent 35%);
 }
 
+html {
+  overflow-y: scroll; /* Force vertical scrollbar to prevent UI shifting */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -268,6 +272,9 @@ input:focus, select:focus, textarea:focus {
   color: var(--text-secondary);
   font-weight: 600;
   transition: all var(--transition-fast);
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .nav-tab.active {

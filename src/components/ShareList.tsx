@@ -2,6 +2,7 @@ import React from 'react';
 import { Check, ImageIcon } from 'lucide-react';
 import type { Anime, WatchedAnime } from '../types';
 import type { ExportMode } from './ShareModal';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface ShareListProps {
   filteredAnimes: (Anime | WatchedAnime)[];
@@ -18,11 +19,13 @@ export const ShareList: React.FC<ShareListProps> = React.memo(({
   requiredCount,
   handleToggleSelect
 }) => {
+  const { t, tTitle, tCover } = useLanguage();
+
   if (filteredAnimes.length === 0) {
     return (
       <div style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)', gridColumn: '1 / -1', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', justifyContent: 'center' }}>
         <ImageIcon size={32} style={{ opacity: 0.3 }} />
-        <span style={{ fontSize: '0.95rem' }}>找不到符合的動畫，或目前尚未有動畫可供分享。</span>
+        <span style={{ fontSize: '0.95rem' }}>{t('emptySearchTitle')}</span>
       </div>
     );
   }
@@ -38,9 +41,10 @@ export const ShareList: React.FC<ShareListProps> = React.memo(({
             key={anime.id} 
             className={`share-anime-item ${isSelected ? 'selected' : ''} ${isDisabled ? 'disabled' : ''}`}
             onClick={() => !isDisabled && handleToggleSelect(anime.id)}
+            title={tTitle(anime)}
           >
-            <img src={anime.coverImage} alt={anime.titleZh} className="share-item-cover" />
-            <span className="share-item-title">{anime.titleZh}</span>
+            <img src={tCover(anime)} alt={tTitle(anime)} className="share-item-cover" />
+            <span className="share-item-title">{tTitle(anime)}</span>
             <div className="share-item-check">
               {isSelected && <Check size={14} />}
             </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './FilterBar.css';
 import { Search, SlidersHorizontal, ArrowDownAZ, Plus } from 'lucide-react';
 import { getRelativeSeasonString } from '../utils/season';
+import { useLanguage } from '../contexts/LanguageContext';
 import AddAnimeModal from './AddAnimeModal';
 
 
@@ -31,6 +32,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
   onSortChange
 }) => {
   const [isAddAnimeOpen, setIsAddAnimeOpen] = useState(false);
+  const { t, tGenre, tYearSeason } = useLanguage();
 
   const toggleGenre = (genre: string) => {
     if (selectedGenres.includes(genre)) {
@@ -65,7 +67,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
           <Search size={20} className="search-icon" />
           <input 
             type="text" 
-            placeholder="搜尋動畫名稱..." 
+            placeholder={t('searchPlaceholder')} 
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             className="search-input"
@@ -73,7 +75,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
           <button 
             className="online-search-trigger" 
             onClick={() => setIsAddAnimeOpen(true)}
-            title="手動新增動畫"
+            title={t('manualAddAnime')}
           >
             <Plus size={18} />
           </button>
@@ -87,7 +89,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
               onChange={(e) => handleYearSelect(e.target.value)}
               className="filter-select"
             >
-              <option value="">所有年份</option>
+              <option value="">{t('allYears')}</option>
               {(() => {
                 const elements: React.JSX.Element[] = [];
                 let currentYear = '';
@@ -97,7 +99,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
                     elements.push(<option key={`sep-${index}`} disabled>──────────</option>);
                   }
                   currentYear = y;
-                  elements.push(<option key={ys} value={ys}>{ys}</option>);
+                  elements.push(<option key={ys} value={ys}>{tYearSeason(ys)}</option>);
                 });
                 return elements;
               })()}
@@ -110,19 +112,19 @@ const FilterBar: React.FC<FilterBarProps> = ({
                 className={`quick-tab ${selectedYear === prevSeason ? 'active' : ''}`} 
                 onClick={() => handleSeasonToggle(prevSeason)}
               >
-                上季動畫
+                {t('prevSeason')}
               </button>
               <button 
                 className={`quick-tab ${selectedYear === currentSeason ? 'active' : ''}`} 
                 onClick={() => handleSeasonToggle(currentSeason)}
               >
-                本季新番
+                {t('currentSeason')}
               </button>
               <button 
                 className={`quick-tab ${selectedYear === nextSeason ? 'active' : ''}`} 
                 onClick={() => handleSeasonToggle(nextSeason)}
               >
-                下季預告
+                {t('nextSeason')}
               </button>
             </div>
           </div>
@@ -135,23 +137,23 @@ const FilterBar: React.FC<FilterBarProps> = ({
               onChange={(e) => onSortChange(e.target.value)}
               className="filter-select"
             >
-              <option value="date_desc">首播年份 (新到舊)</option>
-              <option value="date_asc">首播年份 (舊到新)</option>
-              <option value="rating_desc">你的評分 (高到低)</option>
-              <option value="rating_asc">你的評分 (低到高)</option>
+              <option value="date_desc">{t('sortYearDesc')}</option>
+              <option value="date_asc">{t('sortYearAsc')}</option>
+              <option value="rating_desc">{t('sortRatingDesc')}</option>
+              <option value="rating_asc">{t('sortRatingAsc')}</option>
             </select>
           </div>
         </div>
       </div>
 
       <div className="genres-section glass-panel fade-in">
-        <span className="genres-label">分類:</span>
+        <span className="genres-label">{t('genres')}</span>
         <div className="genres-wrap">
           <button 
             className={`genre-tag ${selectedGenres.length === 0 ? 'active' : ''}`}
             onClick={() => onGenreChange([])}
           >
-            全部
+            {t('allGenres')}
           </button>
           {genres.map(genre => (
             <button
@@ -159,14 +161,14 @@ const FilterBar: React.FC<FilterBarProps> = ({
               className={`genre-tag ${selectedGenres.includes(genre) ? 'active' : ''}`}
               onClick={() => toggleGenre(genre)}
             >
-              {genre}
+              {tGenre(genre)}
             </button>
           ))}
           <button
             className={`genre-tag nsfw ${selectedGenres.includes('福利') ? 'active' : ''}`}
             onClick={() => toggleGenre('福利')}
           >
-            福利
+            {t('genreEcchi')}
           </button>
         </div>
       </div>

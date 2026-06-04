@@ -1,10 +1,12 @@
 import React from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+import { useLanguage } from '../contexts/LanguageContext';
 import './ThemeToggle.css';
 
 const ThemeToggle: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useLanguage();
 
   return (
     <div className="theme-toggle-container">
@@ -15,7 +17,7 @@ const ThemeToggle: React.FC = () => {
           e.stopPropagation();
           toggleTheme();
         }}
-        title={theme === 'dark' ? "切換為淺色模式" : "切換為深色模式"}
+        title={theme === 'dark' ? t('switchToLight') : t('switchToDark')}
         aria-label="Toggle theme"
       >
         <div className="toggle-track">

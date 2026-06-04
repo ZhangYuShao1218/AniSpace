@@ -28,7 +28,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   onPlanToWatchToggle,
 }) => {
   const { setCorrection, getCorrectedTitle, handleRemoveReview } = useAnime();
-  const { language } = useLanguage();
+  const { language, t, tCover, tGenre, tYearSeason } = useLanguage();
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [newTitle, setNewTitle] = useState('');
   const [isConfirmingRemove, setIsConfirmingRemove] = useState(false);
@@ -45,9 +45,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   
   const displayTitle = getCorrectedTitle(baseTitle);
 
-  const displayCover = language !== 'zh-TW' && anime.coverImageAniList 
-    ? anime.coverImageAniList 
-    : anime.coverImage;
+  const displayCover = tCover(anime);
 
   const handleTitleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -107,7 +105,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       <button
         className="edit-title-btn"
         onClick={handleEditClick}
-        title="編輯顯示名稱"
+        title={t('editDisplayName')}
       >
         <Edit2 size={14} />
       </button>
@@ -117,7 +115,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
         <button
           className="remove-review-btn"
           onClick={onRemoveReviewClick}
-          title="移除評價"
+          title={t('removeReview')}
         >
           <Trash2 size={14} />
         </button>
@@ -127,7 +125,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       <button
         className={`heart-btn ${isPlanToWatch ? 'active' : ''}`}
         onClick={() => onPlanToWatchToggle(anime as Anime)}
-        title={isPlanToWatch ? '從期待清單移除' : '加入期待清單'}
+        title={isPlanToWatch ? t('removeFromPlan') : t('addToPlan')}
       >
         <Heart size={20} className={isPlanToWatch ? 'heart-fill' : ''} />
       </button>
@@ -150,19 +148,19 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
               onActionClick(anime as Anime);
             }}
           >
-            {isWatched ? '查看評價' : '加入已看'}
+            {isWatched ? t('viewReview') : t('addToWatched')}
           </button>
         </div>
       </div>
 
       <div className="card-content">
         <h3 className="card-title">{displayTitle}</h3>
-        <p className="card-year">{anime.yearSeason}</p>
+        <p className="card-year">{tYearSeason(anime.yearSeason)}</p>
 
         <div className="card-tags-container">
           <div className="card-tags-summary">
             {anime.genres.slice(0, 4).map(genre => (
-              <span key={genre} className="genre-tag mini">{genre}</span>
+              <span key={genre} className="genre-tag mini">{tGenre(genre)}</span>
             ))}
             {anime.genres.length > 4 && (
               <span className="genre-tag mini count">+{anime.genres.length - 4}</span>
@@ -170,7 +168,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
           </div>
           <div className="card-tags-full">
             {anime.genres.map(genre => (
-              <span key={genre} className="genre-tag mini">{genre}</span>
+              <span key={genre} className="genre-tag mini">{tGenre(genre)}</span>
             ))}
           </div>
         </div>
@@ -189,7 +187,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
             style={{ top: popoverPos.top, left: popoverPos.left, width: popoverPos.width }}
             onClick={e => e.stopPropagation()}
           >
-            <div className="card-edit-popup-label">顯示名稱</div>
+            <div className="card-edit-popup-label">{t('displayName')}</div>
             <form onSubmit={handleTitleSubmit}>
               <input
                 type="text"
@@ -199,10 +197,10 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
                 autoFocus
               />
               <div className="card-edit-popup-actions">
-                <button type="button" className="card-edit-popup-btn cancel" onClick={handleCancel} title="取消">
+                <button type="button" className="card-edit-popup-btn cancel" onClick={handleCancel} title={t('cancel')}>
                   <X size={15} />
                 </button>
-                <button type="submit" className="card-edit-popup-btn save" title="儲存">
+                <button type="submit" className="card-edit-popup-btn save" title={t('save')}>
                   <Check size={15} />
                 </button>
               </div>
@@ -221,10 +219,10 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
             style={{ top: popoverPos.top, left: popoverPos.left, width: popoverPos.width }}
             onClick={e => e.stopPropagation()}
           >
-            <div className="card-edit-popup-label" style={{ color: '#f87171' }}>確認移除評價？</div>
+            <div className="card-edit-popup-label" style={{ color: '#f87171' }}>{t('confirmRemoveTitle')}</div>
             <hr style={{ borderColor: 'rgba(255,255,255,0.1)', margin: '4px 0 10px' }} />
             <div style={{ marginBottom: '12px', fontSize: '0.85rem', color: '#e2e8f0' }}>
-              此操作將從您的動畫紀錄中移除此項目。
+              {t('confirmRemoveDesc')}
             </div>
             
             <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#e2e8f0', cursor: 'pointer', marginBottom: '12px' }}>
@@ -234,14 +232,14 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
                 onChange={e => setSkipConfirm(e.target.checked)}
                 style={{ cursor: 'pointer' }}
               />
-              不用再次確認
+              {t('doNotAskAgain')}
             </label>
 
             <div className="card-edit-popup-actions">
-              <button type="button" className="card-edit-popup-btn cancel" onClick={() => setIsConfirmingRemove(false)} title="取消">
+              <button type="button" className="card-edit-popup-btn cancel" onClick={() => setIsConfirmingRemove(false)} title={t('cancel')}>
                 <X size={15} />
               </button>
-              <button type="button" className="card-edit-popup-btn save" onClick={handleConfirmRemove} title="確定移除" style={{ color: '#f87171' }}>
+              <button type="button" className="card-edit-popup-btn save" onClick={handleConfirmRemove} title={t('confirmRemoveBtn')} style={{ color: '#f87171' }}>
                 <Check size={15} />
               </button>
             </div>

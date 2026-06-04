@@ -19,6 +19,9 @@
   background: rgba(99, 102, 241, 0.1);
   border-color: rgba(99, 102, 241, 0.3);
   color: #a5b4fc;
+  flex: 1;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .import-btn:hover {
@@ -31,6 +34,9 @@
   background: rgba(16, 185, 129, 0.1);
   border-color: rgba(16, 185, 129, 0.3);
   color: #6ee7b7;
+  flex: 1;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .export-btn:hover:not(:disabled) {

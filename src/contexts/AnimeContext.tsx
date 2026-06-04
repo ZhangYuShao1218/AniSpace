@@ -136,19 +136,23 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const handleSync = useCallback(async () => {
     setIsScraping(true);
-    setScrapeProgress('正在從遠端同步最新資料庫...');
+    setScrapeProgress('syncingRemoteDB');
+    const startTime = Date.now();
     try {
       const data = await fetchAndMergeAnimeData();
+      const elapsed = Date.now() - startTime;
+      if (elapsed < 800) await new Promise(r => setTimeout(r, 800 - elapsed));
+      
       if (data && data.length > 0) {
         setRemoteAnime(data);
         localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(data));
-        setScrapeProgress('同步成功！');
+        setScrapeProgress('syncSuccess');
       } else {
-        setScrapeProgress('獲取資料為空或失敗...');
+        setScrapeProgress('syncFailedEmpty');
       }
     } catch (err) {
       console.error(err);
-      setScrapeProgress('發生錯誤...');
+      setScrapeProgress('syncError');
     } finally {
       setTimeout(() => {
         setIsScraping(false);

@@ -11,11 +11,11 @@ const AlertContext = createContext<AlertContextType | undefined>(undefined);
 export const AlertProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
-  const [title, setTitle] = useState('系統提示');
+  const [title, setTitle] = useState('');
 
-  const showAlert = (msg: string, title: string = '系統提示') => {
+  const showAlert = (msg: string, title?: string) => {
     setMessage(msg);
-    setTitle(title);
+    setTitle(title || '');
     setIsOpen(true);
   };
 

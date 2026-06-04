@@ -3,6 +3,8 @@ import './ReviewModal.css';
 import type { Anime, WatchedAnime } from '../types';
 import { X, Star } from 'lucide-react';
 
+import { useLanguage } from '../contexts/LanguageContext';
+
 interface ReviewModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -11,6 +13,7 @@ interface ReviewModalProps {
 }
 
 const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSave }) => {
+  const { t, tCover } = useLanguage();
   const [rating, setRating] = useState<number>(0);
   const [comment, setComment] = useState<string>('');
   const [hoverRating, setHoverRating] = useState<number>(0);
@@ -46,7 +49,7 @@ const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSav
         
         <div className="modal-header">
           {anime.coverImage && (
-            <img src={anime.coverImage} alt={anime.titleZh} className="modal-image" />
+            <img src={tCover(anime)} alt={anime.titleZh} className="modal-image" />
           )}
           <div className="modal-info">
             <h2 className="modal-title">{anime.titleZh}</h2>
@@ -56,7 +59,7 @@ const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSav
 
         <div className="modal-body">
           <div className="form-group">
-            <label>給予評分 (1-10)</label>
+            <label>{t('giveRating')}</label>
             <div className="star-rating">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(val => (
                 <Star
@@ -74,9 +77,9 @@ const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSav
           </div>
 
           <div className="form-group">
-            <label>簡單評論</label>
+            <label>{t('shortComment')}</label>
             <textarea
-              placeholder="寫下您對這部動畫的看法..."
+              placeholder={t('commentPlaceholder')}
               value={comment}
               onChange={e => setComment(e.target.value)}
               rows={4}
@@ -85,13 +88,13 @@ const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSav
         </div>
 
         <div className="modal-footer">
-          <button className="btn-glass" onClick={onClose}>取消</button>
+          <button className="btn-glass" onClick={onClose}>{t('cancel')}</button>
           <button 
             className="btn-primary" 
             onClick={handleSave}
             disabled={rating === 0}
           >
-            儲存紀錄
+            {t('saveRecord')}
           </button>
         </div>
       </div>

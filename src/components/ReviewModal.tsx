@@ -13,7 +13,7 @@ interface ReviewModalProps {
 }
 
 const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSave }) => {
-  const { t, tCover } = useLanguage();
+  const { t, tCover, tTitle, tYearSeason } = useLanguage();
   const [rating, setRating] = useState<number>(0);
   const [comment, setComment] = useState<string>('');
   const [hoverRating, setHoverRating] = useState<number>(0);
@@ -49,11 +49,11 @@ const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSav
         
         <div className="modal-header">
           {anime.coverImage && (
-            <img src={tCover(anime)} alt={anime.titleZh} className="modal-image" />
+            <img src={tCover(anime)} alt={tTitle(anime)} className="modal-image" />
           )}
           <div className="modal-info">
-            <h2 className="modal-title">{anime.titleZh}</h2>
-            <p className="modal-subtitle">{anime.yearSeason}</p>
+            <h2 className="modal-title">{tTitle(anime)}</h2>
+            <p className="modal-subtitle">{tYearSeason(anime.yearSeason)}</p>
           </div>
         </div>
 

@@ -308,8 +308,18 @@
   font-size: 0.75rem;
   color: var(--text-muted);
   font-style: italic;
-  margin-top: var(--spacing-2);
   text-align: center;
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.anime-card:hover .card-comment {
+  opacity: 1;
+  max-height: 60px;
+  margin-top: var(--spacing-2);
 }
 
 
@@ -536,5 +546,11 @@
   .genre-tag.mini {
     font-size: 0.7rem;
     padding: 1px 4px;
+  }
+  
+  .card-comment {
+    opacity: 1;
+    max-height: 60px;
+    margin-top: var(--spacing-2);
   }
 }

@@ -61,6 +61,29 @@ const FilterBar: React.FC<FilterBarProps> = ({
 
 
 
+  const [localSearch, setLocalSearch] = useState(searchQuery);
+  const isComposing = React.useRef(false);
+  const lastSentValue = React.useRef(searchQuery);
+
+  React.useEffect(() => {
+    if (!isComposing.current && searchQuery !== localSearch) {
+      if (searchQuery !== lastSentValue.current) {
+        setLocalSearch(searchQuery);
+        lastSentValue.current = searchQuery;
+      }
+    }
+  }, [searchQuery, localSearch]);
+
+  React.useEffect(() => {
+    const handler = setTimeout(() => {
+      if (!isComposing.current && localSearch !== searchQuery) {
+        lastSentValue.current = localSearch;
+        onSearchChange(localSearch);
+      }
+    }, 300);
+    return () => clearTimeout(handler);
+  }, [localSearch, searchQuery, onSearchChange]);
+
   return (
     <div className="filter-bar-container">
       <div className="filter-section glass-panel fade-in">
@@ -69,8 +92,18 @@ const FilterBar: React.FC<FilterBarProps> = ({
           <input 
             type="text" 
             placeholder={t('searchPlaceholder')} 
-            value={searchQuery}
-            onChange={(e) => onSearchChange(e.target.value)}
+            value={localSearch}
+            onChange={(e) => setLocalSearch(e.target.value)}
+            onCompositionStart={() => { isComposing.current = true; }}
+            onCompositionEnd={(e) => { 
+              isComposing.current = false; 
+              const finalVal = e.currentTarget.value;
+              setLocalSearch(finalVal);
+              if (finalVal !== searchQuery) {
+                lastSentValue.current = finalVal;
+                onSearchChange(finalVal);
+              }
+            }}
             className="search-input"
           />
           <button 

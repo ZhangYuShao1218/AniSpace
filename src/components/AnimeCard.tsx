@@ -47,6 +47,31 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
 
   const displayCover = tCover(anime);
 
+  const getVisualLength = (str: string) => {
+    let len = 0;
+    for (let i = 0; i < str.length; i++) {
+      len += str.charCodeAt(i) > 255 ? 2 : 1;
+    }
+    return len;
+  };
+
+  const MAX_VISUAL_LENGTH = 22;
+  let currentLen = 0;
+  let visibleTagCount = 0;
+  
+  for (let i = 0; i < anime.genres.length; i++) {
+    const textLen = getVisualLength(tGenre(anime.genres[i]));
+    const isLast = i === anime.genres.length - 1;
+    const badgeSpace = isLast ? 0 : 3.5; // Reserve space for "+N" badge
+    
+    if (visibleTagCount > 0 && (currentLen + textLen + badgeSpace) > MAX_VISUAL_LENGTH) {
+      break;
+    }
+    currentLen += textLen + 1; // +1 for the gap between tags
+    visibleTagCount++;
+  }
+  if (visibleTagCount === 0 && anime.genres.length > 0) visibleTagCount = 1;
+
   const handleTitleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (newTitle.trim()) {
@@ -55,18 +80,31 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     }
   };
 
-  const handleEditClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setNewTitle(displayTitle);
+  const calculatePopupPosition = () => {
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect();
       const popupWidth = Math.max(rect.width * 1.365, 315);
+      let left = rect.left + rect.width / 2 - popupWidth / 2;
+      const padding = 16; // 16px padding from screen edge
+      
+      if (left < padding) {
+        left = padding;
+      } else if (left + popupWidth > window.innerWidth - padding) {
+        left = window.innerWidth - popupWidth - padding;
+      }
+      
       setPopoverPos({
         top: rect.top + rect.height * 0.28,
-        left: rect.left + rect.width / 2 - popupWidth / 2,
+        left: left,
         width: popupWidth,
       });
     }
+  };
+
+  const handleEditClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setNewTitle(displayTitle);
+    calculatePopupPosition();
     setIsEditingTitle(true);
   };
 
@@ -76,15 +114,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     if (shouldSkip) {
       handleRemoveReview(anime.id);
     } else {
-      if (cardRef.current) {
-        const rect = cardRef.current.getBoundingClientRect();
-        const popupWidth = Math.max(rect.width * 1.365, 315);
-        setPopoverPos({
-          top: rect.top + rect.height * 0.28,
-          left: rect.left + rect.width / 2 - popupWidth / 2,
-          width: popupWidth,
-        });
-      }
+      calculatePopupPosition();
       setIsConfirmingRemove(true);
     }
   };
@@ -159,11 +189,11 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
 
         <div className="card-tags-container">
           <div className="card-tags-summary">
-            {anime.genres.slice(0, 4).map(genre => (
+            {anime.genres.slice(0, visibleTagCount).map(genre => (
               <span key={genre} className="genre-tag mini">{tGenre(genre)}</span>
             ))}
-            {anime.genres.length > 4 && (
-              <span className="genre-tag mini count">+{anime.genres.length - 4}</span>
+            {anime.genres.length > visibleTagCount && (
+              <span className="genre-tag mini count">+{anime.genres.length - visibleTagCount}</span>
             )}
           </div>
           <div className="card-tags-full">

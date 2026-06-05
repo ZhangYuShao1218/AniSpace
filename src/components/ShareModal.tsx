@@ -214,8 +214,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           />
 
           <div className="share-selection-area">
-            <div className="selection-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'space-between', minHeight: '40px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <div className="selection-header">
+              <div className="selection-header-left">
                 <h3 style={{ margin: 0 }}>
                   {mode === 'GRID_25' ? t('animeBingo') : mode === 'SHEET' ? t('animeList') : t('shareAnime')} ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
                 </h3>
@@ -249,7 +249,6 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
                 value={searchTerm}
                 onChange={e => setSearchTerm(e.target.value)}
                 className="share-search-input"
-                style={{ flex: '1', maxWidth: '200px' }}
               />
             </div>
             <hr className="share-divider" />
@@ -265,27 +264,26 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
             </div>
           </div>
 
-          <div className="share-modal-actions" style={{ display: 'flex', alignItems: 'center', justifyContent: mode !== 'SHEET' ? 'space-between' : 'flex-end', gap: '16px' }}>
+          <div className={`share-modal-actions ${mode === 'SHEET' ? 'sheet-mode' : ''}`}>
             {mode !== 'SHEET' && (
-              <div className="share-custom-title-section" style={{ flex: '1', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <label style={{ fontSize: '0.9rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', fontWeight: 600 }}>{t('customTitleLabel')}</label>
+              <div className="share-custom-title-section">
+                <label>{t('customTitleLabel')}</label>
                 <input 
                   type="text" 
                   value={customTitle} 
                   onChange={e => setCustomTitle(e.target.value)} 
-                  className="share-search-input" 
-                  style={{ flex: '1', padding: '8px 12px', fontSize: '0.9rem' }}
+                  className="share-search-input custom-title-input" 
                   placeholder={isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan')}
                 />
               </div>
             )}
             {mode === 'SHEET' ? (
-              <button className="btn-primary" onClick={handleExportSheet} disabled={isProcessing}>
+              <button className="btn-primary share-btn" onClick={handleExportSheet} disabled={isProcessing}>
                 {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <FileSpreadsheet size={18} />}
                 {isProcessing ? t('creatingSheet') : t('createList')}
               </button>
             ) : (
-              <button className="btn-primary" onClick={handleGenerateImage} disabled={isProcessing || selectedIds.size === 0 || selectedIds.size > requiredCount}>
+              <button className="btn-primary share-btn" onClick={handleGenerateImage} disabled={isProcessing || selectedIds.size === 0 || selectedIds.size > requiredCount}>
                 {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <Share2 size={18} />}
                 {isProcessing ? t('processing') : t('share')}
               </button>

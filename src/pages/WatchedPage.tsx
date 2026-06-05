@@ -5,6 +5,7 @@ import { useAnime } from '../contexts/AnimeContext';
 import SearchBar from '../components/SearchBar';
 import { useUrlParams } from '../hooks/useUrlParams';
 import { useLanguage } from '../contexts/LanguageContext';
+import { parseSeason } from '../utils/season';
 
 const WatchedPage = () => {
   const { watchedList } = useAnime();
@@ -20,7 +21,9 @@ const WatchedPage = () => {
     return result.sort((a, b) => {
       if (sortBy === 'rating_desc') return (b.userRating || 0) - (a.userRating || 0);
       if (sortBy === 'rating_asc') return (a.userRating || 0) - (b.userRating || 0);
-      return 0; // date_desc is handled naturally by insertion order mostly, or we assume it
+      if (sortBy === 'date_desc') return parseSeason(b.yearSeason) - parseSeason(a.yearSeason);
+      if (sortBy === 'date_asc') return parseSeason(a.yearSeason) - parseSeason(b.yearSeason);
+      return 0;
     });
   }, [watchedList, searchQuery, sortBy]);
 
@@ -39,6 +42,7 @@ const WatchedPage = () => {
         style={{ minWidth: '160px' }}
       >
         <option value="date_desc">{t('sortYearDesc')}</option>
+        <option value="date_asc">{t('sortYearAsc')}</option>
         <option value="rating_desc">{t('sortRatingDescHigh')}</option>
         <option value="rating_asc">{t('sortRatingAscLow')}</option>
       </select>

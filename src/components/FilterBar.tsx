@@ -32,6 +32,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
   onSortChange
 }) => {
   const [isAddAnimeOpen, setIsAddAnimeOpen] = useState(false);
+  const [isGenresModalOpen, setIsGenresModalOpen] = useState(false);
   const { t, tGenre, tYearSeason } = useLanguage();
 
   const toggleGenre = (genre: string) => {
@@ -82,31 +83,34 @@ const FilterBar: React.FC<FilterBarProps> = ({
         </div>
         
         <div className="filter-controls">
-          <div className="filter-group">
-            <SlidersHorizontal size={18} className="filter-icon" />
-            <select 
-              value={years.includes(selectedYear) || selectedYear === '~ 2009' ? selectedYear : ""} 
-              onChange={(e) => handleYearSelect(e.target.value)}
-              className="filter-select"
-            >
-              <option value="">{t('allYears')}</option>
-              {(() => {
-                const elements: React.JSX.Element[] = [];
-                let currentYear = '';
-                years.forEach((ys, index) => {
-                  const y = ys.match(/\d+/)?.[0] || '';
-                  if (currentYear !== '' && currentYear !== y) {
-                    elements.push(<option key={`sep-${index}`} disabled>──────────</option>);
-                  }
-                  currentYear = y;
-                  elements.push(<option key={ys} value={ys}>{tYearSeason(ys)}</option>);
-                });
-                return elements;
-              })()}
-              <option disabled>──────────</option>
-              <option value="~ 2009">~ 2009</option>
-              <option disabled>&nbsp;</option>
-            </select>
+          <div className="filter-dropdowns-row">
+            <div className="filter-group">
+              <SlidersHorizontal size={18} className="filter-icon" />
+              <select 
+                value={years.includes(selectedYear) || selectedYear === '~ 2009' ? selectedYear : ""} 
+                onChange={(e) => handleYearSelect(e.target.value)}
+                className="filter-select"
+              >
+                <option value="">{t('allYears')}</option>
+                {(() => {
+                  const elements: React.JSX.Element[] = [];
+                  let currentYear = '';
+                  years.forEach((ys, index) => {
+                    const y = ys.match(/\d+/)?.[0] || '';
+                    if (currentYear !== '' && currentYear !== y) {
+                      elements.push(<option key={`sep-${index}`} disabled>──────────</option>);
+                    }
+                    currentYear = y;
+                    elements.push(<option key={ys} value={ys}>{tYearSeason(ys)}</option>);
+                  });
+                  return elements;
+                })()}
+                <option disabled>──────────</option>
+                <option value="~ 2009">~ 2009</option>
+                <option disabled>&nbsp;</option>
+              </select>
+            </div>
+
             <div className="quick-tabs">
               <button 
                 className={`quick-tab ${selectedYear === prevSeason ? 'active' : ''}`} 
@@ -126,28 +130,43 @@ const FilterBar: React.FC<FilterBarProps> = ({
               >
                 {t('nextSeason')}
               </button>
+              
+              <button 
+                className="quick-tab mobile-genres-btn"
+                onClick={() => setIsGenresModalOpen(true)}
+              >
+                {t('genres')} {selectedGenres.length > 0 ? `(${selectedGenres.length})` : ''}
+              </button>
             </div>
-          </div>
 
-          <div className="filter-group right-aligned">
-            <div className="vertical-divider" />
-            <ArrowDownAZ size={18} className="filter-icon" />
-            <select 
-              value={sortBy} 
-              onChange={(e) => onSortChange(e.target.value)}
-              className="filter-select"
-            >
-              <option value="date_desc">{t('sortYearDesc')}</option>
-              <option value="date_asc">{t('sortYearAsc')}</option>
-              <option value="rating_desc">{t('sortRatingDesc')}</option>
-              <option value="rating_asc">{t('sortRatingAsc')}</option>
-            </select>
+            <div className="filter-group right-aligned">
+              <div className="vertical-divider" />
+              <ArrowDownAZ size={18} className="filter-icon" />
+              <select 
+                value={sortBy} 
+                onChange={(e) => onSortChange(e.target.value)}
+                className="filter-select"
+              >
+                <option value="date_desc">{t('sortYearDesc')}</option>
+                <option value="date_asc">{t('sortYearAsc')}</option>
+                <option value="rating_desc">{t('sortRatingDesc')}</option>
+                <option value="rating_asc">{t('sortRatingAsc')}</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="genres-section glass-panel fade-in">
-        <span className="genres-label">{t('genres')}</span>
+      {isGenresModalOpen && (
+        <div className="genres-modal-backdrop" onClick={() => setIsGenresModalOpen(false)} />
+      )}
+
+      <div className={`genres-section glass-panel fade-in ${isGenresModalOpen ? 'modal-open' : ''}`}>
+        <div className="genres-header mobile-only">
+          <span style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-primary)' }}>{t('genres')}</span>
+          <button onClick={() => setIsGenresModalOpen(false)} style={{ padding: '6px 14px', background: 'var(--bg-secondary)', borderRadius: '8px', color: 'var(--text-primary)', border: '1px solid var(--border-glass)', fontWeight: 600, boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>完成</button>
+        </div>
+        <span className="genres-label desktop-only">{t('genres')}</span>
         <div className="genres-wrap">
           <button 
             className={`genre-tag ${selectedGenres.length === 0 ? 'active' : ''}`}

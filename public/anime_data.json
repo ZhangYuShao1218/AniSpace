@@ -18,7 +18,7 @@
   {
     "id": "anilist-135865",
     "titleZh": "幼女戰記 第2季",
-    "titleEn": "",
+    "titleEn": "Saga of Tanya the Evil Season 2",
     "titleJa": "幼女戦記Ⅱ",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-9b3Nn8nmGZIG.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-9b3Nn8nmGZIG.jpg",
@@ -323,12 +323,13 @@
   {
     "id": "anilist-177637",
     "titleZh": "さよなら ララ",
-    "titleEn": "",
+    "titleEn": "Goodbye, Lara",
     "titleJa": "さよなら ララ",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg",
     "yearSeason": "2026 夏",
     "genres": [
+      "愛情",
       "超自然"
     ]
   },
@@ -387,7 +388,7 @@
   {
     "id": "anilist-197715",
     "titleZh": "LV999的村民",
-    "titleEn": "",
+    "titleEn": "The Villager of Level 999",
     "titleJa": "LV999の村人",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197715-KLFLxU24U1uL.png",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197715-KLFLxU24U1uL.png",
@@ -425,7 +426,7 @@
   {
     "id": "anilist-199748",
     "titleZh": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
-    "titleEn": "",
+    "titleEn": "I Became a Legend After My 10 Year-Long Last Stand",
     "titleJa": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199748-PAFk9pGSUmFL.png",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199748-PAFk9pGSUmFL.png",
@@ -455,8 +456,8 @@
     "titleZh": "與奔馳於透明之夜的你，談一場看不見的戀愛。",
     "titleEn": "",
     "titleJa": "透明な夜に駆ける君と、目に見えない恋をした。",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-YLPqiMg2nsTr.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-YLPqiMg2nsTr.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "劇情",
@@ -496,8 +497,8 @@
     "titleZh": "MEBIUS DUST",
     "titleEn": "",
     "titleJa": "メビウス・ダスト",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-aKpjh4JVayhd.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-aKpjh4JVayhd.png",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-12A18HaisXXA.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-12A18HaisXXA.png",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -566,6 +567,20 @@
     ]
   },
   {
+    "id": "anilist-198409",
+    "titleZh": "世界最強後衛～迷宮國的新人探索者～",
+    "titleEn": "",
+    "titleJa": "世界最強の後衛 ～迷宮国の新人探索者～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-207809",
     "titleZh": "赤河戀影",
     "titleEn": "",
@@ -582,16 +597,15 @@
     ]
   },
   {
-    "id": "anilist-198409",
-    "titleZh": "世界最強後衛～迷宮國的新人探索者～",
+    "id": "anilist-199408",
+    "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
     "titleEn": "",
-    "titleJa": "世界最強の後衛 ～迷宮国の新人探索者～",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png",
+    "titleJa": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
     "yearSeason": "2026 夏",
     "genres": [
-      "動作",
-      "冒險",
+      "劇情",
       "奇幻"
     ]
   },
@@ -609,19 +623,6 @@
       "劇情",
       "奇幻",
       "魔法少女"
-    ]
-  },
-  {
-    "id": "anilist-199408",
-    "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
-    "titleEn": "",
-    "titleJa": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情",
-      "奇幻"
     ]
   },
   {
@@ -667,7 +668,7 @@
   {
     "id": "anilist-198709",
     "titleZh": "奇招百出的維多利亞",
-    "titleEn": "",
+    "titleEn": "Victoria of Many Faces",
     "titleJa": "手札が多めのビクトリア",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-KnZCqdH7fu3F.png",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-KnZCqdH7fu3F.png",
@@ -1226,18 +1227,6 @@
     ]
   },
   {
-    "id": "anilist-196974",
-    "titleZh": "黑貓與魔女的教室",
-    "titleEn": "The Classroom of the Black Cat and a Witch",
-    "titleJa": "黒猫と魔女の教室",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196974-mZk1uyrx0XNx.png",
-    "yearSeason": "2026 春",
-    "genres": [
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-195268",
     "titleZh": "成為悲劇元兇的最強異端，最後頭目女王為了人民犧牲奉獻 第二季",
     "titleEn": "The Most Heretical Last Boss Queen: From Villainess to Savior Season 2",
@@ -1249,6 +1238,18 @@
       "喜劇",
       "奇幻",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-196974",
+    "titleZh": "黑貓與魔女的教室",
+    "titleEn": "The Classroom of the Black Cat and a Witch",
+    "titleJa": "黒猫と魔女の教室",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196974-mZk1uyrx0XNx.png",
+    "yearSeason": "2026 春",
+    "genres": [
+      "奇幻"
     ]
   },
   {
@@ -1281,7 +1282,7 @@
   {
     "id": "anilist-178707",
     "titleZh": "劇場版 魔法科高校の劣等生 四葉継承編",
-    "titleEn": "",
+    "titleEn": "The Irregular at Magic High School THE MOVIE -Yotsuba Succession Arc-",
     "titleJa": "劇場版 魔法科高校の劣等生 四葉継承編",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178707-Ys8zvR7BLECi.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178707-Ys8zvR7BLECi.jpg",
@@ -2068,21 +2069,6 @@
     ]
   },
   {
-    "id": "anilist-187892",
-    "titleZh": "殺戮輪迴",
-    "titleEn": "ALL YOU NEED IS KILL",
-    "titleJa": "ALL YOU NEED IS KILL",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187892-8xwQPygNv9SG.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187892-8xwQPygNv9SG.jpg",
-    "yearSeason": "2026 冬",
-    "genres": [
-      "動作",
-      "科幻",
-      "超自然",
-      "驚悚"
-    ]
-  },
-  {
     "id": "anilist-187989",
     "titleZh": "勇者之渣",
     "titleEn": "Scum of the Brave",
@@ -2096,6 +2082,21 @@
       "劇情",
       "奇幻",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-187892",
+    "titleZh": "殺戮輪迴",
+    "titleEn": "ALL YOU NEED IS KILL",
+    "titleJa": "ALL YOU NEED IS KILL",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187892-8xwQPygNv9SG.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187892-8xwQPygNv9SG.jpg",
+    "yearSeason": "2026 冬",
+    "genres": [
+      "動作",
+      "科幻",
+      "超自然",
+      "驚悚"
     ]
   },
   {
@@ -8293,22 +8294,6 @@
     ]
   },
   {
-    "id": "anilist-162803",
-    "titleZh": "屍體如山的死亡遊戲 第二部分",
-    "titleEn": "Dead Mount Death Play Part 2",
-    "titleJa": "デッドマウント・デスプレイ 第2クール",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/17/0000128617.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162803-hs0umrdl9SDN.jpg",
-    "yearSeason": "2023 秋",
-    "genres": [
-      "動作",
-      "奇幻",
-      "超自然",
-      "驚悚",
-      "異世界"
-    ]
-  },
-  {
     "id": "anilist-161802",
     "titleZh": "關於我轉生變成史萊姆這檔事 柯里烏斯之夢",
     "titleEn": "That Time I Got Reincarnated as a Slime: Visions of Coleus",
@@ -8321,6 +8306,22 @@
       "冒險",
       "喜劇",
       "奇幻",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-162803",
+    "titleZh": "屍體如山的死亡遊戲 第二部分",
+    "titleEn": "Dead Mount Death Play Part 2",
+    "titleJa": "デッドマウント・デスプレイ 第2クール",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/17/0000128617.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162803-hs0umrdl9SDN.jpg",
+    "yearSeason": "2023 秋",
+    "genres": [
+      "動作",
+      "奇幻",
+      "超自然",
+      "驚悚",
       "異世界"
     ]
   },
@@ -18473,7 +18474,8 @@
     "genres": [
       "喜劇",
       "日常",
-      "超自然"
+      "超自然",
+      "異世界"
     ]
   },
   {
@@ -30212,8 +30214,8 @@
   {
     "id": "anilist-21462",
     "titleZh": "美少女戰士 Crystal 3期",
-    "titleEn": "Sailor Moon Crystal Season 3",
-    "titleJa": "美少女戦士セーラームーン Crystal「デス・バスターズ編」",
+    "titleEn": "Pretty Guardian Sailor Moon Crystal: Season 3",
+    "titleJa": "美少女戦士セーラームーン Crystal デス・バスターズ編",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21462-bRbgZYf4Sgxj.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21462-bRbgZYf4Sgxj.jpg",
     "yearSeason": "2016 春",
@@ -32082,7 +32084,8 @@
       "喜劇",
       "福利",
       "愛情",
-      "科幻"
+      "科幻",
+      "超能力"
     ]
   },
   {
@@ -35066,7 +35069,7 @@
   {
     "id": "anilist-14751",
     "titleZh": "美少女戰士Crystal",
-    "titleEn": "Sailor Moon Crystal",
+    "titleEn": "Pretty Guardian Sailor Moon Crystal: Seasons 1-2",
     "titleJa": "美少女戦士セーラームーンCrystal",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14751-ifQbdvyIg9Er.png",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14751-ifQbdvyIg9Er.png",
@@ -35262,19 +35265,6 @@
     ]
   },
   {
-    "id": "anilist-20717",
-    "titleZh": "信長協奏曲",
-    "titleEn": "Nobunaga Concerto",
-    "titleJa": "信長協奏曲〈コンツェルト〉",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20717.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20717.jpg",
-    "yearSeason": "2014 夏",
-    "genres": [
-      "喜劇",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-20659",
     "titleZh": "あの夏を待っている 僕達は高校最後の夏を過ごしながら、あの夏を待っている。",
     "titleEn": "Waiting in the Summer OVA",
@@ -35288,6 +35278,19 @@
       "愛情",
       "科幻",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-20717",
+    "titleZh": "信長協奏曲",
+    "titleEn": "Nobunaga Concerto",
+    "titleJa": "信長協奏曲〈コンツェルト〉",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20717.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20717.jpg",
+    "yearSeason": "2014 夏",
+    "genres": [
+      "喜劇",
+      "愛情"
     ]
   },
   {
@@ -36507,21 +36510,6 @@
     ]
   },
   {
-    "id": "anilist-20478",
-    "titleZh": "夏目友人帳 曾幾何時下雪之日",
-    "titleEn": "Natsume's Book of Friends OVA",
-    "titleJa": "夏目友人帳 新作OVA いつかゆきのひに",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20478-CLBOf5ao3dWK.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20478-CLBOf5ao3dWK.jpg",
-    "yearSeason": "2014 冬",
-    "genres": [
-      "劇情",
-      "奇幻",
-      "日常",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-20501",
     "titleZh": "阿茹茉妮",
     "titleEn": "",
@@ -36533,6 +36521,21 @@
       "劇情",
       "奇幻",
       "心理",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-20478",
+    "titleZh": "夏目友人帳 曾幾何時下雪之日",
+    "titleEn": "Natsume's Book of Friends OVA",
+    "titleJa": "夏目友人帳 新作OVA いつかゆきのひに",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20478-CLBOf5ao3dWK.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20478-CLBOf5ao3dWK.jpg",
+    "yearSeason": "2014 冬",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "日常",
       "超自然"
     ]
   },

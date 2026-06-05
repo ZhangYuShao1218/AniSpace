@@ -115,10 +115,29 @@
 .rating-value {
   margin-left: var(--spacing-3);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  line-height: 1;
   background: var(--accent-gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .modal-body {
+    padding: var(--spacing-4);
+  }
+  .star-rating {
+    gap: 2px;
+  }
+  .star {
+    width: 22px;
+    height: 22px;
+  }
+  .rating-value {
+    margin-left: var(--spacing-2);
+    font-size: 1.15rem;
+  }
 }
 
 .modal-footer {

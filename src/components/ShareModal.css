@@ -92,6 +92,8 @@
 .share-mode-btn span {
   flex: 1;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .share-mode-btn svg {
@@ -161,6 +163,7 @@
   border: none;
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
   margin: 8px 0 8px 0;
+  flex-shrink: 0;
 }
 
 [data-theme="light"] .share-divider {
@@ -185,6 +188,13 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--spacing-4);
+  flex-shrink: 0;
+}
+
+.selection-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .selection-header h3 {
@@ -256,6 +266,8 @@
   color: var(--accent-hover);
 }
 
+
+
 .share-search-input {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-glass);
@@ -264,6 +276,7 @@
   color: var(--text-primary);
   font-size: 0.9rem;
   width: 200px;
+  box-sizing: border-box;
 }
 
 .share-search-input:focus {
@@ -361,7 +374,73 @@
 
 .share-modal-actions {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.share-modal-actions.sheet-mode {
   justify-content: flex-end;
+}
+
+.share-custom-title-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-custom-title-section label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.custom-title-input {
+  flex: 1;
+  max-width: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  .share-modes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .share-mode-btn {
+    font-size: 0.78rem;
+    padding: 8px;
+    gap: 6px;
+  }
+  .selection-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin-bottom: 0px;
+  }
+  .selection-header-left {
+    justify-content: space-between;
+  }
+  .share-search-input {
+    width: 100%;
+  }
+  .share-divider {
+    margin: 0 0 4px 0;
+  }
+  
+  .share-modal-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-4);
+  }
+  .share-btn {
+    width: 100%;
+    justify-content: center;
+    max-width: 350px;
+    margin: 0 auto;
+  }
 }
 
 /* Light Mode Overrides */

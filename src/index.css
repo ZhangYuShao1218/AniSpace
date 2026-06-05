@@ -213,6 +213,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: var(--spacing-2);
+  white-space: nowrap;
 }
 
 .btn-glass:hover {
@@ -251,15 +252,23 @@ input:focus, select:focus, textarea:focus {
   padding: var(--spacing-6);
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding: var(--spacing-4); /* 增加手機端兩側空白 (16px) */
+  }
+}
+
 /* App Header */
 .app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--spacing-4);
-  padding: var(--spacing-4) 0 var(--spacing-6) 0;
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-6);
   border-bottom: 2px solid var(--border-glass-light);
 }
+
 
 .app-title {
   font-size: 2rem;
@@ -268,15 +277,29 @@ input:focus, select:focus, textarea:focus {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .nav-tabs {
   display: flex;
+  flex-wrap: nowrap;
   gap: var(--spacing-3);
   background: var(--bg-secondary);
   padding: var(--spacing-1);
   border-radius: var(--radius-full);
   border: 1px solid var(--border-glass);
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for nav-tabs but keep it scrollable */
+.nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+.nav-tabs {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .nav-tab {
@@ -288,6 +311,13 @@ input:focus, select:focus, textarea:focus {
   flex: 1;
   text-align: center;
   white-space: nowrap;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .nav-tab {
+    padding: var(--spacing-2) var(--spacing-4);
+    font-size: 0.9rem;
+  }
 }
 
 .nav-tab.active {

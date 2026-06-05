@@ -39,19 +39,18 @@ const GoogleSyncButton: React.FC = () => {
   }
 
   return (
-    <div className="google-sync-btn-container" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-      <div style={{ position: 'relative' }}>
+    <div className="google-sync-btn-container">
+      <div className="google-sync-inner">
         <button 
-          className="btn-google" 
+          className="btn-google sync-active" 
           onClick={syncToDrive}
           disabled={isSyncing}
-          style={{ background: 'rgba(46, 204, 113, 0.15)', borderColor: 'rgba(46, 204, 113, 0.3)' }}
         >
           {isSyncing ? <Loader2 size={16} className="animate-spin" /> : <CloudUpload size={16} />}
           {isSyncing ? t('syncing') : t('syncToCloud')}
         </button>
         {lastSyncTime && (
-          <span className="sync-time-text" style={{ position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)', marginTop: '4px', whiteSpace: 'nowrap' }}>
+          <span className="sync-time-text">
             {t('lastSync')} {lastSyncTime}
           </span>
         )}

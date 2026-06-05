@@ -9,9 +9,22 @@ interface PaginationProps {
 }
 
 const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
-  if (totalPages <= 1) return null;
+  const getPagesToShow = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth <= 768) return 5;
+    }
+    return 7;
+  };
 
-  const maxPagesToShow = 7;
+  const [maxPagesToShow, setMaxPagesToShow] = React.useState(getPagesToShow());
+
+  React.useEffect(() => {
+    const handleResize = () => setMaxPagesToShow(getPagesToShow());
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  if (totalPages <= 1) return null;
   let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
   let endPage = startPage + maxPagesToShow - 1;
 

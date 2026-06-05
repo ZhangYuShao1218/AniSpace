@@ -11,6 +11,17 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .import-export-container {
+    flex: 3; /* 相對於 Sync 按鈕的 flex: 1，這裡給予 3 份空間平分給三個按鈕 */
+    max-width: 556px; /* 180 * 3 + 16 (gap) */
+    margin-top: 0; /* 取消手機版的上邊距使其與區塊 4 對齊 */
+    gap: var(--spacing-1);
+    height: 100%;
+    align-items: stretch;
+  }
+}
+
 .btn-divider-icon {
   color: var(--border-glass-light);
 }
@@ -54,9 +65,32 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
+  .btn-text {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 1024px) {
   .btn-text {
     display: inline;
+    overflow: visible;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .btn-glass {
+    padding: var(--spacing-2) var(--spacing-3);
+    font-size: 0.85rem;
+  }
+  .settings-dropdown-container {
+    max-width: 120px;
   }
 }
 
@@ -85,6 +119,34 @@
   gap: 2px;
   z-index: 100;
   border-radius: var(--radius-md);
+}
+
+@media (max-width: 1023px) {
+  .settings-dropdown-menu {
+    margin-right: 12px; /* Prevent touching screen edge */
+  }
+  
+  .settings-dropdown-container {
+    flex: 1;
+    display: flex;
+    max-width: 140px;
+  }
+  
+  .settings-btn {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .import-btn, .export-btn {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .dropdown-item {

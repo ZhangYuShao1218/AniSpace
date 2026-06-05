@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Layers, DownloadCloud, Loader2 } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Layers, DownloadCloud, Loader2, Menu } from 'lucide-react';
 import { useAnime } from '../contexts/AnimeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import GoogleSyncButton from './GoogleSyncButton';
@@ -17,6 +17,20 @@ const AppHeader: React.FC = () => {
 
   const location = useLocation();
   const currentPath = location.pathname;
+  const navigate = useNavigate();
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsNavOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <header className="app-header container">
@@ -33,9 +47,11 @@ const AppHeader: React.FC = () => {
       </div>
 
       <div className="header-right">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+        <div className="header-nav-group">
           <GoogleSyncButton />
-          <div className="nav-tabs">
+          
+          {/* Desktop Nav Tabs (區塊 3) */}
+          <div className="nav-tabs desktop-nav-tabs">
             <Link
               to="/"
               className={`nav-tab ${currentPath === '/' ? 'active' : ''}`}
@@ -55,17 +71,46 @@ const AppHeader: React.FC = () => {
               {t('navRecords')}
             </Link>
           </div>
+
+          {/* Mobile Nav Select (區塊 3) */}
+          <div className="mobile-nav-select-wrapper" ref={navRef} style={{ position: 'relative' }}>
+            <button 
+              className="btn-glass settings-btn"
+              onClick={() => setIsNavOpen(!isNavOpen)}
+              style={{ width: '100%', height: '100%', padding: '0 12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
+            >
+              <Menu size={16} style={{ color: 'var(--text-muted)' }} />
+              <span style={{ color: 'var(--text-primary)', fontWeight: 500 }}>
+                {currentPath === '/' ? t('navAllAnime') : currentPath === '/plan' ? t('navPlanToWatch') : t('navRecords')}
+              </span>
+            </button>
+            {isNavOpen && (
+              <div className="settings-dropdown-menu fade-in" style={{
+                background: 'var(--bg-dropdown)',
+                backdropFilter: 'blur(12px)',
+                WebkitBackdropFilter: 'blur(12px)',
+                border: '1px solid var(--border-glass-light)',
+                boxShadow: '0 10px 40px rgba(0, 0, 0, 0.2)',
+                left: 0,
+                right: 0,
+                top: '110%'
+              }}>
+                <button className={`dropdown-item ${currentPath === '/' ? 'active' : ''}`} onClick={() => { navigate('/'); setIsNavOpen(false); }}>{t('navAllAnime')}</button>
+                <button className={`dropdown-item ${currentPath === '/plan' ? 'active' : ''}`} onClick={() => { navigate('/plan'); setIsNavOpen(false); }}>{t('navPlanToWatch')}</button>
+                <button className={`dropdown-item ${currentPath === '/records' ? 'active' : ''}`} onClick={() => { navigate('/records'); setIsNavOpen(false); }}>{t('navRecords')}</button>
+              </div>
+            )}
+          </div>
         </div>
 
-        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+        <div className="header-controls">
           <button
-            className="btn-glass settings-btn"
+            className="btn-glass sync-latest-btn"
             onClick={handleSync}
             disabled={isScraping}
-            style={{ fontSize: '0.85rem', padding: '0 var(--spacing-4)', height: '38px' }}
           >
             {isScraping ? <Loader2 className="animate-spin" size={16} /> : <DownloadCloud size={16} />}
-            {isScraping && scrapeProgress ? t(scrapeProgress as any) : t('syncLatestAnime')}
+            <span className="btn-text">{isScraping && scrapeProgress ? t(scrapeProgress as any) : t('syncLatestAnime')}</span>
           </button>
           <ImportExportButtons />
         </div>

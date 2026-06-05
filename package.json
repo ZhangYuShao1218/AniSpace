@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "crawler": "node scraper/index.js",
+    "crawler": "node scraper/index.js && node scraper/post_process.js",
     "aniupdate": "node -e \"fetch('https://raw.githubusercontent.com/ZhangYuShao1218/AniSpace/main/public/anime_data.json').then(res => res.text()).then(text => require('fs').writeFileSync('public/anime_data.json', text)); console.log('Successfully updated local anime_data.json from remote!');\""
   },
   "dependencies": {

@@ -232,8 +232,8 @@
     "titleZh": "BLACK TORCH闇黑燈火",
     "titleEn": "BLACK TORCH",
     "titleJa": "BLACK TORCH",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-rPuvj09LMjdC.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-rPuvj09LMjdC.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-aZb5NOsCAV8l.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-aZb5NOsCAV8l.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -241,18 +241,6 @@
       "奇幻",
       "科幻",
       "超自然"
-    ]
-  },
-  {
-    "id": "anilist-190569",
-    "titleZh": "穹廬下的魔女",
-    "titleEn": "",
-    "titleJa": "天幕のジャードゥーガル",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-xkFjq9u9IeSr.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-xkFjq9u9IeSr.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情"
     ]
   },
   {
@@ -266,6 +254,18 @@
     "genres": [
       "動作",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-190569",
+    "titleZh": "穹廬下的魔女",
+    "titleEn": "",
+    "titleJa": "天幕のジャードゥーガル",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-xkFjq9u9IeSr.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-xkFjq9u9IeSr.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情"
     ]
   },
   {
@@ -371,21 +371,6 @@
     ]
   },
   {
-    "id": "anilist-209961",
-    "titleZh": "死亡遊戱で飯を食う。44:CLOUDY BEACH",
-    "titleEn": "",
-    "titleJa": "死亡遊戯で飯を食う。44:CLOUDY BEACH",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209961-EKMAWTp299Kt.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209961-EKMAWTp299Kt.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "劇情",
-      "懸疑",
-      "驚悚"
-    ]
-  },
-  {
     "id": "anilist-197715",
     "titleZh": "LV999的村民",
     "titleEn": "The Villager of Level 999",
@@ -398,6 +383,21 @@
       "冒險",
       "喜劇",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-209961",
+    "titleZh": "死亡遊戱で飯を食う。44:CLOUDY BEACH",
+    "titleEn": "",
+    "titleJa": "死亡遊戯で飯を食う。44:CLOUDY BEACH",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209961-EKMAWTp299Kt.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209961-EKMAWTp299Kt.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "懸疑",
+      "驚悚"
     ]
   },
   {
@@ -414,16 +414,6 @@
     ]
   },
   {
-    "id": "anilist-197178",
-    "titleZh": "ONE PIECE HEROINES",
-    "titleEn": "",
-    "titleJa": "ONE PIECE HEROINES",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
-    "yearSeason": "2026 夏",
-    "genres": []
-  },
-  {
     "id": "anilist-199748",
     "titleZh": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
     "titleEn": "I Became a Legend After My 10 Year-Long Last Stand",
@@ -436,6 +426,16 @@
       "冒險",
       "奇幻"
     ]
+  },
+  {
+    "id": "anilist-197178",
+    "titleZh": "ONE PIECE HEROINES",
+    "titleEn": "",
+    "titleJa": "ONE PIECE HEROINES",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
+    "yearSeason": "2026 夏",
+    "genres": []
   },
   {
     "id": "anilist-208044",
@@ -6253,19 +6253,6 @@
     ]
   },
   {
-    "id": "anilist-174044",
-    "titleZh": "深夜PUNCH",
-    "titleEn": "MAYONAKA PUNCH",
-    "titleJa": "真夜中ぱんチ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/97/0000137597.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx174044-HBvsyKjDVPyO.jpg",
-    "yearSeason": "2024 夏",
-    "genres": [
-      "喜劇",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-166477",
     "titleZh": "女神的露天咖啡廳 第二季",
     "titleEn": "The Café Terrace and Its Goddesses Season 2",
@@ -6278,6 +6265,19 @@
       "劇情",
       "福利",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-174044",
+    "titleZh": "深夜PUNCH",
+    "titleEn": "MAYONAKA PUNCH",
+    "titleJa": "真夜中ぱんチ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/97/0000137597.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx174044-HBvsyKjDVPyO.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "超自然"
     ]
   },
   {
@@ -16800,7 +16800,7 @@
     "titleZh": "魔法科高中的劣等生 來訪者篇",
     "titleEn": "The Irregular at Magic High School: Visitor Arc",
     "titleJa": "魔法科高校の劣等生 来訪者編",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/65/0000108065.JPG",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112300-I5ucx66OvqWX.png",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112300-I5ucx66OvqWX.png",
     "yearSeason": "2020 秋",
     "genres": [
@@ -22978,19 +22978,6 @@
     ]
   },
   {
-    "id": "anilist-102969",
-    "titleZh": "學園ベビーシッターズ OVA",
-    "titleEn": "School Babysitters OVA",
-    "titleJa": "学園ベビーシッターズ OVA",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b102969-fLLFYLOUWvTH.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b102969-fLLFYLOUWvTH.jpg",
-    "yearSeason": "2018 秋",
-    "genres": [
-      "喜劇",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-108942",
     "titleZh": "｢進撃の巨人｣ちみキャラ劇場”新生リヴァイ班”",
     "titleEn": "",
@@ -23001,6 +22988,19 @@
     "genres": [
       "喜劇",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-102969",
+    "titleZh": "學園ベビーシッターズ OVA",
+    "titleEn": "School Babysitters OVA",
+    "titleJa": "学園ベビーシッターズ OVA",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b102969-fLLFYLOUWvTH.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b102969-fLLFYLOUWvTH.jpg",
+    "yearSeason": "2018 秋",
+    "genres": [
+      "喜劇",
+      "日常"
     ]
   },
   {
@@ -28438,22 +28438,6 @@
     ]
   },
   {
-    "id": "anilist-21708",
-    "titleZh": "超自然9人組",
-    "titleEn": "Occultic;Nine",
-    "titleJa": "Occultic;Nine -オカルティック・ナイン-",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21708-al2koHBxr8du.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21708-al2koHBxr8du.jpg",
-    "yearSeason": "2016 秋",
-    "genres": [
-      "懸疑",
-      "科幻",
-      "超自然",
-      "驚悚",
-      "超能力"
-    ]
-  },
-  {
     "id": "anilist-21340",
     "titleZh": "魔法少女育成計劃",
     "titleEn": "Magical Girl Raising Project",
@@ -28467,6 +28451,22 @@
       "恐怖",
       "魔法少女",
       "心理",
+      "驚悚",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-21708",
+    "titleZh": "超自然9人組",
+    "titleEn": "Occultic;Nine",
+    "titleJa": "Occultic;Nine -オカルティック・ナイン-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21708-al2koHBxr8du.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21708-al2koHBxr8du.jpg",
+    "yearSeason": "2016 秋",
+    "genres": [
+      "懸疑",
+      "科幻",
+      "超自然",
       "驚悚",
       "超能力"
     ]
@@ -28532,19 +28532,6 @@
     ]
   },
   {
-    "id": "anilist-21610",
-    "titleZh": "我老婆是學生會長!+!",
-    "titleEn": "My Wife is the Student Council President+!",
-    "titleJa": "おくさまが生徒会長!+!",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21610-fXJmOc3wQQoX.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21610-fXJmOc3wQQoX.jpg",
-    "yearSeason": "2016 秋",
-    "genres": [
-      "喜劇",
-      "福利"
-    ]
-  },
-  {
     "id": "anilist-21703",
     "titleZh": "編舟記",
     "titleEn": "The Great Passage",
@@ -28556,6 +28543,19 @@
       "劇情",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-21610",
+    "titleZh": "我老婆是學生會長!+!",
+    "titleEn": "My Wife is the Student Council President+!",
+    "titleJa": "おくさまが生徒会長!+!",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21610-fXJmOc3wQQoX.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21610-fXJmOc3wQQoX.jpg",
+    "yearSeason": "2016 秋",
+    "genres": [
+      "喜劇",
+      "福利"
     ]
   },
   {
@@ -47479,20 +47479,6 @@
     ]
   },
   {
-    "id": "anilist-7148",
-    "titleZh": "管家後宮學園",
-    "titleEn": "Ladies Versus Butlers",
-    "titleJa": "れでぃ×ばと!",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
-    "yearSeason": "2010 冬",
-    "genres": [
-      "喜劇",
-      "福利",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-6802",
     "titleZh": "空之音",
     "titleEn": "Sound of the Sky",
@@ -47504,6 +47490,20 @@
       "音樂",
       "科幻",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-7148",
+    "titleZh": "管家後宮學園",
+    "titleEn": "Ladies Versus Butlers",
+    "titleJa": "れでぃ×ばと!",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
+    "yearSeason": "2010 冬",
+    "genres": [
+      "喜劇",
+      "福利",
+      "愛情"
     ]
   },
   {

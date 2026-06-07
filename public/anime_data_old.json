@@ -20,8 +20,8 @@
     "titleZh": "幼女戰記 第2季",
     "titleEn": "Saga of Tanya the Evil Season 2",
     "titleJa": "幼女戦記Ⅱ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-9b3Nn8nmGZIG.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-9b3Nn8nmGZIG.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-T7XIPMAbqcxN.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-T7XIPMAbqcxN.png",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -281,6 +281,19 @@
     ]
   },
   {
+    "id": "anilist-207141",
+    "titleZh": "尼古喵喵",
+    "titleEn": "",
+    "titleJa": "ヤニねこ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "日常"
+    ]
+  },
+  {
     "id": "anilist-209983",
     "titleZh": "地獄模式 ～喜歡挑戰特殊成就的玩家在廢設定的異世界成為無雙～ 第2季",
     "titleEn": "",
@@ -292,19 +305,6 @@
       "動作",
       "冒險",
       "奇幻"
-    ]
-  },
-  {
-    "id": "anilist-207141",
-    "titleZh": "尼古喵喵",
-    "titleEn": "",
-    "titleJa": "ヤニねこ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "日常"
     ]
   },
   {
@@ -428,16 +428,6 @@
     ]
   },
   {
-    "id": "anilist-197178",
-    "titleZh": "ONE PIECE HEROINES",
-    "titleEn": "",
-    "titleJa": "ONE PIECE HEROINES",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
-    "yearSeason": "2026 夏",
-    "genres": []
-  },
-  {
     "id": "anilist-208044",
     "titleZh": "落第賢者の學院無雙～二度目の転生、Sランクチート魔術師冒険録～",
     "titleEn": "",
@@ -450,6 +440,16 @@
       "冒險",
       "奇幻"
     ]
+  },
+  {
+    "id": "anilist-197178",
+    "titleZh": "ONE PIECE HEROINES",
+    "titleEn": "",
+    "titleJa": "ONE PIECE HEROINES",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
+    "yearSeason": "2026 夏",
+    "genres": []
   },
   {
     "id": "anilist-202269",
@@ -581,6 +581,19 @@
     ]
   },
   {
+    "id": "anilist-199408",
+    "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
+    "titleEn": "",
+    "titleJa": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-207809",
     "titleZh": "赤河戀影",
     "titleEn": "",
@@ -594,19 +607,6 @@
       "劇情",
       "奇幻",
       "愛情"
-    ]
-  },
-  {
-    "id": "anilist-199408",
-    "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
-    "titleEn": "",
-    "titleJa": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情",
-      "奇幻"
     ]
   },
   {
@@ -738,7 +738,8 @@
       "動作",
       "冒險",
       "喜劇",
-      "奇幻"
+      "奇幻",
+      "超自然"
     ]
   },
   {
@@ -1055,6 +1056,19 @@
     ]
   },
   {
+    "id": "anilist-198113",
+    "titleZh": "殺手青春",
+    "titleEn": "KILL BLUE",
+    "titleJa": "キルアオ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/07/0000147007.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198113-NRa47idWSlnx.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "動作",
+      "喜劇"
+    ]
+  },
+  {
     "id": "anilist-171110",
     "titleZh": "小書痴的下剋上  為了成為圖書管理員不擇手段！領主的養女",
     "titleEn": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
@@ -1067,19 +1081,6 @@
       "奇幻",
       "日常",
       "異世界"
-    ]
-  },
-  {
-    "id": "anilist-198113",
-    "titleZh": "殺手青春",
-    "titleEn": "KILL BLUE",
-    "titleJa": "キルアオ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/07/0000147007.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198113-NRa47idWSlnx.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "動作",
-      "喜劇"
     ]
   },
   {
@@ -1295,6 +1296,20 @@
     ]
   },
   {
+    "id": "anilist-206951",
+    "titleZh": "女神「異世界轉生想成為什麼」我「勇者的肋骨」",
+    "titleEn": "My Ribdiculous Reincarnation",
+    "titleJa": "女神「異世界転生何になりたいですか」 俺「勇者の肋骨で」",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000150266.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206951-qiHcrw7pwzuq.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
     "id": "anilist-196012",
     "titleZh": "MAO 摩緒",
     "titleEn": "MAO",
@@ -1307,20 +1322,6 @@
       "懸疑",
       "愛情",
       "超自然"
-    ]
-  },
-  {
-    "id": "anilist-206951",
-    "titleZh": "女神「異世界轉生想成為什麼」我「勇者的肋骨」",
-    "titleEn": "My Ribdiculous Reincarnation",
-    "titleJa": "女神「異世界転生何になりたいですか」 俺「勇者の肋骨で」",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000150266.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206951-qiHcrw7pwzuq.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
-      "奇幻",
-      "異世界"
     ]
   },
   {
@@ -8418,21 +8419,6 @@
     ]
   },
   {
-    "id": "anilist-155389",
-    "titleZh": "SHY 靦腆英雄",
-    "titleEn": "SHY",
-    "titleJa": "SHY",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/29/0000127829.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx155389-qB3aiPB5IkAi.png",
-    "yearSeason": "2023 秋",
-    "genres": [
-      "動作",
-      "劇情",
-      "心理",
-      "超能力"
-    ]
-  },
-  {
     "id": "anilist-146206",
     "titleZh": "聖女魔力無所不能 第二季",
     "titleEn": "The Saint's Magic Power is Omnipotent II",
@@ -8445,6 +8431,21 @@
       "愛情",
       "日常",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-155389",
+    "titleZh": "SHY 靦腆英雄",
+    "titleEn": "SHY",
+    "titleJa": "SHY",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/29/0000127829.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx155389-qB3aiPB5IkAi.png",
+    "yearSeason": "2023 秋",
+    "genres": [
+      "動作",
+      "劇情",
+      "心理",
+      "超能力"
     ]
   },
   {
@@ -8883,20 +8884,6 @@
     ]
   },
   {
-    "id": "anilist-162983",
-    "titleZh": "不死少女的謀殺鬧劇",
-    "titleEn": "Undead Murder Farce",
-    "titleJa": "アンデッドガール・マーダーファルス",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/21/0000131121.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162983-T3nZyk6sUlEj.jpg",
-    "yearSeason": "2023 夏",
-    "genres": [
-      "劇情",
-      "懸疑",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-109979",
     "titleZh": "蒼鷺與少年",
     "titleEn": "The Boy and the Heron",
@@ -8910,6 +8897,20 @@
       "奇幻",
       "超自然",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-162983",
+    "titleZh": "不死少女的謀殺鬧劇",
+    "titleEn": "Undead Murder Farce",
+    "titleJa": "アンデッドガール・マーダーファルス",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/21/0000131121.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162983-T3nZyk6sUlEj.jpg",
+    "yearSeason": "2023 夏",
+    "genres": [
+      "劇情",
+      "懸疑",
+      "超自然"
     ]
   },
   {
@@ -14471,20 +14472,6 @@
     ]
   },
   {
-    "id": "anilist-107717",
-    "titleZh": "小林家的龍女僕S",
-    "titleEn": "Miss Kobayashi's Dragon Maid S",
-    "titleJa": "小林さんちのメイドラゴンＳ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107717-bixaW1NTGBra.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107717-bixaW1NTGBra.jpg",
-    "yearSeason": "2021 夏",
-    "genres": [
-      "喜劇",
-      "奇幻",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-125206",
     "titleZh": "月光下的異世界之旅",
     "titleEn": "TSUKIMICHI -Moonlit Fantasy-",
@@ -14501,19 +14488,17 @@
     ]
   },
   {
-    "id": "anilist-126546",
-    "titleZh": "精靈幻想記",
-    "titleEn": "Seirei Gensouki: Spirit Chronicles",
-    "titleJa": "精霊幻想記",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
+    "id": "anilist-107717",
+    "titleZh": "小林家的龍女僕S",
+    "titleEn": "Miss Kobayashi's Dragon Maid S",
+    "titleJa": "小林さんちのメイドラゴンＳ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107717-bixaW1NTGBra.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107717-bixaW1NTGBra.jpg",
     "yearSeason": "2021 夏",
     "genres": [
-      "動作",
-      "劇情",
+      "喜劇",
       "奇幻",
-      "愛情",
-      "異世界"
+      "日常"
     ]
   },
   {
@@ -14527,6 +14512,22 @@
     "genres": [
       "動作",
       "冒險",
+      "奇幻",
+      "愛情",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-126546",
+    "titleZh": "精靈幻想記",
+    "titleEn": "Seirei Gensouki: Spirit Chronicles",
+    "titleJa": "精霊幻想記",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
+    "yearSeason": "2021 夏",
+    "genres": [
+      "動作",
+      "劇情",
       "奇幻",
       "愛情",
       "異世界"
@@ -16800,7 +16801,7 @@
     "titleZh": "魔法科高中的劣等生 來訪者篇",
     "titleEn": "The Irregular at Magic High School: Visitor Arc",
     "titleJa": "魔法科高校の劣等生 来訪者編",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112300-I5ucx66OvqWX.png",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/65/0000108065.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112300-I5ucx66OvqWX.png",
     "yearSeason": "2020 秋",
     "genres": [
@@ -22978,19 +22979,6 @@
     ]
   },
   {
-    "id": "anilist-108942",
-    "titleZh": "｢進撃の巨人｣ちみキャラ劇場”新生リヴァイ班”",
-    "titleEn": "",
-    "titleJa": "｢進撃の巨人｣ちみキャラ劇場”新生リヴァイ班”",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108942-UdPtw4CZUQmC.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108942-UdPtw4CZUQmC.jpg",
-    "yearSeason": "2018 秋",
-    "genres": [
-      "喜劇",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-102969",
     "titleZh": "學園ベビーシッターズ OVA",
     "titleEn": "School Babysitters OVA",
@@ -23001,6 +22989,19 @@
     "genres": [
       "喜劇",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-108942",
+    "titleZh": "｢進撃の巨人｣ちみキャラ劇場”新生リヴァイ班”",
+    "titleEn": "",
+    "titleJa": "｢進撃の巨人｣ちみキャラ劇場”新生リヴァイ班”",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108942-UdPtw4CZUQmC.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108942-UdPtw4CZUQmC.jpg",
+    "yearSeason": "2018 秋",
+    "genres": [
+      "喜劇",
+      "奇幻"
     ]
   },
   {

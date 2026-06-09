@@ -1,10 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import './AnimeCard.css';
 import type { Anime, WatchedAnime } from '../types';
 import { Star, Heart, Edit2, Check, X, Trash2 } from 'lucide-react';
 import { useAnime } from '../contexts/AnimeContext';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useAdMob } from '../contexts/AdMobContext';
 
 interface AnimeCardProps {
   anime: Anime | WatchedAnime;
@@ -35,6 +36,14 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   const [skipConfirm, setSkipConfirm] = useState(false);
   const [popoverPos, setPopoverPos] = useState<PopoverPos>({ top: 0, left: 0, width: 0 });
   const cardRef = useRef<HTMLDivElement>(null);
+  const { hideAd, showAd } = useAdMob();
+
+  useEffect(() => {
+    if (isEditingTitle || isConfirmingRemove) {
+      hideAd();
+      return () => showAd();
+    }
+  }, [isEditingTitle, isConfirmingRemove, hideAd, showAd]);
 
   let baseTitle = anime.titleZh;
   if (language === 'en' && anime.titleEn) {

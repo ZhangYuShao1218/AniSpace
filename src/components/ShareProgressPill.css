@@ -1,0 +1,35 @@
+.share-progress-pill {
+  position: fixed;
+  bottom: 80px; /* Above the bottom nav bar */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-dropdown);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(var(--accent-color-rgb), 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  z-index: 9999;
+  white-space: nowrap;
+}
+
+.share-progress-pill .progress-text {
+  background: var(--bg-primary);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+.share-progress-pill .animate-spin {
+  /* Force GPU hardware acceleration for smooth 60fps rotation even during heavy DOM work */
+  transform: translateZ(0);
+  will-change: transform;
+}

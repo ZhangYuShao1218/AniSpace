@@ -248,14 +248,17 @@
 }
 
 .mobile-genres-btn {
-  background: rgba(255, 215, 120, 0.15);
-  border-color: rgba(255, 215, 120, 0.3);
-  color: var(--text-primary);
+  background: rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.3);
+  color: #a5b4fc;
 }
+
+/* Removed custom dark mode background for mobile-genres-btn so it matches quick-tab */
 
 [data-theme="light"] .mobile-genres-btn {
   background: rgba(245, 220, 150, 0.4);
   border-color: rgba(230, 200, 120, 0.6);
+  color: var(--text-primary);
 }
 
 /* 18+ Toggle button */
@@ -331,7 +334,7 @@
     border-top: 1px solid rgba(255, 215, 120, 0.1);
     padding: var(--spacing-6);
     transform: translateY(100%);
-    transition: transform var(--transition-normal);
+    transition: all var(--transition-normal);
     box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
     max-height: 80vh;
     overflow-y: auto;
@@ -358,6 +361,14 @@
     inset: 0;
     background: rgba(0,0,0,0.5);
     z-index: 99998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+  }
+  
+  .genres-modal-backdrop.show {
+    opacity: 1;
+    visibility: visible;
   }
 }
 

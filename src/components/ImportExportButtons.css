@@ -13,9 +13,9 @@
 
 @media (max-width: 1023px) {
   .import-export-container {
-    flex: 3; /* 相對於 Sync 按鈕的 flex: 1，這裡給予 3 份空間平分給三個按鈕 */
-    max-width: 556px; /* 180 * 3 + 16 (gap) */
-    margin-top: 0; /* 取消手機版的上邊距使其與區塊 4 對齊 */
+    flex: 1;
+    max-width: 140px;
+    margin-top: 0; 
     gap: var(--spacing-1);
     height: 100%;
     align-items: stretch;
@@ -61,38 +61,9 @@
   cursor: not-allowed;
 }
 
-.btn-text {
-  display: none;
-}
+/* Removed global .btn-text hiding rules to allow sync button text to show */
 
-@media (min-width: 640px) {
-  .btn-text {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 100%;
-    vertical-align: middle;
-  }
-}
-
-@media (min-width: 1024px) {
-  .btn-text {
-    display: inline;
-    overflow: visible;
-    white-space: nowrap;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .btn-glass {
-    padding: var(--spacing-2) var(--spacing-3);
-    font-size: 0.85rem;
-  }
-  .settings-dropdown-container {
-    max-width: 120px;
-  }
-}
+/* 1024-1280 shrinkage removed as there is now enough space */
 
 .settings-dropdown-container {
   position: relative;
@@ -101,7 +72,7 @@
 }
 
 .settings-btn {
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .settings-btn:hover {
@@ -122,14 +93,10 @@
 }
 
 @media (max-width: 1023px) {
-  .settings-dropdown-menu {
-    margin-right: 12px; /* Prevent touching screen edge */
-  }
-  
   .settings-dropdown-container {
     flex: 1;
     display: flex;
-    max-width: 140px;
+    max-width: none;
   }
   
   .settings-btn {

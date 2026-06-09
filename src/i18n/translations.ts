@@ -8,6 +8,7 @@ export const translations = {
     navAllAnime: '所有動畫',
     navPlanToWatch: '期待動畫',
     navRecords: '動畫紀錄',
+    navSettings: '設定',
     syncLatestAnime: '同步最新動畫',
 
     // Search & Filter
@@ -105,7 +106,7 @@ export const translations = {
     syncing: '同步中...',
     syncSuccess: '同步成功',
     syncFailed: '同步失敗',
-    syncingRemoteDB: '正在從遠端同步最新資料庫...',
+    syncingRemoteDB: '遠端同步最新資料庫...',
     syncFailedEmpty: '獲取資料為空或失敗...',
     syncError: '發生錯誤...',
 
@@ -243,6 +244,7 @@ export const translations = {
     navAllAnime: 'All Anime',
     navPlanToWatch: 'Plan to Watch',
     navRecords: 'My Records',
+    navSettings: 'Settings',
     syncLatestAnime: 'Sync Latest Anime Data',
 
     searchPlaceholder: 'Search anime...',
@@ -330,8 +332,8 @@ export const translations = {
     syncing: 'Syncing...',
     syncSuccess: 'Sync Success',
     syncFailed: 'Sync Failed',
-    syncingRemoteDB: 'Syncing latest database from remote...',
-    syncFailedEmpty: 'Failed to fetch data or data is empty...',
+    syncingRemoteDB: 'Syncing...',
+    syncFailedEmpty: 'Failed to fetch data...',
     syncError: 'An error occurred...',
 
     syncSuccessAlert: 'Cloud backup successful!',
@@ -466,7 +468,8 @@ export const translations = {
     navAllAnime: 'すべてのアニメ',
     navPlanToWatch: '期待のアニメ',
     navRecords: 'アニメ記録',
-    syncLatestAnime: '最新のアニメデータを同期',
+    navSettings: '設定',
+    syncLatestAnime: '最新アニメを同期',
 
     searchPlaceholder: 'アニメを検索...',
     allStatus: 'すべての状態',
@@ -553,7 +556,7 @@ export const translations = {
     syncing: '同期中...',
     syncSuccess: '同期完了',
     syncFailed: '同期失敗',
-    syncingRemoteDB: 'リモートデータベースを同期中...',
+    syncingRemoteDB: 'クラウドと同期中...',
     syncFailedEmpty: 'データの取得に失敗しました...',
     syncError: 'エラーが発生しました...',
 

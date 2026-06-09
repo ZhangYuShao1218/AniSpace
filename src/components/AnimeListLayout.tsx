@@ -1,6 +1,8 @@
 import React, { useMemo, useEffect, useCallback } from 'react';
 import type { Anime, WatchedAnime } from '../types';
 import AnimeCard from './AnimeCard';
+import AdBanner from './AdBanner';
+import AffiliateCard from './AffiliateCard';
 import Pagination from './Pagination';
 import ReviewModal from './ReviewModal';
 import { ShareModal } from './ShareModal';
@@ -165,18 +167,26 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
         </div>
       ) : (
         <div id="main-content">
+          <AdBanner adSlot="3811211519" />
+          
           <div className="anime-grid">
-            {paginatedData.map(anime => (
-              <AnimeCard
-                key={anime.id}
-                anime={isWatchedContext ? anime : (watchedList.find(w => w.id === anime.id) || anime)}
-                isWatched={watchedList.some(w => w.id === anime.id)}
-                isPlanToWatch={planToWatchList.some(p => p.id === anime.id)}
-                onActionClick={handleActionClick}
-                onPlanToWatchToggle={handlePlanToWatchToggle}
-              />
+            {paginatedData.map((anime, index) => (
+              <React.Fragment key={anime.id}>
+                {/* 插入聯盟行銷原生廣告卡片 (第 11 格) */}
+                {index === 10 && <AffiliateCard />}
+                
+                <AnimeCard
+                  anime={isWatchedContext ? anime : (watchedList.find(w => w.id === anime.id) || anime)}
+                  isWatched={watchedList.some(w => w.id === anime.id)}
+                  isPlanToWatch={planToWatchList.some(p => p.id === anime.id)}
+                  onActionClick={handleActionClick}
+                  onPlanToWatchToggle={handlePlanToWatchToggle}
+                />
+              </React.Fragment>
             ))}
           </div>
+
+          <AdBanner adSlot="1547020579" />
 
           <Pagination
             currentPage={currentPage}

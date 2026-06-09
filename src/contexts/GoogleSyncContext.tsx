@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useGoogleLogin, googleLogout } from '@react-oauth/google';
+import { Capacitor } from '@capacitor/core';
+import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 import { useAnime } from './AnimeContext';
 import { useAlert } from './AlertContext';
 import { useLanguage } from './LanguageContext';
@@ -61,6 +63,16 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     });
   };
 
+  useEffect(() => {
+    if (Capacitor.isNativePlatform()) {
+      GoogleAuth.initialize({
+        clientId: '991277845771-ufce34uqpao8gagli41chv14d4t1m2jc.apps.googleusercontent.com',
+        scopes: ['profile', 'email', 'https://www.googleapis.com/auth/drive.appdata', 'https://www.googleapis.com/auth/drive.file'],
+        grantOfflineAccess: true,
+      });
+    }
+  }, []);
+
   // 自動備份機制
   useEffect(() => {
     if (!accessToken || !isLoggedIn || !isAutoSyncEnabled) return;
@@ -74,7 +86,7 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     return () => clearTimeout(timer);
   }, [watchedList, planToWatchList, customAnimeList, corrections, accessToken, isLoggedIn]);
 
-  const login = useGoogleLogin({
+  const webLogin = useGoogleLogin({
     onSuccess: (tokenResponse) => {
       const expiresAt = Date.now() + (tokenResponse.expires_in * 1000);
       localStorage.setItem('google_access_token', tokenResponse.access_token);
@@ -86,8 +98,31 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     onError: (error) => console.error('Login Failed:', error)
   });
 
-  const logout = () => {
-    googleLogout();
+  const login = async () => {
+    if (Capacitor.isNativePlatform()) {
+      try {
+        const user = await GoogleAuth.signIn();
+        const token = user.authentication.accessToken;
+        // Google access tokens usually last 1 hour
+        const expiresAt = Date.now() + (3600 * 1000);
+        localStorage.setItem('google_access_token', token);
+        localStorage.setItem('google_token_expires_at', expiresAt.toString());
+        setAccessToken(token);
+        setTimeout(() => restoreFlow(token), 500);
+      } catch (error) {
+        console.error('Native Google Login Failed:', error);
+      }
+    } else {
+      webLogin();
+    }
+  };
+
+  const logout = async () => {
+    if (Capacitor.isNativePlatform()) {
+      await GoogleAuth.signOut().catch(console.error);
+    } else {
+      googleLogout();
+    }
     setAccessToken(null);
     localStorage.removeItem('google_access_token');
     localStorage.removeItem('google_token_expires_at');

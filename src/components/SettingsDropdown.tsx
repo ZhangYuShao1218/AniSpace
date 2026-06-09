@@ -1,20 +1,29 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Menu, Trash2, AlertTriangle, Check } from 'lucide-react';
+/* Removed unused Capacitor import */
+import { Menu, Settings, Trash2, AlertTriangle, Check, Upload, Download } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import ConfirmModal from './ConfirmModal';
 import { useGoogleSync } from '../contexts/GoogleSyncContext';
+import { useAdMob } from '../contexts/AdMobContext';
 import { useAnime } from '../contexts/AnimeContext';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useDataManagement } from '../hooks/useDataManagement';
 
-const SettingsDropdown: React.FC = () => {
+interface SettingsDropdownProps {
+  useSettingsIcon?: boolean;
+}
+
+const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = false }) => {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isClearRecordsModalOpen, setIsClearRecordsModalOpen] = useState(false);
   const [isClearAllModalOpen, setIsClearAllModalOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
   
   const { isAutoSyncEnabled, toggleAutoSync } = useGoogleSync();
+  const { hideAd, showAd } = useAdMob();
   const { handleClearRecords, handleClearAllData } = useAnime();
   const { language, setLanguage, t } = useLanguage();
+  const { fileInputRef, handleExport, handleImportFile, isExportDisabled } = useDataManagement();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -26,6 +35,27 @@ const SettingsDropdown: React.FC = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (!isSettingsOpen) return;
+    
+    const initialScrollY = window.pageYOffset;
+    const handleScroll = () => {
+      if (Math.abs(window.pageYOffset - initialScrollY) > 20) {
+        setIsSettingsOpen(false);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isSettingsOpen]);
+
+  useEffect(() => {
+    if (isSettingsOpen || isClearRecordsModalOpen || isClearAllModalOpen) {
+      hideAd();
+      return () => showAd();
+    }
+  }, [isSettingsOpen, isClearRecordsModalOpen, isClearAllModalOpen, hideAd, showAd]);
+
   return (
     <div className="settings-dropdown-container" ref={settingsRef}>
       <button 
@@ -33,7 +63,7 @@ const SettingsDropdown: React.FC = () => {
         onClick={() => setIsSettingsOpen(!isSettingsOpen)} 
         title={t('settings')}
       >
-        <Menu size={18} />
+        {useSettingsIcon ? <Settings size={24} className="bottom-nav-icon" /> : <Menu size={18} />}
         <span className="btn-text">{t('settings')}</span>
       </button>
       
@@ -99,10 +129,48 @@ const SettingsDropdown: React.FC = () => {
               日本語
             </button>
             <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+            
+            <>
+              <input
+                type="file"
+                accept=".csv,text/csv,application/vnd.ms-excel,text/plain,*/*"
+                ref={fileInputRef}
+                onChange={(e) => {
+                  handleImportFile(e);
+                  setIsSettingsOpen(false);
+                }}
+                style={{ display: 'none' }}
+              />
+              <button 
+                className="dropdown-item" 
+                onClick={() => {
+                  fileInputRef.current?.click();
+                  setIsSettingsOpen(false); // Close dropdown when clicked
+                }} 
+                style={{ fontSize: '0.9rem', color: 'var(--accent-color)', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
+              >
+                <Upload size={16} style={{ color: 'var(--accent-color)' }} />
+                {t('importData')}
+              </button>
+              <button 
+                className="dropdown-item" 
+                onClick={() => {
+                  handleExport();
+                  setIsSettingsOpen(false); // Close dropdown when clicked
+                }} 
+                disabled={isExportDisabled}
+                style={{ fontSize: '0.9rem', color: '#059669', letterSpacing: '0.02em', whiteSpace: 'nowrap', opacity: isExportDisabled ? 0.5 : 1 }}
+              >
+                <Download size={16} style={{ color: '#059669' }} />
+                {t('localBackup')}
+              </button>
+              <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+            </>
+
             <button 
               className="dropdown-item danger-item" 
               style={{ fontSize: '0.95rem', fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
-              onClick={() => setIsClearRecordsModalOpen(true)}
+              onClick={() => { setIsClearRecordsModalOpen(true); setIsSettingsOpen(false); }}
             >
               <Trash2 size={16} className="danger-icon" />
               {t('clearRecords')}
@@ -110,7 +178,7 @@ const SettingsDropdown: React.FC = () => {
             <button 
               className="dropdown-item danger-item" 
               style={{ fontSize: '0.95rem', fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
-              onClick={() => setIsClearAllModalOpen(true)}
+              onClick={() => { setIsClearAllModalOpen(true); setIsSettingsOpen(false); }}
             >
               <AlertTriangle size={16} className="danger-icon" />
               {t('clearAllData')}

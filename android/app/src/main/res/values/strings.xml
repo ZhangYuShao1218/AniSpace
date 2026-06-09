@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AniSpace</string>
+    <string name="title_activity_main">AniSpace</string>
+    <string name="package_name">com.zhangyushao.anispace</string>
+    <string name="custom_url_scheme">com.zhangyushao.anispace</string>
+    <string name="server_client_id">991277845771-ufce34uqpao8gagli41chv14d4t1m2jc.apps.googleusercontent.com</string>
+</resources>

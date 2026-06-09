@@ -113,7 +113,6 @@
 
 .share-tooltip-container {
   margin-left: auto;
-  position: relative;
   display: flex;
   align-items: center;
   cursor: help;
@@ -129,16 +128,16 @@
 
 .share-tooltip {
   position: absolute;
-  bottom: 100%;
+  bottom: calc(100% + 8px);
   left: 50%;
-  transform: translateX(-50%) translateY(-8px);
+  transform: translateX(-50%) translateY(0);
   background: rgba(15, 23, 42, 0.95);
   color: var(--text-primary);
   padding: var(--spacing-2) var(--spacing-3);
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
-  width: max-content;
-  max-width: 320px;
+  width: 220px;
+  max-width: calc(100vw - 32px);
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
@@ -146,6 +145,7 @@
   z-index: 10;
   border: 1px solid var(--border-glass);
   text-align: center;
+  white-space: normal;
 }
 
 .share-tooltip-container:hover .share-tooltip {

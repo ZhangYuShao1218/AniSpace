@@ -1,4 +1,6 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useState, useEffect, useImperativeHandle, useRef } from 'react';
+import { Capacitor, CapacitorHttp } from '@capacitor/core';
+import { toPng } from 'html-to-image';
 import type { Anime, WatchedAnime } from '../types';
 import { Star } from 'lucide-react';
 import './ShareImageGenerator.css';
@@ -10,12 +12,120 @@ export interface ShareImageGeneratorProps {
   isWatched: boolean;
   gridCount: 4 | 9 | 16 | 25;
   customTitle?: string;
+  onProgress?: (loaded: number, total: number) => void;
 }
 
-export const ShareImageGenerator = forwardRef<HTMLDivElement, ShareImageGeneratorProps>(
-  ({ animes, isWatched, gridCount, customTitle }, ref) => {
+export interface ShareImageGeneratorRef {
+  generateImage: () => Promise<string>;
+}
+
+export const ShareImageGenerator = forwardRef<ShareImageGeneratorRef, ShareImageGeneratorProps>(
+  ({ animes, isWatched, gridCount, customTitle, onProgress }, ref) => {
     const { t, tTitle, tCover } = useLanguage();
     
+    const [base64Images, setBase64Images] = useState<Record<string, string>>({});
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    // Keep track of which images are loaded to await them
+    const loadedCountRef = useRef(0);
+    const expectedCountRef = useRef(0);
+    
+    // We will resolve this promise when all base64 images are done
+    const [imagesReadyPromise, setImagesReadyPromise] = useState<{promise: Promise<void>, resolve: () => void} | null>(null);
+
+    useEffect(() => {
+      let isMounted = true;
+      
+      const validAnimes = animes.filter(a => !!a.titleZh && !!tCover(a));
+      expectedCountRef.current = validAnimes.length;
+      loadedCountRef.current = 0;
+      
+      let resolvePromise: () => void;
+      const promise = new Promise<void>((r) => { resolvePromise = r; });
+      setImagesReadyPromise({ promise, resolve: resolvePromise! });
+
+      if (validAnimes.length === 0) {
+        resolvePromise!();
+        return;
+      }
+      const loadImages = async () => {
+        if (!Capacitor.isNativePlatform()) {
+          // Web fallback: Revert to the original way, letting html-to-image handle it
+          if (isMounted && resolvePromise) resolvePromise();
+          return;
+        }
+
+        await Promise.all(animes.map(async (anime) => {
+          if (!anime.titleZh) return; // Skip empty placeholders
+          const originalCover = tCover(anime);
+          if (originalCover && !base64Images[anime.id]) {
+            try {
+              // Use CapacitorHttp to bypass CORS natively on App
+              const response = await CapacitorHttp.get({
+                url: originalCover,
+                responseType: 'blob'
+              });
+              if (isMounted) {
+                if (response.data) {
+                  // CapacitorHttp returns base64 encoded string when responseType is blob
+                  setBase64Images(prev => ({...prev, [anime.id]: `data:image/jpeg;base64,${response.data}`}));
+                }
+                checkIfDone();
+              }
+            } catch (e) {
+              console.warn('Failed to pre-load image as base64', e);
+              checkIfDone(); // Count as done even if failed to avoid blocking
+            }
+          } else {
+            checkIfDone(); // Already cached
+          }
+        }));
+      };
+      
+      const checkIfDone = () => {
+        loadedCountRef.current++;
+        if (onProgress) {
+          onProgress(loadedCountRef.current, expectedCountRef.current);
+        }
+        if (loadedCountRef.current >= expectedCountRef.current) {
+           if (isMounted && resolvePromise) resolvePromise();
+        }
+      };
+      
+      loadImages();
+      return () => { isMounted = false; };
+    }, [animes, tCover]);
+
+    useImperativeHandle(ref, () => ({
+      generateImage: async () => {
+        if (!containerRef.current) throw new Error("Container not mounted");
+        
+        // Wait for all base64 images to finish downloading
+        if (imagesReadyPromise) {
+          await imagesReadyPromise.promise;
+        }
+        
+        // Additional delay for browser to actually render the new src
+        await new Promise(r => setTimeout(r, 800));
+
+        const isLightMode = document.documentElement.getAttribute('data-theme') === 'light';
+        const bgColor = isLightMode ? '#fcf9f2' : '#0f172a';
+
+        return await toPng(containerRef.current, {
+          cacheBust: !Capacitor.isNativePlatform(), // Web needs cacheBust to bypass CORS cache issues from normal img tags
+          pixelRatio: 2,
+          skipFonts: true, // Prevents html-to-image from scanning stylesheets and downloading fonts, solving the main thread block
+          backgroundColor: bgColor,
+          style: {
+            opacity: '1',
+            left: '0',
+            top: '0',
+            transform: 'none'
+          }
+        });
+      }
+    }));
+
     const columns = Math.sqrt(gridCount); // 2, 3, or 4
     
     // Fill empty slots if less than gridCount
@@ -32,7 +142,7 @@ export const ShareImageGenerator = forwardRef<HTMLDivElement, ShareImageGenerato
 
     return (
       <div 
-        ref={ref} 
+        ref={containerRef} 
         className={`share-generator-container grid-${gridCount} ${isWatched ? 'is-watched' : 'is-plan'}`}
         style={{
           '--cols': columns,
@@ -62,7 +172,7 @@ export const ShareImageGenerator = forwardRef<HTMLDivElement, ShareImageGenerato
                 {!isEmpty && (
                   <>
                     <img 
-                      src={tCover(anime)} 
+                      src={base64Images[anime.id] || tCover(anime)} 
                       alt={tTitle(anime)} 
                       className="share-cover" 
                     />

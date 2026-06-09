@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .vite
+
+# Keystore files
+*.jks
+*.keystore
+
+keystore.properties

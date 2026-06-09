@@ -170,7 +170,7 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
             <button 
               className="dropdown-item danger-item" 
               style={{ fontSize: '0.95rem', fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
-              onClick={() => setIsClearRecordsModalOpen(true)}
+              onClick={() => { setIsClearRecordsModalOpen(true); setIsSettingsOpen(false); }}
             >
               <Trash2 size={16} className="danger-icon" />
               {t('clearRecords')}
@@ -178,7 +178,7 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
             <button 
               className="dropdown-item danger-item" 
               style={{ fontSize: '0.95rem', fontWeight: 500, letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
-              onClick={() => setIsClearAllModalOpen(true)}
+              onClick={() => { setIsClearAllModalOpen(true); setIsSettingsOpen(false); }}
             >
               <AlertTriangle size={16} className="danger-icon" />
               {t('clearAllData')}

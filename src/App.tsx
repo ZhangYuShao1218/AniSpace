@@ -6,6 +6,7 @@ import BottomNavBar from './components/BottomNavBar';
 import AllAnimePage from './pages/AllAnimePage';
 import PlanToWatchPage from './pages/PlanToWatchPage';
 import WatchedPage from './pages/WatchedPage';
+import { ShareProgressPill } from './components/ShareProgressPill';
 
 function App() {
   const isNative = Capacitor.isNativePlatform();
@@ -23,6 +24,8 @@ function App() {
       </main>
 
       {isNative && <BottomNavBar />}
+      
+      <ShareProgressPill />
     </div>
   );
 }

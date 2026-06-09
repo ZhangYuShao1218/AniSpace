@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { AlertTriangle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './ConfirmModal.css';
@@ -45,7 +46,7 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
     }
   };
 
-  return (
+  return createPortal(
     <div className="modal-overlay" onClick={onClose}>
       <div className="confirm-modal glass-panel fade-in" onClick={e => e.stopPropagation()}>
         <div className="confirm-header">
@@ -69,7 +70,8 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 

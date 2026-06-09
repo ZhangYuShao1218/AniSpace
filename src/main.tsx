@@ -10,6 +10,7 @@ import { AlertProvider } from './contexts/AlertContext'
 import { ThemeProvider } from './contexts/ThemeContext'
 import { LanguageProvider } from './contexts/LanguageContext'
 import { AdMobProvider } from './contexts/AdMobContext'
+import { ShareTaskProvider } from './contexts/ShareTaskContext'
 
 const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
 
@@ -23,7 +24,9 @@ createRoot(document.getElementById('root')!).render(
               <AlertProvider>
                 <GoogleSyncProvider>
                   <AdMobProvider>
-                    <App />
+                    <ShareTaskProvider>
+                      <App />
+                    </ShareTaskProvider>
                   </AdMobProvider>
                 </GoogleSyncProvider>
               </AlertProvider>

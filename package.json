@@ -9,9 +9,16 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "crawler": "node scraper/index.js && node scraper/post_process.js",
-    "aniupdate": "node -e \"fetch('https://raw.githubusercontent.com/ZhangYuShao1218/AniSpace/main/public/anime_data.json').then(res => res.text()).then(text => require('fs').writeFileSync('public/anime_data.json', text)); console.log('Successfully updated local anime_data.json from remote!');\""
+    "aniupdate": "node -e \"fetch('https://raw.githubusercontent.com/ZhangYuShao1218/AniSpace/main/public/anime_data.json').then(res => res.text()).then(text => require('fs').writeFileSync('public/anime_data.json', text)); console.log('Successfully updated local anime_data.json from remote!');\"",
+    "android": "npm run build && npx cap sync && npx cap open android"
   },
   "dependencies": {
+    "@capacitor-community/admob": "^8.0.0",
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
+    "@capacitor/filesystem": "^8.1.2",
+    "@capacitor/share": "^8.0.1",
+    "@codetrix-studio/capacitor-google-auth": "^3.4.0-rc.4",
     "@react-oauth/google": "^0.13.5",
     "@types/papaparse": "^5.5.2",
     "@vitalets/google-translate-api": "^9.2.1",
@@ -25,6 +32,7 @@
     "react-router-dom": "^7.13.2"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.4.0",
     "@emnapi/core": "^1.10.0",
     "@emnapi/runtime": "^1.10.0",
     "@eslint/js": "^9.39.4",

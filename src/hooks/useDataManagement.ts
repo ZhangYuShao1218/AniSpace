@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import Papa from 'papaparse';
+import { Capacitor } from '@capacitor/core';
 import { useAnime } from '../contexts/AnimeContext';
 import type { Anime, WatchedAnime } from '../types';
 
@@ -86,14 +87,40 @@ export function useDataManagement() {
 
     const csvContent = Papa.unparse(exportData);
     // 加入 BOM 以支援 Excel/Google Sheets 顯示中文 UTF-8
-    const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.setAttribute('download', `AniSpace_本地備份_${new Date().toISOString().slice(0,10)}.csv`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const csvString = '\uFEFF' + csvContent;
+    const fileName = `AniSpace_本地備份_${new Date().toISOString().slice(0,10)}.csv`;
+
+    if (Capacitor.isNativePlatform()) {
+      import('@capacitor/filesystem').then(({ Filesystem, Directory, Encoding }) => {
+        Filesystem.writeFile({
+          path: fileName,
+          data: csvString,
+          directory: Directory.Cache,
+          encoding: Encoding.UTF8,
+        }).then(result => {
+          import('@capacitor/share').then(({ Share }) => {
+            Share.share({
+              title: 'AniSpace 備份資料',
+              text: '這是您的 AniSpace 動畫清單備份',
+              url: result.uri,
+              dialogTitle: '儲存或分享備份檔案',
+            }).catch(err => console.error('Share error:', err));
+          });
+        }).catch(err => {
+          console.error('File write error:', err);
+          alert('匯出失敗：無法寫入檔案');
+        });
+      });
+    } else {
+      const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', fileName);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   const handleImportFile = (e: React.ChangeEvent<HTMLInputElement>) => {

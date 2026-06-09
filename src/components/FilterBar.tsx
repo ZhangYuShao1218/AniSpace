@@ -3,6 +3,7 @@ import './FilterBar.css';
 import { Search, SlidersHorizontal, ArrowDownAZ, Plus } from 'lucide-react';
 import { getRelativeSeasonString } from '../utils/season';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useAdMob } from '../contexts/AdMobContext';
 import AddAnimeModal from './AddAnimeModal';
 
 
@@ -34,6 +35,14 @@ const FilterBar: React.FC<FilterBarProps> = ({
   const [isAddAnimeOpen, setIsAddAnimeOpen] = useState(false);
   const [isGenresModalOpen, setIsGenresModalOpen] = useState(false);
   const { t, tGenre, tYearSeason } = useLanguage();
+  const { hideAd, showAd } = useAdMob();
+
+  React.useEffect(() => {
+    if (isAddAnimeOpen || isGenresModalOpen) {
+      hideAd();
+      return () => showAd();
+    }
+  }, [isAddAnimeOpen, isGenresModalOpen, hideAd, showAd]);
 
   const toggleGenre = (genre: string) => {
     if (selectedGenres.includes(genre)) {
@@ -190,11 +199,12 @@ const FilterBar: React.FC<FilterBarProps> = ({
         </div>
       </div>
 
-      {isGenresModalOpen && (
-        <div className="genres-modal-backdrop" onClick={() => setIsGenresModalOpen(false)} />
-      )}
+      <div 
+        className={`genres-modal-backdrop ${isGenresModalOpen ? 'show' : ''}`} 
+        onClick={() => setIsGenresModalOpen(false)} 
+      />
 
-      <div className={`genres-section glass-panel fade-in ${isGenresModalOpen ? 'modal-open' : ''}`}>
+      <div className={`genres-section glass-panel ${isGenresModalOpen ? 'modal-open' : ''}`}>
         <div className="genres-header mobile-only">
           <span style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-primary)' }}>{t('genres')}</span>
           <button onClick={() => setIsGenresModalOpen(false)} style={{ padding: '6px 14px', background: 'var(--bg-secondary)', borderRadius: '8px', color: 'var(--text-primary)', border: '1px solid var(--border-glass)', fontWeight: 600, boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>完成</button>

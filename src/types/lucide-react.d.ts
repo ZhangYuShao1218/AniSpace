@@ -49,4 +49,8 @@ declare module 'lucide-react' {
   export const FileSpreadsheet: Icon;
   export const Circle: Icon;
   export const CheckCircle2: Icon;
+  export const ExternalLink: Icon;
+  export const Film: Icon;
+  export const Clock: Icon;
+  export const History: Icon;
 }

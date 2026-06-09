@@ -9,6 +9,7 @@ import { GoogleSyncProvider } from './contexts/GoogleSyncContext'
 import { AlertProvider } from './contexts/AlertContext'
 import { ThemeProvider } from './contexts/ThemeContext'
 import { LanguageProvider } from './contexts/LanguageContext'
+import { AdMobProvider } from './contexts/AdMobContext'
 
 const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
 
@@ -21,7 +22,9 @@ createRoot(document.getElementById('root')!).render(
             <AnimeProvider>
               <AlertProvider>
                 <GoogleSyncProvider>
-                  <App />
+                  <AdMobProvider>
+                    <App />
+                  </AdMobProvider>
                 </GoogleSyncProvider>
               </AlertProvider>
             </AnimeProvider>

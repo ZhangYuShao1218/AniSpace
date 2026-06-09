@@ -42,12 +42,6 @@
   gap: var(--spacing-3);
 }
 
-.sync-latest-btn {
-  padding: 0 var(--spacing-4);
-  height: 38px;
-  font-size: 0.85rem;
-}
-
 @media (min-width: 1024px) and (max-width: 1280px) {
   .app-title {
     font-size: clamp(1.5rem, calc(6.35vw - 41px), 2rem);
@@ -68,11 +62,6 @@
     font-size: 0.85rem;
     padding: var(--spacing-2) var(--spacing-3);
   }
-  .sync-latest-btn {
-    padding: var(--spacing-2) var(--spacing-3);
-    font-size: 0.8rem;
-    height: auto;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -91,7 +80,7 @@
   .header-right {
     width: 100%;
     align-items: stretch;
-    gap: var(--spacing-4);
+    gap: var(--spacing-2);
   }
   
   .header-nav-group {
@@ -130,8 +119,8 @@
   
   .sync-latest-btn {
     flex: 1;
-    max-width: 260px;
-    padding: 0 8px;
+    max-width: 280px;
+    padding: 0 16px;
     justify-content: center;
     height: 100%;
     display: flex;

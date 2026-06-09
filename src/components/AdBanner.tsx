@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Capacitor } from '@capacitor/core';
 import './AdBanner.css';
 
 interface AdBannerProps {
@@ -7,35 +8,39 @@ interface AdBannerProps {
 }
 
 const AdBanner: React.FC<AdBannerProps> = ({ adSlot, className = '' }) => {
+  const [isNative] = useState(() => Capacitor.isNativePlatform());
+
   useEffect(() => {
-    try {
-      if (adSlot) {
-        // @ts-ignore
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+    if (!isNative) {
+      // Web AdSense logic
+      try {
+        if (adSlot) {
+          // @ts-ignore
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }
+      } catch (err) {
+        console.error('AdSense error:', err);
       }
-    } catch (err) {
-      console.error('AdSense error:', err);
     }
-  }, [adSlot]);
+  }, [isNative, adSlot]);
+
+  if (isNative) {
+    // Native AdMob floats over the WebView, so we don't render a DOM element.
+    // AdMob is now managed globally in App.tsx / AdMobContext.tsx
+    return null;
+  }
 
   return (
-    <div className={`ad-banner-container glass-panel ${className}`}>
-      <span className="ad-label">Sponsored</span>
-      {adSlot ? (
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-7954604636474942"
-          data-ad-slot={adSlot}
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-      ) : (
-        <div className="ad-placeholder">
-          <p>廣告版位預留區 (Top / Bottom Banner)</p>
-          <small>請填入 data-ad-slot 即可顯示 Google AdSense</small>
-        </div>
-      )}
+    <div className={`ad-banner-container ${className}`}>
+      <div className="ad-label">Advertisement</div>
+      <div className="ad-content">
+        <ins className="adsbygoogle"
+             style={{ display: 'block', minHeight: '50px' }}
+             data-ad-client="ca-pub-1481285493010476"
+             data-ad-slot={adSlot || "9683884323"}
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
     </div>
   );
 };

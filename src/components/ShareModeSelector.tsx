@@ -36,7 +36,6 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
   mode,
   setMode,
   isProcessing,
-  isWatched,
   onClearSelection
 }) => {
   const { t } = useLanguage();
@@ -58,7 +57,7 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
       >
         <FileSpreadsheet size={18} />
         <span>{t('modeSheet')}</span>
-        <div className="share-tooltip-container">
+        <div className="share-tooltip-container" onClick={(e) => e.stopPropagation()}>
           <HelpCircle size={16} className="help-icon" />
           <div className="share-tooltip">{t('modeSheetDesc')}</div>
         </div>
@@ -71,7 +70,7 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
       >
         <ImageIcon size={18} />
         <span>{t('modeGrid4')}</span>
-        <div className="share-tooltip-container">
+        <div className="share-tooltip-container" onClick={(e) => e.stopPropagation()}>
           <HelpCircle size={16} className="help-icon" />
           <div className="share-tooltip">
             {t('modeGridDesc').split('\n').map((line, i) => (
@@ -91,7 +90,7 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
       >
         <ImageIcon size={18} />
         <span>{t('modeGrid9')}</span>
-        <div className="share-tooltip-container">
+        <div className="share-tooltip-container" onClick={(e) => e.stopPropagation()}>
           <HelpCircle size={16} className="help-icon" />
           <div className="share-tooltip">
             {t('modeGridDesc').split('\n').map((line, i) => (
@@ -104,27 +103,25 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
         </div>
       </div>
 
-      {!isWatched && (
-        <div
-          className={`share-mode-btn ${mode === 'GRID_16' ? 'active' : ''} ${isProcessing ? 'disabled' : ''}`}
-          style={{ opacity: isProcessing ? 0.5 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }}
-          onClick={() => handleModeChange('GRID_16')}
-        >
-          <ImageIcon size={18} />
-          <span>{t('modeGrid16')}</span>
-          <div className="share-tooltip-container">
-            <HelpCircle size={16} className="help-icon" />
-            <div className="share-tooltip">
-              {t('modeGridDesc').split('\n').map((line, i) => (
-                <React.Fragment key={i}>
-                  {line.replace('{num}', '16')}
-                  {i === 0 && <br />}
-                </React.Fragment>
-              ))}
-            </div>
+      <div
+        className={`share-mode-btn ${mode === 'GRID_16' ? 'active' : ''} ${isProcessing ? 'disabled' : ''}`}
+        style={{ opacity: isProcessing ? 0.5 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }}
+        onClick={() => handleModeChange('GRID_16')}
+      >
+        <ImageIcon size={18} />
+        <span>{t('modeGrid16')}</span>
+        <div className="share-tooltip-container" onClick={(e) => e.stopPropagation()}>
+          <HelpCircle size={16} className="help-icon" />
+          <div className="share-tooltip">
+            {t('modeGridDesc').split('\n').map((line, i) => (
+              <React.Fragment key={i}>
+                {line.replace('{num}', '16')}
+                {i === 0 && <br />}
+              </React.Fragment>
+            ))}
           </div>
         </div>
-      )}
+      </div>
 
       <div
         className={`share-mode-btn ${mode === 'GRID_25' ? 'active' : ''} ${isProcessing ? 'disabled' : ''}`}
@@ -133,7 +130,7 @@ export const ShareModeSelector: React.FC<ShareModeSelectorProps> = React.memo(({
       >
         <Grid3X3Icon size={18} />
         <span>{t('modeBingo')}</span>
-        <div className="share-tooltip-container">
+        <div className="share-tooltip-container" onClick={(e) => e.stopPropagation()}>
           <HelpCircle size={16} className="help-icon" />
           <div className="share-tooltip">
             {t('modeBingoDesc').split('\n').map((line, i) => (

@@ -1,6 +1,8 @@
-import React, { useState, useRef, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2 } from 'lucide-react';
+import { Capacitor } from '@capacitor/core';
+import { useShareTask } from '../contexts/ShareTaskContext';
 
 const ShuffleIcon = ({ size = 24, className = '' }: { size?: number | string, className?: string }) => (
   <svg 
@@ -22,9 +24,7 @@ const ShuffleIcon = ({ size = 24, className = '' }: { size?: number | string, cl
     <path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45" />
   </svg>
 );
-import { toPng } from 'html-to-image';
 import type { Anime, WatchedAnime } from '../types';
-import { ShareImageGenerator } from './ShareImageGenerator';
 import { exportToGoogleSheet } from '../utils/googleSheets';
 import { useGoogleSync } from '../contexts/GoogleSyncContext';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -49,7 +49,21 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
   const { accessToken, login } = useGoogleSync();
   const { t, tTitle } = useLanguage();
   const [customTitle, setCustomTitle] = useState('');
-  const imageGeneratorRef = useRef<HTMLDivElement>(null);
+  
+  const { isGenerating, startTask } = useShareTask();
+  const wasGenerating = React.useRef(false);
+
+  // For PC Web: Automatically close modal when generation is done
+  React.useEffect(() => {
+    if (isGenerating) {
+      wasGenerating.current = true;
+    } else if (wasGenerating.current) {
+      wasGenerating.current = false;
+      if (!Capacitor.isNativePlatform()) {
+        onClose();
+      }
+    }
+  }, [isGenerating, onClose, Capacitor]);
 
   const requiredCount = useMemo(() => {
     if (mode === 'GRID_4') return 4;
@@ -131,176 +145,123 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
       return;
     }
     
-    if (!imageGeneratorRef.current) return;
+    startTask({
+      animes: selectedAnimes,
+      isWatched,
+      customTitle: customTitle || (isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan')),
+      gridCount: requiredCount as 4 | 9 | 16 | 25
+    });
     
-    setIsProcessing(true);
-    try {
-      await new Promise(resolve => setTimeout(resolve, 800));
-      
-      try { await toPng(imageGeneratorRef.current, { cacheBust: true, style: { opacity: '1' } }); } catch (e) {}
-
-      const isLightMode = document.documentElement.getAttribute('data-theme') === 'light';
-      const bgColor = isLightMode ? '#fcf9f2' : '#0f172a';
-
-      const dataUrl = await toPng(imageGeneratorRef.current, { 
-        cacheBust: true,
-        pixelRatio: 2,
-        backgroundColor: bgColor,
-        style: {
-          opacity: '1',
-          left: '0',
-          top: '0',
-          transform: 'none'
-        }
-      });
-      const filename = `AniSpace_${isWatched ? '紀錄' : '期待'}_分享.png`;
-      
-      try {
-        const res = await fetch(dataUrl);
-        const blob = await res.blob();
-        const file = new File([blob], filename, { type: 'image/png' });
-
-        if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({
-            title: 'AniSpace 動畫分享',
-            text: '來看看我的寶藏動畫推薦！',
-            files: [file]
-          });
-        } else {
-          const link = document.createElement('a');
-          link.download = filename;
-          link.href = dataUrl;
-          link.click();
-        }
-      } catch (shareErr) {
-        console.error('Share API failed, falling back to download', shareErr);
-        const link = document.createElement('a');
-        link.download = filename;
-        link.href = dataUrl;
-        link.click();
-      }
-    } catch (err) {
-      console.error(err);
-      alert(t('generateImageFailedAlert'));
-    } finally {
-      setIsProcessing(false);
+    if (Capacitor.isNativePlatform()) {
+      onClose();
     }
   };
 
   return createPortal(
     <>
-      <div className="share-modal-backdrop" onClick={isProcessing ? undefined : onClose}>
-        <div className="share-modal-content" onClick={e => e.stopPropagation()}>
-          <button 
-            className="share-modal-close" 
-            onClick={onClose} 
-            disabled={isProcessing} 
-            style={{ opacity: isProcessing ? 0.5 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }}
-          >
-            <X size={20} />
-          </button>
-        
-          <h2 className="share-modal-title" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
-            <ThumbsUp size={28} /> {t('recommendToOthers')}
-          </h2>
-          <p className="share-modal-subtitle" style={{ marginBottom: '24px' }}>{t('shareModalSubtitle')}</p>
+      {isOpen && (
+        <div className="share-modal-backdrop" onClick={isProcessing ? undefined : onClose}>
+          <div className="share-modal-content" onClick={e => e.stopPropagation()}>
+            <button 
+              className="share-modal-close" 
+              onClick={onClose} 
+              disabled={isProcessing} 
+              style={{ opacity: isProcessing ? 0.5 : 1, cursor: isProcessing ? 'not-allowed' : 'pointer' }}
+            >
+              <X size={20} />
+            </button>
+          
+            <h2 className="share-modal-title" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+              <ThumbsUp size={28} /> {t('recommendToOthers')}
+            </h2>
+            <p className="share-modal-subtitle" style={{ marginBottom: '24px' }}>{t('shareModalSubtitle')}</p>
 
-          <ShareModeSelector 
-            mode={mode} 
-            setMode={setMode} 
-            isProcessing={isProcessing} 
-            isWatched={isWatched} 
-            onClearSelection={handleClearSelection}
-          />
+            <ShareModeSelector 
+              mode={mode} 
+              setMode={setMode} 
+              isProcessing={isProcessing} 
+              isWatched={isWatched} 
+              onClearSelection={handleClearSelection}
+            />
 
-          <div className="share-selection-area">
-            <div className="selection-header">
-              <div className="selection-header-left">
-                <h3 style={{ margin: 0 }}>
-                  {mode === 'GRID_25' ? t('animeBingo') : mode === 'SHEET' ? t('animeList') : t('shareAnime')} ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
-                </h3>
-                {mode === 'SHEET' && (
-                  <div 
-                    className="share-action-btn"
-                    onClick={handleSelectAll}
-                  >
-                    {selectedIds.size === animes.length && animes.length > 0 ? (
-                      <CheckCircle2 size={20} className="select-all-icon-checked" />
-                    ) : (
-                      <Circle size={20} color="currentColor" />
-                    )}
-                    <span>{t('selectAll')}</span>
-                  </div>
-                )}
-                {mode === 'GRID_25' && (
-                  <div 
-                    className="random-select-btn"
-                    onClick={handleRandomSelect}
-                    title={t('randomSelectTooltip')}
-                  >
-                    <ShuffleIcon size={16} />
-                    <span>{t('randomSelect')}</span>
-                  </div>
-                )}
-              </div>
-              <input 
-                type="text" 
-                placeholder={t('searchPlaceholder')} 
-                value={searchTerm}
-                onChange={e => setSearchTerm(e.target.value)}
-                className="share-search-input"
-              />
-            </div>
-            <hr className="share-divider" />
-
-            <div className="share-anime-list">
-              <ShareList 
-                filteredAnimes={filteredAnimes}
-                selectedIds={selectedIds}
-                mode={mode}
-                requiredCount={requiredCount}
-                handleToggleSelect={handleToggleSelect}
-              />
-            </div>
-          </div>
-
-          <div className={`share-modal-actions ${mode === 'SHEET' ? 'sheet-mode' : ''}`}>
-            {mode !== 'SHEET' && (
-              <div className="share-custom-title-section">
-                <label>{t('customTitleLabel')}</label>
+            <div className="share-selection-area">
+              <div className="selection-header">
+                <div className="selection-header-left">
+                  <h3 style={{ margin: 0 }}>
+                    {mode === 'GRID_25' ? t('animeBingo') : mode === 'SHEET' ? t('animeList') : t('shareAnime')} ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
+                  </h3>
+                  {mode === 'SHEET' && (
+                    <div 
+                      className="share-action-btn"
+                      onClick={handleSelectAll}
+                    >
+                      {selectedIds.size === animes.length && animes.length > 0 ? (
+                        <CheckCircle2 size={20} className="select-all-icon-checked" />
+                      ) : (
+                        <Circle size={20} color="currentColor" />
+                      )}
+                      <span>{t('selectAll')}</span>
+                    </div>
+                  )}
+                  {mode === 'GRID_25' && (
+                    <div 
+                      className="random-select-btn"
+                      onClick={handleRandomSelect}
+                      title={t('randomSelectTooltip')}
+                    >
+                      <ShuffleIcon size={16} />
+                      <span>{t('randomSelect')}</span>
+                    </div>
+                  )}
+                </div>
                 <input 
                   type="text" 
-                  value={customTitle} 
-                  onChange={e => setCustomTitle(e.target.value)} 
-                  className="share-search-input custom-title-input" 
-                  placeholder={isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan')}
+                  placeholder={t('searchPlaceholder')} 
+                  value={searchTerm}
+                  onChange={e => setSearchTerm(e.target.value)}
+                  className="share-search-input"
                 />
               </div>
-            )}
-            {mode === 'SHEET' ? (
-              <button className="btn-primary share-btn" onClick={handleExportSheet} disabled={isProcessing}>
-                {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <FileSpreadsheet size={18} />}
-                {isProcessing ? t('creatingSheet') : t('createList')}
-              </button>
-            ) : (
-              <button className="btn-primary share-btn" onClick={handleGenerateImage} disabled={isProcessing || selectedIds.size === 0 || selectedIds.size > requiredCount}>
-                {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <Share2 size={18} />}
-                {isProcessing ? t('processing') : t('share')}
-              </button>
-            )}
+              <hr className="share-divider" />
+
+              <div className="share-anime-list">
+                <ShareList 
+                  filteredAnimes={filteredAnimes}
+                  selectedIds={selectedIds}
+                  mode={mode}
+                  requiredCount={requiredCount}
+                  handleToggleSelect={handleToggleSelect}
+                />
+              </div>
+            </div>
+
+            <div className={`share-modal-actions ${mode === 'SHEET' ? 'sheet-mode' : ''}`}>
+              {mode !== 'SHEET' && (
+                <div className="share-custom-title-section">
+                  <label>{t('customTitleLabel')}</label>
+                  <input 
+                    type="text" 
+                    value={customTitle} 
+                    onChange={e => setCustomTitle(e.target.value)} 
+                    className="share-search-input custom-title-input" 
+                    placeholder={isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan')}
+                  />
+                </div>
+              )}
+              {mode === 'SHEET' ? (
+                <button className="btn-primary share-btn" onClick={handleExportSheet} disabled={isProcessing}>
+                  {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <FileSpreadsheet size={18} />}
+                  {isProcessing ? t('creatingSheet') : t('createList')}
+                </button>
+              ) : (
+                <button className="btn-primary share-btn" onClick={handleGenerateImage} disabled={isProcessing || isGenerating || selectedIds.size === 0 || selectedIds.size > requiredCount}>
+                  {isProcessing || isGenerating ? <Loader2 className="animate-spin" size={18} /> : <Share2 size={18} />}
+                  {isProcessing || isGenerating ? t('processing') : t('share')}
+                </button>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Hidden Generator for HTML-to-Image */}
-      {mode !== 'SHEET' && selectedIds.size > 0 && selectedIds.size <= requiredCount && (
-        <ShareImageGenerator 
-          ref={imageGeneratorRef}
-          animes={selectedAnimes} 
-          isWatched={isWatched} 
-          customTitle={customTitle || (isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan'))}
-          gridCount={requiredCount as 4|9|16|25} 
-        />
       )}
     </>,
     document.body

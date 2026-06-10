@@ -1,0 +1,98 @@
+.privacy-container {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-primary);
+}
+
+.privacy-card {
+  padding: 2.5rem;
+  /* background, border, shadow are handled by .glass-panel from index.css */
+}
+
+.privacy-card h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: var(--accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.last-updated {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 4rem;
+}
+
+.privacy-section {
+  margin-bottom: 2rem;
+}
+
+.privacy-section h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 0.5rem;
+}
+
+.privacy-section h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.privacy-section p {
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.privacy-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.privacy-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.privacy-section strong {
+  color: var(--text-primary);
+}
+
+.privacy-section a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.privacy-section a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.privacy-divider {
+  height: 1px;
+  background: var(--border-glass-light);
+  margin: 3rem 0;
+}
+
+.english-section, .japanese-section {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .privacy-card {
+    padding: 1.5rem;
+  }
+  .privacy-card h1 {
+    font-size: 1.75rem;
+  }
+}

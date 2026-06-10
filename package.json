@@ -12,6 +12,11 @@
     "aniupdate": "node -e \"fetch('https://raw.githubusercontent.com/ZhangYuShao1218/AniSpace/main/public/anime_data.json').then(res => res.text()).then(text => require('fs').writeFileSync('public/anime_data.json', text)); console.log('Successfully updated local anime_data.json from remote!');\"",
     "android": "npm run build && npx cap sync && npx cap open android"
   },
+  "overrides": {
+    "@codetrix-studio/capacitor-google-auth": {
+      "@capacitor/core": "$@capacitor/core"
+    }
+  },
   "dependencies": {
     "@capacitor-community/admob": "^8.0.0",
     "@capacitor/android": "^8.4.0",

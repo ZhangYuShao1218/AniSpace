@@ -75,8 +75,8 @@
     "titleZh": "與妳相戀到生命盡頭",
     "titleEn": "",
     "titleJa": "きみが死ぬまで恋をしたい",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187260-ZGbR8hF953lj.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187260-ZGbR8hF953lj.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187260-WW5RBa5NINRP.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187260-WW5RBa5NINRP.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "劇情",
@@ -147,8 +147,8 @@
     "titleZh": "骸骨騎士大人異世界冒險中 第2季",
     "titleEn": "Skeleton Knight in Another World Season 2",
     "titleJa": "骸骨騎士様、只今異世界へお出掛け中Ⅱ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-utMlUqavmtZU.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-utMlUqavmtZU.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -162,8 +162,8 @@
     "titleZh": "Clevatess II -魔獸之王與虛假的勇者傳承-",
     "titleEn": "Clevatess Season 2",
     "titleJa": "クレバテスⅡ-魔獣の王と偽りの勇者伝承-",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-h4A2P7LYvotz.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-h4A2P7LYvotz.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -399,6 +399,20 @@
     ]
   },
   {
+    "id": "anilist-208044",
+    "titleZh": "落第賢者の學院無雙～二度目の転生、Sランクチート魔術師冒険録～",
+    "titleEn": "",
+    "titleJa": "落第賢者の学院無双～二度目の転生、Sランクチート魔術師冒険録～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208044-jweYvjbGKnCo.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208044-jweYvjbGKnCo.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-209961",
     "titleZh": "死亡遊戱で飯を食う。44:CLOUDY BEACH",
     "titleEn": "",
@@ -411,20 +425,6 @@
       "劇情",
       "懸疑",
       "驚悚"
-    ]
-  },
-  {
-    "id": "anilist-208044",
-    "titleZh": "落第賢者の學院無雙～二度目の転生、Sランクチート魔術師冒険録～",
-    "titleEn": "",
-    "titleJa": "落第賢者の学院無双～二度目の転生、Sランクチート魔術師冒険録～",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208044-jweYvjbGKnCo.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208044-jweYvjbGKnCo.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻"
     ]
   },
   {
@@ -519,21 +519,6 @@
     ]
   },
   {
-    "id": "anilist-185692",
-    "titleZh": "魔法光源股份有限公司 第2季",
-    "titleEn": "",
-    "titleJa": "株式会社マジルミエ 第2期",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "喜劇",
-      "奇幻",
-      "魔法少女"
-    ]
-  },
-  {
     "id": "anilist-169582",
     "titleZh": "最強廢渣皇子暗中活躍於帝位之爭 佯裝無能的SS級皇子背地支配王位繼承戰",
     "titleEn": "",
@@ -547,6 +532,21 @@
       "劇情",
       "奇幻",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-185692",
+    "titleZh": "魔法光源股份有限公司 第2季",
+    "titleEn": "",
+    "titleJa": "株式会社マジルミエ 第2期",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "魔法少女"
     ]
   },
   {
@@ -614,8 +614,8 @@
     "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
     "titleEn": "",
     "titleJa": "魔法少女リリカルなのは EXCEEDS Gun Blaze Vengeance",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185875-wC9yup8velFS.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185875-wC9yup8velFS.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185875-yg3rQV7Wf4kY.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185875-yg3rQV7Wf4kY.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -657,8 +657,8 @@
     "titleZh": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
     "titleEn": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
     "titleJa": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-qLTy3WwvfQFi.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-qLTy3WwvfQFi.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "喜劇",
@@ -900,19 +900,6 @@
     ]
   },
   {
-    "id": "anilist-194393",
-    "titleZh": "想結束這場「我愛你」的遊戲",
-    "titleEn": "I Want to End this Love Game",
-    "titleJa": "愛してるゲームを終わらせたい",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000145822.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194393-0H9yYABu6y0i.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-197824",
     "titleZh": "異世界悠閒農家 2",
     "titleEn": "Farming Life in Another World 2",
@@ -924,6 +911,19 @@
       "奇幻",
       "日常",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-194393",
+    "titleZh": "想結束這場「我愛你」的遊戲",
+    "titleEn": "I Want to End this Love Game",
+    "titleJa": "愛してるゲームを終わらせたい",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000145822.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194393-0H9yYABu6y0i.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "愛情"
     ]
   },
   {
@@ -1296,6 +1296,20 @@
     ]
   },
   {
+    "id": "anilist-206951",
+    "titleZh": "女神「異世界轉生想成為什麼」我「勇者的肋骨」",
+    "titleEn": "My Ribdiculous Reincarnation",
+    "titleJa": "女神「異世界転生何になりたいですか」 俺「勇者の肋骨で」",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000150266.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206951-qiHcrw7pwzuq.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
     "id": "anilist-196012",
     "titleZh": "MAO 摩緒",
     "titleEn": "MAO",
@@ -1308,20 +1322,6 @@
       "懸疑",
       "愛情",
       "超自然"
-    ]
-  },
-  {
-    "id": "anilist-206951",
-    "titleZh": "女神「異世界轉生想成為什麼」我「勇者的肋骨」",
-    "titleEn": "My Ribdiculous Reincarnation",
-    "titleJa": "女神「異世界転生何になりたいですか」 俺「勇者の肋骨で」",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000150266.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206951-qiHcrw7pwzuq.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
-      "奇幻",
-      "異世界"
     ]
   },
   {
@@ -2809,21 +2809,6 @@
     ]
   },
   {
-    "id": "anilist-186190",
-    "titleZh": "小阿爾瑪想要成為家人",
-    "titleEn": "Alma-chan Wants to Be a Family!",
-    "titleJa": "アルマちゃんは家族になりたい",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186190-k8Q97dpKAOHE.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186190-k8Q97dpKAOHE.png",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "科幻",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-188388",
     "titleZh": "數碼暴龍 BEATBREAK",
     "titleEn": "DIGIMON BEATBREAK",
@@ -2836,6 +2821,21 @@
       "冒險",
       "奇幻",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-186190",
+    "titleZh": "小阿爾瑪想要成為家人",
+    "titleEn": "Alma-chan Wants to Be a Family!",
+    "titleJa": "アルマちゃんは家族になりたい",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186190-k8Q97dpKAOHE.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186190-k8Q97dpKAOHE.png",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "科幻",
+      "日常"
     ]
   },
   {
@@ -5653,6 +5653,18 @@
     ]
   },
   {
+    "id": "anilist-169258",
+    "titleZh": "青之壬生浪",
+    "titleEn": "Blue Miburo",
+    "titleJa": "青のミブロ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000135523.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169258-kj8qoomfAKsB.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情"
+    ]
+  },
+  {
     "id": "anilist-166611",
     "titleZh": "夏目友人帳 柒",
     "titleEn": "Natsume's Book of Friends Season 7",
@@ -5665,18 +5677,6 @@
       "奇幻",
       "日常",
       "超自然"
-    ]
-  },
-  {
-    "id": "anilist-169258",
-    "titleZh": "青之壬生浪",
-    "titleEn": "Blue Miburo",
-    "titleJa": "青のミブロ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000135523.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169258-kj8qoomfAKsB.jpg",
-    "yearSeason": "2024 秋",
-    "genres": [
-      "劇情"
     ]
   },
   {
@@ -8960,6 +8960,20 @@
     ]
   },
   {
+    "id": "anilist-148465",
+    "titleZh": "雖然等級只有1級但固有技能是最強的",
+    "titleEn": "My Unique Skill Makes Me OP even at Level 1",
+    "titleJa": "レベル1だけどユニークスキルで最強です",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/20/0000127820.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx148465-JHRudD6EbUVU.jpg",
+    "yearSeason": "2023 夏",
+    "genres": [
+      "冒險",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
     "id": "anilist-136149",
     "titleZh": "愛麗絲與特蕾絲的虛幻工廠",
     "titleEn": "maboroshi",
@@ -8972,20 +8986,6 @@
       "奇幻",
       "愛情",
       "超自然",
-      "異世界"
-    ]
-  },
-  {
-    "id": "anilist-148465",
-    "titleZh": "雖然等級只有1級但固有技能是最強的",
-    "titleEn": "My Unique Skill Makes Me OP even at Level 1",
-    "titleJa": "レベル1だけどユニークスキルで最強です",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/20/0000127820.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx148465-JHRudD6EbUVU.jpg",
-    "yearSeason": "2023 夏",
-    "genres": [
-      "冒險",
-      "奇幻",
       "異世界"
     ]
   },
@@ -14503,22 +14503,6 @@
     ]
   },
   {
-    "id": "anilist-126546",
-    "titleZh": "精靈幻想記",
-    "titleEn": "Seirei Gensouki: Spirit Chronicles",
-    "titleJa": "精霊幻想記",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
-    "yearSeason": "2021 夏",
-    "genres": [
-      "動作",
-      "劇情",
-      "奇幻",
-      "愛情",
-      "異世界"
-    ]
-  },
-  {
     "id": "anilist-117612",
     "titleZh": "現實主義勇者的王國重建記",
     "titleEn": "How a Realist Hero Rebuilt the Kingdom",
@@ -14529,6 +14513,22 @@
     "genres": [
       "動作",
       "冒險",
+      "奇幻",
+      "愛情",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-126546",
+    "titleZh": "精靈幻想記",
+    "titleEn": "Seirei Gensouki: Spirit Chronicles",
+    "titleJa": "精霊幻想記",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126546-Jujx9OvKxLzA.jpg",
+    "yearSeason": "2021 夏",
+    "genres": [
+      "動作",
+      "劇情",
       "奇幻",
       "愛情",
       "異世界"
@@ -14975,6 +14975,19 @@
     ]
   },
   {
+    "id": "anilist-135866",
+    "titleZh": "幼女戰記 沙漠意麵大作戰",
+    "titleEn": "Saga of Tanya the Evil: Operation Desert Pasta",
+    "titleJa": "幼女戦記 砂漠のパスタ大作戦",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135866-Q5qZPscMNLFa.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135866-Q5qZPscMNLFa.png",
+    "yearSeason": "2021 夏",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-107203",
     "titleZh": "劇場版 Free!–the Final Stroke– 前編",
     "titleEn": "Free! the Final Stroke: The First Volume",
@@ -14986,19 +14999,6 @@
       "劇情",
       "日常",
       "運動"
-    ]
-  },
-  {
-    "id": "anilist-135866",
-    "titleZh": "幼女戰記 沙漠意麵大作戰",
-    "titleEn": "Saga of Tanya the Evil: Operation Desert Pasta",
-    "titleJa": "幼女戦記 砂漠のパスタ大作戦",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135866-Q5qZPscMNLFa.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135866-Q5qZPscMNLFa.png",
-    "yearSeason": "2021 夏",
-    "genres": [
-      "動作",
-      "奇幻"
     ]
   },
   {
@@ -15159,16 +15159,15 @@
     ]
   },
   {
-    "id": "anilist-116676",
-    "titleZh": "劇場版 黃金拼圖 謝謝你!!",
-    "titleEn": "KINMOZA The Movie: Thank you!!",
-    "titleJa": "きんいろモザイク Thank you!!",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116676-SmbBAKOS6XUw.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116676-SmbBAKOS6XUw.jpg",
+    "id": "anilist-125838",
+    "titleZh": "海岬的迷途之家",
+    "titleEn": "The House of the Lost on the Cape",
+    "titleJa": "岬のマヨイガ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/74/0000114474.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125838-QEkGEEIA3xfC.jpg",
     "yearSeason": "2021 夏",
     "genres": [
-      "喜劇",
-      "日常"
+      "奇幻"
     ]
   },
   {
@@ -17377,20 +17376,6 @@
     ]
   },
   {
-    "id": "anilist-116006",
-    "titleZh": "高校之神",
-    "titleEn": "The God of High School",
-    "titleJa": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/21/0000111121.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116006-Wt8JSA1ZQxlM.png",
-    "yearSeason": "2020 夏",
-    "genres": [
-      "動作",
-      "奇幻",
-      "超能力"
-    ]
-  },
-  {
     "id": "anilist-114236",
     "titleZh": "炎炎消防隊 貳之章",
     "titleEn": "Fire Force Season 2",
@@ -17403,6 +17388,20 @@
       "劇情",
       "科幻",
       "超自然",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-116006",
+    "titleZh": "高校之神",
+    "titleEn": "The God of High School",
+    "titleJa": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/21/0000111121.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116006-Wt8JSA1ZQxlM.png",
+    "yearSeason": "2020 夏",
+    "genres": [
+      "動作",
+      "奇幻",
       "超能力"
     ]
   },
@@ -39622,15 +39621,16 @@
     ]
   },
   {
-    "id": "anilist-15925",
-    "titleZh": "映畫ドラえもん のび太のひみつ道具博物館[ミュージアム]",
+    "id": "anilist-12857",
+    "titleZh": "閃亮的拓人 劇場版",
     "titleEn": "",
-    "titleJa": "映画ドラえもん のび太のひみつ道具博物館[ミュージアム]",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15925-PvuI9IJVNBmd.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15925-PvuI9IJVNBmd.jpg",
+    "titleJa": "スタードライバー THE MOVIE",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12857-1RQBIEeRVw3I.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12857-1RQBIEeRVw3I.jpg",
     "yearSeason": "2013 冬",
     "genres": [
-      "喜劇"
+      "動作",
+      "機甲"
     ]
   },
   {

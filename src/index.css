@@ -244,12 +244,12 @@ input:focus, select:focus, textarea:focus {
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
   padding: var(--spacing-6);
+  flex: 1;
 }
 
 @media (max-width: 767px) {

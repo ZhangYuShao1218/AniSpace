@@ -1,5 +1,10 @@
 .app-container {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container.has-bottom-nav {
   padding-bottom: var(--spacing-12);
 }
 
@@ -219,6 +224,7 @@
 }
 
 /* ─── Scrape Modal ─────────────────────────────────────── */
+
 .scrape-modal {
   max-width: 460px;
   width: 90vw;

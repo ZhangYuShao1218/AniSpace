@@ -236,7 +236,8 @@ export const translations = {
     modeBingo: '25宮格賓果',
     modeBingoDesc: '生成一張 5x5 的動畫賓果圖。',
     bingoInstruction: 'AniSpace 動畫賓果🎯來試試你看過幾部動畫！',
-    anispaceLibrary: 'AniSpace 動畫庫'
+    anispaceLibrary: 'AniSpace 動畫庫',
+    privacyPolicy: '隱私權政策'
   },
   'en': {
     appTitle: 'AniSpace',
@@ -460,7 +461,8 @@ export const translations = {
     modeBingo: '25-Grid Bingo',
     modeBingoDesc: 'Generate a 5x5 anime bingo card.',
     bingoInstruction: 'AniSpace Anime Bingo🎯 Let\'s see how many you\'ve watched!',
-    anispaceLibrary: 'AniSpace Anime Library'
+    anispaceLibrary: 'AniSpace Anime Library',
+    privacyPolicy: 'Privacy Policy'
   },
   'ja': {
     appTitle: 'AniSpace アニメ記録',
@@ -684,6 +686,7 @@ export const translations = {
     modeBingo: '25分割ビンゴ',
     modeBingoDesc: '5x5のアニメビンゴカードを生成します。',
     bingoInstruction: 'AniSpace アニメビンゴ🎯 いくつ見たか試してみて！',
-    anispaceLibrary: 'AniSpace アニメライブラリ'
+    anispaceLibrary: 'AniSpace アニメライブラリ',
+    privacyPolicy: 'プライバシーポリシー'
   }
 };

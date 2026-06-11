@@ -116,7 +116,7 @@ const AppHeader: React.FC = () => {
         )}
 
         {/* Header controls (Sync Latest, Import/Export) are kept visible in Native mode */}
-        <div className="header-controls" style={isNative ? { display: 'flex', flexDirection: 'column', gap: '4px', width: '100%' } : {}}>
+        <div className="header-controls" style={isNative ? { display: 'flex', flexWrap: 'wrap', gap: '8px', width: '100%', justifyContent: 'center' } : {}}>
           {isNative && (
             <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
               <div style={{ flex: 1 }}>

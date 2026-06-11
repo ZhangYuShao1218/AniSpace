@@ -202,6 +202,9 @@ export const translations = {
     loginGoogle: '登入以繼續雲端備份',
     syncToCloud: '同步至雲端',
     logoutGoogleTooltip: '登出 Google 帳號',
+    permissionWarningTitle: '警告',
+    permissionWarningMsg: '登入成功，但 Google Drive 權限不足，備份功能可能無法正常運作',
+    requestPermission: '請求雲端權限',
 
     // Share Modal
     defaultShareTitleWatched: '我的神作動畫紀錄',
@@ -427,6 +430,9 @@ export const translations = {
     loginGoogle: 'Google Sync',
     syncToCloud: 'Sync to Cloud',
     logoutGoogleTooltip: 'Logout',
+    permissionWarningTitle: 'Warning',
+    permissionWarningMsg: 'Login successful, but Google Drive permission is insufficient. Backup features may not work properly.',
+    requestPermission: 'Request Cloud Permission',
 
     // Share Modal
     defaultShareTitleWatched: 'My Masterpiece Records',
@@ -652,6 +658,9 @@ export const translations = {
     loginGoogle: 'ログインして同期',
     syncToCloud: 'クラウドと同期',
     logoutGoogleTooltip: 'ログアウト',
+    permissionWarningTitle: '警告',
+    permissionWarningMsg: 'ログインには成功しましたが、Google Driveの権限が不足しています。バックアップ機能が正常に動作しない可能性があります。',
+    requestPermission: 'クラウド権限を要求',
 
     // Share Modal
     defaultShareTitleWatched: '私の神アニメ記録',

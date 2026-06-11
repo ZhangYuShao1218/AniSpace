@@ -17,6 +17,7 @@ interface GoogleSyncContextType {
   accessToken: string | null;
   isAutoSyncEnabled: boolean;
   toggleAutoSync: () => void;
+  hasDrivePermission: boolean;
 }
 
 const GoogleSyncContext = createContext<GoogleSyncContextType | undefined>(undefined);
@@ -34,6 +35,9 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   });
   const [isSyncing, setIsSyncing] = useState(false);
   const [lastSyncTime, setLastSyncTime] = useState<string | null>(localStorage.getItem('google_last_sync'));
+  const [hasDrivePermission, setHasDrivePermission] = useState<boolean>(() => {
+    return localStorage.getItem('google_drive_permission_denied') !== 'true';
+  });
   
   const { 
     watchedList, 
@@ -88,6 +92,14 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   const webLogin = useGoogleLogin({
     onSuccess: (tokenResponse) => {
+      if (!tokenResponse.scope || !tokenResponse.scope.includes('drive')) {
+        setHasDrivePermission(false);
+        localStorage.setItem('google_drive_permission_denied', 'true');
+        showAlert(t('permissionWarningMsg'), t('permissionWarningTitle'));
+      } else {
+        setHasDrivePermission(true);
+        localStorage.removeItem('google_drive_permission_denied');
+      }
       const expiresAt = Date.now() + (tokenResponse.expires_in * 1000);
       localStorage.setItem('google_access_token', tokenResponse.access_token);
       localStorage.setItem('google_token_expires_at', expiresAt.toString());
@@ -95,7 +107,10 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       setTimeout(() => restoreFlow(tokenResponse.access_token), 500);
     },
     scope: 'https://www.googleapis.com/auth/drive.appdata https://www.googleapis.com/auth/drive.file',
-    onError: (error) => console.error('Login Failed:', error)
+    onError: (error) => {
+      console.error('Login Failed:', error);
+      showAlert(`網頁登入失敗: ${error?.error_description || error?.error || '未知錯誤'}`, 'warning');
+    }
   });
 
   const login = async () => {
@@ -103,14 +118,39 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       try {
         const user = await GoogleAuth.signIn();
         const token = user.authentication.accessToken;
+        
+        if (token) {
+          try {
+            const infoRes = await fetch(`https://oauth2.googleapis.com/tokeninfo?access_token=${token}`);
+            if (infoRes.ok) {
+              const info = await infoRes.json();
+              if (!info.scope || !info.scope.includes('drive')) {
+                setHasDrivePermission(false);
+                localStorage.setItem('google_drive_permission_denied', 'true');
+                showAlert(t('permissionWarningMsg'), t('permissionWarningTitle'));
+              } else {
+                setHasDrivePermission(true);
+                localStorage.removeItem('google_drive_permission_denied');
+              }
+            }
+          } catch (e) {
+             console.error('Failed to check token scopes', e);
+          }
+        }
+
         // Google access tokens usually last 1 hour
         const expiresAt = Date.now() + (3600 * 1000);
         localStorage.setItem('google_access_token', token);
         localStorage.setItem('google_token_expires_at', expiresAt.toString());
         setAccessToken(token);
         setTimeout(() => restoreFlow(token), 500);
-      } catch (error) {
+      } catch (error: any) {
         console.error('Native Google Login Failed:', error);
+        const errMsg = String(error.message || error.error || error).toLowerCase();
+        if (errMsg.includes('cancel') || errMsg.includes('12501')) {
+           return; // 使用者取消登入，不跳出警告
+        }
+        showAlert(`登入失敗，請確認您已在 Google Play Console 註冊您的憑證指紋 (SHA-1)。詳細錯誤: ${error.message || JSON.stringify(error)}`, 'warning');
       }
     } else {
       webLogin();
@@ -124,6 +164,8 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       googleLogout();
     }
     setAccessToken(null);
+    setHasDrivePermission(true);
+    localStorage.removeItem('google_drive_permission_denied');
     localStorage.removeItem('google_access_token');
     localStorage.removeItem('google_token_expires_at');
   };
@@ -271,7 +313,8 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       restoreFromDrive,
       accessToken,
       isAutoSyncEnabled,
-      toggleAutoSync
+      toggleAutoSync,
+      hasDrivePermission
     }}>
       {children}
     </GoogleSyncContext.Provider>

@@ -20,7 +20,8 @@ const GoogleSyncButton: React.FC = () => {
     lastSyncTime, 
     login, 
     logout, 
-    syncToDrive 
+    syncToDrive,
+    hasDrivePermission
   } = useGoogleSync();
   const { t } = useLanguage();
 
@@ -35,6 +36,31 @@ const GoogleSyncButton: React.FC = () => {
         {isSyncing ? <Loader2 size={16} className="animate-spin" /> : <GoogleIcon />}
         {t('loginGoogle')}
       </button>
+    );
+  }
+
+  if (!hasDrivePermission) {
+    return (
+      <div className="google-sync-btn-container">
+        <div className="google-sync-inner">
+          <button 
+            className="btn-google" 
+            onClick={() => login()}
+            disabled={isSyncing}
+            style={{ borderColor: 'rgba(96, 165, 250, 0.4)', color: '#60a5fa', backgroundColor: 'rgba(96, 165, 250, 0.1)' }}
+          >
+            {isSyncing ? <Loader2 size={16} className="animate-spin" /> : <GoogleIcon />}
+            {t('requestPermission')}
+          </button>
+        </div>
+        <button 
+          className="logout-icon-btn" 
+          onClick={logout}
+          title={t('logoutGoogleTooltip')}
+        >
+          <LogOut size={16} />
+        </button>
+      </div>
     );
   }
 

@@ -267,6 +267,7 @@ input:focus, select:focus, textarea:focus {
   padding-top: var(--spacing-4);
   padding-bottom: var(--spacing-6);
   border-bottom: 2px solid var(--border-glass-light);
+  flex: none; /* 防止標題列被 flex: 1 拉伸導致空白 */
 }
 
 

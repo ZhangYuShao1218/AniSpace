@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
-import { AdMob, BannerAdPluginEvents } from '@capacitor-community/admob';
-// import type { BannerAdOptions } from '@capacitor-community/admob';
+import { AdMob, BannerAdPluginEvents, BannerAdSize, BannerAdPosition } from '@capacitor-community/admob';
+import type { BannerAdOptions } from '@capacitor-community/admob';
 
 interface AdMobContextType {
   hideAd: () => void;
@@ -34,16 +34,16 @@ export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           document.documentElement.style.setProperty('--admob-height', `${info.height}px`);
         });
 
-        // const options: BannerAdOptions = {
-        //   adId: 'ca-app-pub-3940256099942544/6300978111', // Test Banner ID
-        //   adSize: BannerAdSize.ADAPTIVE_BANNER,
-        //   position: BannerAdPosition.BOTTOM_CENTER,
-        //   margin: 0,
-        //   isTesting: true,
-        // };
+        const options: BannerAdOptions = {
+          adId: import.meta.env.VITE_ADMOB_BANNER_ID || 'ca-app-pub-3940256099942544/6300978111', // Test Banner ID fallback
+          adSize: BannerAdSize.ADAPTIVE_BANNER,
+          position: BannerAdPosition.BOTTOM_CENTER,
+          margin: 0,
+          isTesting: import.meta.env.DEV,
+        };
 
-        // 暫時隱藏廣告以供錄影拍攝
-        // await AdMob.showBanner(options);
+        // 顯示廣告
+        await AdMob.showBanner(options);
         isAdInitializedRef.current = true;
         
         // If there are pending hide requests that happened before initialization, hide it now.

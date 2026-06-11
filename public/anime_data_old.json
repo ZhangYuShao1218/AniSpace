@@ -386,19 +386,6 @@
     ]
   },
   {
-    "id": "anilist-169583",
-    "titleZh": "轉學後班上的清純可愛美少女，竟是小時候玩在一起的哥兒們",
-    "titleEn": "",
-    "titleJa": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-t2r7Aw0EN5NY.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-t2r7Aw0EN5NY.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-208044",
     "titleZh": "落第賢者の學院無雙～二度目の転生、Sランクチート魔術師冒険録～",
     "titleEn": "",
@@ -410,6 +397,19 @@
       "動作",
       "冒險",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-169583",
+    "titleZh": "轉學後班上的清純可愛美少女，竟是小時候玩在一起的哥兒們",
+    "titleEn": "",
+    "titleJa": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-t2r7Aw0EN5NY.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-t2r7Aw0EN5NY.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情"
     ]
   },
   {
@@ -610,6 +610,20 @@
     ]
   },
   {
+    "id": "anilist-199066",
+    "titleZh": "花織同學轉生後還是想幹架",
+    "titleEn": "Hanaori-san Still Wants to Fight in the Next Life",
+    "titleJa": "花織さんは転生しても喧嘩がしたい",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-185875",
     "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
     "titleEn": "",
@@ -636,20 +650,6 @@
     "genres": [
       "動作",
       "冒險"
-    ]
-  },
-  {
-    "id": "anilist-199066",
-    "titleZh": "花織同學轉生後還是想幹架",
-    "titleEn": "Hanaori-san Still Wants to Fight in the Next Life",
-    "titleJa": "花織さんは転生しても喧嘩がしたい",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "超自然"
     ]
   },
   {
@@ -900,6 +900,19 @@
     ]
   },
   {
+    "id": "anilist-194393",
+    "titleZh": "想結束這場「我愛你」的遊戲",
+    "titleEn": "I Want to End this Love Game",
+    "titleJa": "愛してるゲームを終わらせたい",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000145822.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194393-0H9yYABu6y0i.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-197824",
     "titleZh": "異世界悠閒農家 2",
     "titleEn": "Farming Life in Another World 2",
@@ -911,19 +924,6 @@
       "奇幻",
       "日常",
       "異世界"
-    ]
-  },
-  {
-    "id": "anilist-194393",
-    "titleZh": "想結束這場「我愛你」的遊戲",
-    "titleEn": "I Want to End this Love Game",
-    "titleJa": "愛してるゲームを終わらせたい",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000145822.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194393-0H9yYABu6y0i.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
-      "愛情"
     ]
   },
   {
@@ -1001,18 +1001,6 @@
     ]
   },
   {
-    "id": "anilist-196935",
-    "titleZh": "朱音落語",
-    "titleEn": "Akane-banashi",
-    "titleJa": "あかね噺",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/92/0000146592.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196935-RnLWBsEvNp8M.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "劇情"
-    ]
-  },
-  {
     "id": "anilist-202102",
     "titleZh": "主播女孩重度依賴",
     "titleEn": "NEEDY GIRL OVERDOSE",
@@ -1025,6 +1013,18 @@
       "劇情",
       "心理",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-196935",
+    "titleZh": "朱音落語",
+    "titleEn": "Akane-banashi",
+    "titleJa": "あかね噺",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/92/0000146592.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196935-RnLWBsEvNp8M.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "劇情"
     ]
   },
   {
@@ -1043,19 +1043,6 @@
     ]
   },
   {
-    "id": "anilist-204356",
-    "titleZh": "『我的英雄學院』No.170＋1『More』",
-    "titleEn": "My Hero Academia More",
-    "titleJa": "僕のヒーローアカデミア No. 170+1 「More」",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/57/0000143057.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204356-RNYmxUVVz3Z2.png",
-    "yearSeason": "2026 春",
-    "genres": [
-      "動作",
-      "冒險"
-    ]
-  },
-  {
     "id": "anilist-198113",
     "titleZh": "殺手青春",
     "titleEn": "KILL BLUE",
@@ -1066,6 +1053,19 @@
     "genres": [
       "動作",
       "喜劇"
+    ]
+  },
+  {
+    "id": "anilist-204356",
+    "titleZh": "『我的英雄學院』No.170＋1『More』",
+    "titleEn": "My Hero Academia More",
+    "titleJa": "僕のヒーローアカデミア No. 170+1 「More」",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/57/0000143057.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204356-RNYmxUVVz3Z2.png",
+    "yearSeason": "2026 春",
+    "genres": [
+      "動作",
+      "冒險"
     ]
   },
   {
@@ -1136,7 +1136,6 @@
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187869-LUn3dyTzuKUq.jpg",
     "yearSeason": "2026 春",
     "genres": [
-      "喜劇",
       "愛情",
       "日常"
     ]
@@ -1844,19 +1843,6 @@
     ]
   },
   {
-    "id": "anilist-177679",
-    "titleZh": "達爾文事變",
-    "titleEn": "The Darwin Incident",
-    "titleJa": "ダーウィン事変",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177679-BgsgE0fQk3qN.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177679-BgsgE0fQk3qN.jpg",
-    "yearSeason": "2026 冬",
-    "genres": [
-      "科幻",
-      "驚悚"
-    ]
-  },
-  {
     "id": "anilist-187901",
     "titleZh": "死亡帳號",
     "titleEn": "Dead Account",
@@ -1868,6 +1854,19 @@
       "動作",
       "超自然",
       "超能力"
+    ]
+  },
+  {
+    "id": "anilist-177679",
+    "titleZh": "達爾文事變",
+    "titleEn": "The Darwin Incident",
+    "titleJa": "ダーウィン事変",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177679-BgsgE0fQk3qN.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177679-BgsgE0fQk3qN.jpg",
+    "yearSeason": "2026 冬",
+    "genres": [
+      "科幻",
+      "驚悚"
     ]
   },
   {
@@ -5653,18 +5652,6 @@
     ]
   },
   {
-    "id": "anilist-169258",
-    "titleZh": "青之壬生浪",
-    "titleEn": "Blue Miburo",
-    "titleJa": "青のミブロ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000135523.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169258-kj8qoomfAKsB.jpg",
-    "yearSeason": "2024 秋",
-    "genres": [
-      "劇情"
-    ]
-  },
-  {
     "id": "anilist-166611",
     "titleZh": "夏目友人帳 柒",
     "titleEn": "Natsume's Book of Friends Season 7",
@@ -5677,6 +5664,18 @@
       "奇幻",
       "日常",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-169258",
+    "titleZh": "青之壬生浪",
+    "titleEn": "Blue Miburo",
+    "titleJa": "青のミブロ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000135523.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169258-kj8qoomfAKsB.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情"
     ]
   },
   {
@@ -39621,16 +39620,15 @@
     ]
   },
   {
-    "id": "anilist-12857",
-    "titleZh": "閃亮的拓人 劇場版",
+    "id": "anilist-15925",
+    "titleZh": "映畫ドラえもん のび太のひみつ道具博物館[ミュージアム]",
     "titleEn": "",
-    "titleJa": "スタードライバー THE MOVIE",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12857-1RQBIEeRVw3I.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12857-1RQBIEeRVw3I.jpg",
+    "titleJa": "映画ドラえもん のび太のひみつ道具博物館[ミュージアム]",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15925-PvuI9IJVNBmd.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15925-PvuI9IJVNBmd.jpg",
     "yearSeason": "2013 冬",
     "genres": [
-      "動作",
-      "機甲"
+      "喜劇"
     ]
   },
   {
@@ -47481,20 +47479,6 @@
     ]
   },
   {
-    "id": "anilist-6802",
-    "titleZh": "空之音",
-    "titleEn": "Sound of the Sky",
-    "titleJa": "ソ・ラ・ノ・ヲ・ト",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
-    "yearSeason": "2010 冬",
-    "genres": [
-      "音樂",
-      "科幻",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-7148",
     "titleZh": "管家後宮學園",
     "titleEn": "Ladies Versus Butlers",
@@ -47506,6 +47490,20 @@
       "喜劇",
       "福利",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-6802",
+    "titleZh": "空之音",
+    "titleEn": "Sound of the Sky",
+    "titleJa": "ソ・ラ・ノ・ヲ・ト",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
+    "yearSeason": "2010 冬",
+    "genres": [
+      "音樂",
+      "科幻",
+      "日常"
     ]
   },
   {

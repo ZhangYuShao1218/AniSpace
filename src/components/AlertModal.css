@@ -52,8 +52,10 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-3);
-  padding-bottom: var(--spacing-4);
-  margin-bottom: var(--spacing-4);
+  padding-bottom: calc(var(--spacing-4) - 4pt);
+  margin-bottom: calc(var(--spacing-4) - 4pt);
+  margin-top: -4pt;
+  padding-right: 16pt; /* 推動中心點讓內容總共往左約 8pt */
   border-bottom: 1px solid var(--border-glass-light);
 }
 
@@ -63,7 +65,7 @@
 
 .alert-modal-title {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: calc(1.25rem + 2pt);
   font-weight: 700;
 }
 

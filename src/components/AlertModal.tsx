@@ -1,6 +1,6 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
-import { X, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './AlertModal.css';
 
@@ -20,7 +20,6 @@ export const AlertModal: React.FC<AlertModalProps> = ({ isOpen, message, title, 
   return createPortal(
     <div className="alert-modal-backdrop" onClick={onClose}>
       <div className="alert-modal-content" onClick={e => e.stopPropagation()}>
-        <button className="alert-modal-close" onClick={onClose}><X size={20} /></button>
         <div className="alert-modal-header">
           <Info size={24} className="alert-icon" />
           <h3 className="alert-modal-title">{finalTitle}</h3>

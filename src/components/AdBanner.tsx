@@ -36,8 +36,8 @@ const AdBanner: React.FC<AdBannerProps> = ({ adSlot, className = '' }) => {
       <div className="ad-content">
         <ins className="adsbygoogle"
              style={{ display: 'block', minHeight: '50px' }}
-             data-ad-client="ca-pub-1481285493010476"
-             data-ad-slot={adSlot || "9683884323"}
+             data-ad-client="ca-pub-7954604636474942"
+             data-ad-slot={adSlot || "3811211519"}
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
       </div>

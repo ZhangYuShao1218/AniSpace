@@ -114,20 +114,6 @@
     ]
   },
   {
-    "id": "anilist-199111",
-    "titleZh": "GRANDBLUE 碧藍之海3",
-    "titleEn": "",
-    "titleJa": "ぐらんぶる Season 3",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "日常",
-      "運動"
-    ]
-  },
-  {
     "id": "anilist-210031",
     "titleZh": "相反的你和我 第2季",
     "titleEn": "You and I Are Polar Opposites Season 2",
@@ -140,6 +126,20 @@
       "劇情",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-199111",
+    "titleZh": "GRANDBLUE 碧藍之海3",
+    "titleEn": "",
+    "titleJa": "ぐらんぶる Season 3",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "日常",
+      "運動"
     ]
   },
   {
@@ -413,6 +413,20 @@
     ]
   },
   {
+    "id": "anilist-199748",
+    "titleZh": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
+    "titleEn": "I Became a Legend After My 10 Year-Long Last Stand",
+    "titleJa": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199748-PAFk9pGSUmFL.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199748-PAFk9pGSUmFL.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-209961",
     "titleZh": "死亡遊戱で飯を食う。44:CLOUDY BEACH",
     "titleEn": "",
@@ -425,20 +439,6 @@
       "劇情",
       "懸疑",
       "驚悚"
-    ]
-  },
-  {
-    "id": "anilist-199748",
-    "titleZh": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
-    "titleEn": "I Became a Legend After My 10 Year-Long Last Stand",
-    "titleJa": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199748-PAFk9pGSUmFL.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199748-PAFk9pGSUmFL.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻"
     ]
   },
   {
@@ -535,21 +535,6 @@
     ]
   },
   {
-    "id": "anilist-185692",
-    "titleZh": "魔法光源股份有限公司 第2季",
-    "titleEn": "",
-    "titleJa": "株式会社マジルミエ 第2期",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "喜劇",
-      "奇幻",
-      "魔法少女"
-    ]
-  },
-  {
     "id": "anilist-196218",
     "titleZh": "領民0人スタートの辺境領主様",
     "titleEn": "",
@@ -564,6 +549,21 @@
       "奇幻",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-185692",
+    "titleZh": "魔法光源股份有限公司 第2季",
+    "titleEn": "",
+    "titleJa": "株式会社マジルミエ 第2期",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185692-gmDNAsJnbbEU.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "魔法少女"
     ]
   },
   {
@@ -624,6 +624,19 @@
     ]
   },
   {
+    "id": "anilist-208754",
+    "titleZh": "Unanswered//butterfly: Sword Art Online",
+    "titleEn": "",
+    "titleJa": "Unanswered//butterfly: Sword Art Online",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險"
+    ]
+  },
+  {
     "id": "anilist-185875",
     "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
     "titleEn": "",
@@ -637,19 +650,6 @@
       "劇情",
       "奇幻",
       "魔法少女"
-    ]
-  },
-  {
-    "id": "anilist-208754",
-    "titleZh": "Unanswered//butterfly: Sword Art Online",
-    "titleEn": "",
-    "titleJa": "Unanswered//butterfly: Sword Art Online",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "冒險"
     ]
   },
   {
@@ -866,6 +866,7 @@
     "yearSeason": "2026 春",
     "genres": [
       "喜劇",
+      "劇情",
       "愛情",
       "日常"
     ]
@@ -1100,20 +1101,6 @@
     ]
   },
   {
-    "id": "anilist-179950",
-    "titleZh": "輪迴的花瓣",
-    "titleEn": "Petals of Reincarnation",
-    "titleJa": "リィンカーネーションの花弁",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/48/0000140648.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179950-g95odyBfYEbU.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "動作",
-      "超自然",
-      "超能力"
-    ]
-  },
-  {
     "id": "anilist-189987",
     "titleZh": "木頭風紀委員和迷你裙 JK 的故事",
     "titleEn": "The Klutzy Class Monitor and the Girl with the Short Skirt",
@@ -1125,6 +1112,20 @@
       "喜劇",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-179950",
+    "titleZh": "輪迴的花瓣",
+    "titleEn": "Petals of Reincarnation",
+    "titleJa": "リィンカーネーションの花弁",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/48/0000140648.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179950-g95odyBfYEbU.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "動作",
+      "超自然",
+      "超能力"
     ]
   },
   {
@@ -1227,18 +1228,6 @@
     ]
   },
   {
-    "id": "anilist-196974",
-    "titleZh": "黑貓與魔女的教室",
-    "titleEn": "The Classroom of the Black Cat and a Witch",
-    "titleJa": "黒猫と魔女の教室",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196974-mZk1uyrx0XNx.png",
-    "yearSeason": "2026 春",
-    "genres": [
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-195268",
     "titleZh": "成為悲劇元兇的最強異端，最後頭目女王為了人民犧牲奉獻 第二季",
     "titleEn": "The Most Heretical Last Boss Queen: From Villainess to Savior Season 2",
@@ -1250,6 +1239,18 @@
       "喜劇",
       "奇幻",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-196974",
+    "titleZh": "黑貓與魔女的教室",
+    "titleEn": "The Classroom of the Black Cat and a Witch",
+    "titleJa": "黒猫と魔女の教室",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196974-mZk1uyrx0XNx.png",
+    "yearSeason": "2026 春",
+    "genres": [
+      "奇幻"
     ]
   },
   {
@@ -2671,20 +2672,6 @@
     ]
   },
   {
-    "id": "anilist-186524",
-    "titleZh": "不擅吸血的吸血鬼",
-    "titleEn": "Li'l Miss Vampire Can't Suck Right",
-    "titleJa": "ちゃんと吸えない吸血鬼ちゃん",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/38/0000143538.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186524-JSsyFR3FqTO8.jpg",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "喜劇",
-      "日常",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-187331",
     "titleZh": "小手指同學，請別亂摸",
     "titleEn": "Hands off: Sawaranaide Kotesashi-kun!",
@@ -2697,6 +2684,20 @@
       "福利",
       "愛情",
       "運動"
+    ]
+  },
+  {
+    "id": "anilist-186524",
+    "titleZh": "不擅吸血的吸血鬼",
+    "titleEn": "Li'l Miss Vampire Can't Suck Right",
+    "titleJa": "ちゃんと吸えない吸血鬼ちゃん",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/38/0000143538.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186524-JSsyFR3FqTO8.jpg",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "喜劇",
+      "日常",
+      "超自然"
     ]
   },
   {
@@ -3895,6 +3896,19 @@
     ]
   },
   {
+    "id": "anilist-183275",
+    "titleZh": "完美到難以接近的聖女遭到解除婚約後被賣到鄰國",
+    "titleEn": "The Too-Perfect Saint: Tossed Aside by My Fiancé and Sold to Another Kingdom",
+    "titleJa": "完璧すぎて可愛げがないと婚約破棄された聖女は隣国に売られる",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000142000.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx183275-WtAo77sYDFW8.png",
+    "yearSeason": "2025 春",
+    "genres": [
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-185213",
     "titleZh": "機動戰士高達 GQuuuuuuX",
     "titleEn": "Mobile Suit Gundam GQuuuuuuX",
@@ -3907,19 +3921,6 @@
       "劇情",
       "機甲",
       "科幻"
-    ]
-  },
-  {
-    "id": "anilist-183275",
-    "titleZh": "完美到難以接近的聖女遭到解除婚約後被賣到鄰國",
-    "titleEn": "The Too-Perfect Saint: Tossed Aside by My Fiancé and Sold to Another Kingdom",
-    "titleJa": "完璧すぎて可愛げがないと婚約破棄された聖女は隣国に売られる",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000142000.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx183275-WtAo77sYDFW8.png",
-    "yearSeason": "2025 春",
-    "genres": [
-      "奇幻",
-      "愛情"
     ]
   },
   {
@@ -5887,20 +5888,6 @@
     ]
   },
   {
-    "id": "anilist-162896",
-    "titleZh": "擅長逃跑的殿下",
-    "titleEn": "The Elusive Samurai",
-    "titleJa": "逃げ上手の若君",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/58/0000130958.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162896-hSMTVceb50GY.jpg",
-    "yearSeason": "2024 夏",
-    "genres": [
-      "動作",
-      "冒險",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-170695",
     "titleZh": "我要【招架】一切～反誤解的世界最強想成為冒險家～",
     "titleEn": "I Parry Everything",
@@ -5912,6 +5899,20 @@
       "動作",
       "冒險",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-162896",
+    "titleZh": "擅長逃跑的殿下",
+    "titleEn": "The Elusive Samurai",
+    "titleJa": "逃げ上手の若君",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/58/0000130958.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162896-hSMTVceb50GY.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "超自然"
     ]
   },
   {
@@ -9050,22 +9051,6 @@
     ]
   },
   {
-    "id": "anilist-145140",
-    "titleZh": "勇者赫魯庫",
-    "titleEn": "Helck",
-    "titleJa": "Helck",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/09/0000130209.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145140-tHT8TT2XSsOh.jpg",
-    "yearSeason": "2023 夏",
-    "genres": [
-      "動作",
-      "冒險",
-      "喜劇",
-      "劇情",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-160447",
     "titleZh": "妙廟美少女",
     "titleEn": "TenPuru",
@@ -9079,6 +9064,22 @@
       "福利",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-145140",
+    "titleZh": "勇者赫魯庫",
+    "titleEn": "Helck",
+    "titleJa": "Helck",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/09/0000130209.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145140-tHT8TT2XSsOh.jpg",
+    "yearSeason": "2023 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "劇情",
+      "奇幻"
     ]
   },
   {
@@ -15711,6 +15712,19 @@
     ]
   },
   {
+    "id": "anilist-99900",
+    "titleZh": "酷愛電影的龐波小姐",
+    "titleEn": "Pompo: The Cinéphile",
+    "titleJa": "映画大好きポンポさん",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/88/0000110188.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99900-YpWbTgc4wr7A.jpg",
+    "yearSeason": "2021 春",
+    "genres": [
+      "喜劇",
+      "劇情"
+    ]
+  },
+  {
     "id": "anilist-131930",
     "titleZh": "武士彌助",
     "titleEn": "Yasuke",
@@ -15723,19 +15737,6 @@
       "奇幻",
       "機甲",
       "科幻"
-    ]
-  },
-  {
-    "id": "anilist-99900",
-    "titleZh": "酷愛電影的龐波小姐",
-    "titleEn": "Pompo: The Cinéphile",
-    "titleJa": "映画大好きポンポさん",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/88/0000110188.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99900-YpWbTgc4wr7A.jpg",
-    "yearSeason": "2021 春",
-    "genres": [
-      "喜劇",
-      "劇情"
     ]
   },
   {
@@ -25883,6 +25884,7 @@
     "genres": [
       "動作",
       "喜劇",
+      "福利",
       "愛情"
     ]
   },
@@ -36452,20 +36454,6 @@
     ]
   },
   {
-    "id": "anilist-20455",
-    "titleZh": "超級索尼子",
-    "titleEn": "Soni-Ani: SUPER SONICO THE ANIMATION",
-    "titleJa": "そにアニ -SUPER SONICO THE ANIMATION-",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20455-idVtmB4eERac.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20455-idVtmB4eERac.png",
-    "yearSeason": "2014 冬",
-    "genres": [
-      "喜劇",
-      "音樂",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-20533",
     "titleZh": "Buddy Complex",
     "titleEn": "Buddy Complex",
@@ -36478,6 +36466,20 @@
       "劇情",
       "機甲",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-20455",
+    "titleZh": "超級索尼子",
+    "titleEn": "Soni-Ani: SUPER SONICO THE ANIMATION",
+    "titleJa": "そにアニ -SUPER SONICO THE ANIMATION-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20455-idVtmB4eERac.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20455-idVtmB4eERac.png",
+    "yearSeason": "2014 冬",
+    "genres": [
+      "喜劇",
+      "音樂",
+      "日常"
     ]
   },
   {
@@ -47479,20 +47481,6 @@
     ]
   },
   {
-    "id": "anilist-7148",
-    "titleZh": "管家後宮學園",
-    "titleEn": "Ladies Versus Butlers",
-    "titleJa": "れでぃ×ばと!",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
-    "yearSeason": "2010 冬",
-    "genres": [
-      "喜劇",
-      "福利",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-6802",
     "titleZh": "空之音",
     "titleEn": "Sound of the Sky",
@@ -47504,6 +47492,20 @@
       "音樂",
       "科幻",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-7148",
+    "titleZh": "管家後宮學園",
+    "titleEn": "Ladies Versus Butlers",
+    "titleJa": "れでぃ×ばと!",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7148-nLJGo6aO9FQX.jpg",
+    "yearSeason": "2010 冬",
+    "genres": [
+      "喜劇",
+      "福利",
+      "愛情"
     ]
   },
   {

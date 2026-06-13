@@ -30,6 +30,20 @@
     ]
   },
   {
+    "id": "anilist-196187",
+    "titleZh": "躲在超市後門抽菸的兩人",
+    "titleEn": "Smoking Behind the Supermarket with You",
+    "titleJa": "スーパーの裏でヤニ吸うふたり",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-cXhET893v3Ag.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-cXhET893v3Ag.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
     "id": "anilist-133007",
     "titleZh": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
     "titleEn": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
@@ -54,20 +68,6 @@
       "動作",
       "冒險",
       "超自然"
-    ]
-  },
-  {
-    "id": "anilist-196187",
-    "titleZh": "躲在超市後門抽菸的兩人",
-    "titleEn": "Smoking Behind the Supermarket with You",
-    "titleJa": "スーパーの裏でヤニ吸うふたり",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-cXhET893v3Ag.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-cXhET893v3Ag.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "日常"
     ]
   },
   {
@@ -442,16 +442,6 @@
     ]
   },
   {
-    "id": "anilist-197178",
-    "titleZh": "ONE PIECE HEROINES",
-    "titleEn": "",
-    "titleJa": "ONE PIECE HEROINES",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
-    "yearSeason": "2026 夏",
-    "genres": []
-  },
-  {
     "id": "anilist-202269",
     "titleZh": "與奔馳於透明之夜的你，談一場看不見的戀愛。",
     "titleEn": "",
@@ -463,6 +453,16 @@
       "劇情",
       "愛情"
     ]
+  },
+  {
+    "id": "anilist-197178",
+    "titleZh": "ONE PIECE HEROINES",
+    "titleEn": "",
+    "titleJa": "ONE PIECE HEROINES",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197178-Ui8PY9HQbNgu.jpg",
+    "yearSeason": "2026 夏",
+    "genres": []
   },
   {
     "id": "anilist-204466",
@@ -800,19 +800,6 @@
     ]
   },
   {
-    "id": "anilist-170019",
-    "titleZh": "關於我在無意間被隔壁的天使變成廢柴這件事 2",
-    "titleEn": "The Angel Next Door Spoils Me Rotten2",
-    "titleJa": "お隣の天使様にいつの間にか駄目人間にされていた件 第2期",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000136023.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170019-djbN0b934MhE.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "愛情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-199547",
     "titleZh": "婚姻劇毒",
     "titleEn": "MARRIAGETOXIN",
@@ -826,6 +813,19 @@
       "劇情",
       "愛情",
       "超能力"
+    ]
+  },
+  {
+    "id": "anilist-170019",
+    "titleZh": "關於我在無意間被隔壁的天使變成廢柴這件事 2",
+    "titleEn": "The Angel Next Door Spoils Me Rotten2",
+    "titleJa": "お隣の天使様にいつの間にか駄目人間にされていた件 第2期",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000136023.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170019-djbN0b934MhE.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "愛情",
+      "日常"
     ]
   },
   {
@@ -1029,6 +1029,19 @@
     ]
   },
   {
+    "id": "anilist-198113",
+    "titleZh": "殺手青春",
+    "titleEn": "KILL BLUE",
+    "titleJa": "キルアオ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/07/0000147007.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198113-NRa47idWSlnx.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "動作",
+      "喜劇"
+    ]
+  },
+  {
     "id": "anilist-184492",
     "titleZh": "入間同學入魔了！第四季",
     "titleEn": "Welcome to Demon School! Iruma-kun Season 4",
@@ -1041,19 +1054,6 @@
       "奇幻",
       "超自然",
       "異世界"
-    ]
-  },
-  {
-    "id": "anilist-198113",
-    "titleZh": "殺手青春",
-    "titleEn": "KILL BLUE",
-    "titleJa": "キルアオ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/07/0000147007.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198113-NRa47idWSlnx.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "動作",
-      "喜劇"
     ]
   },
   {
@@ -2809,21 +2809,6 @@
     ]
   },
   {
-    "id": "anilist-188388",
-    "titleZh": "數碼暴龍 BEATBREAK",
-    "titleEn": "DIGIMON BEATBREAK",
-    "titleJa": "DIGIMON BEATBREAK",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻",
-      "科幻"
-    ]
-  },
-  {
     "id": "anilist-186190",
     "titleZh": "小阿爾瑪想要成為家人",
     "titleEn": "Alma-chan Wants to Be a Family!",
@@ -2836,6 +2821,21 @@
       "愛情",
       "科幻",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-188388",
+    "titleZh": "數碼暴龍 BEATBREAK",
+    "titleEn": "DIGIMON BEATBREAK",
+    "titleJa": "DIGIMON BEATBREAK",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "科幻"
     ]
   },
   {
@@ -35875,6 +35875,18 @@
     ]
   },
   {
+    "id": "anilist-20777",
+    "titleZh": "中二病でも戀がしたい！戀 未放送ショートムービー",
+    "titleEn": "Love, Chunibyo & Other Delusions - Heart Throb - Specials",
+    "titleJa": "中二病でも恋がしたい！戀 未放送ショートムービー",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20777-uny0JSfH2D5C.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20777-uny0JSfH2D5C.jpg",
+    "yearSeason": "2014 春",
+    "genres": [
+      "喜劇"
+    ]
+  },
+  {
     "id": "anilist-20604",
     "titleZh": "犬神同學和貓山同學",
     "titleEn": "",
@@ -35885,18 +35897,6 @@
     "genres": [
       "喜劇",
       "日常"
-    ]
-  },
-  {
-    "id": "anilist-20777",
-    "titleZh": "中二病でも戀がしたい！戀 未放送ショートムービー",
-    "titleEn": "Love, Chunibyo & Other Delusions - Heart Throb - Specials",
-    "titleJa": "中二病でも恋がしたい！戀 未放送ショートムービー",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20777-uny0JSfH2D5C.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20777-uny0JSfH2D5C.jpg",
-    "yearSeason": "2014 春",
-    "genres": [
-      "喜劇"
     ]
   },
   {
@@ -36513,21 +36513,6 @@
     ]
   },
   {
-    "id": "anilist-20501",
-    "titleZh": "阿茹茉妮",
-    "titleEn": "",
-    "titleJa": "アルモニ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20501-wWfXc58E3mDv.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20501-wWfXc58E3mDv.jpg",
-    "yearSeason": "2014 冬",
-    "genres": [
-      "劇情",
-      "奇幻",
-      "心理",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-20478",
     "titleZh": "夏目友人帳 曾幾何時下雪之日",
     "titleEn": "Natsume's Book of Friends OVA",
@@ -36539,6 +36524,21 @@
       "劇情",
       "奇幻",
       "日常",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-20501",
+    "titleZh": "阿茹茉妮",
+    "titleEn": "",
+    "titleJa": "アルモニ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20501-wWfXc58E3mDv.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20501-wWfXc58E3mDv.jpg",
+    "yearSeason": "2014 冬",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "心理",
       "超自然"
     ]
   },
@@ -38264,8 +38264,7 @@
       "喜劇",
       "奇幻",
       "愛情",
-      "日常",
-      "異世界"
+      "日常"
     ]
   },
   {
@@ -39159,6 +39158,19 @@
     ]
   },
   {
+    "id": "anilist-15119",
+    "titleZh": "閃亂神樂",
+    "titleEn": "Senran Kagura: Ninja Flash!",
+    "titleJa": "閃乱カグラ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15119-rcnXA3JFYvU1.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15119-rcnXA3JFYvU1.jpg",
+    "yearSeason": "2013 冬",
+    "genres": [
+      "動作",
+      "福利"
+    ]
+  },
+  {
     "id": "anilist-14355",
     "titleZh": "前進吧!登山少女 S1",
     "titleEn": "Encouragement of Climb",
@@ -39170,19 +39182,6 @@
       "冒險",
       "喜劇",
       "日常"
-    ]
-  },
-  {
-    "id": "anilist-15119",
-    "titleZh": "閃亂神樂",
-    "titleEn": "Senran Kagura: Ninja Flash!",
-    "titleJa": "閃乱カグラ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15119-rcnXA3JFYvU1.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15119-rcnXA3JFYvU1.jpg",
-    "yearSeason": "2013 冬",
-    "genres": [
-      "動作",
-      "福利"
     ]
   },
   {
@@ -47481,20 +47480,6 @@
     ]
   },
   {
-    "id": "anilist-6802",
-    "titleZh": "空之音",
-    "titleEn": "Sound of the Sky",
-    "titleJa": "ソ・ラ・ノ・ヲ・ト",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
-    "yearSeason": "2010 冬",
-    "genres": [
-      "音樂",
-      "科幻",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-7148",
     "titleZh": "管家後宮學園",
     "titleEn": "Ladies Versus Butlers",
@@ -47506,6 +47491,20 @@
       "喜劇",
       "福利",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-6802",
+    "titleZh": "空之音",
+    "titleEn": "Sound of the Sky",
+    "titleJa": "ソ・ラ・ノ・ヲ・ト",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6802-MmsfM8KAgZuR.jpg",
+    "yearSeason": "2010 冬",
+    "genres": [
+      "音樂",
+      "科幻",
+      "日常"
     ]
   },
   {

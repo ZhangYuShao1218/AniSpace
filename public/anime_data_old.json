@@ -44,19 +44,6 @@
     ]
   },
   {
-    "id": "anilist-133007",
-    "titleZh": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-    "titleEn": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-    "titleJa": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133007-5gOUXDvzxy9S.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133007-5gOUXDvzxy9S.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "魔法少女",
-      "超能力"
-    ]
-  },
-  {
     "id": "anilist-185874",
     "titleZh": "BLEACH 千年血戰篇-禍進譚-",
     "titleEn": "BLEACH: Thousand-Year Blood War - The Calamity",
@@ -68,6 +55,19 @@
       "動作",
       "冒險",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-133007",
+    "titleZh": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+    "titleEn": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+    "titleJa": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133007-5gOUXDvzxy9S.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133007-5gOUXDvzxy9S.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "魔法少女",
+      "超能力"
     ]
   },
   {
@@ -158,20 +158,6 @@
     ]
   },
   {
-    "id": "anilist-198946",
-    "titleZh": "Clevatess II -魔獸之王與虛假的勇者傳承-",
-    "titleEn": "Clevatess Season 2",
-    "titleJa": "クレバテスⅡ-魔獣の王と偽りの勇者伝承-",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "劇情",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-177699",
     "titleZh": "攻殼機動隊THE GHOST IN THE SHELL",
     "titleEn": "THE GHOST IN THE SHELL",
@@ -183,6 +169,20 @@
       "動作",
       "心理",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-198946",
+    "titleZh": "Clevatess II -魔獸之王與虛假的勇者傳承-",
+    "titleEn": "Clevatess Season 2",
+    "titleJa": "クレバテスⅡ-魔獣の王と偽りの勇者伝承-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "奇幻"
     ]
   },
   {
@@ -552,6 +552,19 @@
     ]
   },
   {
+    "id": "anilist-199408",
+    "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
+    "titleEn": "",
+    "titleJa": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-185692",
     "titleZh": "魔法光源股份有限公司 第2季",
     "titleEn": "",
@@ -564,19 +577,6 @@
       "喜劇",
       "奇幻",
       "魔法少女"
-    ]
-  },
-  {
-    "id": "anilist-199408",
-    "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
-    "titleEn": "",
-    "titleJa": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情",
-      "奇幻"
     ]
   },
   {
@@ -1101,20 +1101,6 @@
     ]
   },
   {
-    "id": "anilist-189987",
-    "titleZh": "木頭風紀委員和迷你裙 JK 的故事",
-    "titleEn": "The Klutzy Class Monitor and the Girl with the Short Skirt",
-    "titleJa": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/84/0000144684.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189987-CkTDPfD7vu2Y.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-179950",
     "titleZh": "輪迴的花瓣",
     "titleEn": "Petals of Reincarnation",
@@ -1126,6 +1112,20 @@
       "動作",
       "超自然",
       "超能力"
+    ]
+  },
+  {
+    "id": "anilist-189987",
+    "titleZh": "木頭風紀委員和迷你裙 JK 的故事",
+    "titleEn": "The Klutzy Class Monitor and the Girl with the Short Skirt",
+    "titleJa": "ポンコツ風紀委員とスカート丈が不適切なJKの話",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/84/0000144684.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189987-CkTDPfD7vu2Y.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
     ]
   },
   {
@@ -2796,6 +2796,21 @@
     ]
   },
   {
+    "id": "anilist-188388",
+    "titleZh": "數碼暴龍 BEATBREAK",
+    "titleEn": "DIGIMON BEATBREAK",
+    "titleJa": "DIGIMON BEATBREAK",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "科幻"
+    ]
+  },
+  {
     "id": "anilist-173523",
     "titleZh": "這裡是充滿笑容的職場。",
     "titleEn": "A Mangaka's Weirdly Wonderful Workplace",
@@ -2821,21 +2836,6 @@
       "愛情",
       "科幻",
       "日常"
-    ]
-  },
-  {
-    "id": "anilist-188388",
-    "titleZh": "數碼暴龍 BEATBREAK",
-    "titleEn": "DIGIMON BEATBREAK",
-    "titleJa": "DIGIMON BEATBREAK",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188388-aXx9fsnvezBf.jpg",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻",
-      "科幻"
     ]
   },
   {
@@ -4108,20 +4108,6 @@
     ]
   },
   {
-    "id": "anilist-181182",
-    "titleZh": "小市民系列 第二季",
-    "titleEn": "SHOSHIMIN: How to become Ordinary Season 2",
-    "titleJa": "小市民シリーズ 第2期",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/30/0000144130.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181182-lnlfAByYD7X6.png",
-    "yearSeason": "2025 春",
-    "genres": [
-      "懸疑",
-      "心理",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-192809",
     "titleZh": "咒術回戰 懷玉·玉折 總集篇",
     "titleEn": "JUJUTSU KAISEN: Hidden Inventory / Premature Death – The Movie",
@@ -4133,6 +4119,20 @@
       "動作",
       "劇情",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-181182",
+    "titleZh": "小市民系列 第二季",
+    "titleEn": "SHOSHIMIN: How to become Ordinary Season 2",
+    "titleJa": "小市民シリーズ 第2期",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/30/0000144130.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181182-lnlfAByYD7X6.png",
+    "yearSeason": "2025 春",
+    "genres": [
+      "懸疑",
+      "心理",
+      "日常"
     ]
   },
   {

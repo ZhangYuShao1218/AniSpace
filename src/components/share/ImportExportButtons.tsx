@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Capacitor } from '@capacitor/core';
-import './ImportExportButtons.css';
-import SettingsDropdown from './SettingsDropdown';
+import '@/components/share/ImportExportButtons.css';
+import SettingsDropdown from '@/components/SettingsDropdown';
 
 const ImportExportButtons: React.FC = () => {
   const [isNative] = useState(() => Capacitor.isNativePlatform());

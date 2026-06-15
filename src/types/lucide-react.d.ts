@@ -53,4 +53,5 @@ declare module 'lucide-react' {
   export const Film: Icon;
   export const Clock: Icon;
   export const History: Icon;
+  export const ShoppingBag: Icon;
 }

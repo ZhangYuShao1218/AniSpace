@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Capacitor } from '@capacitor/core';
-import './AdBanner.css';
+import '@/components/layout/AdBanner.css';
 
 interface AdBannerProps {
   adSlot?: string;

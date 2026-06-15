@@ -1,8 +1,8 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { Info } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
-import './AlertModal.css';
+import { useLanguage } from '@/contexts/LanguageContext';
+import '@/components/modals/AlertModal.css';
 
 interface AlertModalProps {
   isOpen: boolean;

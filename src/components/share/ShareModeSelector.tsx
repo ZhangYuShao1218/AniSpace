@@ -21,8 +21,8 @@ const Grid3X3Icon = ({ size = 24, className = '' }: { size?: number | string, cl
     <path d="M15 3v18" />
   </svg>
 );
-import type { ExportMode } from './ShareModal';
-import { useLanguage } from '../contexts/LanguageContext';
+import type { ExportMode } from '@/components/modals/ShareModal';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ShareModeSelectorProps {
   mode: ExportMode;

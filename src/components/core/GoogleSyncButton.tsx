@@ -1,8 +1,8 @@
 import React from 'react';
-import './GoogleSyncButton.css';
+import '@/components/core/GoogleSyncButton.css';
 import { CloudUpload, Loader2, LogOut } from 'lucide-react';
-import { useGoogleSync } from '../contexts/GoogleSyncContext';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useGoogleSync } from '@/contexts/GoogleSyncContext';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const GoogleIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

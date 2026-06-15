@@ -1,5 +1,5 @@
 import Papa from 'papaparse';
-import type { Anime, WatchedAnime } from '../types';
+import type { Anime, WatchedAnime } from '@/types';
 
 export const exportToGoogleSheet = async (
   accessToken: string,

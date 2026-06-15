@@ -1,7 +1,7 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 import { Info } from 'lucide-react';
-import './ConfirmModal.css'; // Reuse styles from ConfirmModal
+import '@/components/modals/ConfirmModal.css'; // Reuse styles from ConfirmModal
 
 interface NoticeModalProps {
   isOpen: boolean;

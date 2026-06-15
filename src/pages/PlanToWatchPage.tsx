@@ -1,11 +1,11 @@
 import { useMemo } from 'react';
-import type { SortOption } from '../types';
-import AnimeListLayout from '../components/AnimeListLayout';
-import { useAnime } from '../contexts/AnimeContext';
-import SearchBar from '../components/SearchBar';
-import { useUrlParams } from '../hooks/useUrlParams';
-import { useLanguage } from '../contexts/LanguageContext';
-import { parseSeason } from '../utils/season';
+import type { SortOption } from '@/types';
+import AnimeListLayout from '@/components/core/AnimeListLayout';
+import { useAnime } from '@/contexts/AnimeContext';
+import SearchBar from '@/components/layout/SearchBar';
+import { useUrlParams } from '@/hooks/useUrlParams';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { parseSeason } from '@/utils/season';
 
 const PlanToWatchPage = () => {
   const { planToWatchList } = useAnime();

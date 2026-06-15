@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { AlertTriangle } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
-import './ConfirmModal.css';
+import { useLanguage } from '@/contexts/LanguageContext';
+import '@/components/modals/ConfirmModal.css';
 
 interface ConfirmModalProps {
   isOpen: boolean;

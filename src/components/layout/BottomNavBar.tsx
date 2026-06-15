@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Film, Clock, CheckCircle2 } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useScrollDirection } from '../hooks/useScrollDirection';
-import { useAdMob } from '../contexts/AdMobContext';
-import SettingsDropdown from './SettingsDropdown';
-import './BottomNavBar.css';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollDirection } from '@/hooks/useScrollDirection';
+import { useAdMob } from '@/contexts/AdMobContext';
+import SettingsDropdown from '@/components/SettingsDropdown';
+import '@/components/layout/BottomNavBar.css';
 
 const BottomNavBar: React.FC = () => {
   const location = useLocation();

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './FilterBar.css';
+import '@/components/layout/FilterBar.css';
 import { Search, SlidersHorizontal, ArrowDownAZ, Plus } from 'lucide-react';
-import { getRelativeSeasonString } from '../utils/season';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useAdMob } from '../contexts/AdMobContext';
-import AddAnimeModal from './AddAnimeModal';
+import { getRelativeSeasonString } from '@/utils/season';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useAdMob } from '@/contexts/AdMobContext';
+import AddAnimeModal from '@/components/modals/AddAnimeModal';
 
 
 interface FilterBarProps {

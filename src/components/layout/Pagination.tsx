@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pagination.css';
+import '@/components/layout/Pagination.css';
 import { ChevronFirst, ChevronLeft, ChevronRight, ChevronLast } from 'lucide-react';
 
 interface PaginationProps {

@@ -1,16 +1,16 @@
 import React, { useMemo, useEffect, useCallback } from 'react';
-import type { Anime, WatchedAnime } from '../types';
-import AnimeCard from './AnimeCard';
-import AdBanner from './AdBanner';
-import AffiliateCard from './AffiliateCard';
-import Pagination from './Pagination';
-import ReviewModal from './ReviewModal';
-import { ShareModal } from './ShareModal';
-import { useAnime } from '../contexts/AnimeContext';
-import { ITEMS_PER_PAGE } from '../utils/constants';
+import type { Anime, WatchedAnime } from '@/types';
+import AnimeCard from '@/components/core/AnimeCard';
+import AdBanner from '@/components/layout/AdBanner';
+import AffiliateCard from '@/components/core/AffiliateCard';
+import Pagination from '@/components/layout/Pagination';
+import ReviewModal from '@/components/modals/ReviewModal';
+import { ShareModal } from '@/components/modals/ShareModal';
+import { useAnime } from '@/contexts/AnimeContext';
+import { ITEMS_PER_PAGE } from '@/utils/constants';
 import { ThumbsUp, Loader2 } from 'lucide-react';
-import { useUrlParams } from '../hooks/useUrlParams';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useUrlParams } from '@/hooks/useUrlParams';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface AnimeListLayoutProps {
   title: string;

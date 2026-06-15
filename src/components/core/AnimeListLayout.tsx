@@ -31,6 +31,7 @@ interface AnimeListLayoutProps {
   isWatchedContext?: boolean; 
   shareData: (Anime | WatchedAnime)[];
   isWatchedShare: boolean;
+  hideAffiliate?: boolean;
 }
 
 const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
@@ -43,7 +44,8 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   emptyStateMessage,
   isWatchedContext = false,
   shareData,
-  isWatchedShare
+  isWatchedShare,
+  hideAffiliate = false
 }) => {
   const { 
     watchedList, 
@@ -173,7 +175,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
             {paginatedData.map((anime, index) => (
               <React.Fragment key={anime.id}>
                 {/* 插入聯盟行銷原生廣告卡片 (第 11 格) */}
-                {index === 10 && <AffiliateCard />}
+                {!hideAffiliate && index === 10 && <AffiliateCard />}
                 
                 <AnimeCard
                   anime={isWatchedContext ? anime : (watchedList.find(w => w.id === anime.id) || anime)}

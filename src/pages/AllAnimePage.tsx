@@ -45,8 +45,8 @@ const AllAnimePage = () => {
     const nextSeason = getRelativeSeasonString(1);
 
     let result = allAnime.filter(anime => {
-      // Hide next season anime by default UNLESS explicitly selected
-      if (selectedYear !== nextSeason && anime.yearSeason === nextSeason) {
+      // Hide next season anime by default UNLESS explicitly selected or searching
+      if (selectedYear !== nextSeason && !searchQuery && anime.yearSeason === nextSeason) {
         return false;
       }
 

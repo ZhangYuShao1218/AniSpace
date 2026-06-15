@@ -55,6 +55,7 @@ const PlanToWatchPage = () => {
       emptyStateMessage={searchQuery ? t('emptySearchMsg') : t('emptyPlanMsg')}
       shareData={planToWatchList}
       isWatchedShare={false}
+      hideAffiliate={true}
     />
   );
 };

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "muse",
+    "title": "MUSE 木棉花官方旗艦店",
+    "description": "支持正版！各式熱門當季動畫周邊、服飾、福袋都在這。",
+    "affiliateUrl": "https://s.shopee.tw/1BJuh4hhQC",
+    "imageUrl": "https://img.91app.com/webapi/imagesV3/Cropped/SalePage/11880064/0/639167649720470000?v=1"
+  },
+  {
+    "id": "mandy",
+    "title": "曼迪傳播動漫館",
+    "description": "名偵探柯南、孤獨搖滾等經典與熱門強檔動畫官方周邊。",
+    "affiliateUrl": "https://s.shopee.tw/110UUliKlB",
+    "imageUrl": "https://s2.eslite.com/unsafe/fit-in/x375/s.eslite.com/b2b/vendor/vendor177675606982320260421152029/mainCoverImage1_1635001.jpg"
+  },
+  {
+    "id": "eslite",
+    "title": "eslite 誠品",
+    "description": "質感選物與書籍！探索最新的漫畫、輕小說與文創商品。",
+    "affiliateUrl": "https://s.shopee.tw/qh4ISiy6A",
+    "imageUrl": "https://img.91app.com/webapi/imagesV3/Cropped/SalePage/11864603/0/639167649720470000?v=1"
+  },
+  {
+    "id": "toysrus",
+    "title": "玩具反斗城 Toysrus",
+    "description": "各式經典玩具、模型與桌遊，滿足各個年齡層的玩心。",
+    "affiliateUrl": "https://s.shopee.tw/gNe69jbR9",
+    "imageUrl": "https://www.eslite.com/assets/product-restricted-CSKxoVyy.png"
+  },
+  {
+    "id": "toyego",
+    "title": "TOYeGO 玩具e哥",
+    "description": "精選各式熱門模型、盲盒與動漫周邊，豐富你的收藏。",
+    "affiliateUrl": "https://s.shopee.tw/4VaMfCV0eu",
+    "imageUrl": "https://s2.eslite.com/unsafe/s.eslite.com/b2b/vendor/mod_vendor177676322133520260421172009/mainCoverImage1_2683130152009.jpg"
+  }
+]

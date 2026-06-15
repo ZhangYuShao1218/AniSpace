@@ -1,8 +1,8 @@
 import React from 'react';
 import { Check, ImageIcon } from 'lucide-react';
-import type { Anime, WatchedAnime } from '../types';
-import type { ExportMode } from './ShareModal';
-import { useLanguage } from '../contexts/LanguageContext';
+import type { Anime, WatchedAnime } from '@/types';
+import type { ExportMode } from '@/components/modals/ShareModal';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ShareListProps {
   filteredAnimes: (Anime | WatchedAnime)[];

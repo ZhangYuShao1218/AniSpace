@@ -3,9 +3,9 @@ import type { ReactNode } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { Share } from '@capacitor/share';
 import { Filesystem, Directory } from '@capacitor/filesystem';
-import type { Anime, WatchedAnime } from '../types';
-import { ShareImageGenerator } from '../components/ShareImageGenerator';
-import type { ShareImageGeneratorRef } from '../components/ShareImageGenerator';
+import type { Anime, WatchedAnime } from '@/types';
+import { ShareImageGenerator } from '@/components/share/ShareImageGenerator';
+import type { ShareImageGeneratorRef } from '@/components/share/ShareImageGenerator';
 
 export interface ShareTaskData {
   animes: (Anime | WatchedAnime)[];

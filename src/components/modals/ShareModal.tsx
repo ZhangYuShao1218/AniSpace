@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
-import { useShareTask } from '../contexts/ShareTaskContext';
+import { useShareTask } from '@/contexts/ShareTaskContext';
 
 const ShuffleIcon = ({ size = 24, className = '' }: { size?: number | string, className?: string }) => (
   <svg 
@@ -24,13 +24,13 @@ const ShuffleIcon = ({ size = 24, className = '' }: { size?: number | string, cl
     <path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45" />
   </svg>
 );
-import type { Anime, WatchedAnime } from '../types';
-import { exportToGoogleSheet } from '../utils/googleSheets';
-import { useGoogleSync } from '../contexts/GoogleSyncContext';
-import { useLanguage } from '../contexts/LanguageContext';
-import { ShareModeSelector } from './ShareModeSelector';
-import { ShareList } from './ShareList';
-import './ShareModal.css';
+import type { Anime, WatchedAnime } from '@/types';
+import { exportToGoogleSheet } from '@/utils/googleSheets';
+import { useGoogleSync } from '@/contexts/GoogleSyncContext';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { ShareModeSelector } from '@/components/share/ShareModeSelector';
+import { ShareList } from '@/components/share/ShareList';
+import '@/components/modals/ShareModal.css';
 
 export type ExportMode = 'SHEET' | 'GRID_4' | 'GRID_9' | 'GRID_16' | 'GRID_25';
 

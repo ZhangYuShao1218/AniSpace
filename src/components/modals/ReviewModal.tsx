@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './ReviewModal.css';
-import type { Anime, WatchedAnime } from '../types';
+import '@/components/modals/ReviewModal.css';
+import type { Anime, WatchedAnime } from '@/types';
 import { X, Star } from 'lucide-react';
 
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ReviewModalProps {
   isOpen: boolean;

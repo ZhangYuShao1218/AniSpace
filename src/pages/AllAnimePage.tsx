@@ -1,11 +1,11 @@
 import { useMemo } from 'react';
-import type { SortOption } from '../types';
-import FilterBar from '../components/FilterBar';
-import AnimeListLayout from '../components/AnimeListLayout';
-import { useAnime } from '../contexts/AnimeContext';
-import { NSFW_GENRES } from '../utils/constants';
-import { parseSeason, getRelativeSeasonString } from '../utils/season';
-import { useUrlParams } from '../hooks/useUrlParams';
+import type { SortOption } from '@/types';
+import FilterBar from '@/components/layout/FilterBar';
+import AnimeListLayout from '@/components/core/AnimeListLayout';
+import { useAnime } from '@/contexts/AnimeContext';
+import { NSFW_GENRES } from '@/utils/constants';
+import { parseSeason, getRelativeSeasonString } from '@/utils/season';
+import { useUrlParams } from '@/hooks/useUrlParams';
 
 const AllAnimePage = () => {
   const { allAnime } = useAnime();

@@ -1,11 +1,11 @@
 import React, { forwardRef, useState, useEffect, useImperativeHandle, useRef } from 'react';
 import { Capacitor, CapacitorHttp } from '@capacitor/core';
 import { toPng } from 'html-to-image';
-import type { Anime, WatchedAnime } from '../types';
+import type { Anime, WatchedAnime } from '@/types';
 import { Star } from 'lucide-react';
-import './ShareImageGenerator.css';
+import '@/components/share/ShareImageGenerator.css';
 
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export interface ShareImageGeneratorProps {
   animes: (Anime | WatchedAnime)[];

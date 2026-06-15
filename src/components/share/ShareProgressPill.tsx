@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Loader2 } from 'lucide-react';
-import { useShareTask } from '../contexts/ShareTaskContext';
-import NoticeModal from './NoticeModal';
-import './ShareProgressPill.css';
+import { useShareTask } from '@/contexts/ShareTaskContext';
+import NoticeModal from '@/components/modals/NoticeModal';
+import '@/components/share/ShareProgressPill.css';
 import { Capacitor } from '@capacitor/core';
 
 export const ShareProgressPill: React.FC = () => {

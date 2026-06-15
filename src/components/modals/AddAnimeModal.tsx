@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Plus, X, Image as ImageIcon, Minus } from 'lucide-react';
-import { useAnime } from '../contexts/AnimeContext';
-import { useLanguage } from '../contexts/LanguageContext';
-import './AddAnimeModal.css';
+import { useAnime } from '@/contexts/AnimeContext';
+import { useLanguage } from '@/contexts/LanguageContext';
+import '@/components/modals/AddAnimeModal.css';
 
 interface AddAnimeModalProps {
   isOpen: boolean;

@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
-import type { Anime, WatchedAnime } from '../types';
-import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY } from '../utils/constants';
+import type { Anime, WatchedAnime } from '@/types';
+import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY } from '@/utils/constants';
 
-import { useTitleCorrections } from '../hooks/useTitleCorrections';
+import { useTitleCorrections } from '@/hooks/useTitleCorrections';
 
 const getDbUrl = () => {
   const source = import.meta.env.VITE_DATA_SOURCE;

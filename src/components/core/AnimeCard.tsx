@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import './AnimeCard.css';
-import type { Anime, WatchedAnime } from '../types';
+import '@/components/core/AnimeCard.css';
+import type { Anime, WatchedAnime } from '@/types';
 import { Star, Heart, Edit2, Check, X, Trash2 } from 'lucide-react';
-import { useAnime } from '../contexts/AnimeContext';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useAdMob } from '../contexts/AdMobContext';
+import { useAnime } from '@/contexts/AnimeContext';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useAdMob } from '@/contexts/AdMobContext';
 
 interface AnimeCardProps {
   anime: Anime | WatchedAnime;

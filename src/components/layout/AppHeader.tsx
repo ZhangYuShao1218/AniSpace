@@ -2,11 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
 import { Layers, DownloadCloud, Loader2, Menu } from 'lucide-react';
-import { useAnime } from '../contexts/AnimeContext';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useAdMob } from '../contexts/AdMobContext';
-import GoogleSyncButton from './GoogleSyncButton';
-import ImportExportButtons from './ImportExportButtons';
+import { useAnime } from '@/contexts/AnimeContext';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useAdMob } from '@/contexts/AdMobContext';
+import GoogleSyncButton from '@/components/core/GoogleSyncButton';
+import ImportExportButtons from '@/components/share/ImportExportButtons';
 
 const AppHeader: React.FC = () => {
   const isNative = Capacitor.isNativePlatform();

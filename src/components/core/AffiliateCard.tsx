@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, ShoppingBag } from 'lucide-react';
-import './AffiliateCard.css';
+import '@/components/core/AffiliateCard.css';
 
 interface AffiliateStore {
   id?: string;
@@ -27,6 +27,12 @@ interface AffiliateCardProps {
   affiliateUrl?: string;
 }
 
+interface ProductImage {
+  url: string;
+  productName: string;
+  category?: string;
+}
+
 const AffiliateCard: React.FC<AffiliateCardProps> = ({
   title,
   description,
@@ -34,31 +40,37 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
   affiliateUrl
 }) => {
   const [store, setStore] = useState<AffiliateStore | null>(null);
+  const [product, setProduct] = useState<ProductImage | null>(null);
 
   useEffect(() => {
     // 只有在沒有強制傳入 props 的情況下才隨機抽卡
     if (!title || !affiliateUrl) {
-      fetch('/affiliates.json')
-        .then(res => {
-          if (!res.ok) throw new Error('Failed to fetch affiliates.json');
-          return res.json();
-        })
-        .then((data: AffiliateStore[]) => {
-          const storesToUse = data.length > 0 ? data : FALLBACK_STORES;
-          const randomIndex = Math.floor(Math.random() * storesToUse.length);
-          setStore(storesToUse[randomIndex]);
-        })
-        .catch(err => {
-          console.error("無法載入最新的分潤名單，使用備用選項:", err);
-          setStore(FALLBACK_STORES[0]);
-        });
+      // 抓取商店與圖片
+      Promise.all([
+        fetch('/affiliates.json').then(res => res.json()),
+        fetch('/product_images.json').then(res => res.json()).catch(() => [])
+      ])
+      .then(([stores, products]) => {
+        const storesToUse = stores.length > 0 ? stores : FALLBACK_STORES;
+        const randomStore = storesToUse[Math.floor(Math.random() * storesToUse.length)];
+        setStore(randomStore);
+
+        if (products && products.length > 0) {
+          const randomProduct = products[Math.floor(Math.random() * products.length)];
+          setProduct(randomProduct);
+        }
+      })
+      .catch(err => {
+        console.error("無法載入最新的分潤名單，使用備用選項:", err);
+        setStore(FALLBACK_STORES[0]);
+      });
     }
   }, [title, affiliateUrl]);
 
   const displayTitle = title || store?.title || "推薦動漫周邊";
-  const displayDesc = description || store?.description || "點擊前往查看最新優惠！";
+  const displayDesc = product?.productName || description || store?.description || "點擊前往查看最新優惠！";
   const displayUrl = affiliateUrl || store?.affiliateUrl || "#";
-  const displayImage = imageUrl || store?.imageUrl;
+  const displayImage = imageUrl || product?.url || store?.imageUrl;
 
   return (
     <a 
@@ -68,11 +80,15 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
       className="affiliate-card anime-card" 
     >
       <div className="affiliate-image-container anime-image-container">
+        {/* Dynamic Sponsor Badge */}
+        <span className="ad-label" style={{ position: 'absolute', top: 8, left: 8, background: 'rgba(16, 185, 129, 0.9)', color: 'white', fontWeight: 600, padding: '4px 8px', borderRadius: '4px', zIndex: 10, fontSize: '0.75rem', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
+          {displayTitle}
+        </span>
+        
         {displayImage ? (
           <img src={displayImage} alt={displayTitle} className="anime-image" loading="lazy" />
         ) : (
           <div className="affiliate-placeholder-image" style={{ background: 'linear-gradient(135deg, var(--bg-card-hover), var(--bg-card))', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-            <span className="ad-label">Sponsored</span>
             <ShoppingBag size={48} style={{ color: 'var(--accent-color)', marginBottom: '12px', opacity: 0.8 }} />
             <div className="placeholder-content">
               <span style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-primary)' }}>蝦皮購物 x 動漫特賣</span>
@@ -87,9 +103,20 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="anime-info" style={{ padding: '12px' }}>
-        <h3 className="anime-title" style={{ color: 'var(--accent-color)', fontSize: '1rem' }}>{displayTitle}</h3>
-        <p className="affiliate-desc">{displayDesc}</p>
+      <div className="anime-info" style={{ padding: '12px 16px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+        <h3 className="anime-title" style={{ color: 'var(--text-primary)', fontSize: '0.95rem', lineHeight: '1.4', marginBottom: '8px' }}>
+          {displayDesc}
+        </h3>
+        {store?.description && (
+          <p className="affiliate-desc" style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '12px', lineHeight: '1.5' }}>
+            {store.description}
+          </p>
+        )}
+        <div style={{ marginTop: 'auto', paddingTop: '4px' }}>
+          <p className="affiliate-desc" style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '0.9rem', margin: 0 }}>
+            馬上前往選購 →
+          </p>
+        </div>
       </div>
     </a>
   );

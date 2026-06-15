@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 import Papa from 'papaparse';
 import { Capacitor } from '@capacitor/core';
-import { useAnime } from '../contexts/AnimeContext';
-import type { Anime, WatchedAnime } from '../types';
+import { useAnime } from '@/contexts/AnimeContext';
+import type { Anime, WatchedAnime } from '@/types';
 
 export function useDataManagement() {
   const fileInputRef = useRef<HTMLInputElement>(null);

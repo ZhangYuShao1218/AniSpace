@@ -13,7 +13,23 @@
 
 .affiliate-image-container {
   position: relative;
-  background: linear-gradient(135deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 100%);
+  background: #1f2937; /* Match AnimeCard.css dark mode background */
+  width: 100%;
+  aspect-ratio: 2 / 2.85; /* Match AnimeCard ratio */
+  overflow: hidden;
+}
+
+[data-theme="light"] .affiliate-image-container {
+  background: #ffffff;
+}
+
+.affiliate-image-container img.anime-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 8px; /* Give it a little breathing room from the container edges */
+  box-sizing: border-box;
 }
 
 .affiliate-placeholder-image {

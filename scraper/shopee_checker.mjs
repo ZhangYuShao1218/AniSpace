@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import fs from 'fs/promises';
 import path from 'path';
 import nodemailer from 'nodemailer';
@@ -10,19 +11,19 @@ const __dirname = path.dirname(__filename);
 const PUBLIC_DIR = path.resolve(__dirname, '../public');
 
 const DEFAULT_STORES = [
-  { id: 'muse', title: "MUSE 木棉花官方旗艦店", description: "支持正版！各式熱門當季動畫周邊、服飾、福袋都在這。", affiliateUrl: "https://s.shopee.tw/1BJuh4hhQC", imageUrl: "/affiliates/fallback_muse.jpg" },
-  { id: 'mandy', title: "曼迪傳播動漫館", description: "名偵探柯南、孤獨搖滾等經典與熱門強檔動畫官方周邊。", affiliateUrl: "https://s.shopee.tw/110UUliKlB", imageUrl: "/affiliates/fallback_mandy.jpg" },
-  { id: 'eslite', title: "eslite 誠品", description: "質感選物與書籍！探索最新的漫畫、輕小說與文創商品。", affiliateUrl: "https://s.shopee.tw/qh4ISiy6A", imageUrl: "/affiliates/fallback_eslite.jpg" },
-  { id: 'toysrus', title: "玩具反斗城 Toysrus", description: "各式經典玩具、模型與桌遊，滿足各個年齡層的玩心。", affiliateUrl: "https://s.shopee.tw/gNe69jbR9", imageUrl: "/affiliates/fallback_toysrus.jpg" },
-  { id: 'toyego', title: "TOYeGO 玩具e哥", description: "精選各式熱門模型、盲盒與動漫周邊，豐富你的收藏。", affiliateUrl: "https://s.shopee.tw/4VaMfCV0eu", imageUrl: "/affiliates/fallback_toyego.jpg" }
+  { id: 'muse', title: "MUSE 木棉花官方旗艦店", description: "支持正版！各式熱門當季動畫周邊、服飾、福袋都在這。", affiliateUrl: "https://s.shopee.tw/1BJuh4hhQC" },
+  { id: 'mandy', title: "曼迪傳播動漫館", description: "名偵探柯南、孤獨搖滾等經典與熱門強檔動畫官方周邊。", affiliateUrl: "https://s.shopee.tw/110UUliKlB" },
+  { id: 'eslite', title: "eslite 誠品", description: "質感選物與書籍！探索最新的漫畫、輕小說與文創商品。", affiliateUrl: "https://s.shopee.tw/qh4ISiy6A" },
+  { id: 'toysrus', title: "玩具反斗城 Toysrus", description: "各式經典玩具、模型與桌遊，滿足各個年齡層的玩心。", affiliateUrl: "https://s.shopee.tw/gNe69jbR9" },
+  { id: 'toyego', title: "TOYeGO 玩具e哥", description: "精選各式熱門模型、盲盒與動漫周邊，豐富你的收藏。", affiliateUrl: "https://s.shopee.tw/4VaMfCV0eu" }
 ];
 
 const extractImagesFn = () => {
   return Array.from(document.querySelectorAll('img'))
     .filter(img => {
-      // 基本硬體過濾：排除極端長寬比與過小的圖片
+      // 基本硬體過濾：排除橫向寬圖與過小的圖片
       if (img.naturalWidth === 0 || img.naturalHeight === 0) return false;
-      if (img.naturalWidth > img.naturalHeight * 1.5) return false;
+      if (img.naturalWidth > img.naturalHeight) return false; // 嚴格排除寬版橫向圖
       if (img.naturalWidth < 150 || img.naturalHeight < 150) return false;
       return true;
     })
@@ -87,7 +88,7 @@ async function scrapeImages(browser) {
 async function filterImagesWithAI(rawImages) {
   if (!process.env.GEMINI_API_KEY) {
     console.log("未檢測到 GEMINI_API_KEY，將退回傳統過濾模式。");
-    return rawImages.map(img => img.url);
+    return rawImages.map(img => ({ url: img.url, productName: img.alt || "推薦動漫周邊", category: "Other" }));
   }
 
   console.log(`準備將 ${rawImages.length} 筆原始資料交由 Gemini AI 進行分析與篩選...`);
@@ -113,10 +114,10 @@ async function filterImagesWithAI(rawImages) {
 
     const aiResults = JSON.parse(rawText.trim());
     console.log(`✅ Gemini AI 分析完成！保留了 ${aiResults.length} 項高價值商品。`);
-    return aiResults.map(item => item.url);
+    return aiResults;
   } catch (error) {
     console.error("Gemini AI 過濾失敗，將退回傳統過濾模式:", error.message);
-    return rawImages.map(img => img.url);
+    return rawImages.map(img => ({ url: img.url, productName: img.alt || "推薦動漫周邊", category: "Other" }));
   }
 }
 
@@ -158,7 +159,7 @@ async function run() {
     const rawData = await scrapeImages(browser);
     await browser.close();
     
-    // 呼叫 Gemini 過濾
+    // 呼叫 Gemini 過濾，會回傳 {url, productName, category} 陣列
     imagePool = await filterImagesWithAI(rawData);
   } catch (err) {
     console.error("爬蟲執行失敗:", err.message);
@@ -171,7 +172,6 @@ async function run() {
 
   for (let i = 0; i < DEFAULT_STORES.length; i++) {
     const store = DEFAULT_STORES[i];
-    if (imagePool.length > 0) store.imageUrl = imagePool.pop();
     
     const isAlive = await checkUrl(store.affiliateUrl);
     if (isAlive) {
@@ -184,9 +184,15 @@ async function run() {
     await new Promise(r => setTimeout(r, 1000));
   }
 
-  const outputPath = path.join(PUBLIC_DIR, 'affiliates.json');
-  await fs.writeFile(outputPath, JSON.stringify(activeStores, null, 2), 'utf-8');
-  console.log(`\n✅ 檢查與更新完成！已寫入 ${outputPath}`);
+  // 1. 輸出店鋪連結資料庫
+  const outputStoresPath = path.join(PUBLIC_DIR, 'affiliates.json');
+  await fs.writeFile(outputStoresPath, JSON.stringify(activeStores, null, 2), 'utf-8');
+  
+  // 2. 輸出 AI 精選商品圖庫
+  const outputImagesPath = path.join(PUBLIC_DIR, 'product_images.json');
+  await fs.writeFile(outputImagesPath, JSON.stringify(imagePool, null, 2), 'utf-8');
+
+  console.log(`\n✅ 檢查與更新完成！已寫入 ${outputStoresPath} 與 ${outputImagesPath}`);
 
   if (failedStores.length > 0) await sendAlertEmail(failedStores);
 }

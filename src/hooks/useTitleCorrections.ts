@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { TITLE_CORRECTIONS_KEY } from '../utils/constants';
+import { TITLE_CORRECTIONS_KEY } from '@/utils/constants';
 
 export type TitleCorrections = Record<string, string>;
 

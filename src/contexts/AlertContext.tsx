@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import type { ReactNode } from 'react';
-import { AlertModal } from '../components/AlertModal';
+import { AlertModal } from '@/components/modals/AlertModal';
 
 interface AlertContextType {
   showAlert: (message: string, title?: string) => void;

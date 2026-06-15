@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
 /* Removed unused Capacitor import */
 import { Menu, Settings, Trash2, AlertTriangle, Check, Upload, Download } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
-import ConfirmModal from './ConfirmModal';
-import { useGoogleSync } from '../contexts/GoogleSyncContext';
-import { useAdMob } from '../contexts/AdMobContext';
-import { useAnime } from '../contexts/AnimeContext';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useDataManagement } from '../hooks/useDataManagement';
+import ThemeToggle from '@/components/core/ThemeToggle';
+import ConfirmModal from '@/components/modals/ConfirmModal';
+import { useGoogleSync } from '@/contexts/GoogleSyncContext';
+import { useAdMob } from '@/contexts/AdMobContext';
+import { useAnime } from '@/contexts/AnimeContext';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useDataManagement } from '@/hooks/useDataManagement';
 
 interface SettingsDropdownProps {
   useSettingsIcon?: boolean;

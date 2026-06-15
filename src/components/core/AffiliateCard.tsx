@@ -103,9 +103,20 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="anime-info" style={{ padding: '12px' }}>
-        <h3 className="anime-title" style={{ color: 'var(--text-primary)', fontSize: '1rem', lineHeight: '1.4' }}>{displayDesc}</h3>
-        <p className="affiliate-desc" style={{ color: 'var(--accent-color)', marginTop: '4px', fontWeight: 500 }}>馬上前往選購 →</p>
+      <div className="anime-info" style={{ padding: '12px 16px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+        <h3 className="anime-title" style={{ color: 'var(--text-primary)', fontSize: '0.95rem', lineHeight: '1.4', marginBottom: '8px' }}>
+          {displayDesc}
+        </h3>
+        {store?.description && (
+          <p className="affiliate-desc" style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '12px', lineHeight: '1.5' }}>
+            {store.description}
+          </p>
+        )}
+        <div style={{ marginTop: 'auto', paddingTop: '4px' }}>
+          <p className="affiliate-desc" style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '0.9rem', margin: 0 }}>
+            馬上前往選購 →
+          </p>
+        </div>
       </div>
     </a>
   );

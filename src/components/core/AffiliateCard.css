@@ -13,10 +13,14 @@
 
 .affiliate-image-container {
   position: relative;
-  background: #ffffff;
+  background: #1f2937; /* Match AnimeCard.css dark mode background */
   width: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 2 / 2.85; /* Match AnimeCard ratio */
   overflow: hidden;
+}
+
+[data-theme="light"] .affiliate-image-container {
+  background: #ffffff;
 }
 
 .affiliate-image-container img.anime-image {

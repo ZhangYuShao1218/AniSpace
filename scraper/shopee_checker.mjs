@@ -94,7 +94,7 @@ async function filterImagesWithAI(rawImages) {
   console.log(`準備將 ${rawImages.length} 筆原始資料交由 Gemini AI 進行分析與篩選...`);
   try {
     const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-    const promptText = await fs.readFile(path.join(__dirname, 'ai_prompt.md'), 'utf-8');
+    const promptText = await fs.readFile(path.join(__dirname, 'ai_affiliate_productimage.md'), 'utf-8');
     
     // 將資料轉為精簡 JSON 提供給 AI 避免 Token 爆炸
     const payload = JSON.stringify(rawImages);
@@ -128,19 +128,6 @@ async function checkUrl(url) {
   } catch { return false; }
 }
 
-async function sendAlertEmail(failedStores) {
-  const { EMAIL_USER, EMAIL_PASS } = process.env;
-  if (!EMAIL_USER || !EMAIL_PASS) return;
-
-  const transporter = nodemailer.createTransport({ service: 'gmail', auth: { user: EMAIL_USER, pass: EMAIL_PASS } });
-  try {
-    await transporter.sendMail({
-      from: EMAIL_USER, to: EMAIL_USER,
-      subject: `⚠️ 【AniSpace】蝦皮聯盟行銷連結失效通知`,
-      text: `系統檢測到推廣連結失效：\n${failedStores.map(s => `- ${s.title}: ${s.affiliateUrl}`).join('\n')}`
-    });
-  } catch (error) {}
-}
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -194,7 +181,15 @@ async function run() {
 
   console.log(`\n✅ 檢查與更新完成！已寫入 ${outputStoresPath} 與 ${outputImagesPath}`);
 
-  if (failedStores.length > 0) await sendAlertEmail(failedStores);
+  const summaryPath = path.join(__dirname, 'run_summary.txt');
+  const summaryLines = [
+    `【蝦皮推廣連結】完成。正常店鋪: ${activeStores.length}，失效店鋪: ${failedStores.length}`
+  ];
+  if (failedStores.length > 0) {
+    summaryLines.push(`⚠️ 失效清單：${failedStores.map(s => s.title).join(', ')}`);
+  }
+  summaryLines.push(`【AI 商品圖】分析與過濾完畢，精選保留 ${imagePool.length} 項高價值商品。`);
+  await fs.appendFile(summaryPath, summaryLines.join('\n') + '\n\n', 'utf-8');
 }
 
 run().catch(console.error);

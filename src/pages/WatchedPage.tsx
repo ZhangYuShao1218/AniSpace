@@ -60,6 +60,7 @@ const WatchedPage = () => {
       isWatchedContext={true}
       shareData={watchedList}
       isWatchedShare={true}
+      hideAffiliate={true}
     />
   );
 };

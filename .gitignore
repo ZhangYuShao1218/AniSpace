@@ -29,3 +29,6 @@ dist-ssr
 *.keystore
 
 keystore.properties
+
+# Environment Variables
+.env

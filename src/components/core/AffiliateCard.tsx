@@ -27,6 +27,12 @@ interface AffiliateCardProps {
   affiliateUrl?: string;
 }
 
+interface ProductImage {
+  url: string;
+  productName: string;
+  category?: string;
+}
+
 const AffiliateCard: React.FC<AffiliateCardProps> = ({
   title,
   description,
@@ -34,31 +40,37 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
   affiliateUrl
 }) => {
   const [store, setStore] = useState<AffiliateStore | null>(null);
+  const [product, setProduct] = useState<ProductImage | null>(null);
 
   useEffect(() => {
     // 只有在沒有強制傳入 props 的情況下才隨機抽卡
     if (!title || !affiliateUrl) {
-      fetch('/affiliates.json')
-        .then(res => {
-          if (!res.ok) throw new Error('Failed to fetch affiliates.json');
-          return res.json();
-        })
-        .then((data: AffiliateStore[]) => {
-          const storesToUse = data.length > 0 ? data : FALLBACK_STORES;
-          const randomIndex = Math.floor(Math.random() * storesToUse.length);
-          setStore(storesToUse[randomIndex]);
-        })
-        .catch(err => {
-          console.error("無法載入最新的分潤名單，使用備用選項:", err);
-          setStore(FALLBACK_STORES[0]);
-        });
+      // 抓取商店與圖片
+      Promise.all([
+        fetch('/affiliates.json').then(res => res.json()),
+        fetch('/product_images.json').then(res => res.json()).catch(() => [])
+      ])
+      .then(([stores, products]) => {
+        const storesToUse = stores.length > 0 ? stores : FALLBACK_STORES;
+        const randomStore = storesToUse[Math.floor(Math.random() * storesToUse.length)];
+        setStore(randomStore);
+
+        if (products && products.length > 0) {
+          const randomProduct = products[Math.floor(Math.random() * products.length)];
+          setProduct(randomProduct);
+        }
+      })
+      .catch(err => {
+        console.error("無法載入最新的分潤名單，使用備用選項:", err);
+        setStore(FALLBACK_STORES[0]);
+      });
     }
   }, [title, affiliateUrl]);
 
   const displayTitle = title || store?.title || "推薦動漫周邊";
-  const displayDesc = description || store?.description || "點擊前往查看最新優惠！";
+  const displayDesc = product?.productName || description || store?.description || "點擊前往查看最新優惠！";
   const displayUrl = affiliateUrl || store?.affiliateUrl || "#";
-  const displayImage = imageUrl || store?.imageUrl;
+  const displayImage = imageUrl || product?.url || store?.imageUrl;
 
   return (
     <a 

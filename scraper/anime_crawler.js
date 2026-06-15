@@ -1,6 +1,8 @@
+import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
+import { GoogleGenAI } from '@google/genai';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const START_YEAR = 2010; 
@@ -60,6 +62,7 @@ async function getBahamutCover(gamerId) {
 // Fetch Bilibili Cover
 async function getBilibiliCover(bilibiliId) {
   try {
+    const url = `https://api.bilibili.com/pgc/view/web/season?season_id=${bilibiliId}`;
     const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(3000) });
     const data = await res.json();
     if (data && data.result && data.result.cover) {
@@ -106,6 +109,7 @@ async function main() {
   const ALL_SEASONS = ['WINTER', 'SPRING', 'SUMMER', 'FALL'];
   const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
   let finalAnimeList = [];
+  let missingTranslations = [];
 
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -120,6 +124,26 @@ async function main() {
     nextSeasonIndex = 0;
     nextSeasonYear++;
   }
+
+  const getSeasonScore = (y, idx) => y * 4 + idx;
+  const currentScore = getSeasonScore(currentYear, currentSeasonIndex);
+  const targetScores = [currentScore - 2, currentScore - 1, currentScore, currentScore + 1];
+
+  const overridePath = path.join(process.cwd(), 'public', 'custom_override.json');
+  let overrideData = {};
+  if (fs.existsSync(overridePath)) {
+    overrideData = JSON.parse(fs.readFileSync(overridePath, 'utf-8'));
+  }
+
+  const existingIds = new Set();
+  if (fs.existsSync(DATA_FILE)) {
+    try {
+      const oldData = JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
+      oldData.forEach(item => existingIds.add(item.id));
+    } catch(e) {}
+  }
+  let newlyAddedAnimes = [];
+  let aiTranslatedAnimes = [];
 
   console.log('📦 正在下載 bangumi-data 字典檔...');
   let bgmMap = new Map(); // aniListId -> translation Object
@@ -160,8 +184,13 @@ async function main() {
         
         let titleZh = "";
         
+        // Priority 0: Custom Override
+        if (overrideData[aniListId] && overrideData[aniListId].titleZh) {
+          titleZh = overrideData[aniListId].titleZh;
+        }
+
         // Priority 1: bangumi-data exact ID mapping
-        if (bgmMap.has(aniListId)) {
+        if (!titleZh && bgmMap.has(aniListId)) {
           const bgmItem = bgmMap.get(aniListId);
           if (bgmItem.titleTranslate) {
             if (bgmItem.titleTranslate['zh-Hant']) {
@@ -185,6 +214,14 @@ async function main() {
         // Convert to Traditional Chinese
         titleZh = converter(titleZh);
         
+        // AI Translation Check (only for target seasons)
+        const seasonScore = getSeasonScore(year, seasonIdx);
+        if (targetScores.includes(seasonScore)) {
+          if (titleZh === nativeTitle || titleZh === item.title.english || titleZh === "未知動畫") {
+             missingTranslations.push({ id: aniListId, titleJa: nativeTitle, titleEn: item.title.english });
+          }
+        }
+
         // Smart Cover Image Strategy (Priority: Bahamut > Bilibili > AniList)
         let finalCover = "";
         let gamerSite = null;
@@ -227,8 +264,13 @@ async function main() {
         }
 
         const seasonMap = { 'WINTER': '冬', 'SPRING': '春', 'SUMMER': '夏', 'FALL': '秋' };
+        const fullId = `anilist-${item.id}`;
+        if (!existingIds.has(fullId)) {
+          newlyAddedAnimes.push({ id: fullId, title: titleZh });
+        }
+
         finalAnimeList.push({
-          id: `anilist-${item.id}`,
+          id: fullId,
           titleZh,
           titleEn: item.title.english || "",
           titleJa: nativeTitle || "",
@@ -250,6 +292,59 @@ async function main() {
     fs.mkdirSync(publicDir, { recursive: true });
   }
 
+  let translatedCount = 0;
+  if (missingTranslations.length > 0 && process.env.GEMINI_API_KEY) {
+    console.log(`\n🤖 發現 ${missingTranslations.length} 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...`);
+    try {
+      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const promptText = fs.readFileSync(path.join(process.cwd(), 'scraper', 'ai_translate_prompt.md'), 'utf-8');
+      const response = await ai.models.generateContent({
+        model: 'gemini-3.5-flash',
+        contents: `${promptText}\n\n輸入清單：\n${JSON.stringify(missingTranslations, null, 2)}`
+      });
+      const aiText = response.text().replace(/```json/g, '').replace(/```/g, '').trim();
+      const aiResult = JSON.parse(aiText);
+      
+      let overrideChanged = false;
+      aiResult.forEach(res => {
+        if (res.titleZh) {
+          const target = finalAnimeList.find(a => a.id === `anilist-${res.id}`);
+          if (target) {
+            target.titleZh = res.titleZh;
+          }
+          if (!overrideData[res.id]) overrideData[res.id] = {};
+          if (overrideData[res.id].titleZh !== res.titleZh) {
+            overrideData[res.id].titleZh = res.titleZh;
+            overrideChanged = true;
+            translatedCount++;
+            aiTranslatedAnimes.push(res.titleZh);
+            
+            // 如果這部剛好是新增的，順便把清單裡的名字也改成翻譯後的
+            const newlyAddedTarget = newlyAddedAnimes.find(a => a.id === `anilist-${res.id}`);
+            if (newlyAddedTarget) newlyAddedTarget.title = res.titleZh;
+          }
+        }
+      });
+      if (overrideChanged) {
+        fs.writeFileSync(overridePath, JSON.stringify(overrideData, null, 2), 'utf-8');
+        console.log(`✅ AI 翻譯完成，更新了 ${translatedCount} 筆資料至 custom_override.json`);
+      }
+    } catch (err) {
+      console.error("❌ AI 翻譯失敗:", err);
+    }
+  } else if (missingTranslations.length > 0) {
+    console.log(`\n⚠️ 發現 ${missingTranslations.length} 部近期動畫缺乏翻譯，但未設定 GEMINI_API_KEY，跳過 AI 翻譯。`);
+  }
+
+  const summaryPath = path.join(process.cwd(), 'scraper', 'run_summary.txt');
+  let summaryContent = `【動畫爬蟲】完成。共抓取 ${finalAnimeList.length} 筆資料，本次新增資料 ${newlyAddedAnimes.length} 筆，AI 翻譯 ${translatedCount} 筆。\n`;
+  if (newlyAddedAnimes.length > 0) {
+    summaryContent += `🌟 新增動畫：\n- ${newlyAddedAnimes.map(a => a.title).join('\n- ')}\n`;
+  }
+  if (aiTranslatedAnimes.length > 0) {
+    summaryContent += `🤖 AI 翻譯動畫：\n- ${aiTranslatedAnimes.join('\n- ')}\n`;
+  }
+  fs.writeFileSync(summaryPath, summaryContent + '\n', 'utf-8');
   // Sort by date descending (Year DESC, Season priority)
   // Autumn(4) > Summer(3) > Spring(2) > Winter(1) to match frontend logic
   const seasonOrder = { '秋': 4, '夏': 3, '春': 2, '冬': 1 };

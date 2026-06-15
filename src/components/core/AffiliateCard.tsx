@@ -77,18 +77,18 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
       href={displayUrl} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="affiliate-card anime-card" 
+      className="recommend-card anime-card" 
     >
-      <div className="affiliate-image-container anime-image-container">
+      <div className="recommend-image-container anime-image-container">
         {/* Dynamic Sponsor Badge */}
-        <span className="ad-label" style={{ position: 'absolute', top: 8, left: 8, background: 'rgba(16, 185, 129, 0.9)', color: 'white', fontWeight: 600, padding: '4px 8px', borderRadius: '4px', zIndex: 10, fontSize: '0.75rem', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
+        <span className="store-badge" style={{ position: 'absolute', top: 8, left: 8, background: 'rgba(16, 185, 129, 0.9)', color: 'white', fontWeight: 600, padding: '4px 8px', borderRadius: '4px', zIndex: 10, fontSize: '0.75rem', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
           {displayTitle}
         </span>
         
         {displayImage ? (
           <img src={displayImage} alt={displayTitle} className="anime-image" loading="lazy" />
         ) : (
-          <div className="affiliate-placeholder-image" style={{ background: 'linear-gradient(135deg, var(--bg-card-hover), var(--bg-card))', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <div className="recommend-placeholder-image" style={{ background: 'linear-gradient(135deg, var(--bg-card-hover), var(--bg-card))', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <ShoppingBag size={48} style={{ color: 'var(--accent-color)', marginBottom: '12px', opacity: 0.8 }} />
             <div className="placeholder-content">
               <span style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-primary)' }}>蝦皮購物 x 動漫特賣</span>
@@ -108,12 +108,12 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
           {displayDesc}
         </h3>
         {store?.description && (
-          <p className="affiliate-desc" style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '12px', lineHeight: '1.5' }}>
+          <p className="recommend-desc" style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '12px', lineHeight: '1.5' }}>
             {store.description}
           </p>
         )}
         <div style={{ marginTop: 'auto', paddingTop: '4px' }}>
-          <p className="affiliate-desc" style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '0.9rem', margin: 0 }}>
+          <p className="recommend-desc" style={{ color: 'var(--accent-color)', fontWeight: 600, fontSize: '0.9rem', margin: 0 }}>
             馬上前往選購 →
           </p>
         </div>

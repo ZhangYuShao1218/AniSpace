@@ -1,4 +1,4 @@
-.affiliate-card {
+.recommend-card {
   display: block;
   text-decoration: none;
   border: 1px solid rgba(16, 185, 129, 0.2); /* Subtle accent border */
@@ -6,12 +6,12 @@
   cursor: pointer;
 }
 
-.affiliate-card:hover {
+.recommend-card:hover {
   border-color: rgba(16, 185, 129, 0.4);
   box-shadow: 0 8px 30px rgba(16, 185, 129, 0.15);
 }
 
-.affiliate-image-container {
+.recommend-image-container {
   position: relative;
   background: #1f2937; /* Match AnimeCard.css dark mode background */
   width: 100%;
@@ -19,11 +19,11 @@
   overflow: hidden;
 }
 
-[data-theme="light"] .affiliate-image-container {
+[data-theme="light"] .recommend-image-container {
   background: #ffffff;
 }
 
-.affiliate-image-container img.anime-image {
+.recommend-image-container img.anime-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -32,7 +32,7 @@
   box-sizing: border-box;
 }
 
-.affiliate-placeholder-image {
+.recommend-placeholder-image {
   width: 100%;
   height: 100%;
   display: flex;
@@ -56,7 +56,7 @@
   gap: 8px;
 }
 
-.affiliate-desc {
+.recommend-desc {
   margin: 8px 0 0 0;
   font-size: 0.85rem;
   color: var(--text-secondary);
@@ -68,7 +68,7 @@
 }
 
 /* Ensure the label is visible even without hover */
-.affiliate-placeholder-image .ad-label {
+.recommend-placeholder-image .store-badge {
   top: 8px;
   left: 8px;
   background: rgba(16, 185, 129, 0.8);

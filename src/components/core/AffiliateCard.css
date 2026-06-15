@@ -1,0 +1,71 @@
+.affiliate-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid rgba(16, 185, 129, 0.2); /* Subtle accent border */
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.05);
+  cursor: pointer;
+}
+
+.affiliate-card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.15);
+}
+
+.affiliate-image-container {
+  position: relative;
+  background: linear-gradient(135deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 100%);
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.affiliate-image-container img.anime-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.affiliate-placeholder-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.02) 10px,
+    rgba(255, 255, 255, 0.05) 10px,
+    rgba(255, 255, 255, 0.05) 20px
+  );
+}
+
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  gap: 8px;
+}
+
+.affiliate-desc {
+  margin: 8px 0 0 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Ensure the label is visible even without hover */
+.affiliate-placeholder-image .ad-label {
+  top: 8px;
+  left: 8px;
+  background: rgba(16, 185, 129, 0.8);
+  color: white;
+  font-weight: 600;
+}

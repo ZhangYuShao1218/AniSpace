@@ -215,19 +215,6 @@
     ]
   },
   {
-    "id": "anilist-182616",
-    "titleZh": "擅長逃跑的殿下 第二季",
-    "titleEn": "",
-    "titleJa": "逃げ上手の若君 第二期",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-ZOCgArw9cgqI.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-ZOCgArw9cgqI.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "冒險"
-    ]
-  },
-  {
     "id": "anilist-187538",
     "titleZh": "BLACK TORCH闇黑燈火",
     "titleEn": "BLACK TORCH",
@@ -241,6 +228,19 @@
       "奇幻",
       "科幻",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-182616",
+    "titleZh": "擅長逃跑的殿下 第二季",
+    "titleEn": "",
+    "titleJa": "逃げ上手の若君 第二期",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-ZOCgArw9cgqI.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-ZOCgArw9cgqI.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險"
     ]
   },
   {
@@ -594,6 +594,20 @@
     ]
   },
   {
+    "id": "anilist-199066",
+    "titleZh": "花織同學轉生後還是想幹架",
+    "titleEn": "Hanaori-san Still Wants to Fight in the Next Life",
+    "titleJa": "花織さんは転生しても喧嘩がしたい",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-207809",
     "titleZh": "赤河戀影",
     "titleEn": "",
@@ -607,20 +621,6 @@
       "劇情",
       "奇幻",
       "愛情"
-    ]
-  },
-  {
-    "id": "anilist-199066",
-    "titleZh": "花織同學轉生後還是想幹架",
-    "titleEn": "Hanaori-san Still Wants to Fight in the Next Life",
-    "titleJa": "花織さんは転生しても喧嘩がしたい",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-o0aQNC5lcxFr.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "超自然"
     ]
   },
   {
@@ -723,6 +723,7 @@
       "奇幻",
       "心理",
       "愛情",
+      "驚悚",
       "異世界"
     ]
   },
@@ -1494,7 +1495,6 @@
     "yearSeason": "2026 冬",
     "genres": [
       "喜劇",
-      "劇情",
       "愛情",
       "日常"
     ]
@@ -2657,21 +2657,6 @@
     ]
   },
   {
-    "id": "anilist-179930",
-    "titleZh": "不死不幸 冬季篇",
-    "titleEn": "Undead Unluck: Winter Arc",
-    "titleJa": "アンデッドアンラック Winter編",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179930-xUYfykPhQmGm.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179930-xUYfykPhQmGm.jpg",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "動作",
-      "喜劇",
-      "科幻",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-187331",
     "titleZh": "小手指同學，請別亂摸",
     "titleEn": "Hands off: Sawaranaide Kotesashi-kun!",
@@ -2684,6 +2669,21 @@
       "福利",
       "愛情",
       "運動"
+    ]
+  },
+  {
+    "id": "anilist-179930",
+    "titleZh": "不死不幸 冬季篇",
+    "titleEn": "Undead Unluck: Winter Arc",
+    "titleJa": "アンデッドアンラック Winter編",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179930-xUYfykPhQmGm.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179930-xUYfykPhQmGm.jpg",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "科幻",
+      "超自然"
     ]
   },
   {
@@ -5680,20 +5680,6 @@
     ]
   },
   {
-    "id": "anilist-170893",
-    "titleZh": "放學後少年花子君 續篇",
-    "titleEn": "After-school Hanako-kun Season 2",
-    "titleJa": "放課後少年花子くん 2",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170893-zqmpX7iYUumi.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170893-zqmpX7iYUumi.jpg",
-    "yearSeason": "2024 秋",
-    "genres": [
-      "喜劇",
-      "日常",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-169315",
     "titleZh": "一兆遊戲",
     "titleEn": "TRILLION GAME",
@@ -5706,6 +5692,20 @@
       "喜劇",
       "劇情",
       "心理"
+    ]
+  },
+  {
+    "id": "anilist-170893",
+    "titleZh": "放學後少年花子君 續篇",
+    "titleEn": "After-school Hanako-kun Season 2",
+    "titleJa": "放課後少年花子くん 2",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170893-zqmpX7iYUumi.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170893-zqmpX7iYUumi.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "日常",
+      "超自然"
     ]
   },
   {
@@ -8757,12 +8757,12 @@
     ]
   },
   {
-    "id": "anilist-146953",
-    "titleZh": "政宗君的復仇R",
-    "titleEn": "Masamune-kun's Revenge R",
-    "titleJa": "政宗くんのリベンジR",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000123766.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146953-80YtZNkpbhIA.jpg",
+    "id": "anilist-157397",
+    "titleZh": "滿懷美夢的少年是現實主義者",
+    "titleEn": "The Dreaming Boy is a Realist",
+    "titleJa": "夢見る男子は現実主義者",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/73/0000128673.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157397-L1ZUMTuxf8OK.jpg",
     "yearSeason": "2023 夏",
     "genres": [
       "喜劇",
@@ -8771,12 +8771,12 @@
     ]
   },
   {
-    "id": "anilist-157397",
-    "titleZh": "滿懷美夢的少年是現實主義者",
-    "titleEn": "The Dreaming Boy is a Realist",
-    "titleJa": "夢見る男子は現実主義者",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/73/0000128673.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157397-L1ZUMTuxf8OK.jpg",
+    "id": "anilist-146953",
+    "titleZh": "政宗君的復仇R",
+    "titleEn": "Masamune-kun's Revenge R",
+    "titleJa": "政宗くんのリベンジR",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000123766.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146953-80YtZNkpbhIA.jpg",
     "yearSeason": "2023 夏",
     "genres": [
       "喜劇",
@@ -15159,15 +15159,16 @@
     ]
   },
   {
-    "id": "anilist-125838",
-    "titleZh": "海岬的迷途之家",
-    "titleEn": "The House of the Lost on the Cape",
-    "titleJa": "岬のマヨイガ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/74/0000114474.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125838-QEkGEEIA3xfC.jpg",
+    "id": "anilist-116676",
+    "titleZh": "劇場版 黃金拼圖 謝謝你!!",
+    "titleEn": "KINMOZA The Movie: Thank you!!",
+    "titleJa": "きんいろモザイク Thank you!!",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116676-SmbBAKOS6XUw.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116676-SmbBAKOS6XUw.jpg",
     "yearSeason": "2021 夏",
     "genres": [
-      "奇幻"
+      "喜劇",
+      "日常"
     ]
   },
   {
@@ -19257,20 +19258,6 @@
     ]
   },
   {
-    "id": "anilist-101634",
-    "titleZh": "BanG Dream! 第3季",
-    "titleEn": "BanG Dream! 3rd Season",
-    "titleJa": "BanG Dream! 3rd Season",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/13/0000097713.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101634-4PSQAU2bw7s3.png",
-    "yearSeason": "2020 冬",
-    "genres": [
-      "喜劇",
-      "音樂",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-108450",
     "titleZh": "空挺 Dragons",
     "titleEn": "Drifting Dragons",
@@ -19282,6 +19269,20 @@
       "動作",
       "冒險",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-101634",
+    "titleZh": "BanG Dream! 第3季",
+    "titleEn": "BanG Dream! 3rd Season",
+    "titleJa": "BanG Dream! 3rd Season",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/13/0000097713.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101634-4PSQAU2bw7s3.png",
+    "yearSeason": "2020 冬",
+    "genres": [
+      "喜劇",
+      "音樂",
+      "日常"
     ]
   },
   {
@@ -21136,20 +21137,6 @@
     ]
   },
   {
-    "id": "anilist-101281",
-    "titleZh": "凱洛與塔斯黛",
-    "titleEn": "Carole & Tuesday",
-    "titleJa": "キャロル＆チューズデイ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101281-s1UoXUaYXhxn.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101281-s1UoXUaYXhxn.jpg",
-    "yearSeason": "2019 春",
-    "genres": [
-      "劇情",
-      "音樂",
-      "科幻"
-    ]
-  },
-  {
     "id": "anilist-103302",
     "titleZh": "一弦定音！",
     "titleEn": "Kono Oto Tomare!: Sounds of Life",
@@ -21162,6 +21149,20 @@
       "音樂",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-101281",
+    "titleZh": "凱洛與塔斯黛",
+    "titleEn": "Carole & Tuesday",
+    "titleJa": "キャロル＆チューズデイ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101281-s1UoXUaYXhxn.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101281-s1UoXUaYXhxn.jpg",
+    "yearSeason": "2019 春",
+    "genres": [
+      "劇情",
+      "音樂",
+      "科幻"
     ]
   },
   {
@@ -28771,7 +28772,7 @@
   },
   {
     "id": "anilist-97609",
-    "titleZh": "チーティングクラフト",
+    "titleZh": "考試王",
     "titleEn": "",
     "titleJa": "チーティングクラフト",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/97609-qSAaN9XbRQjj.jpg",
@@ -34068,7 +34069,11 @@
     "yearSeason": "2014 秋",
     "genres": [
       "動作",
+      "冒險",
+      "劇情",
+      "奇幻",
       "愛情",
+      "超自然",
       "超能力"
     ]
   },
@@ -37306,19 +37311,6 @@
     ]
   },
   {
-    "id": "anilist-18893",
-    "titleZh": "蒼藍鋼鐵的琶音",
-    "titleEn": "Arpeggio of Blue Steel",
-    "titleJa": "蒼き鋼のアルペジオ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18893-WqI68JXKBn2u.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18893-WqI68JXKBn2u.jpg",
-    "yearSeason": "2013 秋",
-    "genres": [
-      "動作",
-      "科幻"
-    ]
-  },
-  {
     "id": "anilist-19021",
     "titleZh": "小鳥遊六花・改 劇場版 中二病也想談戀愛！",
     "titleEn": "Love, Chunibyo & Other Delusions: Rikka Version",
@@ -37331,6 +37323,19 @@
       "劇情",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-18893",
+    "titleZh": "蒼藍鋼鐵的琶音",
+    "titleEn": "Arpeggio of Blue Steel",
+    "titleJa": "蒼き鋼のアルペジオ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18893-WqI68JXKBn2u.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18893-WqI68JXKBn2u.jpg",
+    "yearSeason": "2013 秋",
+    "genres": [
+      "動作",
+      "科幻"
     ]
   },
   {

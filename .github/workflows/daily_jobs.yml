@@ -2,8 +2,8 @@ name: Daily Scraper & Shopee Checker
 
 on:
   schedule:
-    # 每天早上 8:00 (UTC 00:00) 執行
-    - cron: '0 0 * * *'
+    # 每天早上 10:50 (UTC 02:50) 執行，避開整點高峰期避免被 Github 延遲或取消
+    - cron: '50 2 * * *'
   workflow_dispatch: # 允許手動觸發測試
 
 permissions:

@@ -427,6 +427,19 @@
     ]
   },
   {
+    "id": "anilist-202269",
+    "titleZh": "與奔馳於透明之夜的你，談一場看不見的戀愛。",
+    "titleEn": "",
+    "titleJa": "透明な夜に駆ける君と、目に見えない恋をした。",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-209961",
     "titleZh": "死亡遊戱で飯を食う。44:CLOUDY BEACH",
     "titleEn": "",
@@ -439,19 +452,6 @@
       "劇情",
       "懸疑",
       "驚悚"
-    ]
-  },
-  {
-    "id": "anilist-202269",
-    "titleZh": "與奔馳於透明之夜的你，談一場看不見的戀愛。",
-    "titleEn": "",
-    "titleJa": "透明な夜に駆ける君と、目に見えない恋をした。",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情",
-      "愛情"
     ]
   },
   {
@@ -624,19 +624,6 @@
     ]
   },
   {
-    "id": "anilist-208754",
-    "titleZh": "Unanswered//butterfly: Sword Art Online",
-    "titleEn": "",
-    "titleJa": "Unanswered//butterfly: Sword Art Online",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "冒險"
-    ]
-  },
-  {
     "id": "anilist-192800",
     "titleZh": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
     "titleEn": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
@@ -647,6 +634,19 @@
     "genres": [
       "喜劇",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-208754",
+    "titleZh": "Unanswered//butterfly: Sword Art Online",
+    "titleEn": "",
+    "titleJa": "Unanswered//butterfly: Sword Art Online",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208754-333Nyh5abrqS.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "冒險"
     ]
   },
   {
@@ -1186,6 +1186,20 @@
     ]
   },
   {
+    "id": "anilist-185211",
+    "titleZh": "弱弱老師",
+    "titleEn": "Yowayowa Sensei",
+    "titleJa": "よわよわ先生",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000148100.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185211-ewfgT5Cn99k0.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "福利",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-179813",
     "titleZh": "ROOSTER FIGHTER 怒火雞頭",
     "titleEn": "Rooster Fighter",
@@ -1202,20 +1216,6 @@
     ]
   },
   {
-    "id": "anilist-185211",
-    "titleZh": "弱弱老師",
-    "titleEn": "Yowayowa Sensei",
-    "titleJa": "よわよわ先生",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000148100.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185211-ewfgT5Cn99k0.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
-      "福利",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-195333",
     "titleZh": "灰原同學重返過去，開啟所向無敵的第二輪青春遊戲",
     "titleEn": "Haibara's Teenage New Game+",
@@ -1226,6 +1226,18 @@
     "genres": [
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-196974",
+    "titleZh": "黑貓與魔女的教室",
+    "titleEn": "The Classroom of the Black Cat and a Witch",
+    "titleJa": "黒猫と魔女の教室",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196974-mZk1uyrx0XNx.png",
+    "yearSeason": "2026 春",
+    "genres": [
+      "奇幻"
     ]
   },
   {
@@ -1240,18 +1252,6 @@
       "喜劇",
       "奇幻",
       "愛情"
-    ]
-  },
-  {
-    "id": "anilist-196974",
-    "titleZh": "黑貓與魔女的教室",
-    "titleEn": "The Classroom of the Black Cat and a Witch",
-    "titleJa": "黒猫と魔女の教室",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/00/0000146600.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196974-mZk1uyrx0XNx.png",
-    "yearSeason": "2026 春",
-    "genres": [
-      "奇幻"
     ]
   },
   {
@@ -4095,19 +4095,6 @@
     ]
   },
   {
-    "id": "anilist-185939",
-    "titleZh": "歲月流逝飯菜依舊美味",
-    "titleEn": "Food for the Soul",
-    "titleJa": "日々は過ぎれど飯うまし",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/60/0000144260.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185939-hqt1He153el8.jpg",
-    "yearSeason": "2025 春",
-    "genres": [
-      "喜劇",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-192809",
     "titleZh": "咒術回戰 懷玉·玉折 總集篇",
     "titleEn": "JUJUTSU KAISEN: Hidden Inventory / Premature Death – The Movie",
@@ -4119,6 +4106,19 @@
       "動作",
       "劇情",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-185939",
+    "titleZh": "歲月流逝飯菜依舊美味",
+    "titleEn": "Food for the Soul",
+    "titleJa": "日々は過ぎれど飯うまし",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/60/0000144260.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185939-hqt1He153el8.jpg",
+    "yearSeason": "2025 春",
+    "genres": [
+      "喜劇",
+      "日常"
     ]
   },
   {
@@ -9820,21 +9820,6 @@
     ]
   },
   {
-    "id": "anilist-155158",
-    "titleZh": "機動戰士鋼彈 水星的魔女 Season2",
-    "titleEn": "Mobile Suit Gundam: The Witch from Mercury Season 2",
-    "titleJa": "機動戦士ガンダム 水星の魔女 Season2",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/72/0000130372.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx155158-4MO3TP5plLSm.jpg",
-    "yearSeason": "2023 春",
-    "genres": [
-      "動作",
-      "劇情",
-      "機甲",
-      "科幻"
-    ]
-  },
-  {
     "id": "anilist-146234",
     "titleZh": "異世界一擊無雙姐姐",
     "titleEn": "My One-Hit Kill Sister",
@@ -9847,6 +9832,21 @@
       "奇幻",
       "愛情",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-155158",
+    "titleZh": "機動戰士鋼彈 水星的魔女 Season2",
+    "titleEn": "Mobile Suit Gundam: The Witch from Mercury Season 2",
+    "titleJa": "機動戦士ガンダム 水星の魔女 Season2",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/72/0000130372.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx155158-4MO3TP5plLSm.jpg",
+    "yearSeason": "2023 春",
+    "genres": [
+      "動作",
+      "劇情",
+      "機甲",
+      "科幻"
     ]
   },
   {
@@ -15159,16 +15159,15 @@
     ]
   },
   {
-    "id": "anilist-116676",
-    "titleZh": "劇場版 黃金拼圖 謝謝你!!",
-    "titleEn": "KINMOZA The Movie: Thank you!!",
-    "titleJa": "きんいろモザイク Thank you!!",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116676-SmbBAKOS6XUw.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116676-SmbBAKOS6XUw.jpg",
+    "id": "anilist-125838",
+    "titleZh": "海岬的迷途之家",
+    "titleEn": "The House of the Lost on the Cape",
+    "titleJa": "岬のマヨイガ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/74/0000114474.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125838-QEkGEEIA3xfC.jpg",
     "yearSeason": "2021 夏",
     "genres": [
-      "喜劇",
-      "日常"
+      "奇幻"
     ]
   },
   {
@@ -19258,20 +19257,6 @@
     ]
   },
   {
-    "id": "anilist-108450",
-    "titleZh": "空挺 Dragons",
-    "titleEn": "Drifting Dragons",
-    "titleJa": "空挺ドラゴンズ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
-    "yearSeason": "2020 冬",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-101634",
     "titleZh": "BanG Dream! 第3季",
     "titleEn": "BanG Dream! 3rd Season",
@@ -19283,6 +19268,20 @@
       "喜劇",
       "音樂",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-108450",
+    "titleZh": "空挺 Dragons",
+    "titleEn": "Drifting Dragons",
+    "titleJa": "空挺ドラゴンズ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
+    "yearSeason": "2020 冬",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
     ]
   },
   {
@@ -31358,19 +31357,6 @@
     ]
   },
   {
-    "id": "anilist-21261",
-    "titleZh": "阿松",
-    "titleEn": "Mr. Osomatsu",
-    "titleJa": "おそ松さん",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/60/0000078260.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21261-jLm2IGonsEzU.jpg",
-    "yearSeason": "2015 秋",
-    "genres": [
-      "喜劇",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-21356",
     "titleZh": "寶可夢 XY＆Z",
     "titleEn": "Pokémon the Series: XYZ",
@@ -31383,6 +31369,19 @@
       "冒險",
       "喜劇",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-21261",
+    "titleZh": "阿松",
+    "titleEn": "Mr. Osomatsu",
+    "titleJa": "おそ松さん",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/60/0000078260.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21261-jLm2IGonsEzU.jpg",
+    "yearSeason": "2015 秋",
+    "genres": [
+      "喜劇",
+      "日常"
     ]
   },
   {
@@ -45994,18 +45993,18 @@
     ]
   },
   {
-    "id": "anilist-8666",
-    "titleZh": "魔神凱撒SKL",
-    "titleEn": "Mazinkaiser SKL",
-    "titleJa": "マジンカイザー SKL",
-    "coverImage": "http://i0.hdslb.com/bfs/bangumi/9f1031b57641e80d3b9caeded632e05a32245cfa.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8666-CvGklrfoxiUx.jpg",
+    "id": "anilist-9288",
+    "titleZh": "Heart Catch光之美少女 超級時尚秀在花之都...真的嗎！？",
+    "titleEn": "",
+    "titleJa": "ハートキャッチプリキュア！花の都でファッションショー・・・ですか！？",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9288-KBl1SCRhk7Xn.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9288-KBl1SCRhk7Xn.jpg",
     "yearSeason": "2010 秋",
     "genres": [
       "動作",
-      "冒險",
-      "機甲",
-      "科幻"
+      "劇情",
+      "奇幻",
+      "魔法少女"
     ]
   },
   {

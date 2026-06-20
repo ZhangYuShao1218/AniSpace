@@ -286,8 +286,8 @@
     "titleZh": "感謝對戰。 ～大小姐才不玩格鬥遊戲～",
     "titleEn": "Young Ladies Don't Play Fighting Games",
     "titleJa": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-0YhOnKG6aRs1.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-0YhOnKG6aRs1.png",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-Iqc6hTjEYIz4.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-Iqc6hTjEYIz4.png",
     "yearSeason": "2026 夏",
     "genres": [
       "劇情"
@@ -404,8 +404,8 @@
     "titleZh": "轉學後班上的清純可愛美少女，竟是小時候玩在一起的哥兒們",
     "titleEn": "Oh Boy, Was I Wrong About Her",
     "titleJa": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-BZysrWv5Q1yO.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-BZysrWv5Q1yO.png",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-4L6ceRR9GALt.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-4L6ceRR9GALt.png",
     "yearSeason": "2026 夏",
     "genres": [
       "喜劇",
@@ -522,6 +522,23 @@
     ]
   },
   {
+    "id": "anilist-196218",
+    "titleZh": "領民0人スタートの辺境領主様",
+    "titleEn": "",
+    "titleJa": "領民0人スタートの辺境領主様",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-UsdTTCrwpDIN.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-UsdTTCrwpDIN.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "奇幻",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
     "id": "anilist-186863",
     "titleZh": "貓與龍",
     "titleEn": "The Cat and the Dragon",
@@ -532,23 +549,6 @@
     "genres": [
       "冒險",
       "奇幻"
-    ]
-  },
-  {
-    "id": "anilist-196218",
-    "titleZh": "領民0人スタートの辺境領主様",
-    "titleEn": "",
-    "titleJa": "領民0人スタートの辺境領主様",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-GuO62b9WnV43.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-GuO62b9WnV43.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "喜劇",
-      "劇情",
-      "奇幻",
-      "愛情",
-      "日常"
     ]
   },
   {
@@ -650,6 +650,21 @@
     ]
   },
   {
+    "id": "anilist-198709",
+    "titleZh": "奇招百出的維多利亞",
+    "titleEn": "Victoria of Many Faces",
+    "titleJa": "手札が多めのビクトリア",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-KnZCqdH7fu3F.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-KnZCqdH7fu3F.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-185875",
     "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
     "titleEn": "Magical Girl Lyrical Nanoha EXCEEDS Gun Blaze Vengeance",
@@ -663,21 +678,6 @@
       "劇情",
       "奇幻",
       "魔法少女"
-    ]
-  },
-  {
-    "id": "anilist-198709",
-    "titleZh": "奇招百出的維多利亞",
-    "titleEn": "Victoria of Many Faces",
-    "titleJa": "手札が多めのビクトリア",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-KnZCqdH7fu3F.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-KnZCqdH7fu3F.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "劇情",
-      "奇幻",
-      "愛情"
     ]
   },
   {
@@ -1378,6 +1378,7 @@
     "yearSeason": "2026 春",
     "genres": [
       "動作",
+      "冒險",
       "喜劇",
       "奇幻",
       "異世界"
@@ -2673,20 +2674,6 @@
     ]
   },
   {
-    "id": "anilist-186524",
-    "titleZh": "不擅吸血的吸血鬼",
-    "titleEn": "Li'l Miss Vampire Can't Suck Right",
-    "titleJa": "ちゃんと吸えない吸血鬼ちゃん",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/38/0000143538.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186524-JSsyFR3FqTO8.jpg",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "喜劇",
-      "日常",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-179930",
     "titleZh": "不死不幸 冬季篇",
     "titleEn": "Undead Unluck: Winter Arc",
@@ -2698,6 +2685,20 @@
       "動作",
       "喜劇",
       "科幻",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-186524",
+    "titleZh": "不擅吸血的吸血鬼",
+    "titleEn": "Li'l Miss Vampire Can't Suck Right",
+    "titleJa": "ちゃんと吸えない吸血鬼ちゃん",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/38/0000143538.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186524-JSsyFR3FqTO8.jpg",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "喜劇",
+      "日常",
       "超自然"
     ]
   },
@@ -7643,20 +7644,6 @@
     ]
   },
   {
-    "id": "anilist-166522",
-    "titleZh": "公主殿下，「拷問」的時間到了",
-    "titleEn": "'Tis Time for \"Torture,\" Princess",
-    "titleJa": "姫様“拷問”の時間です",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/47/0000133647.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166522-pUnBSDFzs9DD.jpg",
-    "yearSeason": "2024 冬",
-    "genres": [
-      "喜劇",
-      "奇幻",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-169935",
     "titleZh": "最強肉盾的迷宮攻略～擁有稀少技能體力9999的肉盾，被勇者隊伍辭退了～",
     "titleEn": "The Strongest Tank's Labyrinth Raids -A Tank with a Rare 9999 Resistance Skill Got Kicked from the Hero's Party-",
@@ -7668,6 +7655,20 @@
       "動作",
       "冒險",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-166522",
+    "titleZh": "公主殿下，「拷問」的時間到了",
+    "titleEn": "'Tis Time for \"Torture,\" Princess",
+    "titleJa": "姫様“拷問”の時間です",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/47/0000133647.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166522-pUnBSDFzs9DD.jpg",
+    "yearSeason": "2024 冬",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "日常"
     ]
   },
   {
@@ -8408,19 +8409,6 @@
     ]
   },
   {
-    "id": "anilist-156184",
-    "titleZh": "想當冒險者前往都市的女兒成為 S 級",
-    "titleEn": "My Daughter Left the Nest and Returned an S-Rank Adventurer",
-    "titleJa": "冒険者になりたいと都に出て行った娘がＳランクになってた",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/19/0000133419.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156184-mrU1zLqpnMSK.jpg",
-    "yearSeason": "2023 秋",
-    "genres": [
-      "冒險",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-146206",
     "titleZh": "聖女魔力無所不能 第二季",
     "titleEn": "The Saint's Magic Power is Omnipotent II",
@@ -8433,6 +8421,19 @@
       "愛情",
       "日常",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-156184",
+    "titleZh": "想當冒險者前往都市的女兒成為 S 級",
+    "titleEn": "My Daughter Left the Nest and Returned an S-Rank Adventurer",
+    "titleJa": "冒険者になりたいと都に出て行った娘がＳランクになってた",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/19/0000133419.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156184-mrU1zLqpnMSK.jpg",
+    "yearSeason": "2023 秋",
+    "genres": [
+      "冒險",
+      "奇幻"
     ]
   },
   {
@@ -9186,21 +9187,6 @@
     ]
   },
   {
-    "id": "anilist-162893",
-    "titleZh": "萊莎的鍊金工房 ～常闇女王與秘密藏身處～",
-    "titleEn": "Atelier Ryza: Ever Darkness & the Secret Hideout The Animation",
-    "titleJa": "ライザのアトリエ ～常闇の女王と秘密の隠れ家～",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/60/0000131060.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162893-qDZDzL4jJ03c.jpg",
-    "yearSeason": "2023 夏",
-    "genres": [
-      "動作",
-      "冒險",
-      "劇情",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-139435",
     "titleZh": "死神少爺與黑女僕 第二季",
     "titleEn": "The Duke of Death and His Maid Season 2",
@@ -9213,6 +9199,21 @@
       "劇情",
       "愛情",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-162893",
+    "titleZh": "萊莎的鍊金工房 ～常闇女王與秘密藏身處～",
+    "titleEn": "Atelier Ryza: Ever Darkness & the Secret Hideout The Animation",
+    "titleJa": "ライザのアトリエ ～常闇の女王と秘密の隠れ家～",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/60/0000131060.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162893-qDZDzL4jJ03c.jpg",
+    "yearSeason": "2023 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "劇情",
+      "奇幻"
     ]
   },
   {
@@ -13307,6 +13308,20 @@
     ]
   },
   {
+    "id": "anilist-119056",
+    "titleZh": "自稱賢者弟子的賢者",
+    "titleEn": "She Professed Herself Pupil of the Wise Man",
+    "titleJa": "賢者の弟子を名乗る賢者",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/84/0000111584.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119056-v9Ls3eKyf0Nf.png",
+    "yearSeason": "2022 冬",
+    "genres": [
+      "冒險",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
     "id": "anilist-128034",
     "titleZh": "東方少年",
     "titleEn": "ORIENT",
@@ -13319,20 +13334,6 @@
       "冒險",
       "喜劇",
       "奇幻"
-    ]
-  },
-  {
-    "id": "anilist-119056",
-    "titleZh": "自稱賢者弟子的賢者",
-    "titleEn": "She Professed Herself Pupil of the Wise Man",
-    "titleJa": "賢者の弟子を名乗る賢者",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/84/0000111584.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119056-v9Ls3eKyf0Nf.png",
-    "yearSeason": "2022 冬",
-    "genres": [
-      "冒險",
-      "奇幻",
-      "異世界"
     ]
   },
   {
@@ -15051,7 +15052,7 @@
     "titleZh": "暗夜第六感2041",
     "titleEn": "NIGHT HEAD 2041",
     "titleJa": "NIGHT HEAD 2041",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125868-apscwA5S0lOs.jpg",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/02/0000114502.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125868-apscwA5S0lOs.jpg",
     "yearSeason": "2021 夏",
     "genres": [
@@ -28141,18 +28142,6 @@
     ]
   },
   {
-    "id": "anilist-21298",
-    "titleZh": "南鎌倉高校女子自行車社",
-    "titleEn": "Minami Kamakura High School Girls Cycling Club",
-    "titleJa": "南鎌倉高校女子自転車部",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
-    "yearSeason": "2017 冬",
-    "genres": [
-      "運動"
-    ]
-  },
-  {
     "id": "anilist-98059",
     "titleZh": "KiraKira☆光之美少女 A La Mode",
     "titleEn": "KIRA KIRA☆PRECURE A LA MODE",
@@ -28166,6 +28155,18 @@
       "魔法少女",
       "日常",
       "超能力"
+    ]
+  },
+  {
+    "id": "anilist-21298",
+    "titleZh": "南鎌倉高校女子自行車社",
+    "titleEn": "Minami Kamakura High School Girls Cycling Club",
+    "titleJa": "南鎌倉高校女子自転車部",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
+    "yearSeason": "2017 冬",
+    "genres": [
+      "運動"
     ]
   },
   {
@@ -43470,6 +43471,19 @@
     ]
   },
   {
+    "id": "anilist-10049",
+    "titleZh": "百鬼小當家 千年魔京",
+    "titleEn": "Nura: Rise of the Yokai Clan - Demon Capital",
+    "titleJa": "ぬらりひょんの孫 千年魔京",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/04/0000042404.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10049-Plf9sTuf1fvc.jpg",
+    "yearSeason": "2011 夏",
+    "genres": [
+      "動作",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-10805",
     "titleZh": "只有神知道的世界 四人與偶像",
     "titleEn": "The World God Only Knows: 4 Girls and an Idol",
@@ -43480,19 +43494,6 @@
     "genres": [
       "喜劇",
       "愛情",
-      "超自然"
-    ]
-  },
-  {
-    "id": "anilist-10049",
-    "titleZh": "百鬼小當家 千年魔京",
-    "titleEn": "Nura: Rise of the Yokai Clan - Demon Capital",
-    "titleJa": "ぬらりひょんの孫 千年魔京",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/04/0000042404.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10049-Plf9sTuf1fvc.jpg",
-    "yearSeason": "2011 夏",
-    "genres": [
-      "動作",
       "超自然"
     ]
   },

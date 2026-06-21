@@ -440,6 +440,20 @@
     ]
   },
   {
+    "id": "anilist-204466",
+    "titleZh": "少女怪獸焦糖戀心",
+    "titleEn": "KAIJU GIRL CARAMELISE",
+    "titleJa": "乙女怪獣キャラメリゼ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-vXMvIs4VOoQd.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-vXMvIs4VOoQd.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-209961",
     "titleZh": "死亡遊戱で飯を食う。44:CLOUDY BEACH",
     "titleEn": "",
@@ -452,20 +466,6 @@
       "劇情",
       "懸疑",
       "驚悚"
-    ]
-  },
-  {
-    "id": "anilist-204466",
-    "titleZh": "少女怪獸焦糖戀心",
-    "titleEn": "KAIJU GIRL CARAMELISE",
-    "titleJa": "乙女怪獣キャラメリゼ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-vXMvIs4VOoQd.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-vXMvIs4VOoQd.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "超自然"
     ]
   },
   {
@@ -1201,6 +1201,19 @@
     ]
   },
   {
+    "id": "anilist-195333",
+    "titleZh": "灰原同學重返過去，開啟所向無敵的第二輪青春遊戲",
+    "titleEn": "Haibara's Teenage New Game+",
+    "titleJa": "灰原くんの強くて青春ニューゲーム",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195333-KUIF1eqOdVdd.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195333-KUIF1eqOdVdd.png",
+    "yearSeason": "2026 春",
+    "genres": [
+      "愛情",
+      "日常"
+    ]
+  },
+  {
     "id": "anilist-179813",
     "titleZh": "ROOSTER FIGHTER 怒火雞頭",
     "titleEn": "Rooster Fighter",
@@ -1214,19 +1227,6 @@
       "喜劇",
       "超自然",
       "超能力"
-    ]
-  },
-  {
-    "id": "anilist-195333",
-    "titleZh": "灰原同學重返過去，開啟所向無敵的第二輪青春遊戲",
-    "titleEn": "Haibara's Teenage New Game+",
-    "titleJa": "灰原くんの強くて青春ニューゲーム",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195333-KUIF1eqOdVdd.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195333-KUIF1eqOdVdd.png",
-    "yearSeason": "2026 春",
-    "genres": [
-      "愛情",
-      "日常"
     ]
   },
   {
@@ -1312,6 +1312,20 @@
     ]
   },
   {
+    "id": "anilist-202381",
+    "titleZh": "你又被殺了呢，偵探大人",
+    "titleEn": "Killed again, Mr. Detective.",
+    "titleJa": "また殺されてしまったのですね、探偵様",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/31/0000148231.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202381-bxgyUXGtGtZj.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "懸疑",
+      "心理",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-196012",
     "titleZh": "MAO 摩緒",
     "titleEn": "MAO",
@@ -1323,20 +1337,6 @@
       "劇情",
       "懸疑",
       "愛情",
-      "超自然"
-    ]
-  },
-  {
-    "id": "anilist-202381",
-    "titleZh": "你又被殺了呢，偵探大人",
-    "titleEn": "Killed again, Mr. Detective.",
-    "titleJa": "また殺されてしまったのですね、探偵様",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/31/0000148231.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202381-bxgyUXGtGtZj.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "懸疑",
-      "心理",
       "超自然"
     ]
   },
@@ -4061,6 +4061,7 @@
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181839-pgM02tCNM2ae.png",
     "yearSeason": "2025 春",
     "genres": [
+      "動作",
       "劇情",
       "奇幻",
       "日常"
@@ -8409,6 +8410,19 @@
     ]
   },
   {
+    "id": "anilist-156184",
+    "titleZh": "想當冒險者前往都市的女兒成為 S 級",
+    "titleEn": "My Daughter Left the Nest and Returned an S-Rank Adventurer",
+    "titleJa": "冒険者になりたいと都に出て行った娘がＳランクになってた",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/19/0000133419.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156184-mrU1zLqpnMSK.jpg",
+    "yearSeason": "2023 秋",
+    "genres": [
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-146206",
     "titleZh": "聖女魔力無所不能 第二季",
     "titleEn": "The Saint's Magic Power is Omnipotent II",
@@ -8421,19 +8435,6 @@
       "愛情",
       "日常",
       "異世界"
-    ]
-  },
-  {
-    "id": "anilist-156184",
-    "titleZh": "想當冒險者前往都市的女兒成為 S 級",
-    "titleEn": "My Daughter Left the Nest and Returned an S-Rank Adventurer",
-    "titleJa": "冒険者になりたいと都に出て行った娘がＳランクになってた",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/19/0000133419.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156184-mrU1zLqpnMSK.jpg",
-    "yearSeason": "2023 秋",
-    "genres": [
-      "冒險",
-      "奇幻"
     ]
   },
   {
@@ -9623,6 +9624,20 @@
     ]
   },
   {
+    "id": "anilist-154967",
+    "titleZh": "青春豬頭少年不會夢到嬌憐外出妹",
+    "titleEn": "Rascal Does Not Dream of a Sister Venturing Out",
+    "titleJa": "青春ブタ野郎はおでかけシスターの夢を見ない",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/87/0000127587.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154967-W9cIm0qlz6fj.jpg",
+    "yearSeason": "2023 春",
+    "genres": [
+      "劇情",
+      "心理",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-148048",
     "titleZh": "無神世界的神明活動",
     "titleEn": "KamiKatsu: Working for God in a Godless World",
@@ -9638,20 +9653,6 @@
       "奇幻",
       "異世界",
       "超能力"
-    ]
-  },
-  {
-    "id": "anilist-154967",
-    "titleZh": "青春豬頭少年不會夢到嬌憐外出妹",
-    "titleEn": "Rascal Does Not Dream of a Sister Venturing Out",
-    "titleJa": "青春ブタ野郎はおでかけシスターの夢を見ない",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/87/0000127587.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154967-W9cIm0qlz6fj.jpg",
-    "yearSeason": "2023 春",
-    "genres": [
-      "劇情",
-      "心理",
-      "超自然"
     ]
   },
   {
@@ -10749,7 +10750,8 @@
     "yearSeason": "2023 冬",
     "genres": [
       "劇情",
-      "奇幻"
+      "奇幻",
+      "科幻"
     ]
   },
   {
@@ -13208,20 +13210,6 @@
     ]
   },
   {
-    "id": "anilist-127050",
-    "titleZh": "相愛相殺",
-    "titleEn": "Love of Kill",
-    "titleJa": "殺し愛",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/90/0000118590.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127050-kJ3pIbJzLDYT.png",
-    "yearSeason": "2022 冬",
-    "genres": [
-      "動作",
-      "心理",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-139589",
     "titleZh": "小太郎一個人生活",
     "titleEn": "Kotaro Lives Alone",
@@ -13233,6 +13221,20 @@
       "喜劇",
       "劇情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-127050",
+    "titleZh": "相愛相殺",
+    "titleEn": "Love of Kill",
+    "titleJa": "殺し愛",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/90/0000118590.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127050-kJ3pIbJzLDYT.png",
+    "yearSeason": "2022 冬",
+    "genres": [
+      "動作",
+      "心理",
+      "愛情"
     ]
   },
   {
@@ -19260,20 +19262,6 @@
     ]
   },
   {
-    "id": "anilist-101634",
-    "titleZh": "BanG Dream! 第3季",
-    "titleEn": "BanG Dream! 3rd Season",
-    "titleJa": "BanG Dream! 3rd Season",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/13/0000097713.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101634-4PSQAU2bw7s3.png",
-    "yearSeason": "2020 冬",
-    "genres": [
-      "喜劇",
-      "音樂",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-108450",
     "titleZh": "空挺 Dragons",
     "titleEn": "Drifting Dragons",
@@ -19285,6 +19273,20 @@
       "動作",
       "冒險",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-101634",
+    "titleZh": "BanG Dream! 第3季",
+    "titleEn": "BanG Dream! 3rd Season",
+    "titleJa": "BanG Dream! 3rd Season",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/13/0000097713.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101634-4PSQAU2bw7s3.png",
+    "yearSeason": "2020 冬",
+    "genres": [
+      "喜劇",
+      "音樂",
+      "日常"
     ]
   },
   {
@@ -21843,6 +21845,19 @@
     ]
   },
   {
+    "id": "anilist-100878",
+    "titleZh": "劇場版 幼女戦記",
+    "titleEn": "Saga of Tanya the Evil - the Movie -",
+    "titleJa": "劇場版 幼女戦記",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100878-npKVJvggmK6a.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100878-npKVJvggmK6a.jpg",
+    "yearSeason": "2019 冬",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-97880",
     "titleZh": "Code Geass 復活的魯路修",
     "titleEn": "Code Geass: Lelouch of the Re;surrection",
@@ -21856,19 +21871,6 @@
       "機甲",
       "科幻",
       "超能力"
-    ]
-  },
-  {
-    "id": "anilist-100878",
-    "titleZh": "劇場版 幼女戦記",
-    "titleEn": "Saga of Tanya the Evil - the Movie -",
-    "titleJa": "劇場版 幼女戦記",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100878-npKVJvggmK6a.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100878-npKVJvggmK6a.jpg",
-    "yearSeason": "2019 冬",
-    "genres": [
-      "動作",
-      "奇幻"
     ]
   },
   {
@@ -35361,7 +35363,7 @@
     "id": "anilist-20842",
     "titleZh": "新劇場版 頭文字D Legend1 -覺醒-",
     "titleEn": "Initial D Legend 1: Awakening",
-    "titleJa": "新劇場版 頭文字D Legend1-覚醒-",
+    "titleJa": "新劇場版 頭文字[イニシャル]D Legend1-覚醒-",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20842.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20842.jpg",
     "yearSeason": "2014 夏",
@@ -35772,7 +35774,7 @@
     "id": "anilist-19613",
     "titleZh": "頭文字D Final Stage",
     "titleEn": "",
-    "titleJa": "頭文字〈イニシャル〉D Final Stage",
+    "titleJa": "頭文字[イニシャル]D Final Stage",
     "coverImage": "http://i0.hdslb.com/bfs/bangumi/image/7c84f2494cb97c77b3296326e1b67480b47fb87e.png",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19613-5vb40lsFXudd.png",
     "yearSeason": "2014 春",
@@ -36521,21 +36523,6 @@
     ]
   },
   {
-    "id": "anilist-20501",
-    "titleZh": "阿茹茉妮",
-    "titleEn": "",
-    "titleJa": "アルモニ",
-    "coverImage": "http://i0.hdslb.com/bfs/bangumi/a7800c67a364bfe653cbfce37563179525fe750a.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20501-wWfXc58E3mDv.jpg",
-    "yearSeason": "2014 冬",
-    "genres": [
-      "劇情",
-      "奇幻",
-      "心理",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-20478",
     "titleZh": "夏目友人帳 曾幾何時下雪之日",
     "titleEn": "Natsume's Book of Friends OVA",
@@ -36547,6 +36534,21 @@
       "劇情",
       "奇幻",
       "日常",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-20501",
+    "titleZh": "阿茹茉妮",
+    "titleEn": "",
+    "titleJa": "アルモニ",
+    "coverImage": "http://i0.hdslb.com/bfs/bangumi/a7800c67a364bfe653cbfce37563179525fe750a.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20501-wWfXc58E3mDv.jpg",
+    "yearSeason": "2014 冬",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "心理",
       "超自然"
     ]
   },
@@ -38636,20 +38638,6 @@
     ]
   },
   {
-    "id": "anilist-12711",
-    "titleZh": "歌之王子殿下 真愛2000%",
-    "titleEn": "Uta no Prince Sama 2",
-    "titleJa": "うたの☆プリンスさまっ♪ マジLOVE2000%",
-    "coverImage": "http://i0.hdslb.com/bfs/bangumi/62308249815ce7a3883e8b35656d42e655ec9c70.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12711-L2zKL1kjYMio.png",
-    "yearSeason": "2013 春",
-    "genres": [
-      "喜劇",
-      "音樂",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-14893",
     "titleZh": "だから僕は、Ｈができない 。 見えすぎ! 水著コンテスト",
     "titleEn": "So, I Can't Play H?",
@@ -38660,6 +38648,20 @@
     "genres": [
       "喜劇",
       "福利",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-12711",
+    "titleZh": "歌之王子殿下 真愛2000%",
+    "titleEn": "Uta no Prince Sama 2",
+    "titleJa": "うたの☆プリンスさまっ♪ マジLOVE2000%",
+    "coverImage": "http://i0.hdslb.com/bfs/bangumi/62308249815ce7a3883e8b35656d42e655ec9c70.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12711-L2zKL1kjYMio.png",
+    "yearSeason": "2013 春",
+    "genres": [
+      "喜劇",
+      "音樂",
       "愛情"
     ]
   },
@@ -39617,24 +39619,24 @@
     ]
   },
   {
-    "id": "anilist-16317",
-    "titleZh": "石田和朝倉",
-    "titleEn": "Ishida and Asakura",
-    "titleJa": "石田とあさくら",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/16317.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/16317.jpg",
-    "yearSeason": "2013 冬",
-    "genres": [
-      "喜劇"
-    ]
-  },
-  {
     "id": "anilist-15925",
     "titleZh": "映畫ドラえもん のび太のひみつ道具博物館[ミュージアム]",
     "titleEn": "",
     "titleJa": "映画ドラえもん のび太のひみつ道具博物館[ミュージアム]",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15925-PvuI9IJVNBmd.jpg",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15925-PvuI9IJVNBmd.jpg",
+    "yearSeason": "2013 冬",
+    "genres": [
+      "喜劇"
+    ]
+  },
+  {
+    "id": "anilist-16317",
+    "titleZh": "石田和朝倉",
+    "titleEn": "Ishida and Asakura",
+    "titleJa": "石田とあさくら",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/16317.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/16317.jpg",
     "yearSeason": "2013 冬",
     "genres": [
       "喜劇"
@@ -40063,7 +40065,7 @@
     "id": "anilist-15059",
     "titleZh": "頭文字D Fifth Stage",
     "titleEn": "",
-    "titleJa": "頭文字〈イニシャル〉D Fifth Stage",
+    "titleJa": "頭文字[イニシャル]D Fifth Stage",
     "coverImage": "http://i0.hdslb.com/bfs/bangumi/image/5ac4b3b90323cf33ff02f4113c7a1ed6856888bb.png",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/15059.jpg",
     "yearSeason": "2012 秋",

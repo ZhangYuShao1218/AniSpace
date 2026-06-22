@@ -241,7 +241,23 @@ export const translations = {
     modeBingoDesc: '生成一張 5x5 的動畫賓果圖。',
     bingoInstruction: 'AniSpace 動畫賓果🎯來試試你看過幾部動畫！',
     anispaceLibrary: 'AniSpace 動畫庫',
-    privacyPolicy: '隱私權政策'
+    privacyPolicy: '隱私權政策',
+
+    // Tutorial
+    tutorialHelp: '幫助',
+    tutorialWelcome: '歡迎來到 AniSpace',
+    tutorialWelcomeDesc: '您的專屬跨平台動畫追蹤與管理平台。',
+    tutorialAddCustom: '新增自訂動畫',
+    tutorialAddCustomDesc: '找不到想看的動畫？點擊搜尋列的 "+" 隨時新增自訂動畫。',
+    tutorialSyncLatest: '獲取最新資訊',
+    tutorialSyncLatestDesc: '每日自動更新動畫資料，或手動點擊「下載最新動畫」保持資訊即時。',
+    tutorialCloudBackup: '雲端備份與隱私',
+    tutorialCloudBackupDesc: '登入 Google 給予權限即可同步至雲端。我們高度重視隱私，AniSpace 無權讀取您的私人雲端檔案，僅使用專屬的應用資料夾管理存檔。',
+    tutorialShare: '推坑他人',
+    tutorialShareDesc: '獨樂樂不如眾樂樂！使用「推坑別人」按鈕，快速將您喜愛的寶藏動畫分享給好友。',
+    tutorialStart: '開始使用',
+    tutorialNext: '下一步',
+    tutorialPrev: '上一步'
   },
   'en': {
     appTitle: 'AniSpace',
@@ -470,7 +486,23 @@ export const translations = {
     modeBingoDesc: 'Generate a 5x5 anime bingo card.',
     bingoInstruction: 'AniSpace Anime Bingo🎯 Let\'s see how many you\'ve watched!',
     anispaceLibrary: 'AniSpace Anime Library',
-    privacyPolicy: 'Privacy Policy'
+    privacyPolicy: 'Privacy Policy',
+
+    // Tutorial
+    tutorialHelp: 'Help',
+    tutorialWelcome: 'Welcome to AniSpace',
+    tutorialWelcomeDesc: 'Your exclusive cross-platform anime tracking and management platform.',
+    tutorialAddCustom: 'Add Custom Anime',
+    tutorialAddCustomDesc: 'Cannot find what you want to watch? Click the "+" in the search bar to add custom anime anytime.',
+    tutorialSyncLatest: 'Get Latest Info',
+    tutorialSyncLatestDesc: 'Anime data updates automatically daily, or manually click "Download Latest Anime" to stay up-to-date.',
+    tutorialCloudBackup: 'Cloud Backup & Privacy',
+    tutorialCloudBackupDesc: 'Login to Google and grant permissions to sync to the cloud. We value your privacy: AniSpace cannot read your personal cloud files and only uses a dedicated app folder for saves.',
+    tutorialShare: 'Share & Recommend',
+    tutorialShareDesc: 'Share your favorite masterpiece anime with friends quickly using the "Share" button.',
+    tutorialStart: 'Get Started',
+    tutorialNext: 'Next',
+    tutorialPrev: 'Prev'
   },
   'ja': {
     appTitle: 'AniSpace アニメ記録',
@@ -699,6 +731,22 @@ export const translations = {
     modeBingoDesc: '5x5のアニメビンゴカードを生成します。',
     bingoInstruction: 'AniSpace アニメビンゴ🎯 いくつ見たか試してみて！',
     anispaceLibrary: 'AniSpace アニメライブラリ',
-    privacyPolicy: 'プライバシーポリシー'
+    privacyPolicy: 'プライバシーポリシー',
+
+    // Tutorial
+    tutorialHelp: 'ヘルプ',
+    tutorialWelcome: 'AniSpaceへようこそ',
+    tutorialWelcomeDesc: 'あなた専用のクロスプラットフォームアニメ追跡・管理プラットフォーム。',
+    tutorialAddCustom: 'カスタムアニメの追加',
+    tutorialAddCustomDesc: '見たいアニメが見つかりませんか？検索バーの「+」をクリックしていつでも追加できます。',
+    tutorialSyncLatest: '最新情報の取得',
+    tutorialSyncLatestDesc: 'アニメデータは毎日自動更新されます。または「最新アニメ取得」を手動でクリックして最新状態を保ちます。',
+    tutorialCloudBackup: 'クラウドバックアップとプライバシー',
+    tutorialCloudBackupDesc: 'Googleにログインして権限を付与するとクラウドに同期できます。プライバシーを重視しており、AniSpaceは個人のクラウドファイルを読み取ることはできず、専用のアプリフォルダのみを使用します。',
+    tutorialShare: '布教する',
+    tutorialShareDesc: '「布教する」ボタンを使って、お気に入りの神アニメを友達に素早くシェアしましょう。',
+    tutorialStart: '始める',
+    tutorialNext: '次へ',
+    tutorialPrev: '前へ'
   }
 };

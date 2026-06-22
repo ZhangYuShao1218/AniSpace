@@ -47,9 +47,33 @@
   gap: var(--spacing-3);
 }
 
+/* Sync Latest Button Distinct Styling */
+.sync-latest-btn {
+  background: rgba(245, 158, 11, 0.25) !important;
+  border-color: rgba(245, 158, 11, 0.5) !important;
+  color: #fff;
+}
+
+.sync-latest-btn:hover {
+  background: rgba(245, 158, 11, 0.35) !important;
+  border-color: rgba(245, 158, 11, 0.7) !important;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
+}
+
+[data-theme="light"] .sync-latest-btn {
+  background: rgba(245, 158, 11, 0.2) !important;
+  border-color: rgba(245, 158, 11, 0.4) !important;
+  color: #92400e;
+}
+
+[data-theme="light"] .sync-latest-btn:hover {
+  background: rgba(245, 158, 11, 0.3) !important;
+  border-color: rgba(245, 158, 11, 0.6) !important;
+}
+
 @media (min-width: 1024px) and (max-width: 1280px) {
   .app-title {
-    font-size: clamp(1.5rem, calc(6.35vw - 41px), 2rem);
+    font-size: clamp(1.8rem, calc(3.75vw - 9.6px), 2.4rem);
   }
   .subtitle {
     font-size: clamp(0.95rem, calc(1.9vw - 4.25px), 1.1rem);
@@ -76,6 +100,10 @@
     gap: var(--spacing-4);
   }
   
+  .app-title {
+    font-size: 2rem;
+  }
+  
   .header-left {
     align-items: center;
     text-align: center;
@@ -94,16 +122,21 @@
     align-items: center;
     width: 100%;
     padding: 0 var(--spacing-3);
-    margin-bottom: var(--spacing-3);
-    gap: var(--spacing-2);
+    margin-bottom: calc(var(--spacing-3) + 3px);
+    gap: calc(var(--spacing-2) + 3px);
     height: 40px;
   }
   
   .header-nav-group > .btn-google,
   .header-nav-group .google-sync-btn-container {
     flex: 1;
-    max-width: 220px;
+    max-width: 250px;
     height: 100%;
+  }
+
+  .header-nav-group .btn-google {
+    width: 100%;
+    justify-content: center;
   }
 
   .desktop-nav-tabs {
@@ -118,13 +151,19 @@
     align-items: stretch;
     justify-content: center;
     padding: 0 var(--spacing-3);
-    gap: var(--spacing-2);
+    margin-bottom: 3px;
+    gap: calc(var(--spacing-2) + 3px);
     height: 40px;
   }
   
-  .sync-latest-btn {
+  .sync-latest-wrapper {
     flex: 1;
-    max-width: 280px;
+    max-width: 250px;
+    height: 100%;
+  }
+
+  .sync-latest-btn {
+    width: 100%;
     padding: 0 16px;
     justify-content: center;
     height: 100%;
@@ -152,8 +191,13 @@
     display: flex;
     align-items: stretch;
     flex: 1;
-    max-width: 260px;
+    max-width: 250px;
     height: 100%;
+  }
+
+  .header-nav-group > .btn-google,
+  .header-nav-group .google-sync-btn-container {
+    max-width: 250px;
   }
   
   .mobile-nav-select {

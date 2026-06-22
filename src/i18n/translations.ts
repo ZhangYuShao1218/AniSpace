@@ -9,7 +9,7 @@ export const translations = {
     navPlanToWatch: '期待動畫',
     navRecords: '動畫紀錄',
     navSettings: '設定',
-    syncLatestAnime: '同步最新動畫',
+    syncLatestAnime: '下載最新動畫',
 
     // Search & Filter
     searchPlaceholder: '搜尋動畫名稱...',
@@ -79,6 +79,7 @@ export const translations = {
     autoBackup: '自動備份',
     clearRecords: '清除動畫紀錄',
     clearAllData: '清除所有資料',
+    websiteVersion: '網頁版',
 
     // Share
     shareMyList: '分享我的名單',
@@ -249,7 +250,7 @@ export const translations = {
     navPlanToWatch: 'Plan to Watch',
     navRecords: 'My Records',
     navSettings: 'Settings',
-    syncLatestAnime: 'Sync Latest Anime Data',
+    syncLatestAnime: 'Download Latest Anime',
 
     searchPlaceholder: 'Search anime...',
     allStatus: 'All Status',
@@ -312,6 +313,7 @@ export const translations = {
     autoBackup: 'Auto Sync',
     clearRecords: 'Clear Records',
     clearAllData: 'Clear All Data',
+    websiteVersion: 'Web Version',
 
     shareMyList: 'Share My List',
     shareTitle: 'Share Your Anime List',
@@ -477,7 +479,7 @@ export const translations = {
     navPlanToWatch: '期待のアニメ',
     navRecords: 'アニメ記録',
     navSettings: '設定',
-    syncLatestAnime: '最新アニメを同期',
+    syncLatestAnime: '最新アニメ取得',
 
     searchPlaceholder: 'アニメを検索...',
     allStatus: 'すべての状態',
@@ -540,6 +542,7 @@ export const translations = {
     autoBackup: '自動保存',
     clearRecords: '記録クリア',
     clearAllData: '全データ消去',
+    websiteVersion: 'ウェブ版',
 
     shareMyList: 'リストを共有',
     shareTitle: 'アニメ記録を共有',

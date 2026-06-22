@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
-import { Layers, DownloadCloud, Loader2, Menu } from 'lucide-react';
+import { Layers, Download, Loader2, Menu, Clock } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useAdMob } from '@/contexts/AdMobContext';
@@ -13,7 +13,8 @@ const AppHeader: React.FC = () => {
   const {
     handleSync,
     isScraping,
-    scrapeProgress
+    scrapeProgress,
+    lastSyncTimeFormatted
   } = useAnime();
   
   const { t } = useLanguage();
@@ -122,27 +123,43 @@ const AppHeader: React.FC = () => {
               <div style={{ flex: 1 }}>
                 <GoogleSyncButton />
               </div>
-              <button
-                className="btn-glass sync-latest-btn"
-                onClick={handleSync}
-                disabled={isScraping}
-                style={{ flex: 1, height: '38px', justifyContent: 'center' }}
-              >
-                {isScraping ? <Loader2 className="animate-spin" size={16} /> : <DownloadCloud size={16} />}
-                <span className="btn-text" style={isNative ? { display: 'inline-block' } : {}}>{isScraping && scrapeProgress ? t(scrapeProgress as any) : t('syncLatestAnime')}</span>
-              </button>
+              <div className="sync-latest-wrapper" style={{ position: 'relative', display: 'flex', flex: 1, height: '38px' }}>
+                <button
+                  className="btn-glass sync-latest-btn"
+                  onClick={handleSync}
+                  disabled={isScraping}
+                  style={{ width: '100%', height: '100%', justifyContent: 'center' }}
+                >
+                  {isScraping ? <Loader2 className="animate-spin" size={16} /> : <Download size={16} />}
+                  <span className="btn-text" style={{ display: 'inline-block' }}>{isScraping && scrapeProgress ? t(scrapeProgress as any) : t('syncLatestAnime')}</span>
+                </button>
+                {lastSyncTimeFormatted && (
+                  <span className="sync-time-text" style={{ display: 'flex', alignItems: 'center', gap: '4px', justifyContent: 'center' }}>
+                    <Clock size={12} />
+                    {lastSyncTimeFormatted}
+                  </span>
+                )}
+              </div>
             </div>
           )}
           
           {!isNative && (
-            <button
-              className="btn-glass sync-latest-btn"
-              onClick={handleSync}
-              disabled={isScraping}
-            >
-              {isScraping ? <Loader2 className="animate-spin" size={16} /> : <DownloadCloud size={16} />}
-              <span className="btn-text">{isScraping && scrapeProgress ? t(scrapeProgress as any) : t('syncLatestAnime')}</span>
-            </button>
+            <div className="sync-latest-wrapper" style={{ position: 'relative', display: 'flex' }}>
+              <button
+                className="btn-glass sync-latest-btn"
+                onClick={handleSync}
+                disabled={isScraping}
+              >
+                {isScraping ? <Loader2 className="animate-spin" size={16} /> : <Download size={16} />}
+                <span className="btn-text">{isScraping && scrapeProgress ? t(scrapeProgress as any) : t('syncLatestAnime')}</span>
+              </button>
+              {lastSyncTimeFormatted && (
+                <span className="sync-time-text" style={{ display: 'flex', alignItems: 'center', gap: '4px', justifyContent: 'center' }}>
+                  <Clock size={12} />
+                  {lastSyncTimeFormatted}
+                </span>
+              )}
+            </div>
           )}
 
           <ImportExportButtons />

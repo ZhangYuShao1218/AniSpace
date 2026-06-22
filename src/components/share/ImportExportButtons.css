@@ -14,7 +14,7 @@
 @media (max-width: 1023px) {
   .import-export-container {
     flex: 1;
-    max-width: 140px;
+    max-width: 250px;
     margin-top: 0; 
     gap: var(--spacing-1);
     height: 100%;
@@ -68,7 +68,17 @@
 .settings-dropdown-container {
   position: relative;
   display: inline-block;
-  margin-left: var(--spacing-2);
+}
+
+.import-export-container .settings-dropdown-container {
+  margin-left: 0;
+  display: flex;
+  width: 100%;
+}
+
+.import-export-container .settings-btn {
+  width: 100%;
+  justify-content: center;
 }
 
 .settings-btn {

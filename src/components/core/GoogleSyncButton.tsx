@@ -1,6 +1,6 @@
 import React from 'react';
 import '@/components/core/GoogleSyncButton.css';
-import { CloudUpload, Loader2, LogOut } from 'lucide-react';
+import { CloudUpload, Loader2, LogOut, Clock } from 'lucide-react';
 import { useGoogleSync } from '@/contexts/GoogleSyncContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -76,8 +76,9 @@ const GoogleSyncButton: React.FC = () => {
           {isSyncing ? t('syncing') : t('syncToCloud')}
         </button>
         {lastSyncTime && (
-          <span className="sync-time-text">
-            {t('lastSync')} {lastSyncTime}
+          <span className="sync-time-text" style={{ display: 'flex', alignItems: 'center', gap: '4px', justifyContent: 'center' }}>
+            <Clock size={12} />
+            {lastSyncTime}
           </span>
         )}
       </div>

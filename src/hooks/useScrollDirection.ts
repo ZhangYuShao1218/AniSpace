@@ -26,7 +26,7 @@ export const useScrollDirection = () => {
       }
 
       // Check if we hit the bottom
-      const isAtBottom = window.innerHeight + scrollY >= document.body.offsetHeight - 50;
+      const isAtBottom = window.innerHeight + scrollY >= document.body.offsetHeight - 20;
       if (isAtBottom) {
         setScrollDirection('up'); // Always show nav at the very bottom
       } else {

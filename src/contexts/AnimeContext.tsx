@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
 import type { Anime, WatchedAnime } from '@/types';
-import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY } from '@/utils/constants';
+import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY, LAST_SYNC_TIME_KEY } from '@/utils/constants';
 
 import { useTitleCorrections } from '@/hooks/useTitleCorrections';
 
@@ -57,6 +57,7 @@ interface AnimeContextType {
   planToWatchList: Anime[];
   isScraping: boolean;
   scrapeProgress: string;
+  lastSyncTimeFormatted: string | null;
   handleSync: () => Promise<void>;
   handleAddCustomAnime: (anime: Anime) => void;
   handleImportCustomAnime: (importedData: Anime[]) => void;
@@ -94,51 +95,28 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   });
   const [isScraping, setIsScraping] = useState<boolean>(false);
   const [scrapeProgress, setScrapeProgress] = useState<string>('');
-  
+
+  const [lastSyncTime, setLastSyncTime] = useState<number>(() => {
+    const saved = localStorage.getItem(LAST_SYNC_TIME_KEY);
+    return saved ? parseInt(saved, 10) : 0;
+  });
+
+  const lastSyncTimeFormatted = useMemo(() => {
+    if (!lastSyncTime) return null;
+    const now = new Date(lastSyncTime);
+    return `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()} ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+  }, [lastSyncTime]);
 
   const { corrections, setCorrection, getCorrectedTitle, handleImportCorrections, clearCorrections } = useTitleCorrections();
-
-  useEffect(() => {
-    let loadedData: Anime[] = [];
-    const cachedData = localStorage.getItem(CACHED_DATA_KEY);
-    if (cachedData) {
-      try {
-        const parsed = JSON.parse(cachedData);
-        if (parsed.length > 0) {
-          loadedData = parsed;
-          setRemoteAnime(parsed);
-        }
-      } catch (e) { }
-    }
-
-    if (loadedData.length === 0) {
-      fetchAndMergeAnimeData().then(data => {
-        if (data && data.length > 0) {
-          setRemoteAnime(data);
-          localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(data));
-        }
-      });
-    }
-
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(watchedList));
-  }, [watchedList]);
-
-  useEffect(() => {
-    localStorage.setItem(PLAN_TO_WATCH_KEY, JSON.stringify(planToWatchList));
-  }, [planToWatchList]);
-
-  useEffect(() => {
-    localStorage.setItem(CUSTOM_ANIME_KEY, JSON.stringify(customAnimeList));
-  }, [customAnimeList]);
 
   const handleSync = useCallback(async () => {
     setIsScraping(true);
     setScrapeProgress('syncingRemoteDB');
     const startTime = Date.now();
     try {
+      const nowMs = Date.now();
+      localStorage.setItem(LAST_SYNC_TIME_KEY, nowMs.toString());
+      setLastSyncTime(nowMs);
       const data = await fetchAndMergeAnimeData();
       const elapsed = Date.now() - startTime;
       if (elapsed < 800) await new Promise(r => setTimeout(r, 800 - elapsed));
@@ -160,6 +138,43 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }, 2000);
     }
   }, []);
+
+  useEffect(() => {
+    let loadedData: Anime[] = [];
+    const cachedData = localStorage.getItem(CACHED_DATA_KEY);
+    if (cachedData) {
+      try {
+        const parsed = JSON.parse(cachedData);
+        if (parsed.length > 0) {
+          loadedData = parsed;
+          setRemoteAnime(parsed);
+        }
+      } catch (e) { }
+    }
+
+    const lastSyncTimeStr = localStorage.getItem(LAST_SYNC_TIME_KEY);
+    const lastSyncTime = lastSyncTimeStr ? parseInt(lastSyncTimeStr, 10) : 0;
+    const oneDayInMs = 24 * 60 * 60 * 1000;
+    const isOverOneDay = Date.now() - lastSyncTime > oneDayInMs;
+
+    if (loadedData.length === 0 || isOverOneDay) {
+      handleSync();
+    }
+  }, [handleSync]);
+
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(watchedList));
+  }, [watchedList]);
+
+  useEffect(() => {
+    localStorage.setItem(PLAN_TO_WATCH_KEY, JSON.stringify(planToWatchList));
+  }, [planToWatchList]);
+
+  useEffect(() => {
+    localStorage.setItem(CUSTOM_ANIME_KEY, JSON.stringify(customAnimeList));
+  }, [customAnimeList]);
+
+
 
   const handleAddCustomAnime = useCallback((anime: Anime) => {
     setCustomAnimeList(prev => [anime, ...prev]);
@@ -238,6 +253,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     planToWatchList,
     isScraping,
     scrapeProgress,
+    lastSyncTimeFormatted,
     handleSync,
     handleAddCustomAnime,
     handleImportCustomAnime,
@@ -254,7 +270,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     handleClearRecords,
     handleClearAllData
   }), [
-    allAnime, customAnimeList, watchedList, planToWatchList, isScraping, scrapeProgress, corrections,
+    allAnime, customAnimeList, watchedList, planToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, corrections,
     handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
     handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, getCorrectedTitle,
     handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData

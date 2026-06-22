@@ -168,7 +168,7 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
               <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
             </>
 
-            {!isNative && (
+            {!isNative ? (
               <>
                 <button 
                   className="dropdown-item" 
@@ -185,6 +185,25 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
                     <path fill="#34a853" d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z"/>
                   </svg>
                   Google Play
+                </button>
+                <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+              </>
+            ) : (
+              <>
+                <button 
+                  className="dropdown-item" 
+                  onClick={() => {
+                    window.open('https://anispace.zhangyushao.dev/', '_blank');
+                    setIsSettingsOpen(false);
+                  }} 
+                  style={{ fontSize: '0.9rem', color: 'var(--text-primary)', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#3b82f6' }}>
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  {t('websiteVersion')}
                 </button>
                 <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
               </>

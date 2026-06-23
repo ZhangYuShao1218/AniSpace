@@ -90,9 +90,25 @@ const TutorialModal: React.FC<TutorialModalProps> = ({ isOpen, onClose }) => {
           boxShadow: '0 25px 60px rgba(0, 0, 0, 0.6)'
         }}
       >
-        {/* Top Image Area (Fade Animation) */}
-        <div key={`img-${currentSlide}`} className="fade-in" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-          {slides[currentSlide].icon}
+        {/* Top Image Area (Fade Animation with Grid Stacking) */}
+        <div style={{ display: 'grid', width: '100%' }}>
+          {slides.map((slide, index) => (
+            <div 
+              key={slide.id} 
+              style={{ 
+                gridArea: '1 / 1 / 2 / 2',
+                display: 'flex', 
+                justifyContent: 'center', 
+                width: '100%',
+                opacity: index === currentSlide ? 1 : 0,
+                transition: 'opacity 0.3s ease',
+                pointerEvents: index === currentSlide ? 'auto' : 'none',
+                zIndex: index === currentSlide ? 1 : 0
+              }}
+            >
+              {slide.icon}
+            </div>
+          ))}
         </div>
 
         {/* Divider with 10px spacing top and bottom */}

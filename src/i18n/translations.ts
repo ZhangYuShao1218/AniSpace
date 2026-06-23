@@ -232,16 +232,18 @@ export const translations = {
     modeSheetDesc: '完整輸出所有資料至 Google Drive 試算表。',
     modeGrid4: '4格圖片',
     modeGrid4Desc: '精選 4 部動畫，適合放在社群軟體或限時動態分享。',
-    modeGrid9: '9宮格圖片',
-    modeGrid9Desc: '精選 9 部動畫，非常適合用來製作九宮格推薦。',
-    modeGrid16: '16格圖片',
-    modeGrid16Desc: '精選 16 部動畫，適合做為季番或年度的大回顧。',
+    modeGrid9: '9格圖片',
+    modeGrid9Desc: '精選 9 部動畫，非常適合用來製作九格推薦。',
+    modeGrid16: '16宮格圖片',
+    modeGrid16Desc: '挑選 16 部動畫，一次展示更多您的收藏。',
     modeGridDesc: '選擇 {num} 部動畫生成拼圖，\n和朋友分享你的神作吧',
-    modeBingo: '25宮格賓果',
+    modeBingo: '25格賓果',
     modeBingoDesc: '生成一張 5x5 的動畫賓果圖。',
     bingoInstruction: 'AniSpace 動畫賓果🎯來試試你看過幾部動畫！',
     anispaceLibrary: 'AniSpace 動畫庫',
     privacyPolicy: '隱私權政策',
+    notice: '提示',
+    sheetMobileNotice: '由於 Google 試算表 App 限制，在手機或平板上開啟時，您可能需要先點擊「允許存取外部圖片」或類似的授權選項，才能正常顯示動畫封面。',
 
     // Tutorial
     tutorialHelp: '幫助',
@@ -487,6 +489,8 @@ export const translations = {
     bingoInstruction: 'AniSpace Anime Bingo🎯 Let\'s see how many you\'ve watched!',
     anispaceLibrary: 'AniSpace Anime Library',
     privacyPolicy: 'Privacy Policy',
+    notice: 'Notice',
+    sheetMobileNotice: 'Due to Google Sheets App limitations on mobile/tablet devices, you may need to tap "Allow external images" or a similar authorization option to display anime covers properly.',
 
     // Tutorial
     tutorialHelp: 'Help',
@@ -732,6 +736,8 @@ export const translations = {
     bingoInstruction: 'AniSpace アニメビンゴ🎯 いくつ見たか試してみて！',
     anispaceLibrary: 'AniSpace アニメライブラリ',
     privacyPolicy: 'プライバシーポリシー',
+    notice: '通知',
+    sheetMobileNotice: 'Googleスプレッドシートアプリの制限により、スマートフォンやタブレットで開く際、アニメのカバー画像を正しく表示するために「外部画像のアクセスを許可」などのオプションをタップする必要がある場合があります。',
 
     // Tutorial
     tutorialHelp: 'ヘルプ',

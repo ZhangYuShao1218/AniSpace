@@ -48,8 +48,8 @@
     "titleZh": "BLEACH 千年血戰篇-禍進譚-",
     "titleEn": "BLEACH: Thousand-Year Blood War - The Calamity",
     "titleJa": "BLEACH 千年血戦篇-禍進譚-",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-Oxopn5t9hZj1.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-Oxopn5t9hZj1.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -89,8 +89,8 @@
     "titleZh": "女性向遊戲世界對路人角色很不友好2",
     "titleEn": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
     "titleJa": "乙女ゲー世界はモブに厳しい世界です2",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-lgzVE2LnHelv.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-lgzVE2LnHelv.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-wRfh9O1odrDJ.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-wRfh9O1odrDJ.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "動作",
@@ -261,8 +261,8 @@
     "titleZh": "穹廬下的魔女",
     "titleEn": "Jaadugar: A Witch in Mongolia",
     "titleJa": "天幕のジャードゥーガル",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-xkFjq9u9IeSr.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-xkFjq9u9IeSr.jpg",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-KnCQLI3Z8hPX.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-KnCQLI3Z8hPX.jpg",
     "yearSeason": "2026 夏",
     "genres": [
       "劇情"
@@ -413,6 +413,19 @@
     ]
   },
   {
+    "id": "anilist-202269",
+    "titleZh": "與奔馳於透明之夜的你，談一場看不見的戀愛。",
+    "titleEn": "Love Unseen Beneath the Clear Night Sky",
+    "titleJa": "透明な夜に駆ける君と、目に見えない恋をした。",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-199748",
     "titleZh": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
     "titleEn": "I Became a Legend After My 10 Year-Long Last Stand",
@@ -424,19 +437,6 @@
       "動作",
       "冒險",
       "奇幻"
-    ]
-  },
-  {
-    "id": "anilist-202269",
-    "titleZh": "與奔馳於透明之夜的你，談一場看不見的戀愛。",
-    "titleEn": "Love Unseen Beneath the Clear Night Sky",
-    "titleJa": "透明な夜に駆ける君と、目に見えない恋をした。",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情",
-      "愛情"
     ]
   },
   {
@@ -509,19 +509,6 @@
     ]
   },
   {
-    "id": "anilist-108992",
-    "titleZh": "MEBIUS DUST",
-    "titleEn": "MEBIUS DUST",
-    "titleJa": "メビウス・ダスト",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-12A18HaisXXA.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-12A18HaisXXA.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "動作",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-196218",
     "titleZh": "領民0人スタートの辺境領主様",
     "titleEn": "",
@@ -536,6 +523,19 @@
       "奇幻",
       "愛情",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-108992",
+    "titleZh": "MEBIUS DUST",
+    "titleEn": "MEBIUS DUST",
+    "titleJa": "メビウス・ダスト",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-12A18HaisXXA.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108992-12A18HaisXXA.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "超自然"
     ]
   },
   {
@@ -608,6 +608,19 @@
     ]
   },
   {
+    "id": "anilist-192800",
+    "titleZh": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
+    "titleEn": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
+    "titleJa": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-207809",
     "titleZh": "赤河戀影",
     "titleEn": "",
@@ -621,19 +634,6 @@
       "劇情",
       "奇幻",
       "愛情"
-    ]
-  },
-  {
-    "id": "anilist-192800",
-    "titleZh": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
-    "titleEn": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
-    "titleJa": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "奇幻"
     ]
   },
   {
@@ -1016,6 +1016,18 @@
     ]
   },
   {
+    "id": "anilist-196935",
+    "titleZh": "朱音落語",
+    "titleEn": "Akane-banashi",
+    "titleJa": "あかね噺",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/92/0000146592.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196935-RnLWBsEvNp8M.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "劇情"
+    ]
+  },
+  {
     "id": "anilist-202102",
     "titleZh": "主播女孩重度依賴",
     "titleEn": "NEEDY GIRL OVERDOSE",
@@ -1028,18 +1040,6 @@
       "劇情",
       "心理",
       "日常"
-    ]
-  },
-  {
-    "id": "anilist-196935",
-    "titleZh": "朱音落語",
-    "titleEn": "Akane-banashi",
-    "titleJa": "あかね噺",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/92/0000146592.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196935-RnLWBsEvNp8M.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "劇情"
     ]
   },
   {
@@ -2674,6 +2674,20 @@
     ]
   },
   {
+    "id": "anilist-186524",
+    "titleZh": "不擅吸血的吸血鬼",
+    "titleEn": "Li'l Miss Vampire Can't Suck Right",
+    "titleJa": "ちゃんと吸えない吸血鬼ちゃん",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/38/0000143538.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186524-JSsyFR3FqTO8.jpg",
+    "yearSeason": "2025 秋",
+    "genres": [
+      "喜劇",
+      "日常",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-179930",
     "titleZh": "不死不幸 冬季篇",
     "titleEn": "Undead Unluck: Winter Arc",
@@ -2685,20 +2699,6 @@
       "動作",
       "喜劇",
       "科幻",
-      "超自然"
-    ]
-  },
-  {
-    "id": "anilist-186524",
-    "titleZh": "不擅吸血的吸血鬼",
-    "titleEn": "Li'l Miss Vampire Can't Suck Right",
-    "titleJa": "ちゃんと吸えない吸血鬼ちゃん",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/38/0000143538.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186524-JSsyFR3FqTO8.jpg",
-    "yearSeason": "2025 秋",
-    "genres": [
-      "喜劇",
-      "日常",
       "超自然"
     ]
   },
@@ -6155,20 +6155,6 @@
     ]
   },
   {
-    "id": "anilist-163133",
-    "titleZh": "學姊是男孩",
-    "titleEn": "Senpai is an Otokonoko",
-    "titleJa": "先輩はおとこのこ",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/85/0000131285.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163133-bdr9S2bdLoyj.jpg",
-    "yearSeason": "2024 夏",
-    "genres": [
-      "喜劇",
-      "劇情",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-167420",
     "titleZh": "尼爾：自動人形 Ver1.1a 第2部分",
     "titleEn": "NieR:Automata Ver1.1a Cour 2",
@@ -6183,6 +6169,20 @@
       "懸疑",
       "心理",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-163133",
+    "titleZh": "學姊是男孩",
+    "titleEn": "Senpai is an Otokonoko",
+    "titleJa": "先輩はおとこのこ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/85/0000131285.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163133-bdr9S2bdLoyj.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情"
     ]
   },
   {
@@ -13310,20 +13310,6 @@
     ]
   },
   {
-    "id": "anilist-119056",
-    "titleZh": "自稱賢者弟子的賢者",
-    "titleEn": "She Professed Herself Pupil of the Wise Man",
-    "titleJa": "賢者の弟子を名乗る賢者",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/84/0000111584.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119056-v9Ls3eKyf0Nf.png",
-    "yearSeason": "2022 冬",
-    "genres": [
-      "冒險",
-      "奇幻",
-      "異世界"
-    ]
-  },
-  {
     "id": "anilist-128034",
     "titleZh": "東方少年",
     "titleEn": "ORIENT",
@@ -13336,6 +13322,20 @@
       "冒險",
       "喜劇",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-119056",
+    "titleZh": "自稱賢者弟子的賢者",
+    "titleEn": "She Professed Herself Pupil of the Wise Man",
+    "titleJa": "賢者の弟子を名乗る賢者",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/84/0000111584.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119056-v9Ls3eKyf0Nf.png",
+    "yearSeason": "2022 冬",
+    "genres": [
+      "冒險",
+      "奇幻",
+      "異世界"
     ]
   },
   {
@@ -19262,20 +19262,6 @@
     ]
   },
   {
-    "id": "anilist-108450",
-    "titleZh": "空挺 Dragons",
-    "titleEn": "Drifting Dragons",
-    "titleJa": "空挺ドラゴンズ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
-    "yearSeason": "2020 冬",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-101634",
     "titleZh": "BanG Dream! 第3季",
     "titleEn": "BanG Dream! 3rd Season",
@@ -19287,6 +19273,20 @@
       "喜劇",
       "音樂",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-108450",
+    "titleZh": "空挺 Dragons",
+    "titleEn": "Drifting Dragons",
+    "titleJa": "空挺ドラゴンズ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
+    "yearSeason": "2020 冬",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
     ]
   },
   {
@@ -23210,7 +23210,8 @@
     "genres": [
       "喜劇",
       "日常",
-      "運動"
+      "運動",
+      "福利"
     ]
   },
   {
@@ -28144,6 +28145,18 @@
     ]
   },
   {
+    "id": "anilist-21298",
+    "titleZh": "南鎌倉高校女子自行車社",
+    "titleEn": "Minami Kamakura High School Girls Cycling Club",
+    "titleJa": "南鎌倉高校女子自転車部",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
+    "yearSeason": "2017 冬",
+    "genres": [
+      "運動"
+    ]
+  },
+  {
     "id": "anilist-98059",
     "titleZh": "KiraKira☆光之美少女 A La Mode",
     "titleEn": "KIRA KIRA☆PRECURE A LA MODE",
@@ -28157,18 +28170,6 @@
       "魔法少女",
       "日常",
       "超能力"
-    ]
-  },
-  {
-    "id": "anilist-21298",
-    "titleZh": "南鎌倉高校女子自行車社",
-    "titleEn": "Minami Kamakura High School Girls Cycling Club",
-    "titleJa": "南鎌倉高校女子自転車部",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21298-0ZulKrfl4Cho.jpg",
-    "yearSeason": "2017 冬",
-    "genres": [
-      "運動"
     ]
   },
   {
@@ -34980,20 +34981,6 @@
     ]
   },
   {
-    "id": "anilist-20475",
-    "titleZh": "生存遊戲社",
-    "titleEn": "Sabagebu! - Survival Game Club!",
-    "titleJa": "さばげぶっ!",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20475-c4JrCtSDXrtM.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20475-c4JrCtSDXrtM.png",
-    "yearSeason": "2014 夏",
-    "genres": [
-      "動作",
-      "喜劇",
-      "運動"
-    ]
-  },
-  {
     "id": "anilist-20638",
     "titleZh": "三坪房間的侵略者!?",
     "titleEn": "Invaders of the Rokujoma!?",
@@ -35005,6 +34992,20 @@
       "喜劇",
       "愛情",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-20475",
+    "titleZh": "生存遊戲社",
+    "titleEn": "Sabagebu! - Survival Game Club!",
+    "titleJa": "さばげぶっ!",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20475-c4JrCtSDXrtM.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20475-c4JrCtSDXrtM.png",
+    "yearSeason": "2014 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "運動"
     ]
   },
   {

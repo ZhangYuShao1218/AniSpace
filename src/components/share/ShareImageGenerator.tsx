@@ -166,6 +166,7 @@ export const ShareImageGenerator = forwardRef<ShareImageGeneratorRef, ShareImage
           {paddedAnimes.map((anime) => {
             const isEmpty = !anime.titleZh;
             const watched = isWatched && !isEmpty ? (anime as WatchedAnime) : null;
+            const starSize = gridCount === 4 ? 20 : gridCount === 9 ? 16 : 12;
             
             return (
               <div key={anime.id} className={`share-cell ${isEmpty ? 'empty' : ''}`}>
@@ -182,13 +183,26 @@ export const ShareImageGenerator = forwardRef<ShareImageGeneratorRef, ShareImage
                         {watched && (
                           <div className="share-watched-details">
                             <div className="share-rating">
-                              {Array.from({ length: 5 }).map((_, i) => (
-                                <Star
-                                  key={i}
-                                  size={12}
-                                  className={i < watched.userRating ? 'star-filled' : 'star-empty'}
-                                />
-                              ))}
+                              {Array.from({ length: 5 }).map((_, i) => {
+                                const fullThreshold = i * 2 + 2;
+                                const halfThreshold = i * 2 + 1;
+                                const rating = watched.userRating || 0;
+                                
+                                if (rating >= fullThreshold) {
+                                  return <Star key={i} size={starSize} className="star-filled" style={{ display: 'block' }} />;
+                                } else if (rating === halfThreshold) {
+                                  return (
+                                    <div key={i} style={{ position: 'relative', width: starSize, height: starSize }}>
+                                      <Star size={starSize} className="star-empty" style={{ position: 'absolute', top: 0, left: 0, display: 'block' }} />
+                                      <div style={{ position: 'absolute', top: 0, left: 0, overflow: 'hidden', width: '50%', height: '100%' }}>
+                                        <Star size={starSize} className="star-filled" style={{ position: 'absolute', top: 0, left: 0, display: 'block' }} />
+                                      </div>
+                                    </div>
+                                  );
+                                } else {
+                                  return <Star key={i} size={starSize} className="star-empty" style={{ display: 'block' }} />;
+                                }
+                              })}
                             </div>
                             {watched.userComment && (
                               <div className="share-comment">"{watched.userComment}"</div>

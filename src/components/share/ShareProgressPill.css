@@ -1,6 +1,7 @@
 .share-progress-pill {
   position: fixed;
-  bottom: 80px; /* Above the bottom nav bar */
+  bottom: calc(80px + var(--admob-height, 0px)); /* Maintain 80px base + AdMob offset to always avoid NavBar/Ads */
+  transition: bottom 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
   left: 50%;
   transform: translateX(-50%);
   background: var(--bg-dropdown);

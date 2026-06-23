@@ -211,7 +211,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
                       <span>{t('selectAll')}</span>
                     </div>
                   )}
-                  {mode === 'GRID_25' && (
+                  {mode !== 'SHEET' && (
                     <div 
                       className="random-select-btn"
                       onClick={handleRandomSelect}

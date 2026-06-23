@@ -70,97 +70,189 @@
   margin-bottom: var(--spacing-6);
 }
 
-.share-modes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: var(--spacing-3);
-  margin-bottom: var(--spacing-6);
-}
+/* --- Share Mode Selector Redesign --- */
 
-.share-mode-btn {
+/* Trigger Button */
+.share-mode-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
-  padding: var(--spacing-3);
+  padding: var(--spacing-3) var(--spacing-4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: var(--spacing-4);
+}
+
+.share-mode-trigger:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.share-mode-trigger.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.trigger-label {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.trigger-value {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
-  cursor: pointer;
-  transition: all 0.2s;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  position: relative;
-  white-space: nowrap;
-}
-
-.share-mode-btn span {
-  flex: 1;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.share-mode-btn svg {
-  flex-shrink: 0;
-}
-
-.share-mode-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text-primary);
-}
-
-.share-mode-btn.active {
-  background: rgba(129, 140, 248, 0.15);
-  border-color: var(--accent-color);
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--accent-color);
 }
 
-.share-tooltip-container {
-  margin-left: auto;
+/* Modal Backdrop */
+.share-mode-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center; /* Center on all devices */
+  justify-content: center;
+  z-index: 1001; /* Above ShareModal */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: var(--spacing-4);
+}
+
+/* Modal Content */
+.share-mode-modal-content {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass-light);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 600px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  /* padding-bottom no longer needs env safe area since it's centered */
+}
+
+.share-mode-modal-header {
+  display: flex;
+  justify-content: center; /* Center header content */
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-glass);
+  text-align: center;
+}
+
+.share-mode-modal-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.share-mode-list {
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.share-mode-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-mode-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.share-mode-item.active {
+  background: rgba(129, 140, 248, 0.1);
+  border-color: var(--accent-color);
+}
+
+.share-mode-item.active .mode-icon {
+  color: var(--accent-color);
+}
+
+.mode-icon {
+  color: var(--text-muted);
   display: flex;
   align-items: center;
-  cursor: help;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.help-icon {
-  color: var(--text-muted);
+.mode-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.share-tooltip-container:hover .help-icon {
+.mode-info h4 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
   color: var(--text-primary);
+  font-weight: 600;
 }
 
-.share-tooltip {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%) translateY(0);
-  background: rgba(15, 23, 42, 0.95);
-  color: var(--text-primary);
-  padding: var(--spacing-2) var(--spacing-3);
-  border-radius: var(--radius-sm);
+.mode-info p {
+  margin: 0;
   font-size: 0.8rem;
-  width: 220px;
-  max-width: calc(100vw - 32px);
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s;
-  z-index: 10;
-  border: 1px solid var(--border-glass);
-  text-align: center;
-  white-space: normal;
+  color: var(--text-secondary);
+  line-height: 1.4;
 }
 
-.share-tooltip-container:hover .share-tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(-4px);
+[data-theme="light"] .share-mode-modal-content {
+  background: var(--bg-primary);
 }
 
-[data-theme="light"] .share-tooltip {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+[data-theme="light"] .share-mode-modal-header {
+  border-bottom-width: 1.5px;
+  border-bottom-color: rgba(217, 119, 6, 0.3);
+}
+
+[data-theme="light"] .share-mode-item {
+  background: transparent;
+  border-width: 1.5px;
+  border-color: rgba(217, 119, 6, 0.3);
+}
+
+[data-theme="light"] .share-mode-item:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .share-mode-item.active {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: var(--accent-color);
+}
+
+.zoom-in { animation: zoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+
+@keyframes zoomIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.95); 
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1); 
+  }
 }
 
 .share-divider {
@@ -397,7 +489,7 @@
 
 .share-custom-title-section label {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   white-space: nowrap;
   font-weight: 600;
 }
@@ -410,15 +502,7 @@
 }
 
 @media (max-width: 767px) {
-  .share-modes {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-  .share-mode-btn {
-    font-size: 0.78rem;
-    padding: 8px;
-    gap: 6px;
-  }
+
   .selection-header {
     flex-direction: column;
     align-items: stretch;

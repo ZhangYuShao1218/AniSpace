@@ -180,10 +180,9 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
               <X size={20} />
             </button>
           
-            <h2 className="share-modal-title" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+            <h2 className="share-modal-title" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '19px' }}>
               <ThumbsUp size={28} /> {t('recommendToOthers')}
             </h2>
-            <p className="share-modal-subtitle" style={{ marginBottom: '19px' }}>{t('shareModalSubtitle')}</p>
 
             <ShareModeSelector 
               mode={mode} 

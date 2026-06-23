@@ -8,24 +8,28 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 1000;
   padding: var(--spacing-4);
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .share-modal-content {
   background: var(--bg-secondary);
   border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-6);
+  padding: 14px var(--spacing-6);
   width: 100%;
   max-width: 600px;
-  max-height: 90vh;
+  max-height: 80vh;
+  min-height: 580px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   position: relative;
+  top: -20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border-glass-light);
   animation: slideUpFade 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   backdrop-filter: blur(24px);
@@ -180,7 +184,7 @@
   border-radius: var(--radius-md);
   background: rgba(0, 0, 0, 0.2);
   padding: var(--spacing-3);
-  margin-bottom: var(--spacing-6);
+  margin-bottom: 19px;
 }
 
 .selection-header {
@@ -195,6 +199,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  min-height: 32px;
 }
 
 .selection-header h3 {
@@ -400,7 +405,7 @@
 .custom-title-input {
   flex: 1;
   max-width: none;
-  padding: 8px 12px;
+  padding: 5px 12px;
   font-size: 0.9rem;
 }
 

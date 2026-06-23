@@ -146,13 +146,13 @@
 }
 
 /* Adjust sizes for different grid counts */
-.grid-4 .share-title { font-size: 48px; }
-.grid-4 .share-comment { font-size: 16px; }
+.grid-4 .share-title { font-size: 40px; }
+.grid-4 .share-comment { font-size: 20px; }
 
-.grid-9 .share-title { font-size: 34px; }
-.grid-9 .share-comment { font-size: 13px; }
+.grid-9 .share-title { font-size: 30px; }
+.grid-9 .share-comment { font-size: 16px; }
 
-.grid-16 .share-title { font-size: 26px; padding-bottom: 4px; }
+.grid-16 .share-title { font-size: 22px; padding-bottom: 4px; }
 .grid-16 .share-info-overlay { padding: 20px 10px 10px; }
 
 /* Bingo specific styles */

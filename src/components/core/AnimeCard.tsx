@@ -258,18 +258,18 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
             style={{ top: popoverPos.top, left: popoverPos.left, width: popoverPos.width }}
             onClick={e => e.stopPropagation()}
           >
-            <div className="card-edit-popup-label" style={{ color: '#f87171' }}>{t('confirmRemoveTitle')}</div>
-            <hr style={{ borderColor: 'rgba(255,255,255,0.1)', margin: '4px 0 10px' }} />
-            <div style={{ marginBottom: '12px', fontSize: '0.85rem', color: '#e2e8f0' }}>
+            <div className="card-edit-popup-label confirm-title">{t('confirmRemoveTitle')}</div>
+            <hr className="confirm-divider" />
+            <div className="confirm-desc">
               {t('confirmRemoveDesc')}
             </div>
             
-            <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#e2e8f0', cursor: 'pointer', marginBottom: '12px' }}>
+            <label className="confirm-checkbox-label">
               <input 
                 type="checkbox" 
+                className="circle-checkbox"
                 checked={skipConfirm}
                 onChange={e => setSkipConfirm(e.target.checked)}
-                style={{ cursor: 'pointer' }}
               />
               {t('doNotAskAgain')}
             </label>

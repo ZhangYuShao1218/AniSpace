@@ -232,16 +232,34 @@ export const translations = {
     modeSheetDesc: '完整輸出所有資料至 Google Drive 試算表。',
     modeGrid4: '4格圖片',
     modeGrid4Desc: '精選 4 部動畫，適合放在社群軟體或限時動態分享。',
-    modeGrid9: '9宮格圖片',
-    modeGrid9Desc: '精選 9 部動畫，非常適合用來製作九宮格推薦。',
-    modeGrid16: '16格圖片',
-    modeGrid16Desc: '精選 16 部動畫，適合做為季番或年度的大回顧。',
+    modeGrid9: '9格圖片',
+    modeGrid9Desc: '精選 9 部動畫，非常適合用來製作九格推薦。',
+    modeGrid16: '16宮格圖片',
+    modeGrid16Desc: '挑選 16 部動畫，一次展示更多您的收藏。',
     modeGridDesc: '選擇 {num} 部動畫生成拼圖，\n和朋友分享你的神作吧',
-    modeBingo: '25宮格賓果',
+    modeBingo: '25格賓果',
     modeBingoDesc: '生成一張 5x5 的動畫賓果圖。',
     bingoInstruction: 'AniSpace 動畫賓果🎯來試試你看過幾部動畫！',
     anispaceLibrary: 'AniSpace 動畫庫',
-    privacyPolicy: '隱私權政策'
+    privacyPolicy: '隱私權政策',
+    notice: '提示',
+    sheetMobileNotice: '由於 Google 試算表 App 限制，在手機或平板上開啟時，您可能需要先點擊「允許存取外部圖片」或類似的授權選項，才能正常顯示動畫封面。',
+
+    // Tutorial
+    tutorialHelp: '幫助',
+    tutorialWelcome: '歡迎來到 AniSpace',
+    tutorialWelcomeDesc: '您的專屬跨平台動畫追蹤與管理平台。',
+    tutorialAddCustom: '新增自訂動畫',
+    tutorialAddCustomDesc: '找不到想看的動畫？點擊搜尋列的 "+" 隨時新增自訂動畫。',
+    tutorialSyncLatest: '獲取最新資訊',
+    tutorialSyncLatestDesc: '每日自動更新動畫資料，或手動點擊「下載最新動畫」保持資訊即時。',
+    tutorialCloudBackup: '雲端備份與隱私',
+    tutorialCloudBackupDesc: '登入 Google 給予權限即可同步至雲端。我們高度重視隱私，AniSpace 無權讀取您的私人雲端檔案，僅使用專屬的應用資料夾管理存檔。',
+    tutorialShare: '推坑他人',
+    tutorialShareDesc: '獨樂樂不如眾樂樂！使用「推坑別人」按鈕，快速將您喜愛的寶藏動畫分享給好友。',
+    tutorialStart: '開始使用',
+    tutorialNext: '下一步',
+    tutorialPrev: '上一步'
   },
   'en': {
     appTitle: 'AniSpace',
@@ -470,7 +488,25 @@ export const translations = {
     modeBingoDesc: 'Generate a 5x5 anime bingo card.',
     bingoInstruction: 'AniSpace Anime Bingo🎯 Let\'s see how many you\'ve watched!',
     anispaceLibrary: 'AniSpace Anime Library',
-    privacyPolicy: 'Privacy Policy'
+    privacyPolicy: 'Privacy Policy',
+    notice: 'Notice',
+    sheetMobileNotice: 'Due to Google Sheets App limitations on mobile/tablet devices, you may need to tap "Allow external images" or a similar authorization option to display anime covers properly.',
+
+    // Tutorial
+    tutorialHelp: 'Help',
+    tutorialWelcome: 'Welcome to AniSpace',
+    tutorialWelcomeDesc: 'Your exclusive cross-platform anime tracking and management platform.',
+    tutorialAddCustom: 'Add Custom Anime',
+    tutorialAddCustomDesc: 'Cannot find what you want to watch? Click the "+" in the search bar to add custom anime anytime.',
+    tutorialSyncLatest: 'Get Latest Info',
+    tutorialSyncLatestDesc: 'Anime data updates automatically daily, or manually click "Download Latest Anime" to stay up-to-date.',
+    tutorialCloudBackup: 'Cloud Backup & Privacy',
+    tutorialCloudBackupDesc: 'Login to Google and grant permissions to sync to the cloud. We value your privacy: AniSpace cannot read your personal cloud files and only uses a dedicated app folder for saves.',
+    tutorialShare: 'Share & Recommend',
+    tutorialShareDesc: 'Share your favorite masterpiece anime with friends quickly using the "Share" button.',
+    tutorialStart: 'Get Started',
+    tutorialNext: 'Next',
+    tutorialPrev: 'Prev'
   },
   'ja': {
     appTitle: 'AniSpace アニメ記録',
@@ -699,6 +735,24 @@ export const translations = {
     modeBingoDesc: '5x5のアニメビンゴカードを生成します。',
     bingoInstruction: 'AniSpace アニメビンゴ🎯 いくつ見たか試してみて！',
     anispaceLibrary: 'AniSpace アニメライブラリ',
-    privacyPolicy: 'プライバシーポリシー'
+    privacyPolicy: 'プライバシーポリシー',
+    notice: '通知',
+    sheetMobileNotice: 'Googleスプレッドシートアプリの制限により、スマートフォンやタブレットで開く際、アニメのカバー画像を正しく表示するために「外部画像のアクセスを許可」などのオプションをタップする必要がある場合があります。',
+
+    // Tutorial
+    tutorialHelp: 'ヘルプ',
+    tutorialWelcome: 'AniSpaceへようこそ',
+    tutorialWelcomeDesc: 'あなた専用のクロスプラットフォームアニメ追跡・管理プラットフォーム。',
+    tutorialAddCustom: 'カスタムアニメの追加',
+    tutorialAddCustomDesc: '見たいアニメが見つかりませんか？検索バーの「+」をクリックしていつでも追加できます。',
+    tutorialSyncLatest: '最新情報の取得',
+    tutorialSyncLatestDesc: 'アニメデータは毎日自動更新されます。または「最新アニメ取得」を手動でクリックして最新状態を保ちます。',
+    tutorialCloudBackup: 'クラウドバックアップとプライバシー',
+    tutorialCloudBackupDesc: 'Googleにログインして権限を付与するとクラウドに同期できます。プライバシーを重視しており、AniSpaceは個人のクラウドファイルを読み取ることはできず、専用のアプリフォルダのみを使用します。',
+    tutorialShare: '布教する',
+    tutorialShareDesc: '「布教する」ボタンを使って、お気に入りの神アニメを友達に素早くシェアしましょう。',
+    tutorialStart: '始める',
+    tutorialNext: '次へ',
+    tutorialPrev: '前へ'
   }
 };

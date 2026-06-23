@@ -49,10 +49,13 @@ export const ShareProgressPill: React.FC = () => {
         onConfirm={shareResult}
         title="產生完成"
         message={
-          <p style={{ lineHeight: '1.6', margin: 0, color: 'var(--text-secondary)' }}>
-            您的分享圖片已經準備好！<br/>
-            點擊下方按鈕以開啟分享面板。
-          </p>
+          <>
+            <hr style={{ border: 'none', borderTop: '1px solid var(--border-glass)', margin: '0 0 12px 0' }} />
+            <p style={{ lineHeight: '1.6', margin: 0, color: 'var(--text-secondary)' }}>
+              您的分享圖片已經準備好！<br/>
+              點擊下方按鈕以開啟分享面板。
+            </p>
+          </>
         }
         confirmText="立即分享"
       />

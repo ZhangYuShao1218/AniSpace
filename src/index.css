@@ -240,6 +240,17 @@ input, select, textarea {
   transition: all var(--transition-fast);
 }
 
+/* Focus outlines for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Global Fix: Hide ad-black-backdrop when keyboard is open */
+body.keyboard-open .ad-black-backdrop {
+  display: none !important;
+}
+
 input:focus, select:focus, textarea:focus {
   border-color: var(--accent-color);
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);

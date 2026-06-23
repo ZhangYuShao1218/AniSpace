@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { useShareTask } from '@/contexts/ShareTaskContext';
+import ConfirmModal from '@/components/modals/ConfirmModal';
 
 const ShuffleIcon = ({ size = 24, className = '' }: { size?: number | string, className?: string }) => (
   <svg 
@@ -49,6 +50,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
   const { accessToken, login } = useGoogleSync();
   const { t, tTitle } = useLanguage();
   const [customTitle, setCustomTitle] = useState('');
+  const [sheetUrlToOpen, setSheetUrlToOpen] = useState<string | null>(null);
   
   const { isGenerating, startTask } = useShareTask();
   const wasGenerating = React.useRef(false);
@@ -130,7 +132,14 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
     try {
       const dataToExport = selectedIds.size > 0 ? selectedAnimes : animes;
       const url = await exportToGoogleSheet(accessToken, dataToExport, isWatched);
-      window.open(url, '_blank');
+      
+      const isMobileOrTablet = window.innerWidth <= 1024 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      if (isMobileOrTablet) {
+        setSheetUrlToOpen(url);
+      } else {
+        window.open(url, '_blank');
+      }
     } catch (error) {
       console.error(error);
       alert(t('exportFailedAlert'));
@@ -174,7 +183,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
             <h2 className="share-modal-title" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
               <ThumbsUp size={28} /> {t('recommendToOthers')}
             </h2>
-            <p className="share-modal-subtitle" style={{ marginBottom: '24px' }}>{t('shareModalSubtitle')}</p>
+            <p className="share-modal-subtitle" style={{ marginBottom: '19px' }}>{t('shareModalSubtitle')}</p>
 
             <ShareModeSelector 
               mode={mode} 
@@ -245,6 +254,11 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
                     onChange={e => setCustomTitle(e.target.value)} 
                     className="share-search-input custom-title-input" 
                     placeholder={isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan')}
+                    onFocus={(e) => {
+                      setTimeout(() => {
+                        e.target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                      }, 300);
+                    }}
                   />
                 </div>
               )}
@@ -263,6 +277,18 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           </div>
         </div>
       )}
+      <ConfirmModal
+        isOpen={!!sheetUrlToOpen}
+        onClose={() => setSheetUrlToOpen(null)}
+        onConfirm={() => {
+          if (sheetUrlToOpen) {
+            window.open(sheetUrlToOpen, '_blank');
+            setSheetUrlToOpen(null);
+          }
+        }}
+        title={t('notice') || '提示'}
+        message={<p>{t('sheetMobileNotice') || '由於 Google 試算表 App 限制，在手機或平板上開啟時，您可能需要先點擊「允許存取外部圖片」或類似的授權選項，才能正常顯示動畫封面。'}</p>}
+      />
     </>,
     document.body
   );

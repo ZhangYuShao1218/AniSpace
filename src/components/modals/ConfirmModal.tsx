@@ -12,6 +12,8 @@ interface ConfirmModalProps {
   message: React.ReactNode;
   confirmText?: string;
   dangerText?: string;
+  hideCancel?: boolean;
+  singleConfirm?: boolean;
 }
 
 const ConfirmModal: React.FC<ConfirmModalProps> = ({
@@ -21,7 +23,9 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
   title,
   message,
   confirmText,
-  dangerText
+  dangerText,
+  hideCancel,
+  singleConfirm
 }) => {
   const { t } = useLanguage();
   const [isConfirming, setIsConfirming] = useState(false);
@@ -38,7 +42,7 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
   if (!isOpen) return null;
 
   const handleConfirmClick = () => {
-    if (isConfirming) {
+    if (singleConfirm || isConfirming) {
       onConfirm();
       onClose();
     } else {
@@ -60,14 +64,17 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
         
         <div className="confirm-footer">
           <button 
-            className={`confirm-btn-primary ${isConfirming ? 'danger-active' : 'danger-idle'}`}
+            className={`confirm-btn-primary ${singleConfirm ? 'btn-primary' : (isConfirming ? 'danger-active' : 'danger-idle')}`}
             onClick={handleConfirmClick}
+            style={singleConfirm ? { background: 'var(--accent-color)', borderColor: 'var(--accent-color)', color: 'white' } : undefined}
           >
-            {isConfirming ? finalDangerText : finalConfirmText}
+            {singleConfirm ? finalConfirmText : (isConfirming ? finalDangerText : finalConfirmText)}
           </button>
-          <button className="confirm-btn-secondary" onClick={onClose}>
-            {t('cancel')}
-          </button>
+          {!hideCancel && (
+            <button className="confirm-btn-secondary" onClick={onClose}>
+              {t('cancel')}
+            </button>
+          )}
         </div>
       </div>
     </div>,

@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { useShareTask } from '@/contexts/ShareTaskContext';
-import ConfirmModal from '@/components/modals/ConfirmModal';
+import { AlertModal } from '@/components/modals/AlertModal';
 
 const ShuffleIcon = ({ size = 24, className = '' }: { size?: number | string, className?: string }) => (
   <svg 
@@ -276,7 +276,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
           </div>
         </div>
       )}
-      <ConfirmModal
+      <AlertModal
         isOpen={!!sheetUrlToOpen}
         onClose={() => setSheetUrlToOpen(null)}
         onConfirm={() => {

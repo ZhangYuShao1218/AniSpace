@@ -204,7 +204,7 @@ export const translations = {
     syncToCloud: '同步至雲端',
     logoutGoogleTooltip: '登出 Google 帳號',
     permissionWarningTitle: '警告',
-    permissionWarningMsg: '登入成功，但 Google Drive 權限不足，備份功能可能無法正常運作',
+    permissionWarningMsg: '登入成功，但部分功能需 GoogleDrive 權限。此權限僅適用於存取 AniSpace 設定檔，無權讀取您的私人雲端檔案，可在授權介面確認範圍，並放心開啟。',
     requestPermission: '請求雲端權限',
 
     // Share Modal
@@ -268,7 +268,7 @@ export const translations = {
     navPlanToWatch: 'Plan to Watch',
     navRecords: 'My Records',
     navSettings: 'Settings',
-    syncLatestAnime: 'Download Latest Anime',
+    syncLatestAnime: 'Fetch New Anime',
 
     searchPlaceholder: 'Search anime...',
     allStatus: 'All Status',
@@ -451,8 +451,8 @@ export const translations = {
     syncToCloud: 'Sync to Cloud',
     logoutGoogleTooltip: 'Logout',
     permissionWarningTitle: 'Warning',
-    permissionWarningMsg: 'Login successful, but Google Drive permission is insufficient. Backup features may not work properly.',
-    requestPermission: 'Request Cloud Permission',
+    permissionWarningMsg: 'Login successful, but some features require Google Drive permissions. These permissions are strictly for accessing AniSpace configuration files; we have no access to your private cloud files. You can verify the permission scope on the authorization screen and safely enable it.',
+    requestPermission: 'Request Permission',
 
     // Share Modal
     defaultShareTitleWatched: 'My Masterpiece Records',
@@ -499,7 +499,7 @@ export const translations = {
     tutorialAddCustom: 'Add Custom Anime',
     tutorialAddCustomDesc: 'Cannot find what you want to watch? Click the "+" in the search bar to add custom anime anytime.',
     tutorialSyncLatest: 'Get Latest Info',
-    tutorialSyncLatestDesc: 'Anime data updates automatically daily, or manually click "Download Latest Anime" to stay up-to-date.',
+    tutorialSyncLatestDesc: 'Anime data updates automatically daily, or manually click "Fetch New Anime" to stay up-to-date.',
     tutorialCloudBackup: 'Cloud Backup & Privacy',
     tutorialCloudBackupDesc: 'Login to Google and grant permissions to sync to the cloud. We value your privacy: AniSpace cannot read your personal cloud files and only uses a dedicated app folder for saves.',
     tutorialShare: 'Share & Recommend',
@@ -698,7 +698,7 @@ export const translations = {
     syncToCloud: 'クラウドと同期',
     logoutGoogleTooltip: 'ログアウト',
     permissionWarningTitle: '警告',
-    permissionWarningMsg: 'ログインには成功しましたが、Google Driveの権限が不足しています。バックアップ機能が正常に動作しない可能性があります。',
+    permissionWarningMsg: 'ログインには成功しましたが、一部の機能にはGoogle Driveの権限が必要です。この権限はAniSpaceの設定ファイルへのアクセスにのみ適用され、個人のプライベートなクラウドファイルを読み取る権限はありません。認証画面で権限の範囲をご確認いただけますので、安心して有効にしてください。',
     requestPermission: 'クラウド権限を要求',
 
     // Share Modal

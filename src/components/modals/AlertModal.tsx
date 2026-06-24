@@ -6,16 +6,22 @@ import '@/components/modals/AlertModal.css';
 
 interface AlertModalProps {
   isOpen: boolean;
-  message: string;
+  message: React.ReactNode | string;
   title?: string;
   onClose: () => void;
+  onConfirm?: () => void;
 }
 
-export const AlertModal: React.FC<AlertModalProps> = ({ isOpen, message, title, onClose }) => {
+export const AlertModal: React.FC<AlertModalProps> = ({ isOpen, message, title, onClose, onConfirm }) => {
   const { t } = useLanguage();
   if (!isOpen) return null;
   
   const finalTitle = title || t('systemPrompt');
+
+  const handleConfirm = () => {
+    if (onConfirm) onConfirm();
+    onClose();
+  };
 
   return createPortal(
     <div className="alert-modal-backdrop" onClick={onClose}>
@@ -25,12 +31,12 @@ export const AlertModal: React.FC<AlertModalProps> = ({ isOpen, message, title, 
           <h3 className="alert-modal-title">{finalTitle}</h3>
         </div>
         <div className="alert-modal-body">
-          {message.split('\n').map((line, i) => (
+          {typeof message === 'string' ? message.split('\n').map((line, i) => (
             <p key={i}>{line}</p>
-          ))}
+          )) : message}
         </div>
         <div className="alert-modal-actions">
-          <button className="btn-primary" onClick={onClose}>{t('confirm')}</button>
+          <button className="btn-primary" onClick={handleConfirm}>{t('confirm')}</button>
         </div>
       </div>
     </div>,

@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.zhangyushao.anispace",
+    "sha256_cert_fingerprints": [
+      "CB:36:8F:26:81:53:40:B3:83:1D:21:48:B0:DF:90:35:60:34:A2:CB:55:2C:8C:F2:7D:94:B2:1D:DA:23:EC:45"
+    ]
+  }
+}]

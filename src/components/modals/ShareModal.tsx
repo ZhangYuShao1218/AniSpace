@@ -32,6 +32,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { ShareModeSelector } from '@/components/share/ShareModeSelector';
 import { ShareList } from '@/components/share/ShareList';
 import '@/components/modals/ShareModal.css';
+import { logEvent } from '@/utils/analytics';
 
 export type ExportMode = 'SHEET' | 'GRID_4' | 'GRID_9' | 'GRID_16' | 'GRID_25';
 
@@ -133,6 +134,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
       const dataToExport = selectedIds.size > 0 ? selectedAnimes : animes;
       const url = await exportToGoogleSheet(accessToken, dataToExport, isWatched);
       
+      logEvent('Share', 'Generate_Google_Sheet', `Items: ${dataToExport.length}`);
+      
       const isMobileOrTablet = window.innerWidth <= 1024 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       
       if (isMobileOrTablet) {
@@ -160,6 +163,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
       customTitle: customTitle || (isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan')),
       gridCount: requiredCount as 4 | 9 | 16 | 25
     });
+    
+    logEvent('Share', 'Generate_Image_Grid', `Grid: ${requiredCount}`);
     
     if (Capacitor.isNativePlatform()) {
       onClose();

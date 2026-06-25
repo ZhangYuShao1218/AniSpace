@@ -8,6 +8,7 @@ import { useAdMob } from '@/contexts/AdMobContext';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useDataManagement } from '@/hooks/useDataManagement';
+import { logEvent } from '@/utils/analytics';
 
 interface SettingsDropdownProps {
   useSettingsIcon?: boolean;
@@ -157,6 +158,7 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
                 className="dropdown-item" 
                 onClick={() => {
                   handleExport();
+                  logEvent('Data_Export', 'Export_CSV', 'Local_Backup');
                   setIsSettingsOpen(false); // Close dropdown when clicked
                 }} 
                 disabled={isExportDisabled}

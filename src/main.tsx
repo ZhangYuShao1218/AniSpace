@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
+import AnalyticsTracker from './components/AnalyticsTracker'
 import { AnimeProvider } from './contexts/AnimeContext'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import { GoogleSyncProvider } from './contexts/GoogleSyncContext'
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <GoogleOAuthProvider clientId={clientId}>
       <BrowserRouter>
+        <AnalyticsTracker />
         <ThemeProvider>
           <LanguageProvider>
             <AnimeProvider>

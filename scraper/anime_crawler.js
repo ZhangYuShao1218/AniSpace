@@ -136,10 +136,14 @@ async function main() {
   }
 
   const existingIds = new Set();
+  let oldDataMap = new Map();
   if (fs.existsSync(DATA_FILE)) {
     try {
       const oldData = JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
-      oldData.forEach(item => existingIds.add(item.id));
+      oldData.forEach(item => {
+        existingIds.add(item.id);
+        oldDataMap.set(item.id, item);
+      });
     } catch(e) {}
   }
   let newlyAddedAnimes = [];
@@ -185,8 +189,10 @@ async function main() {
         let titleZh = "";
         
         // Priority 0: Custom Override
-        if (overrideData[aniListId] && overrideData[aniListId].titleZh) {
-          titleZh = overrideData[aniListId].titleZh;
+        const overrideKey = `anilist-${item.id}`;
+        const customOverride = overrideData[overrideKey] || overrideData[aniListId];
+        if (customOverride && customOverride.titleZh) {
+          titleZh = customOverride.titleZh;
         }
 
         // Priority 1: bangumi-data exact ID mapping
@@ -336,8 +342,18 @@ async function main() {
     console.log(`\n⚠️ 發現 ${missingTranslations.length} 部近期動畫缺乏翻譯，但未設定 GEMINI_API_KEY，跳過 AI 翻譯。`);
   }
 
+  // 基於 ID 比對合併：以本地舊資料為基礎，新爬取資料更新 existing 項目並追加新番；漏爬舊番完整保留
+  const crawledCount = finalAnimeList.length;
+  if (oldDataMap && oldDataMap.size > 0) {
+    const mergedMap = new Map(oldDataMap); // 1. 先放入所有舊資料作為底層
+    finalAnimeList.forEach(item => {
+      mergedMap.set(item.id, item);        // 2. 新爬取資料覆蓋更新（更新標題、封面與分類標籤），新 ID 自動追加
+    });
+    finalAnimeList = Array.from(mergedMap.values());
+  }
+
   const summaryPath = path.join(process.cwd(), 'scraper', 'run_summary.txt');
-  let summaryContent = `【動畫爬蟲】完成。共抓取 ${finalAnimeList.length} 筆資料，本次新增資料 ${newlyAddedAnimes.length} 筆，AI 翻譯 ${translatedCount} 筆。\n`;
+  let summaryContent = `【動畫爬蟲】完成。本次實際抓取 ${crawledCount} 筆，經 ID 比對合併後資料庫共 ${finalAnimeList.length} 筆，新增資料 ${newlyAddedAnimes.length} 筆，AI 翻譯 ${translatedCount} 筆。\n`;
   if (newlyAddedAnimes.length > 0) {
     summaryContent += `🌟 新增動畫：\n- ${newlyAddedAnimes.map(a => a.title).join('\n- ')}\n`;
   }

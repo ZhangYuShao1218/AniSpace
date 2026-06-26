@@ -454,6 +454,20 @@
     ]
   },
   {
+    "id": "anilist-211308",
+    "titleZh": "THE RIBBON HERO",
+    "titleEn": "THE RIBBON HERO",
+    "titleJa": "THE RIBBON HERO",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211308-DHKjEEttkfkT.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211308-DHKjEEttkfkT.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "動作",
+      "奇幻",
+      "魔法少女"
+    ]
+  },
+  {
     "id": "anilist-197178",
     "titleZh": "ONE PIECE HEROINES",
     "titleEn": "",
@@ -479,17 +493,16 @@
     ]
   },
   {
-    "id": "anilist-211308",
-    "titleZh": "THE RIBBON HERO",
-    "titleEn": "THE RIBBON HERO",
-    "titleJa": "THE RIBBON HERO",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211308-DHKjEEttkfkT.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211308-DHKjEEttkfkT.jpg",
+    "id": "anilist-192800",
+    "titleZh": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
+    "titleEn": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
+    "titleJa": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
     "yearSeason": "2026 夏",
     "genres": [
-      "動作",
-      "奇幻",
-      "魔法少女"
+      "喜劇",
+      "奇幻"
     ]
   },
   {
@@ -554,19 +567,6 @@
     ]
   },
   {
-    "id": "anilist-186863",
-    "titleZh": "貓與龍",
-    "titleEn": "The Cat and the Dragon",
-    "titleJa": "猫と竜",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186863-AO4efoB8HuzA.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186863-AO4efoB8HuzA.png",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "冒險",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-199408",
     "titleZh": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖國を叩き潰します～",
     "titleEn": "",
@@ -576,6 +576,19 @@
     "yearSeason": "2026 夏",
     "genres": [
       "劇情",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-186863",
+    "titleZh": "貓與龍",
+    "titleEn": "The Cat and the Dragon",
+    "titleJa": "猫と竜",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186863-AO4efoB8HuzA.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186863-AO4efoB8HuzA.png",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "冒險",
       "奇幻"
     ]
   },
@@ -590,19 +603,6 @@
     "genres": [
       "動作",
       "超自然"
-    ]
-  },
-  {
-    "id": "anilist-192800",
-    "titleZh": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
-    "titleEn": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
-    "titleJa": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "喜劇",
-      "奇幻"
     ]
   },
   {
@@ -665,6 +665,20 @@
     ]
   },
   {
+    "id": "anilist-194219",
+    "titleZh": "鬼の花嫁 ",
+    "titleEn": "The Ogre's Bride",
+    "titleJa": "鬼の花嫁 ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194219-qf7L0SfVi6nc.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194219-qf7L0SfVi6nc.jpg",
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-185875",
     "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
     "titleEn": "Magical Girl Lyrical Nanoha EXCEEDS Gun Blaze Vengeance",
@@ -678,20 +692,6 @@
       "劇情",
       "奇幻",
       "魔法少女"
-    ]
-  },
-  {
-    "id": "anilist-194219",
-    "titleZh": "鬼の花嫁 ",
-    "titleEn": "The Ogre's Bride",
-    "titleJa": "鬼の花嫁 ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194219-qf7L0SfVi6nc.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194219-qf7L0SfVi6nc.jpg",
-    "yearSeason": "2026 夏",
-    "genres": [
-      "劇情",
-      "奇幻",
-      "愛情"
     ]
   },
   {
@@ -887,6 +887,19 @@
     ]
   },
   {
+    "id": "anilist-194393",
+    "titleZh": "想結束這場「我愛你」的遊戲",
+    "titleEn": "I Want to End this Love Game",
+    "titleJa": "愛してるゲームを終わらせたい",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000145822.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194393-0H9yYABu6y0i.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-182483",
     "titleZh": "女騎士成為蠻族新娘",
     "titleEn": "The Warrior Princess and the Barbaric King",
@@ -898,19 +911,6 @@
       "喜劇",
       "福利",
       "奇幻",
-      "愛情"
-    ]
-  },
-  {
-    "id": "anilist-194393",
-    "titleZh": "想結束這場「我愛你」的遊戲",
-    "titleEn": "I Want to End this Love Game",
-    "titleJa": "愛してるゲームを終わらせたい",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000145822.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194393-0H9yYABu6y0i.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
       "愛情"
     ]
   },
@@ -929,21 +929,6 @@
     ]
   },
   {
-    "id": "anilist-190704",
-    "titleZh": "容易對付的惡魔大人",
-    "titleEn": "Mistress Kanan is Devilishly Easy",
-    "titleJa": "カナン様はあくまでチョロい",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/27/0000144827.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190704-Ts1VvkrNdnCZ.jpg",
-    "yearSeason": "2026 春",
-    "genres": [
-      "喜劇",
-      "福利",
-      "奇幻",
-      "愛情"
-    ]
-  },
-  {
     "id": "anilist-194317",
     "titleZh": "終末起點 第二季",
     "titleEn": "The Beginning After the End Season 2",
@@ -956,6 +941,21 @@
       "冒險",
       "奇幻",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-190704",
+    "titleZh": "容易對付的惡魔大人",
+    "titleEn": "Mistress Kanan is Devilishly Easy",
+    "titleJa": "カナン様はあくまでチョロい",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/27/0000144827.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190704-Ts1VvkrNdnCZ.jpg",
+    "yearSeason": "2026 春",
+    "genres": [
+      "喜劇",
+      "福利",
+      "奇幻",
+      "愛情"
     ]
   },
   {
@@ -990,19 +990,6 @@
     ]
   },
   {
-    "id": "anilist-197754",
-    "titleZh": "欺詐遊戲",
-    "titleEn": "LIAR GAME",
-    "titleJa": "LIAR GAME",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197754-Q5KqcUhIdypp.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197754-Q5KqcUhIdypp.png",
-    "yearSeason": "2026 春",
-    "genres": [
-      "劇情",
-      "心理"
-    ]
-  },
-  {
     "id": "anilist-198113",
     "titleZh": "殺手青春",
     "titleEn": "KILL BLUE",
@@ -1013,6 +1000,19 @@
     "genres": [
       "動作",
       "喜劇"
+    ]
+  },
+  {
+    "id": "anilist-197754",
+    "titleZh": "欺詐遊戲",
+    "titleEn": "LIAR GAME",
+    "titleJa": "LIAR GAME",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197754-Q5KqcUhIdypp.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx197754-Q5KqcUhIdypp.png",
+    "yearSeason": "2026 春",
+    "genres": [
+      "劇情",
+      "心理"
     ]
   },
   {
@@ -1473,6 +1473,20 @@
     ]
   },
   {
+    "id": "anilist-184951",
+    "titleZh": "相反的你和我",
+    "titleEn": "You and I Are Polar Opposites",
+    "titleJa": "正反対な君と僕",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/07/0000142507.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184951-s8Lg2muPBhdX.jpg",
+    "yearSeason": "2026 冬",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
     "id": "anilist-182587",
     "titleZh": "【我推的孩子】 第三季",
     "titleEn": "【OSHI NO KO】Season 3",
@@ -1485,20 +1499,6 @@
       "懸疑",
       "心理",
       "超自然"
-    ]
-  },
-  {
-    "id": "anilist-184951",
-    "titleZh": "相反的你和我",
-    "titleEn": "You and I Are Polar Opposites",
-    "titleJa": "正反対な君と僕",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/07/0000142507.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184951-s8Lg2muPBhdX.jpg",
-    "yearSeason": "2026 冬",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "日常"
     ]
   },
   {
@@ -1959,20 +1959,6 @@
     ]
   },
   {
-    "id": "anilist-194028",
-    "titleZh": "可以幫忙洗乾淨嗎？",
-    "titleEn": "Wash It All Away",
-    "titleJa": "綺麗にしてもらえますか。",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194028-ASKnzjS1ily7.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194028-ASKnzjS1ily7.jpg",
-    "yearSeason": "2026 冬",
-    "genres": [
-      "喜劇",
-      "愛情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-183660",
     "titleZh": "神八小妹不可怕",
     "titleEn": "Kaya-chan Isn't Scary",
@@ -1985,6 +1971,20 @@
       "恐怖",
       "日常",
       "超能力"
+    ]
+  },
+  {
+    "id": "anilist-194028",
+    "titleZh": "可以幫忙洗乾淨嗎？",
+    "titleEn": "Wash It All Away",
+    "titleJa": "綺麗にしてもらえますか。",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194028-ASKnzjS1ily7.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194028-ASKnzjS1ily7.jpg",
+    "yearSeason": "2026 冬",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
     ]
   },
   {
@@ -4068,20 +4068,6 @@
     ]
   },
   {
-    "id": "anilist-150654",
-    "titleZh": "月出之戰",
-    "titleEn": "Moonrise",
-    "titleJa": "ムーンライズ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150654-pgima1BrY7N0.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150654-pgima1BrY7N0.jpg",
-    "yearSeason": "2025 春",
-    "genres": [
-      "動作",
-      "冒險",
-      "科幻"
-    ]
-  },
-  {
     "id": "anilist-192809",
     "titleZh": "咒術回戰 懷玉·玉折 總集篇",
     "titleEn": "JUJUTSU KAISEN: Hidden Inventory / Premature Death – The Movie",
@@ -4093,6 +4079,20 @@
       "動作",
       "劇情",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-150654",
+    "titleZh": "月出之戰",
+    "titleEn": "Moonrise",
+    "titleJa": "ムーンライズ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150654-pgima1BrY7N0.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx150654-pgima1BrY7N0.jpg",
+    "yearSeason": "2025 春",
+    "genres": [
+      "動作",
+      "冒險",
+      "科幻"
     ]
   },
   {
@@ -5022,6 +5022,1460 @@
       "喜劇",
       "劇情",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-171018",
+    "titleZh": "膽大黨",
+    "titleEn": "DAN DA DAN",
+    "titleJa": "ダンダダン",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/57/0000136657.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171018-60q1B6GK2Ghb.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "愛情",
+      "科幻",
+      "超自然",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-163134",
+    "titleZh": "Re：從零開始的異世界生活 第三季",
+    "titleEn": "Re:ZERO -Starting Life in Another World- Season 3",
+    "titleJa": "Re:ゼロから始める異世界生活 3rd season",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/51/0000131251.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "劇情",
+      "奇幻",
+      "心理",
+      "愛情",
+      "驚悚",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-170942",
+    "titleZh": "青春之箱",
+    "titleEn": "Blue Box",
+    "titleJa": "アオのハコ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170942-KKcLfQzV57nG.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170942-KKcLfQzV57nG.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "愛情",
+      "日常",
+      "運動"
+    ]
+  },
+  {
+    "id": "anilist-163146",
+    "titleZh": "藍色監獄 VS. U-20 日本代表隊",
+    "titleEn": "BLUE LOCK Season 2",
+    "titleJa": "ブルーロック VS. U-20 JAPAN",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/01/0000131301.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163146-BVZPgyzkqi82.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "劇情",
+      "運動"
+    ]
+  },
+  {
+    "id": "anilist-151514",
+    "titleZh": "地：關於地球的運動",
+    "titleEn": "Orb: On the Movements of the Earth",
+    "titleJa": "チ。-地球の運動について-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151514-Y0d82Ah2ZOHX.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151514-Y0d82Ah2ZOHX.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情"
+    ]
+  },
+  {
+    "id": "anilist-169755",
+    "titleZh": "BLEACH 死神 千年血戰篇-相剋譚-",
+    "titleEn": "BLEACH: Thousand-Year Blood War - The Conflict",
+    "titleJa": "BLEACH 千年血戦篇-相剋譚-",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/62/0000135862.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169755-Rqb7MjnzdTc6.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "超自然",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-176508",
+    "titleZh": "香格里拉・開拓異境～糞作獵手挑戰神作～ 第二季",
+    "titleEn": "Shangri-La Frontier Season 2",
+    "titleJa": "シャングリラ・フロンティア 2nd season",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/12/0000138612.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176508-eFad4szofm8d.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-111314",
+    "titleZh": "漩渦",
+    "titleEn": "Uzumaki",
+    "titleJa": "うずまき",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111314-ui2D6cvpNumy.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111314-ui2D6cvpNumy.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情",
+      "恐怖",
+      "懸疑",
+      "心理",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-170732",
+    "titleZh": "在地下城尋求邂逅是否搞錯了什麼 第五季",
+    "titleEn": "Is It Wrong To Try To Pick Up Girls in a Dungeon? V",
+    "titleJa": "ダンジョンに出会いを求めるのは間違っているだろうかⅤ 豊穣の女神篇",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/92/0000136292.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170732-PwCMhnnOKdBu.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-154473",
+    "titleZh": "平凡職業造就世界最強 第三季",
+    "titleEn": "Arifureta: From Commonplace to World's Strongest Season 3",
+    "titleJa": "ありふれた職業で世界最強 3rd season",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/96/0000127096.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154473-o55309dVGP3G.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "心理",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-141182",
+    "titleZh": "精靈幻想記 2",
+    "titleEn": "Seirei Gensouki: Spirit Chronicles Season 2",
+    "titleJa": "精霊幻想記2",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/89/0000120489.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141182-xNtdR0PenhRR.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "劇情",
+      "奇幻",
+      "愛情",
+      "異世界",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-175019",
+    "titleZh": "嘆氣的亡靈想隱退",
+    "titleEn": "Let This Grieving Soul Retire",
+    "titleJa": "嘆きの亡霊は引退したい ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/16/0000137916.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx175019-8lLRmHID5fMd.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-178533",
+    "titleZh": "亂馬 1/2",
+    "titleEn": "Ranma1/2 (2024)",
+    "titleJa": "らんま1/2 (2024)",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178533-b88OLxm50jcH.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178533-b88OLxm50jcH.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "福利",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-173693",
+    "titleZh": "孤單一人的異世界攻略",
+    "titleEn": "Loner Life in Another World",
+    "titleJa": "ひとりぼっちの異世界攻略",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/91/0000137491.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173693-tRLdDE1BieXe.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-170083",
+    "titleZh": "龍珠大魔",
+    "titleEn": "Dragon Ball DAIMA",
+    "titleJa": "ドラゴンボールDAIMA",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170083-GTwRrhTApcLR.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170083-GTwRrhTApcLR.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-163135",
+    "titleZh": "魔王2099",
+    "titleEn": "DEMON LORD 2099",
+    "titleJa": "魔王2099",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/43/0000131243.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163135-NjvXyXvTYSHH.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "奇幻",
+      "科幻",
+      "異世界",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-170468",
+    "titleZh": "唯願來世不相識",
+    "titleEn": "Yakuza Fiancé: Raise wa Tanin ga Ii",
+    "titleJa": "来世は他人がいい",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/30/0000136130.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170468-kD2X9O2XM9KH.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-172190",
+    "titleZh": "女僕冥土小姐",
+    "titleEn": "You are Ms. Servant",
+    "titleJa": "君は冥土様。",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/68/0000137068.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172190-i1IqizIUcKkN.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-182469",
+    "titleZh": "航海王 粉絲來信",
+    "titleEn": "ONE PIECE FAN LETTER",
+    "titleJa": "ONE PIECE FAN LETTER",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182469-JQ808NBPxmgn.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182469-JQ808NBPxmgn.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-177104",
+    "titleZh": "最狂輔助職業【話術士】世界最強戰團聽我號令",
+    "titleEn": "The Most Notorious \"Talker\" Runs the World's Greatest Clan",
+    "titleJa": "最凶の支援職【話術士】である俺は世界最強クランを従える",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/33/0000138933.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177104-8fQUQdXGZG8j.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻",
+      "心理",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-168139",
+    "titleZh": "成為名垂青史的反派大小姐吧",
+    "titleEn": "I’ll Become a Villainess Who Goes Down in History",
+    "titleJa": "歴史に残る悪女になるぞ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168139-nGLXIdSksKCI.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168139-nGLXIdSksKCI.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-164172",
+    "titleZh": "結緣甘神神社",
+    "titleEn": "Tying the Knot with an Amagami Sister",
+    "titleJa": "甘神さんちの縁結び",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/60/0000131860.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164172-GY2aqItIuqtR.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "福利",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-165790",
+    "titleZh": "聽說你們要結婚！？",
+    "titleEn": "365 Days to the Wedding",
+    "titleJa": "結婚するって、本当ですか",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/34/0000133934.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx165790-OwIZI9ArGR4Q.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-178434",
+    "titleZh": "轉生貴族憑鑑定技能扭轉人生 第二季",
+    "titleEn": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 2",
+    "titleJa": "転生貴族、鑑定スキルで成り上がる 第2期",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/54/0000140154.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178434-UtRCL4WqNcgv.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-174043",
+    "titleZh": "被逐出隊伍的治癒師，其實是最強",
+    "titleEn": "The Healer Who Was Banished From His Party, Is, in Fact, the Strongest",
+    "titleJa": "パーティーから追放されたその治癒師、実は最強につき",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/70/0000137570.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx174043-Hh9mvGibvoVb.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-167141",
+    "titleZh": "刀劍神域外傳 Gun Gale Online II",
+    "titleEn": "Sword Art Online Alternative: Gun Gale Online II",
+    "titleJa": "ソードアート・オンライン オルタナティブ ガンゲイル・オンラインⅡ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/62/0000134162.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167141-m8eOYiDpeN4R.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-136880",
+    "titleZh": "動物狂想曲 最終季 第一部分",
+    "titleEn": "BEASTARS Final Season Part 1",
+    "titleJa": "BEASTARS FINAL SEASON Part 1",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136880-2sAQF6OtPE5M.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136880-2sAQF6OtPE5M.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情",
+      "懸疑",
+      "心理",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-164299",
+    "titleZh": "重生大小姐正在攻略龍帝殿下",
+    "titleEn": "The Do-Over Damsel Conquers the Dragon Emperor",
+    "titleJa": "やり直し令嬢は竜帝陛下を攻略中",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164299-j4yHiK4j1ON7.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164299-j4yHiK4j1ON7.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-176053",
+    "titleZh": "再見龍生，你好人生",
+    "titleEn": "Good Bye, Dragon Life",
+    "titleJa": "さようなら竜生、こんにちは人生",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/50/0000138350.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176053-HfPo4pUm6Ktg.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-176311",
+    "titleZh": "青之驅魔師 雪之盡頭篇",
+    "titleEn": "Blue Exorcist -Beyond the Snow Saga-",
+    "titleJa": "青の祓魔師 雪ノ果篇",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/07/0000138507.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176311-OZudERHrpJJ0.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "奇幻",
+      "超自然",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-179919",
+    "titleZh": "悲喜漁生",
+    "titleEn": "Negative Positive Angler",
+    "titleJa": "ネガポジアングラー",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179919-KLuGsnqnhkPb.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179919-KLuGsnqnhkPb.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情",
+      "日常",
+      "運動"
+    ]
+  },
+  {
+    "id": "anilist-184694",
+    "titleZh": "俺だけレベルアップな件 -ReAwakening-",
+    "titleEn": "Solo Leveling -ReAwakening-",
+    "titleJa": "俺だけレベルアップな件 -ReAwakening-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184694-EmVoCuV4uAGv.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184694-EmVoCuV4uAGv.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-171038",
+    "titleZh": "星辰墜落之國的妮娜",
+    "titleEn": "Nina the Starry Bride",
+    "titleJa": "星降る王国のニナ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171038-lSjQqiSk1mQC.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171038-lSjQqiSk1mQC.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-169931",
+    "titleZh": "去參加聯誼，卻發現完全沒有女生在場",
+    "titleEn": "How I Attended an All-Guy's Mixer",
+    "titleJa": "合コンに行ったら女がいなかった話",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/01/0000135901.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169931-tPgDEKaHNkFr.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-154673",
+    "titleZh": "機械臂",
+    "titleEn": "Mecha Ude: Mechanical Arms",
+    "titleJa": "メカウデ (TV)",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/21/0000105221.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154673-SCp0Qo62N1Q6.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "機甲",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-162785",
+    "titleZh": "妻子變成小學生。",
+    "titleEn": "TsumaSho",
+    "titleJa": "妻、小学生になる。",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000130966.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162785-kqAuHBdvX283.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-171637",
+    "titleZh": "神劍闖江湖 ―明治劍客浪漫譚― 京都動亂",
+    "titleEn": "Rurouni Kenshin -Kyoto Disturbance-",
+    "titleJa": "るろうに剣心 －明治剣客浪漫譚－京都動乱",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/81/0000136981.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b171637-h17RbEFtR0rQ.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-172355",
+    "titleZh": "鴨乃橋論的禁忌推理 第二季",
+    "titleEn": "Ron Kamonohashi’s Forbidden Deductions Season 2",
+    "titleJa": "鴨乃橋ロンの禁断推理 2nd Season",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172355-D7J0LRyWZZhg.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172355-D7J0LRyWZZhg.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情",
+      "懸疑"
+    ]
+  },
+  {
+    "id": "anilist-168500",
+    "titleZh": "魔王陛下，RETRY！R",
+    "titleEn": "Demon Lord, Retry! R",
+    "titleJa": "魔王様、リトライ！R",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/37/0000135037.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168500-wwpXjBBlXDpx.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-171642",
+    "titleZh": "燃油車鬥魂 第二季",
+    "titleEn": "MF GHOST Season 2",
+    "titleJa": "MFゴースト 2nd Season",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/88/0000136988.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171642-Tj5KCJPILuUN.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "運動"
+    ]
+  },
+  {
+    "id": "anilist-171545",
+    "titleZh": "妖怪學校的菜鳥老師!",
+    "titleEn": "A Terrified Teacher at Ghoul School!",
+    "titleJa": "妖怪学校の先生はじめました！",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/79/0000136979.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171545-j9foxkHeXec7.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-171025",
+    "titleZh": "魔法光源股份有限公司",
+    "titleEn": "Magilumiere Magical Girls Inc.",
+    "titleJa": "株式会社マジルミエ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171025-alBpVzKrgy1b.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171025-alBpVzKrgy1b.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "魔法少女"
+    ]
+  },
+  {
+    "id": "anilist-176292",
+    "titleZh": "七大罪 默示錄的四騎士 第二季",
+    "titleEn": "The Seven Deadly Sins: Four Knights of the Apocalypse Season 2",
+    "titleJa": "七つの大罪 黙示録の四騎士 第2期",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176292-meJTWM8zQjjp.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176292-meJTWM8zQjjp.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-166611",
+    "titleZh": "夏目友人帳 柒",
+    "titleEn": "Natsume's Book of Friends Season 7",
+    "titleJa": "夏目友人帳 漆",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166611-MXGsOlPv2IKj.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166611-MXGsOlPv2IKj.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "日常",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-169258",
+    "titleZh": "青之壬生浪",
+    "titleEn": "Blue Miburo",
+    "titleJa": "青のミブロ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/23/0000135523.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169258-kj8qoomfAKsB.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "劇情"
+    ]
+  },
+  {
+    "id": "anilist-169315",
+    "titleZh": "一兆遊戲",
+    "titleEn": "TRILLION GAME",
+    "titleJa": "トリリオンゲーム",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/95/0000135595.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169315-NtbOlSyDtSCZ.png",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "心理"
+    ]
+  },
+  {
+    "id": "anilist-170893",
+    "titleZh": "放學後少年花子君 續篇",
+    "titleEn": "After-school Hanako-kun Season 2",
+    "titleJa": "放課後少年花子くん 2",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170893-zqmpX7iYUumi.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170893-zqmpX7iYUumi.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "日常",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-183423",
+    "titleZh": "SPECIAL EDITED VERSION 海賊王 魚人島篇",
+    "titleEn": "One Piece Log: Fish-Man Island Saga",
+    "titleJa": "SPECIAL EDITED VERSION『ONE PIECE』魚人島編",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx183423-6Iiu194UDxD0.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx183423-6Iiu194UDxD0.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "劇情",
+      "奇幻",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-157965",
+    "titleZh": "Acro Trip 頂尖惡路",
+    "titleEn": "Acro Trip",
+    "titleJa": "アクロトリップ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/03/0000128903.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157965-YhogaZGde6tv.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "喜劇",
+      "魔法少女",
+      "日常",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-107372",
+    "titleZh": "當不成魔法師的女孩",
+    "titleEn": "The Stories of Girls Who Couldn't Be Magicians",
+    "titleJa": "魔法使いになれなかった女の子の話。",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/69/0000102169.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107372-jRO0pY1kIRLl.jpg",
+    "yearSeason": "2024 秋",
+    "genres": [
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-162804",
+    "titleZh": "不時輕聲地以俄語遮羞的鄰座艾莉同學",
+    "titleEn": "Alya Sometimes Hides Her Feelings in Russian",
+    "titleJa": "時々ボソッとロシア語でデレる隣のアーリャさん",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/35/0000135735.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162804-TBeptcAfvqTd.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-166531",
+    "titleZh": "【我推的孩子】 第二季",
+    "titleEn": "Oshi no Ko Season 2",
+    "titleJa": "【推しの子】第2期",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166531-dAL5MsqDHUkj.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166531-dAL5MsqDHUkj.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "劇情",
+      "懸疑",
+      "心理",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-174576",
+    "titleZh": "杖與劍的魔劍譚",
+    "titleEn": "Wistoria: Wand and Sword",
+    "titleJa": "杖と剣のウィストリア",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/85/0000137785.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx174576-tpKcHG0eO6CS.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "劇情",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-171457",
+    "titleZh": "敗北女角太多了！",
+    "titleEn": "Makeine: Too Many Losing Heroines!",
+    "titleJa": "負けヒロインが多すぎる！",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/68/0000136968.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171457-nmMIk0gNiWsm.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-153406",
+    "titleZh": "神之塔 第二季",
+    "titleEn": "Tower of God Season 2",
+    "titleJa": "神之塔 -Tower of God- 第2期",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153406-dU2RLKgMUF2U.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153406-dU2RLKgMUF2U.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "劇情",
+      "奇幻",
+      "懸疑"
+    ]
+  },
+  {
+    "id": "anilist-175977",
+    "titleZh": "鹿乃子乃子乃子虎視眈眈",
+    "titleEn": "My Deer Friend Nokotan",
+    "titleJa": "しかのこのこのここしたんたん",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/13/0000138313.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx175977-kNNpCt8Z72uK.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-152137",
+    "titleZh": "異世界失格",
+    "titleEn": "No Longer Allowed in Another World",
+    "titleJa": "異世界失格",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152137-JpefyFlYa03R.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152137-JpefyFlYa03R.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "愛情",
+      "日常",
+      "超自然",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-173694",
+    "titleZh": "靠廢柴技能【狀態異常】成為最強的我將蹂躪一切",
+    "titleEn": "Failure Frame: I Became the Strongest and Annihilated Everything with Low-Level Spells",
+    "titleJa": "ハズレ枠の【状態異常スキル】で最強になった俺がすべてを蹂躙するまで",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/92/0000137492.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173694-XcwGOMBxboOO.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "劇情",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-163623",
+    "titleZh": "模擬後宮體驗",
+    "titleEn": "Pseudo Harem",
+    "titleJa": "疑似ハーレム",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/66/0000136266.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163623-pzR6vIHoJh0b.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-170695",
+    "titleZh": "我要【招架】一切～反誤解的世界最強想成為冒險家～",
+    "titleEn": "I Parry Everything",
+    "titleJa": "俺は全てを【パリイ】する ～逆勘違いの世界最強は冒険者になりたい～",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/26/0000136326.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170695-Nb1DIg7gIHCF.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-162896",
+    "titleZh": "擅長逃跑的殿下",
+    "titleEn": "The Elusive Samurai",
+    "titleJa": "逃げ上手の若君",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/58/0000130958.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162896-hSMTVceb50GY.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-152681",
+    "titleZh": "義妹生活",
+    "titleEn": "Days with My Stepsister",
+    "titleJa": "義妹生活",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152681-xtQiVOYDhr3p.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152681-xtQiVOYDhr3p.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-163292",
+    "titleZh": "新人大叔冒險者，被最強隊伍操到死成無敵",
+    "titleEn": "The Ossan Newbie Adventurer, Trained to Death by the Most Powerful Party, Became Invincible",
+    "titleJa": "新米オッサン冒険者、最強パーティに死ぬほど鍛えられて無敵になる。",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/79/0000131479.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163292-1DkPP4r5UI9Y.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-133845",
+    "titleZh": "劇場版 OVERLORD 聖王國篇",
+    "titleEn": "OVERLORD: The Sacred Kingdom",
+    "titleJa": "オーバーロード 聖王国編",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133845-InD67nSzCAUr.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133845-InD67nSzCAUr.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-158559",
+    "titleZh": "2.5次元的誘惑",
+    "titleEn": "2.5 Dimensional Seduction",
+    "titleJa": "2.5次元の誘惑",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/81/0000134781.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158559-yCnnnedsSCie.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "福利",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-166710",
+    "titleZh": "異世界自殺突擊隊",
+    "titleEn": "Suicide Squad ISEKAI",
+    "titleJa": "異世界スーサイド・スクワッド",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/34/0000133834.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166710-3G2croXhaCOm.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "科幻",
+      "異世界",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-173295",
+    "titleZh": "小市民系列",
+    "titleEn": "SHOSHIMIN: How to Become Ordinary",
+    "titleJa": "小市民シリーズ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/26/0000137326.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173295-5DIOnrTYiF0a.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "懸疑",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-139095",
+    "titleZh": "Fairy Tail 魔導少年 百年任務",
+    "titleEn": "FAIRY TAIL 100 YEARS QUEST",
+    "titleJa": "FAIRY TAIL 100 YEARS QUEST",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/81/0000119681.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139095-xXcToL6L4vuv.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-167419",
+    "titleZh": "為何我的世界被遺忘了？",
+    "titleEn": "Why Does Nobody Remember Me in This World?",
+    "titleJa": "なぜ僕の世界を誰も覚えていないのか？",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000134322.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167419-yesWtncEBD9N.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-173584",
+    "titleZh": "魔王軍最強的魔術師是人類",
+    "titleEn": "The Strongest Magician in the Demon Lord's Army was a Human",
+    "titleJa": "魔王軍最強の魔術師は人間だった",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/84/0000137484.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173584-nyZElmr8218W.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "劇情",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-168872",
+    "titleZh": "君に屆け 3RD SEASON",
+    "titleEn": "Kimi ni Todoke: From Me to You Season 3",
+    "titleJa": "君に届け 3RD SEASON",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168872-ls6UwxFAw212.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168872-ls6UwxFAw212.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-168013",
+    "titleZh": "我的英雄學院劇場版：You’re Next",
+    "titleEn": "My Hero Academia: You’re Next",
+    "titleJa": "僕のヒーローアカデミア THE MOVIE: ユア ネクスト",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168013-eeyN5L8tmYKI.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168013-eeyN5L8tmYKI.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "科幻",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-139825",
+    "titleZh": "這是妳與我的最後戰場，或是開創世界的聖戰 第二季",
+    "titleEn": "Our Last Crusade or the Rise of a New World Season 2",
+    "titleJa": "キミと僕の最後の戦場、あるいは世界が始まる聖戦 Season II",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/65/0000126265.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139825-rFlrzdRZmlYK.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-173533",
+    "titleZh": "物語系列 第外季＆第怪季",
+    "titleEn": "MONOGATARI Series: OFF & MONSTER Season",
+    "titleJa": "〈物語〉シリーズ オフ&モンスターシーズン",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/44/0000137444.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173533-9DN3nHtT2FBm.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "劇情",
+      "懸疑",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-170938",
+    "titleZh": "曾經、魔法少女和邪惡相互為敵。",
+    "titleEn": "The Magical Girl and the Evil Lieutenant Used to Be Archenemies",
+    "titleJa": "かつて魔法少女と悪は敵対していた。",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/27/0000136527.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170938-kkeDCKGSUNaV.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "魔法少女",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-177697",
+    "titleZh": "DDDD 惡魔的破壞",
+    "titleEn": "DEAD DEAD DEMONS DEDEDEDE DESTRUCTION",
+    "titleJa": "デッドデッドデーモンズデデデデデストラクション",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/64/0000140064.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b177697-EWgIqtwm5ABh.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "科幻",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-171031",
+    "titleZh": "異世界悠閒紀行～邊養娃邊當冒險者～",
+    "titleEn": "A Journey Through Another World: Raising Kids While Adventuring",
+    "titleJa": "異世界ゆるり紀行 ～子育てしながら冒険者します～",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/94/0000136694.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171031-7RJll3TJnVFA.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "冒險",
+      "奇幻",
+      "日常",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-163133",
+    "titleZh": "學姊是男孩",
+    "titleEn": "Senpai is an Otokonoko",
+    "titleJa": "先輩はおとこのこ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/85/0000131285.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163133-bdr9S2bdLoyj.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-167420",
+    "titleZh": "尼爾：自動人形 Ver1.1a 第2部分",
+    "titleEn": "NieR:Automata Ver1.1a Cour 2",
+    "titleJa": "NieR:Automata Ver1.1a 第2期",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/22/0000123022.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167420-PBxeW0tmbEDQ.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "奇幻",
+      "懸疑",
+      "心理",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-126830",
+    "titleZh": "CODE GEASS 奪回的Rozé",
+    "titleEn": "Code Geass: Rozé of the Recapture",
+    "titleJa": "コードギアス 奪還のロゼ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126830-Mx56p5DMIjiq.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126830-Mx56p5DMIjiq.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "劇情",
+      "機甲",
+      "科幻",
+      "驚悚",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-160488",
+    "titleZh": "身為VTuber的我因為忘記關臺而成了傳說",
+    "titleEn": "VTuber Legend: How I Went Viral after Forgetting to Turn Off My Stream",
+    "titleJa": "VTuberなんだが配信切り忘れたら伝説になってた",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/25/0000129725.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx160488-TpTlax3qs728.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-154963",
+    "titleZh": "ATRI -My Dear Moments-",
+    "titleEn": "ATRI -My Dear Moments-",
+    "titleJa": "ATRI -My Dear Moments-",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154963-Ju6Ey3P5YHs2.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154963-Ju6Ey3P5YHs2.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "劇情",
+      "愛情",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-172416",
+    "titleZh": "從路人角色開始的探索英雄譚",
+    "titleEn": "A Nobody's Way Up to an Exploration Hero",
+    "titleJa": "モブから始まる探索英雄譚",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/02/0000137102.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172416-RvQq9bWUxUWt.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-168623",
+    "titleZh": "魔導具師妲莉亞永不妥協",
+    "titleEn": "Dahlia in Bloom: Crafting a Fresh Start with Magical Tools",
+    "titleJa": "魔導具師ダリヤはうつむかない",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168623-30sdDCCLjsEW.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168623-30sdDCCLjsEW.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-166477",
+    "titleZh": "女神的露天咖啡廳 第二季",
+    "titleEn": "The Café Terrace and Its Goddesses Season 2",
+    "titleJa": "女神のカフェテラス 第2期",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166477-Q5jKn2WpDQ6z.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166477-Q5jKn2WpDQ6z.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "福利",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-174044",
+    "titleZh": "深夜PUNCH",
+    "titleEn": "MAYONAKA PUNCH",
+    "titleJa": "真夜中ぱんチ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/97/0000137597.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx174044-HBvsyKjDVPyO.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-167144",
+    "titleZh": "戀愛沒法用雙子除盡",
+    "titleEn": "Love Is Indivisible by Twins",
+    "titleJa": "恋は双子で割り切れない",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167144-tKDxH7M9z1Hb.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167144-tKDxH7M9z1Hb.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-157371",
+    "titleZh": "再見，地球",
+    "titleEn": "Bye Bye, Earth",
+    "titleJa": "ばいばい、アース",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157371-PisPkeSNP9HL.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157371-PisPkeSNP9HL.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-158166",
+    "titleZh": "你的顏色",
+    "titleEn": "The Colors Within",
+    "titleJa": "きみの色",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158166-TZxLtPvXEVUQ.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158166-TZxLtPvXEVUQ.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "音樂"
+    ]
+  },
+  {
+    "id": "anilist-175450",
+    "titleZh": "我的妻子不具感情",
+    "titleEn": "My Wife Has No Emotion",
+    "titleJa": "僕の妻は感情がない",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/27/0000138127.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx175450-Wfjd6OqFOn2h.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "科幻",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-163077",
+    "titleZh": "這個世界漏洞百出",
+    "titleEn": "Quality Assurance in Another World",
+    "titleJa": "この世界は不完全すぎる",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/85/0000131185.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163077-PHiTdVlKzXAR.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-177191",
+    "titleZh": "五等分的新娘＊",
+    "titleEn": "The Quintessential Quintuplets Specials 2",
+    "titleJa": "五等分の花嫁＊",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177191-ovNZsq8EbIPY.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177191-ovNZsq8EbIPY.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-151117",
+    "titleZh": "劇場版物怪：唐傘",
+    "titleEn": "Mononoke The Movie: The Phantom in the Rain",
+    "titleJa": "モノノ怪 唐傘",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151117-AOcwR3mXCDx7.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151117-AOcwR3mXCDx7.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "奇幻",
+      "恐怖",
+      "懸疑",
+      "心理",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-167991",
+    "titleZh": "TRUMP 系列 Delicoʼs Nursery",
+    "titleEn": "Delico's Nursery",
+    "titleJa": "デリコズ・ナーサリー",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/32/0000134732.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167991-uOu8ggPXzVUQ.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "奇幻",
+      "懸疑",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-168345",
+    "titleZh": "地下城中的人",
+    "titleEn": "Dungeon People",
+    "titleJa": "ダンジョンの中のひと",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/27/0000134927.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168345-X28k73J6QAtc.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-166700",
+    "titleZh": "黃昏光影",
+    "titleEn": "Twilight Out of Focus",
+    "titleJa": "黄昏アウトフォーカス",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/42/0000133842.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166700-znvKDTSCGl0n.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "劇情",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-173388",
+    "titleZh": "精靈小姐瘦不了",
+    "titleEn": "Plus-Sized Elf",
+    "titleJa": "エルフさんは痩せられない。",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/52/0000137352.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173388-iPHxsekSIFpg.png",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "福利",
+      "奇幻",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-170891",
+    "titleZh": "亦葉亦花",
+    "titleEn": "Narenare -Cheer for you!-",
+    "titleJa": "菜なれ花なれ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170891-Bhxn5y4a86Q0.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170891-Bhxn5y4a86Q0.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "劇情",
+      "日常",
+      "運動"
+    ]
+  },
+  {
+    "id": "anilist-171099",
+    "titleZh": "ぼっち・ざ・ろっく！ Re:Re: ",
+    "titleEn": "BOCCHI THE ROCK! Recap Part 2",
+    "titleJa": "ぼっち・ざ・ろっく！ Re:Re: ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171099-JexoHylkSZ6r.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171099-JexoHylkSZ6r.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "喜劇",
+      "音樂",
+      "日常"
+    ]
+  },
+  {
+    "id": "anilist-171748",
+    "titleZh": "SHY 靦腆英雄 第二季",
+    "titleEn": "SHY Season 2",
+    "titleJa": "SHY 東京奪還編 ",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/04/0000137004.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171748-yigmfmsgq6SR.jpg",
+    "yearSeason": "2024 夏",
+    "genres": [
+      "動作",
+      "劇情"
     ]
   },
   {
@@ -6060,21 +7514,6 @@
     ]
   },
   {
-    "id": "anilist-143866",
-    "titleZh": "弱角友崎同學 2nd STAGE",
-    "titleEn": "Bottom-Tier Character Tomozaki 2nd Stage",
-    "titleJa": "弱キャラ友崎くん 2nd STAGE",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/02/0000122302.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143866-75E3G6nYEUVr.jpg",
-    "yearSeason": "2024 冬",
-    "genres": [
-      "喜劇",
-      "劇情",
-      "愛情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-160389",
     "titleZh": "婚戒物語",
     "titleEn": "Tales of Wedding Rings",
@@ -6089,6 +7528,21 @@
       "奇幻",
       "愛情",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-143866",
+    "titleZh": "弱角友崎同學 2nd STAGE",
+    "titleEn": "Bottom-Tier Character Tomozaki 2nd Stage",
+    "titleJa": "弱キャラ友崎くん 2nd STAGE",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/02/0000122302.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx143866-75E3G6nYEUVr.jpg",
+    "yearSeason": "2024 冬",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "愛情",
+      "日常"
     ]
   },
   {
@@ -11755,20 +13209,6 @@
     ]
   },
   {
-    "id": "anilist-139589",
-    "titleZh": "小太郎一個人生活",
-    "titleEn": "Kotaro Lives Alone",
-    "titleJa": "コタローは１人暮らし",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139589-oFz7JwpwRkQV.png",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139589-oFz7JwpwRkQV.png",
-    "yearSeason": "2022 冬",
-    "genres": [
-      "喜劇",
-      "劇情",
-      "日常"
-    ]
-  },
-  {
     "id": "anilist-127050",
     "titleZh": "相愛相殺",
     "titleEn": "Love of Kill",
@@ -11780,6 +13220,20 @@
       "動作",
       "心理",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-139589",
+    "titleZh": "小太郎一個人生活",
+    "titleEn": "Kotaro Lives Alone",
+    "titleJa": "コタローは１人暮らし",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139589-oFz7JwpwRkQV.png",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139589-oFz7JwpwRkQV.png",
+    "yearSeason": "2022 冬",
+    "genres": [
+      "喜劇",
+      "劇情",
+      "日常"
     ]
   },
   {
@@ -14698,21 +16152,6 @@
     ]
   },
   {
-    "id": "anilist-114085",
-    "titleZh": "怪物事變",
-    "titleEn": "Kemono Jihen",
-    "titleJa": "怪物事変",
-    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/87/0000109287.JPG",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114085-2w5rYZTOa7ER.jpg",
-    "yearSeason": "2021 冬",
-    "genres": [
-      "動作",
-      "劇情",
-      "懸疑",
-      "超自然"
-    ]
-  },
-  {
     "id": "anilist-118375",
     "titleZh": "只有我能進入的隱藏迷宮",
     "titleEn": "The Hidden Dungeon Only I Can Enter",
@@ -14727,6 +16166,21 @@
       "福利",
       "奇幻",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-114085",
+    "titleZh": "怪物事變",
+    "titleEn": "Kemono Jihen",
+    "titleJa": "怪物事変",
+    "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/87/0000109287.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114085-2w5rYZTOa7ER.jpg",
+    "yearSeason": "2021 冬",
+    "genres": [
+      "動作",
+      "劇情",
+      "懸疑",
+      "超自然"
     ]
   },
   {
@@ -17807,20 +19261,6 @@
     ]
   },
   {
-    "id": "anilist-108450",
-    "titleZh": "空挺 Dragons",
-    "titleEn": "Drifting Dragons",
-    "titleJa": "空挺ドラゴンズ",
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
-    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
-    "yearSeason": "2020 冬",
-    "genres": [
-      "動作",
-      "冒險",
-      "奇幻"
-    ]
-  },
-  {
     "id": "anilist-101634",
     "titleZh": "BanG Dream! 第3季",
     "titleEn": "BanG Dream! 3rd Season",
@@ -17832,6 +19272,20 @@
       "喜劇",
       "音樂",
       "日常"
+    ]
+  },
+  {
+    "id": "anilist-108450",
+    "titleZh": "空挺 Dragons",
+    "titleEn": "Drifting Dragons",
+    "titleJa": "空挺ドラゴンズ",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108450-egUEb5lOpGxS.jpg",
+    "yearSeason": "2020 冬",
+    "genres": [
+      "動作",
+      "冒險",
+      "奇幻"
     ]
   },
   {

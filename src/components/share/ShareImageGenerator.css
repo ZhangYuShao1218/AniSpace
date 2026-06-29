@@ -157,3 +157,45 @@
 
 /* Bingo specific styles */
 .grid-25 .share-grid { gap: 15px; }
+
+/* Top-left Corner QR Code */
+.share-top-corner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0.95;
+  z-index: 10;
+}
+
+.share-corner-qrcode {
+  background: white;
+  padding: 6px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Bottom-right URL */
+.share-bottom-right {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  opacity: 0.85;
+  z-index: 10;
+}
+
+.share-corner-url {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f8fafc;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  font-family: 'Inter', sans-serif;
+}
+
+[data-theme="light"] .share-corner-url {
+  color: #334155;
+  text-shadow: none;
+}

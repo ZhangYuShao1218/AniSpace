@@ -6,6 +6,7 @@ import { Filesystem, Directory } from '@capacitor/filesystem';
 import type { Anime, WatchedAnime } from '@/types';
 import { ShareImageGenerator } from '@/components/share/ShareImageGenerator';
 import type { ShareImageGeneratorRef } from '@/components/share/ShareImageGenerator';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export interface ShareTaskData {
   animes: (Anime | WatchedAnime)[];
@@ -28,6 +29,7 @@ interface ShareTaskContextType {
 const ShareTaskContext = createContext<ShareTaskContextType | undefined>(undefined);
 
 export const ShareTaskProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const { t } = useLanguage();
   const [taskData, setTaskData] = useState<ShareTaskData | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading_images' | 'generating_canvas' | 'done'>('idle');
@@ -115,7 +117,7 @@ export const ShareTaskProvider: React.FC<{ children: ReactNode }> = ({ children 
       try {
         await Share.share({
           title: 'AniSpace 動畫分享',
-          text: '來看看我的寶藏動畫推薦！',
+          text: t('shareTextMsg' as any),
           url: generatedUri,
           dialogTitle: '分享動畫清單'
         });
@@ -132,7 +134,7 @@ export const ShareTaskProvider: React.FC<{ children: ReactNode }> = ({ children 
         if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
           await navigator.share({
             title: 'AniSpace 動畫分享',
-            text: '來看看我的寶藏動畫推薦！',
+            text: t('shareTextMsg' as any),
             files: [file]
           });
         } else {
@@ -150,7 +152,7 @@ export const ShareTaskProvider: React.FC<{ children: ReactNode }> = ({ children 
       }
     }
     clearResult();
-  }, [generatedUri, taskData, clearResult]);
+  }, [generatedUri, taskData, clearResult, t]);
 
   return (
     <ShareTaskContext.Provider value={{ isGenerating, status, progress, total, generatedUri, startTask, clearResult, shareResult }}>

@@ -3,6 +3,7 @@ import { Capacitor, CapacitorHttp } from '@capacitor/core';
 import { toPng } from 'html-to-image';
 import type { Anime, WatchedAnime } from '@/types';
 import { Star } from 'lucide-react';
+import { QRCodeSVG } from 'qrcode.react';
 import '@/components/share/ShareImageGenerator.css';
 
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -153,6 +154,18 @@ export const ShareImageGenerator = forwardRef<ShareImageGeneratorRef, ShareImage
           opacity: 0.001,
         } as React.CSSProperties}
       >
+        <div className="share-top-corner">
+          <div className="share-corner-qrcode">
+            <QRCodeSVG 
+              value="https://anispace.zhangyushao.dev" 
+              size={68}
+              level="M"
+              bgColor="#ffffff"
+              fgColor="#0f172a"
+            />
+          </div>
+        </div>
+
         <div className="share-header">
           <h2>
             {customTitle || (isWatched ? t('defaultShareTitleWatched') : t('defaultShareTitlePlan'))}
@@ -216,6 +229,10 @@ export const ShareImageGenerator = forwardRef<ShareImageGeneratorRef, ShareImage
               </div>
             );
           })}
+        </div>
+
+        <div className="share-bottom-right">
+          <span className="share-corner-url">https://anispace.zhangyushao.dev</span>
         </div>
       </div>
     );

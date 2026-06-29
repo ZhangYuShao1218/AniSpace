@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
-import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2 } from 'lucide-react';
+import { X, FileSpreadsheet, Loader2, ThumbsUp, Share2, Circle, CheckCircle2, Trash2 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { useShareTask } from '@/contexts/ShareTaskContext';
 import { AlertModal } from '@/components/modals/AlertModal';
@@ -44,7 +44,19 @@ interface ShareModalProps {
 }
 
 export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes, isWatched }) => {
-  const [mode, setMode] = useState<ExportMode>('GRID_9');
+  const [mode, setModeState] = useState<ExportMode>(() => {
+    const saved = localStorage.getItem('preferredShareMode');
+    if (saved && ['SHEET', 'GRID_4', 'GRID_9', 'GRID_16', 'GRID_25'].includes(saved)) {
+      return saved as ExportMode;
+    }
+    return 'SHEET';
+  });
+
+  const setMode = useCallback((newMode: ExportMode) => {
+    setModeState(newMode);
+    localStorage.setItem('preferredShareMode', newMode);
+  }, []);
+
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [isProcessing, setIsProcessing] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
@@ -199,33 +211,45 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
 
             <div className="share-selection-area">
               <div className="selection-header">
-                <div className="selection-header-left">
-                  <h3 style={{ margin: 0 }}>
+                <div className="selection-header-main">
+                  <h3 className="selection-title" style={{ margin: 0 }}>
                     {mode === 'GRID_25' ? t('animeBingo') : mode === 'SHEET' ? t('animeList') : t('shareAnime')} ({selectedIds.size}/{mode === 'SHEET' ? animes.length : requiredCount})
                   </h3>
-                  {mode === 'SHEET' && (
-                    <div 
-                      className="share-action-btn"
-                      onClick={handleSelectAll}
-                    >
-                      {selectedIds.size === animes.length && animes.length > 0 ? (
-                        <CheckCircle2 size={20} className="select-all-icon-checked" />
-                      ) : (
-                        <Circle size={20} color="currentColor" />
-                      )}
-                      <span>{t('selectAll')}</span>
-                    </div>
-                  )}
-                  {mode !== 'SHEET' && (
-                    <div 
-                      className="random-select-btn"
-                      onClick={handleRandomSelect}
-                      title={t('randomSelectTooltip')}
-                    >
-                      <ShuffleIcon size={16} />
-                      <span>{t('randomSelect')}</span>
-                    </div>
-                  )}
+                  <div className="selection-buttons">
+                    {mode === 'SHEET' && (
+                      <div 
+                        className="share-action-btn"
+                        onClick={handleSelectAll}
+                      >
+                        {selectedIds.size === animes.length && animes.length > 0 ? (
+                          <CheckCircle2 size={18} className="select-all-icon-checked" />
+                        ) : (
+                          <Circle size={18} color="currentColor" />
+                        )}
+                        <span>{t('selectAll')}</span>
+                      </div>
+                    )}
+                    {mode !== 'SHEET' && (
+                      <>
+                        <div 
+                          className="random-select-btn"
+                          onClick={handleRandomSelect}
+                          title={t('randomSelectTooltip')}
+                        >
+                          <ShuffleIcon size={16} />
+                          <span>{t('randomSelect')}</span>
+                        </div>
+                        <div 
+                          className={`clear-select-btn ${selectedIds.size === 0 ? 'disabled' : ''}`}
+                          onClick={selectedIds.size === 0 ? undefined : handleClearSelection}
+                          title={t('clearSelectionTooltip' as any)}
+                        >
+                          <Trash2 size={16} />
+                          <span>{t('clearSelection' as any)}</span>
+                        </div>
+                      </>
+                    )}
+                  </div>
                 </div>
                 <input 
                   type="text" 

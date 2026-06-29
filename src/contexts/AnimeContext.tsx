@@ -84,7 +84,6 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const saved = localStorage.getItem(CUSTOM_ANIME_KEY);
     return saved ? JSON.parse(saved) : [];
   });
-  const allAnime = useMemo(() => [...customAnimeList, ...remoteAnime], [customAnimeList, remoteAnime]);
   const [watchedList, setWatchedList] = useState<WatchedAnime[]>(() => {
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
     return saved ? JSON.parse(saved) : [];
@@ -246,11 +245,39 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     clearCorrections();
   }, [clearCorrections]);
 
+  const remoteAnimeMap = useMemo(() => {
+    const map = new Map<string, Anime>();
+    remoteAnime.forEach(a => map.set(a.id, a));
+    return map;
+  }, [remoteAnime]);
+
+  const mergeItemWithMaster = useCallback(<T extends Anime>(item: T): T => {
+    const master = remoteAnimeMap.get(item.id);
+    if (!master) return item;
+    return {
+      ...master,
+      ...item,
+      // 嚴格防呆：僅當該欄位為空值或未定義時才填入官方主資料庫的值，絕不覆蓋使用者設定的內容
+      titleZh: item.titleZh || master.titleZh,
+      titleEn: item.titleEn || master.titleEn,
+      titleJa: item.titleJa || master.titleJa,
+      coverImage: item.coverImage || master.coverImage,
+      coverImageAniList: item.coverImageAniList || master.coverImageAniList,
+      yearSeason: item.yearSeason || master.yearSeason,
+      genres: (item.genres && item.genres.length > 0) ? item.genres : master.genres,
+    };
+  }, [remoteAnimeMap]);
+
+  const enrichedCustomAnimeList = useMemo(() => customAnimeList.map(mergeItemWithMaster), [customAnimeList, mergeItemWithMaster]);
+  const enrichedWatchedList = useMemo(() => watchedList.map(mergeItemWithMaster), [watchedList, mergeItemWithMaster]);
+  const enrichedPlanToWatchList = useMemo(() => planToWatchList.map(mergeItemWithMaster), [planToWatchList, mergeItemWithMaster]);
+  const enrichedAllAnime = useMemo(() => [...enrichedCustomAnimeList, ...remoteAnime], [enrichedCustomAnimeList, remoteAnime]);
+
   const contextValue = useMemo(() => ({
-    allAnime,
-    customAnimeList,
-    watchedList,
-    planToWatchList,
+    allAnime: enrichedAllAnime,
+    customAnimeList: enrichedCustomAnimeList,
+    watchedList: enrichedWatchedList,
+    planToWatchList: enrichedPlanToWatchList,
     isScraping,
     scrapeProgress,
     lastSyncTimeFormatted,
@@ -270,7 +297,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     handleClearRecords,
     handleClearAllData
   }), [
-    allAnime, customAnimeList, watchedList, planToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, corrections,
+    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, corrections,
     handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
     handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, getCorrectedTitle,
     handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData

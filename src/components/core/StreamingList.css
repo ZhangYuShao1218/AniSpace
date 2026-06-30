@@ -1,0 +1,228 @@
+/* Wrapper positioned right below heart-btn in AnimeCard */
+.streaming-circle-wrapper {
+  position: absolute;
+  top: calc(var(--spacing-3) + 38px);
+  right: var(--spacing-3);
+  z-index: 10;
+}
+
+/* Circular button matching heart-btn styling */
+.streaming-circle-btn {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (hover: hover) {
+  .streaming-circle-btn:hover {
+    background: rgba(0, 180, 216, 0.4);
+    border-color: #00b4d8;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 180, 216, 0.45);
+  }
+}
+
+.streaming-circle-btn.active {
+  background: rgba(0, 180, 216, 0.4);
+  border-color: #00b4d8;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(0, 180, 216, 0.45);
+}
+
+/* Glassmorphism Popover */
+.streaming-popover.glassmorphism {
+  position: absolute;
+  z-index: 20;
+  width: 220px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(18, 22, 30, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  animation: popoverFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes popoverFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.streaming-popover-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a0aec0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.streaming-popover-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  max-height: 240px;
+}
+
+.streaming-popover-list::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+
+.streaming-popover-list::-webkit-scrollbar-track,
+.streaming-popover-list::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.streaming-popover-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.streaming-popover-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.streaming-popover-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.streaming-item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.streaming-item-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.streaming-item-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.free-badge {
+  font-size: 0.65rem;
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.45);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.region-flag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+
+.region-globe-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+}
+
+/* Platform Icons */
+.platform-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.platform-favicon-img {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.favicon-nicovideo {
+  filter: invert(1);
+}
+
+.gamer-icon { background: linear-gradient(135deg, #1282a2, #00b4d8); }
+.netflix-icon { background: #e50914; }
+.disney-icon { background: #113ccf; }
+.prime-icon { background: #00a8e1; font-size: 0.58rem; }
+.bilibili-icon { background: #fb7299; }
+.kktv-icon { background: #00b4d8; }
+.linetv-icon { background: #00c300; }
+.friday-icon { background: #e00025; }
+.myvideo-icon { background: #ff6600; }
+.hamivideo-icon { background: #00a82d; }
+.iqiyi-icon { background: #00cc00; font-size: 0.58rem; }
+.crunchy-icon { background: #f47521; }
+.youtube-icon { background: #ff0000; }
+.viu-icon { background: #ffcc00; color: #111111; }
+.mytv-icon { background: #e60012; font-size: 0.58rem; }
+.abema-icon { background: #33aa44; }
+.nico-icon { background: #252525; border: 1px solid #ffffff44; }
+.danime-icon { background: #ff6600; }
+.unext-icon { background: #0080ff; }
+.default-icon { background: rgba(255, 255, 255, 0.2); }

@@ -388,7 +388,7 @@
   {
     "id": "anilist-206521",
     "titleZh": "THE WORLD IS DANCING 世界在起舞",
-    "titleEn": "",
+    "titleEn": "The World Is Dancing",
     "titleJa": "ワールド イズ ダンシング",
     "coverImage": "https://p2.bahamut.com.tw/B/ACG/c/08/0000149408.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206521-ecJuDgjth84C.png",
@@ -2098,7 +2098,8 @@
       "喜劇",
       "劇情",
       "奇幻",
-      "科幻"
+      "科幻",
+      "超能力"
     ]
   },
   {
@@ -2289,6 +2290,7 @@
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179302-gWWAh5BfQyl4.jpg",
     "yearSeason": "2025 秋",
     "genres": [
+      "動作",
       "劇情",
       "懸疑",
       "超能力"

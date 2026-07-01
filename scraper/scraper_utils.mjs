@@ -1,5 +1,16 @@
-import axios from 'axios';
 import * as cheerio from 'cheerio';
+
+const axios = {
+    get: async (url, opts = {}) => {
+        const res = await fetch(url, opts);
+        const text = await res.text();
+        try {
+            return { data: JSON.parse(text) };
+        } catch {
+            return { data: text };
+        }
+    }
+};
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -132,3 +143,98 @@ export async function fetchBangumiData(title) {
     }
     return null;
 }
+
+async function searchGamerSingle(keyword, retryCount = 1) {
+    if (!keyword || keyword.length < 2) return null;
+    try {
+        const searchUrl = `https://ani.gamer.com.tw/search.php?keyword=${encodeURIComponent(keyword)}`;
+        const { data } = await axios.get(searchUrl, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            }
+        });
+        if (typeof data === 'string' && (data.includes('系統維修') || data.includes('Cloudflare') || data.includes('請稍後'))) {
+            if (retryCount > 0) {
+                await new Promise(r => setTimeout(r, 4000));
+                return await searchGamerSingle(keyword, retryCount - 1);
+            }
+            return null;
+        }
+        const $ = cheerio.load(data);
+        const bestMatch = $('a.theme-list-main').first();
+        if (bestMatch.length > 0) {
+            const href = bestMatch.attr('href') || '';
+            const snMatch = href.match(/sn=(\d+)/);
+            if (snMatch && snMatch[1]) {
+                return `https://ani.gamer.com.tw/animeRef.php?sn=${snMatch[1]}`;
+            }
+        }
+    } catch (e) {
+        if (retryCount > 0) {
+            await new Promise(r => setTimeout(r, 4000));
+            return await searchGamerSingle(keyword, retryCount - 1);
+        }
+    }
+    return null;
+}
+
+/**
+ * Resolves an anime title to its true Bahamut Anime Crazy watch URL with intelligent fallback matching.
+ * @param {string} title 
+ * @returns {Promise<string | null>}
+ */
+export async function resolveGamerStreamingUrl(title) {
+    if (!title) return null;
+    let res = await searchGamerSingle(title);
+    if (res) return res;
+
+    const cleanTitle = title.replace(/[～〜\-─!！:：,，。?？\s]+/g, ' ').trim();
+    if (cleanTitle !== title) {
+        res = await searchGamerSingle(cleanTitle);
+        if (res) return res;
+    }
+
+    const pureChars = title.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
+    if (pureChars.length >= 6) {
+        res = await searchGamerSingle(pureChars.substring(0, 6));
+        if (res) return res;
+    }
+    return null;
+}
+
+/**
+ * Fetches official Bahamut title and streaming URL from an acgDetail URL or title.
+ * @param {string} acgDetailUrl 
+ * @param {string} currentTitle 
+ * @returns {Promise<{ resolvedUrl: string | null, officialTitle: string | null }>}
+ */
+export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
+    let officialTitle = null;
+    let resolvedUrl = null;
+
+    if (acgDetailUrl && acgDetailUrl.includes('acgDetail.php')) {
+        try {
+            const { data } = await axios.get(acgDetailUrl, {
+                headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' }
+            });
+            const $ = cheerio.load(data);
+            const h1 = $('h1').text().trim();
+            if (h1 && !h1.includes('系統維修') && !h1.includes('巴哈姆特') && !h1.includes('Forbidden') && !h1.includes('請稍後')) {
+                officialTitle = h1;
+            }
+        } catch (e) {}
+    }
+
+    const titleToSearch = officialTitle || currentTitle;
+    if (titleToSearch) {
+        resolvedUrl = await resolveGamerStreamingUrl(titleToSearch);
+    }
+
+    if (!resolvedUrl && officialTitle && officialTitle !== currentTitle) {
+        resolvedUrl = await resolveGamerStreamingUrl(currentTitle);
+    }
+
+    return { resolvedUrl, officialTitle };
+}
+
+

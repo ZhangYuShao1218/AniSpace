@@ -3,9 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
+import { resolveGamerStreamingUrl, resolveGamerInfo } from './scraper_utils.mjs';
+import { washGamerStreamings } from './wash_gamer_links.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
-const START_YEAR = 2010; 
+const GAMER_CACHE_FILE = path.join(process.cwd(), 'scraper', 'gamer_url_cache.json');
+const START_YEAR = 2010;
 
 const genreMap = {
   'Action': '動作', 'Adventure': '冒險', 'Comedy': '喜劇', 'Drama': '劇情',
@@ -367,10 +370,20 @@ async function main() {
     try {
       const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
       const promptText = fs.readFileSync(path.join(process.cwd(), 'scraper', 'ai_translate_prompt.md'), 'utf-8');
-      const response = await ai.models.generateContent({
-        model: 'gemini-3.5-flash',
-        contents: `${promptText}\n\n輸入清單：\n${JSON.stringify(missingTranslations, null, 2)}`
-      });
+      let response;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          response = await ai.models.generateContent({
+            model: 'gemini-3.5-flash',
+            contents: `${promptText}\n\n輸入清單：\n${JSON.stringify(missingTranslations, null, 2)}`
+          });
+          break;
+        } catch (apiErr) {
+          if (attempt === 3) throw apiErr;
+          console.warn(`⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt ${attempt}/3)，等待 3 秒後重試...`);
+          await new Promise(r => setTimeout(r, 3000));
+        }
+      }
       const aiText = response.text().replace(/```json/g, '').replace(/```/g, '').trim();
       const aiResult = JSON.parse(aiText);
       
@@ -414,6 +427,36 @@ async function main() {
     });
     finalAnimeList = Array.from(mergedMap.values());
   }
+
+  // 為所有項目（包含舊有資料庫項目）自動補充 bangumi-data 授權連結
+  if (bgmMap.size > 0) {
+    finalAnimeList.forEach(item => {
+      const aniListId = item.id.replace('anilist-', '');
+      if ((!item.streamings || item.streamings.length === 0) && bgmMap.has(aniListId)) {
+        const bgmItem = bgmMap.get(aniListId);
+        const streamings = [];
+        if (bgmItem.sites) {
+          bgmItem.sites.forEach(s => {
+            const meta = bgmSiteMeta[s.site];
+            if (meta && (meta.type === 'onair' || s.site === 'gamer' || s.site === 'gamer_hk')) {
+              const urlTemplate = meta.urlTemplate || '';
+              const url = urlTemplate.replace('{{id}}', s.id) || s.url || '';
+              if (url) {
+                let region = '全球/日本';
+                if (meta.regions && meta.regions.includes('TW')) region = '台灣';
+                else if (meta.regions && meta.regions.includes('HK')) region = '港澳';
+                else if (meta.regions && meta.regions.includes('CN')) region = '中國大陸';
+                streamings.push({ site: s.site, name: meta.title, region, url });
+              }
+            }
+          });
+        }
+        if (streamings.length > 0) item.streamings = streamings;
+      }
+    });
+  }
+
+  await washGamerStreamings(finalAnimeList, newlyAddedAnimes);
 
   const summaryPath = path.join(process.cwd(), 'scraper', 'run_summary.txt');
   let summaryContent = `【動畫爬蟲】完成。本次實際抓取 ${crawledCount} 筆，經 ID 比對合併後資料庫共 ${finalAnimeList.length} 筆，新增資料 ${newlyAddedAnimes.length} 筆，AI 翻譯 ${translatedCount} 筆。\n`;

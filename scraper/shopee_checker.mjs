@@ -105,7 +105,7 @@ async function filterImagesWithAI(rawImages) {
     });
 
     // 處理 Gemini 可能回傳的 Markdown JSON 區塊
-    let rawText = response.text || '';
+    let rawText = (typeof response.text === 'function' ? response.text() : response.text) || '';
     if (rawText.startsWith('```json')) {
       rawText = rawText.replace(/```json\n?/, '').replace(/```\n?$/, '');
     } else if (rawText.startsWith('```')) {

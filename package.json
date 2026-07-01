@@ -11,7 +11,9 @@
     "crawler": "node scraper/anime_crawler.js && node scraper/post_process.js",
     "getproduct": "node scraper/shopee_checker.mjs",
     "getclouddata": "node scraper/getclouddata.mjs",
-    "dailywork": "npm run crawler && npm run getproduct && node scraper/email_report.mjs",
+    "wash": "node scraper/wash_gamer_links.mjs",
+    "wash:full": "node scraper/wash_gamer_links.mjs --full-wash",
+    "dailywork": "node scraper/daily_runner.mjs",
     "android": "npm run build && npx cap sync && npx cap open android"
   },
   "overrides": {

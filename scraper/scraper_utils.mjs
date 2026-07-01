@@ -203,10 +203,10 @@ export async function resolveGamerStreamingUrl(title) {
 }
 
 /**
- * Fetches official Bahamut title and streaming URL from an acgDetail URL or title.
+ * Fetches official Bahamut title and streaming URL purely from an acgDetail URL without fuzzy search.
  * @param {string} acgDetailUrl 
  * @param {string} currentTitle 
- * @returns {Promise<{ resolvedUrl: string | null, officialTitle: string | null }>}
+ * @returns {Promise<{ resolvedUrl: string | null, officialTitle: string | null, isBlocked?: boolean }>}
  */
 export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
     let officialTitle = null;
@@ -214,27 +214,36 @@ export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
 
     if (acgDetailUrl && acgDetailUrl.includes('acgDetail.php')) {
         try {
-            const { data } = await axios.get(acgDetailUrl, {
-                headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' }
+            const res = await fetch(acgDetailUrl, {
+                headers: { 
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' 
+                }
             });
-            const $ = cheerio.load(data);
+            const html = await res.text();
+            if (html.includes('系統維修') || html.includes('Cloudflare') || html.includes('請稍後') || res.status === 403 || res.status === 503) {
+                console.warn(`[防呆保護] 遭遇巴哈姆特防護或系統維護 (${acgDetailUrl})`);
+                return { resolvedUrl: null, officialTitle: null, isBlocked: true };
+            }
+            const $ = cheerio.load(html);
             const h1 = $('h1').text().trim();
             if (h1 && !h1.includes('系統維修') && !h1.includes('巴哈姆特') && !h1.includes('Forbidden') && !h1.includes('請稍後')) {
                 officialTitle = h1;
             }
-        } catch (e) {}
+            $('a').each((_, el) => {
+                let href = $(el).attr('href') || '';
+                if (href.includes('ani.gamer.com.tw') && !resolvedUrl) {
+                    if (href.startsWith('//')) href = 'https:' + href;
+                    else if (href.startsWith('http://')) href = href.replace('http://', 'https://');
+                    resolvedUrl = href;
+                }
+            });
+        } catch (e) {
+            console.warn(`[防呆保護] 請求 ACG 百科失敗: ${e.message}`);
+            return { resolvedUrl: null, officialTitle: null, isBlocked: true };
+        }
     }
 
-    const titleToSearch = officialTitle || currentTitle;
-    if (titleToSearch) {
-        resolvedUrl = await resolveGamerStreamingUrl(titleToSearch);
-    }
-
-    if (!resolvedUrl && officialTitle && officialTitle !== currentTitle) {
-        resolvedUrl = await resolveGamerStreamingUrl(currentTitle);
-    }
-
-    return { resolvedUrl, officialTitle };
+    return { resolvedUrl, officialTitle, isBlocked: false };
 }
 
 

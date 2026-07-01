@@ -57,7 +57,11 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
   }
 
   const processItem = async ({ item, st }) => {
-    const { resolvedUrl, officialTitle } = await resolveGamerInfo(st.url, item.titleZh);
+    const { resolvedUrl, officialTitle, isBlocked } = await resolveGamerInfo(st.url, item.titleZh);
+    if (isBlocked) {
+      console.log(`⚠️ [防呆保護] 跳過 "${item.titleZh}"，保持原 URL: ${st.url}`);
+      return;
+    }
     if (officialTitle && officialTitle !== item.titleZh && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特') && !officialTitle.includes('請稍後')) {
       console.log(`✏️ 修正譯名與巴哈官方百科一致: "${item.titleZh}" -> "${officialTitle}"`);
       item.titleZh = officialTitle;
@@ -70,7 +74,7 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
       gamerCache[item.id] = resolvedUrl;
       newlyWashedCount++;
     } else {
-      gamerCache[item.id] = 'NOT_FOUND';
+      gamerCache[item.id] = st.url; // 保持 ACG 百科 URL
     }
   };
 

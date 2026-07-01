@@ -126,6 +126,7 @@ async function fetchAniListBySeason(year, season) {
         media(season: $season, seasonYear: $seasonYear, type: ANIME, sort: POPULARITY_DESC, isAdult: false) {
           id
           title { romaji english native }
+          startDate { year month day }
           genres
           tags { name rank }
           coverImage { large extraLarge }
@@ -235,14 +236,14 @@ async function main() {
         
         let titleZh = "";
         
-        // Priority 0: Custom Override
+        // Priority 1: Bahamut / Manual Custom Override (非 AI 產生的自訂與巴哈官方譯名)
         const overrideKey = `anilist-${item.id}`;
         const customOverride = overrideData[overrideKey] || overrideData[aniListId];
-        if (customOverride && customOverride.titleZh) {
+        if (customOverride && customOverride.titleZh && customOverride.source !== 'ai') {
           titleZh = customOverride.titleZh;
         }
 
-        // Priority 1: bangumi-data exact ID mapping
+        // Priority 2: bangumi-data exact ID mapping (社區開源授權對照表)
         if (!titleZh && bgmMap.has(aniListId)) {
           const bgmItem = bgmMap.get(aniListId);
           if (bgmItem.titleTranslate) {
@@ -254,9 +255,14 @@ async function main() {
           }
         }
         
-        // Priority 2: ACG Secrets exact string match
+        // Priority 3: ACG Secrets exact string match
         if (!titleZh && acgTitlesMap.has(nativeTitle)) {
           titleZh = acgTitlesMap.get(nativeTitle);
+        }
+
+        // Priority 4: AI Translation Override (最後才採用 AI 翻譯)
+        if (!titleZh && customOverride && customOverride.titleZh && customOverride.source === 'ai') {
+          titleZh = customOverride.titleZh;
         }
 
         // Fallback
@@ -347,6 +353,7 @@ async function main() {
           titleJa: nativeTitle || "",
           coverImage: finalCover,
           coverImageAniList: item.coverImage?.extraLarge || item.coverImage?.large || "",
+          startDate: item.startDate || null,
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
           genres,
           ...(streamings.length > 0 && { streamings })
@@ -384,7 +391,8 @@ async function main() {
           await new Promise(r => setTimeout(r, 3000));
         }
       }
-      const aiText = response.text().replace(/```json/g, '').replace(/```/g, '').trim();
+      const rawAiText = (typeof response.text === 'function' ? response.text() : response.text) || '';
+      const aiText = rawAiText.replace(/```json/g, '').replace(/```/g, '').trim();
       const aiResult = JSON.parse(aiText);
       
       let overrideChanged = false;
@@ -395,8 +403,9 @@ async function main() {
             target.titleZh = res.titleZh;
           }
           if (!overrideData[res.id]) overrideData[res.id] = {};
-          if (overrideData[res.id].titleZh !== res.titleZh) {
+          if (overrideData[res.id].titleZh !== res.titleZh || overrideData[res.id].source !== 'ai') {
             overrideData[res.id].titleZh = res.titleZh;
+            overrideData[res.id].source = 'ai';
             overrideChanged = true;
             translatedCount++;
             aiTranslatedAnimes.push(res.titleZh);

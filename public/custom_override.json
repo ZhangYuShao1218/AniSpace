@@ -1,304 +1,656 @@
 {
+  "108992": {
+    "titleZh": "莫比烏斯之塵",
+    "source": "ai"
+  },
+  "133007": {
+    "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+    "source": "ai"
+  },
+  "140337": {
+    "titleZh": "佐賀偶像是傳奇 夢銀河樂園",
+    "source": "ai"
+  },
+  "143200": {
+    "titleZh": "Summer Pockets",
+    "source": "ai"
+  },
+  "143598": {
+    "titleZh": "鬼人幻燈抄",
+    "source": "ai"
+  },
+  "152677": {
+    "titleZh": "偵探已經，死了。第二季",
+    "source": "ai"
+  },
+  "154064": {
+    "titleZh": "Make a Girl",
+    "source": "ai"
+  },
+  "157330": {
+    "titleZh": "樂園追放 心之共鳴",
+    "source": "ai"
+  },
+  "159042": {
+    "titleZh": "轉生就是劍 第二季",
+    "source": "ai"
+  },
+  "160275": {
+    "titleZh": "來自深淵 覺醒的神秘",
+    "source": "ai"
+  },
+  "163144": {
+    "titleZh": "槍神 TRIGUN STARGAZE",
+    "source": "ai"
+  },
+  "166617": {
+    "titleZh": "Fate/strange Fake",
+    "source": "ai"
+  },
+  "169295": {
+    "titleZh": "BanG Dream! Ave Mujica",
+    "source": "ai"
+  },
+  "169581": {
+    "titleZh": "魔法★探險家 轉生為美少女遊戲中的路人角色，利用遊戲知識自由生活",
+    "source": "ai"
+  },
+  "172192": {
+    "titleZh": "歸還者的魔法要特別 第二季",
+    "source": "ai"
+  },
+  "176273": {
+    "titleZh": "全修。",
+    "source": "ai"
+  },
+  "176314": {
+    "titleZh": "佐佐木與文鳥小嗶 第二季",
+    "source": "ai"
+  },
+  "176702": {
+    "titleZh": "神統記",
+    "source": "ai"
+  },
+  "177474": {
+    "titleZh": "桃源暗鬼",
+    "source": "ai"
+  },
+  "178025": {
+    "titleZh": "GACHIAKUTA",
+    "source": "ai"
+  },
+  "178707": {
+    "titleZh": "劇場版 魔法科高中的劣等生 四葉繼承篇",
+    "source": "ai"
+  },
+  "178868": {
+    "titleZh": "魔法騎士雷阿斯 (2026)",
+    "source": "ai"
+  },
+  "179706": {
+    "titleZh": "Lycoris Recoil 莉可麗絲 Friends are thieves of time.",
+    "source": "ai"
+  },
+  "181244": {
+    "titleZh": "為美好的世界獻上祝福！3ーBONUS STAGEー",
+    "source": "ai"
+  },
+  "182206": {
+    "titleZh": "劇場版 關於我轉生變成史萊姆這檔事 蒼海之淚篇",
+    "source": "ai"
+  },
+  "182317": {
+    "titleZh": "劇場版 我內心的糟糕念頭",
+    "source": "ai"
+  },
+  "185116": {
+    "titleZh": "古諾希亞",
+    "source": "ai"
+  },
+  "185756": {
+    "titleZh": "轉生貴族憑鑑定技能扭轉人生 第三季",
+    "source": "ai"
+  },
+  "186742": {
+    "titleZh": "某暗部的少女共棲",
+    "source": "ai"
+  },
+  "187316": {
+    "titleZh": "幻想水滸傳",
+    "source": "ai"
+  },
+  "187402": {
+    "titleZh": "轉生的大聖女，隱瞞身為聖女的一切",
+    "source": "ai"
+  },
+  "187921": {
+    "titleZh": "終末的女武神 III",
+    "source": "ai"
+  },
+  "189123": {
+    "titleZh": "青春之箱 第二季",
+    "source": "ai"
+  },
+  "191788": {
+    "titleZh": "青之蘆葦 第二季",
+    "source": "ai"
+  },
+  "194116": {
+    "titleZh": "最終樂章 吹響吧！上低音號 後篇",
+    "source": "ai"
+  },
+  "195516": {
+    "titleZh": "藥師少女的獨語 第三季",
+    "source": "ai"
+  },
+  "195539": {
+    "titleZh": "電馭叛客：邊緣行者 2",
+    "source": "ai"
+  },
+  "195604": {
+    "titleZh": "黑色五葉草 第二季",
+    "source": "ai"
+  },
+  "197178": {
+    "titleZh": "航海王 HEROINES",
+    "source": "ai"
+  },
+  "197543": {
+    "titleZh": "BanG Dream! Ave Mujica prima aurora",
+    "source": "ai"
+  },
+  "199007": {
+    "titleZh": "#尋找喪屍中",
+    "source": "ai"
+  },
+  "199340": {
+    "titleZh": "青春豬頭少年不會夢到摯友",
+    "source": "ai"
+  },
+  "199426": {
+    "titleZh": "非人旅館 第二季",
+    "source": "ai"
+  },
+  "200455": {
+    "titleZh": "雖然是膽小MAX的千金，卻接受了精明強幹未婚夫的賭約",
+    "source": "ai"
+  },
+  "200929": {
+    "titleZh": "劇場版 藥師少女的獨語",
+    "source": "ai"
+  },
+  "202250": {
+    "titleZh": "借出的魔力以【循環分期】強制徵收",
+    "source": "ai"
+  },
+  "202390": {
+    "titleZh": "少女與戰車 最終章 第5話",
+    "source": "ai"
+  },
+  "203473": {
+    "titleZh": "恐怖收藏家",
+    "source": "ai"
+  },
+  "204011": {
+    "titleZh": "PSYREN -末日遊戲-",
+    "source": "ai"
+  },
+  "204650": {
+    "titleZh": "桃源暗鬼 日光・華嚴瀑布篇",
+    "source": "ai"
+  },
+  "205909": {
+    "titleZh": "螢火蟲之婚",
+    "source": "ai"
+  },
+  "206814": {
+    "titleZh": "七龍珠超 比魯斯",
+    "source": "ai"
+  },
+  "206914": {
+    "titleZh": "日本三國",
+    "source": "ai"
+  },
+  "207191": {
+    "titleZh": "你好，我是受心上人委託製作迷魂藥的魔女。",
+    "source": "ai"
+  },
+  "207327": {
+    "titleZh": "致處於比任何地方都更遙遠處的你",
+    "source": "ai"
+  },
+  "208025": {
+    "titleZh": "和闇黑召喚師搞上了",
+    "source": "ai"
+  },
+  "208754": {
+    "titleZh": "Unanswered//butterfly: 刀劍神域",
+    "source": "ai"
+  },
+  "209499": {
+    "titleZh": "TANK CHAIR-戰車椅子-",
+    "source": "ai"
+  },
+  "209502": {
+    "titleZh": "鹽對應的佐藤同學只對我甜",
+    "source": "ai"
+  },
+  "209872": {
+    "titleZh": "亂馬1/2 (2024) 第三季",
+    "source": "ai"
+  },
+  "210482": {
+    "titleZh": "JOJO的奇妙冒險 飆馬野郎 2nd STAGE",
+    "source": "ai"
+  },
+  "211308": {
+    "titleZh": "THE RIBBON HERO",
+    "source": "ai"
+  },
+  "211711": {
+    "titleZh": "我的英雄學院 I am a hero too",
+    "source": "ai"
+  },
+  "211778": {
+    "titleZh": "世界最強魔女，正式開始",
+    "source": "ai"
+  },
+  "211877": {
+    "titleZh": "女朋友的朋友",
+    "source": "ai"
+  },
+  "212503": {
+    "titleZh": "冰劍的魔術師將要統一世界 II",
+    "source": "ai"
+  },
+  "212888": {
+    "titleZh": "裝備我最強",
+    "source": "ai"
+  },
+  "213657": {
+    "titleZh": "夜櫻家大作戰 第二季 第二季度",
+    "source": "ai"
+  },
   "anilist-188139": {
-    "titleEn": "Though I Am an Inept Villainess: Tale of the Butterfly-Rat Body Swap in the Maiden Court"
+    "titleEn": "Though I Am an Inept Villainess: Tale of the Butterfly-Rat Body Swap in the Maiden Court",
+    "source": "gamer"
   },
   "anilist-201667": {
     "titleZh": "文豪野犬 汪！ 第2季",
-    "titleEn": "Bungo Stray Dogs WAN! Season 2"
+    "titleEn": "Bungo Stray Dogs WAN! Season 2",
+    "source": "gamer"
   },
   "anilist-209983": {
     "titleEn": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
-    "titleZh": "地獄模式 ～喜歡挑戰特殊成就的玩家在廢設定的異世界成為無雙～ 2nd Season"
+    "titleZh": "地獄模式 ～喜歡挑戰特殊成就的玩家在廢設定的異世界成為無雙～ 2nd Season",
+    "source": "gamer"
   },
   "anilist-211308": {
-    "titleZh": "THE RIBBON HERO"
+    "titleZh": "THE RIBBON HERO",
+    "source": "gamer"
   },
   "anilist-206914": {
-    "titleZh": "日本三國"
+    "titleZh": "日本三國",
+    "source": "gamer"
   },
   "anilist-177501": {
-    "titleZh": "淡島百景"
+    "titleZh": "淡島百景",
+    "source": "gamer"
   },
   "anilist-176273": {
-    "titleZh": "全修。"
+    "titleZh": "全修。",
+    "source": "gamer"
   },
   "anilist-152137": {
-    "titleZh": "異世界失格"
+    "titleZh": "異世界失格",
+    "source": "gamer"
   },
   "anilist-152681": {
-    "titleZh": "義妹生活"
+    "titleZh": "義妹生活",
+    "source": "gamer"
   },
   "anilist-154963": {
-    "titleZh": "ATRI -My Dear Moments-"
+    "titleZh": "ATRI -My Dear Moments-",
+    "source": "gamer"
   },
   "anilist-161476": {
-    "titleZh": "異修羅"
+    "titleZh": "異修羅",
+    "source": "gamer"
   },
   "anilist-109928": {
-    "titleZh": "犬王"
+    "titleZh": "犬王",
+    "source": "gamer"
   },
   "anilist-101705": {
-    "titleZh": "地球外少年少女"
+    "titleZh": "地球外少年少女",
+    "source": "gamer"
   },
   "anilist-125682": {
-    "titleZh": "CUE!"
+    "titleZh": "CUE!",
+    "source": "gamer"
   },
   "anilist-124195": {
-    "titleZh": "範馬刃牙"
+    "titleZh": "範馬刃牙",
+    "source": "gamer"
   },
   "anilist-138714": {
-    "titleZh": "平家物語"
+    "titleZh": "平家物語",
+    "source": "gamer"
   },
   "anilist-122052": {
-    "titleZh": "海賊王女"
+    "titleZh": "海賊王女",
+    "source": "gamer"
   },
   "anilist-113950": {
-    "titleZh": "SSSS.DYNAZENON"
+    "titleZh": "SSSS.DYNAZENON",
+    "source": "gamer"
   },
   "anilist-115183": {
-    "titleZh": "MARS RED"
+    "titleZh": "MARS RED",
+    "source": "gamer"
   },
   "anilist-125428": {
-    "titleZh": "天空侵犯"
+    "titleZh": "天空侵犯",
+    "source": "gamer"
   },
   "anilist-126819": {
-    "titleZh": "銀魂 THE SEMI-FINAL"
+    "titleZh": "銀魂 THE SEMI-FINAL",
+    "source": "gamer"
   },
   "anilist-113814": {
-    "titleZh": "IDOLY PRIDE"
+    "titleZh": "IDOLY PRIDE",
+    "source": "gamer"
   },
   "anilist-126287": {
-    "titleZh": "PUPARIA"
+    "titleZh": "PUPARIA",
+    "source": "gamer"
   },
   "anilist-112444": {
-    "titleZh": "天晴爛漫！"
+    "titleZh": "天晴爛漫！",
+    "source": "gamer"
   },
   "anilist-110130": {
-    "titleZh": "球詠"
+    "titleZh": "球詠",
+    "source": "gamer"
   },
   "anilist-101814": {
-    "titleZh": "消滅都市"
+    "titleZh": "消滅都市",
+    "source": "gamer"
   },
   "anilist-105928": {
-    "titleZh": "RobiHachi"
+    "titleZh": "RobiHachi",
+    "source": "gamer"
   },
   "anilist-98784": {
-    "titleZh": "薄暮"
+    "titleZh": "薄暮",
+    "source": "gamer"
   },
   "anilist-101361": {
-    "titleZh": "天狼 Sirius the Jaeger"
+    "titleZh": "天狼 Sirius the Jaeger",
+    "source": "gamer"
   },
   "anilist-100332": {
-    "titleZh": "刻刻"
+    "titleZh": "刻刻",
+    "source": "gamer"
   },
   "anilist-98035": {
-    "titleZh": "Fate/Apocrypha"
+    "titleZh": "Fate/Apocrypha",
+    "source": "gamer"
   },
   "anilist-97980": {
-    "titleZh": "Re:CREATORS"
+    "titleZh": "Re:CREATORS",
+    "source": "gamer"
   },
   "anilist-102167": {
-    "titleZh": "Yuri Plisetsky GPF in Barcelona EX “Welcome to The Madness”"
+    "titleZh": "Yuri Plisetsky GPF in Barcelona EX “Welcome to The Madness”",
+    "source": "gamer"
   },
   "anilist-21887": {
-    "titleZh": "風夏"
+    "titleZh": "風夏",
+    "source": "gamer"
   },
   "anilist-97857": {
-    "titleZh": "One Room"
+    "titleZh": "One Room",
+    "source": "gamer"
   },
   "anilist-20919": {
-    "titleZh": "虐殺器官"
+    "titleZh": "虐殺器官",
+    "source": "gamer"
   },
   "anilist-97590": {
-    "titleZh": "鬼平"
+    "titleZh": "鬼平",
+    "source": "gamer"
   },
   "anilist-21639": {
-    "titleZh": "競女!!!!!!!!"
+    "titleZh": "競女!!!!!!!!",
+    "source": "gamer"
   },
   "anilist-21349": {
-    "titleZh": "ALL OUT!!"
+    "titleZh": "ALL OUT!!",
+    "source": "gamer"
   },
   "anilist-21578": {
-    "titleZh": "DAYS"
+    "titleZh": "DAYS",
+    "source": "gamer"
   },
   "anilist-21588": {
-    "titleZh": "銀魂 愛染香篇"
+    "titleZh": "銀魂 愛染香篇",
+    "source": "gamer"
   },
   "anilist-21782": {
-    "titleZh": "腐男子高校生活"
+    "titleZh": "腐男子高校生活",
+    "source": "gamer"
   },
   "anilist-21334": {
-    "titleZh": "三者三葉"
+    "titleZh": "三者三葉",
+    "source": "gamer"
   },
   "anilist-21262": {
-    "titleZh": "終物語"
+    "titleZh": "終物語",
+    "source": "gamer"
   },
   "anilist-21018": {
-    "titleZh": "電波教師"
+    "titleZh": "電波教師",
+    "source": "gamer"
   },
   "anilist-20877": {
-    "titleZh": "美男高校地球防衛部LOVE!"
+    "titleZh": "美男高校地球防衛部LOVE!",
+    "source": "gamer"
   },
   "anilist-20918": {
-    "titleZh": "憑物語"
+    "titleZh": "憑物語",
+    "source": "gamer"
   },
   "anilist-20593": {
-    "titleZh": "花物語"
+    "titleZh": "花物語",
+    "source": "gamer"
   },
   "anilist-16904": {
-    "titleZh": "K MISSING KINGS"
+    "titleZh": "K MISSING KINGS",
+    "source": "gamer"
   },
   "anilist-20520": {
-    "titleZh": "LOVE STAGE!!"
+    "titleZh": "LOVE STAGE!!",
+    "source": "gamer"
   },
   "anilist-20567": {
-    "titleZh": "GJ部@"
+    "titleZh": "GJ部@",
+    "source": "gamer"
   },
   "anilist-19023": {
-    "titleZh": "Wake Up, Girls!"
+    "titleZh": "Wake Up, Girls!",
+    "source": "gamer"
   },
   "anilist-19951": {
-    "titleZh": "劇場版 HUNTER×HUNTER THE LAST MISSION"
+    "titleZh": "劇場版 HUNTER×HUNTER THE LAST MISSION",
+    "source": "gamer"
   },
   "anilist-19671": {
-    "titleZh": "FrFr! ~Free! short movie~"
+    "titleZh": "FrFr! ~Free! short movie~",
+    "source": "gamer"
   },
   "anilist-17909": {
-    "titleZh": "有頂天家族"
+    "titleZh": "有頂天家族",
+    "source": "gamer"
   },
   "anilist-18393": {
-    "titleZh": "FAIRY TAIL × RAVE"
+    "titleZh": "FAIRY TAIL × RAVE",
+    "source": "gamer"
   },
   "anilist-14811": {
-    "titleZh": "GJ部"
+    "titleZh": "GJ部",
+    "source": "gamer"
   },
   "anilist-14941": {
-    "titleZh": "AKB0048 next stage"
+    "titleZh": "AKB0048 next stage",
+    "source": "gamer"
   },
   "anilist-14467": {
-    "titleZh": "K"
+    "titleZh": "K",
+    "source": "gamer"
   },
   "anilist-13403": {
-    "titleZh": "妖狐×僕SS"
+    "titleZh": "妖狐×僕SS",
+    "source": "gamer"
   },
   "anilist-13333": {
-    "titleZh": "TARI TARI"
+    "titleZh": "TARI TARI",
+    "source": "gamer"
   },
   "anilist-12431": {
-    "titleZh": "宇宙兄弟"
+    "titleZh": "宇宙兄弟",
+    "source": "gamer"
   },
   "anilist-12149": {
-    "titleZh": "AKB0048"
+    "titleZh": "AKB0048",
+    "source": "gamer"
   },
   "anilist-11597": {
-    "titleZh": "偽物語"
+    "titleZh": "偽物語",
+    "source": "gamer"
   },
   "anilist-11665": {
-    "titleZh": "夏目友人帳 肆"
+    "titleZh": "夏目友人帳 肆",
+    "source": "gamer"
   },
   "anilist-12565": {
-    "titleZh": "Fate/Prototype"
+    "titleZh": "Fate/Prototype",
+    "source": "gamer"
   },
   "anilist-11077": {
-    "titleZh": "HELLSING：THE DAWN"
+    "titleZh": "HELLSING：THE DAWN",
+    "source": "gamer"
   },
   "anilist-10165": {
-    "titleZh": "日常"
+    "titleZh": "日常",
+    "source": "gamer"
   },
   "anilist-9941": {
-    "titleZh": "TIGER & BUNNY"
+    "titleZh": "TIGER & BUNNY",
+    "source": "gamer"
   },
   "anilist-8425": {
-    "titleZh": "GOSICK"
+    "titleZh": "GOSICK",
+    "source": "gamer"
   },
   "anilist-10075": {
-    "titleZh": "NARUTO×UT"
+    "titleZh": "NARUTO×UT",
+    "source": "gamer"
   },
   "anilist-20569": {
-    "titleZh": "Je t'aime"
+    "titleZh": "Je t'aime",
+    "source": "gamer"
   },
   "anilist-8078": {
-    "titleZh": "紅 OVA"
+    "titleZh": "紅 OVA",
+    "source": "gamer"
   },
   "anilist-7817": {
-    "titleZh": "B型H系"
+    "titleZh": "B型H系",
+    "source": "gamer"
   },
   "anilist-5719": {
-    "titleZh": "SEX PISTOLS"
+    "titleZh": "SEX PISTOLS",
+    "source": "gamer"
   },
   "anilist-6594": {
-    "titleZh": "刀語"
+    "titleZh": "刀語",
+    "source": "gamer"
   },
   "anilist-7065": {
-    "titleZh": "鋼之鍊金術師 FULLMETAL ALCHEMIST 盲目的鍊金術師"
+    "titleZh": "鋼之鍊金術師 FULLMETAL ALCHEMIST 盲目的鍊金術師",
+    "source": "gamer"
   },
   "anilist-7066": {
-    "titleZh": "鋼之鍊金術師 FULLMETAL ALCHEMIST 單純的人們"
+    "titleZh": "鋼之鍊金術師 FULLMETAL ALCHEMIST 單純的人們",
+    "source": "gamer"
   },
   "anilist-6349": {
-    "titleZh": "CODE GEASS 反叛的魯路修 R2 幻態的魯路修"
+    "titleZh": "CODE GEASS 反叛的魯路修 R2 幻態的魯路修",
+    "source": "gamer"
   },
   "anilist-5853": {
-    "titleZh": "南家三姊妹 甜品別腹"
+    "titleZh": "南家三姊妹 甜品別腹",
+    "source": "gamer"
   },
   "anilist-4789": {
-    "titleZh": "ef - a tale of melodies. Recollections"
+    "titleZh": "ef - a tale of melodies. Recollections",
+    "source": "gamer"
   },
   "anilist-3286": {
-    "titleZh": "君吻 pure rouge"
+    "titleZh": "君吻 pure rouge",
+    "source": "gamer"
   },
   "anilist-3162": {
-    "titleZh": "神靈狩/GHOST HOUND"
+    "titleZh": "神靈狩/GHOST HOUND",
+    "source": "gamer"
   },
   "anilist-3101": {
-    "titleZh": "現視研 2"
+    "titleZh": "現視研 2",
+    "source": "gamer"
   },
   "anilist-3091": {
-    "titleZh": "瀨戶的花嫁 OVA"
+    "titleZh": "瀨戶的花嫁 OVA",
+    "source": "gamer"
   },
   "anilist-198946": {
-    "titleZh": "Clevatess Ⅱ－魔獸之王與虛假的勇者傳承－"
+    "titleZh": "Clevatess Ⅱ－魔獸之王與虛假的勇者傳承－",
+    "source": "gamer"
   },
   "anilist-103118": {
-    "titleZh": "聯盟空軍航空魔法音樂隊 光輝魔女"
+    "titleZh": "聯盟空軍航空魔法音樂隊 光輝魔女",
+    "source": "gamer"
   },
   "anilist-140960": {
-    "titleZh": "SPY×FAMILY 間諜家家酒"
+    "titleZh": "SPY×FAMILY 間諜家家酒",
+    "source": "gamer"
   },
   "anilist-125367": {
-    "titleZh": "輝夜姬想讓人告白 ー超級浪漫ー"
+    "titleZh": "輝夜姬想讓人告白 ー超級浪漫ー",
+    "source": "gamer"
   },
   "anilist-111321": {
-    "titleZh": "盾之勇者成名錄 Season 2"
+    "titleZh": "盾之勇者成名錄 Season 2",
+    "source": "gamer"
   },
   "anilist-130586": {
-    "titleZh": "史上最強大魔王轉生為村民 A"
+    "titleZh": "史上最強大魔王轉生為村民 A",
+    "source": "gamer"
   },
   "anilist-198409": {
-    "titleZh": "世界最強後衛～迷宮國的新人探索者～"
+    "titleZh": "世界最強後衛～迷宮國的新人探索者～",
+    "source": "gamer"
   },
   "anilist-158871": {
-    "titleZh": "寶可夢地平線：系列"
+    "titleZh": "寶可夢地平線：系列",
+    "source": "gamer"
   },
   "anilist-126047": {
-    "titleZh": "急戰 5 秒殊死鬥"
+    "titleZh": "急戰 5 秒殊死鬥",
+    "source": "gamer"
   },
   "anilist-21778": {
-    "titleZh": "岸邊露伴一動也不動"
-  },
-  "anilist-21238": {
-    "titleZh": "Anne-Happy"
-  },
-  "anilist-19603": {
-    "titleZh": "Fate/stay night [Unlimited Blade Works]"
-  },
-  "anilist-19815": {
-    "titleZh": "NO GAME NO LIFE 遊戲人生"
-  },
-  "anilist-10087": {
-    "titleZh": "Fate/zero"
-  },
-  "anilist-8516": {
-    "titleZh": "笨蛋，測驗，召喚獸 第二季"
+    "titleZh": "岸邊露伴一動也不動",
+    "source": "gamer"
   }
 }

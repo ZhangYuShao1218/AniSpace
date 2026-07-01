@@ -266,7 +266,8 @@ export const translations = {
     tutorialPrev: '上一步',
     officialStreaming: '官方授權',
     officialStreamingTitle: '官方授權線上觀看',
-    premiere: '首播'
+    premiere: '首播',
+    freeBadge: '免費'
   },
   'en': {
     appTitle: 'AniSpace',
@@ -520,7 +521,8 @@ export const translations = {
     tutorialPrev: 'Prev',
     officialStreaming: 'Official Streaming',
     officialStreamingTitle: 'Watch via Official Streaming',
-    premiere: 'Premiere'
+    premiere: 'Premiere',
+    freeBadge: 'FREE'
   },
   'ja': {
     appTitle: 'AniSpace アニメ記録',
@@ -774,6 +776,7 @@ export const translations = {
     tutorialPrev: '前へ',
     officialStreaming: '公式配信',
     officialStreamingTitle: '公式配信で視聴する',
-    premiere: '初回放送'
+    premiere: '初回放送',
+    freeBadge: '無料'
   }
 };

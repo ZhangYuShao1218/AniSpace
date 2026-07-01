@@ -406,7 +406,7 @@ export const StreamingList: React.FC<StreamingListProps> = ({ streamings, anime 
                     <span className="streaming-item-name">{st.name}</span>
                   </div>
                   <div className="streaming-item-right">
-                    {isFree && <span className="free-badge">免費</span>}
+                    {isFree && <span className="free-badge">{t('freeBadge')}</span>}
                     {renderRegionDisplay(st.region)}
                   </div>
                 </a>

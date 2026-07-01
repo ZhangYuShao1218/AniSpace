@@ -263,7 +263,10 @@ export const translations = {
     tutorialShareDesc: '獨樂樂不如眾樂樂！使用「推坑別人」按鈕，快速將您喜愛的寶藏動畫分享給好友。',
     tutorialStart: '開始使用',
     tutorialNext: '下一步',
-    tutorialPrev: '上一步'
+    tutorialPrev: '上一步',
+    officialStreaming: '官方授權',
+    officialStreamingTitle: '官方授權線上觀看',
+    premiere: '首播'
   },
   'en': {
     appTitle: 'AniSpace',
@@ -514,7 +517,10 @@ export const translations = {
     tutorialShareDesc: 'Share your favorite masterpiece anime with friends quickly using the "Share" button.',
     tutorialStart: 'Get Started',
     tutorialNext: 'Next',
-    tutorialPrev: 'Prev'
+    tutorialPrev: 'Prev',
+    officialStreaming: 'Official Streaming',
+    officialStreamingTitle: 'Watch via Official Streaming',
+    premiere: 'Premiere'
   },
   'ja': {
     appTitle: 'AniSpace アニメ記録',
@@ -765,6 +771,9 @@ export const translations = {
     tutorialShareDesc: '「布教する」ボタンを使って、お気に入りの神アニメを友達に素早くシェアしましょう。',
     tutorialStart: '始める',
     tutorialNext: '次へ',
-    tutorialPrev: '前へ'
+    tutorialPrev: '前へ',
+    officialStreaming: '公式配信',
+    officialStreamingTitle: '公式配信で視聴する',
+    premiere: '初回放送'
   }
 };

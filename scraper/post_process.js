@@ -39,12 +39,12 @@ async function run() {
       if (oldItem && overrideData[newItem.id]) {
         // Compare titles
         if (newItem.titleZh !== oldItem.titleZh && overrideData[newItem.id].titleZh !== undefined) {
-          console.log(`[Diff] titleZh changed for ${newItem.id}. Clearing override.`);
+          console.log(`[Diff] titleZh changed for ${newItem.id}. 最新名稱: "${newItem.titleZh}", 被清除的 Override 名稱: "${overrideData[newItem.id].titleZh}" (Clearing override.)`);
           delete overrideData[newItem.id].titleZh;
           overrideChanged = true;
         }
         if (newItem.titleEn !== oldItem.titleEn && overrideData[newItem.id].titleEn !== undefined) {
-          console.log(`[Diff] titleEn changed for ${newItem.id}. Clearing override.`);
+          console.log(`[Diff] titleEn changed for ${newItem.id}. 最新名稱: "${newItem.titleEn}", 被清除的 Override 名稱: "${overrideData[newItem.id].titleEn}" (Clearing override.)`);
           delete overrideData[newItem.id].titleEn;
           overrideChanged = true;
         }

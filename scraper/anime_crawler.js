@@ -3,9 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
+import { resolveGamerStreamingUrl, resolveGamerInfo } from './scraper_utils.mjs';
+import { washGamerStreamings } from './wash_gamer_links.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
-const START_YEAR = 2010; 
+const GAMER_CACHE_FILE = path.join(process.cwd(), 'scraper', 'gamer_url_cache.json');
+const START_YEAR = 2010;
 
 const genreMap = {
   'Action': '動作', 'Adventure': '冒險', 'Comedy': '喜劇', 'Drama': '劇情',
@@ -22,6 +25,48 @@ const SEASON_MONTH_MAP = {
   'SUMMER': '07',
   'FALL': '10'
 };
+
+const STREAMING_SITE_NAMES = {
+  gamer: { name: '動畫瘋', region: '台灣' },
+  gamer_hk: { name: '動畫瘋', region: '港澳' },
+  muse_tw: { name: '木棉花 YouTube', region: '台灣' },
+  muse_hk: { name: '木棉花 YouTube', region: '港澳' },
+  ani_one: { name: 'Ani-One YouTube', region: '亞洲' },
+  ani_one_asia: { name: 'Ani-One Asia', region: '亞洲' },
+  tropics: { name: '回歸線娛樂', region: '台灣' },
+  kktv: { name: 'KKTV', region: '台灣' },
+  linetv: { name: 'LINE TV', region: '台灣' },
+  friday: { name: 'friDay影音', region: '台灣' },
+  myvideo: { name: 'MyVideo', region: '台灣' },
+  hamivideo: { name: 'Hami Video', region: '台灣' },
+  bilibili_tw: { name: 'Bilibili', region: '台灣' },
+  bilibili_hk_mo_tw: { name: 'Bilibili', region: '港澳台' },
+  bilibili_hk_mo: { name: 'Bilibili', region: '港澳' },
+  bilibili: { name: 'Bilibili', region: '大陸' },
+  iqiyi: { name: '愛奇藝', region: '亞洲' },
+  netflix: { name: 'Netflix', region: '全球' },
+  disneyplus: { name: 'Disney+', region: '全球' },
+  prime: { name: 'Prime Video', region: '全球' },
+  prime_video: { name: 'Prime Video', region: '全球' },
+  amazon_prime_video: { name: 'Prime Video', region: '全球' },
+  crunchyroll: { name: 'Crunchyroll', region: '全球' },
+  youtube: { name: 'YouTube', region: '亞洲' },
+  viu: { name: 'Viu', region: '港澳' },
+  mytv: { name: 'myTV SUPER', region: '港澳' },
+  abema: { name: 'ABEMA', region: '日本' },
+  nicovideo: { name: 'NicoNico', region: '日本' },
+  danime: { name: 'd動畫商城', region: '日本' },
+  unext: { name: 'U-NEXT', region: '日本' }
+};
+
+function getStreamingUrl(siteObj, siteMeta) {
+  if (siteObj.url) return siteObj.url;
+  const meta = siteMeta?.[siteObj.site];
+  if (meta && meta.urlTemplate) {
+    return meta.urlTemplate.replace('{{id}}', siteObj.id);
+  }
+  return `https://www.google.com/search?q=${encodeURIComponent(siteObj.id)}`;
+}
 
 // ACG Secrets for fallback translation
 async function fetchACGSecretsTitles(year, season) {
@@ -151,10 +196,12 @@ async function main() {
 
   console.log('📦 正在下載 bangumi-data 字典檔...');
   let bgmMap = new Map(); // aniListId -> translation Object
+  let bgmSiteMeta = {};
   try {
     const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
     if (res.ok) {
       const data = await res.json();
+      bgmSiteMeta = data.siteMeta || {};
       (data.items || []).forEach(item => {
         const aniListSite = item.sites?.find(s => s.site === 'aniList');
         if (aniListSite && aniListSite.id) {
@@ -275,6 +322,24 @@ async function main() {
           newlyAddedAnimes.push({ id: fullId, title: titleZh });
         }
 
+        const bgmItem = bgmMap.get(aniListId);
+        const streamings = [];
+        if (bgmItem && bgmItem.sites) {
+          const regionPriority = { '台灣': 1, '港澳台': 2, '亞洲': 3, '全球': 4, '大陸': 5, '日本': 6 };
+          bgmItem.sites.forEach(s => {
+            const siteConfig = STREAMING_SITE_NAMES[s.site];
+            if (siteConfig) {
+              streamings.push({
+                site: s.site,
+                name: siteConfig.name,
+                region: siteConfig.region,
+                url: getStreamingUrl(s, bgmSiteMeta)
+              });
+            }
+          });
+          streamings.sort((a, b) => (regionPriority[a.region] || 99) - (regionPriority[b.region] || 99));
+        }
+
         finalAnimeList.push({
           id: fullId,
           titleZh,
@@ -283,7 +348,8 @@ async function main() {
           coverImage: finalCover,
           coverImageAniList: item.coverImage?.extraLarge || item.coverImage?.large || "",
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
-          genres
+          genres,
+          ...(streamings.length > 0 && { streamings })
         });
       }
       
@@ -304,10 +370,20 @@ async function main() {
     try {
       const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
       const promptText = fs.readFileSync(path.join(process.cwd(), 'scraper', 'ai_translate_prompt.md'), 'utf-8');
-      const response = await ai.models.generateContent({
-        model: 'gemini-3.5-flash',
-        contents: `${promptText}\n\n輸入清單：\n${JSON.stringify(missingTranslations, null, 2)}`
-      });
+      let response;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          response = await ai.models.generateContent({
+            model: 'gemini-3.5-flash',
+            contents: `${promptText}\n\n輸入清單：\n${JSON.stringify(missingTranslations, null, 2)}`
+          });
+          break;
+        } catch (apiErr) {
+          if (attempt === 3) throw apiErr;
+          console.warn(`⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt ${attempt}/3)，等待 3 秒後重試...`);
+          await new Promise(r => setTimeout(r, 3000));
+        }
+      }
       const aiText = response.text().replace(/```json/g, '').replace(/```/g, '').trim();
       const aiResult = JSON.parse(aiText);
       
@@ -351,6 +427,36 @@ async function main() {
     });
     finalAnimeList = Array.from(mergedMap.values());
   }
+
+  // 為所有項目（包含舊有資料庫項目）自動補充 bangumi-data 授權連結
+  if (bgmMap.size > 0) {
+    finalAnimeList.forEach(item => {
+      const aniListId = item.id.replace('anilist-', '');
+      if ((!item.streamings || item.streamings.length === 0) && bgmMap.has(aniListId)) {
+        const bgmItem = bgmMap.get(aniListId);
+        const streamings = [];
+        if (bgmItem.sites) {
+          bgmItem.sites.forEach(s => {
+            const meta = bgmSiteMeta[s.site];
+            if (meta && (meta.type === 'onair' || s.site === 'gamer' || s.site === 'gamer_hk')) {
+              const urlTemplate = meta.urlTemplate || '';
+              const url = urlTemplate.replace('{{id}}', s.id) || s.url || '';
+              if (url) {
+                let region = '全球/日本';
+                if (meta.regions && meta.regions.includes('TW')) region = '台灣';
+                else if (meta.regions && meta.regions.includes('HK')) region = '港澳';
+                else if (meta.regions && meta.regions.includes('CN')) region = '中國大陸';
+                streamings.push({ site: s.site, name: meta.title, region, url });
+              }
+            }
+          });
+        }
+        if (streamings.length > 0) item.streamings = streamings;
+      }
+    });
+  }
+
+  await washGamerStreamings(finalAnimeList, newlyAddedAnimes);
 
   const summaryPath = path.join(process.cwd(), 'scraper', 'run_summary.txt');
   let summaryContent = `【動畫爬蟲】完成。本次實際抓取 ${crawledCount} 筆，經 ID 比對合併後資料庫共 ${finalAnimeList.length} 筆，新增資料 ${newlyAddedAnimes.length} 筆，AI 翻譯 ${translatedCount} 筆。\n`;

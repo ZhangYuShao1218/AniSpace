@@ -1,3 +1,10 @@
+export interface StreamingPlatform {
+  site: string;
+  name: string;
+  region: string;
+  url: string;
+}
+
 export interface Anime {
   id: string;
   titleZh: string;
@@ -8,6 +15,11 @@ export interface Anime {
   yearSeason: string;
   genres: string[];
   show?: string | boolean;
+  streamings?: StreamingPlatform[];
+  startDate?: { year?: number | null; month?: number | null; day?: number | null };
+  endDate?: { year?: number | null; month?: number | null; day?: number | null };
+  updatedAt?: number;
+  status?: string;
 }
 
 export interface WatchedAnime extends Anime {

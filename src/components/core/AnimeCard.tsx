@@ -6,6 +6,7 @@ import { Star, Heart, Edit2, Check, X, Trash2 } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useAdMob } from '@/contexts/AdMobContext';
+import { StreamingList } from '@/components/core/StreamingList';
 
 interface AnimeCardProps {
   anime: Anime | WatchedAnime;
@@ -168,6 +169,9 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       >
         <Heart size={20} className={isPlanToWatch ? 'heart-fill' : ''} />
       </button>
+
+      {/* Streaming menu — Top Right Below Heart */}
+      <StreamingList streamings={anime.streamings} anime={anime} />
 
       <div className="card-image-container">
         <img src={displayCover} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />

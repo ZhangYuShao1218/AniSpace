@@ -1,5 +1,16 @@
-import axios from 'axios';
 import * as cheerio from 'cheerio';
+
+const axios = {
+    get: async (url, opts = {}) => {
+        const res = await fetch(url, opts);
+        const text = await res.text();
+        try {
+            return { data: JSON.parse(text) };
+        } catch {
+            return { data: text };
+        }
+    }
+};
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -132,3 +143,107 @@ export async function fetchBangumiData(title) {
     }
     return null;
 }
+
+async function searchGamerSingle(keyword, retryCount = 1) {
+    if (!keyword || keyword.length < 2) return null;
+    try {
+        const searchUrl = `https://ani.gamer.com.tw/search.php?keyword=${encodeURIComponent(keyword)}`;
+        const { data } = await axios.get(searchUrl, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            }
+        });
+        if (typeof data === 'string' && (data.includes('系統維修') || data.includes('Cloudflare') || data.includes('請稍後'))) {
+            if (retryCount > 0) {
+                await new Promise(r => setTimeout(r, 4000));
+                return await searchGamerSingle(keyword, retryCount - 1);
+            }
+            return null;
+        }
+        const $ = cheerio.load(data);
+        const bestMatch = $('a.theme-list-main').first();
+        if (bestMatch.length > 0) {
+            const href = bestMatch.attr('href') || '';
+            const snMatch = href.match(/sn=(\d+)/);
+            if (snMatch && snMatch[1]) {
+                return `https://ani.gamer.com.tw/animeRef.php?sn=${snMatch[1]}`;
+            }
+        }
+    } catch (e) {
+        if (retryCount > 0) {
+            await new Promise(r => setTimeout(r, 4000));
+            return await searchGamerSingle(keyword, retryCount - 1);
+        }
+    }
+    return null;
+}
+
+/**
+ * Resolves an anime title to its true Bahamut Anime Crazy watch URL with intelligent fallback matching.
+ * @param {string} title 
+ * @returns {Promise<string | null>}
+ */
+export async function resolveGamerStreamingUrl(title) {
+    if (!title) return null;
+    let res = await searchGamerSingle(title);
+    if (res) return res;
+
+    const cleanTitle = title.replace(/[～〜\-─!！:：,，。?？\s]+/g, ' ').trim();
+    if (cleanTitle !== title) {
+        res = await searchGamerSingle(cleanTitle);
+        if (res) return res;
+    }
+
+    const pureChars = title.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
+    if (pureChars.length >= 6) {
+        res = await searchGamerSingle(pureChars.substring(0, 6));
+        if (res) return res;
+    }
+    return null;
+}
+
+/**
+ * Fetches official Bahamut title and streaming URL purely from an acgDetail URL without fuzzy search.
+ * @param {string} acgDetailUrl 
+ * @param {string} currentTitle 
+ * @returns {Promise<{ resolvedUrl: string | null, officialTitle: string | null, isBlocked?: boolean }>}
+ */
+export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
+    let officialTitle = null;
+    let resolvedUrl = null;
+
+    if (acgDetailUrl && acgDetailUrl.includes('acgDetail.php')) {
+        try {
+            const res = await fetch(acgDetailUrl, {
+                headers: { 
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' 
+                }
+            });
+            const html = await res.text();
+            if (html.includes('系統維修') || html.includes('Cloudflare') || html.includes('請稍後') || res.status === 403 || res.status === 503) {
+                console.warn(`[防呆保護] 遭遇巴哈姆特防護或系統維護 (${acgDetailUrl})`);
+                return { resolvedUrl: null, officialTitle: null, isBlocked: true };
+            }
+            const $ = cheerio.load(html);
+            const h1 = $('h1').text().trim();
+            if (h1 && !h1.includes('系統維修') && !h1.includes('巴哈姆特') && !h1.includes('Forbidden') && !h1.includes('請稍後')) {
+                officialTitle = h1;
+            }
+            $('a').each((_, el) => {
+                let href = $(el).attr('href') || '';
+                if (href.includes('ani.gamer.com.tw') && !resolvedUrl) {
+                    if (href.startsWith('//')) href = 'https:' + href;
+                    else if (href.startsWith('http://')) href = href.replace('http://', 'https://');
+                    resolvedUrl = href;
+                }
+            });
+        } catch (e) {
+            console.warn(`[防呆保護] 請求 ACG 百科失敗: ${e.message}`);
+            return { resolvedUrl: null, officialTitle: null, isBlocked: true };
+        }
+    }
+
+    return { resolvedUrl, officialTitle, isBlocked: false };
+}
+
+

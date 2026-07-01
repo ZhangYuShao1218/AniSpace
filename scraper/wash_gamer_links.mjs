@@ -67,6 +67,7 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
       item.titleZh = officialTitle;
       if (!overrideData[item.id]) overrideData[item.id] = {};
       overrideData[item.id].titleZh = officialTitle;
+      overrideData[item.id].source = 'gamer';
       overrideUpdated = true;
     }
     if (resolvedUrl) {

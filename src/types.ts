@@ -16,6 +16,10 @@ export interface Anime {
   genres: string[];
   show?: string | boolean;
   streamings?: StreamingPlatform[];
+  startDate?: { year?: number | null; month?: number | null; day?: number | null };
+  endDate?: { year?: number | null; month?: number | null; day?: number | null };
+  updatedAt?: number;
+  status?: string;
 }
 
 export interface WatchedAnime extends Anime {

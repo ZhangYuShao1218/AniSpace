@@ -49,13 +49,13 @@
   max-height: 300px;
   display: flex;
   flex-direction: column;
-  background: rgba(18, 22, 30, 0.92);
+  background: rgba(18, 22, 30, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 12px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05);
-  padding: 8px;
+  padding: 6px 8px;
   overflow-x: hidden;
   overscroll-behavior: contain;
   animation: popoverFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -76,12 +76,33 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 8px 8px;
+  padding: 6px 8px 6px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #a0aec0;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+.streaming-popover-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 6px;
+  padding: 4px 8px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  font-size: 0.73rem;
+  color: #a0aec0;
+}
+
+.streaming-popover-footer svg {
+  flex-shrink: 0;
+}
+
+.streaming-popover-footer span {
+  display: inline-block;
+  transform: translateY(0.5px);
 }
 
 .streaming-popover-list {

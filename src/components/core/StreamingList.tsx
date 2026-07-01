@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Menu, Play, Film } from 'lucide-react';
+import { Menu, Play, Film, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import type { StreamingPlatform } from '@/types';
+import type { StreamingPlatform, Anime } from '@/types';
 import './StreamingList.css';
 
 const GlobeIcon = ({ size = 13 }: { size?: number }) => (
@@ -25,6 +25,7 @@ const GlobeIcon = ({ size = 13 }: { size?: number }) => (
 
 interface StreamingListProps {
   streamings?: StreamingPlatform[];
+  anime?: Anime;
 }
 
 const FREE_SITES = new Set([
@@ -92,14 +93,33 @@ const PlatformLogoImage: React.FC<{ site: string; fallback: React.ReactNode }> =
   );
 };
 
-export const StreamingList: React.FC<StreamingListProps> = ({ streamings }) => {
-  const { t } = useLanguage();
+export const StreamingList: React.FC<StreamingListProps> = ({ streamings, anime }) => {
+  const { t, language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [popoverPos, setPopoverPos] = useState({ top: 0, left: 0 });
   const buttonRef = useRef<HTMLButtonElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const lastOpenedTimeRef = useRef<number>(0);
+
+  const formatPremiereDate = () => {
+    if (!anime) return null;
+    const sd = (anime as any).startDate;
+    if (sd && typeof sd === 'object' && sd.year) {
+      if (sd.month && sd.day) {
+        const d = new Date(sd.year, sd.month - 1, sd.day);
+        return d.toLocaleDateString(language === 'en' ? 'en-US' : language === 'ja' ? 'ja-JP' : 'zh-TW', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit'
+        });
+      }
+      return `${sd.year}`;
+    }
+    return null;
+  };
+
+  const premiereStr = formatPremiereDate() || anime?.yearSeason;
 
   useEffect(() => {
     const el = popoverRef.current;
@@ -393,6 +413,12 @@ export const StreamingList: React.FC<StreamingListProps> = ({ streamings }) => {
               );
             })}
           </div>
+          {premiereStr && (
+            <div className="streaming-popover-footer">
+              <Clock size={12} />
+              <span>{t('premiere')}: {premiereStr}</span>
+            </div>
+          )}
         </div>,
         document.body
       )}

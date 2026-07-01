@@ -265,6 +265,11 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       coverImageAniList: item.coverImageAniList || master.coverImageAniList,
       yearSeason: item.yearSeason || master.yearSeason,
       genres: (item.genres && item.genres.length > 0) ? item.genres : master.genres,
+      streamings: (item.streamings && item.streamings.length > 0) ? item.streamings : master.streamings,
+      startDate: item.startDate || master.startDate,
+      endDate: item.endDate || master.endDate,
+      updatedAt: item.updatedAt || master.updatedAt,
+      status: item.status || master.status,
     };
   }, [remoteAnimeMap]);
 

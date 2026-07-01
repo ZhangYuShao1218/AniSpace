@@ -171,7 +171,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       </button>
 
       {/* Streaming menu — Top Right Below Heart */}
-      <StreamingList streamings={anime.streamings} />
+      <StreamingList streamings={anime.streamings} anime={anime} />
 
       <div className="card-image-container">
         <img src={displayCover} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />

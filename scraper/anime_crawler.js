@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
-import { resolveGamerStreamingUrl, resolveGamerInfo } from './scraper_utils.mjs';
+import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings } from './scraper_utils.mjs';
 import { washGamerStreamings } from './wash_gamer_links.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
@@ -343,7 +343,7 @@ async function main() {
               });
             }
           });
-          streamings.sort((a, b) => (regionPriority[a.region] || 99) - (regionPriority[b.region] || 99));
+          const mergedStreamings = normalizeAndMergeStreamings(streamings);
         }
 
         finalAnimeList.push({
@@ -356,7 +356,7 @@ async function main() {
           startDate: item.startDate || null,
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
           genres,
-          ...(streamings.length > 0 && { streamings })
+          ...(streamings.length > 0 && { streamings: normalizeAndMergeStreamings(streamings) })
         });
       }
       
@@ -432,7 +432,16 @@ async function main() {
   if (oldDataMap && oldDataMap.size > 0) {
     const mergedMap = new Map(oldDataMap); // 1. 先放入所有舊資料作為底層
     finalAnimeList.forEach(item => {
-      mergedMap.set(item.id, item);        // 2. 新爬取資料覆蓋更新（更新標題、封面與分類標籤），新 ID 自動追加
+      if (oldItem) {
+        if (oldItem.preferredCoverImage) {
+          item.preferredCoverImage = oldItem.preferredCoverImage;
+          item.coverImage = oldItem.preferredCoverImage;
+        }
+        if (oldItem.show !== undefined) {
+          item.show = oldItem.show;
+        }
+      }
+      mergedMap.set(item.id, item);        // 2. 新爬取資料覆蓋更新，但尊重並保留 preferredCoverImage
     });
     finalAnimeList = Array.from(mergedMap.values());
   }
@@ -460,7 +469,7 @@ async function main() {
             }
           });
         }
-        if (streamings.length > 0) item.streamings = streamings;
+        if (streamings.length > 0) item.streamings = normalizeAndMergeStreamings(streamings);
       }
     });
   }

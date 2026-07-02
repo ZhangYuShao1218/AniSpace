@@ -246,4 +246,56 @@ export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
     return { resolvedUrl, officialTitle, isBlocked: false };
 }
 
+/**
+ * Merge duplicate gamer streamings (gamer and gamer_hk) into a single unified platform.
+ * @param {Array} streamings
+ * @returns {Array}
+ */
+export function normalizeAndMergeStreamings(streamings) {
+  if (!streamings || !Array.isArray(streamings) || streamings.length === 0) return streamings;
+  const mergedMap = new Map();
+  let hasGamerTw = false;
+  let hasGamerHk = false;
+  let gamerUrl = '';
+
+  streamings.forEach(st => {
+    const isGamer = st?.site === 'gamer' || st?.site === 'gamer_hk' || (st?.name && st.name.includes('動畫瘋'));
+    if (isGamer) {
+      if (st.site === 'gamer' || st.region === '台灣' || st.region?.includes('台灣')) hasGamerTw = true;
+      if (st.site === 'gamer_hk' || st.region === '港澳' || st.region?.includes('港澳')) hasGamerHk = true;
+      if (st.url?.includes('ani.gamer.com.tw')) {
+        gamerUrl = st.url;
+      } else if (!gamerUrl && st.url) {
+        gamerUrl = st.url;
+      }
+    }
+  });
+
+  streamings.forEach(st => {
+    if (!st || !st.site) return;
+    const isGamer = st.site === 'gamer' || st.site === 'gamer_hk' || (st.name && st.name.includes('動畫瘋'));
+    if (isGamer) {
+      if (!mergedMap.has('gamer_merged')) {
+        let region = '台港澳';
+        if (hasGamerTw && !hasGamerHk) region = '台灣';
+        else if (!hasGamerTw && hasGamerHk) region = '港澳';
+        mergedMap.set('gamer_merged', {
+          site: 'gamer',
+          name: '動畫瘋',
+          region,
+          url: gamerUrl || st.url || ''
+        });
+      }
+    } else {
+      const key = `${st.site}_${st.url}`;
+      if (!mergedMap.has(key)) {
+        mergedMap.set(key, { ...st });
+      }
+    }
+  });
+
+  const regionPriority = { '台灣': 1, '台港澳': 2, '港澳台': 3, '亞洲': 4, '全球': 5, '港澳': 6, '日本': 7 };
+  return Array.from(mergedMap.values()).sort((a, b) => (regionPriority[a.region] || 99) - (regionPriority[b.region] || 99));
+}
+
 

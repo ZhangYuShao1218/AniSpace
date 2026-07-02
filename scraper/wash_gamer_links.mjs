@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { pathToFileURL } from 'url';
-import { resolveGamerStreamingUrl, resolveGamerInfo } from './scraper_utils.mjs';
+import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings } from './scraper_utils.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const GAMER_CACHE_FILE = path.join(process.cwd(), 'scraper', 'gamer_url_cache.json');
@@ -104,6 +104,13 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
   } else {
     console.log(`✅ 所有新番及快取項目皆已被正確洗滌，無需網路請求。`);
   }
+
+  // 確保全庫的所有動畫瘋與動畫瘋 HK 皆被規範化合併且保留最佳播放連結
+  animeList.forEach(item => {
+    if (item.streamings && item.streamings.length > 0) {
+      item.streamings = normalizeAndMergeStreamings(item.streamings);
+    }
+  });
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {

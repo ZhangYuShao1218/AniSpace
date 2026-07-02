@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import '@/components/core/AnimeCard.css';
 import type { Anime, WatchedAnime } from '@/types';
-import { Star, Heart, Edit2, Check, X, Trash2 } from 'lucide-react';
+import { Star, Heart, Edit2, Check, X, Trash2, RotateCcw } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useAdMob } from '@/contexts/AdMobContext';
@@ -29,7 +29,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   onActionClick,
   onPlanToWatchToggle,
 }) => {
-  const { setCorrection, getCorrectedTitle, handleRemoveReview } = useAnime();
+  const { setCorrection, removeCorrection, getCorrectedTitle, handleRemoveReview } = useAnime();
   const { language, t, tCover, tGenre, tYearSeason } = useLanguage();
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [newTitle, setNewTitle] = useState('');
@@ -53,7 +53,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     baseTitle = anime.titleJa;
   }
   
-  const displayTitle = getCorrectedTitle(baseTitle);
+  const displayTitle = getCorrectedTitle(baseTitle, anime.id);
 
   const displayCover = tCover(anime);
 
@@ -85,28 +85,31 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   const handleTitleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (newTitle.trim()) {
-      setCorrection(anime.titleZh, newTitle.trim());
+      if (newTitle.trim() === baseTitle && removeCorrection) {
+        removeCorrection(anime.titleZh, anime.id);
+      } else {
+        setCorrection(anime.titleZh, newTitle.trim(), anime.id);
+      }
       setIsEditingTitle(false);
     }
+  };
+
+  const handleResetTitle = () => {
+    if (removeCorrection) {
+      removeCorrection(anime.titleZh, anime.id);
+    }
+    setNewTitle(baseTitle);
   };
 
   const calculatePopupPosition = () => {
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect();
       const popupWidth = Math.max(rect.width * 1.365, 315);
-      let left = rect.left + rect.width / 2 - popupWidth / 2;
-      const padding = 16; // 16px padding from screen edge
-      
-      if (left < padding) {
-        left = padding;
-      } else if (left + popupWidth > window.innerWidth - padding) {
-        left = window.innerWidth - popupWidth - padding;
-      }
       
       setPopoverPos({
-        top: rect.top + rect.height * 0.28,
-        left: left,
-        width: popupWidth,
+        top: rect.top + window.scrollY + rect.height * 0.5,
+        left: rect.left + window.scrollX + rect.width * 0.5,
+        width: Math.min(popupWidth, window.innerWidth - 32),
       });
     }
   };
@@ -240,12 +243,22 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
                 autoFocus
               />
               <div className="card-edit-popup-actions">
-                <button type="button" className="card-edit-popup-btn cancel" onClick={handleCancel} title={t('cancel')}>
-                  <X size={15} />
+                <button
+                  type="button"
+                  className="card-edit-popup-btn reset"
+                  onClick={handleResetTitle}
+                  title={t('resetTitle')}
+                >
+                  <RotateCcw size={15} />
                 </button>
-                <button type="submit" className="card-edit-popup-btn save" title={t('save')}>
-                  <Check size={15} />
-                </button>
+                <div style={{ display: 'flex', gap: '6px' }}>
+                  <button type="button" className="card-edit-popup-btn cancel" onClick={handleCancel} title={t('cancel')}>
+                    <X size={15} />
+                  </button>
+                  <button type="submit" className="card-edit-popup-btn save" title={t('save')}>
+                    <Check size={15} />
+                  </button>
+                </div>
               </div>
             </form>
           </div>

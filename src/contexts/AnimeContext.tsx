@@ -66,11 +66,15 @@ interface AnimeContextType {
   handlePlanToWatchToggle: (anime: Anime) => void;
   handleImport: (importedData: WatchedAnime[]) => void;
   handleImportPlan: (importedData: Anime[]) => void;
-  // Correction hook exports
+  // Correction & Userdata hook exports
+  userData?: Record<string, { customTitle?: string; customCover?: string }>;
   corrections: Record<string, string>;
-  setCorrection: (original: string, corrected: string) => void;
-  getCorrectedTitle: (original: string) => string;
-  handleImportCorrections: (importedCorrections: Record<string, string>) => void;
+  setCorrection: (original: string, corrected: string, id?: string) => void;
+  removeCorrection?: (original: string, id?: string) => void;
+  setCustomCover?: (idOrTitle: string, coverUrl: string) => void;
+  getCorrectedTitle: (original: string, id?: string) => string;
+  getCustomCover?: (idOrTitle: string) => string | undefined;
+  handleImportCorrections: (importedCorrections: Record<string, any>) => void;
   clearCorrections: () => void;
   handleClearRecords: () => void;
   handleClearAllData: () => void;
@@ -79,7 +83,16 @@ interface AnimeContextType {
 const AnimeContext = createContext<AnimeContextType | undefined>(undefined);
 
 export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [remoteAnime, setRemoteAnime] = useState<Anime[]>([]);
+  const [remoteAnime, setRemoteAnime] = useState<Anime[]>(() => {
+    const cachedData = localStorage.getItem(CACHED_DATA_KEY);
+    if (cachedData) {
+      try {
+        const parsed = JSON.parse(cachedData);
+        if (Array.isArray(parsed)) return parsed;
+      } catch (e) { }
+    }
+    return [];
+  });
   const [customAnimeList, setCustomAnimeList] = useState<Anime[]>(() => {
     const saved = localStorage.getItem(CUSTOM_ANIME_KEY);
     return saved ? JSON.parse(saved) : [];
@@ -106,7 +119,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     return `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()} ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
   }, [lastSyncTime]);
 
-  const { corrections, setCorrection, getCorrectedTitle, handleImportCorrections, clearCorrections } = useTitleCorrections();
+  const { userData, corrections, setCorrection, removeCorrection, setCustomCover, getCorrectedTitle, getCustomCover, handleImportCorrections, clearCorrections } = useTitleCorrections();
 
   const handleSync = useCallback(async () => {
     setIsScraping(true);
@@ -162,11 +175,26 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, [handleSync]);
 
   useEffect(() => {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(watchedList));
+    // 輕量正規化儲存：使用者儲存空間只記錄動畫 ID 與評分、評論、日期及個人修改屬性
+    const lightweightWatched = watchedList.map(w => ({
+      id: w.id,
+      userRating: w.userRating,
+      userComment: w.userComment,
+      watchedDate: w.watchedDate,
+      ...((w as any).customTitle ? { customTitle: (w as any).customTitle } : {}),
+      ...((w as any).customCover ? { customCover: (w as any).customCover } : {}),
+    }));
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(lightweightWatched));
   }, [watchedList]);
 
   useEffect(() => {
-    localStorage.setItem(PLAN_TO_WATCH_KEY, JSON.stringify(planToWatchList));
+    // 輕量正規化儲存：期待清單只保存動畫 ID 與個人客製設定
+    const lightweightPlan = planToWatchList.map(p => ({
+      id: p.id,
+      ...((p as any).customTitle ? { customTitle: (p as any).customTitle } : {}),
+      ...((p as any).customCover ? { customCover: (p as any).customCover } : {}),
+    }));
+    localStorage.setItem(PLAN_TO_WATCH_KEY, JSON.stringify(lightweightPlan));
   }, [planToWatchList]);
 
   useEffect(() => {
@@ -254,24 +282,21 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const mergeItemWithMaster = useCallback(<T extends Anime>(item: T): T => {
     const master = remoteAnimeMap.get(item.id);
     if (!master) return item;
+
+    const customTitle = userData?.[item.id]?.customTitle || (item as any).customTitle;
+    const customCover = userData?.[item.id]?.customCover || (item as any).customCover;
+
     return {
-      ...master,
-      ...item,
-      // 嚴格防呆：僅當該欄位為空值或未定義時才填入官方主資料庫的值，絕不覆蓋使用者設定的內容
-      titleZh: item.titleZh || master.titleZh,
-      titleEn: item.titleEn || master.titleEn,
-      titleJa: item.titleJa || master.titleJa,
-      coverImage: item.coverImage || master.coverImage,
-      coverImageAniList: item.coverImageAniList || master.coverImageAniList,
-      yearSeason: item.yearSeason || master.yearSeason,
-      genres: (item.genres && item.genres.length > 0) ? item.genres : master.genres,
-      streamings: (item.streamings && item.streamings.length > 0) ? item.streamings : master.streamings,
-      startDate: item.startDate || master.startDate,
-      endDate: item.endDate || master.endDate,
-      updatedAt: item.updatedAt || master.updatedAt,
-      status: item.status || master.status,
-    };
-  }, [remoteAnimeMap]);
+      ...master, // 1. 基礎動畫元資料（標題、封面、年份、分類、播放平台等）全數由主表 remoteAnimeMap 權威授權
+      // 2. 嚴格提取並繼承使用者評價紀錄（完美兼容舊版全包資料與新版輕量資料格式）
+      ...((item as any).userRating !== undefined ? { userRating: (item as any).userRating } : {}),
+      ...((item as any).userComment !== undefined ? { userComment: (item as any).userComment } : {}),
+      ...((item as any).watchedDate !== undefined ? { watchedDate: (item as any).watchedDate } : {}),
+      // 3. 使用者最高優先：若使用者在 anime_userdata 表中設定了自訂名稱或封面，以此為第 1 順位呈現
+      ...(customTitle ? { titleZh: customTitle, customTitle } : {}),
+      ...(customCover ? { coverImage: customCover, customCover } : {}),
+    } as unknown as T;
+  }, [remoteAnimeMap, userData]);
 
   const enrichedCustomAnimeList = useMemo(() => customAnimeList.map(mergeItemWithMaster), [customAnimeList, mergeItemWithMaster]);
   const enrichedWatchedList = useMemo(() => watchedList.map(mergeItemWithMaster), [watchedList, mergeItemWithMaster]);
@@ -294,17 +319,21 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     handlePlanToWatchToggle,
     handleImport,
     handleImportPlan,
+    userData,
     corrections,
     setCorrection,
+    removeCorrection,
+    setCustomCover,
     getCorrectedTitle,
+    getCustomCover,
     handleImportCorrections,
     clearCorrections,
     handleClearRecords,
     handleClearAllData
   }), [
-    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, corrections,
+    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, userData, corrections,
     handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
-    handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, getCorrectedTitle,
+    handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, removeCorrection, setCustomCover, getCorrectedTitle, getCustomCover,
     handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData
   ]);
 

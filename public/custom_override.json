@@ -1,6 +1,6 @@
 {
   "108992": {
-    "titleZh": "莫比烏斯之塵",
+    "titleZh": "梅比烏斯之塵",
     "source": "ai"
   },
   "133007": {
@@ -40,7 +40,7 @@
     "source": "ai"
   },
   "163144": {
-    "titleZh": "槍神 TRIGUN STARGAZE",
+    "titleZh": "槍神 STARGAZE",
     "source": "ai"
   },
   "166617": {
@@ -244,7 +244,7 @@
     "source": "ai"
   },
   "211308": {
-    "titleZh": "THE RIBBON HERO",
+    "titleZh": "緞帶英雄",
     "source": "ai"
   },
   "211711": {
@@ -286,7 +286,6 @@
     "source": "gamer"
   },
   "anilist-211308": {
-    "titleZh": "THE RIBBON HERO",
     "source": "gamer"
   },
   "anilist-206914": {
@@ -651,6 +650,26 @@
   },
   "anilist-21778": {
     "titleZh": "岸邊露伴一動也不動",
+    "source": "gamer"
+  },
+  "anilist-21238": {
+    "titleZh": "Anne-Happy",
+    "source": "gamer"
+  },
+  "anilist-19603": {
+    "titleZh": "Fate/stay night [Unlimited Blade Works]",
+    "source": "gamer"
+  },
+  "anilist-19815": {
+    "titleZh": "NO GAME NO LIFE 遊戲人生",
+    "source": "gamer"
+  },
+  "anilist-10087": {
+    "titleZh": "Fate/zero",
+    "source": "gamer"
+  },
+  "anilist-8516": {
+    "titleZh": "笨蛋，測驗，召喚獸 第二季",
     "source": "gamer"
   }
 }

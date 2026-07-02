@@ -432,7 +432,16 @@ async function main() {
   if (oldDataMap && oldDataMap.size > 0) {
     const mergedMap = new Map(oldDataMap); // 1. 先放入所有舊資料作為底層
     finalAnimeList.forEach(item => {
-      mergedMap.set(item.id, item);        // 2. 新爬取資料覆蓋更新（更新標題、封面與分類標籤），新 ID 自動追加
+      if (oldItem) {
+        if (oldItem.preferredCoverImage) {
+          item.preferredCoverImage = oldItem.preferredCoverImage;
+          item.coverImage = oldItem.preferredCoverImage;
+        }
+        if (oldItem.show !== undefined) {
+          item.show = oldItem.show;
+        }
+      }
+      mergedMap.set(item.id, item);        // 2. 新爬取資料覆蓋更新，但尊重並保留 preferredCoverImage
     });
     finalAnimeList = Array.from(mergedMap.values());
   }

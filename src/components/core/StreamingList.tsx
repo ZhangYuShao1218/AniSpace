@@ -161,15 +161,20 @@ export const StreamingList: React.FC<StreamingListProps> = ({ streamings, anime 
   // 1. 合併重複網站 (特別是 動畫瘋 台灣與港澳合併為 台港澳)
   const mergedMap = new Map<string, StreamingPlatform>();
   streamings.forEach(st => {
-    // 只要名稱是動畫瘋就統一用同一筆紀錄
-    const key = st.name === '動畫瘋' ? 'gamer_merged' : `${st.site}_${st.url}`;
+    const isGamer = st.site === 'gamer' || st.site === 'gamer_hk' || (st.name && st.name.includes('動畫瘋'));
+    const key = isGamer ? 'gamer_merged' : `${st.site}_${st.url}`;
     if (mergedMap.has(key)) {
-      const existing = mergedMap.get(key)!;
-      if (st.name === '動畫瘋' && existing.region !== st.region) {
+      if (isGamer) {
+        const existing = mergedMap.get(key)!;
         existing.region = '台港澳';
+        existing.name = '動畫瘋';
       }
     } else {
-      mergedMap.set(key, { ...st });
+      if (isGamer) {
+        mergedMap.set(key, { ...st, site: 'gamer', name: '動畫瘋' });
+      } else {
+        mergedMap.set(key, { ...st });
+      }
     }
   });
 

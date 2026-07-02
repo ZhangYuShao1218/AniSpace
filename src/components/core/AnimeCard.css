@@ -335,25 +335,26 @@
   z-index: 998;
 }
 
-/* Popup panel — wide rectangle */
+/* Popup panel — centered over anime item */
 .card-edit-popup {
-  position: fixed;
+  position: absolute;
+  transform: translate(-50%, -50%);
   z-index: 999;
   background: rgba(18, 20, 30, 0.97);
   border: 1px solid rgba(255, 255, 255, 0.15);
   outline: 1px solid rgba(255, 255, 255, 0.05);
   outline-offset: -2px;
   border-radius: 12px;
-  padding: 14px 18px 12px;
+  padding: 16px 20px 14px;
   box-shadow:
-    0 16px 48px rgba(0, 0, 0, 0.55),
+    0 24px 64px rgba(0, 0, 0, 0.65),
     0 0 0 1px rgba(255, 255, 255, 0.03) inset;
   animation: popupEnter 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @keyframes popupEnter {
-  from { opacity: 0; transform: scale(0.92) translateY(6px); }
-  to   { opacity: 1; transform: scale(1)    translateY(0); }
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.92) translateY(6px); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1) translateY(0); }
 }
 
 /* Label row */
@@ -390,7 +391,8 @@
 .card-edit-popup-actions {
   display: flex;
   gap: 6px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -403,8 +405,22 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.15s ease;
-  border: 1px solid transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
   flex-shrink: 0;
+}
+
+.card-edit-popup-btn.reset {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.card-edit-popup-btn.reset:hover {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.35);
 }
 
 .card-edit-popup-btn.cancel {
@@ -420,15 +436,15 @@
 }
 
 .card-edit-popup-btn.save {
-  background: rgba(255, 255, 255, 0.07);
-  color: var(--text-muted);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  border-color: rgba(99, 102, 241, 0.35);
 }
 
 .card-edit-popup-btn.save:hover {
-  background: rgba(99, 102, 241, 0.25);
-  color: #a5b4fc;
-  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.32);
+  color: #ffffff;
+  border-color: rgba(99, 102, 241, 0.55);
 }
 
 .confirm-title { color: #f87171 !important; }
@@ -506,10 +522,17 @@
   border-bottom-color: var(--accent-color);
 }
 
+[data-theme="light"] .card-edit-popup-btn.reset,
 [data-theme="light"] .card-edit-popup-btn.cancel {
   background: var(--bg-secondary);
   border-color: rgba(0, 0, 0, 0.1);
   color: var(--text-secondary);
+}
+
+[data-theme="light"] .card-edit-popup-btn.reset:hover {
+  background: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+  border-color: rgba(245, 158, 11, 0.35);
 }
 
 [data-theme="light"] .card-edit-popup-btn.cancel:hover {

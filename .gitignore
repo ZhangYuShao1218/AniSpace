@@ -33,3 +33,6 @@ keystore.properties
 
 # Environment Variables
 .env
+
+# Scratch directory
+scratch/

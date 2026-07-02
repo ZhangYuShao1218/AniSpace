@@ -3,6 +3,10 @@
     "titleZh": "青出於藍",
     "source": "manual"
   },
+  "80": {
+    "titleZh": "機動戰士高達",
+    "source": "bangumi-data"
+  },
   "81": {
     "titleZh": "機動戰士鋼彈 第08MS小隊",
     "source": "manual"
@@ -39,6 +43,14 @@
     "titleZh": "勇往直前 GunBuster",
     "source": "manual"
   },
+  "1088": {
+    "titleZh": "超時空要塞",
+    "source": "bangumi-data"
+  },
+  "1089": {
+    "titleZh": "超時空要塞 可曾記得愛",
+    "source": "bangumi-data"
+  },
   "1132": {
     "titleZh": "數碼寶貝04無限地帶",
     "source": "manual"
@@ -55,6 +67,10 @@
     "titleZh": "幸運星",
     "source": "manual"
   },
+  "2652": {
+    "titleZh": "哆啦A夢 我出生的日子",
+    "source": "ai"
+  },
   "2966": {
     "titleZh": "狼與辛香料",
     "source": "manual"
@@ -62,6 +78,10 @@
   "3457": {
     "titleZh": "吸血鬼騎士",
     "source": "manual"
+  },
+  "3674": {
+    "titleZh": "再見了，絕望先生 序～絕望少女撰集～",
+    "source": "ai"
   },
   "3927": {
     "titleZh": "機動戰士高達00 第二季",
@@ -71,77 +91,733 @@
     "titleZh": "吸血鬼騎士 Guilty",
     "source": "manual"
   },
+  "5784": {
+    "titleZh": "間之楔",
+    "source": "bangumi-data"
+  },
+  "6772": {
+    "titleZh": "破刃之劍 覺醒之刻",
+    "source": "ai"
+  },
+  "6954": {
+    "titleZh": "空之境界 終章",
+    "source": "ai"
+  },
   "7059": {
     "titleZh": "黑巖射手 (OVA)",
     "source": "manual"
+  },
+  "7598": {
+    "titleZh": "狼人（Loups-Garous）",
+    "source": "ai"
+  },
+  "7739": {
+    "titleZh": "11eyes OVA",
+    "source": "ai"
+  },
+  "7858": {
+    "titleZh": "天降之物",
+    "source": "bangumi-data"
+  },
+  "8062": {
+    "titleZh": "舞-HiME：黑之舞／最後的晚餐",
+    "source": "ai"
+  },
+  "8068": {
+    "titleZh": "黑執事 廣播劇",
+    "source": "ai"
+  },
+  "8190": {
+    "titleZh": "交響情人夢 OVA 2",
+    "source": "ai"
+  },
+  "8197": {
+    "titleZh": "空之音",
+    "source": "bangumi-data"
   },
   "8302": {
     "titleZh": "大小姐×執事！",
     "source": "manual"
   },
+  "8408": {
+    "titleZh": "無頭騎士異聞錄 DuRaRaRa!!",
+    "source": "bangumi-data"
+  },
   "8424": {
     "titleZh": "MM一族",
     "source": "manual"
+  },
+  "8456": {
+    "titleZh": "女王之刃 美麗的鬥士們",
+    "source": "ai"
   },
   "8460": {
     "titleZh": "未來日記 (OVA)",
     "source": "manual"
   },
+  "8465": {
+    "titleZh": "最後大魔王",
+    "source": "bangumi-data"
+  },
+  "8479": {
+    "titleZh": "義呆利 World Series",
+    "source": "ai"
+  },
+  "8481": {
+    "titleZh": "文學少女 回憶錄",
+    "source": "ai"
+  },
+  "8507": {
+    "titleZh": "一騎當千 XTREME XECUTOR ～夢六景～",
+    "source": "ai"
+  },
+  "8514": {
+    "titleZh": "破刃之劍 訣別之路",
+    "source": "ai"
+  },
+  "8532": {
+    "titleZh": "家庭教師HITMAN REBORN! 彭哥列家族總登場！彭哥列式修學旅行，來了！！",
+    "source": "ai"
+  },
+  "8599": {
+    "titleZh": "迷途貓 貓貓劇場",
+    "source": "ai"
+  },
+  "8609": {
+    "titleZh": "名偵探柯南 ～KID in TRAP ISLAND～",
+    "source": "ai"
+  },
   "8619": {
     "titleZh": "大小姐×執事！(OVA)",
     "source": "manual"
+  },
+  "8632": {
+    "titleZh": "老鼠相撲",
+    "source": "ai"
+  },
+  "8668": {
+    "titleZh": "聖痕鍊金士 廣播劇",
+    "source": "ai"
+  },
+  "8728": {
+    "titleZh": "Code Geass 反叛的魯路修 奇蹟的生日 廣播劇",
+    "source": "ai"
   },
   "8769": {
     "titleZh": "我的妹妹哪有這麼可愛！第一季",
     "source": "manual"
   },
+  "8857": {
+    "titleZh": "日常 第0話",
+    "source": "ai"
+  },
+  "8876": {
+    "titleZh": "聲優工作！The ANIMATION",
+    "source": "ai"
+  },
+  "8894": {
+    "titleZh": "夢色蛋糕師 心動熱帶島嶼！",
+    "source": "ai"
+  },
+  "9014": {
+    "titleZh": "相黏的星星",
+    "source": "ai"
+  },
+  "9062": {
+    "titleZh": "Angel Beats! 特別篇",
+    "source": "ai"
+  },
+  "9117": {
+    "titleZh": "聖誕之吻SS",
+    "source": "bangumi-data"
+  },
+  "9202": {
+    "titleZh": "聖痕鍊金士 女帝的肖像",
+    "source": "ai"
+  },
+  "9205": {
+    "titleZh": "開球！",
+    "source": "ai"
+  },
+  "9355": {
+    "titleZh": "鶺鴒女神～Pure Engagement～第零羽 閒話兩題 (鶺鴒診斷／鶺鴒餘暇)",
+    "source": "ai"
+  },
+  "9362": {
+    "titleZh": "百花繚亂 SAMURAI GIRLS ～乙女♥歡喜羞澀的將士之約～",
+    "source": "ai"
+  },
+  "9366": {
+    "titleZh": "會長是女僕大人！特別篇！",
+    "source": "ai"
+  },
+  "9396": {
+    "titleZh": "超元氣三姊妹 歐派滿滿 媽媽元氣",
+    "source": "ai"
+  },
+  "9441": {
+    "titleZh": "夢色蛋糕師SP 專業版",
+    "source": "ai"
+  },
+  "9515": {
+    "titleZh": "學園默示錄 HIGHSCHOOL OF THE DEAD 亡者漂流者",
+    "source": "ai"
+  },
+  "9563": {
+    "titleZh": "向陽素描 × ☆☆☆",
+    "source": "ai"
+  },
   "9581": {
     "titleZh": "MM一族",
     "source": "manual"
+  },
+  "9611": {
+    "titleZh": "我的女神",
+    "source": "bangumi-data"
+  },
+  "9618": {
+    "titleZh": "玩伴貓耳娘！歡迎來玩",
+    "source": "ai"
+  },
+  "9675": {
+    "titleZh": "只有神知道的世界：Flag 0",
+    "source": "ai"
+  },
+  "9724": {
+    "titleZh": "破刃之劍 死線之涯",
+    "source": "ai"
+  },
+  "9734": {
+    "titleZh": "K-ON!! 輕音部!! 計劃!",
+    "source": "ai"
+  },
+  "9761": {
+    "titleZh": "探索者的標的",
+    "source": "ai"
+  },
+  "9925": {
+    "titleZh": "聖誕之吻 SS 妹妹篇",
+    "source": "ai"
   },
   "10020": {
     "titleZh": "我的妹妹哪有這麼可愛！TRUE ROUTE 特別篇",
     "source": "manual"
   },
+  "10067": {
+    "titleZh": "Angel Beats! 另一個結局",
+    "source": "ai"
+  },
   "10108": {
     "titleZh": "我的妹妹哪有這麼可愛！第一季 ONA特別篇",
     "source": "manual"
+  },
+  "10172": {
+    "titleZh": "爆發吧！心跳加速的麻煩急凍",
+    "source": "ai"
+  },
+  "10178": {
+    "titleZh": "大人女子的動畫時光",
+    "source": "ai"
+  },
+  "10196": {
+    "titleZh": "寶貝公主 3D天堂0[愛]",
+    "source": "ai"
+  },
+  "10209": {
+    "titleZh": "這是殭屍嗎？OVA",
+    "source": "ai"
+  },
+  "10216": {
+    "titleZh": "惡魔阿薩謝爾在召喚你",
+    "source": "bangumi-data"
+  },
+  "10249": {
+    "titleZh": "魔法禁書目錄 茵蒂克絲小劇場",
+    "source": "ai"
+  },
+  "10294": {
+    "titleZh": "永久之久遠 第一章：泡沫花瓣",
+    "source": "ai"
+  },
+  "10298": {
+    "titleZh": "會長是女僕大人！ 和主人玩耍吧♥",
+    "source": "ai"
+  },
+  "10302": {
+    "titleZh": "寶可夢 鑽石&珍珠 特別篇",
+    "source": "ai"
+  },
+  "10330": {
+    "titleZh": "爆丸 戰鬥者 機甲旋風",
+    "source": "ai"
+  },
+  "10391": {
+    "titleZh": "衝吧！尼特族探險隊",
+    "source": "ai"
+  },
+  "10417": {
+    "titleZh": "魚",
+    "source": "ai"
+  },
+  "10418": {
+    "titleZh": "死囚樂園：紅色刀使",
+    "source": "ai"
+  },
+  "10431": {
+    "titleZh": "笨蛋、測驗、召喚獸～祭～",
+    "source": "ai"
+  },
+  "10469": {
+    "titleZh": "再見！絕望先生：喵京的基督",
+    "source": "ai"
+  },
+  "10479": {
+    "titleZh": "惡魔奶爸：奔跑吧！小貝魯刑警！！",
+    "source": "ai"
+  },
+  "10536": {
+    "titleZh": "只想告訴你 迷你劇場",
+    "source": "ai"
+  },
+  "10582": {
+    "titleZh": "露蒂的玩具",
+    "source": "bangumi-data"
+  },
+  "10604": {
+    "titleZh": "緋彈的亞莉亞：武偵前來溫泉研修",
+    "source": "ai"
+  },
+  "10638": {
+    "titleZh": "電波女與青春男：午夜的太陽",
+    "source": "ai"
+  },
+  "10647": {
+    "titleZh": "青之驅魔師 裏篇",
+    "source": "ai"
+  },
+  "10686": {
+    "titleZh": "火影忍者：炎之中忍考試！鳴人vs木葉丸！！",
+    "source": "ai"
+  },
+  "10713": {
+    "titleZh": "永久之久遠 第二章：混沌的亂舞",
+    "source": "ai"
+  },
+  "10714": {
+    "titleZh": "永久之久遠 第三章：夢幻的連坐",
+    "source": "ai"
+  },
+  "10715": {
+    "titleZh": "永久之久遠 第四章：紅蓮的焦心",
+    "source": "ai"
+  },
+  "10716": {
+    "titleZh": "永久之久遠 第五章：雙絕的來復",
+    "source": "ai"
+  },
+  "10717": {
+    "titleZh": "永久之久遠 第六章：永久的久遠",
+    "source": "ai"
+  },
+  "10794": {
+    "titleZh": "IS <Infinite Stratos> 無限斯特拉托斯 安可『渴求愛情的六重奏』",
+    "source": "ai"
+  },
+  "10834": {
+    "titleZh": "笨蛋、測驗、召喚獸SPINOUT！那就是我們的日常。遠征中",
+    "source": "ai"
+  },
+  "10845": {
+    "titleZh": "魔乳秘劍帖：美乳鍛鍊法．磨乳",
+    "source": "ai"
+  },
+  "10863": {
+    "titleZh": "命運石之門 橫行跋扈的狂熱",
+    "source": "ai"
   },
   "10893": {
     "titleZh": "京騷戲畫 (2011短篇)",
     "source": "manual"
   },
+  "10897": {
+    "titleZh": "我的朋友很少 第0話：暗鍋裡美少女散發著令人遺憾的氣味(;´∀`)",
+    "source": "ai"
+  },
+  "10933": {
+    "titleZh": "R-15 OVA",
+    "source": "ai"
+  },
+  "10934": {
+    "titleZh": "曾幾何時天魔的黑兔 OVA",
+    "source": "ai"
+  },
+  "11005": {
+    "titleZh": "Holy Knight",
+    "source": "ai"
+  },
+  "11113": {
+    "titleZh": "白兔糖 迷你故事",
+    "source": "ai"
+  },
+  "11161": {
+    "titleZh": "架向星空之橋",
+    "source": "bangumi-data"
+  },
+  "11209": {
+    "titleZh": "魔劍姬！OVA",
+    "source": "ai"
+  },
   "11285": {
     "titleZh": "黑巖射手 (TV)",
     "source": "manual"
+  },
+  "11313": {
+    "titleZh": "有你的小鎮 黃昏十字路口",
+    "source": "ai"
+  },
+  "11359": {
+    "titleZh": "七龍珠改：願和平降臨未來！悟空的靈魂永垂不朽",
+    "source": "ai"
+  },
+  "11553": {
+    "titleZh": "虎與龍！便當的極意",
+    "source": "ai"
+  },
+  "11701": {
+    "titleZh": "Another The Other -因果-",
+    "source": "ai"
+  },
+  "11741": {
+    "titleZh": "Fate/Zero 第二季",
+    "source": "ai"
+  },
+  "11743": {
+    "titleZh": "劇場版 魔法禁書目錄 恩底彌翁的奇蹟",
+    "source": "ai"
+  },
+  "11813": {
+    "titleZh": "史上最強弟子兼一 OVA",
+    "source": "ai"
+  },
+  "11889": {
+    "titleZh": "偶像大師 名為765Pro的故事",
+    "source": "ai"
+  },
+  "11977": {
+    "titleZh": "劇場版 魔法少女小圓 開始的物語",
+    "source": "ai"
+  },
+  "11979": {
+    "titleZh": "劇場版 魔法少女小圓 [後篇] 永遠的物語",
+    "source": "ai"
+  },
+  "12137": {
+    "titleZh": "羅波緹卡＊羅波緹克斯",
+    "source": "ai"
+  },
+  "12449": {
+    "titleZh": "魔劍姬！心跳加速！魔劍姬！秘密訓練",
+    "source": "ai"
+  },
+  "12505": {
+    "titleZh": "C³魔幻三次方",
+    "source": "ai"
+  },
+  "12581": {
+    "titleZh": "上課到天亮Chu!",
+    "source": "ai"
+  },
+  "12665": {
+    "titleZh": "輕鬆百合：為什麼☆停不下來☆心動☆撲通撲通☆悖論☆永恆",
+    "source": "ai"
+  },
+  "12669": {
+    "titleZh": "聖誕之吻SS+ plus",
+    "source": "bangumi-data"
+  },
+  "12673": {
+    "titleZh": "要聽爸爸的話！暖呼呼",
+    "source": "ai"
+  },
+  "12729": {
+    "titleZh": "惡魔高校D×D OVA",
+    "source": "ai"
+  },
+  "12823": {
+    "titleZh": "灼眼的夏娜炭：最終毀滅",
+    "source": "ai"
+  },
+  "12893": {
+    "titleZh": "男子高校生的日常",
+    "source": "bangumi-data"
+  },
+  "13093": {
+    "titleZh": "謎樣女友X 謎樣的夏日祭典",
+    "source": "ai"
+  },
+  "13267": {
+    "titleZh": "侵略！花枝娘 OVA",
+    "source": "ai"
+  },
+  "13271": {
+    "titleZh": "劇場版 獵人 緋色的幻影 (幻影紅)",
+    "source": "ai"
+  },
+  "13357": {
+    "titleZh": "惡魔高校D×D 特別篇",
+    "source": "ai"
   },
   "13403": {
     "titleZh": "妖狐×僕SS 特別篇",
     "source": "manual"
   },
+  "13469": {
+    "titleZh": "冰菓 所應當擁有之物",
+    "source": "ai"
+  },
+  "13561": {
+    "titleZh": "罪惡王冠四格劇場：吉爾亭藏雲",
+    "source": "ai"
+  },
+  "13587": {
+    "titleZh": "女神異聞錄4 動畫版",
+    "source": "ai"
+  },
   "13659": {
     "titleZh": "我的妹妹哪有這麼可愛。第二季",
     "source": "manual"
+  },
+  "13757": {
+    "titleZh": "純白交響曲 -The color of lovers- 廣播劇動畫",
+    "source": "ai"
+  },
+  "13807": {
+    "titleZh": "屍體派對 遺失片段",
+    "source": "ai"
+  },
+  "13851": {
+    "titleZh": "出包王女Darkness",
+    "source": "bangumi-data"
+  },
+  "13939": {
+    "titleZh": "加速世界 EX",
+    "source": "ai"
+  },
+  "14049": {
+    "titleZh": "純白交響曲：愛理成為你的女朋友！？",
+    "source": "ai"
+  },
+  "14073": {
+    "titleZh": "蝦掰天文社 公立海老棲川高校天悶部",
+    "source": "ai"
+  },
+  "14189": {
+    "titleZh": "黃昏乙女 x 失憶幽靈 退魔乙女",
+    "source": "ai"
   },
   "14349": {
     "titleZh": "小魔女學園 (2013 劇場短篇)",
     "source": "manual"
   },
+  "14893": {
+    "titleZh": "所以我才沒辦法H！ 看太清楚了！泳裝大賽",
+    "source": "ai"
+  },
+  "15037": {
+    "titleZh": "屍體派對 Tortured Souls -受虐靈魂的詛咒-",
+    "source": "ai"
+  },
+  "15061": {
+    "titleZh": "星夢學園！",
+    "source": "ai"
+  },
   "15359": {
     "titleZh": "京騷戲畫 (2012短篇)",
     "source": "manual"
+  },
+  "15411": {
+    "titleZh": "魔術的家族 奇想曲 ～阿爾卡納家族風格～",
+    "source": "ai"
+  },
+  "15437": {
+    "titleZh": "這是殭屍嗎？Of the Dead 是的，這很適合我",
+    "source": "ai"
+  },
+  "15487": {
+    "titleZh": "黑子的籃球 NG特輯",
+    "source": "ai"
+  },
+  "15591": {
+    "titleZh": "女子落OVA",
+    "source": "ai"
+  },
+  "15609": {
+    "titleZh": "其中1個是妹妹！哥哥、妹妹、戀人",
+    "source": "ai"
+  },
+  "15811": {
+    "titleZh": "少女與戰車",
+    "source": "ai"
+  },
+  "15879": {
+    "titleZh": "中二病也想談戀愛！景深 ～愛與憎恨劇場",
+    "source": "ai"
+  },
+  "15881": {
+    "titleZh": "就算是哥哥，有愛就沒問題了，對吧 特別篇",
+    "source": "ai"
+  },
+  "15925": {
+    "titleZh": "電影哆啦A夢 大雄的秘密道具博物館",
+    "source": "ai"
+  },
+  "15927": {
+    "titleZh": "幻想嘉年華 日比千佳特別篇",
+    "source": "ai"
+  },
+  "15933": {
+    "titleZh": "忠僕",
+    "source": "ai"
+  },
+  "15989": {
+    "titleZh": "天才麻將少女 阿知賀篇 episode of side-A 特別篇 13話～16話",
+    "source": "ai"
+  },
+  "16001": {
+    "titleZh": "心連・情結 隨機之路",
+    "source": "ai"
+  },
+  "16099": {
+    "titleZh": "刀劍神域 OFFline",
+    "source": "ai"
+  },
+  "16149": {
+    "titleZh": "踢心",
+    "source": "ai"
+  },
+  "16273": {
+    "titleZh": "一起一起這裡那裡 第13話(未放送)「PLACE=PRINCESS」",
+    "source": "ai"
+  },
+  "16444": {
+    "titleZh": "問題兒童都來自異世界？ ～溫泉漫遊記～",
+    "source": "ai"
+  },
+  "16694": {
+    "titleZh": "散華禮彌 吾輩也... 是殭屍...",
+    "source": "ai"
+  },
+  "16700": {
+    "titleZh": "暮蟬悲鳴時 擴～爆發～",
+    "source": "ai"
+  },
+  "16762": {
+    "titleZh": "未來日記 Redial",
+    "source": "ai"
+  },
+  "16866": {
+    "titleZh": "隔壁的極道同學",
+    "source": "ai"
+  },
+  "16868": {
+    "titleZh": "只要妳說妳喜歡我。某個人",
+    "source": "ai"
+  },
+  "16916": {
+    "titleZh": "黑子的籃球 第22.5Q 「開球」",
+    "source": "ai"
+  },
+  "16934": {
+    "titleZh": "中二病也想談戀愛！ 閃耀的…聖爆誕祭（Slapstick Noel）",
+    "source": "ai"
+  },
+  "17121": {
+    "titleZh": "某人的視線",
+    "source": "ai"
+  },
+  "17259": {
+    "titleZh": "黑子的籃球 來聊聊吧",
+    "source": "ai"
+  },
+  "17341": {
+    "titleZh": "前進吧！登山少女 牆壁不可怕嗎？",
+    "source": "ai"
+  },
+  "17345": {
+    "titleZh": "閃亂神樂",
+    "source": "bangumi-data"
+  },
+  "17397": {
+    "titleZh": "獨眼巨人少女賽普～",
+    "source": "ai"
+  },
+  "17409": {
+    "titleZh": "只要你說你愛我",
+    "source": "bangumi-data"
+  },
+  "17535": {
+    "titleZh": "劇場版 魔導少年 鳳凰的巫女「初始之朝」",
+    "source": "ai"
+  },
+  "17717": {
+    "titleZh": "機動戰士鋼彈 第08MS小隊 與三次元的戰鬥",
+    "source": "ai"
+  },
+  "17843": {
+    "titleZh": "地獄刑警：事實檔案",
+    "source": "ai"
+  },
+  "17879": {
+    "titleZh": "玉子市場 扁扁動畫",
+    "source": "ai"
+  },
+  "18045": {
+    "titleZh": "戀愛與選舉與巧克力「戀妹！」",
+    "source": "ai"
+  },
+  "18121": {
+    "titleZh": "網球並不可笑 第二季",
+    "source": "ai"
   },
   "18247": {
     "titleZh": "IS-Infinite Stratos 2",
     "source": "manual"
   },
+  "18661": {
+    "titleZh": "元氣少女緣結神",
+    "source": "bangumi-data"
+  },
+  "18753": {
+    "titleZh": "果然我的青春戀愛喜劇搞錯了。「作為我方來說，也只能祈願他們和她們的未來能幸福美滿。」",
+    "source": "ai"
+  },
   "18857": {
     "titleZh": "我的妹妹哪有這麼可愛。第二季 ONA特別篇",
     "source": "manual"
   },
+  "19123": {
+    "titleZh": "航海王 梅利號篇章 ～另一個夥伴的故事～",
+    "source": "ai"
+  },
+  "19211": {
+    "titleZh": "翠星之加爾剛蒂亞",
+    "source": "bangumi-data"
+  },
+  "19363": {
+    "titleZh": "銀之匙 2",
+    "source": "ai"
+  },
+  "19391": {
+    "titleZh": "「進擊的巨人」Q版角色劇場「飛吧！訓練兵團」",
+    "source": "ai"
+  },
   "19469": {
     "titleZh": "齊木楠雄的災難 (ONA短篇)",
     "source": "manual"
+  },
+  "19511": {
+    "titleZh": "火影忍者疾風傳 Sunny Side Battle!!!",
+    "source": "ai"
   },
   "19703": {
     "titleZh": "京騷戲畫 (TV)",
@@ -151,17 +827,345 @@
     "titleZh": "暗殺教室 (JSAT特別篇)",
     "source": "manual"
   },
+  "20359": {
+    "titleZh": "山田君與7人魔女",
+    "source": "bangumi-data"
+  },
+  "20451": {
+    "titleZh": "機巧少女不會受傷 OVA",
+    "source": "ai"
+  },
+  "20453": {
+    "titleZh": "我不受歡迎，怎麼想都是你們的錯！ 未播映第13話",
+    "source": "ai"
+  },
+  "20472": {
+    "titleZh": "超次元戰記 戰機少女 THE ANIMATION 約定的永遠（真結局）",
+    "source": "ai"
+  },
+  "20479": {
+    "titleZh": "我的腦內選項正在全力妨礙學園戀愛喜劇 OVA",
+    "source": "ai"
+  },
+  "20497": {
+    "titleZh": "悠哉日常大王 要去沖繩了",
+    "source": "ai"
+  },
+  "20531": {
+    "titleZh": "境界的彼方 迷你劇場",
+    "source": "ai"
+  },
+  "20551": {
+    "titleZh": "當不成勇者的我，只好認真找工作了。OVA",
+    "source": "ai"
+  },
+  "20554": {
+    "titleZh": "LoveLive! 學園偶像計畫 OVA",
+    "source": "ai"
+  },
+  "20572": {
+    "titleZh": "斬服少女 特別篇",
+    "source": "ai"
+  },
+  "20603": {
+    "titleZh": "黑子的籃球 「要不要再來一次？」",
+    "source": "ai"
+  },
+  "20608": {
+    "titleZh": "變態王子與不笑貓。變貓BBS",
+    "source": "ai"
+  },
+  "20659": {
+    "titleZh": "在那個夏天等待 我們在度過高中最後一個夏天的同時，等待著那個夏天。",
+    "source": "ai"
+  },
+  "20660": {
+    "titleZh": "電影 中二病也想談戀愛！Lite",
+    "source": "ai"
+  },
+  "20687": {
+    "titleZh": "未確認進行式 鴨肉有種綠色的味道呢。",
+    "source": "ai"
+  },
+  "20691": {
+    "titleZh": "劇場版 進擊的巨人 前篇～紅蓮之弓矢～",
+    "source": "ai"
+  },
+  "20692": {
+    "titleZh": "劇場版 進擊的巨人 後篇～自由之翼～",
+    "source": "ai"
+  },
+  "20741": {
+    "titleZh": "劇場版 約會大作戰 萬由里審判",
+    "source": "ai"
+  },
+  "20752": {
+    "titleZh": "蟲師 續章 棘途",
+    "source": "ai"
+  },
+  "20761": {
+    "titleZh": "漫畫家與助手 THE ANIMATION 迷你OVAs",
+    "source": "ai"
+  },
+  "20767": {
+    "titleZh": "約會大作戰 II 狂三星辰祭",
+    "source": "ai"
+  },
+  "20768": {
+    "titleZh": "劇場版 境界的彼方 I'LL BE HERE 過去篇",
+    "source": "ai"
+  },
+  "20769": {
+    "titleZh": "遊戲人生 迷你OVAs",
+    "source": "ai"
+  },
+  "20777": {
+    "titleZh": "中二病也想談戀愛！戀 未放送短片",
+    "source": "ai"
+  },
+  "20779": {
+    "titleZh": "境界的彼方 #0 東雲",
+    "source": "ai"
+  },
+  "20780": {
+    "titleZh": "我們大家的河合莊 第一次的",
+    "source": "ai"
+  },
+  "20811": {
+    "titleZh": "進擊的巨人 外傳 無悔的選擇",
+    "source": "ai"
+  },
+  "20823": {
+    "titleZh": "百花繚亂 Samurai After",
+    "source": "ai"
+  },
+  "20831": {
+    "titleZh": "十字路口",
+    "source": "ai"
+  },
+  "20837": {
+    "titleZh": "青春之旅 unwritten",
+    "source": "ai"
+  },
+  "20869": {
+    "titleZh": "月刊少女野崎君 迷你OVA",
+    "source": "ai"
+  },
+  "20889": {
+    "titleZh": "中二病也想談戀愛！戀 再生的…邪王真眼默示錄",
+    "source": "ai"
+  },
+  "20895": {
+    "titleZh": "刀劍神域・離線版 Extra Edition",
+    "source": "ai"
+  },
+  "20900": {
+    "titleZh": "青春之旅 第13頁",
+    "source": "ai"
+  },
+  "20963": {
+    "titleZh": "劇場版 境界的彼方 I'LL BE HERE 未來篇",
+    "source": "ai"
+  },
   "20993": {
     "titleZh": "終結的熾天使 名古屋決戰篇",
     "source": "manual"
+  },
+  "21008": {
+    "titleZh": "蟲師 特別篇「鈴之雫」",
+    "source": "ai"
+  },
+  "21010": {
+    "titleZh": "灰色的果實 灰色的特典",
+    "source": "ai"
+  },
+  "21053": {
+    "titleZh": "甘城輝煌樂園「興奮迷你劇場 塗鴉幕後」",
+    "source": "ai"
+  },
+  "21064": {
+    "titleZh": "七人魔法使：七大罪與七魔道士",
+    "source": "ai"
+  },
+  "21077": {
+    "titleZh": "甘城輝煌樂園「沒有悠哉的空閒！」",
+    "source": "ai"
+  },
+  "21091": {
+    "titleZh": "Free! -Eternal Summer- 禁忌的All Hard！",
+    "source": "ai"
+  },
+  "21103": {
+    "titleZh": "惡魔高校D×D NEW OVA 胸部，包起來！",
+    "source": "ai"
+  },
+  "21104": {
+    "titleZh": "七大罪 OVA",
+    "source": "ai"
+  },
+  "21129": {
+    "titleZh": "閃亂神樂 ESTIVAL VERSUS -泳裝滿載的前夜祭",
+    "source": "ai"
+  },
+  "21155": {
+    "titleZh": "刀劍神域・離線版 2",
+    "source": "ai"
+  },
+  "21178": {
+    "titleZh": "Code Geass 亡國的阿基德 最終章：獻給所愛之人",
+    "source": "ai"
+  },
+  "21209": {
+    "titleZh": "新妹魔王的契約者〈Testament〉蘿莉色情魅魔萬里亞的角色講評珍藏影像",
+    "source": "ai"
+  },
+  "21235": {
+    "titleZh": "黑子的籃球 ~最棒的禮物~",
+    "source": "ai"
   },
   "21241": {
     "titleZh": "潮與虎 第二期",
     "source": "manual"
   },
+  "21247": {
+    "titleZh": "新妹魔王的契約者 東城刃更的艱辛甜蜜日常",
+    "source": "ai"
+  },
+  "21279": {
+    "titleZh": "惡魔高校D×D BorN：石踏一榮完全監修！妄想爆乳解除原創動畫",
+    "source": "ai"
+  },
+  "21303": {
+    "titleZh": "暗殺教室 episode:0 相遇的時間",
+    "source": "ai"
+  },
+  "21305": {
+    "titleZh": "OVERLORD Ple Ple Pleiades",
+    "source": "ai"
+  },
+  "21318": {
+    "titleZh": "Fate/stay night [Unlimited Blade Works] 第二季 - sunny day",
+    "source": "ai"
+  },
+  "21326": {
+    "titleZh": "東京喰種 Tokyo Ghoul 【PINTO】",
+    "source": "ai"
+  },
+  "21328": {
+    "titleZh": "乾物妹！小埋S",
+    "source": "ai"
+  },
+  "21339": {
+    "titleZh": "夏洛特：強者們",
+    "source": "ai"
+  },
+  "21348": {
+    "titleZh": "排球少年!! VS赤點",
+    "source": "ai"
+  },
+  "21376": {
+    "titleZh": "吹響吧！上低音號 番外篇：奔跑的Monaka",
+    "source": "ai"
+  },
+  "21384": {
+    "titleZh": "迷糊餐廳!!! 小鳥遊之主",
+    "source": "ai"
+  },
+  "21386": {
+    "titleZh": "一拳超人：英雄之路",
+    "source": "ai"
+  },
+  "21415": {
+    "titleZh": "灰色的樂園 灰色的特典",
+    "source": "ai"
+  },
+  "21467": {
+    "titleZh": "笨蛋、測驗、召喚獸 貳！「魔法秀吉」",
+    "source": "ai"
+  },
+  "21468": {
+    "titleZh": "笨蛋、測驗、召喚獸～祭～ 僅限選項之後",
+    "source": "ai"
+  },
+  "21483": {
+    "titleZh": "終結的熾天使「不會結束的熾天使」",
+    "source": "ai"
+  },
+  "21489": {
+    "titleZh": "新妹魔王的契約者 BURST：東城刃更極致和平的日常",
+    "source": "ai"
+  },
+  "21490": {
+    "titleZh": "我的太太是學生會長！ OVA",
+    "source": "ai"
+  },
+  "21565": {
+    "titleZh": "監獄學園 [Prison School]：瘋狂蠟像",
+    "source": "ai"
+  },
+  "21573": {
+    "titleZh": "惡魔高校D×D BorN：不會復活的不死鳥",
+    "source": "ai"
+  },
+  "21574": {
+    "titleZh": "為美好的世界獻上祝福！ 為美好的項圈獻上祝福！",
+    "source": "ai"
+  },
+  "21579": {
+    "titleZh": "慕留人 -火影忍者劇場版- 鳴人成為火影的日子",
+    "source": "ai"
+  },
+  "21585": {
+    "titleZh": "悠哉日常大王 Repeat：小螢所享受的",
+    "source": "ai"
+  },
+  "21586": {
+    "titleZh": "終結的熾天使：吸血鬼沙哈爾",
+    "source": "ai"
+  },
+  "21599": {
+    "titleZh": "灰與幻想的格林姆迦爾 OVA2.5",
+    "source": "ai"
+  },
+  "21624": {
+    "titleZh": "命運石之門：界面上的失落環節 -Divide By Zero-",
+    "source": "ai"
+  },
+  "21649": {
+    "titleZh": "少女與戰車 劇場版：愛里壽・War！",
+    "source": "ai"
+  },
+  "21691": {
+    "titleZh": "食戟之靈 OVA",
+    "source": "ai"
+  },
   "21726": {
     "titleZh": "衝吧烈子 (2016 短篇)",
     "source": "manual"
+  },
+  "21732": {
+    "titleZh": "planetarian～小小的星之夢～",
+    "source": "ai"
+  },
+  "21765": {
+    "titleZh": "終結的熾天使 名古屋決戰篇：「永不結束的熾天使 名古屋決戰篇」",
+    "source": "ai"
+  },
+  "21771": {
+    "titleZh": "星之夢～星之人～",
+    "source": "bangumi-data"
+  },
+  "21777": {
+    "titleZh": "無彩限的幻影世界：水玉奇蹟",
+    "source": "ai"
+  },
+  "21780": {
+    "titleZh": "Re:從零開始的休息時間",
+    "source": "ai"
+  },
+  "21791": {
+    "titleZh": "文豪Stray Dogs 『獨自前行』",
+    "source": "ai"
   },
   "21804": {
     "titleZh": "齊木楠雄的災難 (TV)",
@@ -179,29 +1183,509 @@
     "titleZh": "小魔女學園 (TV)",
     "source": "manual"
   },
+  "21862": {
+    "titleZh": "在下坂本，有何貴幹？ 我是坂本，過去式？",
+    "source": "ai"
+  },
+  "87486": {
+    "titleZh": "我的英雄學院：拯救！救助訓練！",
+    "source": "ai"
+  },
+  "97637": {
+    "titleZh": "NEW GAME! 我是第一次去員工旅行呢…",
+    "source": "ai"
+  },
+  "97672": {
+    "titleZh": "槍彈辯駁３-The End of 希望峰學園-希望篇",
+    "source": "ai"
+  },
+  "97769": {
+    "titleZh": "結城友奈是勇者 -勇者之章-",
+    "source": "ai"
+  },
+  "97951": {
+    "titleZh": "無彩限的幻影世界：無盡的幻影世界",
+    "source": "ai"
+  },
+  "97988": {
+    "titleZh": "漂流武士 (2017)",
+    "source": "ai"
+  },
+  "98060": {
+    "titleZh": "星期一的豐滿 特典",
+    "source": "ai"
+  },
+  "98338": {
+    "titleZh": "吹響！上低音號 第二季",
+    "source": "bangumi-data"
+  },
+  "98425": {
+    "titleZh": "快把我哥帶走！",
+    "source": "ai"
+  },
+  "98502": {
+    "titleZh": "小林家的○○龍",
+    "source": "ai"
+  },
+  "98524": {
+    "titleZh": "廢天使加百列 OVA",
+    "source": "ai"
+  },
+  "98580": {
+    "titleZh": "小林家的龍女僕：情人節，還有溫泉！(請別抱太大期望)",
+    "source": "ai"
+  },
+  "98663": {
+    "titleZh": "甲鐵城的卡巴內里 總集篇｛後篇｝燃燒的生命",
+    "source": "ai"
+  },
+  "98702": {
+    "titleZh": "食戟之靈 貳之皿 OVA",
+    "source": "ai"
+  },
+  "98856": {
+    "titleZh": "武裝少女Machiavellianism OVA",
+    "source": "ai"
+  },
+  "99302": {
+    "titleZh": "ONE PIECE 航海王 東海篇：魯夫與4名夥伴的大冒險！！",
+    "source": "ai"
+  },
+  "99394": {
+    "titleZh": "亞人醬有話要說 亞人醬的暑假",
+    "source": "ai"
+  },
+  "99470": {
+    "titleZh": "灰色的幻影扳機 THE ANIMATION",
+    "source": "ai"
+  },
+  "99807": {
+    "titleZh": "22/7",
+    "source": "ai"
+  },
+  "100168": {
+    "titleZh": "銀翼殺手：2022大停電",
+    "source": "ai"
+  },
+  "100305": {
+    "titleZh": "月色真美",
+    "source": "bangumi-data"
+  },
+  "100684": {
+    "titleZh": "網路勝利組 OVA",
+    "source": "ai"
+  },
+  "100791": {
+    "titleZh": "結城友奈是勇者 -鷲尾須美之章-",
+    "source": "ai"
+  },
+  "101016": {
+    "titleZh": "伊藤潤二驚選集：富江",
+    "source": "ai"
+  },
+  "101206": {
+    "titleZh": "搖曳露營△ OVA",
+    "source": "ai"
+  },
+  "101343": {
+    "titleZh": "來自深淵 啟程的黎明",
+    "source": "ai"
+  },
+  "101344": {
+    "titleZh": "來自深淵 流浪的黃昏",
+    "source": "ai"
+  },
+  "101432": {
+    "titleZh": "紫羅蘭永恆花園 或許總有一天會明白「愛」吧",
+    "source": "ai"
+  },
   "101571": {
     "titleZh": "衝吧烈子 (2018 TV版)",
     "source": "manual"
+  },
+  "101811": {
+    "titleZh": "Code Geass 反叛的魯路修Ⅰ 興道",
+    "source": "ai"
+  },
+  "101812": {
+    "titleZh": "Code Geass 反叛的魯路修Ⅱ 叛道",
+    "source": "ai"
+  },
+  "101816": {
+    "titleZh": "黑子的籃球：要不要聊聊呢？",
+    "source": "ai"
+  },
+  "101844": {
+    "titleZh": "快把我哥帶走！2",
+    "source": "ai"
+  },
+  "101924": {
+    "titleZh": "食戟之靈 餐之皿 極星寮的繪里奈",
+    "source": "ai"
+  },
+  "101965": {
+    "titleZh": "劇場版 刀劍神域 -序列爭戰- Off Line",
+    "source": "ai"
+  },
+  "102449": {
+    "titleZh": "路人超能100 迷你",
+    "source": "ai"
+  },
+  "102649": {
+    "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 - 罪與罰",
+    "source": "ai"
+  },
+  "102969": {
+    "titleZh": "學園奶爸 OVA",
+    "source": "ai"
+  },
+  "103237": {
+    "titleZh": "賽馬娘「BNW的誓言」",
+    "source": "ai"
+  },
+  "104170": {
+    "titleZh": "遊戲三人娘 (OAD)",
+    "source": "ai"
+  },
+  "104174": {
+    "titleZh": "命運石之門 0 結晶多形的情人節",
+    "source": "ai"
+  },
+  "104175": {
+    "titleZh": "七大罪 英雄們狂歡",
+    "source": "ai"
+  },
+  "104243": {
+    "titleZh": "殺戮的天使 (ONA)",
+    "source": "ai"
+  },
+  "104368": {
+    "titleZh": "遊戲三人娘 迷你動畫",
+    "source": "ai"
+  },
+  "104990": {
+    "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.3 - 恩仇的彼方____",
+    "source": "ai"
+  },
+  "105662": {
+    "titleZh": "工作細胞「感冒症候群」",
+    "source": "ai"
+  },
+  "105893": {
+    "titleZh": "我的英雄學院 電影版：兩個人的英雄 特典",
+    "source": "ai"
+  },
+  "106494": {
+    "titleZh": "衝吧烈子：願你有個金屬聖誕",
+    "source": "ai"
+  },
+  "106495": {
+    "titleZh": "偽戀物語",
+    "source": "ai"
+  },
+  "106572": {
+    "titleZh": "海賊王 沙漠的王女與海賊們",
+    "source": "bangumi-data"
+  },
+  "106918": {
+    "titleZh": "君主‧埃爾梅羅二世事件簿 {魔眼蒐集列車} Grace note",
+    "source": "ai"
+  },
+  "107138": {
+    "titleZh": "天使降臨到我身邊！OVA",
+    "source": "ai"
+  },
+  "107342": {
+    "titleZh": "我們仍未知道那天所看見的花的名字。「給面麻的信」",
+    "source": "ai"
+  },
+  "107506": {
+    "titleZh": "弦音 -風舞高中弓道部- 第十四話「射箭場危險」",
+    "source": "ai"
+  },
+  "107622": {
+    "titleZh": "狂賭之淵",
+    "source": "bangumi-data"
+  },
+  "108267": {
+    "titleZh": "怪怪守護神 OVA",
+    "source": "ai"
+  },
+  "108354": {
+    "titleZh": "外之國的少女",
+    "source": "bangumi-data"
   },
   "108631": {
     "titleZh": "工作細胞 第二季",
     "source": "manual"
   },
+  "108942": {
+    "titleZh": "進擊的巨人 Q版角色劇場 新生里維班",
+    "source": "ai"
+  },
+  "108945": {
+    "titleZh": "一拳超人 第二季 OVA",
+    "source": "ai"
+  },
+  "109492": {
+    "titleZh": "我們真的學不來！OVA",
+    "source": "ai"
+  },
+  "110088": {
+    "titleZh": "快把我哥帶走！3",
+    "source": "ai"
+  },
+  "110261": {
+    "titleZh": "普羅米亞 SIDE 加洛",
+    "source": "ai"
+  },
+  "110287": {
+    "titleZh": "戰乙女的餐桌",
+    "source": "ai"
+  },
+  "110738": {
+    "titleZh": "褲襪視界 Cosplay攝影褲襪",
+    "source": "ai"
+  },
+  "110851": {
+    "titleZh": "Fate/Grand Order -絕對魔獸戰線巴比倫尼亞- Initium Iter",
+    "source": "ai"
+  },
+  "110857": {
+    "titleZh": "衝吧烈子 第三季",
+    "source": "ai"
+  },
+  "111729": {
+    "titleZh": "平凡職業成就世界最強",
+    "source": "bangumi-data"
+  },
+  "111733": {
+    "titleZh": "異世界",
+    "source": "ai"
+  },
+  "111734": {
+    "titleZh": "GIVEN 被贈與的未來 劇場版",
+    "source": "bangumi-data"
+  },
+  "111789": {
+    "titleZh": "普羅米亞 SIDE 里歐",
+    "source": "ai"
+  },
+  "113345": {
+    "titleZh": "DEEMO 櫻花音色 -你彈奏的琴音，至今仍迴響-",
+    "source": "ai"
+  },
   "113538": {
     "titleZh": "排球少年!! TO THE TOP (後半)",
     "source": "manual"
+  },
+  "113813": {
+    "titleZh": "出租女友",
+    "source": "manual"
+  },
+  "113924": {
+    "titleZh": "為什麼老師會在這裡！？",
+    "source": "bangumi-data"
+  },
+  "114622": {
+    "titleZh": "異獸魔都 惡魔的附贈品",
+    "source": "ai"
+  },
+  "114981": {
+    "titleZh": "房間露營△「三溫暖、美食與三輪摩托車」",
+    "source": "ai"
+  },
+  "117496": {
+    "titleZh": "昨日之歌 Extras",
+    "source": "ai"
+  },
+  "117532": {
+    "titleZh": "歌舞伎町夏洛克 OVA",
+    "source": "ai"
+  },
+  "118125": {
+    "titleZh": "邪神與廚二病少女’ 千歲篇",
+    "source": "ai"
+  },
+  "119947": {
+    "titleZh": "偽戀: OAD",
+    "source": "ai"
+  },
+  "120046": {
+    "titleZh": "快把我哥帶走4",
+    "source": "ai"
+  },
+  "120257": {
+    "titleZh": "進擊的巨人 Q版角色劇場 新生里維班 Part 2",
+    "source": "ai"
+  },
+  "120700": {
+    "titleZh": "Re:從零開始的異世界生活 休憩時間 2nd Season",
+    "source": "ai"
+  },
+  "121684": {
+    "titleZh": "巨神與冰華之城",
+    "source": "ai"
+  },
+  "122536": {
+    "titleZh": "瑞克和莫蒂 對抗滅絕者",
+    "source": "ai"
+  },
+  "123464": {
+    "titleZh": "出租女友 合作迷你動畫",
+    "source": "manual"
+  },
+  "123901": {
+    "titleZh": "出租女友 迷你版",
+    "source": "manual"
+  },
+  "123903": {
+    "titleZh": "【腐男子召喚～在異世界被神獸給硬上了～】迷你動畫",
+    "source": "ai"
+  },
+  "124410": {
+    "titleZh": "出租女友 第二季",
+    "source": "manual"
+  },
+  "124668": {
+    "titleZh": "史萊姆們的閒話家常",
+    "source": "ai"
+  },
+  "124756": {
+    "titleZh": "黃金神威 第二期 OVA",
+    "source": "ai"
+  },
+  "126661": {
+    "titleZh": "我的英雄學院劇場版：英雄新世紀 尾聲・Plus《夢想成真》",
+    "source": "ai"
+  },
+  "127363": {
+    "titleZh": "弱角友崎同學 OVA",
+    "source": "ai"
+  },
+  "127619": {
+    "titleZh": "衝吧烈子 第四季",
+    "source": "ai"
   },
   "127720": {
     "titleZh": "無職轉生～到了異世界就拿出真本事～ (後半)",
     "source": "manual"
   },
+  "128643": {
+    "titleZh": "果然我的青春戀愛喜劇搞錯了。完 「所以，青春期不會結束，青春將會繼續下去。」",
+    "source": "ai"
+  },
   "129196": {
     "titleZh": "在地下城尋求邂逅是否搞錯了什麼 第4季 新章 迷宮篇",
     "source": "manual"
   },
+  "130183": {
+    "titleZh": "我的英雄學院：亡者特訓",
+    "source": "ai"
+  },
+  "130402": {
+    "titleZh": "WAVE!!～來衝浪吧!!～ (TV版)",
+    "source": "ai"
+  },
+  "130590": {
+    "titleZh": "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～ Ⅱ 第二季",
+    "source": "ai"
+  },
+  "132193": {
+    "titleZh": "極道主夫 Part 2",
+    "source": "ai"
+  },
+  "133891": {
+    "titleZh": "Love Live! 虹咲學園學園偶像同好會 第二季",
+    "source": "ai"
+  },
+  "136263": {
+    "titleZh": "異世界超能魔術師：宵星祭典與魔術師",
+    "source": "ai"
+  },
+  "136436": {
+    "titleZh": "小林家的龍女僕S 日本的款待（接待員是龍）",
+    "source": "ai"
+  },
+  "137337": {
+    "titleZh": "悠悠哉哉少女日和 Nonstop：社團活動很努力",
+    "source": "ai"
+  },
+  "137804": {
+    "titleZh": "小林家的龍女僕S：迷你龍EX",
+    "source": "ai"
+  },
+  "138056": {
+    "titleZh": "終末的女武神Ⅱ",
+    "source": "ai"
+  },
+  "138700": {
+    "titleZh": "憂國的莫里亞蒂 OVA",
+    "source": "ai"
+  },
+  "139754": {
+    "titleZh": "進擊的巨人 Q版角色劇場 Final",
+    "source": "ai"
+  },
+  "141534": {
+    "titleZh": "無職轉生～到了異世界就拿出真本事～ 第二季 艾莉絲的哥布林討伐",
+    "source": "ai"
+  },
+  "142411": {
+    "titleZh": "我的英雄學院 THE MOVIE 世界英雄任務 ≪啟程≫",
+    "source": "ai"
+  },
+  "142794": {
+    "titleZh": "寶可夢：阿爾宙斯篇章",
+    "source": "ai"
+  },
   "142984": {
     "titleZh": "古見同學是溝通魯蛇 第二期",
     "source": "manual"
+  },
+  "143846": {
+    "titleZh": "平凡職業造就世界最強 第二季 未播出集數",
+    "source": "ai"
+  },
+  "145560": {
+    "titleZh": "平凡職業造就世界最強 序章",
+    "source": "ai"
+  },
+  "145608": {
+    "titleZh": "賽馬娘 Pretty Derby 1週年紀念特別動畫",
+    "source": "ai"
+  },
+  "146472": {
+    "titleZh": "FLCL 垃圾搖滾",
+    "source": "ai"
+  },
+  "146503": {
+    "titleZh": "關於我轉生變成史萊姆這檔事 拯救拉米莉絲",
+    "source": "ai"
+  },
+  "146638": {
+    "titleZh": "拳願阿修羅 第二季",
+    "source": "ai"
+  },
+  "146921": {
+    "titleZh": "平凡職業造就世界最強 虛幻的冒險與奇蹟的邂逅",
+    "source": "ai"
+  },
+  "151126": {
+    "titleZh": "勇者辭職不幹了 研修旅行別迷失了目標",
+    "source": "ai"
+  },
+  "154541": {
+    "titleZh": "中高一貫!!鬼滅學園物語 ～鬼滅之宴=特別篇=～",
+    "source": "ai"
+  },
+  "154745": {
+    "titleZh": "出租女友 第三季",
+    "source": "manual"
+  },
+  "154982": {
+    "titleZh": "極道主夫 第二季",
+    "source": "ai"
   },
   "155168": {
     "titleZh": "打工吧！魔王大人 第二季 (後半)",
@@ -209,6 +1693,90 @@
   },
   "155211": {
     "titleZh": "在地下城尋求邂逅是否搞錯了什麼 第4季 深章 厄災篇",
+    "source": "manual"
+  },
+  "159807": {
+    "titleZh": "變成狗被喜歡的人撿回家了。OVA",
+    "source": "ai"
+  },
+  "162800": {
+    "titleZh": "出租女友 約會電影",
+    "source": "manual"
+  },
+  "165056": {
+    "titleZh": "海盜戰記 第二季 Same old story",
+    "source": "ai"
+  },
+  "165253": {
+    "titleZh": "孤獨搖滾！ Re:",
+    "source": "ai"
+  },
+  "165356": {
+    "titleZh": "終末的女武神Ⅱ 後篇",
+    "source": "ai"
+  },
+  "165557": {
+    "titleZh": "輝夜姬想讓人告白-Ultra Romantic- 第三期",
+    "source": "ai"
+  },
+  "168872": {
+    "titleZh": "只想告訴你 第三季",
+    "source": "ai"
+  },
+  "170206": {
+    "titleZh": "史考特・皮爾格林 起飛",
+    "source": "ai"
+  },
+  "171099": {
+    "titleZh": "孤獨搖滾！ Re:Re:",
+    "source": "ai"
+  },
+  "178083": {
+    "titleZh": "東京卍復仇者 三天戰爭篇",
+    "source": "ai"
+  },
+  "178788": {
+    "titleZh": "劇場版「鬼滅之刃」無限城篇 第一章 猗窩座再來",
+    "source": "ai"
+  },
+  "179344": {
+    "titleZh": "出租女友 第四季",
+    "source": "manual"
+  },
+  "180746": {
+    "titleZh": "靠死亡遊戲混飯吃。",
+    "source": "manual"
+  },
+  "184694": {
+    "titleZh": "我獨自升級 -ReAwakening-",
+    "source": "ai"
+  },
+  "186541": {
+    "titleZh": "醒來後擁有最強裝備和宇宙船，所以想以一戶建為目標作為傭兵自由地生活",
+    "source": "ai"
+  },
+  "195571": {
+    "titleZh": "朱紅色的假面",
+    "source": "ai"
+  },
+  "199029": {
+    "titleZh": "出租女友 第五季",
+    "source": "manual"
+  },
+  "204431": {
+    "titleZh": "怪獸8號 鳴海的平日",
+    "source": "ai"
+  },
+  "206949": {
+    "titleZh": "凶亂令媛 妮亞・利斯頓",
+    "source": "ai"
+  },
+  "207329": {
+    "titleZh": "被逐出隊伍的作弊級附加魔術師，謳歌著隨心所欲的第二人生。～我不只可以對武器，還能對任何東西賦予『強化點數』，而且能隨時憑我的意思解除效果，但剩下的人們還好嗎？～",
+    "source": "ai"
+  },
+  "209961": {
+    "titleZh": "靠死亡遊戲混飯吃。44:CLOUDY BEACH",
     "source": "manual"
   },
   "anilist-13403": {

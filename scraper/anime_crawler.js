@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
-import { resolveGamerStreamingUrl, resolveGamerInfo } from './scraper_utils.mjs';
+import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings } from './scraper_utils.mjs';
 import { washGamerStreamings } from './wash_gamer_links.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
@@ -343,7 +343,7 @@ async function main() {
               });
             }
           });
-          streamings.sort((a, b) => (regionPriority[a.region] || 99) - (regionPriority[b.region] || 99));
+          const mergedStreamings = normalizeAndMergeStreamings(streamings);
         }
 
         finalAnimeList.push({
@@ -356,7 +356,7 @@ async function main() {
           startDate: item.startDate || null,
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
           genres,
-          ...(streamings.length > 0 && { streamings })
+          ...(streamings.length > 0 && { streamings: normalizeAndMergeStreamings(streamings) })
         });
       }
       
@@ -469,7 +469,7 @@ async function main() {
             }
           });
         }
-        if (streamings.length > 0) item.streamings = streamings;
+        if (streamings.length > 0) item.streamings = normalizeAndMergeStreamings(streamings);
       }
     });
   }

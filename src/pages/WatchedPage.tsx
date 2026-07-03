@@ -14,8 +14,12 @@ const WatchedPage = () => {
   const { t } = useLanguage();
 
   const filteredData = useMemo(() => {
+    const trimmedQuery = searchQuery.trim().toLowerCase();
     let result = watchedList.filter(anime => 
-      anime.titleZh.toLowerCase().includes(searchQuery.toLowerCase())
+      !trimmedQuery ||
+      (anime.titleZh || '').toLowerCase().includes(trimmedQuery) ||
+      (anime.titleJa || '').toLowerCase().includes(trimmedQuery) ||
+      (anime.titleEn || '').toLowerCase().includes(trimmedQuery)
     );
 
     return result.sort((a, b) => {

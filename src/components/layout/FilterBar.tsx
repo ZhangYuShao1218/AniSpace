@@ -86,8 +86,9 @@ const FilterBar: React.FC<FilterBarProps> = ({
   React.useEffect(() => {
     const handler = setTimeout(() => {
       if (!isComposing.current && localSearch !== searchQuery) {
-        lastSentValue.current = localSearch;
-        onSearchChange(localSearch);
+        const trimmed = localSearch.trim();
+        lastSentValue.current = trimmed;
+        onSearchChange(trimmed);
       }
     }, 300);
     return () => clearTimeout(handler);
@@ -103,14 +104,23 @@ const FilterBar: React.FC<FilterBarProps> = ({
             placeholder={t('searchPlaceholder')} 
             value={localSearch}
             onChange={(e) => setLocalSearch(e.target.value)}
+            onBlur={(e) => {
+              const trimmed = e.target.value.trim();
+              setLocalSearch(trimmed);
+              if (trimmed !== searchQuery) {
+                lastSentValue.current = trimmed;
+                onSearchChange(trimmed);
+              }
+            }}
             onCompositionStart={() => { isComposing.current = true; }}
             onCompositionEnd={(e) => { 
               isComposing.current = false; 
               const finalVal = e.currentTarget.value;
               setLocalSearch(finalVal);
-              if (finalVal !== searchQuery) {
-                lastSentValue.current = finalVal;
-                onSearchChange(finalVal);
+              const trimmedVal = finalVal.trim();
+              if (trimmedVal !== searchQuery) {
+                lastSentValue.current = trimmedVal;
+                onSearchChange(trimmedVal);
               }
             }}
             className="search-input"

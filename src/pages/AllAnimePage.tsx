@@ -63,7 +63,12 @@ const AllAnimePage = () => {
         if (sg === '福利') return anime.genres.includes('福利') || anime.genres.includes('Hentai') || anime.genres.includes('Ecchi') || anime.genres.includes('紳士');
         return anime.genres.includes(sg);
       });
-      const matchSearch = searchQuery ? anime.titleZh.toLowerCase().includes(searchQuery.toLowerCase()) : true;
+      const trimmedQuery = searchQuery.trim().toLowerCase();
+      const matchSearch = trimmedQuery ? (
+        (anime.titleZh || '').toLowerCase().includes(trimmedQuery) ||
+        (anime.titleJa || '').toLowerCase().includes(trimmedQuery) ||
+        (anime.titleEn || '').toLowerCase().includes(trimmedQuery)
+      ) : true;
       return matchYear && matchGenre && matchSearch;
     });
 

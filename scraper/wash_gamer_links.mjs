@@ -20,6 +20,7 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
 
   // 1. 下載/查詢 bangumi-data 官方字典，作為 ACG 百科 ID 的黃金基準
   const bgmMap = new Map();
+  const titleJaMap = new Map();
   try {
     const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
     if (res.ok) {
@@ -27,11 +28,17 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
       (bgmData.items || []).forEach(item => {
         const aniSite = item.sites?.find(s => s.site === 'aniList');
         const gamerSite = item.sites?.find(s => s.site === 'gamer');
-        if (aniSite?.id && gamerSite?.id) {
-          bgmMap.set(`anilist-${aniSite.id}`, `https://acg.gamer.com.tw/acgDetail.php?s=${gamerSite.id}`);
+        if (gamerSite?.id) {
+          const acgUrl = `https://acg.gamer.com.tw/acgDetail.php?s=${gamerSite.id}`;
+          if (aniSite?.id) {
+            bgmMap.set(`anilist-${aniSite.id}`, acgUrl);
+          }
+          if (item.title) {
+            titleJaMap.set(item.title, acgUrl);
+          }
         }
       });
-      console.log(`📦 成功載入 bangumi-data 字典，共映射 ${bgmMap.size} 筆巴哈 ACG 百科 ID。`);
+      console.log(`📦 成功載入 bangumi-data 字典，映射 ${bgmMap.size} 筆 AniList ID 及 ${titleJaMap.size} 筆 100% 精確日文標題。`);
     }
   } catch (e) {
     console.warn('⚠️ 無法下載 bangumi-data 字典，將使用本地 URL。');
@@ -75,8 +82,8 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
   }
 
   const processItem = async ({ item, st }) => {
-    // 優先以 bangumi-data 字典的 ACG 百科連結為基準，若無則用現有的 acgDetail 連結
-    const acgUrl = bgmMap.get(item.id) || (st.url && st.url.includes('acgDetail.php') ? st.url : null);
+    // 優先以 bangumi-data 字典的 ACG 百科連結為基準 (先 AniList ID，再來 100% 一致日文標題)，若無則用現有的 acgDetail 連結
+    const acgUrl = bgmMap.get(item.id) || (item.titleJa ? titleJaMap.get(item.titleJa) : null) || (st.url && st.url.includes('acgDetail.php') ? st.url : null);
     
     if (acgUrl) {
       const { resolvedUrl, officialTitle, isBlocked } = await resolveGamerInfo(acgUrl, item.titleZh);

@@ -236,14 +236,19 @@ async function main() {
         
         let titleZh = "";
         
-        // Priority 1: Bahamut / Manual Custom Override (非 AI 產生的自訂與巴哈官方譯名)
+        // Priority 1: Manual Custom Override (人工設定校正，最高優先度)
         const overrideKey = `anilist-${item.id}`;
         const customOverride = overrideData[overrideKey] || overrideData[aniListId];
-        if (customOverride && customOverride.titleZh && customOverride.source !== 'ai') {
+        if (customOverride && customOverride.titleZh && customOverride.source === 'manual') {
           titleZh = customOverride.titleZh;
         }
 
-        // Priority 2: bangumi-data exact ID mapping (社區開源授權對照表)
+        // Priority 2: Bahamut Gamer Official Title (巴哈姆特 ACG 百科官方翻譯)
+        if (!titleZh && customOverride && customOverride.titleZh && (customOverride.source === 'gamer' || (!customOverride.source && customOverride.titleZh))) {
+          titleZh = customOverride.titleZh;
+        }
+
+        // Priority 3: bangumi-data exact ID mapping (社區開源授權對照表)
         if (!titleZh && bgmMap.has(aniListId)) {
           const bgmItem = bgmMap.get(aniListId);
           if (bgmItem.titleTranslate) {
@@ -255,7 +260,7 @@ async function main() {
           }
         }
         
-        // Priority 3: ACG Secrets exact string match
+        // Priority 4: ACG Secrets exact string match or AI Translation
         if (!titleZh && acgTitlesMap.has(nativeTitle)) {
           titleZh = acgTitlesMap.get(nativeTitle);
         }

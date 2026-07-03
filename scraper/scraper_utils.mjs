@@ -144,8 +144,47 @@ export async function fetchBangumiData(title) {
     return null;
 }
 
-async function searchGamerSingle(keyword, retryCount = 1) {
+/**
+ * Calculate title similarity using Bigram (Dice Coefficient) and exact substring match rules.
+ * Returns a score between 0 and 1.
+ * @param {string} str1 
+ * @param {string} str2 
+ * @returns {number}
+ */
+export function calculateTitleSimilarity(str1, str2) {
+    if (!str1 || !str2) return 0;
+    const clean = s => s.toLowerCase().replace(/[^\w\u4e00-\u9fa5]/g, '');
+    const s1 = clean(str1);
+    const s2 = clean(str2);
+    if (!s1 || !s2) return 0;
+    if (s1 === s2) return 1.0;
+    
+    // Check if one contains the other but differs significantly in season numbers
+    const getBigrams = s => {
+        const map = new Map();
+        for (let i = 0; i < s.length - 1; i++) {
+            const bg = s.substring(i, i + 2);
+            map.set(bg, (map.get(bg) || 0) + 1);
+        }
+        return map;
+    };
+    if (s1.length < 2 || s2.length < 2) {
+        return s1 === s2 ? 1.0 : 0;
+    }
+    const bg1 = getBigrams(s1);
+    const bg2 = getBigrams(s2);
+    let intersection = 0;
+    for (const [bg, count] of bg1) {
+        if (bg2.has(bg)) {
+            intersection += Math.min(count, bg2.get(bg));
+        }
+    }
+    return (2 * intersection) / (s1.length - 1 + s2.length - 1);
+}
+
+async function searchGamerSingle(keyword, expectedTitle = null, retryCount = 1) {
     if (!keyword || keyword.length < 2) return null;
+    const targetTitle = expectedTitle || keyword;
     try {
         const searchUrl = `https://ani.gamer.com.tw/search.php?keyword=${encodeURIComponent(keyword)}`;
         const { data } = await axios.get(searchUrl, {
@@ -156,47 +195,56 @@ async function searchGamerSingle(keyword, retryCount = 1) {
         if (typeof data === 'string' && (data.includes('系統維修') || data.includes('Cloudflare') || data.includes('請稍後'))) {
             if (retryCount > 0) {
                 await new Promise(r => setTimeout(r, 4000));
-                return await searchGamerSingle(keyword, retryCount - 1);
+                return await searchGamerSingle(keyword, expectedTitle, retryCount - 1);
             }
             return null;
         }
         const $ = cheerio.load(data);
-        const bestMatch = $('a.theme-list-main').first();
-        if (bestMatch.length > 0) {
-            const href = bestMatch.attr('href') || '';
+        let bestUrl = null;
+        let highestSim = -1;
+
+        $('a.theme-list-main').each((_, el) => {
+            const foundTitle = $(el).find('.theme-name').text().trim();
+            const href = $(el).attr('href') || '';
             const snMatch = href.match(/sn=(\d+)/);
-            if (snMatch && snMatch[1]) {
-                return `https://ani.gamer.com.tw/animeRef.php?sn=${snMatch[1]}`;
+            if (foundTitle && snMatch && snMatch[1]) {
+                const sim = calculateTitleSimilarity(targetTitle, foundTitle);
+                if (sim >= 0.8 && sim > highestSim) {
+                    highestSim = sim;
+                    bestUrl = `https://ani.gamer.com.tw/animeRef.php?sn=${snMatch[1]}`;
+                }
             }
+        });
+
+        if (bestUrl) {
+            console.log(`🎯 [動畫瘋搜尋] 成功匹配 "${targetTitle}" (相似度: ${(highestSim*100).toFixed(1)}%) ➜ ${bestUrl}`);
+            return bestUrl;
+        } else {
+            console.log(`⚠️ [動畫瘋搜尋] 搜尋 "${keyword}" 回傳結果與目標 "${targetTitle}" 相似度皆低於 80%，拋棄搜尋結果。`);
+            return null;
         }
     } catch (e) {
         if (retryCount > 0) {
             await new Promise(r => setTimeout(r, 4000));
-            return await searchGamerSingle(keyword, retryCount - 1);
+            return await searchGamerSingle(keyword, expectedTitle, retryCount - 1);
         }
     }
     return null;
 }
 
 /**
- * Resolves an anime title to its true Bahamut Anime Crazy watch URL with intelligent fallback matching.
+ * Resolves an anime title to its true Bahamut Anime Crazy watch URL with intelligent fallback matching and strict >= 80% similarity check.
  * @param {string} title 
  * @returns {Promise<string | null>}
  */
 export async function resolveGamerStreamingUrl(title) {
     if (!title) return null;
-    let res = await searchGamerSingle(title);
+    let res = await searchGamerSingle(title, title);
     if (res) return res;
 
     const cleanTitle = title.replace(/[～〜\-─!！:：,，。?？\s]+/g, ' ').trim();
     if (cleanTitle !== title) {
-        res = await searchGamerSingle(cleanTitle);
-        if (res) return res;
-    }
-
-    const pureChars = title.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
-    if (pureChars.length >= 6) {
-        res = await searchGamerSingle(pureChars.substring(0, 6));
+        res = await searchGamerSingle(cleanTitle, title);
         if (res) return res;
     }
     return null;
@@ -220,13 +268,14 @@ export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
                 }
             });
             const html = await res.text();
-            if (html.includes('系統維修') || html.includes('Cloudflare') || html.includes('請稍後') || res.status === 403 || res.status === 503) {
-                console.warn(`[防呆保護] 遭遇巴哈姆特防護或系統維護 (${acgDetailUrl})`);
+            const blockedKeywords = ['系統維修', '系統維護', 'Cloudflare', '請稍後', '巴哈姆特', 'Forbidden', '發生錯誤', 'Access Denied', '驗證碼', '注意力檢查'];
+            if (res.status === 403 || res.status === 503 || blockedKeywords.some(kw => html.includes(kw))) {
+                console.warn(`[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (${acgDetailUrl})`);
                 return { resolvedUrl: null, officialTitle: null, isBlocked: true };
             }
             const $ = cheerio.load(html);
             const h1 = $('h1').text().trim();
-            if (h1 && !h1.includes('系統維修') && !h1.includes('巴哈姆特') && !h1.includes('Forbidden') && !h1.includes('請稍後')) {
+            if (h1 && !blockedKeywords.some(kw => h1.includes(kw))) {
                 officialTitle = h1;
             }
             $('a').each((_, el) => {

@@ -18,6 +18,25 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
     }
   }
 
+  // 1. 下載/查詢 bangumi-data 官方字典，作為 ACG 百科 ID 的黃金基準
+  const bgmMap = new Map();
+  try {
+    const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
+    if (res.ok) {
+      const bgmData = await res.json();
+      (bgmData.items || []).forEach(item => {
+        const aniSite = item.sites?.find(s => s.site === 'aniList');
+        const gamerSite = item.sites?.find(s => s.site === 'gamer');
+        if (aniSite?.id && gamerSite?.id) {
+          bgmMap.set(`anilist-${aniSite.id}`, `https://acg.gamer.com.tw/acgDetail.php?s=${gamerSite.id}`);
+        }
+      });
+      console.log(`📦 成功載入 bangumi-data 字典，共映射 ${bgmMap.size} 筆巴哈 ACG 百科 ID。`);
+    }
+  } catch (e) {
+    console.warn('⚠️ 無法下載 bangumi-data 字典，將使用本地 URL。');
+  }
+
   let newlyWashedCount = 0;
   const newlyAddedIdSet = new Set(newlyAddedAnimes.map(a => a.id));
   const unwashedGamerItems = [];
@@ -27,14 +46,13 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
     if (item.streamings && item.streamings.length > 0) {
       item.streamings.forEach(st => {
         if (st.site === 'gamer' || st.site === 'gamer_hk') {
-          // 1. 如果 url 已經是動畫瘋播放頁面 (ani.gamer.com.tw)，直接記錄快取，不需洗滌
-          if (st.url && st.url.startsWith('https://ani.gamer.com.tw')) {
+          if (isFullWash) {
+            unwashedGamerItems.push({ item, st });
+          } else if (st.url && st.url.startsWith('https://ani.gamer.com.tw')) {
             gamerCache[item.id] = st.url;
           } else if (gamerCache[item.id] && gamerCache[item.id].startsWith('https://ani.gamer.com.tw')) {
-            // 2. 如果快取中已經成功洗滌為動畫瘋播放頁面，直接更新 URL
             st.url = gamerCache[item.id];
           } else {
-            // 3. 只要有巴哈授權但 URL 還不是動畫瘋播放頁 (例如仍為 ACG 百科)，即使快取為 NOT_FOUND，每日仍須重新檢驗洗滌
             unwashedGamerItems.push({ item, st });
           }
         }
@@ -57,25 +75,44 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
   }
 
   const processItem = async ({ item, st }) => {
-    const { resolvedUrl, officialTitle, isBlocked } = await resolveGamerInfo(st.url, item.titleZh);
-    if (isBlocked) {
-      console.log(`⚠️ [防呆保護] 跳過 "${item.titleZh}"，保持原 URL: ${st.url}`);
-      return;
-    }
-    if (officialTitle && officialTitle !== item.titleZh && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特') && !officialTitle.includes('請稍後')) {
-      console.log(`✏️ 修正譯名與巴哈官方百科一致: "${item.titleZh}" -> "${officialTitle}"`);
-      item.titleZh = officialTitle;
-      if (!overrideData[item.id]) overrideData[item.id] = {};
-      overrideData[item.id].titleZh = officialTitle;
-      overrideData[item.id].source = 'gamer';
-      overrideUpdated = true;
-    }
-    if (resolvedUrl) {
-      st.url = resolvedUrl;
-      gamerCache[item.id] = resolvedUrl;
-      newlyWashedCount++;
+    // 優先以 bangumi-data 字典的 ACG 百科連結為基準，若無則用現有的 acgDetail 連結
+    const acgUrl = bgmMap.get(item.id) || (st.url && st.url.includes('acgDetail.php') ? st.url : null);
+    
+    if (acgUrl) {
+      const { resolvedUrl, officialTitle, isBlocked } = await resolveGamerInfo(acgUrl, item.titleZh);
+      if (isBlocked) {
+        console.log(`⚠️ [防呆保護] 跳過 "${item.titleZh}"，保持原 URL: ${st.url}`);
+        return;
+      }
+      const existingOverride = overrideData[item.id] || overrideData[`anilist-${item.id}`];
+      if (existingOverride && existingOverride.source === 'manual') {
+        // Priority 1 最高權威為 Manual，不覆蓋
+      } else if (officialTitle && officialTitle !== item.titleZh && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特') && !officialTitle.includes('請稍後')) {
+        console.log(`✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題: "${item.titleZh}" ➜ "${officialTitle}"`);
+        item.titleZh = officialTitle;
+        if (!overrideData[item.id]) overrideData[item.id] = {};
+        overrideData[item.id].titleZh = officialTitle;
+        overrideData[item.id].source = 'gamer';
+        overrideUpdated = true;
+      }
+      if (resolvedUrl) {
+        // 規則 2: ACG 百科內有正確的動畫瘋連結，直接採用！不再進行任何動畫瘋關鍵字搜尋！
+        st.url = resolvedUrl;
+        gamerCache[item.id] = resolvedUrl;
+        newlyWashedCount++;
+      } else {
+        // 百科頁面沒有播放連結（例如尚未開播之新番），保留並還原為 ACG 百科頁面
+        st.url = acgUrl;
+        gamerCache[item.id] = acgUrl;
+      }
     } else {
-      gamerCache[item.id] = st.url; // 保持 ACG 百科 URL
+      // 無 ACG 百科連結時，嘗試使用標題搜尋動畫瘋，但必須滿足相似度 >= 80%
+      const searchedUrl = await resolveGamerStreamingUrl(item.titleZh);
+      if (searchedUrl) {
+        st.url = searchedUrl;
+        gamerCache[item.id] = searchedUrl;
+        newlyWashedCount++;
+      }
     }
   };
 

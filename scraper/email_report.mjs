@@ -19,6 +19,11 @@ async function sendReport() {
   if (fs.existsSync(summaryPath)) {
     reportContent = fs.readFileSync(summaryPath, 'utf-8');
   }
+
+  console.log('\n=====================================');
+  console.log('📧 每日執行總結報告摘要 (同步印表)：');
+  console.log(reportContent.trim());
+  console.log('=====================================\n');
   
   const transporter = nodemailer.createTransport({
     service: 'gmail',

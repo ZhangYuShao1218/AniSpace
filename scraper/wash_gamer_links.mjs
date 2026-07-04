@@ -91,15 +91,16 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
         console.log(`⚠️ [防呆保護] 跳過 "${item.titleZh}"，保持原 URL: ${st.url}`);
         return;
       }
-      const existingOverride = overrideData[item.id] || overrideData[`anilist-${item.id}`];
+      const ak = item.id.toString().startsWith('anilist-') ? item.id : `anilist-${item.id}`;
+      const existingOverride = overrideData[ak];
       if (existingOverride && existingOverride.source === 'manual') {
         // Priority 1 最高權威為 Manual，不覆蓋
       } else if (officialTitle && officialTitle !== item.titleZh && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特') && !officialTitle.includes('請稍後')) {
         console.log(`✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題: "${item.titleZh}" ➜ "${officialTitle}"`);
         item.titleZh = officialTitle;
-        if (!overrideData[item.id]) overrideData[item.id] = {};
-        overrideData[item.id].titleZh = officialTitle;
-        overrideData[item.id].source = 'gamer';
+        if (!overrideData[ak]) overrideData[ak] = {};
+        overrideData[ak].titleZh = officialTitle;
+        overrideData[ak].source = 'gamer';
         overrideUpdated = true;
       }
       if (resolvedUrl) {

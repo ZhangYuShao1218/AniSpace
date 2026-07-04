@@ -407,10 +407,11 @@ async function main() {
           if (target) {
             target.titleZh = res.titleZh;
           }
-          if (!overrideData[res.id]) overrideData[res.id] = {};
-          if (overrideData[res.id].titleZh !== res.titleZh || overrideData[res.id].source !== 'ai') {
-            overrideData[res.id].titleZh = res.titleZh;
-            overrideData[res.id].source = 'ai';
+          const ak = res.id.toString().startsWith('anilist-') ? res.id : `anilist-${res.id}`;
+          if (!overrideData[ak]) overrideData[ak] = {};
+          if (overrideData[ak].titleZh !== res.titleZh || overrideData[ak].source !== 'ai') {
+            overrideData[ak].titleZh = res.titleZh;
+            overrideData[ak].source = 'ai';
             overrideChanged = true;
             translatedCount++;
             aiTranslatedAnimes.push(res.titleZh);
@@ -491,6 +492,12 @@ async function main() {
     summaryContent += `🤖 AI 翻譯動畫：\n- ${aiTranslatedAnimes.join('\n- ')}\n`;
   }
   fs.writeFileSync(summaryPath, summaryContent + '\n', 'utf-8');
+
+  console.log('\n=====================================');
+  console.log('📋 本次爬蟲執行結果總結：');
+  console.log(summaryContent.trim());
+  console.log('=====================================\n');
+
   // Sort by date descending (Year DESC, Season priority)
   // Autumn(4) > Summer(3) > Spring(2) > Winter(1) to match frontend logic
   const seasonOrder = { '秋': 4, '夏': 3, '春': 2, '冬': 1 };

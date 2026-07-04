@@ -36,8 +36,9 @@ async function run() {
 
     for (const newItem of newData) {
       const oldItem = oldMap.get(newItem.id);
-      if (oldItem && overrideData[newItem.id]) {
-        const override = overrideData[newItem.id];
+      const ak = newItem.id.toString().startsWith('anilist-') ? newItem.id : `anilist-${newItem.id}`;
+      if (oldItem && overrideData[ak]) {
+        const override = overrideData[ak];
         // 絕對尊重最高優先度 manual，如果是手動修改的設定，絕對不可清除或觸發任何異動與日誌
         if (override.source === 'manual') {
           continue;
@@ -56,8 +57,8 @@ async function run() {
         }
 
         // Clean up empty objects
-        if (Object.keys(overrideData[newItem.id]).length === 0) {
-          delete overrideData[newItem.id];
+        if (Object.keys(overrideData[ak]).length === 0) {
+          delete overrideData[ak];
         }
       }
     }

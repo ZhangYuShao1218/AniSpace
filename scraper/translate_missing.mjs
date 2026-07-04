@@ -188,10 +188,11 @@ async function translateMissing() {
   let updatedCount = 0;
 
   allResolved.forEach(res => {
-    const idStr = res.id;
-    if (!overrideData[idStr]) overrideData[idStr] = {};
-    overrideData[idStr].titleZh = res.newTitleZh;
-    overrideData[idStr].source = res.source;
+    const idStr = res.id.toString();
+    const ak = idStr.startsWith('anilist-') ? idStr : `anilist-${idStr}`;
+    if (!overrideData[ak]) overrideData[ak] = {};
+    overrideData[ak].titleZh = res.newTitleZh;
+    overrideData[ak].source = res.source;
 
     const target = animeList.find(a => a.id === `anilist-${idStr}`);
     if (target) {

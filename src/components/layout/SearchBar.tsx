@@ -28,8 +28,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder, value, onChange, max
   useEffect(() => {
     const handler = setTimeout(() => {
       if (!isComposing.current && localValue !== value) {
-        lastSentValue.current = localValue;
-        onChange(localValue);
+        const trimmed = localValue.trim();
+        lastSentValue.current = trimmed;
+        onChange(trimmed);
       }
     }, 300);
     return () => clearTimeout(handler);
@@ -47,15 +48,23 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder, value, onChange, max
         placeholder={placeholder}
         value={localValue}
         onChange={(e) => setLocalValue(e.target.value)}
+        onBlur={(e) => {
+          const trimmed = e.target.value.trim();
+          setLocalValue(trimmed);
+          if (trimmed !== value) {
+            lastSentValue.current = trimmed;
+            onChange(trimmed);
+          }
+        }}
         onCompositionStart={() => { isComposing.current = true; }}
         onCompositionEnd={(e) => { 
           isComposing.current = false; 
           const finalVal = e.currentTarget.value;
           setLocalValue(finalVal);
-          // 確保選字完畢後立刻送出搜尋
-          if (finalVal !== value) {
-            lastSentValue.current = finalVal;
-            onChange(finalVal);
+          const trimmedVal = finalVal.trim();
+          if (trimmedVal !== value) {
+            lastSentValue.current = trimmedVal;
+            onChange(trimmedVal);
           }
         }}
         className="search-input glass-panel"

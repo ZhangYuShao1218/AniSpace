@@ -54,4 +54,6 @@ declare module 'lucide-react' {
   export const Clock: Icon;
   export const History: Icon;
   export const ShoppingBag: Icon;
+  export const RotateCcw: Icon;
+  export const RefreshCw: Icon;
 }

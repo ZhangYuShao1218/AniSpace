@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案全庫動畫系列快速瀏覽暨標題對閱面板</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0d0f14 0%, #171b26 50%, #0f131d 100%);
+      --card-bg: rgba(26, 32, 46, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #60a5fa;
+      --accent-glow: rgba(96, 165, 250, 0.25);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 30px;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding: 24px 30px;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    h1 { font-size: 24px; font-weight: 700; background: linear-gradient(90deg, #60a5fa, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .stats { display: flex; gap: 20px; font-size: 14px; color: var(--text-muted); }
+    .stat-badge { background: rgba(255, 255, 255, 0.05); padding: 8px 16px; border-radius: 30px; border: 1px solid var(--card-border); }
+    .stat-badge strong { color: #fff; }
+
+    .controls { display: flex; gap: 12px; width: 100%; max-width: 600px; }
+    .search-input {
+      flex: 1;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--card-border);
+      padding: 12px 20px;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 15px;
+      transition: all 0.2s;
+    }
+    .search-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
+    .btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--card-border);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn:hover { background: rgba(255, 255, 255, 0.15); }
+
+    .series-group {
+      margin-bottom: 36px;
+      background: rgba(20, 25, 38, 0.65);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+      transition: border-color 0.3s;
+    }
+    .series-group:hover { border-color: rgba(96, 165, 250, 0.3); }
+    
+    .series-header {
+      padding: 18px 26px;
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .series-title { font-size: 18px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .series-count { font-size: 13px; background: rgba(96, 165, 250, 0.2); color: #93c5fd; padding: 4px 12px; border-radius: 20px; font-weight: 600; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+      padding: 24px;
+    }
+    
+    .anime-card {
+      display: flex;
+      gap: 16px;
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 14px;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .anime-card:hover {
+      transform: translateY(-3px);
+      background: rgba(30, 41, 59, 0.7);
+    }
+    .cover {
+      width: 90px;
+      height: 130px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: #1e293b;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .info { flex: 1; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
+    .year-badge {
+      align-self: flex-start;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(168, 85, 247, 0.2);
+      color: #d8b4fe;
+      padding: 2px 10px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .titles { display: flex; flex-direction: column; gap: 5px; }
+    .t-zh { font-size: 15px; font-weight: 700; color: #fff; line-height: 1.3; }
+    .t-ja { font-size: 12px; color: #94a3b8; }
+    .t-en { font-size: 12px; color: #64748b; font-style: italic; }
+    
+    .card-footer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 8px;
+      color: #64748b;
+    }
+    .link-btn { color: #60a5fa; text-decoration: none; font-weight: 500; }
+    .link-btn:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>🎬 專案動畫全庫系列檢視與三語標題對覽</h1>
+        <p style="color: var(--text-muted); font-size: 13px; margin-top: 4px;">本獨立頁面供快速檢驗全專案中英日文標題同步與系列聚合狀態，不修改現有 UI 與資料</p>
+      </div>
+      <div class="controls">
+        <input type="text" id="searchInput" class="search-input" placeholder="🔍 搜尋中/英/日標題或年份系列...">
+        <button id="toggleExpand" class="btn">縮合 / 展開</button>
+      </div>
+      <div class="stats">
+        <div class="stat-badge">總系列群組：<strong id="statSeries">...</strong></div>
+        <div class="stat-badge">總收錄動畫：<strong id="statAnimes">...</strong></div>
+      </div>
+    </header>
+
+    <main id="mainContainer"></main>
+  </div>
+
+  <script>
+    let rawData = [];
+    let clusteredSeries = [];
+
+    // 自動清理並提取系列根標題 (Series Key Algorithm)
+    function extractSeriesKey(item) {
+      let title = item.titleZh || item.titleJa || item.titleEn || '未命名系列';
+      // 移除季別、篇章副標題來歸類同一系列
+      title = title.replace(/\s*(?:(?:Season|Cour|Part|Chapter)\s*\d+|\d+(?:st|nd|rd|th)?\s*Season)/gi, '');
+      title = title.replace(/\s*[（(]?第[一二三四五六七八九十\d]+[季期部分章][）)]?/g, '');
+      title = title.replace(/\s*[（(]?[上中下][篇半][）)]?/g, '');
+      title = title.replace(/\s*NEW WORLD.*$/i, '');
+      title = title.replace(/\s*SCIENCE FUTURE.*$/i, '');
+      title = title.replace(/\s*[：:~～\-─/].*$/, '');
+      title = title.replace(/\s+/, ' ').trim();
+      return title || (item.titleZh || '未分類');
+    }
+
+    async function init() {
+      try {
+        const res = await fetch('./anime_data.json');
+        rawData = await res.json();
+        
+        // 聚類演算法
+        const map = new Map();
+        rawData.forEach(item => {
+          const key = extractSeriesKey(item);
+          if (!map.has(key)) map.set(key, []);
+          map.get(key).push(item);
+        });
+
+        clusteredSeries = Array.from(map.entries()).map(([seriesName, items]) => {
+          // 內部依年份排序
+          items.sort((a, b) => {
+            const getYr = s => parseInt((s || '').split(' ')[0], 10) || 0;
+            return getYr(a.yearSeason) - getYr(b.yearSeason);
+          });
+          // 系列排序權重：取內部最新年份
+          const maxYr = Math.max(...items.map(i => parseInt((i.yearSeason || '').split(' ')[0], 10) || 0));
+          return { seriesName, items, maxYr };
+        });
+
+        // 依最新播映年份由新到舊排列
+        clusteredSeries.sort((a, b) => b.maxYr - a.maxYr);
+
+        document.getElementById('statSeries').textContent = clusteredSeries.length;
+        document.getElementById('statAnimes').textContent = rawData.length;
+
+        render(clusteredSeries);
+      } catch (e) {
+        document.getElementById('mainContainer').innerHTML = `<p style="color:#ef4444; padding: 20px;">載入 public/anime_data.json 失敗: ${e.message}</p>`;
+      }
+    }
+
+    function render(data) {
+      const main = document.getElementById('mainContainer');
+      main.innerHTML = '';
+
+      if (data.length === 0) {
+        main.innerHTML = `<p style="text-align:center; padding: 60px; color:#94a3b8;">找不到符合條件的動畫作品。</p>`;
+        return;
+      }
+
+      data.forEach(({ seriesName, items }) => {
+        const section = document.createElement('section');
+        section.className = 'series-group';
+
+        const header = document.createElement('div');
+        header.className = 'series-header';
+        header.innerHTML = `
+          <div class="series-title">🎬 ${seriesName}</div>
+          <div class="series-count">收錄 ${items.length} 部季作</div>
+        `;
+
+        const grid = document.createElement('div');
+        grid.className = 'grid';
+
+        items.forEach(item => {
+          const gamerLink = item.streamings?.find(s => s.site === 'gamer')?.url;
+          const cover = item.coverImage || item.coverImageAniList || '';
+
+          const card = document.createElement('div');
+          card.className = 'anime-card';
+          card.innerHTML = `
+            <img src="${cover}" class="cover" loading="lazy" onerror="this.src='https://via.placeholder.com/90x130?text=No+Image'">
+            <div class="info">
+              <div>
+                <div class="year-badge">${item.yearSeason || '未知年份'}</div>
+                <div class="titles">
+                  <div class="t-zh">${item.titleZh || '尚未填入繁中譯名'}</div>
+                  <div class="t-ja">${item.titleJa || '-'}</div>
+                  <div class="t-en">${item.titleEn || '-'}</div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <span>ID: ${item.id}</span>
+                ${gamerLink ? `<a href="${gamerLink}" target="_blank" class="link-btn">▶ 巴哈動畫瘋</a>` : '<span>無動畫瘋</span>'}
+              </div>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+
+        section.appendChild(header);
+        section.appendChild(grid);
+        main.appendChild(section);
+      });
+    }
+
+    document.getElementById('searchInput').addEventListener('input', e => {
+      const q = e.target.value.toLowerCase().trim();
+      if (!q) {
+        render(clusteredSeries);
+        return;
+      }
+      const filtered = clusteredSeries.map(s => {
+        const matchItems = s.items.filter(item => 
+          (item.titleZh || '').toLowerCase().includes(q) ||
+          (item.titleJa || '').toLowerCase().includes(q) ||
+          (item.titleEn || '').toLowerCase().includes(q) ||
+          (item.yearSeason || '').toLowerCase().includes(q)
+        );
+        if (s.seriesName.toLowerCase().includes(q)) return s;
+        return matchItems.length > 0 ? { ...s, items: matchItems } : null;
+      }).filter(Boolean);
+      render(filtered);
+    });
+
+    init();
+  </script>
+</body>
+</html>

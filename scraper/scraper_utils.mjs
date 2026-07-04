@@ -268,14 +268,14 @@ export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
                 }
             });
             const html = await res.text();
-            const blockedKeywords = ['系統維修', '系統維護', 'Cloudflare', '請稍後', '巴哈姆特', 'Forbidden', '發生錯誤', 'Access Denied', '驗證碼', '注意力檢查'];
+            const blockedKeywords = ['系統維修', '系統維護', 'Cloudflare', '請稍後', 'Forbidden', '發生錯誤', 'Access Denied', '驗證碼', '注意力檢查'];
             if (res.status === 403 || res.status === 503 || blockedKeywords.some(kw => html.includes(kw))) {
                 console.warn(`[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (${acgDetailUrl})`);
                 return { resolvedUrl: null, officialTitle: null, isBlocked: true };
             }
             const $ = cheerio.load(html);
             const h1 = $('h1').text().trim();
-            if (h1 && !blockedKeywords.some(kw => h1.includes(kw))) {
+            if (h1 && !blockedKeywords.some(kw => h1.includes(kw)) && h1 !== '巴哈姆特' && h1 !== '巴哈姆特電玩資訊站') {
                 officialTitle = h1;
             }
             $('a').each((_, el) => {

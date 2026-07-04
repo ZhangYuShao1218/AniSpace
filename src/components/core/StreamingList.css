@@ -247,3 +247,12 @@
 .danime-icon { background: #ff6600; }
 .unext-icon { background: #0080ff; }
 .default-icon { background: rgba(255, 255, 255, 0.2); }
+
+.streaming-popover-empty {
+  padding: 16px 8px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}

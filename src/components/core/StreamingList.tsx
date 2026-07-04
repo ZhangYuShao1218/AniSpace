@@ -154,13 +154,9 @@ export const StreamingList: React.FC<StreamingListProps> = ({ streamings, anime 
     };
   }, [isOpen]);
 
-  if (!streamings || streamings.length === 0) {
-    return null;
-  }
-
   // 1. 合併重複網站 (特別是 動畫瘋 台灣與港澳合併為 台港澳)
   const mergedMap = new Map<string, StreamingPlatform>();
-  streamings.forEach(st => {
+  (streamings || []).forEach(st => {
     const isGamer = st.site === 'gamer' || st.site === 'gamer_hk' || (st.name && st.name.includes('動畫瘋'));
     const key = isGamer ? 'gamer_merged' : `${st.site}_${st.url}`;
     if (mergedMap.has(key)) {
@@ -395,28 +391,34 @@ export const StreamingList: React.FC<StreamingListProps> = ({ streamings, anime 
             <span>{t('officialStreaming')} ({sortedStreamings.length})</span>
           </div>
           <div className="streaming-popover-list">
-            {sortedStreamings.map((st, idx) => {
-              const isFree = FREE_SITES.has(st.site);
-              return (
-                <a
-                  key={`${st.site}-${idx}`}
-                  href={st.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="streaming-popover-item"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <div className="streaming-item-left">
-                    {getPlatformIcon(st.site)}
-                    <span className="streaming-item-name">{st.name}</span>
-                  </div>
-                  <div className="streaming-item-right">
-                    {isFree && <span className="free-badge">{t('freeBadge')}</span>}
-                    {renderRegionDisplay(st.region)}
-                  </div>
-                </a>
-              );
-            })}
+            {sortedStreamings.length === 0 ? (
+              <div className="streaming-popover-empty">
+                {t('noStreamingData')}
+              </div>
+            ) : (
+              sortedStreamings.map((st, idx) => {
+                const isFree = FREE_SITES.has(st.site);
+                return (
+                  <a
+                    key={`${st.site}-${idx}`}
+                    href={st.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="streaming-popover-item"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <div className="streaming-item-left">
+                      {getPlatformIcon(st.site)}
+                      <span className="streaming-item-name">{st.name}</span>
+                    </div>
+                    <div className="streaming-item-right">
+                      {isFree && <span className="free-badge">{t('freeBadge')}</span>}
+                      {renderRegionDisplay(st.region)}
+                    </div>
+                  </a>
+                );
+              })
+            )}
           </div>
           {premiereStr && (
             <div className="streaming-popover-footer">

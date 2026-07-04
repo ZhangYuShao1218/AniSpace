@@ -437,6 +437,7 @@ async function main() {
   if (oldDataMap && oldDataMap.size > 0) {
     const mergedMap = new Map(oldDataMap); // 1. 先放入所有舊資料作為底層
     finalAnimeList.forEach(item => {
+      const oldItem = oldDataMap.get(item.id);
       if (oldItem) {
         if (oldItem.preferredCoverImage) {
           item.preferredCoverImage = oldItem.preferredCoverImage;

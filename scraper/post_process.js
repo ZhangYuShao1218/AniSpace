@@ -37,15 +37,21 @@ async function run() {
     for (const newItem of newData) {
       const oldItem = oldMap.get(newItem.id);
       if (oldItem && overrideData[newItem.id]) {
-        // Compare titles
-        if (newItem.titleZh !== oldItem.titleZh && overrideData[newItem.id].titleZh !== undefined) {
-          console.log(`[Diff] titleZh changed for ${newItem.id}. 最新名稱: "${newItem.titleZh}", 被清除的 Override 名稱: "${overrideData[newItem.id].titleZh}" (Clearing override.)`);
-          delete overrideData[newItem.id].titleZh;
+        const override = overrideData[newItem.id];
+        // 絕對尊重最高優先度 manual，如果是手動修改的設定，絕對不可清除或觸發任何異動與日誌
+        if (override.source === 'manual') {
+          continue;
+        }
+
+        // 只有當新譯名已經「不是」使用 Override 的名稱（代表有其他官方來源提供了新譯名取代了舊 Override），才進行清除與紀錄
+        if (newItem.titleZh !== oldItem.titleZh && override.titleZh !== undefined && newItem.titleZh !== override.titleZh) {
+          console.log(`[Diff] 發現更官方譯名 ${newItem.id}: 舊譯名 "${oldItem.titleZh}" ➜ 新譯名 "${newItem.titleZh}"，清除過時的 Override: "${override.titleZh}"`);
+          delete override.titleZh;
           overrideChanged = true;
         }
-        if (newItem.titleEn !== oldItem.titleEn && overrideData[newItem.id].titleEn !== undefined) {
-          console.log(`[Diff] titleEn changed for ${newItem.id}. 最新名稱: "${newItem.titleEn}", 被清除的 Override 名稱: "${overrideData[newItem.id].titleEn}" (Clearing override.)`);
-          delete overrideData[newItem.id].titleEn;
+        if (newItem.titleEn !== oldItem.titleEn && override.titleEn !== undefined && newItem.titleEn !== override.titleEn) {
+          console.log(`[Diff] 發現更官方英文名稱 ${newItem.id}: "${oldItem.titleEn}" ➜ "${newItem.titleEn}"，清除過時的 Override: "${override.titleEn}"`);
+          delete override.titleEn;
           overrideChanged = true;
         }
 

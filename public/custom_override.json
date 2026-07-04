@@ -1428,7 +1428,7 @@
     "source": "ai"
   },
   "108992": {
-    "titleZh": "莫比烏斯之塵",
+    "titleZh": "梅比烏斯之塵",
     "source": "ai"
   },
   "109492": {
@@ -1600,7 +1600,7 @@
     "source": "ai"
   },
   "133007": {
-    "titleZh": "劇場版 魔法少女小圓 〈魔女之夜的回天〉",
+    "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯的回天〉",
     "source": "ai"
   },
   "133891": {
@@ -1875,6 +1875,10 @@
     "titleZh": "青春豬頭少年不會夢到親愛之友",
     "source": "ai"
   },
+  "199426": {
+    "titleZh": "非人飯店 第二季",
+    "source": "ai"
+  },
   "200455": {
     "titleZh": "明明是膽小MAX的千金，卻答應了幹練婚約者的賭約",
     "source": "ai"
@@ -1947,6 +1951,10 @@
     "titleZh": "靠死亡遊戲混飯吃。44:CLOUDY BEACH",
     "source": "manual"
   },
+  "210482": {
+    "titleZh": "JoJo的奇妙冒險 飆馬野郎 2nd - 3rd STAGE",
+    "source": "ai"
+  },
   "211308": {
     "titleZh": "THE RIBBON HERO",
     "source": "ai"
@@ -1969,6 +1977,10 @@
   },
   "212888": {
     "titleZh": "裝備我最強～裝備的力量～",
+    "source": "ai"
+  },
+  "213657": {
+    "titleZh": "夜櫻家大作戰 第二季 第二季度",
     "source": "ai"
   },
   "213805": {
@@ -2448,5 +2460,45 @@
   },
   "anilist-199426": {
     "source": "manual"
+  },
+  "anilist-198946": {
+    "titleZh": "Clevatess Ⅱ－魔獸之王與虛假的勇者傳承－",
+    "source": "gamer"
+  },
+  "anilist-198409": {
+    "titleZh": "世界最強後衛～迷宮國的新人探索者～",
+    "source": "gamer"
+  },
+  "anilist-158871": {
+    "titleZh": "寶可夢地平線：系列",
+    "source": "gamer"
+  },
+  "anilist-126047": {
+    "titleZh": "急戰 5 秒殊死鬥",
+    "source": "gamer"
+  },
+  "anilist-21778": {
+    "titleZh": "岸邊露伴一動也不動",
+    "source": "gamer"
+  },
+  "anilist-21238": {
+    "titleZh": "Anne-Happy",
+    "source": "gamer"
+  },
+  "anilist-19603": {
+    "titleZh": "Fate/stay night [Unlimited Blade Works]",
+    "source": "gamer"
+  },
+  "anilist-19815": {
+    "titleZh": "NO GAME NO LIFE 遊戲人生",
+    "source": "gamer"
+  },
+  "anilist-10087": {
+    "titleZh": "Fate/zero",
+    "source": "gamer"
+  },
+  "anilist-8516": {
+    "titleZh": "笨蛋，測驗，召喚獸 第二季",
+    "source": "gamer"
   }
 }

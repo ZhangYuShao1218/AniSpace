@@ -805,7 +805,10 @@
   },
   "anilist-13403": {
     "titleZh": "妖狐×僕SS",
-    "source": "gamer"
+    "source": "gamer",
+    "blockedSites": [
+      "iqiyi"
+    ]
   },
   "anilist-153288": {
     "source": "manual",
@@ -1980,7 +1983,10 @@
   },
   "anilist-12893": {
     "titleZh": "男子高校生的日常",
-    "source": "bangumi-data"
+    "source": "bangumi-data",
+    "blockedSites": [
+      "iqiyi"
+    ]
   },
   "anilist-13093": {
     "titleZh": "謎樣女友X 謎樣的夏日祭典",
@@ -2204,7 +2210,10 @@
   },
   "anilist-18661": {
     "titleZh": "元氣少女緣結神",
-    "source": "bangumi-data"
+    "source": "bangumi-data",
+    "blockedSites": [
+      "iqiyi"
+    ]
   },
   "anilist-18753": {
     "titleZh": "果然我的青春戀愛喜劇搞錯了。「作為我方來說，也只能祈願他們和她們的未來能幸福美滿。」",
@@ -2244,7 +2253,10 @@
   },
   "anilist-19759": {
     "titleZh": "暗殺教室 (JSAT特別篇)",
-    "source": "manual"
+    "source": "manual",
+    "blockedSites": [
+      "iqiyi"
+    ]
   },
   "anilist-20359": {
     "titleZh": "山田君與7人魔女",

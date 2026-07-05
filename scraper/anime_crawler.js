@@ -340,7 +340,9 @@ async function main() {
         const streamings = [];
         if (bgmItem && bgmItem.sites) {
           const regionPriority = { '台灣': 1, '港澳台': 2, '亞洲': 3, '全球': 4, '大陸': 5, '日本': 6 };
+          const blockedSites = customOverride?.blockedSites || [];
           bgmItem.sites.forEach(s => {
+            if (blockedSites.includes(s.site)) return;
             const siteConfig = STREAMING_SITE_NAMES[s.site];
             if (siteConfig) {
               streamings.push({
@@ -463,8 +465,11 @@ async function main() {
       const bgmItem = bgmMap.get(aniListId) || (item.titleJa ? bgmTitleMap.get(item.titleJa.trim()) : null);
       if ((!item.streamings || item.streamings.length === 0) && bgmItem) {
         const streamings = [];
+        const customOverride = overrideData[item.id] || overrideData[aniListId];
+        const blockedSites = customOverride?.blockedSites || [];
         if (bgmItem.sites) {
           bgmItem.sites.forEach(s => {
+            if (blockedSites.includes(s.site)) return;
             const meta = bgmSiteMeta[s.site];
             if (meta && (meta.type === 'onair' || s.site === 'gamer' || s.site === 'gamer_hk')) {
               const urlTemplate = meta.urlTemplate || '';

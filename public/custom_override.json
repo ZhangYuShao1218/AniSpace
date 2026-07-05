@@ -2042,7 +2042,7 @@
     "source": "ai"
   },
   "anilist-108992": {
-    "titleZh": "梅比烏斯之塵",
+    "titleZh": "莫比烏斯之塵",
     "source": "ai"
   },
   "anilist-109492": {
@@ -2298,7 +2298,7 @@
     "source": "manual"
   },
   "anilist-163144": {
-    "titleZh": "槍神 TRIGUN STARGAZE",
+    "titleZh": "槍神 STARGAZE",
     "source": "ai"
   },
   "anilist-165056": {
@@ -2518,7 +2518,7 @@
     "source": "manual"
   },
   "anilist-211308": {
-    "titleZh": "THE RIBBON HERO",
+    "titleZh": "緞帶英雄",
     "source": "ai"
   },
   "anilist-211711": {
@@ -2543,6 +2543,10 @@
   },
   "anilist-213805": {
     "titleZh": "冰之城壁 第二季",
+    "source": "ai"
+  },
+  "anilist-178972": {
+    "titleZh": "GROTESQQQUE -獵奇-",
     "source": "ai"
   }
 }

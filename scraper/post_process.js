@@ -23,8 +23,30 @@ async function run() {
   const newData = JSON.parse(newDataRaw);
 
   let overrideData = {};
+  let overrideChanged = false;
   if (fs.existsSync(OVERRIDE_FILE)) {
     overrideData = JSON.parse(fs.readFileSync(OVERRIDE_FILE, 'utf-8'));
+    
+    // 0. 規範化自訂覆蓋表 ID：將所有純數字 ID 轉換為 "anilist-XXXXX" 結構，避免純數字 ID 殘留
+    for (const key of Object.keys(overrideData)) {
+      if (/^\d+$/.test(key)) {
+        const standardKey = `anilist-${key}`;
+        if (!overrideData[standardKey]) {
+          overrideData[standardKey] = overrideData[key];
+        } else {
+          const oldVal = overrideData[key];
+          const stdVal = overrideData[standardKey];
+          overrideData[standardKey] = { ...oldVal, ...stdVal };
+          if (oldVal.source === 'manual' || stdVal.source === 'manual') overrideData[standardKey].source = 'manual';
+          else if (oldVal.source === 'gamer' || stdVal.source === 'gamer') overrideData[standardKey].source = 'gamer';
+        }
+        delete overrideData[key];
+        overrideChanged = true;
+      }
+    }
+    if (overrideChanged) {
+      console.log('[Normalize] 已自動將 custom_override.json 中的純數字編號全數規範為 anilist-ID 結構。');
+    }
   }
 
   // 1. Compare and clean custom_override.json

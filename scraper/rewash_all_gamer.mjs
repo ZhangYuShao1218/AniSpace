@@ -27,6 +27,7 @@ async function rewashAll() {
   // 2. Fetch bangumi-data dictionary
   console.log('📦 正在下載最新 bangumi-data 官方字典檔以取得精確 ACG 百科 ID...');
   const bgmMap = new Map();
+  const titleJaMap = new Map();
   try {
     const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
     if (res.ok) {
@@ -34,11 +35,13 @@ async function rewashAll() {
       (bgmData.items || []).forEach(item => {
         const aniSite = item.sites?.find(s => s.site === 'aniList');
         const gamerSite = item.sites?.find(s => s.site === 'gamer');
-        if (aniSite?.id && gamerSite?.id) {
-          bgmMap.set(`anilist-${aniSite.id}`, `https://acg.gamer.com.tw/acgDetail.php?s=${gamerSite.id}`);
+        if (gamerSite?.id) {
+          const url = `https://acg.gamer.com.tw/acgDetail.php?s=${gamerSite.id}`;
+          if (aniSite?.id) bgmMap.set(`anilist-${aniSite.id}`, url);
+          if (item.title) titleJaMap.set(item.title.trim(), url);
         }
       });
-      console.log(`✅ 成功載入 bangumi-data，建立 ${bgmMap.size} 筆精確 ACG 百科映射！\n`);
+      console.log(`✅ 成功載入 bangumi-data，建立 ${bgmMap.size} 筆 AniList ID 及 ${titleJaMap.size} 筆日文標題映射！\n`);
     }
   } catch (e) {
     console.error('❌ 無法獲取 bangumi-data，將使用本地現存的 URL 作為基準。');
@@ -72,7 +75,7 @@ async function rewashAll() {
     }
 
     // 取得該動畫最精準的 ACG 百科頁面 URL
-    const acgDetailUrl = bgmMap.get(item.id) || (st.url.includes('acgDetail.php') ? st.url : null);
+    const acgDetailUrl = bgmMap.get(item.id) || (item.titleJa ? titleJaMap.get(item.titleJa.trim()) : null) || (st.url.includes('acgDetail.php') ? st.url : null);
     if (!acgDetailUrl) {
       // 若無 ACG 百科頁面紀錄，保持原樣
       statusCache[item.id] = { status: 'NO_ACG_PAGE', url: st.url, updatedAt: new Date().toISOString() };

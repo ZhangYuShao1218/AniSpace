@@ -197,6 +197,7 @@ async function main() {
 
   console.log('📦 正在下載 bangumi-data 字典檔...');
   let bgmMap = new Map(); // aniListId -> translation Object
+  let bgmTitleMap = new Map(); // titleJa -> translation Object
   let bgmSiteMeta = {};
   try {
     const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
@@ -208,8 +209,11 @@ async function main() {
         if (aniListSite && aniListSite.id) {
           bgmMap.set(aniListSite.id, item);
         }
+        if (item.title) {
+          bgmTitleMap.set(item.title.trim(), item);
+        }
       });
-      console.log(`✅ 字典檔載入完成，共建立 ${bgmMap.size} 筆精確映射。`);
+      console.log(`✅ 字典檔載入完成，共建立 ${bgmMap.size} 筆 AniList ID 映射，${bgmTitleMap.size} 筆日文標題 100% 精確映射。`);
     }
   } catch(e) {
     console.warn("⚠️ 無法獲取 bangumi-data，將退回使用 ACG Secrets 與原生標題。");
@@ -248,9 +252,9 @@ async function main() {
           titleZh = customOverride.titleZh;
         }
 
-        // Priority 3: bangumi-data exact ID mapping (社區開源授權對照表)
-        if (!titleZh && bgmMap.has(aniListId)) {
-          const bgmItem = bgmMap.get(aniListId);
+        // Priority 3: bangumi-data exact ID or 100% Title mapping (社區開源授權對照表)
+        const bgmItem = bgmMap.get(aniListId) || (nativeTitle ? bgmTitleMap.get(nativeTitle.trim()) : null);
+        if (!titleZh && bgmItem) {
           if (bgmItem.titleTranslate) {
             if (bgmItem.titleTranslate['zh-Hant']) {
               titleZh = bgmItem.titleTranslate['zh-Hant'][0];
@@ -290,8 +294,8 @@ async function main() {
         let finalCover = "";
         let gamerSite = null;
         let bilibiliSite = null;
-        if (bgmMap.has(aniListId)) {
-          const sites = bgmMap.get(aniListId).sites || [];
+        if (bgmItem) {
+          const sites = bgmItem.sites || [];
           gamerSite = sites.find(s => s.site === 'gamer');
           bilibiliSite = sites.find(s => s.site === 'bilibili_tw') || 
                          sites.find(s => s.site === 'bilibili_hk_mo_tw') || 
@@ -333,7 +337,6 @@ async function main() {
           newlyAddedAnimes.push({ id: fullId, title: titleZh });
         }
 
-        const bgmItem = bgmMap.get(aniListId);
         const streamings = [];
         if (bgmItem && bgmItem.sites) {
           const regionPriority = { '台灣': 1, '港澳台': 2, '亞洲': 3, '全球': 4, '大陸': 5, '日本': 6 };
@@ -453,12 +456,12 @@ async function main() {
     finalAnimeList = Array.from(mergedMap.values());
   }
 
-  // 為所有項目（包含舊有資料庫項目）自動補充 bangumi-data 授權連結
-  if (bgmMap.size > 0) {
+  // 為所有項目（包含舊有資料庫項目）自動補充 bangumi-data 授權連結 (支援 ID 與 100% 日文標題對應)
+  if (bgmMap.size > 0 || bgmTitleMap.size > 0) {
     finalAnimeList.forEach(item => {
-      const aniListId = item.id.replace('anilist-', '');
-      if ((!item.streamings || item.streamings.length === 0) && bgmMap.has(aniListId)) {
-        const bgmItem = bgmMap.get(aniListId);
+      const aniListId = String(item.id).replace('anilist-', '');
+      const bgmItem = bgmMap.get(aniListId) || (item.titleJa ? bgmTitleMap.get(item.titleJa.trim()) : null);
+      if ((!item.streamings || item.streamings.length === 0) && bgmItem) {
         const streamings = [];
         if (bgmItem.sites) {
           bgmItem.sites.forEach(s => {

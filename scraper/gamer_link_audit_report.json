@@ -1,0 +1,4283 @@
+{
+  "generatedAt": "2026-07-05T05:23:45.973Z",
+  "status": "Cleaned & Refined Read-Only Audit Report",
+  "summary": {
+    "totalChecked": 3570,
+    "totalRealIssues": 328,
+    "realMismatchCount": 20,
+    "newAuthCount": 40,
+    "removeLinkCount": 16,
+    "titleOnlyCount": 252,
+    "filteredRefVidCount": 0,
+    "filteredFalseSearchCount": 8
+  },
+  "results": [
+    {
+      "id": "anilist-130549",
+      "aniListId": 130549,
+      "titleZh": "RE-MAIN",
+      "titleJa": "RE-MAIN（リメイン）",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112743",
+      "expectedUrl": "https://acg.gamer.com.tw/acgDetail.php?s=116190",
+      "officialTitle": "RE-MAIN",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeRef.php?sn=112743 ➜ 建議: https://acg.gamer.com.tw/acgDetail.php?s=116190)"
+      ]
+    },
+    {
+      "id": "anilist-107202",
+      "aniListId": 107202,
+      "titleZh": "Free!-Road to the World-夢",
+      "titleJa": "Free!-Road to the World-夢",
+      "yearSeason": "2019 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34988",
+      "expectedUrl": "https://acg.gamer.com.tw/acgDetail.php?s=103432",
+      "officialTitle": "劇場版 FREE! 男子游泳部 -Road to the World-夢",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=34988 ➜ 建議: https://acg.gamer.com.tw/acgDetail.php?s=103432)",
+        "官方繁中譯名校正 (現有: \"Free!-Road to the World-夢\" ➜ 巴哈官方: \"劇場版 FREE! 男子游泳部 -Road to the World-夢\")"
+      ]
+    },
+    {
+      "id": "anilist-6213",
+      "aniListId": 6213,
+      "titleZh": "科學超電磁砲",
+      "titleJa": "とある科学の超電磁砲",
+      "yearSeason": "2009 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=58442",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=4581",
+      "officialTitle": "魔法禁書目錄外傳 科學超電磁砲",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=58442 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=4581)",
+        "官方繁中譯名校正 (現有: \"科學超電磁砲\" ➜ 巴哈官方: \"魔法禁書目錄外傳 科學超電磁砲\")"
+      ]
+    },
+    {
+      "id": "anilist-5680",
+      "aniListId": 5680,
+      "titleZh": "K-ON！輕音部",
+      "titleJa": "けいおん!",
+      "yearSeason": "2009 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34713",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=4080",
+      "officialTitle": "K-ON！輕音部",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=34713 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=4080)"
+      ]
+    },
+    {
+      "id": "anilist-5114",
+      "aniListId": 5114,
+      "titleZh": "鋼之鍊金術師 BROTHERHOOD",
+      "titleJa": "鋼の錬金術師 FULLMETAL ALCHEMIST",
+      "yearSeason": "2009 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22140",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=3100",
+      "officialTitle": "鋼之鍊金術師 BROTHERHOOD",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=22140 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=3100)"
+      ]
+    },
+    {
+      "id": "anilist-4224",
+      "aniListId": 4224,
+      "titleZh": "TIGER×DRAGON！龍與虎",
+      "titleJa": "とらドラ！",
+      "yearSeason": "2008 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=17962",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16266",
+      "officialTitle": "TIGER×DRAGON！ 劇情簡介 《とらドラ》關聯作品",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=17962 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=16266)",
+        "官方繁中譯名校正 (現有: \"TIGER×DRAGON！龍與虎\" ➜ 巴哈官方: \"TIGER×DRAGON！ 劇情簡介 《とらドラ》關聯作品\")"
+      ]
+    },
+    {
+      "id": "anilist-4898",
+      "aniListId": 4898,
+      "titleZh": "黑執事",
+      "titleJa": "黒執事",
+      "yearSeason": "2008 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=140343",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=19759",
+      "officialTitle": "黑執事",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=140343 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=19759)"
+      ]
+    },
+    {
+      "id": "anilist-1575",
+      "aniListId": 1575,
+      "titleZh": "Code Geass 反叛的魯路修",
+      "titleJa": "コードギアス 反逆のルルーシュ",
+      "yearSeason": "2006 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15993",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23616",
+      "officialTitle": "Code Geass 反叛的魯路修",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=15993 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=23616)"
+      ]
+    },
+    {
+      "id": "anilist-1535",
+      "aniListId": 1535,
+      "titleZh": "死亡筆記本",
+      "titleJa": "DEATH NOTE",
+      "yearSeason": "2006 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16535",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10579",
+      "officialTitle": "死亡筆記本",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=16535 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=10579)"
+      ]
+    },
+    {
+      "id": "anilist-1604",
+      "aniListId": 1604,
+      "titleZh": "家庭教師 HITMAN REBORN！",
+      "titleJa": "家庭教師ヒットマンREBORN!",
+      "yearSeason": "2006 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16040",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5205",
+      "officialTitle": "家庭教師 HITMAN REBORN！",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=16040 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=5205)"
+      ]
+    },
+    {
+      "id": "anilist-1195",
+      "aniListId": 1195,
+      "titleZh": "零之使魔",
+      "titleJa": "ゼロの使い魔",
+      "yearSeason": "2006 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=51056",
+      "expectedUrl": "https://acg.gamer.com.tw/acgDetail.php?s=176",
+      "officialTitle": "零之使魔",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=51056 ➜ 建議: https://acg.gamer.com.tw/acgDetail.php?s=176)"
+      ]
+    },
+    {
+      "id": "anilist-853",
+      "aniListId": 853,
+      "titleZh": "櫻蘭高校男公關部",
+      "titleJa": "桜蘭高校ホスト部",
+      "yearSeason": "2006 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=252",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=13246",
+      "officialTitle": "櫻蘭高校男公關部",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=252 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=13246)"
+      ]
+    },
+    {
+      "id": "anilist-121",
+      "aniListId": 121,
+      "titleZh": "鋼之鍊金術師 2003",
+      "titleJa": "鋼の錬金術師",
+      "yearSeason": "2003 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38232",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6654",
+      "officialTitle": "鋼之鍊金術師 2003",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=38232 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=6654)"
+      ]
+    },
+    {
+      "id": "anilist-1033",
+      "aniListId": 1033,
+      "titleZh": "千年女優",
+      "titleJa": "千年女優",
+      "yearSeason": "2002 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22861",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11669",
+      "officialTitle": "千年女優",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=22861 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=11669)"
+      ]
+    },
+    {
+      "id": "anilist-22",
+      "aniListId": 22,
+      "titleZh": "網球王子",
+      "titleJa": "テニスの王子様",
+      "yearSeason": "2001 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=133028",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=44496",
+      "officialTitle": "網球王子",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=133028 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=44496)"
+      ]
+    },
+    {
+      "id": "anilist-135",
+      "aniListId": 135,
+      "titleZh": "棋靈王",
+      "titleJa": "ヒカルの碁",
+      "yearSeason": "2001 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=114151",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18031",
+      "officialTitle": "棋靈王",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=114151 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=18031)"
+      ]
+    },
+    {
+      "id": "anilist-249",
+      "aniListId": 249,
+      "titleZh": "犬夜叉",
+      "titleJa": "犬夜叉",
+      "yearSeason": "2000 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=29732",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16983",
+      "officialTitle": "犬夜叉",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=29732 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=16983)"
+      ]
+    },
+    {
+      "id": "anilist-235",
+      "aniListId": 235,
+      "titleZh": "名偵探柯南",
+      "titleJa": "名探偵コナン",
+      "yearSeason": "1996 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=129025",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30234",
+      "officialTitle": "名偵探柯南",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=129025 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=30234)"
+      ]
+    },
+    {
+      "id": "anilist-1391",
+      "aniListId": 1391,
+      "titleZh": "閃電霹靂車",
+      "titleJa": "新世紀GPXサイバーフォーミュラ",
+      "yearSeason": "1991 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=526",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=28237",
+      "officialTitle": "閃電霹靂車",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=526 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=28237)"
+      ]
+    },
+    {
+      "id": "anilist-184034",
+      "aniListId": 184034,
+      "titleZh": "殺手旅店 第一季",
+      "titleJa": "ホテル・インヒューマンズ",
+      "yearSeason": "2025年夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=142294",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=44034",
+      "officialTitle": "殺手旅店",
+      "reasons": [
+        "連結不一致 (現有: https://ani.gamer.com.tw/animeVideo.php?sn=142294 ➜ 建議: https://ani.gamer.com.tw/animeVideo.php?sn=44034)"
+      ]
+    },
+    {
+      "id": "anilist-159309",
+      "aniListId": 159309,
+      "titleZh": "女性向遊戲世界對路人角色很不友好 第二季",
+      "titleJa": "乙女ゲー世界はモブに厳しい世界です2",
+      "yearSeason": "2026 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://acg.gamer.com.tw/acgDetail.php?s=129407",
+      "officialTitle": "女性向遊戲世界對路人角色很不友好 2",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-207141",
+      "aniListId": 207141,
+      "titleZh": "尼古喵喵",
+      "titleJa": "ヤニねこ",
+      "yearSeason": "2026 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114101",
+      "officialTitle": "尼古喵喵",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-185875",
+      "aniListId": 185875,
+      "titleZh": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
+      "titleJa": "魔法少女リリカルなのは EXCEEDS Gun Blaze Vengeance",
+      "yearSeason": "2026 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114137",
+      "officialTitle": "魔法少女奈葉 EXCEEDS Gun Blaze Vengeance",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-207674",
+      "aniListId": 207674,
+      "titleZh": "從後面來的神威先生",
+      "titleJa": "うしろの正面カムイさん",
+      "yearSeason": "2026 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114128",
+      "officialTitle": "從後面來的神威先生",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-182206",
+      "aniListId": 182206,
+      "titleZh": "劇場版 關於我轉生變成史萊姆這檔事 蒼海之淚篇",
+      "titleJa": "劇場版 転生したらスライムだった件 蒼海の涙編",
+      "yearSeason": "2026 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114091",
+      "officialTitle": "劇場版 關於我轉生變成史萊姆這檔事 蒼海之淚篇",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-179706",
+      "aniListId": 179706,
+      "titleZh": "リコリス・リコイル Friends are thieves of time.",
+      "titleJa": "リコリス・リコイル Friends are thieves of time.",
+      "yearSeason": "2025 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=43013",
+      "officialTitle": "Lycoris Recoil 莉可麗絲：友誼是時間的竊賊",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-154392",
+      "aniListId": 154392,
+      "titleZh": "凡爾賽玫瑰",
+      "titleJa": "劇場版 ベルサイユのばら",
+      "yearSeason": "2025 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113786",
+      "officialTitle": "凡爾賽玫瑰",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-172420",
+      "aniListId": 172420,
+      "titleZh": "賽馬娘 Pretty Derby 新時代之門",
+      "titleJa": "ウマ娘 プリティーダービー 新時代の扉",
+      "yearSeason": "2024 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112622",
+      "officialTitle": "賽馬娘 Pretty Derby 新時代之門",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-138700",
+      "aniListId": 138700,
+      "titleZh": "憂國的莫里亞蒂 OVA",
+      "titleJa": "憂国のモリアーティ OVA",
+      "yearSeason": "2022 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113116",
+      "officialTitle": "憂國的莫里亞蒂 OVA",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-133891",
+      "aniListId": 133891,
+      "titleZh": "Love Live! 虹咲學園學園偶像同好會 第二季",
+      "titleJa": "ラブライブ！虹ヶ咲学園スクールアイドル同好会 2",
+      "yearSeason": "2022 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113012",
+      "officialTitle": "Love Live! 虹咲學園學園偶像同好會 第二季",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-133124",
+      "aniListId": 133124,
+      "titleZh": "劇場版 Free!–the Final Stroke– 後編",
+      "titleJa": "劇場版 Free!–the Final Stroke– 後編",
+      "yearSeason": "2022 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113423",
+      "officialTitle": "劇場版 Free!–the Final Stroke– 後編",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-131681",
+      "aniListId": 131681,
+      "titleZh": "進擊的巨人 The Final Season 後篇",
+      "titleJa": "進撃の巨人 The Final Season Part 2",
+      "yearSeason": "2022 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112522",
+      "officialTitle": "進擊的巨人 The Final Season 後篇",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-126546",
+      "aniListId": 126546,
+      "titleZh": "精靈幻想記",
+      "titleJa": "精霊幻想記",
+      "yearSeason": "2021 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113671",
+      "officialTitle": "精靈幻想記",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-114473",
+      "aniListId": 114473,
+      "titleZh": "碧藍航線 微速前進！",
+      "titleJa": "アズールレーンびそくぜんしんっ！",
+      "yearSeason": "2021 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114130",
+      "officialTitle": "碧藍航線 微速前進！",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-111734",
+      "aniListId": 111734,
+      "titleZh": "映畫 ギヴン",
+      "titleJa": "映画 ギヴン",
+      "yearSeason": "2020 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22680",
+      "officialTitle": "GIVEN 被贈與的未來 劇場版",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-145560",
+      "aniListId": 145560,
+      "titleZh": "平凡職業造就世界最強",
+      "titleJa": "ありふれた職業で世界最強 プロローグ",
+      "yearSeason": "2020 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113635",
+      "officialTitle": "平凡職業造就世界最強",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-108268",
+      "aniListId": 108268,
+      "titleZh": "小書痴的下剋上：為了成為圖書管理員不擇手段！",
+      "titleJa": "本好きの下剋上 司書になるためには手段を選んでいられません",
+      "yearSeason": "2019 秋",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113021",
+      "officialTitle": "小書痴的下剋上：為了成為圖書管理員不擇手段！",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-108430",
+      "aniListId": 108430,
+      "titleZh": "GIVEN 被贈與的未來",
+      "titleJa": "ギヴン",
+      "yearSeason": "2019 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112693",
+      "officialTitle": "GIVEN 被贈與的未來",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-104454",
+      "aniListId": 104454,
+      "titleZh": "異世界四重奏",
+      "titleJa": "異世界かるてっと",
+      "yearSeason": "2019 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113929",
+      "officialTitle": "異世界四重奏",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-101633",
+      "aniListId": 101633,
+      "titleZh": "BanG Dream!第二季",
+      "titleJa": "BanG Dream! 2nd Season",
+      "yearSeason": "2019 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=84237",
+      "officialTitle": "BanG Dream!第二季",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-106862",
+      "aniListId": 106862,
+      "titleZh": "艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note-",
+      "titleJa": "ロード・エルメロイⅡ世の事件簿 {魔眼蒐集列車} Grace note 墓守と猫と魔術師",
+      "yearSeason": "2018 秋",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112967",
+      "officialTitle": "艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note-",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-100957",
+      "aniListId": 100957,
+      "titleZh": "魯邦三世 PART5",
+      "titleJa": "ルパン三世 PART5",
+      "yearSeason": "2018 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112866",
+      "officialTitle": "魯邦三世 PART5",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-21791",
+      "aniListId": 21791,
+      "titleZh": "文豪Stray Dogs 『獨自前行』",
+      "titleJa": "文豪ストレイドッグス 『独り歩む』;",
+      "yearSeason": "2017 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=79112",
+      "officialTitle": "文豪Stray Dogs 『獨自前行』",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-20986",
+      "aniListId": 20986,
+      "titleZh": "鎖鏈戰記: 赫克瑟塔斯之光",
+      "titleJa": "チェインクロニクル ～ヘクセイタスの閃(ひかり)～",
+      "yearSeason": "2017 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=74561",
+      "officialTitle": "鎖鏈戰記: 赫克瑟塔斯之光",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-21355",
+      "aniListId": 21355,
+      "titleZh": "Re：從零開始的異世界生活",
+      "titleJa": "Re:ゼロから始める異世界生活",
+      "yearSeason": "2016 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114044",
+      "officialTitle": "Re：從零開始的異世界生活",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-20693",
+      "aniListId": 20693,
+      "titleZh": "偶像大師 灰姑娘女孩",
+      "titleJa": "アイドルマスターシンデレラガールズ",
+      "yearSeason": "2015 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113850",
+      "officialTitle": "偶像大師 灰姑娘女孩",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-20895",
+      "aniListId": 20895,
+      "titleZh": "刀劍神域・離線版 Extra Edition",
+      "titleJa": "そーどあーと・おふらいん Extra Edition",
+      "yearSeason": "2014 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=66639",
+      "officialTitle": "刀劍神域・離線版 Extra Edition",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-19759",
+      "aniListId": 19759,
+      "titleZh": "暗殺教室 (JSAT特別篇)",
+      "titleJa": "暗殺教室",
+      "yearSeason": "2013 秋",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=3441",
+      "officialTitle": "暗殺教室",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-17909",
+      "aniListId": 17909,
+      "titleZh": "有頂天家族",
+      "titleJa": "有頂天家族",
+      "yearSeason": "2013 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113171",
+      "officialTitle": "有頂天家族",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-18661",
+      "aniListId": 18661,
+      "titleZh": "神様はじめました",
+      "titleJa": "神様はじめました",
+      "yearSeason": "2013 夏",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27273",
+      "officialTitle": "元氣少女緣結神",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-15583",
+      "aniListId": 15583,
+      "titleZh": "約會大作戰 DATE A LIVE",
+      "titleJa": "デート・ア・ライブ",
+      "yearSeason": "2013 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113499",
+      "officialTitle": "約會大作戰 DATE A LIVE",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-15195",
+      "aniListId": 15195,
+      "titleZh": "義呆利 The Beautiful World",
+      "titleJa": "ヘタリア The Beautiful World",
+      "yearSeason": "2013 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=88370",
+      "officialTitle": "義呆利 The Beautiful World",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-15925",
+      "aniListId": 15925,
+      "titleZh": "電影哆啦A夢 大雄的秘密道具博物館",
+      "titleJa": "映画ドラえもん のび太のひみつ道具博物館[ミュージアム]",
+      "yearSeason": "2013 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112811",
+      "officialTitle": "電影哆啦A夢 大雄的秘密道具博物館",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-13655",
+      "aniListId": 13655,
+      "titleZh": "Little Busters !",
+      "titleJa": "リトルバスターズ!",
+      "yearSeason": "2012 秋",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112444",
+      "officialTitle": "Little Busters !",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-13403",
+      "aniListId": 13403,
+      "titleZh": "妖狐×僕SS",
+      "titleJa": "妖狐×僕SS",
+      "yearSeason": "2012 秋",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=49124",
+      "officialTitle": "妖狐×僕SS",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-12893",
+      "aniListId": 12893,
+      "titleZh": "男子高校生の日常",
+      "titleJa": "男子高校生の日常",
+      "yearSeason": "2012 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=4643",
+      "officialTitle": "男子高校生的日常",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-9734",
+      "aniListId": 9734,
+      "titleZh": "K-ON!! 輕音部!! 計劃!",
+      "titleJa": "けいおん!! 計画!",
+      "yearSeason": "2011 春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=34713",
+      "officialTitle": "K-ON!! 輕音部!! 計劃!",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-6746",
+      "aniListId": 6746,
+      "titleZh": "無頭騎士異聞錄 DuRaRaRa!!",
+      "titleJa": "デュラララ!!",
+      "yearSeason": "2010 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=73150",
+      "officialTitle": "無頭騎士異聞錄 DuRaRaRa!!",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-6922",
+      "aniListId": 6922,
+      "titleZh": "Fate/stay night - 無限劍製",
+      "titleJa": "劇場版 Fate/stay night UNLIMITED BLADE WORKS",
+      "yearSeason": "2010 冬",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112805",
+      "officialTitle": "Fate/stay night - 無限劍製",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-100306",
+      "aniListId": 100306,
+      "titleZh": "棒球大聯盟 2nd 第一季",
+      "titleJa": "メジャー2nd",
+      "yearSeason": "2018年春",
+      "currentUrl": "無",
+      "expectedUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112691",
+      "officialTitle": "棒球大聯盟 2nd 第一季",
+      "reasons": [
+        "發現巴哈授權 (現有無連結 ➜ 建議新增)"
+      ]
+    },
+    {
+      "id": "anilist-158871",
+      "aniListId": 158871,
+      "titleZh": "寶可夢地平線：系列",
+      "titleJa": "ポケットモンスター (2023)",
+      "yearSeason": "2023 春",
+      "currentUrl": "https://acg.gamer.com.tw/acgDetail.php?s=131853",
+      "expectedUrl": "無",
+      "officialTitle": "寶可夢地平線：系列",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-139093",
+      "aniListId": 139093,
+      "titleZh": "影宅 第二季",
+      "titleJa": "シャドーハウス 2nd Season",
+      "yearSeason": "2022 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113079",
+      "expectedUrl": "無",
+      "officialTitle": "影宅 第二季",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-112153",
+      "aniListId": 112153,
+      "titleZh": "寶可夢旅途",
+      "titleJa": "ポケットモンスター (2019)",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://acg.gamer.com.tw/acgDetail.php?s=107963",
+      "expectedUrl": "無",
+      "officialTitle": "寶可夢旅途",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-97634",
+      "aniListId": 97634,
+      "titleZh": "寶可夢 太陽＆月亮",
+      "titleJa": "ポケットモンスター サン＆ムーン",
+      "yearSeason": "2016 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=17479",
+      "expectedUrl": "無",
+      "officialTitle": "寶可夢 太陽＆月亮",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-2963",
+      "aniListId": 2963,
+      "titleZh": "南家三姊妹",
+      "titleJa": "みなみけ",
+      "yearSeason": "2007 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=52758",
+      "expectedUrl": "無",
+      "officialTitle": "南家三姊妹",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-918",
+      "aniListId": 918,
+      "titleZh": "銀魂",
+      "titleJa": "銀魂",
+      "yearSeason": "2006 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=106992",
+      "expectedUrl": "無",
+      "officialTitle": "銀魂",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-457",
+      "aniListId": 457,
+      "titleZh": "蟲師",
+      "titleJa": "蟲師",
+      "yearSeason": "2005 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=66718",
+      "expectedUrl": "無",
+      "officialTitle": "蟲師",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-101",
+      "aniListId": 101,
+      "titleZh": "AIR",
+      "titleJa": "AIR",
+      "yearSeason": "2005 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=119681",
+      "expectedUrl": "無",
+      "officialTitle": "AIR",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-269",
+      "aniListId": 269,
+      "titleZh": "BLEACH 死神",
+      "titleJa": "BLEACH",
+      "yearSeason": "2004 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=146138",
+      "expectedUrl": "無",
+      "officialTitle": "BLEACH 死神",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-93",
+      "aniListId": 93,
+      "titleZh": "機動戰士鋼彈 Seed",
+      "titleJa": "機動戦士ガンダムSEED",
+      "yearSeason": "2002 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=133796",
+      "expectedUrl": "無",
+      "officialTitle": "機動戰士鋼彈 Seed",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-6",
+      "aniListId": 6,
+      "titleZh": "槍神 Trigun",
+      "titleJa": "TRIGUN",
+      "yearSeason": "1998 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=131293",
+      "expectedUrl": "無",
+      "officialTitle": "槍神 Trigun",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-232",
+      "aniListId": 232,
+      "titleZh": "庫洛魔法使",
+      "titleJa": "カードキャプターさくら",
+      "yearSeason": "1998 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=86733",
+      "expectedUrl": "無",
+      "officialTitle": "庫洛魔法使",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-527",
+      "aniListId": 527,
+      "titleZh": "寶可夢-無印篇",
+      "titleJa": "ポケットモンスター",
+      "yearSeason": "1997 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=131853",
+      "expectedUrl": "無",
+      "officialTitle": "寶可夢-無印篇",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-45",
+      "aniListId": 45,
+      "titleZh": "神劍闖江湖",
+      "titleJa": "るろうに剣心 -明治剣客浪漫譚-",
+      "yearSeason": "1996 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=136981",
+      "expectedUrl": "無",
+      "officialTitle": "神劍闖江湖",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-967",
+      "aniListId": 967,
+      "titleZh": "北斗神拳",
+      "titleJa": "北斗の拳",
+      "yearSeason": "1984 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=148359",
+      "expectedUrl": "無",
+      "officialTitle": "北斗神拳",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-80",
+      "aniListId": 80,
+      "titleZh": "機動戰士高達",
+      "titleJa": "機動戦士ガンダム",
+      "yearSeason": "1979 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=133796",
+      "expectedUrl": "無",
+      "officialTitle": "機動戰士高達",
+      "reasons": [
+        "建議移除連結 (現有連結在百科與搜尋中皆無法對應)"
+      ]
+    },
+    {
+      "id": "anilist-169580",
+      "aniListId": 169580,
+      "titleZh": "和班上第二可愛的女孩成為朋友",
+      "titleJa": "クラスで２番目に可愛い女の子と友だちになった",
+      "yearSeason": "2026 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114007",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=48483",
+      "officialTitle": "我和班上第二可愛的女生成為朋友",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"和班上第二可愛的女孩成為朋友\" ➜ 巴哈官方: \"我和班上第二可愛的女生成為朋友\")"
+      ]
+    },
+    {
+      "id": "anilist-204356",
+      "aniListId": 204356,
+      "titleZh": "『我的英雄學院』No.170＋1『More』",
+      "titleJa": "僕のヒーローアカデミア No. 170+1 「More」",
+      "yearSeason": "2026 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113886",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=45530",
+      "officialTitle": "我的英雄學院 FINAL SEASON",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"『我的英雄學院』No.170＋1『More』\" ➜ 巴哈官方: \"我的英雄學院 FINAL SEASON\")"
+      ]
+    },
+    {
+      "id": "anilist-171110",
+      "aniListId": 171110,
+      "titleZh": "小書痴的下剋上  為了成為圖書管理員不擇手段！領主的養女",
+      "titleJa": "本好きの下剋上 領主の養女",
+      "yearSeason": "2026 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114058",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=48642",
+      "officialTitle": "小書痴的下剋上：為了成為圖書管理員不擇手段！領主的養女",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"小書痴的下剋上  為了成為圖書管理員不擇手段！領主的養女\" ➜ 巴哈官方: \"小書痴的下剋上：為了成為圖書管理員不擇手段！領主的養女\")"
+      ]
+    },
+    {
+      "id": "anilist-172463",
+      "aniListId": 172463,
+      "titleZh": "咒術迴戰 死滅迴遊 前篇",
+      "titleJa": "呪術廻戦 死滅回游 前編",
+      "yearSeason": "2026 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113964",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=47013",
+      "officialTitle": "咒術迴戰 死滅迴游 前篇",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"咒術迴戰 死滅迴遊 前篇\" ➜ 巴哈官方: \"咒術迴戰 死滅迴游 前篇\")"
+      ]
+    },
+    {
+      "id": "anilist-167152",
+      "aniListId": 167152,
+      "titleZh": "判處勇者刑：懲罰勇者 9004 隊刑務紀錄",
+      "titleJa": "勇者刑に処す 懲罰勇者9004隊刑務記録",
+      "yearSeason": "2026 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113967",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=46918",
+      "officialTitle": "判處勇者刑",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"判處勇者刑：懲罰勇者 9004 隊刑務紀錄\" ➜ 巴哈官方: \"判處勇者刑\")"
+      ]
+    },
+    {
+      "id": "anilist-163144",
+      "aniListId": 163144,
+      "titleZh": "槍神 TRIGUN STARGAZE",
+      "titleJa": "TRIGUN STARGAZE",
+      "yearSeason": "2026 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113968",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=47069",
+      "officialTitle": "TRIGUN STARGAZE",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"槍神 TRIGUN STARGAZE\" ➜ 巴哈官方: \"TRIGUN STARGAZE\")"
+      ]
+    },
+    {
+      "id": "anilist-192261",
+      "aniListId": 192261,
+      "titleZh": "29歲單身中堅冒險家的日常",
+      "titleJa": "29歳独身中堅冒険者の日常",
+      "yearSeason": "2026 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113984",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=47348",
+      "officialTitle": "29 歲單身中堅冒險家的日常",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"29歲單身中堅冒險家的日常\" ➜ 巴哈官方: \"29 歲單身中堅冒險家的日常\")"
+      ]
+    },
+    {
+      "id": "anilist-184322",
+      "aniListId": 184322,
+      "titleZh": "差點在迷宮深處被信任的夥伴殺掉，但靠著天賜技能「無限扭蛋」獲得等級9999的夥伴，我要向前隊友和世界展開復仇&「給他們好看！」",
+      "titleJa": "信じていた仲間達にダンジョン奥地で殺されかけたがギフト『無限ガチャ』でレベル9999の仲間達を手に入れて元パーティーメンバーと世界に復讐＆『ざまぁ！』します！",
+      "yearSeason": "2025 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113902",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=45580",
+      "officialTitle": "差點在迷宮深處被信任的夥伴殺掉，但靠著天賜技能「無限扭蛋」獲得等級 9999 的夥伴，我要向前隊友和世界展開復仇＆「給他們好看！」",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"差點在迷宮深處被信任的夥伴殺掉，但靠著天賜技能「無限扭蛋」獲得等級9999的夥伴，我要向前隊友和世界展開復仇&「給他們好看！」\" ➜ 巴哈官方: \"差點在迷宮深處被信任的夥伴殺掉，但靠著天賜技能「無限扭蛋」獲得等級 9999 的夥伴，我要向前隊友和世界展開復仇＆「給他們好看！」\")"
+      ]
+    },
+    {
+      "id": "anilist-179992",
+      "aniListId": 179992,
+      "titleZh": "機械女僕·瑪麗",
+      "titleJa": "機械じかけのマリー",
+      "yearSeason": "2025 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113892",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=45558",
+      "officialTitle": "機械女僕‧瑪麗",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"機械女僕·瑪麗\" ➜ 巴哈官方: \"機械女僕‧瑪麗\")"
+      ]
+    },
+    {
+      "id": "anilist-194447",
+      "aniListId": 194447,
+      "titleZh": "異世界四重奏3",
+      "titleJa": "異世界かるてっと 3",
+      "yearSeason": "2025 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113929",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=46217",
+      "officialTitle": "異世界四重奏 3",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"異世界四重奏3\" ➜ 巴哈官方: \"異世界四重奏 3\")"
+      ]
+    },
+    {
+      "id": "anilist-193968",
+      "aniListId": 193968,
+      "titleZh": "Let's Play 充滿挑戰的人生",
+      "titleJa": "Let’s Play クエストだらけのマイライフ",
+      "yearSeason": "2025 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113898",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=45601",
+      "officialTitle": "Let′s Play 充滿挑戰的人生",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Let's Play 充滿挑戰的人生\" ➜ 巴哈官方: \"Let′s Play 充滿挑戰的人生\")"
+      ]
+    },
+    {
+      "id": "anilist-162890",
+      "aniListId": 162890,
+      "titleZh": "3年Z班銀八老師",
+      "titleJa": "3年Z組銀八先生",
+      "yearSeason": "2025 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113877",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=45537",
+      "officialTitle": "銀魂 3 年 Z 班銀八老師",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"3年Z班銀八老師\" ➜ 巴哈官方: \"銀魂 3 年 Z 班銀八老師\")"
+      ]
+    },
+    {
+      "id": "anilist-178754",
+      "aniListId": 178754,
+      "titleZh": "怪獸8號 第二季",
+      "titleJa": "怪獣８号 第２期",
+      "yearSeason": "2025 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113833",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=43965",
+      "officialTitle": "怪獸 8 號 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"怪獸8號 第二季\" ➜ 巴哈官方: \"怪獸 8 號 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-179966",
+      "aniListId": 179966,
+      "titleZh": "Silent Witch 沉默魔女的秘密",
+      "titleJa": "サイレント・ウィッチ 沈黙の魔女の隠しごと",
+      "yearSeason": "2025 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113826",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=43989",
+      "officialTitle": "Silent Witch 沉默魔女的祕密",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Silent Witch 沉默魔女的秘密\" ➜ 巴哈官方: \"Silent Witch 沉默魔女的祕密\")"
+      ]
+    },
+    {
+      "id": "anilist-178869",
+      "aniListId": 178869,
+      "titleZh": "Clevatess - 魔獸之王與嬰兒與屍之勇者",
+      "titleJa": "クレバテス-魔獣の王と赤子と屍の勇者",
+      "yearSeason": "2025 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113810",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=44048",
+      "officialTitle": "Clevatess －魔獸之王與嬰兒與屍之勇者－",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Clevatess - 魔獸之王與嬰兒與屍之勇者\" ➜ 巴哈官方: \"Clevatess －魔獸之王與嬰兒與屍之勇者－\")"
+      ]
+    },
+    {
+      "id": "anilist-178433",
+      "aniListId": 178433,
+      "titleZh": "異世界默示錄麥諾格拉 ～從毀滅文明開始征服世界～",
+      "titleJa": "異世界黙示録マイノグーラ ～破滅の文明で始める世界征服～",
+      "yearSeason": "2025 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113840",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=44024",
+      "officialTitle": "異世界默示錄麥諾格拉～從毀滅文明開始征服世界～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"異世界默示錄麥諾格拉 ～從毀滅文明開始征服世界～\" ➜ 巴哈官方: \"異世界默示錄麥諾格拉～從毀滅文明開始征服世界～\")"
+      ]
+    },
+    {
+      "id": "anilist-179678",
+      "aniListId": 179678,
+      "titleZh": "靈異教師神眉",
+      "titleJa": "地獄先生ぬ～べ～ (2025)",
+      "yearSeason": "2025 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=46011",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=46011",
+      "officialTitle": "靈異教師神眉 新作動畫",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"靈異教師神眉\" ➜ 巴哈官方: \"靈異教師神眉 新作動畫\")"
+      ]
+    },
+    {
+      "id": "anilist-156395",
+      "aniListId": 156395,
+      "titleZh": "為醜女獻上花束。",
+      "titleJa": "ブスに花束を。",
+      "yearSeason": "2025 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113823",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=43981",
+      "officialTitle": "為丑女獻上花束",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"為醜女獻上花束。\" ➜ 巴哈官方: \"為丑女獻上花束\")"
+      ]
+    },
+    {
+      "id": "anilist-185736",
+      "aniListId": 185736,
+      "titleZh": "正義使者-我的英雄學院之非法英雄",
+      "titleJa": "ヴィジランテ -僕のヒーローアカデミア ILLEGALS-",
+      "yearSeason": "2025 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113936",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=42882",
+      "officialTitle": "正義使者 - 我的英雄學院之非法英雄",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"正義使者-我的英雄學院之非法英雄\" ➜ 巴哈官方: \"正義使者 - 我的英雄學院之非法英雄\")"
+      ]
+    },
+    {
+      "id": "anilist-180516",
+      "aniListId": 180516,
+      "titleZh": "賽馬娘：蘆毛灰姑娘",
+      "titleJa": "ウマ娘 シンデレラグレイ",
+      "yearSeason": "2025 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114063",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=48758",
+      "officialTitle": "賽馬娘 灰髮灰姑娘",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"賽馬娘：蘆毛灰姑娘\" ➜ 巴哈官方: \"賽馬娘 灰髮灰姑娘\")"
+      ]
+    },
+    {
+      "id": "anilist-177476",
+      "aniListId": 177476,
+      "titleZh": "真·武士傳 YAIBA",
+      "titleJa": "真･侍伝 YAIBA",
+      "yearSeason": "2025 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113851",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=44074",
+      "officialTitle": "真･武士傳 YAIBA",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"真·武士傳 YAIBA\" ➜ 巴哈官方: \"真･武士傳 YAIBA\")"
+      ]
+    },
+    {
+      "id": "anilist-176496",
+      "aniListId": 176496,
+      "titleZh": "我獨自升級 第二季 -起於闇影-",
+      "titleJa": "俺だけレベルアップな件 Season 2 -Arise from the Shadow-",
+      "yearSeason": "2025 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113716",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=41645",
+      "officialTitle": "我獨自升級 第二季 －起於闇影－",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"我獨自升級 第二季 -起於闇影-\" ➜ 巴哈官方: \"我獨自升級 第二季 －起於闇影－\")"
+      ]
+    },
+    {
+      "id": "anilist-180812",
+      "aniListId": 180812,
+      "titleZh": "離開A級隊伍的我，和從前的弟子往迷宮深處邁進",
+      "titleJa": "Aランクパーティを離脱した俺は、元教え子たちと迷宮深部を目指す。",
+      "yearSeason": "2025 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113715",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=41786",
+      "officialTitle": "離開 A 級隊伍的我，和從前的弟子往迷宮深處邁進",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"離開A級隊伍的我，和從前的弟子往迷宮深處邁進\" ➜ 巴哈官方: \"離開 A 級隊伍的我，和從前的弟子往迷宮深處邁進\")"
+      ]
+    },
+    {
+      "id": "anilist-172439",
+      "aniListId": 172439,
+      "titleZh": "歡迎來到日本，妖精小姐",
+      "titleJa": "日本へようこそエルフさん。",
+      "yearSeason": "2025 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113707",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=41766",
+      "officialTitle": "歡迎來到日本，妖精小姐。",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"歡迎來到日本，妖精小姐\" ➜ 巴哈官方: \"歡迎來到日本，妖精小姐。\")"
+      ]
+    },
+    {
+      "id": "anilist-170892",
+      "aniListId": 170892,
+      "titleZh": "地縛少年花子君 第二季",
+      "titleJa": "地縛少年花子くん２",
+      "yearSeason": "2025 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113720",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=41798",
+      "officialTitle": "地縛少年花子君 2",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"地縛少年花子君 第二季\" ➜ 巴哈官方: \"地縛少年花子君 2\")"
+      ]
+    },
+    {
+      "id": "anilist-179999",
+      "aniListId": 179999,
+      "titleZh": "怪獸8號 保科特休日",
+      "titleJa": "怪獣8号 保科の休日",
+      "yearSeason": "2025 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113833",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=43965",
+      "officialTitle": "怪獸 8 號 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"怪獸8號 保科特休日\" ➜ 巴哈官方: \"怪獸 8 號 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-176158",
+      "aniListId": 176158,
+      "titleZh": "S級怪獸《貝希摩斯》被誤認成小貓，成為精靈女孩的騎士（寵物）一起生活",
+      "titleJa": "Ｓランクモンスターの《ベヒーモス》だけど、猫と間違われてエルフ娘の騎士（ペット）として暮らしてます",
+      "yearSeason": "2025 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113713",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=41597",
+      "officialTitle": "S 級怪獸《貝希摩斯》被誤認成小貓，成為精靈女孩的騎士（寵物）一起生活",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"S級怪獸《貝希摩斯》被誤認成小貓，成為精靈女孩的騎士（寵物）一起生活\" ➜ 巴哈官方: \"S 級怪獸《貝希摩斯》被誤認成小貓，成為精靈女孩的騎士（寵物）一起生活\")"
+      ]
+    },
+    {
+      "id": "anilist-163135",
+      "aniListId": 163135,
+      "titleZh": "魔王2099",
+      "titleJa": "魔王2099",
+      "yearSeason": "2024 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113662",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=40171",
+      "officialTitle": "魔王 2099",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔王2099\" ➜ 巴哈官方: \"魔王 2099\")"
+      ]
+    },
+    {
+      "id": "anilist-171545",
+      "aniListId": 171545,
+      "titleZh": "妖怪學校的菜鳥老師!",
+      "titleJa": "妖怪学校の先生はじめました！",
+      "yearSeason": "2024 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113639",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=40125",
+      "officialTitle": "妖怪學校的菜鳥老師",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"妖怪學校的菜鳥老師!\" ➜ 巴哈官方: \"妖怪學校的菜鳥老師\")"
+      ]
+    },
+    {
+      "id": "anilist-169315",
+      "aniListId": 169315,
+      "titleZh": "一兆遊戲",
+      "titleJa": "トリリオンゲーム",
+      "yearSeason": "2024 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113675",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=40332",
+      "officialTitle": "一兆＄遊戲",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"一兆遊戲\" ➜ 巴哈官方: \"一兆＄遊戲\")"
+      ]
+    },
+    {
+      "id": "anilist-158559",
+      "aniListId": 158559,
+      "titleZh": "2.5次元的誘惑",
+      "titleJa": "2.5次元の誘惑",
+      "yearSeason": "2024 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113570",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38850",
+      "officialTitle": "2.5 次元的誘惑",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"2.5次元的誘惑\" ➜ 巴哈官方: \"2.5 次元的誘惑\")"
+      ]
+    },
+    {
+      "id": "anilist-139095",
+      "aniListId": 139095,
+      "titleZh": "Fairy Tail 魔導少年 百年任務",
+      "titleJa": "FAIRY TAIL 100 YEARS QUEST",
+      "yearSeason": "2024 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113580",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38888",
+      "officialTitle": "FAIRY TAIL 魔導少年 百年任務",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Fairy Tail 魔導少年 百年任務\" ➜ 巴哈官方: \"FAIRY TAIL 魔導少年 百年任務\")"
+      ]
+    },
+    {
+      "id": "anilist-173533",
+      "aniListId": 173533,
+      "titleZh": "物語系列 第外季＆第怪季",
+      "titleJa": "〈物語〉シリーズ オフ&モンスターシーズン",
+      "yearSeason": "2024 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113596",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38960",
+      "officialTitle": "物語系列 第外季&第怪季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"物語系列 第外季＆第怪季\" ➜ 巴哈官方: \"物語系列 第外季&第怪季\")"
+      ]
+    },
+    {
+      "id": "anilist-160488",
+      "aniListId": 160488,
+      "titleZh": "身為VTuber的我因為忘記關臺而成了傳說",
+      "titleJa": "VTuberなんだが配信切り忘れたら伝説になってた",
+      "yearSeason": "2024 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113581",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38890",
+      "officialTitle": "身為 VTuber 的我因為忘記關台而成了傳說",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"身為VTuber的我因為忘記關臺而成了傳說\" ➜ 巴哈官方: \"身為 VTuber 的我因為忘記關台而成了傳說\")"
+      ]
+    },
+    {
+      "id": "anilist-174044",
+      "aniListId": 174044,
+      "titleZh": "深夜PUNCH",
+      "titleJa": "真夜中ぱんチ",
+      "yearSeason": "2024 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113559",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38831",
+      "officialTitle": "深夜 Punch",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"深夜PUNCH\" ➜ 巴哈官方: \"深夜 Punch\")"
+      ]
+    },
+    {
+      "id": "anilist-153288",
+      "aniListId": 153288,
+      "titleZh": "怪獸8號",
+      "titleJa": "怪獣８号",
+      "yearSeason": "2024 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37877",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37877",
+      "officialTitle": "怪獸 8 號",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"怪獸8號\" ➜ 巴哈官方: \"怪獸 8 號\")"
+      ]
+    },
+    {
+      "id": "anilist-170130",
+      "aniListId": 170130,
+      "titleZh": "從Lv2開始開外掛的前勇者候補過著悠哉異世界生活",
+      "titleJa": "Lv2からチートだった元勇者候補のまったり異世界ライフ",
+      "yearSeason": "2024 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113490",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37775",
+      "officialTitle": "從 Lv2 開始開外掛的前勇者候補過著悠哉異世界生活",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"從Lv2開始開外掛的前勇者候補過著悠哉異世界生活\" ➜ 巴哈官方: \"從 Lv2 開始開外掛的前勇者候補過著悠哉異世界生活\")"
+      ]
+    },
+    {
+      "id": "anilist-164212",
+      "aniListId": 164212,
+      "titleZh": "GIRLS BAND CRY",
+      "titleJa": "ガールズバンドクライ",
+      "yearSeason": "2024 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=40645",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=40645",
+      "officialTitle": "少女樂團 吶喊吧",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"GIRLS BAND CRY\" ➜ 巴哈官方: \"少女樂團 吶喊吧\")"
+      ]
+    },
+    {
+      "id": "anilist-151380",
+      "aniListId": 151380,
+      "titleZh": "約會大作戰Ⅴ",
+      "titleJa": "デート・ア・ライブV",
+      "yearSeason": "2024 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113499",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37834",
+      "officialTitle": "約會大作戰 DATE A LIVE V",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"約會大作戰Ⅴ\" ➜ 巴哈官方: \"約會大作戰 DATE A LIVE V\")"
+      ]
+    },
+    {
+      "id": "anilist-168374",
+      "aniListId": 168374,
+      "titleZh": "輪迴7次的惡役千金，在前敵國享受隨心所欲的新婚生活",
+      "titleJa": "ループ7回目の悪役令嬢は、元敵国で自由気ままな花嫁生活を満喫する",
+      "yearSeason": "2024 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113441",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36901",
+      "officialTitle": "輪迴七次的惡役千金，在前敵國享受隨心所欲的新婚生活",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"輪迴7次的惡役千金，在前敵國享受隨心所欲的新婚生活\" ➜ 巴哈官方: \"輪迴七次的惡役千金，在前敵國享受隨心所欲的新婚生活\")"
+      ]
+    },
+    {
+      "id": "anilist-162780",
+      "aniListId": 162780,
+      "titleZh": "憧憬成為魔法少女",
+      "titleJa": "魔法少女にあこがれて",
+      "yearSeason": "2024 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113466",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36843",
+      "officialTitle": "夢想成為魔法少女",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"憧憬成為魔法少女\" ➜ 巴哈官方: \"夢想成為魔法少女\")"
+      ]
+    },
+    {
+      "id": "anilist-163076",
+      "aniListId": 163076,
+      "titleZh": "反派千金等級99～我是隱藏頭目但不是魔王～",
+      "titleJa": "悪役令嬢レベル99 ～私は裏ボスですが魔王ではありません～",
+      "yearSeason": "2024 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113467",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36924",
+      "officialTitle": "反派千金等級 99～我是隱藏頭目但不是魔王～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"反派千金等級99～我是隱藏頭目但不是魔王～\" ➜ 巴哈官方: \"反派千金等級 99～我是隱藏頭目但不是魔王～\")"
+      ]
+    },
+    {
+      "id": "anilist-162144",
+      "aniListId": 162144,
+      "titleZh": "外科醫生愛麗絲",
+      "titleJa": "外科医エリーゼ",
+      "yearSeason": "2024 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113465",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36930",
+      "officialTitle": "女王的手術刀",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"外科醫生愛麗絲\" ➜ 巴哈官方: \"女王的手術刀\")"
+      ]
+    },
+    {
+      "id": "anilist-169935",
+      "aniListId": 169935,
+      "titleZh": "最強肉盾的迷宮攻略～擁有稀少技能體力9999的肉盾，被勇者隊伍辭退了～",
+      "titleJa": "最強タンクの迷宮攻略　～体力9999のレアスキル持ちタンク、勇者パーティーを追放される～",
+      "yearSeason": "2024 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113447",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36888",
+      "officialTitle": "最強肉盾的迷宮攻略～擁有稀少技能體力 9999 的肉盾，被勇者隊伍辭退了～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"最強肉盾的迷宮攻略～擁有稀少技能體力9999的肉盾，被勇者隊伍辭退了～\" ➜ 巴哈官方: \"最強肉盾的迷宮攻略～擁有稀少技能體力 9999 的肉盾，被勇者隊伍辭退了～\")"
+      ]
+    },
+    {
+      "id": "anilist-167087",
+      "aniListId": 167087,
+      "titleZh": "如果30歲還是處男，似乎就能成為魔法師",
+      "titleJa": "30歳まで童貞だと魔法使いになれるらしい",
+      "yearSeason": "2024 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113443",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36933",
+      "officialTitle": "如果 30 歲還是處男，似乎就能成為魔法師",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"如果30歲還是處男，似乎就能成為魔法師\" ➜ 巴哈官方: \"如果 30 歲還是處男，似乎就能成為魔法師\")"
+      ]
+    },
+    {
+      "id": "anilist-111322",
+      "aniListId": 111322,
+      "titleZh": "盾之勇者成名錄 第三季",
+      "titleJa": "盾の勇者の成り上がり Season 3",
+      "yearSeason": "2023 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113406",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35516",
+      "officialTitle": "盾之勇者成名錄 Season 3",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"盾之勇者成名錄 第三季\" ➜ 巴哈官方: \"盾之勇者成名錄 Season 3\")"
+      ]
+    },
+    {
+      "id": "anilist-129188",
+      "aniListId": 129188,
+      "titleZh": "哥布林殺手 第二季",
+      "titleJa": "ゴブリンスレイヤーⅡ",
+      "yearSeason": "2023 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35439",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35439",
+      "officialTitle": "哥布林殺手 II",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"哥布林殺手 第二季\" ➜ 巴哈官方: \"哥布林殺手 II\")"
+      ]
+    },
+    {
+      "id": "anilist-161364",
+      "aniListId": 161364,
+      "titleZh": "某大叔的VRMMO活動記",
+      "titleJa": "とあるおっさんのVRMMO活動記",
+      "yearSeason": "2023 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113360",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35363",
+      "officialTitle": "某大叔的 VRMMO 活動記",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"某大叔的VRMMO活動記\" ➜ 巴哈官方: \"某大叔的 VRMMO 活動記\")"
+      ]
+    },
+    {
+      "id": "anilist-154384",
+      "aniListId": 154384,
+      "titleZh": "堤亞穆帝國物語～從斷頭臺開始，公主重生後的逆轉人生～",
+      "titleJa": "ティアムーン帝国物語～断頭台から始まる、姫の転生逆転ストーリー～",
+      "yearSeason": "2023 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35475",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35475",
+      "officialTitle": "堤亞穆帝國物語～從斷頭台開始，公主重生後的逆轉人生～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"堤亞穆帝國物語～從斷頭臺開始，公主重生後的逆轉人生～\" ➜ 巴哈官方: \"堤亞穆帝國物語～從斷頭台開始，公主重生後的逆轉人生～\")"
+      ]
+    },
+    {
+      "id": "anilist-160515",
+      "aniListId": 160515,
+      "titleZh": "Overtake!",
+      "titleJa": "オーバーテイク！",
+      "yearSeason": "2023 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113402",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35346",
+      "officialTitle": "競速 OVERTAKE!",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Overtake!\" ➜ 巴哈官方: \"競速 OVERTAKE!\")"
+      ]
+    },
+    {
+      "id": "anilist-146953",
+      "aniListId": 146953,
+      "titleZh": "政宗君的復仇R",
+      "titleJa": "政宗くんのリベンジR",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113299",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34057",
+      "officialTitle": "政宗君的復仇 R",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"政宗君的復仇R\" ➜ 巴哈官方: \"政宗君的復仇 R\")"
+      ]
+    },
+    {
+      "id": "anilist-163263",
+      "aniListId": 163263,
+      "titleZh": "文豪Stray Dogs 第5季",
+      "titleJa": "文豪ストレイドッグス 第5シーズン",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113327",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34653",
+      "officialTitle": "文豪野犬 第五季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"文豪Stray Dogs 第5季\" ➜ 巴哈官方: \"文豪野犬 第五季\")"
+      ]
+    },
+    {
+      "id": "anilist-148465",
+      "aniListId": 148465,
+      "titleZh": "雖然等級只有1級但固有技能是最強的",
+      "titleJa": "レベル1だけどユニークスキルで最強です",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113286",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34082",
+      "officialTitle": "雖然等級只有 1 級但固有技能是最強的",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"雖然等級只有1級但固有技能是最強的\" ➜ 巴哈官方: \"雖然等級只有 1 級但固有技能是最強的\")"
+      ]
+    },
+    {
+      "id": "anilist-146836",
+      "aniListId": 146836,
+      "titleZh": "LV1魔王與獨居廢勇者",
+      "titleJa": "Lv1魔王とワンルーム勇者",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113283",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34051",
+      "officialTitle": "LV1 魔王與獨居廢勇者",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"LV1魔王與獨居廢勇者\" ➜ 巴哈官方: \"LV1 魔王與獨居廢勇者\")"
+      ]
+    },
+    {
+      "id": "anilist-162893",
+      "aniListId": 162893,
+      "titleZh": "萊莎的鍊金工房 ～常闇女王與秘密藏身處～",
+      "titleJa": "ライザのアトリエ ～常闇の女王と秘密の隠れ家～",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113292",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34049",
+      "officialTitle": "萊莎的鍊金工房 ～常闇女王與秘密藏身處～ The Animation",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"萊莎的鍊金工房 ～常闇女王與秘密藏身處～\" ➜ 巴哈官方: \"萊莎的鍊金工房 ～常闇女王與秘密藏身處～ The Animation\")"
+      ]
+    },
+    {
+      "id": "anilist-155982",
+      "aniListId": 155982,
+      "titleZh": "AYAKA ‐綾島奇譚‐",
+      "titleJa": "AYAKA",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113291",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34050",
+      "officialTitle": "AYAKA  -綾島奇譚-",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"AYAKA ‐綾島奇譚‐\" ➜ 巴哈官方: \"AYAKA  -綾島奇譚-\")"
+      ]
+    },
+    {
+      "id": "anilist-163542",
+      "aniListId": 163542,
+      "titleZh": "間諜教室 第二季",
+      "titleJa": "スパイ教室 2nd season",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=32333",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=32333",
+      "officialTitle": "間諜教室",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"間諜教室 第二季\" ➜ 巴哈官方: \"間諜教室\")"
+      ]
+    },
+    {
+      "id": "anilist-158530",
+      "aniListId": 158530,
+      "titleZh": "AI電子基因",
+      "titleJa": "AIの遺電子",
+      "yearSeason": "2023 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113296",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34078",
+      "officialTitle": "AI 電子基因",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"AI電子基因\" ➜ 巴哈官方: \"AI 電子基因\")"
+      ]
+    },
+    {
+      "id": "anilist-148109",
+      "aniListId": 148109,
+      "titleZh": "勇者死了!",
+      "titleJa": "勇者が死んだ！",
+      "yearSeason": "2023 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113241",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=33259",
+      "officialTitle": "勇者死了！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"勇者死了!\" ➜ 巴哈官方: \"勇者死了！\")"
+      ]
+    },
+    {
+      "id": "anilist-153452",
+      "aniListId": 153452,
+      "titleZh": "國王排名 -勇氣的寶箱-",
+      "titleJa": "王様ランキング 勇気の宝箱",
+      "yearSeason": "2023 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113249",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=33317",
+      "officialTitle": "國王排名 勇氣的寶箱",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"國王排名 -勇氣的寶箱-\" ➜ 巴哈官方: \"國王排名 勇氣的寶箱\")"
+      ]
+    },
+    {
+      "id": "anilist-147369",
+      "aniListId": 147369,
+      "titleZh": "藍色管絃樂",
+      "titleJa": "青のオーケストラ",
+      "yearSeason": "2023 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113914",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34802",
+      "officialTitle": "藍色管弦樂",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"藍色管絃樂\" ➜ 巴哈官方: \"藍色管弦樂\")"
+      ]
+    },
+    {
+      "id": "anilist-146975",
+      "aniListId": 146975,
+      "titleZh": "偶像大師灰姑娘女孩U149",
+      "titleJa": "アイドルマスター シンデレラガールズ U149",
+      "yearSeason": "2023 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113850",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=44056",
+      "officialTitle": "偶像大師 灰姑娘女孩 U149",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"偶像大師灰姑娘女孩U149\" ➜ 巴哈官方: \"偶像大師 灰姑娘女孩 U149\")"
+      ]
+    },
+    {
+      "id": "anilist-156854",
+      "aniListId": 156854,
+      "titleZh": "邊緣服務",
+      "titleJa": "THE MARGINAL SERVICE",
+      "yearSeason": "2023 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113339",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34936",
+      "officialTitle": "境界服務",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"邊緣服務\" ➜ 巴哈官方: \"境界服務\")"
+      ]
+    },
+    {
+      "id": "anilist-141249",
+      "aniListId": 141249,
+      "titleZh": "文豪Stray Dogs 第4季",
+      "titleJa": "文豪ストレイドッグス 第4シーズン",
+      "yearSeason": "2023 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113331",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34789",
+      "officialTitle": "文豪野犬 第四季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"文豪Stray Dogs 第4季\" ➜ 巴哈官方: \"文豪野犬 第四季\")"
+      ]
+    },
+    {
+      "id": "anilist-135102",
+      "aniListId": 135102,
+      "titleZh": "眾神眷顧的男人2",
+      "titleJa": "神達に拾われた男２",
+      "yearSeason": "2023 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113200",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=32345",
+      "officialTitle": "眾神眷顧的男人 2",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"眾神眷顧的男人2\" ➜ 巴哈官方: \"眾神眷顧的男人 2\")"
+      ]
+    },
+    {
+      "id": "anilist-146743",
+      "aniListId": 146743,
+      "titleZh": "佐佐木與宮野：畢業篇：電影版",
+      "titleJa": "佐々木と宮野ー卒業編ー",
+      "yearSeason": "2023 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113547",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38462",
+      "officialTitle": "電影版 佐佐木與宮野ー畢業篇ー",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"佐佐木與宮野：畢業篇：電影版\" ➜ 巴哈官方: \"電影版 佐佐木與宮野ー畢業篇ー\")"
+      ]
+    },
+    {
+      "id": "anilist-130696",
+      "aniListId": 130696,
+      "titleZh": "英雄傳說 閃之軌跡: 北方戰役",
+      "titleJa": "The Legend of Heroes 閃の軌跡 Northern War",
+      "yearSeason": "2023 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113202",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=32347",
+      "officialTitle": "英雄傳說 閃之軌跡：北方戰役",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"英雄傳說 閃之軌跡: 北方戰役\" ➜ 巴哈官方: \"英雄傳說 閃之軌跡：北方戰役\")"
+      ]
+    },
+    {
+      "id": "anilist-140439",
+      "aniListId": 140439,
+      "titleZh": "路人超能100 第三季",
+      "titleJa": "モブサイコ100 Ⅲ",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113131",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=31587",
+      "officialTitle": "路人超能 100 第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"路人超能100 第三季\" ➜ 巴哈官方: \"路人超能 100 第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-116674",
+      "aniListId": 116674,
+      "titleZh": "BLEACH 千年血戰篇",
+      "titleJa": "BLEACH 千年血戦篇",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113661",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=31634",
+      "officialTitle": "BLEACH 死神 千年血戰篇",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"BLEACH 千年血戰篇\" ➜ 巴哈官方: \"BLEACH 死神 千年血戰篇\")"
+      ]
+    },
+    {
+      "id": "anilist-141949",
+      "aniListId": 141949,
+      "titleZh": "夫婦以上，戀人未滿。",
+      "titleJa": "夫婦以上、恋人未満。",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113147",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=31605",
+      "officialTitle": "夫婦以上，戀人未滿",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"夫婦以上，戀人未滿。\" ➜ 巴哈官方: \"夫婦以上，戀人未滿\")"
+      ]
+    },
+    {
+      "id": "anilist-139274",
+      "aniListId": 139274,
+      "titleZh": "機動戰士高達：水星的魔女",
+      "titleJa": "機動戦士ガンダム 水星の魔女",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113247",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=31406",
+      "officialTitle": "機動戰士鋼彈 水星的魔女",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"機動戰士高達：水星的魔女\" ➜ 巴哈官方: \"機動戰士鋼彈 水星的魔女\")"
+      ]
+    },
+    {
+      "id": "anilist-139092",
+      "aniListId": 139092,
+      "titleZh": "入間同學入魔了! 第三季",
+      "titleJa": "魔入りました！入間くん 第3シリーズ",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113135",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=31658",
+      "officialTitle": "入間同學入魔了！第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"入間同學入魔了! 第三季\" ➜ 巴哈官方: \"入間同學入魔了！第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-140999",
+      "aniListId": 140999,
+      "titleZh": "刀劍神域劇場版：Progressive：陰沉薄暮的詼諧曲",
+      "titleJa": "劇場版 ソードアート・オンライン プログレッシブ 冥き夕闇のスケルツォ",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113279",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=33944",
+      "officialTitle": "刀劍神域劇場版－Progressive－陰沉薄暮的詼諧曲",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"刀劍神域劇場版：Progressive：陰沉薄暮的詼諧曲\" ➜ 巴哈官方: \"刀劍神域劇場版－Progressive－陰沉薄暮的詼諧曲\")"
+      ]
+    },
+    {
+      "id": "anilist-141400",
+      "aniListId": 141400,
+      "titleZh": "彼得·格里爾的賢者時間 Super Extra",
+      "titleJa": "ピーター・グリルと賢者の時間 Super Extra",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113148",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=31640",
+      "officialTitle": "彼得・格里爾的賢者時間 Super Extra",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"彼得·格里爾的賢者時間 Super Extra\" ➜ 巴哈官方: \"彼得・格里爾的賢者時間 Super Extra\")"
+      ]
+    },
+    {
+      "id": "anilist-21294",
+      "aniListId": 21294,
+      "titleZh": "艦隊Collection 總有一天，在那片海",
+      "titleJa": "艦これ いつかあの海で",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113351",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35184",
+      "officialTitle": "艦隊 Collection 總有一天，在那片海",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"艦隊Collection 總有一天，在那片海\" ➜ 巴哈官方: \"艦隊 Collection 總有一天，在那片海\")"
+      ]
+    },
+    {
+      "id": "anilist-126425",
+      "aniListId": 126425,
+      "titleZh": "天使降臨我身邊 劇場版",
+      "titleJa": "私に天使が舞い降りた！プレシャス・フレンズ",
+      "yearSeason": "2022 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36103",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=36103",
+      "officialTitle": "天使降臨到我身邊！珍貴的朋友",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"天使降臨我身邊 劇場版\" ➜ 巴哈官方: \"天使降臨到我身邊！珍貴的朋友\")"
+      ]
+    },
+    {
+      "id": "anilist-143270",
+      "aniListId": 143270,
+      "titleZh": "莉可麗絲",
+      "titleJa": "リコリス・リコイル",
+      "yearSeason": "2022 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30008",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30008",
+      "officialTitle": "Lycoris Recoil 莉可麗絲",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"莉可麗絲\" ➜ 巴哈官方: \"Lycoris Recoil 莉可麗絲\")"
+      ]
+    },
+    {
+      "id": "anilist-133844",
+      "aniListId": 133844,
+      "titleZh": "OVERLORD 4",
+      "titleJa": "オーバーロードⅣ",
+      "yearSeason": "2022 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113072",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30167",
+      "officialTitle": "OVERLORD 第四季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"OVERLORD 4\" ➜ 巴哈官方: \"OVERLORD 第四季\")"
+      ]
+    },
+    {
+      "id": "anilist-130592",
+      "aniListId": 130592,
+      "titleZh": "打工吧！魔王大人 第二季",
+      "titleJa": "はたらく魔王さま！！",
+      "yearSeason": "2022 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113078",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30441",
+      "officialTitle": "打工吧，魔王大人！第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"打工吧！魔王大人 第二季\" ➜ 巴哈官方: \"打工吧，魔王大人！第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-146210",
+      "aniListId": 146210,
+      "titleZh": "金裝的維爾梅：瀕臨留級的學生與最強災害掉入魔法世界",
+      "titleJa": "金装のヴェルメイユ～崖っぷち魔術師は最強の厄災と魔法世界を突き進む～",
+      "yearSeason": "2022 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113349",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34996",
+      "officialTitle": "金裝的維爾梅～瀕臨留級的魔法師聯手最強災厄勇闖魔法世界～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"金裝的維爾梅：瀕臨留級的學生與最強災害掉入魔法世界\" ➜ 巴哈官方: \"金裝的維爾梅～瀕臨留級的魔法師聯手最強災厄勇闖魔法世界～\")"
+      ]
+    },
+    {
+      "id": "anilist-149073",
+      "aniListId": 149073,
+      "titleZh": "我的英雄學院 HLB英雄棒球聯盟",
+      "titleJa": "僕のヒーローアカデミア 5 (ONA)",
+      "yearSeason": "2022 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113109",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30783",
+      "officialTitle": "我的英雄學院 HLB 英雄棒球聯盟",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"我的英雄學院 HLB英雄棒球聯盟\" ➜ 巴哈官方: \"我的英雄學院 HLB 英雄棒球聯盟\")"
+      ]
+    },
+    {
+      "id": "anilist-103118",
+      "aniListId": 103118,
+      "titleZh": "聯盟空軍航空魔法音樂隊-光輝魔女",
+      "titleJa": "連盟空軍航空魔法音楽隊ルミナスウィッチーズ",
+      "yearSeason": "2022 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113093",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30014",
+      "officialTitle": "聯盟空軍航空魔法音樂隊 光輝魔女",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"聯盟空軍航空魔法音樂隊-光輝魔女\" ➜ 巴哈官方: \"聯盟空軍航空魔法音樂隊 光輝魔女\")"
+      ]
+    },
+    {
+      "id": "anilist-140960",
+      "aniListId": 140960,
+      "titleZh": "間諜家家酒",
+      "titleJa": "SPY×FAMILY",
+      "yearSeason": "2022 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113899",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=28798",
+      "officialTitle": "SPY×FAMILY 間諜家家酒",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"間諜家家酒\" ➜ 巴哈官方: \"SPY×FAMILY 間諜家家酒\")"
+      ]
+    },
+    {
+      "id": "anilist-125367",
+      "aniListId": 125367,
+      "titleZh": "輝夜姬想讓人告白—超級浪漫—",
+      "titleJa": "かぐや様は告らせたい-ウルトラロマンティック-",
+      "yearSeason": "2022 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113010",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=28879",
+      "officialTitle": "輝夜姬想讓人告白 ー超級浪漫ー",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"輝夜姬想讓人告白—超級浪漫—\" ➜ 巴哈官方: \"輝夜姬想讓人告白 ー超級浪漫ー\")"
+      ]
+    },
+    {
+      "id": "anilist-130586",
+      "aniListId": 130586,
+      "titleZh": "史上最強大魔王轉生為村民A",
+      "titleJa": "史上最強の大魔王、村人Aに転生する",
+      "yearSeason": "2022 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113008",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=28793",
+      "officialTitle": "史上最強大魔王轉生為村民 A",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"史上最強大魔王轉生為村民A\" ➜ 巴哈官方: \"史上最強大魔王轉生為村民 A\")"
+      ]
+    },
+    {
+      "id": "anilist-140350",
+      "aniListId": 140350,
+      "titleZh": "王者天下 第4季",
+      "titleJa": "キングダム 第4シリーズ",
+      "yearSeason": "2022 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113015",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=28803",
+      "officialTitle": "王者天下 第四季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"王者天下 第4季\" ➜ 巴哈官方: \"王者天下 第四季\")"
+      ]
+    },
+    {
+      "id": "anilist-138424",
+      "aniListId": 138424,
+      "titleZh": "擅長捉弄人的高木同學 第3季",
+      "titleJa": "からかい上手の高木さん３",
+      "yearSeason": "2022 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112955",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27362",
+      "officialTitle": "擅長捉弄人的高木同學 第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"擅長捉弄人的高木同學 第3季\" ➜ 巴哈官方: \"擅長捉弄人的高木同學 第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-137247",
+      "aniListId": 137247,
+      "titleZh": "幻想三國誌-天元靈心記",
+      "titleJa": "幻想三國誌 -天元霊心記",
+      "yearSeason": "2022 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112974",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27445",
+      "officialTitle": "幻想三國誌 — 天元靈心記",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"幻想三國誌-天元靈心記\" ➜ 巴哈官方: \"幻想三國誌 — 天元靈心記\")"
+      ]
+    },
+    {
+      "id": "anilist-130389",
+      "aniListId": 130389,
+      "titleZh": "魔法科高中的劣等生: 追憶篇",
+      "titleJa": "魔法科高校の劣等生 追憶編",
+      "yearSeason": "2022 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112950",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27347",
+      "officialTitle": "魔法科高中的劣等生 追憶篇",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法科高中的劣等生: 追憶篇\" ➜ 巴哈官方: \"魔法科高中的劣等生 追憶篇\")"
+      ]
+    },
+    {
+      "id": "anilist-131586",
+      "aniListId": 131586,
+      "titleZh": "86 -不存在的戰區- 第二季",
+      "titleJa": "86－エイティシックス－ 第2クール",
+      "yearSeason": "2021 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22245",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22245",
+      "officialTitle": "86－不存在的戰區－",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"86 -不存在的戰區- 第二季\" ➜ 巴哈官方: \"86－不存在的戰區－\")"
+      ]
+    },
+    {
+      "id": "anilist-124140",
+      "aniListId": 124140,
+      "titleZh": "刀劍神域劇場版-Progressive-無星夜的詠嘆調",
+      "titleJa": "劇場版 ソードアート・オンライン プログレッシブ 星なき夜のアリア",
+      "yearSeason": "2021 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113118",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=30988",
+      "officialTitle": "刀劍神域劇場版－Progressive－無星夜的詠嘆調",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"刀劍神域劇場版-Progressive-無星夜的詠嘆調\" ➜ 巴哈官方: \"刀劍神域劇場版－Progressive－無星夜的詠嘆調\")"
+      ]
+    },
+    {
+      "id": "anilist-129068",
+      "aniListId": 129068,
+      "titleZh": "進化果實~不知不覺踏上勝利的人生~",
+      "titleJa": "進化の実～知らないうちに勝ち組人生～",
+      "yearSeason": "2021 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113194",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=25560",
+      "officialTitle": "進化果實～不知不覺踏上勝利的人生～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"進化果實~不知不覺踏上勝利的人生~\" ➜ 巴哈官方: \"進化果實～不知不覺踏上勝利的人生～\")"
+      ]
+    },
+    {
+      "id": "anilist-139449",
+      "aniListId": 139449,
+      "titleZh": "星期一的豐滿2",
+      "titleJa": "月曜日のたわわ２",
+      "yearSeason": "2021 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112838",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=25163",
+      "officialTitle": "星期一的豐滿 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"星期一的豐滿2\" ➜ 巴哈官方: \"星期一的豐滿 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-131264",
+      "aniListId": 131264,
+      "titleZh": "半妖的夜叉姫 第二季",
+      "titleJa": "半妖の夜叉姫 弐の章",
+      "yearSeason": "2021 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112843",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=25431",
+      "officialTitle": "半妖的夜叉姬 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"半妖的夜叉姫 第二季\" ➜ 巴哈官方: \"半妖的夜叉姬 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-126192",
+      "aniListId": 126192,
+      "titleZh": "女朋友and女朋友",
+      "titleJa": "カノジョも彼女",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113403",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23381",
+      "officialTitle": "女朋友 and 女朋友",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"女朋友and女朋友\" ➜ 巴哈官方: \"女朋友 and 女朋友\")"
+      ]
+    },
+    {
+      "id": "anilist-126659",
+      "aniListId": 126659,
+      "titleZh": "我的英雄學院劇場版：世界英雄任務",
+      "titleJa": "僕のヒーローアカデミア THE MOVIE ワールド ヒーローズ ミッション",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113538",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38149",
+      "officialTitle": "我的英雄學院：世界英雄任務",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"我的英雄學院劇場版：世界英雄任務\" ➜ 巴哈官方: \"我的英雄學院：世界英雄任務\")"
+      ]
+    },
+    {
+      "id": "anilist-128545",
+      "aniListId": 128545,
+      "titleZh": "白沙的Aquatope",
+      "titleJa": "白い砂のアクアトープ",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112736",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23346",
+      "officialTitle": "白沙的 Aquatope",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"白沙的Aquatope\" ➜ 巴哈官方: \"白沙的 Aquatope\")"
+      ]
+    },
+    {
+      "id": "anilist-131149",
+      "aniListId": 131149,
+      "titleZh": "暮蟬悲鳴時卒",
+      "titleJa": "ひぐらしのなく頃に卒",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112734",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23343",
+      "officialTitle": "暮蟬悲鳴時 卒",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"暮蟬悲鳴時卒\" ➜ 巴哈官方: \"暮蟬悲鳴時 卒\")"
+      ]
+    },
+    {
+      "id": "anilist-118743",
+      "aniListId": 118743,
+      "titleZh": "魔法少女伊莉雅：Licht 無名的少女",
+      "titleJa": "Fate/kaleid liner プリズマ☆イリヤ Licht 名前の無い少女",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113546",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38383",
+      "officialTitle": "Fate/kaleid liner 魔法少女☆伊莉雅 Licht 無名的少女",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法少女伊莉雅：Licht 無名的少女\" ➜ 巴哈官方: \"Fate/kaleid liner 魔法少女☆伊莉雅 Licht 無名的少女\")"
+      ]
+    },
+    {
+      "id": "anilist-125868",
+      "aniListId": 125868,
+      "titleZh": "暗夜第六感2041",
+      "titleJa": "NIGHT HEAD 2041",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113338",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=34898",
+      "officialTitle": "暗夜第六感 2041",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"暗夜第六感2041\" ➜ 巴哈官方: \"暗夜第六感 2041\")"
+      ]
+    },
+    {
+      "id": "anilist-130392",
+      "aniListId": 130392,
+      "titleZh": "叫我對大哥",
+      "titleJa": "俺、つしま",
+      "yearSeason": "2021 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112739",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23349",
+      "officialTitle": "叫我對大哥 (TV版)",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"叫我對大哥\" ➜ 巴哈官方: \"叫我對大哥 (TV版)\")"
+      ]
+    },
+    {
+      "id": "anilist-116589",
+      "aniListId": 116589,
+      "titleZh": "86：不存在的戰區",
+      "titleJa": "86－エイティシックス－",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112671",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22245",
+      "officialTitle": "86－不存在的戰區－",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"86：不存在的戰區\" ➜ 巴哈官方: \"86－不存在的戰區－\")"
+      ]
+    },
+    {
+      "id": "anilist-112608",
+      "aniListId": 112608,
+      "titleZh": "持續狩獵史萊姆三百年，不知不覺就練到LV MAX",
+      "titleJa": "スライム倒して300年、知らないうちにレベルMAXになってました",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113762",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22243",
+      "officialTitle": "持續狩獵史萊姆三百年，不知不覺就練到 LV MAX",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"持續狩獵史萊姆三百年，不知不覺就練到LV MAX\" ➜ 巴哈官方: \"持續狩獵史萊姆三百年，不知不覺就練到 LV MAX\")"
+      ]
+    },
+    {
+      "id": "anilist-117448",
+      "aniListId": 117448,
+      "titleZh": "異世界魔王與召喚少女的奴隸魔術Ω",
+      "titleJa": "異世界魔王と召喚少女の奴隷魔術Ω",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112680",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22525",
+      "officialTitle": "異世界魔王與召喚少女的奴隸魔術 Ω",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"異世界魔王與召喚少女的奴隸魔術Ω\" ➜ 巴哈官方: \"異世界魔王與召喚少女的奴隸魔術 Ω\")"
+      ]
+    },
+    {
+      "id": "anilist-116588",
+      "aniListId": 116588,
+      "titleZh": "戰鬥員派遣中",
+      "titleJa": "戦闘員、派遣します！",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112651",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22220",
+      "officialTitle": "戰鬥員派遣中！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"戰鬥員派遣中\" ➜ 巴哈官方: \"戰鬥員派遣中！\")"
+      ]
+    },
+    {
+      "id": "anilist-125038",
+      "aniListId": 125038,
+      "titleZh": "影宅",
+      "titleJa": "シャドーハウス",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113079",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22246",
+      "officialTitle": "SHADOWS HOUSE-影宅-",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"影宅\" ➜ 巴哈官方: \"SHADOWS HOUSE-影宅-\")"
+      ]
+    },
+    {
+      "id": "anilist-116741",
+      "aniListId": 116741,
+      "titleZh": "關於我轉生變成史萊姆這檔事 轉生史萊姆日記",
+      "titleJa": "転生したらスライムだった件 転スラ日記",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112659",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22228",
+      "officialTitle": "轉生史萊姆日記 關於我轉生變成史萊姆這檔事",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"關於我轉生變成史萊姆這檔事 轉生史萊姆日記\" ➜ 巴哈官方: \"轉生史萊姆日記 關於我轉生變成史萊姆這檔事\")"
+      ]
+    },
+    {
+      "id": "anilist-113359",
+      "aniListId": 113359,
+      "titleZh": "機甲拳擊 第二季",
+      "titleJa": "NOMAD メガロボクス2",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112652",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22221",
+      "officialTitle": "NOMAD MEGALOBOX 機甲拳擊 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"機甲拳擊 第二季\" ➜ 巴哈官方: \"NOMAD MEGALOBOX 機甲拳擊 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-120376",
+      "aniListId": 120376,
+      "titleZh": "美麗新世界：The Animation",
+      "titleJa": "すばらしきこのせかい The Animation",
+      "yearSeason": "2021 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112668",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22242",
+      "officialTitle": "美麗新世界 The Animation",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"美麗新世界：The Animation\" ➜ 巴哈官方: \"美麗新世界 The Animation\")"
+      ]
+    },
+    {
+      "id": "anilist-108465",
+      "aniListId": 108465,
+      "titleZh": "無職轉生～到了異世界就拿出真本事～",
+      "titleJa": "無職転生 ～異世界行ったら本気だす～",
+      "yearSeason": "2021 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113275",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=20620",
+      "officialTitle": "無職轉生，到了異世界就拿出真本事",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"無職轉生～到了異世界就拿出真本事～\" ➜ 巴哈官方: \"無職轉生，到了異世界就拿出真本事\")"
+      ]
+    },
+    {
+      "id": "anilist-113936",
+      "aniListId": 113936,
+      "titleZh": "Dr. STONE 第二季",
+      "titleJa": "Dr.STONE STONE WARS",
+      "yearSeason": "2021 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112553",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=21132",
+      "officialTitle": "Dr.STONE 新石紀 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Dr. STONE 第二季\" ➜ 巴哈官方: \"Dr.STONE 新石紀 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-129627",
+      "aniListId": 129627,
+      "titleZh": "國中高一貫！！鬼滅學園物語",
+      "titleJa": "中高一貫!!キメツ学園物語 ～バレンタイン編～",
+      "yearSeason": "2021 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=24998",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=24998",
+      "officialTitle": "國高中一貫！！鬼滅學園物語",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"國中高一貫！！鬼滅學園物語\" ➜ 巴哈官方: \"國高中一貫！！鬼滅學園物語\")"
+      ]
+    },
+    {
+      "id": "anilist-123785",
+      "aniListId": 123785,
+      "titleZh": "Praeter之傷",
+      "titleJa": "プレイタの傷",
+      "yearSeason": "2021 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112563",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=20604",
+      "officialTitle": "Praeter 之傷",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Praeter之傷\" ➜ 巴哈官方: \"Praeter 之傷\")"
+      ]
+    },
+    {
+      "id": "anilist-110277",
+      "aniListId": 110277,
+      "titleZh": "進擊的巨人 Final Season",
+      "titleJa": "進撃の巨人 The Final Season",
+      "yearSeason": "2021 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113419",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=19849",
+      "officialTitle": "進擊的巨人 The Final Season",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"進擊的巨人 Final Season\" ➜ 巴哈官方: \"進擊的巨人 The Final Season\")"
+      ]
+    },
+    {
+      "id": "anilist-113596",
+      "aniListId": 113596,
+      "titleZh": "喬瑟與虎與魚群",
+      "titleJa": "ジョゼと虎と魚たち",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35802",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35802",
+      "officialTitle": "喬瑟與虎與魚群 動畫版",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"喬瑟與虎與魚群\" ➜ 巴哈官方: \"喬瑟與虎與魚群 動畫版\")"
+      ]
+    },
+    {
+      "id": "anilist-114124",
+      "aniListId": 114124,
+      "titleZh": "憂國的莫里亞蒂",
+      "titleJa": "憂国のモリアーティ",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112645",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18369",
+      "officialTitle": "憂國的莫里亞蒂 第一季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"憂國的莫里亞蒂\" ➜ 巴哈官方: \"憂國的莫里亞蒂 第一季\")"
+      ]
+    },
+    {
+      "id": "anilist-112667",
+      "aniListId": 112667,
+      "titleZh": "你與我最後的戰場，亦或是世界起始的聖戰",
+      "titleJa": "キミと僕の最後の戦場、あるいは世界が始まる聖戦",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113594",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38976",
+      "officialTitle": "這是妳與我的最後戰場，或是開創世界的聖戰",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"你與我最後的戰場，亦或是世界起始的聖戰\" ➜ 巴哈官方: \"這是妳與我的最後戰場，或是開創世界的聖戰\")"
+      ]
+    },
+    {
+      "id": "anilist-118399",
+      "aniListId": 118399,
+      "titleZh": "半妖的夜叉姫",
+      "titleJa": "半妖の夜叉姫",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112843",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18434",
+      "officialTitle": "半妖的夜叉姬",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"半妖的夜叉姫\" ➜ 巴哈官方: \"半妖的夜叉姬\")"
+      ]
+    },
+    {
+      "id": "anilist-117757",
+      "aniListId": 117757,
+      "titleZh": "攀巖少女！",
+      "titleJa": "いわかける！ -Sport Climbing Girls-",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112470",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18438",
+      "officialTitle": "攀岩少女！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"攀巖少女！\" ➜ 巴哈官方: \"攀岩少女！\")"
+      ]
+    },
+    {
+      "id": "anilist-113970",
+      "aniListId": 113970,
+      "titleZh": "Love Live! 虹咲學園 學園偶像同好會",
+      "titleJa": "ラブライブ！虹ヶ咲学園スクールアイドル同好会",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113505",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18435",
+      "officialTitle": "Love Live！虹咲學園 學園偶像同好會",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Love Live! 虹咲學園 學園偶像同好會\" ➜ 巴哈官方: \"Love Live！虹咲學園 學園偶像同好會\")"
+      ]
+    },
+    {
+      "id": "anilist-114099",
+      "aniListId": 114099,
+      "titleZh": "勇者鬥惡龍：達伊的大冒險",
+      "titleJa": "ドラゴンクエスト ダイの大冒険",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112464",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18433",
+      "officialTitle": "勇者鬥惡龍 達伊的大冒險",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"勇者鬥惡龍：達伊的大冒險\" ➜ 巴哈官方: \"勇者鬥惡龍 達伊的大冒險\")"
+      ]
+    },
+    {
+      "id": "anilist-104198",
+      "aniListId": 104198,
+      "titleZh": "請問您今天要來點兔子嗎？ BLOOM",
+      "titleJa": "ご注文はうさぎですか？ BLOOM",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112466",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18548",
+      "officialTitle": "請問您今天要來點兔子嗎？BLOOM",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"請問您今天要來點兔子嗎？ BLOOM\" ➜ 巴哈官方: \"請問您今天要來點兔子嗎？BLOOM\")"
+      ]
+    },
+    {
+      "id": "anilist-111137",
+      "aniListId": 111137,
+      "titleZh": "WAVE!! 衝浪少年",
+      "titleJa": "WAVE!!～サーフィンやっぺ!!～",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112546",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=20629",
+      "officialTitle": "WAVE!! ~來衝浪吧!!~",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"WAVE!! 衝浪少年\" ➜ 巴哈官方: \"WAVE!! ~來衝浪吧!!~\")"
+      ]
+    },
+    {
+      "id": "anilist-117755",
+      "aniListId": 117755,
+      "titleZh": "光之戰記-ZUERST-",
+      "titleJa": "禍つヴァールハイト -ZUERST-",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112453",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=18612",
+      "officialTitle": "光之戰記 -ZUERST-",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"光之戰記-ZUERST-\" ➜ 巴哈官方: \"光之戰記 -ZUERST-\")"
+      ]
+    },
+    {
+      "id": "anilist-111145",
+      "aniListId": 111145,
+      "titleZh": "A3! 《秋冬篇》",
+      "titleJa": "A3! SEASON AUTUMN & WINTER",
+      "yearSeason": "2020 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=103844",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14544",
+      "officialTitle": "A3!",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"A3! 《秋冬篇》\" ➜ 巴哈官方: \"A3!\")"
+      ]
+    },
+    {
+      "id": "anilist-21719",
+      "aniListId": 21719,
+      "titleZh": "Fate/stay night [Heaven's Feel]：III. 春櫻之歌",
+      "titleJa": "Fate/stay night[Heaven's Feel] ⅠⅠⅠ.spring song",
+      "yearSeason": "2020 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112928",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=26998",
+      "officialTitle": "Fate/stay night [Heaven's Feel] Ⅲ.春櫻之歌",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Fate/stay night [Heaven's Feel]：III. 春櫻之歌\" ➜ 巴哈官方: \"Fate/stay night [Heaven's Feel] Ⅲ.春櫻之歌\")"
+      ]
+    },
+    {
+      "id": "anilist-110353",
+      "aniListId": 110353,
+      "titleZh": "DECA-DENCE",
+      "titleJa": "デカダンス",
+      "yearSeason": "2020 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=106466",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16176",
+      "officialTitle": "DECA - DENCE",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"DECA-DENCE\" ➜ 巴哈官方: \"DECA - DENCE\")"
+      ]
+    },
+    {
+      "id": "anilist-113286",
+      "aniListId": 113286,
+      "titleZh": "魔物孃的醫生",
+      "titleJa": "モンスター娘のお医者さん",
+      "yearSeason": "2020 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=108673",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16237",
+      "officialTitle": "魔物娘的醫生",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔物孃的醫生\" ➜ 巴哈官方: \"魔物娘的醫生\")"
+      ]
+    },
+    {
+      "id": "anilist-122349",
+      "aniListId": 122349,
+      "titleZh": "我的英雄學院OVA: 活下來! 殊死的生存訓練",
+      "titleJa": "僕のヒーローアカデミア 生き残れ！決死のサバイバル訓練",
+      "yearSeason": "2020 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112426",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16952",
+      "officialTitle": "我的英雄學院 OVA：活下來！殊死的生存訓練",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"我的英雄學院OVA: 活下來! 殊死的生存訓練\" ➜ 巴哈官方: \"我的英雄學院 OVA：活下來！殊死的生存訓練\")"
+      ]
+    },
+    {
+      "id": "anilist-110446",
+      "aniListId": 110446,
+      "titleZh": "GIBIATE獵魔武士",
+      "titleJa": "ジビエート",
+      "yearSeason": "2020 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=106527",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16429",
+      "officialTitle": "GIBIATE 獵魔武士",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"GIBIATE獵魔武士\" ➜ 巴哈官方: \"GIBIATE 獵魔武士\")"
+      ]
+    },
+    {
+      "id": "anilist-112641",
+      "aniListId": 112641,
+      "titleZh": "輝夜姬想讓人告白？～天才們的戀愛頭腦戰～",
+      "titleJa": "かぐや様は告らせたい？～天才たちの恋愛頭脳戦～",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113033",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15298",
+      "officialTitle": "輝夜姬想讓人告白～天才們的戀愛頭腦戰～ 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"輝夜姬想讓人告白？～天才們的戀愛頭腦戰～\" ➜ 巴哈官方: \"輝夜姬想讓人告白～天才們的戀愛頭腦戰～ 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-115230",
+      "aniListId": 115230,
+      "titleZh": "神之塔",
+      "titleJa": "神之塔 -Tower of God-",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112824",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=24804",
+      "officialTitle": "神之塔 -Tower of God-",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"神之塔\" ➜ 巴哈官方: \"神之塔 -Tower of God-\")"
+      ]
+    },
+    {
+      "id": "anilist-108241",
+      "aniListId": 108241,
+      "titleZh": "GLEIPNIR 格萊普尼爾",
+      "titleJa": "グレイプニル",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=104281",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15161",
+      "officialTitle": "格萊普尼爾",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"GLEIPNIR 格萊普尼爾\" ➜ 巴哈官方: \"格萊普尼爾\")"
+      ]
+    },
+    {
+      "id": "anilist-104647",
+      "aniListId": 104647,
+      "titleZh": "轉生成女性向遊戲只有毀滅END的壞人大小姐",
+      "titleJa": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113744",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=16125",
+      "officialTitle": "轉生成女性向遊戲只有毀滅 END 的壞人大小姐",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"轉生成女性向遊戲只有毀滅END的壞人大小姐\" ➜ 巴哈官方: \"轉生成女性向遊戲只有毀滅 END 的壞人大小姐\")"
+      ]
+    },
+    {
+      "id": "anilist-110547",
+      "aniListId": 110547,
+      "titleZh": "ARTE 阿爾蒂",
+      "titleJa": "アルテ",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=106728",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15145",
+      "officialTitle": "阿爾蒂",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"ARTE 阿爾蒂\" ➜ 巴哈官方: \"阿爾蒂\")"
+      ]
+    },
+    {
+      "id": "anilist-110458",
+      "aniListId": 110458,
+      "titleZh": "白貓Project Zero Chronicle 零之紀元",
+      "titleJa": "白猫プロジェクトZERO CHRONICLE",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=103741",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15186",
+      "officialTitle": "白貓 Project Zero Chronicle 零之紀元",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"白貓Project Zero Chronicle 零之紀元\" ➜ 巴哈官方: \"白貓 Project Zero Chronicle 零之紀元\")"
+      ]
+    },
+    {
+      "id": "anilist-113108",
+      "aniListId": 113108,
+      "titleZh": "王者天下 第3季",
+      "titleJa": "キングダム 第3シリーズ",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=108606",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15166",
+      "officialTitle": "王者天下 第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"王者天下 第3季\" ➜ 巴哈官方: \"王者天下 第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-113570",
+      "aniListId": 113570,
+      "titleZh": "社長，戰鬥的時間到了",
+      "titleJa": "社長、バトルの時間です！",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=108973",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15155",
+      "officialTitle": "社長，戰鬥的時間到了！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"社長，戰鬥的時間到了\" ➜ 巴哈官方: \"社長，戰鬥的時間到了！\")"
+      ]
+    },
+    {
+      "id": "anilist-103110",
+      "aniListId": 103110,
+      "titleZh": "偶像星願7 Second BEAT!",
+      "titleJa": "アイドリッシュセブン Second BEAT!",
+      "yearSeason": "2020 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=106515",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15163",
+      "officialTitle": "IDOLiSH7 - 偶像星願 - Second BEAT！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"偶像星願7 Second BEAT!\" ➜ 巴哈官方: \"IDOLiSH7 - 偶像星願 - Second BEAT！\")"
+      ]
+    },
+    {
+      "id": "anilist-106625",
+      "aniListId": 106625,
+      "titleZh": "排球少年!! TO THE TOP",
+      "titleJa": "ハイキュー!! TO THE TOP",
+      "yearSeason": "2020 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112463",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14651",
+      "officialTitle": "排球少年！！第四季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!! TO THE TOP\" ➜ 巴哈官方: \"排球少年！！第四季\")"
+      ]
+    },
+    {
+      "id": "anilist-101367",
+      "aniListId": 101367,
+      "titleZh": "魔術士歐菲流浪之旅",
+      "titleJa": "魔術士オーフェンはぐれ旅",
+      "yearSeason": "2020 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113264",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14494",
+      "officialTitle": "魔術士歐菲 流浪之旅",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔術士歐菲流浪之旅\" ➜ 巴哈官方: \"魔術士歐菲 流浪之旅\")"
+      ]
+    },
+    {
+      "id": "anilist-101634",
+      "aniListId": 101634,
+      "titleZh": "BanG Dream! 第3季",
+      "titleJa": "BanG Dream! 3rd Season",
+      "yearSeason": "2020 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=97713",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14496",
+      "officialTitle": "BanG Dream！第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"BanG Dream! 第3季\" ➜ 巴哈官方: \"BanG Dream！第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-107651",
+      "aniListId": 107651,
+      "titleZh": "A3!滿開劇團 春&夏",
+      "titleJa": "A3! SEASON SPRING ＆ SUMMER",
+      "yearSeason": "2020 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=103844",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14544",
+      "officialTitle": "A3!",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"A3!滿開劇團 春&夏\" ➜ 巴哈官方: \"A3!\")"
+      ]
+    },
+    {
+      "id": "anilist-108928",
+      "aniListId": 108928,
+      "titleZh": "七大罪：眾神的逆鱗",
+      "titleJa": "七つの大罪 神々の逆鱗",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=105050",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=13824",
+      "officialTitle": "七大罪 眾神的逆鱗",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"七大罪：眾神的逆鱗\" ➜ 巴哈官方: \"七大罪 眾神的逆鱗\")"
+      ]
+    },
+    {
+      "id": "anilist-105156",
+      "aniListId": 105156,
+      "titleZh": "慎重勇者 ~這個勇者明明超TUEEE卻過度謹慎~",
+      "titleJa": "慎重勇者～この勇者が俺ＴＵＥＥＥくせに慎重すぎる～",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=105434",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=13869",
+      "officialTitle": "這個勇者明明超 TUEEE 卻過度謹慎！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"慎重勇者 ~這個勇者明明超TUEEE卻過度謹慎~\" ➜ 巴哈官方: \"這個勇者明明超 TUEEE 卻過度謹慎！\")"
+      ]
+    },
+    {
+      "id": "anilist-108553",
+      "aniListId": 108553,
+      "titleZh": "我的英雄學院：英雄新世紀：劇場版",
+      "titleJa": "僕のヒーローアカデミア THE MOVIE ヒーローズ:ライジング",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113537",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38148",
+      "officialTitle": "我的英雄學院：英雄新世紀",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"我的英雄學院：英雄新世紀：劇場版\" ➜ 巴哈官方: \"我的英雄學院：英雄新世紀\")"
+      ]
+    },
+    {
+      "id": "anilist-107693",
+      "aniListId": 107693,
+      "titleZh": "入間同學入魔了",
+      "titleJa": "魔入りました！入間くん",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114041",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=13809",
+      "officialTitle": "入間同學入魔了！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"入間同學入魔了\" ➜ 巴哈官方: \"入間同學入魔了！\")"
+      ]
+    },
+    {
+      "id": "anilist-103275",
+      "aniListId": 103275,
+      "titleZh": "Fate／Grand Order - 絕對魔獸戰線巴比倫尼亞",
+      "titleJa": "Fate/Grand Order -絶対魔獣戦線バビロニア-",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12981",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12981",
+      "officialTitle": "Fate/Grand Order - 絕對魔獸戰線巴比倫尼亞 -簡介STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Fate／Grand Order - 絕對魔獸戰線巴比倫尼亞\" ➜ 巴哈官方: \"Fate/Grand Order - 絕對魔獸戰線巴比倫尼亞 -簡介STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-108478",
+      "aniListId": 108478,
+      "titleZh": "非槍人生NO GUNS LIFE",
+      "titleJa": "ノー・ガンズ・ライフ",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=109320",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=13838",
+      "officialTitle": "非槍人生 NO GUNS LIFE",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"非槍人生NO GUNS LIFE\" ➜ 巴哈官方: \"非槍人生 NO GUNS LIFE\")"
+      ]
+    },
+    {
+      "id": "anilist-109089",
+      "aniListId": 109089,
+      "titleZh": "廚病激發BOY",
+      "titleJa": "厨病激発ボーイ (TV)",
+      "yearSeason": "2019 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=106807",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=13840",
+      "officialTitle": "廚病激發 BOY",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"廚病激發BOY\" ➜ 巴哈官方: \"廚病激發 BOY\")"
+      ]
+    },
+    {
+      "id": "anilist-108147",
+      "aniListId": 108147,
+      "titleZh": "滿月之戰 GRANBELM",
+      "titleJa": "グランベルム",
+      "yearSeason": "2019 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35192",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35192",
+      "officialTitle": "滿月之戰",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"滿月之戰 GRANBELM\" ➜ 巴哈官方: \"滿月之戰\")"
+      ]
+    },
+    {
+      "id": "anilist-101922",
+      "aniListId": 101922,
+      "titleZh": "鬼滅之刃",
+      "titleJa": "鬼滅の刃",
+      "yearSeason": "2019 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=98149",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12083",
+      "officialTitle": "鬼滅之刃 竈門炭治郎 立志篇",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"鬼滅之刃\" ➜ 巴哈官方: \"鬼滅之刃 竈門炭治郎 立志篇\")"
+      ]
+    },
+    {
+      "id": "anilist-105914",
+      "aniListId": 105914,
+      "titleZh": "請讓我撒嬌，仙狐大人!",
+      "titleJa": "世話やきキツネの仙狐さん",
+      "yearSeason": "2019 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12682",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12682",
+      "officialTitle": "請讓我撒嬌，仙狐大人！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"請讓我撒嬌，仙狐大人!\" ➜ 巴哈官方: \"請讓我撒嬌，仙狐大人！\")"
+      ]
+    },
+    {
+      "id": "anilist-101386",
+      "aniListId": 101386,
+      "titleZh": "一個人的〇〇小日子",
+      "titleJa": "ひとりぼっちの○○生活",
+      "yearSeason": "2019 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=100813",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12081",
+      "officialTitle": "一個人的○○小日子",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"一個人的〇〇小日子\" ➜ 巴哈官方: \"一個人的○○小日子\")"
+      ]
+    },
+    {
+      "id": "anilist-105749",
+      "aniListId": 105749,
+      "titleZh": "鑽石王牌 actII",
+      "titleJa": "ダイヤのA actⅡ",
+      "yearSeason": "2019 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=114047",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12086",
+      "officialTitle": "鑽石王牌 act2",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"鑽石王牌 actII\" ➜ 巴哈官方: \"鑽石王牌 act2\")"
+      ]
+    },
+    {
+      "id": "anilist-101921",
+      "aniListId": 101921,
+      "titleZh": "輝夜姬想讓人告白~天才們的戀愛頭腦戰~",
+      "titleJa": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+      "yearSeason": "2019 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113033",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11431",
+      "officialTitle": "輝夜姬想讓人告白～天才們的戀愛頭腦戰～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"輝夜姬想讓人告白~天才們的戀愛頭腦戰~\" ➜ 巴哈官方: \"輝夜姬想讓人告白～天才們的戀愛頭腦戰～\")"
+      ]
+    },
+    {
+      "id": "anilist-21718",
+      "aniListId": 21718,
+      "titleZh": "Fate/stay night [Heaven's Feel]：II. 迷途之蝶",
+      "titleJa": "Fate/stay night[Heaven's Feel] ⅠⅠ.lost butterfly",
+      "yearSeason": "2019 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112727",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23324",
+      "officialTitle": "Fate/stay night [Heaven's Feel] II.迷途之蝶",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Fate/stay night [Heaven's Feel]：II. 迷途之蝶\" ➜ 巴哈官方: \"Fate/stay night [Heaven's Feel] II.迷途之蝶\")"
+      ]
+    },
+    {
+      "id": "anilist-100722",
+      "aniListId": 100722,
+      "titleZh": "約會大作戰 DATE A LIVE 第三季",
+      "titleJa": "デート・ア・ライブⅢ",
+      "yearSeason": "2019 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11465",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11465",
+      "officialTitle": "約會大作戰 DATE A LIVE III",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"約會大作戰 DATE A LIVE 第三季\" ➜ 巴哈官方: \"約會大作戰 DATE A LIVE III\")"
+      ]
+    },
+    {
+      "id": "anilist-103301",
+      "aniListId": 103301,
+      "titleZh": "ENDRO!",
+      "titleJa": "えんどろ〜！",
+      "yearSeason": "2019 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=99920",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11433",
+      "officialTitle": "ENDRO！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"ENDRO!\" ➜ 巴哈官方: \"ENDRO！\")"
+      ]
+    },
+    {
+      "id": "anilist-99749",
+      "aniListId": 99749,
+      "titleZh": "魔導少年-最終章",
+      "titleJa": "FAIRY TAIL (2018)",
+      "yearSeason": "2018 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10923",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10923",
+      "officialTitle": "FAIRY TAIL 魔導少年 最終章",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔導少年-最終章\" ➜ 巴哈官方: \"FAIRY TAIL 魔導少年 最終章\")"
+      ]
+    },
+    {
+      "id": "anilist-99424",
+      "aniListId": 99424,
+      "titleZh": "SSSS.GRIDMAN",
+      "titleJa": "SSSS.GRIDMAN",
+      "yearSeason": "2018 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10855",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10855",
+      "officialTitle": "SSSS.GRIDMAN叙事人物担当",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"SSSS.GRIDMAN\" ➜ 巴哈官方: \"SSSS.GRIDMAN叙事人物担当\")"
+      ]
+    },
+    {
+      "id": "anilist-100185",
+      "aniListId": 100185,
+      "titleZh": "魔法禁書目錄III",
+      "titleJa": "とある魔術の禁書目録III",
+      "yearSeason": "2018 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=91869",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10840",
+      "officialTitle": "魔法禁書目錄 Ⅲ",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法禁書目錄III\" ➜ 巴哈官方: \"魔法禁書目錄 Ⅲ\")"
+      ]
+    },
+    {
+      "id": "anilist-101609",
+      "aniListId": 101609,
+      "titleZh": "產子救世錄",
+      "titleJa": "コンセプション",
+      "yearSeason": "2018 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113612",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39420",
+      "officialTitle": "Conception 產子救世錄",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"產子救世錄\" ➜ 巴哈官方: \"Conception 產子救世錄\")"
+      ]
+    },
+    {
+      "id": "anilist-101474",
+      "aniListId": 101474,
+      "titleZh": "OVERLORD III",
+      "titleJa": "オーバーロードⅢ",
+      "yearSeason": "2018 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=96391",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12448",
+      "officialTitle": "OVERLORD 第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"OVERLORD III\" ➜ 巴哈官方: \"OVERLORD 第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-101001",
+      "aniListId": 101001,
+      "titleZh": "遊戲3人娘",
+      "titleJa": "あそびあそばせ",
+      "yearSeason": "2018 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=93688",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10258",
+      "officialTitle": "遊戲 3 人娘",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"遊戲3人娘\" ➜ 巴哈官方: \"遊戲 3 人娘\")"
+      ]
+    },
+    {
+      "id": "anilist-100240",
+      "aniListId": 100240,
+      "titleZh": "東京喰種:re",
+      "titleJa": "東京喰種-トーキョーグール-:re",
+      "yearSeason": "2018 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=98376",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12004",
+      "officialTitle": "東京喰種：re",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"東京喰種:re\" ➜ 巴哈官方: \"東京喰種：re\")"
+      ]
+    },
+    {
+      "id": "anilist-100298",
+      "aniListId": 100298,
+      "titleZh": "MEGALOBOX",
+      "titleJa": "メガロボクス",
+      "yearSeason": "2018 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112652",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=21796",
+      "officialTitle": "MEGALOBOX 機甲拳擊",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"MEGALOBOX\" ➜ 巴哈官方: \"MEGALOBOX 機甲拳擊\")"
+      ]
+    },
+    {
+      "id": "anilist-98514",
+      "aniListId": 98514,
+      "titleZh": "賽馬娘",
+      "titleJa": "ウマ娘 プリティーダービー",
+      "yearSeason": "2018 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113396",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=21646",
+      "officialTitle": "賽馬娘 Pretty Derby",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"賽馬娘\" ➜ 巴哈官方: \"賽馬娘 Pretty Derby\")"
+      ]
+    },
+    {
+      "id": "anilist-99531",
+      "aniListId": 99531,
+      "titleZh": "惡魔戰線",
+      "titleJa": "デビルズライン",
+      "yearSeason": "2018 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112709",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23063",
+      "officialTitle": "DEVILSLINE 惡魔戰線",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"惡魔戰線\" ➜ 巴哈官方: \"DEVILSLINE 惡魔戰線\")"
+      ]
+    },
+    {
+      "id": "anilist-98437",
+      "aniListId": 98437,
+      "titleZh": "OVERLORD II",
+      "titleJa": "オーバーロードⅡ",
+      "yearSeason": "2018 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=87902",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=12435",
+      "officialTitle": "OVERLORD 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"OVERLORD II\" ➜ 巴哈官方: \"OVERLORD 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-98444",
+      "aniListId": 98444,
+      "titleZh": "搖曳露營",
+      "titleJa": "ゆるキャン△",
+      "yearSeason": "2018 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113524",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=21671",
+      "officialTitle": "搖曳露營△",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"搖曳露營\" ➜ 巴哈官方: \"搖曳露營△\")"
+      ]
+    },
+    {
+      "id": "anilist-97832",
+      "aniListId": 97832,
+      "titleZh": "Citrus～柑橘味香氣～",
+      "titleJa": "citrus",
+      "yearSeason": "2018 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=86010",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=9309",
+      "officialTitle": "citrus～柑橘味香氣～",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Citrus～柑橘味香氣～\" ➜ 巴哈官方: \"citrus～柑橘味香氣～\")"
+      ]
+    },
+    {
+      "id": "anilist-99507",
+      "aniListId": 99507,
+      "titleZh": "龍王的工作",
+      "titleJa": "りゅうおうのおしごと!",
+      "yearSeason": "2018 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=90129",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=9285",
+      "officialTitle": "龍王的工作！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"龍王的工作\" ➜ 巴哈官方: \"龍王的工作！\")"
+      ]
+    },
+    {
+      "id": "anilist-97881",
+      "aniListId": 97881,
+      "titleZh": "百變小櫻Clear咭",
+      "titleJa": "カードキャプターさくら クリアカード編",
+      "yearSeason": "2018 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=86733",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=9357",
+      "officialTitle": "庫洛魔法使 透明牌篇",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"百變小櫻Clear咭\" ➜ 巴哈官方: \"庫洛魔法使 透明牌篇\")"
+      ]
+    },
+    {
+      "id": "anilist-98693",
+      "aniListId": 98693,
+      "titleZh": "Slow Start",
+      "titleJa": "スロウスタート",
+      "yearSeason": "2018 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112686",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22513",
+      "officialTitle": "慢活開始",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Slow Start\" ➜ 巴哈官方: \"慢活開始\")"
+      ]
+    },
+    {
+      "id": "anilist-99476",
+      "aniListId": 99476,
+      "titleZh": "飆速宅男 GLORY LINE",
+      "titleJa": "弱虫ペダルGLORY LINE",
+      "yearSeason": "2018 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112589",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=20970",
+      "officialTitle": "飆速宅男 第四季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"飆速宅男 GLORY LINE\" ➜ 巴哈官方: \"飆速宅男 第四季\")"
+      ]
+    },
+    {
+      "id": "anilist-99634",
+      "aniListId": 99634,
+      "titleZh": "進擊的巨人 LOST GIRLS",
+      "titleJa": "進撃の巨人 LOST GIRLS",
+      "yearSeason": "2017 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112905",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=26339",
+      "officialTitle": "進擊的巨人：Wall Sina,Goodbye―Part One―",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"進擊的巨人 LOST GIRLS\" ➜ 巴哈官方: \"進擊的巨人：Wall Sina,Goodbye―Part One―\")"
+      ]
+    },
+    {
+      "id": "anilist-98951",
+      "aniListId": 98951,
+      "titleZh": "我的女友是個過度認真的處女bitch",
+      "titleJa": "僕の彼女がマジメ過ぎる処女ビッチな件",
+      "yearSeason": "2017 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=89340",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=8835",
+      "officialTitle": "我的女友是個過度認真的處女 Bitch",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"我的女友是個過度認真的處女bitch\" ➜ 巴哈官方: \"我的女友是個過度認真的處女 Bitch\")"
+      ]
+    },
+    {
+      "id": "anilist-98977",
+      "aniListId": 98977,
+      "titleZh": "無論何時我們的戀情都是10釐米。",
+      "titleJa": "いつだって僕らの恋は10センチだった。",
+      "yearSeason": "2017 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113226",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=32612",
+      "officialTitle": "無論何時我們的戀情都是10厘米。",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"無論何時我們的戀情都是10釐米。\" ➜ 巴哈官方: \"無論何時我們的戀情都是10厘米。\")"
+      ]
+    },
+    {
+      "id": "anilist-98448",
+      "aniListId": 98448,
+      "titleZh": "奇諾之旅",
+      "titleJa": "キノの旅 -the Beautiful World- the Animated Series",
+      "yearSeason": "2017 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=8785",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=8785",
+      "officialTitle": "奇諾之旅 the Beautiful World",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"奇諾之旅\" ➜ 巴哈官方: \"奇諾之旅 the Beautiful World\")"
+      ]
+    },
+    {
+      "id": "anilist-98491",
+      "aniListId": 98491,
+      "titleZh": "帶著智慧型手機闖蕩異世界。",
+      "titleJa": "異世界はスマートフォンとともに。",
+      "yearSeason": "2017 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113250",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22501",
+      "officialTitle": "帶著智慧型手機闖蕩異世界",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"帶著智慧型手機闖蕩異世界。\" ➜ 巴哈官方: \"帶著智慧型手機闖蕩異世界\")"
+      ]
+    },
+    {
+      "id": "anilist-97757",
+      "aniListId": 97757,
+      "titleZh": "魔法少女☆伊莉雅 – 雪下的誓言",
+      "titleJa": "Fate/kaleid liner プリズマ☆イリヤ 雪下の誓い",
+      "yearSeason": "2017 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113545",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38382",
+      "officialTitle": "Fate/kaleid liner 魔法少女☆伊莉雅 雪下的誓言",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法少女☆伊莉雅 – 雪下的誓言\" ➜ 巴哈官方: \"Fate/kaleid liner 魔法少女☆伊莉雅 雪下的誓言\")"
+      ]
+    },
+    {
+      "id": "anilist-98885",
+      "aniListId": 98885,
+      "titleZh": "排球少年!! 劇場版：觀念之戰",
+      "titleJa": "ハイキュー!! コンセプトの戦い",
+      "yearSeason": "2017 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113485",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37607",
+      "officialTitle": "排球少年！！劇場版：觀念之戰",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!! 劇場版：觀念之戰\" ➜ 巴哈官方: \"排球少年！！劇場版：觀念之戰\")"
+      ]
+    },
+    {
+      "id": "anilist-98884",
+      "aniListId": 98884,
+      "titleZh": "排球少年!! 劇場版：才能與感覺",
+      "titleJa": "ハイキュー!! 才能とセンス",
+      "yearSeason": "2017 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113484",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37606",
+      "officialTitle": "排球少年！！劇場版：才能與感覺",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!! 劇場版：才能與感覺\" ➜ 巴哈官方: \"排球少年！！劇場版：才能與感覺\")"
+      ]
+    },
+    {
+      "id": "anilist-21851",
+      "aniListId": 21851,
+      "titleZh": "武裝少女Machiavellism",
+      "titleJa": "武装少女マキャヴェリズム",
+      "yearSeason": "2017 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=83973",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7580",
+      "officialTitle": "武裝少女 Machiavellism",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"武裝少女Machiavellism\" ➜ 巴哈官方: \"武裝少女 Machiavellism\")"
+      ]
+    },
+    {
+      "id": "anilist-21676",
+      "aniListId": 21676,
+      "titleZh": "劍姬神聖譚(地下城外傳)",
+      "titleJa": "ダンジョンに出会いを求めるのは間違っているだろうか外伝 ソード・オラトリア",
+      "yearSeason": "2017 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=82306",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7610",
+      "officialTitle": "劍姬神聖譚",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"劍姬神聖譚(地下城外傳)\" ➜ 巴哈官方: \"劍姬神聖譚\")"
+      ]
+    },
+    {
+      "id": "anilist-97821",
+      "aniListId": 97821,
+      "titleZh": "愛麗絲與藏六",
+      "titleJa": "アリスと蔵六",
+      "yearSeason": "2017 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=85918",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7581",
+      "officialTitle": "愛麗絲與藏六STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"愛麗絲與藏六\" ➜ 巴哈官方: \"愛麗絲與藏六STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-21699",
+      "aniListId": 21699,
+      "titleZh": "為美好的世界獻上祝福！ 2",
+      "titleJa": "この素晴らしい世界に祝福を！2",
+      "yearSeason": "2017 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=82626",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7157",
+      "officialTitle": "為美好的世界獻上祝福！2",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"為美好的世界獻上祝福！ 2\" ➜ 巴哈官方: \"為美好的世界獻上祝福！2\")"
+      ]
+    },
+    {
+      "id": "anilist-87435",
+      "aniListId": 87435,
+      "titleZh": "BanG Dream!",
+      "titleJa": "BanG Dream!（バンドリ！）",
+      "yearSeason": "2017 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113702",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7147",
+      "officialTitle": "BanG Dream！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"BanG Dream!\" ➜ 巴哈官方: \"BanG Dream！\")"
+      ]
+    },
+    {
+      "id": "anilist-21698",
+      "aniListId": 21698,
+      "titleZh": "排球少年!!烏野高中VS白鳥澤學園高中",
+      "titleJa": "ハイキュー!! 烏野高校 VS 白鳥沢学園高校",
+      "yearSeason": "2016 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112938",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27257",
+      "officialTitle": "排球少年！！第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!!烏野高中VS白鳥澤學園高中\" ➜ 巴哈官方: \"排球少年！！第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-21749",
+      "aniListId": 21749,
+      "titleZh": "機動戰士鋼彈：鐵血孤兒 第二季",
+      "titleJa": "機動戦士ガンダム 鉄血のオルフェンズ 2",
+      "yearSeason": "2016 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=81653",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6400",
+      "officialTitle": "機動戰士鋼彈 鐵血孤兒 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"機動戰士鋼彈：鐵血孤兒 第二季\" ➜ 巴哈官方: \"機動戰士鋼彈 鐵血孤兒 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-20954",
+      "aniListId": 20954,
+      "titleZh": "聲之形",
+      "titleJa": "聲の形",
+      "yearSeason": "2016 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35755",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=35755",
+      "officialTitle": "電影版 聲之形",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"聲之形\" ➜ 巴哈官方: \"電影版 聲之形\")"
+      ]
+    },
+    {
+      "id": "anilist-21507",
+      "aniListId": 21507,
+      "titleZh": "路人超能100",
+      "titleJa": "モブサイコ100",
+      "yearSeason": "2016 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=113131",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5863",
+      "officialTitle": "路人超能 100",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"路人超能100\" ➜ 巴哈官方: \"路人超能 100\")"
+      ]
+    },
+    {
+      "id": "anilist-21711",
+      "aniListId": 21711,
+      "titleZh": "91天",
+      "titleJa": "91Days",
+      "yearSeason": "2016 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=82728",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11964",
+      "officialTitle": "91 Days",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"91天\" ➜ 巴哈官方: \"91 Days\")"
+      ]
+    },
+    {
+      "id": "anilist-21509",
+      "aniListId": 21509,
+      "titleZh": "槍彈辯駁3未來編",
+      "titleJa": "ダンガンロンパ３ –The End of 希望ヶ峰学園– 未来編",
+      "yearSeason": "2016 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=80784",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5879",
+      "officialTitle": "槍彈辯駁 3 未來編",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"槍彈辯駁3未來編\" ➜ 巴哈官方: \"槍彈辯駁 3 未來編\")"
+      ]
+    },
+    {
+      "id": "anilist-21825",
+      "aniListId": 21825,
+      "titleZh": "槍彈辯駁3絕望編",
+      "titleJa": "ダンガンロンパ3 -The End of 希望ヶ峰学園-　絶望編",
+      "yearSeason": "2016 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=82770",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5880",
+      "officialTitle": "槍彈辯駁 3 絕望編",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"槍彈辯駁3絕望編\" ➜ 巴哈官方: \"槍彈辯駁 3 絕望編\")"
+      ]
+    },
+    {
+      "id": "anilist-21379",
+      "aniListId": 21379,
+      "titleZh": "Fate/kaleid liner 魔法少女☆伊莉雅 3rei",
+      "titleJa": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!",
+      "yearSeason": "2016 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5864",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5864",
+      "officialTitle": "Fate/kaleid liner 魔法少女☆伊莉雅 3rei！！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Fate/kaleid liner 魔法少女☆伊莉雅 3rei\" ➜ 巴哈官方: \"Fate/kaleid liner 魔法少女☆伊莉雅 3rei！！\")"
+      ]
+    },
+    {
+      "id": "anilist-21704",
+      "aniListId": 21704,
+      "titleZh": "Bananya 香蕉喵",
+      "titleJa": "ばなにゃ",
+      "yearSeason": "2016 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=8040",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=8040",
+      "officialTitle": "香蕉喵",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Bananya 香蕉喵\" ➜ 巴哈官方: \"香蕉喵\")"
+      ]
+    },
+    {
+      "id": "anilist-21311",
+      "aniListId": 21311,
+      "titleZh": "文豪野犬",
+      "titleJa": "文豪ストレイドッグス",
+      "yearSeason": "2016 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6130",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6130",
+      "officialTitle": "文豪 Stray Dogs",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"文豪野犬\" ➜ 巴哈官方: \"文豪 Stray Dogs\")"
+      ]
+    },
+    {
+      "id": "anilist-21196",
+      "aniListId": 21196,
+      "titleZh": "甲鐵城的卡巴內裡",
+      "titleJa": "甲鉄城のカバネリ",
+      "yearSeason": "2016 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14933",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14933",
+      "officialTitle": "甲鐵城的卡巴內里",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"甲鐵城的卡巴內裡\" ➜ 巴哈官方: \"甲鐵城的卡巴內里\")"
+      ]
+    },
+    {
+      "id": "anilist-21265",
+      "aniListId": 21265,
+      "titleZh": "遊戲王：次元的黑暗面",
+      "titleJa": "遊☆戯☆王 THE DARK SIDE OF DIMENSIONS",
+      "yearSeason": "2016 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38482",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=38482",
+      "officialTitle": "遊戲王 次元的黑暗面",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"遊戲王：次元的黑暗面\" ➜ 巴哈官方: \"遊戲王 次元的黑暗面\")"
+      ]
+    },
+    {
+      "id": "anilist-21050",
+      "aniListId": 21050,
+      "titleZh": "小桃小栗Love Love物語",
+      "titleJa": "ももくり",
+      "yearSeason": "2016 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5793",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5793",
+      "officialTitle": "小桃小栗 Love Love 物語",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"小桃小栗Love Love物語\" ➜ 巴哈官方: \"小桃小栗 Love Love 物語\")"
+      ]
+    },
+    {
+      "id": "anilist-21482",
+      "aniListId": 21482,
+      "titleZh": "Luck Logic",
+      "titleJa": "ラクエンロジック",
+      "yearSeason": "2016 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=4612",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=4612",
+      "officialTitle": "Luck & Logic",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Luck Logic\" ➜ 巴哈官方: \"Luck & Logic\")"
+      ]
+    },
+    {
+      "id": "anilist-20992",
+      "aniListId": 20992,
+      "titleZh": "排球少年!! 第二季",
+      "titleJa": "ハイキュー!! セカンドシーズン",
+      "yearSeason": "2015 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27009",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27009",
+      "officialTitle": "排球少年！！第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!! 第二季\" ➜ 巴哈官方: \"排球少年！！第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-21268",
+      "aniListId": 21268,
+      "titleZh": "機動戰士鋼彈：鐵血孤兒",
+      "titleJa": "機動戦士ガンダム 鉄血のオルフェンズ",
+      "yearSeason": "2015 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2543",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2543",
+      "officialTitle": "機動戰士鋼彈 鐵血孤兒",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"機動戰士鋼彈：鐵血孤兒\" ➜ 巴哈官方: \"機動戰士鋼彈 鐵血孤兒\")"
+      ]
+    },
+    {
+      "id": "anilist-21034",
+      "aniListId": 21034,
+      "titleZh": "請問您今天要來點兔子嗎??",
+      "titleJa": "ご注文はうさぎですか？？",
+      "yearSeason": "2015 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=3022",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=3022",
+      "officialTitle": "請問您今天要來點兔子嗎？？",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"請問您今天要來點兔子嗎??\" ➜ 巴哈官方: \"請問您今天要來點兔子嗎？？\")"
+      ]
+    },
+    {
+      "id": "anilist-20845",
+      "aniListId": 20845,
+      "titleZh": "魔法少女☆伊莉雅 2wei！Herz",
+      "titleJa": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ ヘルツ！",
+      "yearSeason": "2015 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=33188",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=33188",
+      "officialTitle": "Fate/kaleid liner 魔法少女☆伊莉雅 2wei Herz！",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法少女☆伊莉雅 2wei！Herz\" ➜ 巴哈官方: \"Fate/kaleid liner 魔法少女☆伊莉雅 2wei Herz！\")"
+      ]
+    },
+    {
+      "id": "anilist-21120",
+      "aniListId": 21120,
+      "titleZh": "排球少年!! 劇場版：結束與開始",
+      "titleJa": "ハイキュー!! 終わりと始まり",
+      "yearSeason": "2015 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37604",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37604",
+      "officialTitle": "排球少年！！劇場版：結束與開始",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!! 劇場版：結束與開始\" ➜ 巴哈官方: \"排球少年！！劇場版：結束與開始\")"
+      ]
+    },
+    {
+      "id": "anilist-21244",
+      "aniListId": 21244,
+      "titleZh": "排球少年!! 劇場版：勝者與敗者",
+      "titleJa": "ハイキュー!! 勝者と敗者",
+      "yearSeason": "2015 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37605",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37605",
+      "officialTitle": "排球少年！！劇場版：勝者與敗者",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!! 劇場版：勝者與敗者\" ➜ 巴哈官方: \"排球少年！！劇場版：勝者與敗者\")"
+      ]
+    },
+    {
+      "id": "anilist-20906",
+      "aniListId": 20906,
+      "titleZh": "魯邦三世",
+      "titleJa": "ルパン三世 PART IV",
+      "yearSeason": "2015 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15943",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=15943",
+      "officialTitle": "魯邦三世 PART4",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魯邦三世\" ➜ 巴哈官方: \"魯邦三世 PART4\")"
+      ]
+    },
+    {
+      "id": "anilist-20766",
+      "aniListId": 20766,
+      "titleZh": "Love Live! 學園偶像電影",
+      "titleJa": "ラブライブ！The School Idol Movie",
+      "yearSeason": "2015 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=9327",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=9327",
+      "officialTitle": "Love Live! 電影",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Love Live! 學園偶像電影\" ➜ 巴哈官方: \"Love Live! 電影\")"
+      ]
+    },
+    {
+      "id": "anilist-20799",
+      "aniListId": 20799,
+      "titleZh": "JOJO 的奇妙冒險 星塵遠徵軍 埃及篇",
+      "titleJa": "ジョジョの奇妙な冒険 スターダストクルセイダース エジプト編",
+      "yearSeason": "2015 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6923",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6923",
+      "officialTitle": "JOJO 的奇妙冒險 星塵遠征軍 埃及篇",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"JOJO 的奇妙冒險 星塵遠徵軍 埃及篇\" ➜ 巴哈官方: \"JOJO 的奇妙冒險 星塵遠征軍 埃及篇\")"
+      ]
+    },
+    {
+      "id": "anilist-20613",
+      "aniListId": 20613,
+      "titleZh": "斬！赤紅之瞳",
+      "titleJa": "アカメが斬る！",
+      "yearSeason": "2014 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7870",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7870",
+      "officialTitle": "斬！赤紅之瞳介紹故事簡介宣傳影片人物設定STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"斬！赤紅之瞳\" ➜ 巴哈官方: \"斬！赤紅之瞳介紹故事簡介宣傳影片人物設定STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-20467",
+      "aniListId": 20467,
+      "titleZh": "魔法少女☆伊莉雅 2wei ! ",
+      "titleJa": "Fate/kaleid linerプリズマ☆イリヤ ツヴァイ！",
+      "yearSeason": "2014 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=33178",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=33178",
+      "officialTitle": "Fate/kaleid liner 魔法少女☆伊莉雅 2wei！故事簡介宣傳影片製作團隊名單角色聲優名單",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法少女☆伊莉雅 2wei ! \" ➜ 巴哈官方: \"Fate/kaleid liner 魔法少女☆伊莉雅 2wei！故事簡介宣傳影片製作團隊名單角色聲優名單\")"
+      ]
+    },
+    {
+      "id": "anilist-20638",
+      "aniListId": 20638,
+      "titleZh": "三坪房間的侵略者!?",
+      "titleJa": "六畳間の侵略者!?",
+      "yearSeason": "2014 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=878",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=878",
+      "officialTitle": "三坪房間的侵略者！？",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"三坪房間的侵略者!?\" ➜ 巴哈官方: \"三坪房間的侵略者！？\")"
+      ]
+    },
+    {
+      "id": "anilist-20713",
+      "aniListId": 20713,
+      "titleZh": "女神異聞錄4  黃金版",
+      "titleJa": "ペルソナ4 ザ・ゴールデンアニメーション",
+      "yearSeason": "2014 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23088",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23088",
+      "officialTitle": "女神異聞錄 4 黃金版",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"女神異聞錄4  黃金版\" ➜ 巴哈官方: \"女神異聞錄 4 黃金版\")"
+      ]
+    },
+    {
+      "id": "anilist-20464",
+      "aniListId": 20464,
+      "titleZh": "排球少年!!",
+      "titleJa": "ハイキュー!!",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=26675",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=26675",
+      "officialTitle": "排球少年！！紹STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"排球少年!!\" ➜ 巴哈官方: \"排球少年！！紹STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-20474",
+      "aniListId": 20474,
+      "titleZh": "JOJO 的奇妙冒險 星塵遠徵軍",
+      "titleJa": "ジョジョの奇妙な冒険 スターダストクルセイダース",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6271",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6271",
+      "officialTitle": "JOJO 的奇妙冒險 星塵遠征軍介紹角色宣傳影片STAFFCast",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"JOJO 的奇妙冒險 星塵遠徵軍\" ➜ 巴哈官方: \"JOJO 的奇妙冒險 星塵遠征軍介紹角色宣傳影片STAFFCast\")"
+      ]
+    },
+    {
+      "id": "anilist-20458",
+      "aniListId": 20458,
+      "titleZh": "魔法科高中的劣等生",
+      "titleJa": "魔法科高校の劣等生",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11177",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=11177",
+      "officialTitle": "魔法科高中的劣等生相關作品",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法科高中的劣等生\" ➜ 巴哈官方: \"魔法科高中的劣等生相關作品\")"
+      ]
+    },
+    {
+      "id": "anilist-20527",
+      "aniListId": 20527,
+      "titleZh": "一週的朋友",
+      "titleJa": "一週間フレンズ。",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22080",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=22080",
+      "officialTitle": "一週的朋友。",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"一週的朋友\" ➜ 巴哈官方: \"一週的朋友。\")"
+      ]
+    },
+    {
+      "id": "anilist-20517",
+      "aniListId": 20517,
+      "titleZh": "請問您今天要來點兔子嗎?",
+      "titleJa": "ご注文はうさぎですか？",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=1908",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=1908",
+      "officialTitle": "請問您今天要來點兔子嗎？",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"請問您今天要來點兔子嗎?\" ➜ 巴哈官方: \"請問您今天要來點兔子嗎？\")"
+      ]
+    },
+    {
+      "id": "anilist-20595",
+      "aniListId": 20595,
+      "titleZh": "蟲師 續章",
+      "titleJa": "蟲師 続章",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=21111",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=21111",
+      "officialTitle": "蟲師 續章介紹STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"蟲師 續章\" ➜ 巴哈官方: \"蟲師 續章介紹STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-19111",
+      "aniListId": 19111,
+      "titleZh": "Love Live!學園偶像計畫 二期",
+      "titleJa": "ラブライブ! School idol project 2期",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2625",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2625",
+      "officialTitle": "Love Live! 第二季介紹宣傳影片STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Love Live!學園偶像計畫 二期\" ➜ 巴哈官方: \"Love Live! 第二季介紹宣傳影片STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-19775",
+      "aniListId": 19775,
+      "titleZh": "銀河騎士傳",
+      "titleJa": "シドニアの騎士",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2564",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2564",
+      "officialTitle": "銀河騎士傳INTROCHARACTERSTAFF",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"銀河騎士傳\" ➜ 巴哈官方: \"銀河騎士傳INTROCHARACTERSTAFF\")"
+      ]
+    },
+    {
+      "id": "anilist-20552",
+      "aniListId": 20552,
+      "titleZh": "遊戲王ARC-V",
+      "titleJa": "遊☆戯☆王ARC-V（アーク・ファイブ）",
+      "yearSeason": "2014 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=41147",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=41147",
+      "officialTitle": "遊戲王 ARC-V介紹STAFF CAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"遊戲王ARC-V\" ➜ 巴哈官方: \"遊戲王 ARC-V介紹STAFF CAST\")"
+      ]
+    },
+    {
+      "id": "anilist-18897",
+      "aniListId": 18897,
+      "titleZh": "偽戀",
+      "titleJa": "ニセコイ",
+      "yearSeason": "2014 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39492",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39492",
+      "officialTitle": "偽戀介紹故事背景宣傳影片STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"偽戀\" ➜ 巴哈官方: \"偽戀介紹故事背景宣傳影片STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-20483",
+      "aniListId": 20483,
+      "titleZh": "未確認進行式",
+      "titleJa": "未確認で進行形",
+      "yearSeason": "2014 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23566",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=23566",
+      "officialTitle": "未確認進行式介紹故事背景宣傳影片STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"未確認進行式\" ➜ 巴哈官方: \"未確認進行式介紹故事背景宣傳影片STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-19769",
+      "aniListId": 19769,
+      "titleZh": "魔法戰爭",
+      "titleJa": "魔法戦争",
+      "yearSeason": "2014 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=828",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=828",
+      "officialTitle": "魔法戰爭介紹故事背景宣傳影片STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法戰爭\" ➜ 巴哈官方: \"魔法戰爭介紹故事背景宣傳影片STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-20431",
+      "aniListId": 20431,
+      "titleZh": "鬼燈的冷徹",
+      "titleJa": "鬼灯の冷徹",
+      "yearSeason": "2014 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=1012",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=1012",
+      "officialTitle": "鬼燈的冷徹介紹故事背景宣傳影片STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"鬼燈的冷徹\" ➜ 巴哈官方: \"鬼燈的冷徹介紹故事背景宣傳影片STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-20053",
+      "aniListId": 20053,
+      "titleZh": "WIZARD BARRISTERS～弁魔士賽希爾",
+      "titleJa": "ウィザード・バリスターズ 弁魔士セシル",
+      "yearSeason": "2014 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=66",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=66",
+      "officialTitle": "WIZARD BARRISTERS～弁魔士賽希爾介紹故事背景宣傳影片STAFFCAST",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"WIZARD BARRISTERS～弁魔士賽希爾\" ➜ 巴哈官方: \"WIZARD BARRISTERS～弁魔士賽希爾介紹故事背景宣傳影片STAFFCAST\")"
+      ]
+    },
+    {
+      "id": "anilist-18153",
+      "aniListId": 18153,
+      "titleZh": "境界的彼方",
+      "titleJa": "境界の彼方",
+      "yearSeason": "2013 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=3308",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=3308",
+      "officialTitle": "境界的彼方STORYCHARACTERSTAFF",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"境界的彼方\" ➜ 巴哈官方: \"境界的彼方STORYCHARACTERSTAFF\")"
+      ]
+    },
+    {
+      "id": "anilist-18397",
+      "aniListId": 18397,
+      "titleZh": "進擊的巨人 OAD",
+      "titleJa": "進撃の巨人 OVA",
+      "yearSeason": "2013 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27316",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=27316",
+      "officialTitle": "進擊的巨人：伊爾澤的筆記",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"進擊的巨人 OAD\" ➜ 巴哈官方: \"進擊的巨人：伊爾澤的筆記\")"
+      ]
+    },
+    {
+      "id": "anilist-18767",
+      "aniListId": 18767,
+      "titleZh": "蒼翼默示錄",
+      "titleJa": "ブレイブルー オルターメモリー",
+      "yearSeason": "2013 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=1896",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=1896",
+      "officialTitle": "蒼翼默示錄 Alter Memory",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"蒼翼默示錄\" ➜ 巴哈官方: \"蒼翼默示錄 Alter Memory\")"
+      ]
+    },
+    {
+      "id": "anilist-16592",
+      "aniListId": 16592,
+      "titleZh": "槍彈辯駁",
+      "titleJa": "ダンガンロンパ 希望の学園と絶望の高校生 The Animation",
+      "yearSeason": "2013 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=474",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=474",
+      "officialTitle": "槍彈辯駁 希望學園與絕望高中生",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"槍彈辯駁\" ➜ 巴哈官方: \"槍彈辯駁 希望學園與絕望高中生\")"
+      ]
+    },
+    {
+      "id": "anilist-18229",
+      "aniListId": 18229,
+      "titleZh": "新科學小飛俠",
+      "titleJa": "ガッチャマン クラウズ",
+      "yearSeason": "2013 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14945",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=14945",
+      "officialTitle": "新科學小飛俠【故事大綱】【STAFF】【CAST】【主題曲】",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"新科學小飛俠\" ➜ 巴哈官方: \"新科學小飛俠【故事大綱】【STAFF】【CAST】【主題曲】\")"
+      ]
+    },
+    {
+      "id": "anilist-16049",
+      "aniListId": 16049,
+      "titleZh": "科學超電磁砲Ｓ",
+      "titleJa": "とある科学の超電磁砲S",
+      "yearSeason": "2013 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=261",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=261",
+      "officialTitle": "魔法禁書目錄外傳 科學超電磁砲 第二季INTROCHARACTERSTAFF",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"科學超電磁砲Ｓ\" ➜ 巴哈官方: \"魔法禁書目錄外傳 科學超電磁砲 第二季INTROCHARACTERSTAFF\")"
+      ]
+    },
+    {
+      "id": "anilist-15051",
+      "aniListId": 15051,
+      "titleZh": "Love Live!學園偶像計畫",
+      "titleJa": "ラブライブ! School idol project",
+      "yearSeason": "2013 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2551",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2551",
+      "officialTitle": "Love Live! 第一季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"Love Live!學園偶像計畫\" ➜ 巴哈官方: \"Love Live! 第一季\")"
+      ]
+    },
+    {
+      "id": "anilist-14719",
+      "aniListId": 14719,
+      "titleZh": "JoJo 的奇妙冒險",
+      "titleJa": "ジョジョの奇妙な冒険 (TV)",
+      "yearSeason": "2012 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6107",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=6107",
+      "officialTitle": "JOJO 的奇妙冒險",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"JoJo 的奇妙冒險\" ➜ 巴哈官方: \"JOJO 的奇妙冒險\")"
+      ]
+    },
+    {
+      "id": "anilist-12365",
+      "aniListId": 12365,
+      "titleZh": "爆漫王。3",
+      "titleJa": "バクマン。3",
+      "yearSeason": "2012 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39929",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39929",
+      "officialTitle": "爆漫王。 第三季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"爆漫王。3\" ➜ 巴哈官方: \"爆漫王。 第三季\")"
+      ]
+    },
+    {
+      "id": "anilist-11757",
+      "aniListId": 11757,
+      "titleZh": "刀劍神域",
+      "titleJa": "ソードアート・オンライン",
+      "yearSeason": "2012 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=926",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=926",
+      "officialTitle": "刀劍神域 Sword Art Online",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"刀劍神域\" ➜ 巴哈官方: \"刀劍神域 Sword Art Online\")"
+      ]
+    },
+    {
+      "id": "anilist-12049",
+      "aniListId": 12049,
+      "titleZh": "魔導少年-劇場版【鳳凰巫女】",
+      "titleJa": "劇場版 FAIRY TAIL 鳳凰の巫女",
+      "yearSeason": "2012 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7611",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=7611",
+      "officialTitle": "FAIRY TAIL 魔導少年 劇場版 鳳凰巫女",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔導少年-劇場版【鳳凰巫女】\" ➜ 巴哈官方: \"FAIRY TAIL 魔導少年 劇場版 鳳凰巫女\")"
+      ]
+    },
+    {
+      "id": "anilist-11061",
+      "aniListId": 11061,
+      "titleZh": "HUNTER × HUNTER",
+      "titleJa": "HUNTER×HUNTER (2011)",
+      "yearSeason": "2011 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5575",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=5575",
+      "officialTitle": "獵人 Hunter x Hunter",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"HUNTER × HUNTER\" ➜ 巴哈官方: \"獵人 Hunter x Hunter\")"
+      ]
+    },
+    {
+      "id": "anilist-10030",
+      "aniListId": 10030,
+      "titleZh": "爆漫王。第二季",
+      "titleJa": "バクマン。2",
+      "yearSeason": "2011 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39856",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39856",
+      "officialTitle": "爆漫王。 第二季",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"爆漫王。第二季\" ➜ 巴哈官方: \"爆漫王。 第二季\")"
+      ]
+    },
+    {
+      "id": "anilist-10588",
+      "aniListId": 10588,
+      "titleZh": "女神異聞錄4",
+      "titleJa": "ペルソナ4アニメーション",
+      "yearSeason": "2011 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=112713",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=10551",
+      "officialTitle": "女神異聞錄 4概要人物STAFF",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"女神異聞錄4\" ➜ 巴哈官方: \"女神異聞錄 4概要人物STAFF\")"
+      ]
+    },
+    {
+      "id": "anilist-10049",
+      "aniListId": 10049,
+      "titleZh": "百鬼小當家 千年魔京",
+      "titleJa": "ぬらりひょんの孫 千年魔京",
+      "yearSeason": "2011 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=25678",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=25678",
+      "officialTitle": "妖怪少爺 千年魔京",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"百鬼小當家 千年魔京\" ➜ 巴哈官方: \"妖怪少爺 千年魔京\")"
+      ]
+    },
+    {
+      "id": "anilist-9989",
+      "aniListId": 9989,
+      "titleZh": "我們仍未知道那天所看見的花名",
+      "titleJa": "あの日見た花の名前を僕達はまだ知らない。",
+      "yearSeason": "2011 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeRef.php?sn=42233",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=3873",
+      "officialTitle": "我們仍未知道那天所看見的花名。",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"我們仍未知道那天所看見的花名\" ➜ 巴哈官方: \"我們仍未知道那天所看見的花名。\")"
+      ]
+    },
+    {
+      "id": "anilist-9776",
+      "aniListId": 9776,
+      "titleZh": "A頻道",
+      "titleJa": "Aチャンネル",
+      "yearSeason": "2011 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39553",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=39553",
+      "officialTitle": "A 頻道",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"A頻道\" ➜ 巴哈官方: \"A 頻道\")"
+      ]
+    },
+    {
+      "id": "anilist-9041",
+      "aniListId": 9041,
+      "titleZh": "IS-Infinite Stratos",
+      "titleJa": "IS〈インフィニット・ストラトス〉",
+      "yearSeason": "2011 冬",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=4096",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=4096",
+      "officialTitle": "IS 〈Infinite Stratos〉",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"IS-Infinite Stratos\" ➜ 巴哈官方: \"IS 〈Infinite Stratos〉\")"
+      ]
+    },
+    {
+      "id": "anilist-8937",
+      "aniListId": 8937,
+      "titleZh": "魔法禁書目錄II",
+      "titleJa": "とある魔術の禁書目録II",
+      "yearSeason": "2010 秋",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=804",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=804",
+      "officialTitle": "魔法禁書目錄 Ⅱ",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"魔法禁書目錄II\" ➜ 巴哈官方: \"魔法禁書目錄 Ⅱ\")"
+      ]
+    },
+    {
+      "id": "anilist-7592",
+      "aniListId": 7592,
+      "titleZh": "百鬼小當家",
+      "titleJa": "ぬらりひょんの孫",
+      "yearSeason": "2010 夏",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=24301",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=24301",
+      "officialTitle": "妖怪少爺",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"百鬼小當家\" ➜ 巴哈官方: \"妖怪少爺\")"
+      ]
+    },
+    {
+      "id": "anilist-7647",
+      "aniListId": 7647,
+      "titleZh": "荒川爆笑團",
+      "titleJa": "荒川アンダー ザ ブリッジ",
+      "yearSeason": "2010 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2913",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=2913",
+      "officialTitle": "荒川爆笑團故事配音陣容製作團隊",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"荒川爆笑團\" ➜ 巴哈官方: \"荒川爆笑團故事配音陣容製作團隊\")"
+      ]
+    },
+    {
+      "id": "anilist-481",
+      "aniListId": 481,
+      "titleZh": "遊戲王－怪獸之決鬥",
+      "titleJa": "遊☆戯☆王　デュエルモンスターズ",
+      "yearSeason": "2000 春",
+      "currentUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37786",
+      "expectedUrl": "https://ani.gamer.com.tw/animeVideo.php?sn=37786",
+      "officialTitle": "遊戲王 怪獸之決鬥",
+      "reasons": [
+        "官方繁中譯名校正 (現有: \"遊戲王－怪獸之決鬥\" ➜ 巴哈官方: \"遊戲王 怪獸之決鬥\")"
+      ]
+    }
+  ]
+}

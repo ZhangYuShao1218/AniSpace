@@ -39,8 +39,25 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
         const ov = overrideData[anime.id] || {};
         const merged = { ...anime, ...ov };
         const resolvedCover = ov.coverImage || anime.coverImageGamer || anime.coverImageAniList || anime.coverImage || '';
+        
+        const baseStreamings = ov.streamings || anime.streamings || [];
+        const extraStreamings = (ov as any).extraStreamings || (ov as any).extraStreaming || [];
+        let combinedStreamings = baseStreamings;
+        if (extraStreamings.length > 0) {
+          const streamMap = new Map<string, any>();
+          baseStreamings.forEach((st) => streamMap.set(`${st.site}_${st.url}`, st));
+          extraStreamings.forEach((st: any) => {
+            const key = `${st.site}_${st.url}`;
+            if (!streamMap.has(key)) {
+              streamMap.set(key, st);
+            }
+          });
+          combinedStreamings = Array.from(streamMap.values());
+        }
+
         return {
           ...merged,
+          streamings: combinedStreamings,
           coverImage: resolvedCover,
         };
       });

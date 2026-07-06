@@ -535,7 +535,7 @@
   "anilist-8619": {
     "source": "manual",
     "titleZh": "大小姐×執事！OVA",
-    "bangumiDataTitle": "れでぃ×ばと!"
+    "bangumiDataTitle": "れでぃ×ばと！"
   },
   "anilist-21473": {
     "titleZh": "闇芝居 第三季",
@@ -1239,7 +1239,8 @@
   },
   "anilist-13659": {
     "titleZh": "我的妹妹哪有這麼可愛。第二季",
-    "source": "manual"
+    "source": "manual",
+    "bangumiDataTitle": "俺の妹がこんなに可愛いわけがない"
   },
   "anilist-13757": {
     "titleZh": "純白交響曲 -The color of lovers- 廣播劇動畫",
@@ -2031,8 +2032,8 @@
     "source": "ai"
   },
   "anilist-104990": {
-    "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.3 - 恩仇的彼方____",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "PSYCHO-PASS サイコパス Sinners of the System Case.3 恩讐の彼方に＿＿"
   },
   "anilist-105662": {
     "titleZh": "工作細胞「感冒症候群」",
@@ -4746,5 +4747,8 @@
   "anilist-107202": {
     "titleZh": "劇場版 FREE! 男子游泳部 -Road to the World-夢",
     "source": "gamer"
+  },
+  "anilist-21497": {
+    "bangumiDataTitle": "霊剣山 星屑たちの宴"
   }
 }

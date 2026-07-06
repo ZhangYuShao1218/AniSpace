@@ -730,10 +730,10 @@
     "titleZh": "鄉下大叔成為劍聖 第二季",
     "titleJa": "片田舎のおっさん、剣聖になるII",
     "yearSeason": "2026 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "片田舎のおっさん、剣聖になるⅡ",
+    "bgmId": "565701",
     "streamingsCount": 0
   },
   "anilist-200637": {
@@ -1992,7 +1992,7 @@
   },
   "anilist-163144": {
     "id": "anilist-163144",
-    "titleZh": "槍神 TRIGUN STARGAZE",
+    "titleZh": "槍神 STARGAZE",
     "titleJa": "TRIGUN STARGAZE",
     "yearSeason": "2026 冬",
     "hasCorrespondingData": true,
@@ -5548,11 +5548,11 @@
     "titleZh": "孤獨搖滾！ Re:Re:",
     "titleJa": "ぼっち・ざ・ろっく！ Re:Re:",
     "yearSeason": "2024 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "劇場総集編ぼっち・ざ・ろっく！ Re:Re:",
+    "bgmId": "459642",
+    "streamingsCount": 2
   },
   "anilist-171748": {
     "id": "anilist-171748",
@@ -5746,11 +5746,11 @@
     "titleZh": "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～第二季 後篇",
     "titleJa": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～ Ⅱ 2クール",
     "yearSeason": "2024 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "魔王学院の不適合者II～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～",
+    "bgmId": "330054",
+    "streamingsCount": 6
   },
   "anilist-169417": {
     "id": "anilist-169417",
@@ -6043,11 +6043,11 @@
     "titleZh": "孤獨搖滾！ Re:",
     "titleJa": "ぼっち・ざ・ろっく！Re:",
     "yearSeason": "2024 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "劇場総集編ぼっち・ざ・ろっく！ Re:",
+    "bgmId": "436738",
+    "streamingsCount": 2
   },
   "anilist-169584": {
     "id": "anilist-169584",
@@ -9937,11 +9937,11 @@
     "titleZh": "Tekken: Bloodline",
     "titleJa": "Tekken: Bloodline",
     "yearSeason": "2022 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "TEKKEN BLOODLINE",
+    "bgmId": "375216",
+    "streamingsCount": 1
   },
   "anilist-142095": {
     "id": "anilist-142095",
@@ -10410,22 +10410,22 @@
     "titleZh": "憂國的莫里亞蒂 OVA",
     "titleJa": "憂国のモリアーティ OVA",
     "yearSeason": "2022 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "憂国のモリアーティ～百合の追憶～",
+    "bgmId": "347818",
+    "streamingsCount": 3
   },
   "anilist-133891": {
     "id": "anilist-133891",
     "titleZh": "Love Live! 虹咲學園學園偶像同好會 第二季",
     "titleJa": "ラブライブ！虹ヶ咲学園スクールアイドル同好会 2",
     "yearSeason": "2022 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ラブライブ！虹ヶ咲学園スクールアイドル同好会(第2期)",
+    "bgmId": "335579",
+    "streamingsCount": 8
   },
   "anilist-133412": {
     "id": "anilist-133412",
@@ -10498,11 +10498,11 @@
     "titleZh": "劇場版 Free!–the Final Stroke– 後編",
     "titleJa": "劇場版 Free!–the Final Stroke– 後編",
     "yearSeason": "2022 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "劇場版 Free!-the Final Stroke- 後編",
+    "bgmId": "334203",
+    "streamingsCount": 4
   },
   "anilist-125447": {
     "id": "anilist-125447",
@@ -10531,11 +10531,11 @@
     "titleZh": "進擊的巨人 The Final Season 後篇",
     "titleJa": "進撃の巨人 The Final Season Part 2",
     "yearSeason": "2022 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "進撃の巨人 The Final Season Part.2",
+    "bgmId": "331752",
+    "streamingsCount": 5
   },
   "anilist-132405": {
     "id": "anilist-132405",
@@ -12038,11 +12038,11 @@
     "titleZh": "劇場版 Free!–the Final Stroke– 前編",
     "titleJa": "劇場版 Free!–the Final Stroke– 前編",
     "yearSeason": "2021 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "劇場版 Free!-the Final Stroke- 前編",
+    "bgmId": "271652",
+    "streamingsCount": 4
   },
   "anilist-117002": {
     "id": "anilist-117002",
@@ -14898,11 +14898,11 @@
     "titleZh": "邪神與廚二病少女’ 千歲篇",
     "titleJa": "邪神ちゃんドロップキック’ 千歳編",
     "yearSeason": "2020 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "邪神ちゃんドロップキック 世紀末編",
+    "bgmId": "433729",
+    "streamingsCount": 3
   },
   "anilist-113906": {
     "id": "anilist-113906",
@@ -15272,11 +15272,11 @@
     "titleZh": "22/7",
     "titleJa": "22/7 （ナナブンノニジュウニ）",
     "yearSeason": "2020 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "22/7",
+    "bgmId": "220445",
+    "streamingsCount": 3
   },
   "anilist-104391": {
     "id": "anilist-104391",
@@ -16303,14 +16303,14 @@
   },
   "anilist-106918": {
     "id": "anilist-106918",
-    "titleZh": "君主‧埃爾梅羅二世事件簿 {魔眼蒐集列車} Grace note",
+    "titleZh": "ロード・エルメロイⅡ世の事件簿 {魔眼蒐集列車} Grace note",
     "titleJa": "ロード・エルメロイⅡ世の事件簿 {魔眼蒐集列車} Grace note",
     "yearSeason": "2019 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ロード・エルメロイII世の事件簿 -魔眼蒐集列車 Grace note-",
+    "bgmId": "267732",
+    "streamingsCount": 4
   },
   "anilist-100891": {
     "id": "anilist-100891",
@@ -17428,11 +17428,11 @@
     "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 - 罪與罰",
     "titleJa": "PSYCHO-PASS サイコパス Sinners of the System Case.1 - 罪と罰",
     "yearSeason": "2019 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "PSYCHO-PASS サイコパス Sinners of the System Case.1 罪と罰",
+    "bgmId": "239923",
+    "streamingsCount": 2
   },
   "anilist-104382": {
     "id": "anilist-104382",
@@ -17450,11 +17450,11 @@
     "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.3 - 恩仇的彼方____",
     "titleJa": "PSYCHO-PASS サイコパス Sinners of the System Case.3 - 恩讐の彼方に____",
     "yearSeason": "2019 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "PSYCHO-PASS サイコパス Sinners of the System Case.3 恩讐の彼方に＿＿",
+    "bgmId": "239926",
+    "streamingsCount": 2
   },
   "anilist-103301": {
     "id": "anilist-103301",
@@ -18041,7 +18041,7 @@
   },
   "anilist-106862": {
     "id": "anilist-106862",
-    "titleZh": "艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note-",
+    "titleZh": "艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note- 守墓人與貓",
     "titleJa": "ロード・エルメロイⅡ世の事件簿 {魔眼蒐集列車} Grace note 墓守と猫と魔術師",
     "yearSeason": "2018 秋",
     "hasCorrespondingData": true,
@@ -18187,11 +18187,11 @@
     "titleZh": "PERSONA5 the Animation: Dark Sun…",
     "titleJa": "PERSONA5 the Animation: Dark Sun…",
     "yearSeason": "2018 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "PERSONA5 the Animation Dark Sun…",
+    "bgmId": "262382",
+    "streamingsCount": 5
   },
   "anilist-103237": {
     "id": "anilist-103237",
@@ -19749,11 +19749,11 @@
     "titleZh": "Code Geass 反叛的魯路修Ⅱ 叛道",
     "titleJa": "コードギアス 反逆のルルーシュⅡ 叛道",
     "yearSeason": "2018 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "コードギアス 反逆のルルーシュ II 叛道",
+    "bgmId": "199230",
+    "streamingsCount": 4
   },
   "anilist-87495": {
     "id": "anilist-87495",
@@ -19958,11 +19958,11 @@
     "titleZh": "Fate/stay night[Heaven's Feel] Ⅰ.presage flower",
     "titleJa": "Fate/stay night[Heaven's Feel] Ⅰ.presage flower",
     "yearSeason": "2017 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "Fate/stay night [Heaven’s Feel] I.presage flower",
+    "bgmId": "109375",
+    "streamingsCount": 4
   },
   "anilist-99420": {
     "id": "anilist-99420",
@@ -20200,11 +20200,11 @@
     "titleZh": "Code Geass 反叛的魯路修Ⅰ 興道",
     "titleJa": "コードギアス 反逆のルルーシュⅠ 興道",
     "yearSeason": "2017 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "コードギアス 反逆のルルーシュ I 興道",
+    "bgmId": "199229",
+    "streamingsCount": 4
   },
   "anilist-101965": {
     "id": "anilist-101965",
@@ -20904,11 +20904,11 @@
     "titleZh": "海賊王 東海特別篇 路飛與四位夥伴的大冒險！！",
     "titleJa": "ONE PIECE エピソードオブ東の海〜ルフィと4人の仲間の大冒険!!〜",
     "yearSeason": "2017 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ONE PIECE エピソードオブ東の海～ルフィと4人の仲間の大冒険!!～",
+    "bgmId": "217886",
+    "streamingsCount": 2
   },
   "anilist-98402": {
     "id": "anilist-98402",
@@ -21938,11 +21938,11 @@
     "titleZh": "甲鐵城的卡巴內裡 總集篇｛後篇｝燃燒的生命",
     "titleJa": "甲鉄城のカバネリ 総集編｛後編｝燃える命",
     "yearSeason": "2017 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "甲鉄城のカバネリ 総集編 後編 燃える命",
+    "bgmId": "186161",
+    "streamingsCount": 2
   },
   "anilist-97985": {
     "id": "anilist-97985",
@@ -22642,11 +22642,11 @@
     "titleZh": "甲鉄城のカバネリ 総集編｛前編｝集う光",
     "titleJa": "甲鉄城のカバネリ 総集編｛前編｝集う光",
     "yearSeason": "2016 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "甲鉄城のカバネリ 総集編 前編 集う光",
+    "bgmId": "186160",
+    "streamingsCount": 2
   },
   "anilist-21519": {
     "id": "anilist-21519",
@@ -23016,11 +23016,11 @@
     "titleZh": "planetarian～小小的星之夢～",
     "titleJa": "planetarian～ちいさなほしのゆめ～",
     "yearSeason": "2016 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "planetarian ～ちいさなほしのゆめ～",
+    "bgmId": "176518",
+    "streamingsCount": 5
   },
   "anilist-21424": {
     "id": "anilist-21424",
@@ -24094,11 +24094,11 @@
     "titleZh": "出包王女 Darkness 2nd",
     "titleJa": "To LOVEる -とらぶる- ダークネス2nd",
     "yearSeason": "2016 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "To LOVEる -とらぶる- ダークネス 2nd",
+    "bgmId": "120763",
+    "streamingsCount": 3
   },
   "anilist-21213": {
     "id": "anilist-21213",
@@ -24127,22 +24127,22 @@
     "titleZh": "Code Geass 亡國的阿基德 最終章：獻給所愛之人",
     "titleJa": "コードギアス 亡国のアキト 最終章 愛シキモノタチヘ",
     "yearSeason": "2016 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "コードギアス 亡国のアキト 最終章「愛シキモノタチヘ」",
+    "bgmId": "132580",
+    "streamingsCount": 4
   },
   "anilist-119947": {
     "id": "anilist-119947",
     "titleZh": "偽戀: OAD",
     "titleJa": "ニセコイ: OAD",
     "yearSeason": "2016 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ニセコイ OAD",
+    "bgmId": "104196",
+    "streamingsCount": 5
   },
   "anilist-21313": {
     "id": "anilist-21313",
@@ -24204,11 +24204,11 @@
     "titleZh": "從前有座靈劍山",
     "titleJa": "霊剣山　星屑たちの宴",
     "yearSeason": "2016 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "霊剣山 星屑たちの宴",
+    "bgmId": "146861",
+    "streamingsCount": 7
   },
   "anilist-21599": {
     "id": "anilist-21599",
@@ -24468,11 +24468,11 @@
     "titleZh": "東京喰種 Tokyo Ghoul 【PINTO】",
     "titleJa": "東京喰種トーキョーグール【PINTO】",
     "yearSeason": "2015 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "東京喰種トーキョーグール［PINTO］",
+    "bgmId": "140634",
+    "streamingsCount": 2
   },
   "anilist-19489": {
     "id": "anilist-19489",
@@ -24622,11 +24622,11 @@
     "titleZh": "排球少年!! VS赤點",
     "titleJa": "ハイキュー!! VS赤点",
     "yearSeason": "2015 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ハイキュー!! VS“赤点”",
+    "bgmId": "144852",
+    "streamingsCount": 7
   },
   "anilist-18617": {
     "id": "anilist-18617",
@@ -24688,11 +24688,11 @@
     "titleZh": "出包王女 Darkness 2nd (OVA特別篇)",
     "titleJa": "To LOVEる -とらぶる- ダークネス2nd",
     "yearSeason": "2015 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "To LOVEる -とらぶる- ダークネス 2nd",
+    "bgmId": "120763",
+    "streamingsCount": 3
   },
   "anilist-20802": {
     "id": "anilist-20802",
@@ -25700,11 +25700,11 @@
     "titleZh": "蟲師 特別篇「鈴之雫」",
     "titleJa": "蟲師 特別編「鈴の雫」",
     "yearSeason": "2015 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "蟲師 特別編 鈴の雫",
+    "bgmId": "120700",
+    "streamingsCount": 5
   },
   "anilist-21077": {
     "id": "anilist-21077",
@@ -25722,11 +25722,11 @@
     "titleZh": "劇場版 進擊的巨人 後篇～自由之翼～",
     "titleJa": "劇場版「進撃の巨人」後編～自由の翼～",
     "yearSeason": "2015 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "劇場版 進撃の巨人 後編〜自由の翼〜",
+    "bgmId": "101267",
+    "streamingsCount": 6
   },
   "anilist-20843": {
     "id": "anilist-20843",
@@ -26921,11 +26921,11 @@
     "titleZh": "劇場版 進擊的巨人 前篇～紅蓮之弓矢～",
     "titleJa": "劇場版「進撃の巨人」前編～紅蓮の弓矢～",
     "yearSeason": "2014 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "劇場版 進撃の巨人 前編〜紅蓮の弓矢〜",
+    "bgmId": "101266",
+    "streamingsCount": 6
   },
   "anilist-20817": {
     "id": "anilist-20817",
@@ -28098,11 +28098,11 @@
     "titleZh": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:3 Ghost Tears",
     "titleJa": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:3 Ghost Tears",
     "yearSeason": "2014 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "攻殻機動隊ARISE border:3 Ghost Tears",
+    "bgmId": "89486",
+    "streamingsCount": 5
   },
   "anilist-20546": {
     "id": "anilist-20546",
@@ -28560,11 +28560,11 @@
     "titleZh": "未確認進行式 鴨肉有種綠色的味道呢。",
     "titleJa": "未確認で進行形 鴨肉って緑っぽい味がするのね。",
     "yearSeason": "2014 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "未確認で進行形 「鴨肉って緑っぽい味がするのね」",
+    "bgmId": "100857",
+    "streamingsCount": 1
   },
   "anilist-20660": {
     "id": "anilist-20660",
@@ -29671,11 +29671,11 @@
     "titleZh": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:1 Ghost Pain",
     "titleJa": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:1 Ghost Pain",
     "yearSeason": "2013 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "攻殻機動隊ARISE border:1 Ghost Pain",
+    "bgmId": "61498",
+    "streamingsCount": 5
   },
   "anilist-19391": {
     "id": "anilist-19391",
@@ -29891,11 +29891,11 @@
     "titleZh": "我的妹妹哪有這麼可愛。第二季",
     "titleJa": "俺の妹がこんなに可愛いわけがない。",
     "yearSeason": "2013 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "俺の妹がこんなに可愛いわけがない",
+    "bgmId": "5436",
+    "streamingsCount": 5
   },
   "anilist-16524": {
     "id": "anilist-16524",
@@ -30210,11 +30210,11 @@
     "titleZh": "獨眼巨人少女賽普～",
     "titleJa": "サイクロプス少女さいぷ～",
     "yearSeason": "2013 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "サイクロプス少女さいぷ〜",
+    "bgmId": "66338",
+    "streamingsCount": 1
   },
   "anilist-14735": {
     "id": "anilist-14735",
@@ -30672,11 +30672,11 @@
     "titleZh": "少女與戰車",
     "titleJa": "ガールズ&パンツァー",
     "yearSeason": "2013 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ガールズ＆パンツァー",
+    "bgmId": "40310",
+    "streamingsCount": 3
   },
   "anilist-15195": {
     "id": "anilist-15195",
@@ -31167,22 +31167,22 @@
     "titleZh": "劇場版 魔法少女小圓 ［前篇］起始的物語",
     "titleJa": "劇場版 魔法少女まどか☆マギカ 始まりの物語",
     "yearSeason": "2012 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "魔法少女まどか☆マギカ [前編] 始まりの物語",
+    "bgmId": "25833",
+    "streamingsCount": 6
   },
   "anilist-11979": {
     "id": "anilist-11979",
     "titleZh": "劇場版 魔法少女小圓 ［後篇］永遠的物語",
     "titleJa": "劇場版 魔法少女まどか☆マギカ 永遠の物語",
     "yearSeason": "2012 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "魔法少女まどか☆マギカ [後編] 永遠の物語",
+    "bgmId": "44692",
+    "streamingsCount": 6
   },
   "anilist-13331": {
     "id": "anilist-13331",
@@ -31970,11 +31970,11 @@
     "titleZh": "蝦掰天文社 公立海老棲川高校天悶部",
     "titleJa": "えびてん 公立海老栖川高校天悶部",
     "yearSeason": "2012 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "えびてん -公立海老栖川高校天悶部-",
+    "bgmId": "28225",
+    "streamingsCount": 3
   },
   "anilist-10928": {
     "id": "anilist-10928",
@@ -32443,11 +32443,11 @@
     "titleZh": "有你的小鎮 黃昏十字路口",
     "titleJa": "君のいる町 黄昏交差点",
     "yearSeason": "2012 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "君のいる町～黄昏交差点～",
+    "bgmId": "26806",
+    "streamingsCount": 1
   },
   "anilist-11859": {
     "id": "anilist-11859",
@@ -35006,11 +35006,11 @@
     "titleZh": "爆丸 戰鬥者 機甲旋風",
     "titleJa": "爆丸 バトルブローラーズ メクタニウムサージ",
     "yearSeason": "2011 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "爆丸バトルブローラーズ メクタニウムサージ",
+    "bgmId": "83253",
+    "streamingsCount": 1
   },
   "anilist-9724": {
     "id": "anilist-9724",
@@ -35149,11 +35149,11 @@
     "titleZh": "笨蛋、測驗、召喚獸～祭～",
     "titleJa": "バカとテストと召喚獣 ～祭～",
     "yearSeason": "2011 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "バカとテストと召喚獣 〜祭〜",
+    "bgmId": "12496",
+    "streamingsCount": 6
   },
   "anilist-9893": {
     "id": "anilist-9893",
@@ -35798,11 +35798,11 @@
     "titleZh": "向陽素描 × ☆☆☆",
     "titleJa": "ひだまりスケッチ × ☆☆☆",
     "yearSeason": "2010 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ひだまりスケッチ",
+    "bgmId": "896",
+    "streamingsCount": 5
   },
   "anilist-9362": {
     "id": "anilist-9362",
@@ -36810,10 +36810,10 @@
     "titleZh": "大小姐×執事！",
     "titleJa": "れでぃ×ばと!",
     "yearSeason": "2010 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "れでぃ×ばと！",
+    "bgmId": "3446",
     "streamingsCount": 0
   },
   "anilist-7596": {
@@ -36920,10 +36920,10 @@
     "titleZh": "大小姐×執事！OVA",
     "titleJa": "れでぃ×ばと!",
     "yearSeason": "2010 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "れでぃ×ばと！",
+    "bgmId": "3446",
     "streamingsCount": 0
   },
   "anilist-8217": {

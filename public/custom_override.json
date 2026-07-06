@@ -394,7 +394,8 @@
   },
   "anilist-97635": {
     "source": "manual",
-    "titleZh": "寶可夢：世代"
+    "titleZh": "寶可夢：世代",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e2c9f3db42a1439aa2eb7c4e95a76feee39da9c4.jpg"
   },
   "anilist-21046": {
     "source": "manual",
@@ -406,19 +407,23 @@
   },
   "anilist-20644": {
     "source": "manual",
-    "titleZh": "寶可夢XY-破壞之繭與蒂安希"
+    "titleZh": "寶可夢XY-破壞之繭與蒂安希",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20644-qgK3C0fOFR8b.jpg"
   },
   "anilist-18115": {
     "source": "manual",
-    "titleZh": "MAGI魔奇少年 第二季"
+    "titleZh": "MAGI魔奇少年 第二季",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18115-dilbAD4yGMfc.png"
   },
   "anilist-20159": {
     "source": "manual",
-    "titleZh": "寶可夢 起源"
+    "titleZh": "寶可夢 起源",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2386b73264b4ecda3fa6d4f55cd846abc0b6a565.jpg"
   },
   "anilist-16680": {
     "source": "manual",
-    "titleZh": "劇場版 寶可夢超級願望—最終章—：神速的蓋諾賽克特 超夢覺醒"
+    "titleZh": "劇場版 寶可夢超級願望—最終章—：神速的蓋諾賽克特 超夢覺醒",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/16680.jpg"
   },
   "anilist-17873": {
     "source": "manual",
@@ -430,19 +435,23 @@
   },
   "anilist-12671": {
     "source": "manual",
-    "titleZh": "劇場版 寶可夢超級願望：酋雷姆VS聖劍士 凱路迪歐"
+    "titleZh": "劇場版 寶可夢超級願望：酋雷姆VS聖劍士 凱路迪歐",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12671-q8KLIPmicj8R.jpg"
   },
   "anilist-9917": {
     "source": "manual",
-    "titleZh": "劇場版 寶可夢超級願望：比克提尼與黑英雄 捷克羅姆"
+    "titleZh": "劇場版 寶可夢超級願望：比克提尼與黑英雄 捷克羅姆",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/9917.jpg"
   },
   "anilist-10740": {
     "source": "manual",
-    "titleZh": "劇場版 寶可夢超級願望：比克提尼與白英雄 雷希拉姆"
+    "titleZh": "劇場版 寶可夢超級願望：比克提尼與白英雄 雷希拉姆",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/10740.jpg"
   },
   "anilist-7695": {
     "source": "manual",
-    "titleZh": "劇場版 寶可夢DP：幻影的霸者 索羅亞克"
+    "titleZh": "劇場版 寶可夢DP：幻影的霸者 索羅亞克",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7695-bgE6h1GXxWMG.jpg"
   },
   "anilist-141391": {
     "source": "manual",
@@ -659,7 +668,7 @@
   },
   "anilist-80": {
     "titleZh": "機動戰士高達",
-    "source": "bangumi-data"
+    "show": false
   },
   "anilist-81": {
     "titleZh": "機動戰士鋼彈 第08MS小隊",
@@ -699,11 +708,11 @@
   },
   "anilist-1088": {
     "titleZh": "超時空要塞",
-    "source": "bangumi-data"
+    "show": false
   },
   "anilist-1089": {
     "titleZh": "超時空要塞 可曾記得愛",
-    "source": "bangumi-data"
+    "show": false
   },
   "anilist-1132": {
     "titleZh": "數碼寶貝04無限地帶",
@@ -723,7 +732,8 @@
   },
   "anilist-2652": {
     "titleZh": "哆啦A夢 我出生的日子",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-2966": {
     "titleZh": "狼與辛香料",
@@ -735,7 +745,8 @@
   },
   "anilist-3674": {
     "titleZh": "再見了，絕望先生 序～絕望少女撰集～",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-3927": {
     "titleZh": "機動戰士高達00 第二季",
@@ -746,8 +757,7 @@
     "source": "manual"
   },
   "anilist-5784": {
-    "titleZh": "間之楔",
-    "source": "bangumi-data"
+    "titleZh": "間之楔"
   },
   "anilist-6772": {
     "titleZh": "破刃之劍 覺醒之刻",
@@ -759,7 +769,8 @@
   },
   "anilist-7059": {
     "titleZh": "黑巖射手 (OVA)",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7059-8fqxS4nNzbq7.jpg"
   },
   "anilist-7598": {
     "titleZh": "狼人（Loups-Garous）",
@@ -770,8 +781,7 @@
     "source": "ai"
   },
   "anilist-7858": {
-    "titleZh": "天降之物",
-    "source": "bangumi-data"
+    "titleZh": "天降之物"
   },
   "anilist-8062": {
     "titleZh": "舞-HiME：黑之舞／最後的晚餐",
@@ -786,16 +796,14 @@
     "source": "ai"
   },
   "anilist-8197": {
-    "titleZh": "空之音",
-    "source": "bangumi-data"
+    "titleZh": "空之音"
   },
   "anilist-8302": {
     "titleZh": "大小姐×執事！",
     "source": "manual"
   },
   "anilist-8408": {
-    "titleZh": "無頭騎士異聞錄 DuRaRaRa!!",
-    "source": "bangumi-data"
+    "titleZh": "無頭騎士異聞錄 DuRaRaRa!!"
   },
   "anilist-8424": {
     "titleZh": "MM一族",
@@ -810,8 +818,7 @@
     "source": "manual"
   },
   "anilist-8465": {
-    "titleZh": "最後大魔王",
-    "source": "bangumi-data"
+    "titleZh": "最後大魔王"
   },
   "anilist-8479": {
     "titleZh": "義呆利 World Series",
@@ -843,7 +850,8 @@
   },
   "anilist-8632": {
     "titleZh": "老鼠相撲",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-8668": {
     "titleZh": "聖痕鍊金士 廣播劇",
@@ -855,7 +863,8 @@
   },
   "anilist-8769": {
     "titleZh": "我的妹妹哪有這麼可愛！第一季",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8769-Lat76qlOwdBN.jpg"
   },
   "anilist-8857": {
     "titleZh": "日常 第0話",
@@ -878,8 +887,7 @@
     "source": "ai"
   },
   "anilist-9117": {
-    "titleZh": "聖誕之吻SS",
-    "source": "bangumi-data"
+    "titleZh": "聖誕之吻SS"
   },
   "anilist-9202": {
     "titleZh": "聖痕鍊金士 女帝的肖像",
@@ -922,8 +930,7 @@
     "source": "manual"
   },
   "anilist-9611": {
-    "titleZh": "我的女神",
-    "source": "bangumi-data"
+    "titleZh": "我的女神"
   },
   "anilist-9618": {
     "titleZh": "玩伴貓耳娘！歡迎來玩",
@@ -974,8 +981,7 @@
     "source": "ai"
   },
   "anilist-10216": {
-    "titleZh": "惡魔阿薩謝爾在召喚你",
-    "source": "bangumi-data"
+    "titleZh": "惡魔阿薩謝爾在召喚你"
   },
   "anilist-10249": {
     "titleZh": "魔法禁書目錄 茵蒂克絲小劇場",
@@ -1026,8 +1032,7 @@
     "source": "ai"
   },
   "anilist-10582": {
-    "titleZh": "露蒂的玩具",
-    "source": "bangumi-data"
+    "titleZh": "露蒂的玩具"
   },
   "anilist-10604": {
     "titleZh": "緋彈的亞莉亞：武偵前來溫泉研修",
@@ -1106,8 +1111,7 @@
     "source": "ai"
   },
   "anilist-11161": {
-    "titleZh": "架向星空之橋",
-    "source": "bangumi-data"
+    "titleZh": "架向星空之橋"
   },
   "anilist-11209": {
     "titleZh": "魔劍姬！OVA",
@@ -1115,7 +1119,8 @@
   },
   "anilist-11285": {
     "titleZh": "黑巖射手 (TV)",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11285-uO6GgQUjikbf.jpg"
   },
   "anilist-11313": {
     "titleZh": "有你的小鎮 黃昏十字路口",
@@ -1162,8 +1167,7 @@
     "source": "ai"
   },
   "anilist-12669": {
-    "titleZh": "聖誕之吻SS+ plus",
-    "source": "bangumi-data"
+    "titleZh": "聖誕之吻SS+ plus"
   },
   "anilist-12673": {
     "titleZh": "要聽爸爸的話！暖呼呼",
@@ -1179,7 +1183,6 @@
   },
   "anilist-12893": {
     "titleZh": "男子高校生的日常",
-    "source": "bangumi-data",
     "blockedSites": [
       "iqiyi"
     ]
@@ -1225,8 +1228,7 @@
     "source": "ai"
   },
   "anilist-13851": {
-    "titleZh": "出包王女Darkness",
-    "source": "bangumi-data"
+    "titleZh": "出包王女Darkness"
   },
   "anilist-13939": {
     "titleZh": "加速世界 EX",
@@ -1246,7 +1248,8 @@
   },
   "anilist-14349": {
     "titleZh": "小魔女學園 (2013 劇場短篇)",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3637d34c54bcebf25dc5f0fdcfbc89f600fec3b0.jpg"
   },
   "anilist-14893": {
     "titleZh": "所以我才沒辦法H！ 看太清楚了！泳裝大賽",
@@ -1365,16 +1368,14 @@
     "source": "ai"
   },
   "anilist-17345": {
-    "titleZh": "閃亂神樂",
-    "source": "bangumi-data"
+    "titleZh": "閃亂神樂"
   },
   "anilist-17397": {
     "titleZh": "獨眼巨人少女賽普～",
     "source": "ai"
   },
   "anilist-17409": {
-    "titleZh": "只要你說你愛我",
-    "source": "bangumi-data"
+    "titleZh": "只要你說你愛我"
   },
   "anilist-17535": {
     "titleZh": "劇場版 魔導少年 鳳凰的巫女「初始之朝」",
@@ -1406,7 +1407,6 @@
   },
   "anilist-18661": {
     "titleZh": "元氣少女緣結神",
-    "source": "bangumi-data",
     "blockedSites": [
       "iqiyi"
     ]
@@ -1424,8 +1424,7 @@
     "source": "ai"
   },
   "anilist-19211": {
-    "titleZh": "翠星之加爾剛蒂亞",
-    "source": "bangumi-data"
+    "titleZh": "翠星之加爾剛蒂亞"
   },
   "anilist-19363": {
     "titleZh": "銀之匙 2",
@@ -1437,7 +1436,8 @@
   },
   "anilist-19469": {
     "titleZh": "齊木楠雄的災難 (ONA短篇)",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7449bdd3c8067fec587a0cf2a8f7f1f5275b757f.jpg"
   },
   "anilist-19511": {
     "titleZh": "火影忍者疾風傳 Sunny Side Battle!!!",
@@ -1455,8 +1455,7 @@
     ]
   },
   "anilist-20359": {
-    "titleZh": "山田君與7人魔女",
-    "source": "bangumi-data"
+    "titleZh": "山田君與7人魔女"
   },
   "anilist-20451": {
     "titleZh": "機巧少女不會受傷 OVA",
@@ -1596,7 +1595,8 @@
   },
   "anilist-20993": {
     "titleZh": "終結的熾天使 名古屋決戰篇",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/34a46a3d1504d05febaa14d0b5174015649974df.jpg"
   },
   "anilist-21008": {
     "titleZh": "蟲師 特別篇「鈴之雫」",
@@ -1779,8 +1779,7 @@
     "source": "ai"
   },
   "anilist-21771": {
-    "titleZh": "星之夢～星之人～",
-    "source": "bangumi-data"
+    "titleZh": "星之夢～星之人～"
   },
   "anilist-21777": {
     "titleZh": "無彩限的幻影世界：水玉奇蹟",
@@ -1796,7 +1795,8 @@
   },
   "anilist-21804": {
     "titleZh": "齊木楠雄的災難 (TV)",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/eb4f17335f48951945fb9da47e6ee0bc65fa2fbb.jpg"
   },
   "anilist-21852": {
     "titleZh": "出包王女 Darkness 2nd (OVA特別篇)",
@@ -1808,7 +1808,8 @@
   },
   "anilist-21858": {
     "titleZh": "小魔女學園 (TV)",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1aa1cee348544dbd677e05cbeaa85c52c11e1a06.jpg"
   },
   "anilist-21862": {
     "titleZh": "在下坂本，有何貴幹？ 我是坂本，過去式？",
@@ -1843,8 +1844,7 @@
     "source": "ai"
   },
   "anilist-98338": {
-    "titleZh": "吹響！上低音號 第二季",
-    "source": "bangumi-data"
+    "titleZh": "吹響！上低音號 第二季"
   },
   "anilist-98425": {
     "titleZh": "快把我哥帶走！",
@@ -1895,8 +1895,7 @@
     "source": "ai"
   },
   "anilist-100305": {
-    "titleZh": "月色真美",
-    "source": "bangumi-data"
+    "titleZh": "月色真美"
   },
   "anilist-100684": {
     "titleZh": "網路勝利組 OVA",
@@ -2011,8 +2010,7 @@
     "source": "ai"
   },
   "anilist-106572": {
-    "titleZh": "海賊王 沙漠的王女與海賊們",
-    "source": "bangumi-data"
+    "titleZh": "海賊王 沙漠的王女與海賊們"
   },
   "anilist-106918": {
     "titleZh": "君主‧埃爾梅羅二世事件簿 {魔眼蒐集列車} Grace note",
@@ -2031,16 +2029,14 @@
     "source": "ai"
   },
   "anilist-107622": {
-    "titleZh": "狂賭之淵",
-    "source": "bangumi-data"
+    "titleZh": "狂賭之淵"
   },
   "anilist-108267": {
     "titleZh": "怪怪守護神 OVA",
     "source": "ai"
   },
   "anilist-108354": {
-    "titleZh": "外之國的少女",
-    "source": "bangumi-data"
+    "titleZh": "外之國的少女"
   },
   "anilist-108631": {
     "titleZh": "工作細胞 第二季",
@@ -2087,16 +2083,14 @@
     "source": "ai"
   },
   "anilist-111729": {
-    "titleZh": "平凡職業成就世界最強",
-    "source": "bangumi-data"
+    "titleZh": "平凡職業成就世界最強"
   },
   "anilist-111733": {
     "titleZh": "異世界",
     "source": "ai"
   },
   "anilist-111734": {
-    "titleZh": "GIVEN 被贈與的未來 劇場版",
-    "source": "bangumi-data"
+    "titleZh": "GIVEN 被贈與的未來 劇場版"
   },
   "anilist-111789": {
     "titleZh": "普羅米亞 SIDE 里歐",
@@ -2111,8 +2105,7 @@
     "source": "manual"
   },
   "anilist-113924": {
-    "titleZh": "為什麼老師會在這裡！？",
-    "source": "bangumi-data"
+    "titleZh": "為什麼老師會在這裡！？"
   },
   "anilist-114622": {
     "titleZh": "異獸魔都 惡魔的附贈品",
@@ -3360,7 +3353,8 @@
   },
   "anilist-19163": {
     "titleZh": "約會大作戰 DATE A LIVE II",
-    "source": "manual"
+    "source": "manual",
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e4bcaeae56eee78a72319a2e28f119665c12e590.jpg"
   },
   "anilist-100722": {
     "titleZh": "約會大作戰 DATE A LIVE III",
@@ -3393,5 +3387,1196 @@
   "anilist-14719": {
     "titleZh": "JOJO 的奇妙冒險",
     "source": "manual"
+  },
+  "anilist-98747": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98747-HB9210l6MDmO.jpg"
+  },
+  "anilist-98436": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0f9ab51ef5033eadad06628e98ee70d06a115fec.jpg"
+  },
+  "anilist-97886": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/bb264d8a63e2d152ba795a1c15314cdf49d7fb49.jpg"
+  },
+  "anilist-98506": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/985117c4c5cce9fb0208e790554ad777c6956689.jpg"
+  },
+  "anilist-21555": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21555-5dZCoocXoX9O.jpg"
+  },
+  "anilist-98607": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/eedc92d3b4f0ec4b26be6a8236f6070e465046a0.jpg"
+  },
+  "anilist-98630": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/1cd822b620ec5b82f6336a3cca9b4b90696403ca.jpg"
+  },
+  "anilist-98291": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/cb4dde6d68cf3a826538d84925e123a1148b779d.png"
+  },
+  "anilist-97766": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97766-AKr0m3uHkKyW.jpg"
+  },
+  "anilist-98035": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1804e361cc9fefad1fd8be8245f3b35ff685ae1a.jpg"
+  },
+  "anilist-98251": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b98251-6miVBNYEXzaF.jpg"
+  },
+  "anilist-21745": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/d364981f12c3a7b3943d53a8f801ba5c3cf37286.jpg"
+  },
+  "anilist-98005": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/894a840ee4595e2c50a117cb4deff71e9a041542.jpg"
+  },
+  "anilist-97663": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0b06b207c8f1dbbccdc475ed387ef8873deb21ac.jpg"
+  },
+  "anilist-21742": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2d66cd1745f53c61eb181518299b8b82dbc64313.jpg"
+  },
+  "anilist-98519": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3c115f8f0bcd09e2b376385a8558e7d19f028e1a.jpg"
+  },
+  "anilist-98512": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/910124f06043ec2541e02217b4019080befe6afd.jpg"
+  },
+  "anilist-98501": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c521e6f0d05b8aaba24ec96265fe707d5f3b9c16.jpg"
+  },
+  "anilist-98202": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/5ce66f68d54052e3a305524b9b06a76977e974fc.jpg"
+  },
+  "anilist-97980": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3944fe0b84a5763cde6b0573773b89ba86b4321d.jpg"
+  },
+  "anilist-21563": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9d1657d52788eed1c5fa6a6f0d605226928c1137.jpg"
+  },
+  "anilist-97932": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6fbb692726fb77614ef2abf44f10a983556d913f.jpg"
+  },
+  "anilist-21773": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b21773-tZ25uIMNj9sM.jpg"
+  },
+  "anilist-87517": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2298bee824a966a44b3dcff6c2f9377aa1d95fa8.jpg"
+  },
+  "anilist-97891": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/006121079ffe4fa50b25894ee43645be25c3684c.jpg"
+  },
+  "anilist-21776": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/c72a95c3cae82f58f8fa25facd40960aa2003d26.png"
+  },
+  "anilist-21878": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7b9a5a6e6c5ca157a4c18b01093a7bb1701f4606.jpg"
+  },
+  "anilist-97857": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e29fe9d62d02f153db7237f748c5b296e5da4a71.jpg"
+  },
+  "anilist-21696": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/055fcccf87dd9b2ff6d86adc43711fce5df78e44.jpg"
+  },
+  "anilist-97875": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0ab129325044ff4acbf808a3e38b71a1e0ea5b57.jpg"
+  },
+  "anilist-98153": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9b576406aab5d004d85d78239afb6dd2d74355d0.jpg"
+  },
+  "anilist-20986": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/edfd12a2c83cd19b331200be303b83141a3d4c82.jpg"
+  },
+  "anilist-87496": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2d91d23d676d7f739ad531d31ef7205d742fbfc8.jpg"
+  },
+  "anilist-97673": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/94b8e40429614d34374da619f0fc433e7c91a278.jpg"
+  },
+  "anilist-87539": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx87539-TF4agdQizKrh.jpg"
+  },
+  "anilist-97590": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7d2076e7cdcf3c3eaffad57ed6c9d987f2dbdeb8.jpg"
+  },
+  "anilist-21744": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/cca34c815248053cc377989143190598242fb01d.jpg"
+  },
+  "anilist-21769": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21769-ZBoT6szJKGZv.jpg"
+  },
+  "anilist-97815": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b75c55d209d156c8631f5ceb21e5c52c834dbb60.jpg"
+  },
+  "anilist-21838": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/27b426240a5cef004b98ba9825cc1dced1f3e8ea.jpg"
+  },
+  "anilist-21340": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/927fc75f3f044d4115392ffdad8fbcce9dbe2f95.jpg"
+  },
+  "anilist-21708": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/5d1364ae198c6e29c2daa64e48ad539fe5094496.jpg"
+  },
+  "anilist-21803": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/60212031072c19ae7097e6ad578140e3729aed04.jpg"
+  },
+  "anilist-21703": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/bfc82e6fad4f3a4fea1ce7f85b9060a1f77fdf97.jpg"
+  },
+  "anilist-21764": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/4588937c1f0118af6cec14f55eca43bf1141f328.jpg"
+  },
+  "anilist-21631": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3c3f4544bb6f8175d24c6022a23fc9bd4bc4ce59.jpg"
+  },
+  "anilist-21627": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/783bcdb50d9702b23e3aef2e6a5bbd0508465a87.jpg"
+  },
+  "anilist-21832": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3501378364ff84cbb42d2ee946334cd3b2dec453.jpg"
+  },
+  "anilist-21741": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/8f67ccb853ce59adbe233da59ff6cd644a05d453.jpg"
+  },
+  "anilist-21715": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/6c085db0fad4a0dcfd59a12196afb10bb00c5977.jpg"
+  },
+  "anilist-98033": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/177b0784b271b1bc517b9606adfc6ee6f1e430cf.jpg"
+  },
+  "anilist-21837": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c74ba43e76c346476c8c09e653d35de69073cc49.jpg"
+  },
+  "anilist-21850": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/4ed80d634a035e1e5420f474300f8fa6b9870b20.jpg"
+  },
+  "anilist-21221": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6e6a7524c42efb8061985f9fe1a0448e6913c3e2.jpg"
+  },
+  "anilist-21031": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6f0fc60f4319db3f3463488df5a0cae5ee283281.jpg"
+  },
+  "anilist-21557": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/fd9fc76508d2bfd43cf522d18b69a8a8adcdc132.jpg"
+  },
+  "anilist-21578": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/20f05ecc4c50d560814e511ced4205f37e640501.jpg"
+  },
+  "anilist-21424": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/40f9ead5887f28780ad3c9d0355461776dfa38a1.jpg"
+  },
+  "anilist-21406": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/4edab54e9db126fa3b3a81e3960e292ccd22a31b.jpg"
+  },
+  "anilist-21242": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c1fafbd989cc1ca6c1cd739cc008547307af5dbf.jpg"
+  },
+  "anilist-87489": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/77ac5d140cc5079364536c5f630f05ca552a15cb.jpg"
+  },
+  "anilist-21432": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/4df3b6e8a4767de20029dd15f01e37e345555fbd.jpg"
+  },
+  "anilist-21782": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/65b007cb885f74804c6662180e4d6a5e0ec57dd0.jpg"
+  },
+  "anilist-21002": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/baf20abb6c60c110a2a330cdb38977f4579fc4f5.jpg"
+  },
+  "anilist-21439": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b4b5e51b8bed79edcedb5a3a598164dee6a8495c.jpg"
+  },
+  "anilist-21595": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/14ba6643f22405e2777cca992002cc6411601334.jpg"
+  },
+  "anilist-21499": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/4d06e660b8da9cb5335552f4ebde89bbcb2e9d4f.jpg"
+  },
+  "anilist-21394": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a02579a8ffbaf4bfcb5b23ed6f0dc298dd02f851.jpg"
+  },
+  "anilist-21390": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3f390754aecd279d3915a60676fa6ea735a72010.jpg"
+  },
+  "anilist-21362": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/296a1d5fd863c94c4a0b7d8e60afd7a1cab19ff7.jpg"
+  },
+  "anilist-21637": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/37300216579d941a6dc2f318ef9cc0b18e8fdea6.jpg"
+  },
+  "anilist-21567": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/14c8c6b5ef00691639248b2efc5540c72056954f.jpg"
+  },
+  "anilist-21291": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/8dcb73655b0bde027f0f87d75c7f50ba006d8149.jpg"
+  },
+  "anilist-21516": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/5d1bfbfd90e67484ad07747eae400e93b64f2879.jpg"
+  },
+  "anilist-21795": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c8b031d45d8e7c0e41a409e5e6093823aaccd5c5.jpg"
+  },
+  "anilist-20680": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/63657caaa641144498e8eef394af61ce452c96ea.jpg"
+  },
+  "anilist-21334": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a7df28bac61bfa0a046c9585bf2d472f84d4075e.jpg"
+  },
+  "anilist-21695": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/91319f8e55ad9a74d5e1be3fd597c0974e5584a7.jpg"
+  },
+  "anilist-21800": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/153c162e03021abb709a23b92911deadc8e64224.jpg"
+  },
+  "anilist-21365": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/59c494b792a1379857a44f3d75b5802c89c13805.jpg"
+  },
+  "anilist-21520": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9755ab42d9ed934e21d03982e02844ca516082fc.jpg"
+  },
+  "anilist-21577": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21577-yHXqitJ8v3Vq.jpg"
+  },
+  "anilist-21319": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/fa218bbc1f73d86824dddb3048691058a82ccf25.jpg"
+  },
+  "anilist-21201": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/f25073d5fef65a4658905d300122fc47239320e6.jpg"
+  },
+  "anilist-21248": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6363a12b0ecaf6c3a1be297e036f03f1dc3bb893.jpg"
+  },
+  "anilist-21313": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ad98866958fb137938af02bfa209fccd6f8edf7d.jpg"
+  },
+  "anilist-21458": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/10e90ed6acd3edcfb0d7f353b85f283e30c091a1.jpg"
+  },
+  "anilist-21239": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a087ab3d1efd1afc9dae466afe613a5bb6930451.jpg"
+  },
+  "anilist-21471": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/44f77333ce7eecd3d16473e15e1e8c41d3d60ed5.jpg"
+  },
+  "anilist-21359": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2c4612ae6f880172826a4e974407777dc2b06bb1.jpg"
+  },
+  "anilist-21128": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21128-eQgH3TG4nngo.jpg"
+  },
+  "anilist-21092": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/22a01c03926869ab31e7b158ffe15e783930da71.jpg"
+  },
+  "anilist-21131": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c53c6d891115ae783e57bc4cb0c8a456f8788fef.jpg"
+  },
+  "anilist-21262": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21262-jfbv9hvjymMW.jpg"
+  },
+  "anilist-21110": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c759a4497380eab427a0d3c2956a04db8b2258b1.jpg"
+  },
+  "anilist-20704": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/23ffac3faaadddedbb8ef47b84329946d306174f.jpg"
+  },
+  "anilist-20913": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/902812752c6c021b7e8f75f30ea2d63db8d71d7e.jpg"
+  },
+  "anilist-21066": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b2cf533450a46802519deaece0eb5dca2d75c482.jpg"
+  },
+  "anilist-119941": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b42f2ee553598e3073a8c351f77c6cc0bb47f918.jpg"
+  },
+  "anilist-21190": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1b744ad4dfbaaf938e32d2ce4ac97854a4c9bb20.jpg"
+  },
+  "anilist-21356": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21356-bHTUPdtd8xy2.jpg"
+  },
+  "anilist-21138": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b95c479393294b8e256483703fbd3c7dea0dc7ac.jpg"
+  },
+  "anilist-21158": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/bdaf189cf6f606c4bd5f0db891af99ee2eeb60b6.jpg"
+  },
+  "anilist-21249": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1a59d848c8c00a57767e328947081f09a3e14e0b.jpg"
+  },
+  "anilist-21045": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/dfd7ab1a996650852405f2e7f91cae13ca1bb553.jpg"
+  },
+  "anilist-20991": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e0fa59a7a750f97bc20cf70e0f9f8982ce0bb3aa.jpg"
+  },
+  "anilist-20965": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/baf19430a80ce1ba230bcd212c6e278e52bd7062.jpg"
+  },
+  "anilist-21243": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/f7aa7c3f93ff41127992e0487e4ec1db3128d643.jpg"
+  },
+  "anilist-21327": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c80bbbb0104e7f60c1df67eebf684917880ab7b2.jpg"
+  },
+  "anilist-21187": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0052e019d1b2ad049c08cfdc73c22da387468d04.jpg"
+  },
+  "anilist-21182": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/133e8853d78828731c91c4cc91b646ad6357b57e.jpg"
+  },
+  "anilist-20997": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9c3e77244687a81e4b75e88ec22eeb8dbaa26380.jpg"
+  },
+  "anilist-20910": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0bb9ea24a9ee6e14c36cb6678d1a4e5b8de44ae6.jpg"
+  },
+  "anilist-20849": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/fe032695a01c4b04385306b9b2a5aed565e341cf.jpg"
+  },
+  "anilist-20968": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20968-0zFVsoFUYjeh.jpg"
+  },
+  "anilist-20774": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c2d4b22675f78f07d3b6562a0e336ac110cc35d7.jpg"
+  },
+  "anilist-20819": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2f8dca95dffdecc0e73b599b1f15ad170ebdebd5.jpg"
+  },
+  "anilist-20951": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e2044253dafb864962726cbae7ab07ab91f011ce.jpg"
+  },
+  "anilist-21112": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/78408bd068a63da81485b9703fe99d519a63acd5.jpg"
+  },
+  "anilist-15201": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7f138b62d91ff434d67afc32aa4c3e7eaa2d7ad8.jpg"
+  },
+  "anilist-20796": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2fe9f6623a0c74c61e6675464d9fa4c10845d28d.jpg"
+  },
+  "anilist-21009": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1ab702fd6fed6cc11d7152883491a471bf8dd155.jpg"
+  },
+  "anilist-20829": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/1540c4050bd0f9ba48f59d9c1056acf1d6e26492.jpg"
+  },
+  "anilist-20727": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2bdc085a0b514276539fafda97e4043f5ea641bb.jpg"
+  },
+  "anilist-20912": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/8fa9d26fe84bcb09e7f6707ac0f7260deb8761ac.jpg"
+  },
+  "anilist-20935": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20935-jCAXBOuei2T8.jpg"
+  },
+  "anilist-20964": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/10193ec8c53a244ed60f691b5d714f951321fc80.png"
+  },
+  "anilist-21000": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b54707a72142398ec37c29245f9a59f7a467fa7f.jpg"
+  },
+  "anilist-20566": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0185e95dab20828dcfa79a32a6797e1f4d17722d.jpg"
+  },
+  "anilist-21039": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6b6b2423ceff5fbdfbbee3a09a85173b8bd59a03.jpg"
+  },
+  "anilist-15199": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7f138b62d91ff434d67afc32aa4c3e7eaa2d7ad8.jpg"
+  },
+  "anilist-20737": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/76c0860bef03224739a78b59724e7ddbdcc82873.jpg"
+  },
+  "anilist-20983": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9bd1d95def7ed8d1f05fee9f59308ede3c4f6c8b.jpg"
+  },
+  "anilist-20854": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/df459ad0c6e9752cfbedfc24f49e0c2acbb2b223.jpg"
+  },
+  "anilist-20824": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e3a2ebc4eab06ce5066df3365bb0a2eda98c959c.jpg"
+  },
+  "anilist-20657": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/20ee5a611f71b848d2136aa93ad8fbf5d1b2b23a.png"
+  },
+  "anilist-20678": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b39e4648f2fab366d6f1c41a60b2c4a52eb85446.jpg"
+  },
+  "anilist-20693": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20693-sEsunmlYg95U.jpg"
+  },
+  "anilist-20877": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1796c68003b61e23e6986f0d777b19297a2d55e9.jpg"
+  },
+  "anilist-20724": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e14f1e14d2fd7fc0ff70c9330230adb6d79ea5a7.jpg"
+  },
+  "anilist-20601": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0fe97c0e9708a049b58b7ad63eba3d4bbfc2a2b2.jpg"
+  },
+  "anilist-20922": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/67cb0ce35113599b7efc6783e47b36773b9d736b.jpg"
+  },
+  "anilist-20770": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b95c479393294b8e256483703fbd3c7dea0dc7ac.jpg"
+  },
+  "anilist-20602": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/d15c7b1a5b6e90abeea78844ff97f9443fc2588c.png"
+  },
+  "anilist-20671": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2878474417b9f0b4551a5606de7f47b313915acd.jpg"
+  },
+  "anilist-20735": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/f4535567ee32b0e96bd912e775bb5f98658694c9.jpg"
+  },
+  "anilist-20751": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/16e973742216b68db7bcc5642b20be5e6af2ef9f.png"
+  },
+  "anilist-20719": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/16165798288bae35a45b8930b3c3875f00b40d07.jpg"
+  },
+  "anilist-20565": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/083feff33f0d4ee42d174f87336c7b5101a158d1.jpg"
+  },
+  "anilist-20656": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/39bfc409fe95db6812624f378194612de89c143d.jpg"
+  },
+  "anilist-17827": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/aa8eca69c5b1196743af149dc1ce53e86aadf742.jpg"
+  },
+  "anilist-20710": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2e20049bda6998b96411e6eec104947aff145232.jpg"
+  },
+  "anilist-20907": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20907-Pl4YwH8RopKT.jpg"
+  },
+  "anilist-20672": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20672-W0wOeBgWEb4J.jpg"
+  },
+  "anilist-20753": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/deeb45e1a48ea5bd0bafd7718a761ef82a6984a3.jpg"
+  },
+  "anilist-20817": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ac6323b7018df5d55152ff88aa3325d196aeafb2.jpg"
+  },
+  "anilist-20720": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/23fbb5ece1d3adb8700988c02e8e97f30bbfbf33.jpg"
+  },
+  "anilist-20596": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/19c1294d6a70134e65cc6f66169fcccf25893f88.jpg"
+  },
+  "anilist-20722": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/64ff380feab0a70385dfeb5d7ce109603fdb0380.jpg"
+  },
+  "anilist-16904": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ff85b64a18556bb5c0a28a2168048f7cd3721ce3.jpg"
+  },
+  "anilist-20611": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6bf8466f4551205c5aa8207f17ae292834e3780e.jpg"
+  },
+  "anilist-20519": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3d781d52aa2b93188836a1725ecdd286f8df136f.jpg"
+  },
+  "anilist-20541": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20541-vEenrRZqApRn.jpg"
+  },
+  "anilist-20462": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a4038a0576ccde8d31f592a29050203c1fc85236.jpg"
+  },
+  "anilist-20529": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1c3da58352df66fd409831f7d5e13594c804144e.jpg"
+  },
+  "anilist-20599": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/be389520c04942d62d5a7d0c0ba9e9c655bb2363.jpg"
+  },
+  "anilist-20556": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/3bc752c31a8bbb2b6c8da615201b56d228c312e2.jpg"
+  },
+  "anilist-19685": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ede5785c229811b13377b87d51b3981365b128a6.jpg"
+  },
+  "anilist-19613": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/7c84f2494cb97c77b3296326e1b67480b47fb87e.png"
+  },
+  "anilist-20510": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20510-S72XBO504JWD.jpg"
+  },
+  "anilist-20542": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/35d83fd717967df9807b1ef18d8649fc1362171b.jpg"
+  },
+  "anilist-20736": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/8dfad9320ca663be25cc992c1d3f9a56855eac01.jpg"
+  },
+  "anilist-20604": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2deb0f41ddf2eda4c904c18e42355c6f1b2e8b6c.jpg"
+  },
+  "anilist-12783": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/ec6f0b8896572bf8b863f24ff27b97fed6f5bdd7.jpg"
+  },
+  "anilist-20618": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a641ec1e93a1ce2917e81e9bb7a92f3d270c2765.jpg"
+  },
+  "anilist-20506": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9926cdc1c97ad5fca3ca4318cd1d032429d909cd.jpg"
+  },
+  "anilist-20567": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/4270c14cf6a0300e578a50f2b1b96356f29cbb23.jpg"
+  },
+  "anilist-20447": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20447-EoQXeygHaVCK.jpg"
+  },
+  "anilist-18671": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b69a9fc2ce1c50915b3158c2f6ac51ed64101b23.jpg"
+  },
+  "anilist-20494": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx20494-HllvnQ1mRIxe.jpg"
+  },
+  "anilist-20488": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20488-3kTJBoU55DeQ.jpg"
+  },
+  "anilist-20496": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c8c68e353d2a344581a0b64cce64ed39de832340.jpg"
+  },
+  "anilist-15565": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7934fdeacea311afeffa121c202aec4f06a22e56.jpg"
+  },
+  "anilist-20473": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20473-NcBriU779t0k.png"
+  },
+  "anilist-20582": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/950a283488881db5791934418065d01db779f8a6.jpg"
+  },
+  "anilist-19117": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/a8a32554435536417b9151250d9b04d4afa31e7d.jpg"
+  },
+  "anilist-20533": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20533-uzmLvRDe7LBt.jpg"
+  },
+  "anilist-18851": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/46a77bc01915cb0bd3d7e9c27c7de6e822bb6ffc.jpg"
+  },
+  "anilist-20501": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a7800c67a364bfe653cbfce37563179525fe750a.jpg"
+  },
+  "anilist-19855": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7b288e4731156fa3ab0ea6074a04b30eca215270.jpg"
+  },
+  "anilist-20633": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/37553432354ec28cca2cf73d0023b9850ebbea38.jpg"
+  },
+  "anilist-20600": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a7d50268a2f7a41c24724dfb6fbd3594dd506534.jpg"
+  },
+  "anilist-19115": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/640ca77c3e7d5b4e8b0d11e6e751392babd35c83.jpg"
+  },
+  "anilist-17437": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17437-9ruAWF6uMMZA.jpg"
+  },
+  "anilist-18679": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/b5a2aa72eefbd6a9d14c637debc4369322ba2ad0.jpg"
+  },
+  "anilist-17895": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17895-M8yjOyMxHf5X.jpg"
+  },
+  "anilist-17265": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/f04c66e413c0334fb035980bd22757a5230a7fd7.jpg"
+  },
+  "anilist-12477": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/badba652e88abae1db3e36111e43f9353eab5e48.jpg"
+  },
+  "anilist-19291": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19291-jwGqfWIXPtGA.png"
+  },
+  "anilist-14407": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/e43e7595655e233d437cf2e35cf8fc0a0d299222.jpg"
+  },
+  "anilist-19365": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/178f4e353eb0807ee6a535c434183ce9b54dc3d2.jpg"
+  },
+  "anilist-15197": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7f138b62d91ff434d67afc32aa4c3e7eaa2d7ad8.jpg"
+  },
+  "anilist-9479": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9479-6Y7eko7qxSDS.png"
+  },
+  "anilist-19319": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/01214a7f71f8c08e640630d27a0b83562d899c07.jpg"
+  },
+  "anilist-11633": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ecc022fd47aa93b8b4861644e8d5cf6f3243e71c.jpg"
+  },
+  "anilist-18119": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/d627dd3fed8d633f1b32f04f403b5ee1dad7a6e4.jpg"
+  },
+  "anilist-16732": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16732-LwehgtKf737X.png"
+  },
+  "anilist-16009": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0870ae3a91a97e2a8af0b7b858678bf7c6f40033.jpg"
+  },
+  "anilist-16157": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16157-GFIuj9e2Y8nK.jpg"
+  },
+  "anilist-17831": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/66ae74593891a95ee80d2c7cabc41d141acec928.jpg"
+  },
+  "anilist-15793": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/d445c0c5766b35e022eca226b3ba085a895f489f.jpg"
+  },
+  "anilist-17651": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17651-42nNqs1vj5pK.png"
+  },
+  "anilist-18495": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/18495.jpg"
+  },
+  "anilist-17821": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17821-mavryN2JncDI.png"
+  },
+  "anilist-18465": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18465-cZy0CR1YGOfV.png"
+  },
+  "anilist-16782": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/5b00c25e00b639194f51ead01c557c9709c3ea6a.jpg"
+  },
+  "anilist-15583": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ad4dc7bf7bef59255536e54fe818985b0e270d14.jpg"
+  },
+  "anilist-11577": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/42ef49840ff8670828cf7572b0f218709b7192a4.jpg"
+  },
+  "anilist-15225": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/35870999aed7ba25eb31575ade143f39c888c1aa.png"
+  },
+  "anilist-16524": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/017351e9503e87700250b1274d568e6fd78db82d.jpg"
+  },
+  "anilist-16035": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16035-TAbW2i7rtXVM.png"
+  },
+  "anilist-16668": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16668-ShG8DE2t0ryW.png"
+  },
+  "anilist-16397": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16397-dSCC0RzWjWnk.jpg"
+  },
+  "anilist-12711": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12711-L2zKL1kjYMio.png"
+  },
+  "anilist-15863": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15863-QskWXArq9Gqh.jpg"
+  },
+  "anilist-16982": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/f6b52b7833605a38d2d503766187de1c24284b94.jpg"
+  },
+  "anilist-17637": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/53d224cc05d426538cab138a234e391b5b0b1272.jpg"
+  },
+  "anilist-17681": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/f082e0bf5737a1f06201d4a0b54e667bd24e566f.png"
+  },
+  "anilist-16436": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/01bcdd1b11e153a52454877f724b68aac9b6a13b.jpg"
+  },
+  "anilist-17635": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c55ef76ac04d34c590d1c05435f2d9aee9f8ce59.jpg"
+  },
+  "anilist-14749": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/654466a6f0cf9aa9b73b800da152a460bfabbb89.jpg"
+  },
+  "anilist-15315": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/96704d5ef94722dca15f7fe07d8c004a0c770e25.jpg"
+  },
+  "anilist-14833": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/6920b7c4a888154c47b1d8c9b40a4c3524be2007.png"
+  },
+  "anilist-15379": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/4ebd5c1ad0b2ada4d427648bb2657b9a11c5a04c.jpg"
+  },
+  "anilist-14811": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/4270c14cf6a0300e578a50f2b1b96356f29cbb23.jpg"
+  },
+  "anilist-15109": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b59a4aa6616f2e16aff80c4296df96d9f551310e.jpg"
+  },
+  "anilist-15613": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15613-Wy2QXvj3BmSN.png"
+  },
+  "anilist-14283": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx14283-kLbZyR6Km5mA.jpg"
+  },
+  "anilist-14045": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/60f37c51c67f8a85560031214a01ed6aa32f1aa2.jpg"
+  },
+  "anilist-16169": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16169-JOD1GwgA0D5G.jpg"
+  },
+  "anilist-14941": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14941-1O4YajpBThuM.jpg"
+  },
+  "anilist-15649": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c536edb991336c96e282b23204bc1abc561df386.jpg"
+  },
+  "anilist-14741": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14741-CGXEIeUe2roA.jpg"
+  },
+  "anilist-14227": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c71ef4b7f85053f2f4ff7ffd8d746c9f7e0b791f.jpg"
+  },
+  "anilist-14513": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14513-HuUdrFFYftA7.jpg"
+  },
+  "anilist-13125": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/aaa60f9cb17fb4a38df464f1064ca9623e0769cc.jpg"
+  },
+  "anilist-14467": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2d8e0db5b60d2f2fa8dea5a1b3bcc5023bde69a2.jpg"
+  },
+  "anilist-14289": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/33a9d6374847209ccf9a690a692ed8dcf6f9c42c.jpg"
+  },
+  "anilist-13655": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/e4d3dbad653a8091328143e262fac7c1d0da515d.png"
+  },
+  "anilist-11703": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2795c0b7276791e963f35150848890f2d35fcd8d.jpg"
+  },
+  "anilist-11737": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c240d992804d83db998f2cccddbeffbe8a5c8271.png"
+  },
+  "anilist-15059": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/5ac4b3b90323cf33ff02f4113c7a1ed6856888bb.png"
+  },
+  "anilist-14293": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/bc8a0c27384185745af47f7703b66e648f51bdfa.jpg"
+  },
+  "anilist-15125": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/2ed29f9cb1508322395ba79ecfdb07250b340267.jpg"
+  },
+  "anilist-14653": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/f90101c14c757c12e8525b1f813406bed4e66141.jpg"
+  },
+  "anilist-11887": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/8274f1107032a6fe0843dc9cf875d887d6ad0f03.jpg"
+  },
+  "anilist-10357": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10357-JJvq6G2S01kl.png"
+  },
+  "anilist-14753": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/5627ae3e98fa90c57db32306a54b4fc97f724017.jpg"
+  },
+  "anilist-13333": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/e34873409def413b8acdef6fcba3c339b6f36357.png"
+  },
+  "anilist-8888": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/7f138b62d91ff434d67afc32aa4c3e7eaa2d7ad8.jpg"
+  },
+  "anilist-12967": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b7a4ecf7f274983f38409e02910dafdade738c73.jpg"
+  },
+  "anilist-13411": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b2b95f4897320e94c63c4698a4e79be8cc3a31cc.jpg"
+  },
+  "anilist-13585": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/ae41fbfe3851354b4690dfbc1d012eaabcf3aab0.jpg"
+  },
+  "anilist-12685": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/964613d9bd31417dae17d13db35e74a1e5793c25.jpg"
+  },
+  "anilist-13115": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9d9a39a83973a5e22d2a70905c09b63b49a5d94f.jpg"
+  },
+  "anilist-13859": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3e4914ed0078fc75bee8826acba5408ba2d44ec8.jpg"
+  },
+  "anilist-12281": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12281-xrUMM1ee9pqK.jpg"
+  },
+  "anilist-11499": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6dccd70827dd5fe30d13bc002ee06b322334c8c0.jpg"
+  },
+  "anilist-12531": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/796b7a387588074c734154997fa9f3477d763870.jpg"
+  },
+  "anilist-12291": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6de861925c772076a747844427bf49c252a8accf.jpg"
+  },
+  "anilist-12431": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/eea42a9d84f5708ef653d587bdee5d9410aa3958.jpg"
+  },
+  "anilist-12029": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/a0b00c32b86dd1989fc55ad2b138b34932f85dbe.jpg"
+  },
+  "anilist-12471": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12471-XFE6k5eDGhOt.jpg"
+  },
+  "anilist-12461": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/25755a986590e483b94f0d4263d17ce1e38876e0.jpg"
+  },
+  "anilist-12317": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/d820e879582b8d258521831322a96d5e2905162d.jpg"
+  },
+  "anilist-12149": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/cede30dbc65256d84e1647eede73590a4eefd680.jpg"
+  },
+  "anilist-12119": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12119-DDxsnzXsveIW.jpg"
+  },
+  "anilist-9751": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9751-HZPD9Jz8pK12.jpg"
+  },
+  "anilist-12367": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a8a832517467d6be88230a346293166ab8976df1.jpg"
+  },
+  "anilist-13377": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx13377-VPSrfUSIR7Di.png"
+  },
+  "anilist-12611": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12611-Tu0K8qdSAYOf.jpg"
+  },
+  "anilist-11433": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/bdfc0813893b81cfa13dcde047d1bca1c5196aee.jpg"
+  },
+  "anilist-11665": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11665-nfbt94cwKySE.png"
+  },
+  "anilist-11751": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1d880dc6daed67984426941f1c56cc4510edde5f.jpg"
+  },
+  "anilist-11235": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0e2656a8ba9f754b4ac8de132a13e6c0aa188468.jpg"
+  },
+  "anilist-11079": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a54a066f1a4eb4c9b1a8b60e3e6bd2c26ad8f3f8.jpg"
+  },
+  "anilist-11241": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/450b65bb228882d7b6722eb41fd6541f62c82c3e.jpg"
+  },
+  "anilist-11227": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11227-dMDJFoq6Rb9j.png"
+  },
+  "anilist-10447": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10447-NDvwjLUF9znA.png"
+  },
+  "anilist-8917": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8917-mmUSOxFEQj3f.png"
+  },
+  "anilist-11491": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/11491.jpg"
+  },
+  "anilist-13171": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/80edf40101db91197d6aac4b51e618747f5162de.jpg"
+  },
+  "anilist-11341": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11341-QLilHfOnk46Q.jpg"
+  },
+  "anilist-11375": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a0e9fb1c714e3684eba382eb38a9f48edb183eef.jpg"
+  },
+  "anilist-13169": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/87a4681f46bbfad79b658b4dc63f8b0f4bf0fdf4.jpg"
+  },
+  "anilist-10396": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/10396.jpg"
+  },
+  "anilist-10521": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b9ac057d8aaed38cc82109b9ff9e61856881ac78.jpg"
+  },
+  "anilist-6773": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0c6befabce70a878173cb1e26568772221e67568.jpg"
+  },
+  "anilist-10456": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/360f5fe2d1aca00061c981d300ddf897da6aff51.jpg"
+  },
+  "anilist-10798": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6552ace405ebb1f42fadac06be61d0961dabbd0a.jpg"
+  },
+  "anilist-10397": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10397-dgBrvKPDgSNc.jpg"
+  },
+  "anilist-12187": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b13f7e615fb4f1f492236c28802cc6b7ff264a99.jpg"
+  },
+  "anilist-10232": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10232-inIllgXxoMqC.png"
+  },
+  "anilist-10336": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/64d0b7f2e482b678c5a3f7f3880fd40186ccf417.jpg"
+  },
+  "anilist-11531": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6552ace405ebb1f42fadac06be61d0961dabbd0a.jpg"
+  },
+  "anilist-11237": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/9c8bad9e751600c9912e3ef8fa8ef3ca21eb4dcc.jpg"
+  },
+  "anilist-10162": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10162-w4SG5oQSQwMn.jpg"
+  },
+  "anilist-10012": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/db9e9aad429724c83b2e3668ea0ba84838b4b77b.jpg"
+  },
+  "anilist-10568": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10568-QZbLhgMAQC76.jpg"
+  },
+  "anilist-10379": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10379-lS2Mk6lX4lZr.jpg"
+  },
+  "anilist-10278": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx10278-FnbOihGuSpfc.jpg"
+  },
+  "anilist-8915": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8915-KMxeHflWLc6o.png"
+  },
+  "anilist-10321": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10321-yoeabxzPWtoQ.png"
+  },
+  "anilist-10389": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/91a27ef2fbe1a30e597b0e9095b334c6560aee2e.jpg"
+  },
+  "anilist-10572": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10572-MVk1asGo1rQP.jpg"
+  },
+  "anilist-10156": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10156-ppHiEMr7wyQm.jpg"
+  },
+  "anilist-10372": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/d309820e8649ad8964cc9caac328b69ac840e026.jpg"
+  },
+  "anilist-9938": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c38fe119237f830fe11adbb7d33622413ae2dff3.jpg"
+  },
+  "anilist-9934": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/0b4699ac2553ad2fd2ceba01fe4fc5bde860fb7b.jpg"
+  },
+  "anilist-10671": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/10671.jpg"
+  },
+  "anilist-7135": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/77a91e8f0480e7e5c2eadbaa83dc4965ddea8532.jpg"
+  },
+  "anilist-4713": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/93b625aec4e7bfe9526f6fa632727c73492c1fbd.jpg"
+  },
+  "anilist-9253": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg"
+  },
+  "anilist-8630": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/52385016afa0a7fd0e47ae169d9933dde893f7ee.jpg"
+  },
+  "anilist-9379": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/9b50343a4332c36f10a4e5b43557460bc7439414.jpg"
+  },
+  "anilist-10163": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10163-DGTY24yRLZrt.jpg"
+  },
+  "anilist-10711": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/bdebe95b9bdfa837b682048556ad50477fcaf6e5.jpg"
+  },
+  "anilist-10155": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/75728143a5e605f9119158321d9402b7acd33f43.jpg"
+  },
+  "anilist-10079": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a462dba300b93eba189dc9d1f4a98c77db0e5e01.jpg"
+  },
+  "anilist-9712": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c6feea1692cf0e949913d87946afa1953c71a60c.jpg"
+  },
+  "anilist-9996": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/cb63f334b0ce6fcabaf29737cf4e943ddaa61fe1.jpg"
+  },
+  "anilist-10092": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/eb2022cde6d036ac9164f62cc6efc8464f0aef28.jpg"
+  },
+  "anilist-8425": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0099eed28f8389f979dc6c66a49a0d83c7e76e42.jpg"
+  },
+  "anilist-8426": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/8c67a3946b8be543ece6d569c8ca18334c429374.jpg"
+  },
+  "anilist-9330": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/56bff502703aa4c08b871bf5785d2ac05178028a.jpg"
+  },
+  "anilist-9331": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a6b0cc11998d5cc1655d4e595f83fcccaf610e5b.jpg"
+  },
+  "anilist-9834": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ee96896c0968c05ced5a2bead62b0f592864965e.jpg"
+  },
+  "anilist-9314": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/ed0d9a6e48d61e186b714fe8683cdaebfca02c2b.jpg"
+  },
+  "anilist-9332": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/09da4bf8a8fedd4f161403683c75fe2b55b09d15.jpg"
+  },
+  "anilist-7222": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/22ebeabeebcbbd1d96ae48761bd358b7f32aebfb.jpg"
+  },
+  "anilist-9598": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/f0b08fb5a3c2c2c12347195b775c91112b786489.jpg"
+  },
+  "anilist-9347": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1b43da7cac4e694e398c2b6dc54cd7defb1a5786.jpg"
+  },
+  "anilist-6918": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6056fc0e58085daea5a6cb62da0795f52debcedb.jpg"
+  },
+  "anilist-8129": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/cf7688ef4c8c03c9fe75fce7548719bc64235a5f.jpg"
+  },
+  "anilist-9107": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/9107.jpg"
+  },
+  "anilist-8726": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/1fd8170bd40dcfbb6d761db0be57bbd79f956c3a.jpg"
+  },
+  "anilist-7662": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7662-uW1oWpFeENgf.png"
+  },
+  "anilist-8536": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8536-sPCBVLhTiuVV.png"
+  },
+  "anilist-7768": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/7768.jpg"
+  },
+  "anilist-9252": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/eb2022cde6d036ac9164f62cc6efc8464f0aef28.jpg"
+  },
+  "anilist-9465": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/eb2022cde6d036ac9164f62cc6efc8464f0aef28.jpg"
+  },
+  "anilist-6875": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/197ef478e642f486b698ca15c7a409b18f882fc3.jpg"
+  },
+  "anilist-10918": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/8f3370270f3a88ef2e96adb8043c55dc519bb591.jpg"
+  },
+  "anilist-8676": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/0cf19817077713b638513b1636e4d86989bff9c7.jpg"
+  },
+  "anilist-8086": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/844cf75c2000595e21dd85a5b172813e0bf2c5e3.jpg"
+  },
+  "anilist-7769": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/ffe3f432d5bc995d72c0d8289df60d5e76508991.jpg"
+  },
+  "anilist-6634": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/d04a360c301a51a179b614f897112206e0e47dc4.jpg"
+  },
+  "anilist-6979": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6270e587e6409e8962223c3d6b2a51ee9eb20b79.jpg"
+  },
+  "anilist-6547": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/803ee7dc0e151ea3f634fe49e73d3b3fb93ca433.jpg"
+  },
+  "anilist-7054": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/2a778c61bcd9321c31f172d48bf100a10386a73b.jpg"
+  },
+  "anilist-6956": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6956-Nxs7H25yHLNS.jpg"
+  },
+  "anilist-4106": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/fb162c4e810cee57d6c8ccae9b5e0a8873b4f061.jpg"
+  },
+  "anilist-7465": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/c7e739331f6572e08d132bd2915eea7251a628eb.jpg"
+  },
+  "anilist-6637": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6637-26qRqL3enXYB.png"
+  },
+  "anilist-7588": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/cebe33271935b545b18d17f4a9f5f468874ce3fe.jpg"
+  },
+  "anilist-7058": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/6d43b40c3f75d9c8aa803daa55b0badc7c3145aa.jpg"
+  },
+  "anilist-6864": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/3244e4f3ffaef4100565a601d345f0906146e754.jpg"
+  },
+  "anilist-7870": {
+    "show": false
+  },
+  "anilist-4334": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/89dd328e161a29d589914cf9bc11b8a2683c4264.jpg"
+  },
+  "anilist-7720": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7720-C0Y3tuXIbCAL.jpg"
+  },
+  "anilist-10643": {
+    "show": false
+  },
+  "anilist-5306": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/a114f6bdacdee9e3e5aee2cd2ab3b4b2a1a0ff7a.jpg"
+  },
+  "anilist-8217": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8217-0AdC5k7zWMwu.png"
+  },
+  "anilist-8792": {
+    "show": false
+  },
+  "anilist-6746": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/446c6c7e1806c0debbc3e40ba2e9d9dd00cb4a08.jpg"
+  },
+  "anilist-7311": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/395937e084d9a260702062ff02a3e8a088d0c54e.jpg"
+  },
+  "anilist-6594": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9ed9fd6889a3830827fd428cf8e27569ef012dd9.jpg"
+  },
+  "anilist-7338": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/659ceb4b8173a3fb190482993f962764b99475e9.png"
+  },
+  "anilist-6574": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/1ccec5ad4734f2b59e7912aa4e37f307a9e60bc3.jpg"
+  },
+  "anilist-5690": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/b64bc3b605bbec13891b7190e441ad63fa17ae44.jpg"
+  },
+  "anilist-8023": {
+    "show": false
+  },
+  "anilist-7062": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/image/5c75ee0386c3056dada77142169604343f76600b.jpg"
+  },
+  "anilist-9213": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9213-yLy1YJN97JaJ.jpg"
+  },
+  "anilist-7705": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/bc71240f1976e22111a14ebf8963d93b6dcec2a9.jpg"
+  },
+  "anilist-7897": {
+    "show": false
+  },
+  "anilist-9744": {
+    "show": false
+  },
+  "anilist-8097": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/95b9680bb902d56a51a99dcf7847443727f447d6.jpg"
+  },
+  "anilist-6581": {
+    "show": false
+  },
+  "anilist-8438": {
+    "show": false
+  },
+  "anilist-8134": {
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/851bc8917748956ac3f0665c63b1e374453cb689.jpg"
+  },
+  "anilist-7597": {
+    "show": false
+  },
+  "anilist-141": {
+    "show": false
+  },
+  "anilist-387": {
+    "show": false
+  },
+  "anilist-522": {
+    "show": false
+  },
+  "anilist-21": {
+    "show": false
+  },
+  "anilist-188": {
+    "show": false
+  },
+  "anilist-170": {
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170-cmD8A0vZsp6g.jpg"
   }
 }

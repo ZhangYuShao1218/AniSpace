@@ -457,11 +457,20 @@ async function main() {
   }
 
   // 為所有項目（包含舊有資料庫項目）自動補充 bangumi-data 授權連結 (支援 ID 與 100% 日文標題對應)
+  const unlinkedAnimeList = [];
   if (bgmMap.size > 0 || bgmTitleMap.size > 0) {
     finalAnimeList.forEach(item => {
       const aniListId = String(item.id).replace('anilist-', '');
       const customOverride = overrideData[item.id] || overrideData[aniListId];
       const bgmItem = matchBangumiItem(aniListId, item.titleJa, customOverride, bgmMap, bgmTitleMap);
+      if (!bgmItem) {
+        unlinkedAnimeList.push({
+          id: item.id,
+          titleZh: item.titleZh,
+          titleJa: item.titleJa,
+          yearSeason: item.yearSeason
+        });
+      }
       if ((!item.streamings || item.streamings.length === 0) && bgmItem) {
         const streamings = [];
         const blockedSites = customOverride?.blockedSites || [];
@@ -484,6 +493,13 @@ async function main() {
         }
         if (streamings.length > 0) item.streamings = normalizeAndMergeStreamings(streamings);
       }
+
+      // 支援 extraStreamings / extraStreaming 陣列相加
+      if (customOverride && (customOverride.extraStreamings || customOverride.extraStreaming)) {
+        const extra = customOverride.extraStreamings || customOverride.extraStreaming || [];
+        const base = item.streamings || [];
+        item.streamings = normalizeAndMergeStreamings([...base, ...extra]);
+      }
     });
   }
 
@@ -496,6 +512,18 @@ async function main() {
   }
   if (aiTranslatedAnimes.length > 0) {
     summaryContent += `🤖 AI 翻譯動畫：\n- ${aiTranslatedAnimes.join('\n- ')}\n`;
+  }
+  if (unlinkedAnimeList.length > 0) {
+    const mdPath = path.join(process.cwd(), 'public', 'unlinked_anime_list.md');
+    const jsonPath = path.join(process.cwd(), 'public', 'unlinked_anime_list.json');
+    fs.writeFileSync(jsonPath, JSON.stringify(unlinkedAnimeList, null, 2), 'utf-8');
+
+    let md = `# AniList 與 bangumi-data 尚未連結之動畫清單\n\n本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 ${finalAnimeList.length} 部動畫中，尚未能與 \`bangumi-data\` 字典檔建立對應連結的 **${unlinkedAnimeList.length} 部**動畫條目。\n\n> [!NOTE]\n> 這些未連結的條目絕大多數為 **2025/2026 年之後播映的未來新番、續作企劃、OVA、特輯或短期宣傳片**。由於 \`bangumi-data\` 開源社區主要收錄已開播或當季之正片，對於尚未放送的企劃尚未建檔或標註 AniList ID，因此屬於正常現象。\n\n| # | AniList ID | 繁體中文譯名 | 日文原名 | 年份季節 |\n|---|------------|------------|---------|---------|\n`;
+    unlinkedAnimeList.forEach((u, idx) => {
+      md += `| ${idx + 1} | \`${u.id}\` | ${u.titleZh || ''} | ${u.titleJa || ''} | ${u.yearSeason || ''} |\n`;
+    });
+    fs.writeFileSync(mdPath, md, 'utf-8');
+    summaryContent += `🔗 未對應 bangumi_data 動畫數量：${unlinkedAnimeList.length} 部 (完整清單已隨信附帶)\n`;
   }
   fs.writeFileSync(summaryPath, summaryContent + '\n', 'utf-8');
 

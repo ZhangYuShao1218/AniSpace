@@ -366,7 +366,8 @@
   },
   "anilist-145560": {
     "source": "manual",
-    "titleZh": "平凡職業造就世界最強"
+    "titleZh": "平凡職業造就世界最強",
+    "show": false
   },
   "anilist-105200": {
     "source": "manual",
@@ -2083,7 +2084,9 @@
     "source": "ai"
   },
   "anilist-111729": {
-    "titleZh": "平凡職業成就世界最強"
+    "titleZh": "平凡職業成就世界最強",
+    "show": false,
+    "source": "manual"
   },
   "anilist-111733": {
     "titleZh": "異世界",
@@ -2241,7 +2244,8 @@
   },
   "anilist-143846": {
     "titleZh": "平凡職業造就世界最強 第二季 未播出集數",
-    "source": "ai"
+    "source": "manual",
+    "show": false
   },
   "anilist-145608": {
     "titleZh": "賽馬娘 Pretty Derby 1週年紀念特別動畫",
@@ -2257,7 +2261,14 @@
   },
   "anilist-146638": {
     "titleZh": "拳願阿修羅 第二季",
-    "source": "ai"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "url": "https://www.netflix.com/tw/title/80992228"
+      }
+    ]
   },
   "anilist-146921": {
     "titleZh": "平凡職業造就世界最強 虛幻的冒險與奇蹟的邂逅",
@@ -2313,7 +2324,8 @@
   },
   "anilist-165253": {
     "titleZh": "孤獨搖滾！ Re:",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "劇場総集編ぼっち・ざ・ろっく！ Re:"
   },
   "anilist-165356": {
     "titleZh": "終末的女武神Ⅱ 後篇",
@@ -2341,7 +2353,8 @@
   },
   "anilist-171099": {
     "titleZh": "孤獨搖滾！ Re:Re:",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "劇場総集編ぼっち・ざ・ろっく！ Re:Re:"
   },
   "anilist-172192": {
     "titleZh": "歸還者的魔法特別優異 第二季",
@@ -4578,5 +4591,27 @@
   },
   "anilist-170": {
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170-cmD8A0vZsp6g.jpg"
+  },
+  "anilist-100891": {
+    "extraStreamings": [
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "url": "https://www.netflix.com/tw/title/80992228"
+      }
+    ],
+    "source": "manual"
+  },
+  "anilist-200929": {
+    "titleZh": "藥師少女的獨語 亡妃的秘寶",
+    "source": "manual"
+  },
+  "anilist-204466": {
+    "titleZh": "少女怪獸焦糖戀心",
+    "source": "manual"
+  },
+  "anilist-111048": {
+    "titleZh": "拳願阿修羅 後篇",
+    "source": "manual"
   }
 }

@@ -312,15 +312,15 @@
     "yearSeason": "2026 秋"
   },
   {
+    "id": "anilist-178972",
+    "titleZh": "GROTESQQQUE -怪誕-",
+    "titleJa": "GROTESQQQUE -グロテスク-",
+    "yearSeason": "2026 秋"
+  },
+  {
     "id": "anilist-133007",
     "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯之迴天〉",
     "titleJa": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-    "yearSeason": "2026 夏"
-  },
-  {
-    "id": "anilist-194829",
-    "titleZh": "鄉下大叔成為劍聖 第二季",
-    "titleJa": "片田舎のおっさん、剣聖になるII",
     "yearSeason": "2026 夏"
   },
   {
@@ -408,22 +408,10 @@
     "yearSeason": "2024 夏"
   },
   {
-    "id": "anilist-130590",
-    "titleZh": "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～ Ⅱ 第二季",
-    "titleJa": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～ Ⅱ 2クール",
-    "yearSeason": "2024 春"
-  },
-  {
     "id": "anilist-170206",
     "titleZh": "史考特・皮爾格林 起飛",
     "titleJa": "スコット・ピルグリム テイクス・オフ",
     "yearSeason": "2023 秋"
-  },
-  {
-    "id": "anilist-165356",
-    "titleZh": "終末的女武神Ⅱ 後篇",
-    "titleJa": "終末のワルキューレⅡ 後編",
-    "yearSeason": "2023 夏"
   },
   {
     "id": "anilist-146638",
@@ -456,12 +444,6 @@
     "yearSeason": "2023 春"
   },
   {
-    "id": "anilist-138056",
-    "titleZh": "終末的女武神Ⅱ",
-    "titleJa": "終末のワルキューレⅡ",
-    "yearSeason": "2023 冬"
-  },
-  {
     "id": "anilist-154982",
     "titleZh": "極道主夫 第二季",
     "titleJa": "極主夫道 シーズン2",
@@ -490,36 +472,6 @@
     "titleZh": "勇者辭職不幹了 研修旅行別迷失了目標",
     "titleJa": "勇者、辞めます 研修旅行は目的を見失うな",
     "yearSeason": "2022 夏"
-  },
-  {
-    "id": "anilist-153906",
-    "titleZh": "Tekken: Bloodline",
-    "titleJa": "Tekken: Bloodline",
-    "yearSeason": "2022 夏"
-  },
-  {
-    "id": "anilist-138700",
-    "titleZh": "憂國的莫里亞蒂 OVA",
-    "titleJa": "憂国のモリアーティ OVA",
-    "yearSeason": "2022 春"
-  },
-  {
-    "id": "anilist-133891",
-    "titleZh": "Love Live! 虹咲學園學園偶像同好會 第二季",
-    "titleJa": "ラブライブ！虹ヶ咲学園スクールアイドル同好会 2",
-    "yearSeason": "2022 春"
-  },
-  {
-    "id": "anilist-133124",
-    "titleZh": "劇場版 Free!–the Final Stroke– 後編",
-    "titleJa": "劇場版 Free!–the Final Stroke– 後編",
-    "yearSeason": "2022 春"
-  },
-  {
-    "id": "anilist-131681",
-    "titleZh": "進擊的巨人 The Final Season 後篇",
-    "titleJa": "進撃の巨人 The Final Season Part 2",
-    "yearSeason": "2022 冬"
   },
   {
     "id": "anilist-141534",
@@ -588,12 +540,6 @@
     "yearSeason": "2021 秋"
   },
   {
-    "id": "anilist-127619",
-    "titleZh": "衝吧烈子 第四季",
-    "titleJa": "アグレッシブ烈子 シーズン4",
-    "yearSeason": "2021 秋"
-  },
-  {
     "id": "anilist-165557",
     "titleZh": "輝夜姬想讓人告白-Ultra Romantic- 第三期",
     "titleJa": "第３期『かぐや様は告らせたい-ウルトラロマンティック-』 ／ ティザーPV 「石上優は語りたい」",
@@ -604,12 +550,6 @@
     "titleZh": "Pokémon Evolutions",
     "titleJa": "Pokémon Evolutions",
     "yearSeason": "2021 秋"
-  },
-  {
-    "id": "anilist-107203",
-    "titleZh": "劇場版 Free!–the Final Stroke– 前編",
-    "titleJa": "劇場版 Free!–the Final Stroke– 前編",
-    "yearSeason": "2021 夏"
   },
   {
     "id": "anilist-136263",
@@ -652,12 +592,6 @@
     "titleZh": "PUPARIA",
     "titleJa": "PUPARIA",
     "yearSeason": "2020 秋"
-  },
-  {
-    "id": "anilist-110857",
-    "titleZh": "衝吧烈子 第三季",
-    "titleJa": "アグレッシブ烈子 シーズン3",
-    "yearSeason": "2020 夏"
   },
   {
     "id": "anilist-126661",
@@ -762,18 +696,6 @@
     "yearSeason": "2020 春"
   },
   {
-    "id": "anilist-118125",
-    "titleZh": "邪神與廚二病少女’ 千歲篇",
-    "titleJa": "邪神ちゃんドロップキック’ 千歳編",
-    "yearSeason": "2020 春"
-  },
-  {
-    "id": "anilist-99807",
-    "titleZh": "22/7",
-    "titleJa": "22/7 （ナナブンノニジュウニ）",
-    "yearSeason": "2020 冬"
-  },
-  {
     "id": "anilist-145560",
     "titleZh": "平凡職業造就世界最強",
     "titleJa": "ありふれた職業で世界最強 プロローグ",
@@ -796,12 +718,6 @@
     "titleZh": "我們真的學不來！OVA",
     "titleJa": "ぼくたちは勉強ができない OVAs",
     "yearSeason": "2019 秋"
-  },
-  {
-    "id": "anilist-106918",
-    "titleZh": "君主‧埃爾梅羅二世事件簿 {魔眼蒐集列車} Grace note",
-    "titleJa": "ロード・エルメロイⅡ世の事件簿 {魔眼蒐集列車} Grace note",
-    "yearSeason": "2019 夏"
   },
   {
     "id": "anilist-110851",
@@ -882,12 +798,6 @@
     "yearSeason": "2019 冬"
   },
   {
-    "id": "anilist-102649",
-    "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 - 罪與罰",
-    "titleJa": "PSYCHO-PASS サイコパス Sinners of the System Case.1 - 罪と罰",
-    "yearSeason": "2019 冬"
-  },
-  {
     "id": "anilist-104990",
     "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.3 - 恩仇的彼方____",
     "titleJa": "PSYCHO-PASS サイコパス Sinners of the System Case.3 - 恩讐の彼方に____",
@@ -960,12 +870,6 @@
     "yearSeason": "2018 秋"
   },
   {
-    "id": "anilist-106169",
-    "titleZh": "PERSONA5 the Animation: Dark Sun…",
-    "titleJa": "PERSONA5 the Animation: Dark Sun…",
-    "yearSeason": "2018 秋"
-  },
-  {
     "id": "anilist-103237",
     "titleZh": "賽馬娘「BNW的誓言」",
     "titleJa": "ウマ娘「BNWの誓い」",
@@ -1002,27 +906,9 @@
     "yearSeason": "2018 春"
   },
   {
-    "id": "anilist-101812",
-    "titleZh": "Code Geass 反叛的魯路修Ⅱ 叛道",
-    "titleJa": "コードギアス 反逆のルルーシュⅡ 叛道",
-    "yearSeason": "2018 冬"
-  },
-  {
-    "id": "anilist-20791",
-    "titleZh": "Fate/stay night[Heaven's Feel] Ⅰ.presage flower",
-    "titleJa": "Fate/stay night[Heaven's Feel] Ⅰ.presage flower",
-    "yearSeason": "2017 秋"
-  },
-  {
     "id": "anilist-100684",
     "titleZh": "網路勝利組 OVA",
     "titleJa": "ネト充のススメ OVA",
-    "yearSeason": "2017 秋"
-  },
-  {
-    "id": "anilist-101811",
-    "titleZh": "Code Geass 反叛的魯路修Ⅰ 興道",
-    "titleJa": "コードギアス 反逆のルルーシュⅠ 興道",
     "yearSeason": "2017 秋"
   },
   {
@@ -1071,12 +957,6 @@
     "id": "anilist-21791",
     "titleZh": "文豪Stray Dogs 『獨自前行』",
     "titleJa": "文豪ストレイドッグス 『独り歩む』;",
-    "yearSeason": "2017 夏"
-  },
-  {
-    "id": "anilist-99302",
-    "titleZh": "ONE PIECE 航海王 東海篇：魯夫與4名夥伴的大冒險！！",
-    "titleJa": "ONE PIECE エピソードオブ東の海〜ルフィと4人の仲間の大冒険!!〜",
     "yearSeason": "2017 夏"
   },
   {
@@ -1146,12 +1026,6 @@
     "yearSeason": "2017 春"
   },
   {
-    "id": "anilist-98663",
-    "titleZh": "甲鐵城的卡巴內裡 總集篇｛後篇｝燃燒的生命",
-    "titleJa": "甲鉄城のカバネリ 総集編｛後編｝燃える命",
-    "yearSeason": "2017 冬"
-  },
-  {
     "id": "anilist-97672",
     "titleZh": "槍彈辯駁３-The End of 希望峰學園-希望篇",
     "titleJa": "ダンガンロンパ３-The End of 希望ヶ峰学園-希望編",
@@ -1176,12 +1050,6 @@
     "yearSeason": "2016 秋"
   },
   {
-    "id": "anilist-98662",
-    "titleZh": "甲鉄城のカバネリ 総集編｛前編｝集う光",
-    "titleJa": "甲鉄城のカバネリ 総集編｛前編｝集う光",
-    "yearSeason": "2016 秋"
-  },
-  {
     "id": "anilist-21862",
     "titleZh": "在下坂本，有何貴幹？ 我是坂本，過去式？",
     "titleJa": "坂本ですが? 坂本でした?",
@@ -1191,12 +1059,6 @@
     "id": "anilist-21579",
     "titleZh": "慕留人 -火影忍者劇場版- 鳴人成為火影的日子",
     "titleJa": "BORUTO -NARUTO THE MOVIE- ナルトが火影になった日",
-    "yearSeason": "2016 夏"
-  },
-  {
-    "id": "anilist-21732",
-    "titleZh": "planetarian～小小的星之夢～",
-    "titleJa": "planetarian～ちいさなほしのゆめ～",
     "yearSeason": "2016 夏"
   },
   {
@@ -1260,24 +1122,6 @@
     "yearSeason": "2016 冬"
   },
   {
-    "id": "anilist-21853",
-    "titleZh": "出包王女 Darkness 2nd",
-    "titleJa": "To LOVEる -とらぶる- ダークネス2nd",
-    "yearSeason": "2016 冬"
-  },
-  {
-    "id": "anilist-21178",
-    "titleZh": "Code Geass 亡國的阿基德 最終章：獻給所愛之人",
-    "titleJa": "コードギアス 亡国のアキト 最終章 愛シキモノタチヘ",
-    "yearSeason": "2016 冬"
-  },
-  {
-    "id": "anilist-119947",
-    "titleZh": "偽戀: OAD",
-    "titleJa": "ニセコイ: OAD",
-    "yearSeason": "2016 冬"
-  },
-  {
     "id": "anilist-21765",
     "titleZh": "終結的熾天使 名古屋決戰篇：「永不結束的熾天使 名古屋決戰篇」",
     "titleJa": "終わりのセラフ 名古屋決戦編 「終わらないセラフ名古屋決戦編」",
@@ -1314,12 +1158,6 @@
     "yearSeason": "2015 秋"
   },
   {
-    "id": "anilist-21326",
-    "titleZh": "東京喰種 Tokyo Ghoul 【PINTO】",
-    "titleJa": "東京喰種トーキョーグール【PINTO】",
-    "yearSeason": "2015 秋"
-  },
-  {
     "id": "anilist-21318",
     "titleZh": "Fate/stay night [Unlimited Blade Works] 第二季 - sunny day",
     "titleJa": "Fate/stay night [Unlimited Blade Works] 2ndシーズン - sunny day",
@@ -1329,18 +1167,6 @@
     "id": "anilist-21573",
     "titleZh": "惡魔高校D×D BorN：不會復活的不死鳥",
     "titleJa": "ハイスクールD×D BorN 蘇らない不死鳥",
-    "yearSeason": "2015 秋"
-  },
-  {
-    "id": "anilist-21348",
-    "titleZh": "排球少年!! VS赤點",
-    "titleJa": "ハイキュー!! VS赤点",
-    "yearSeason": "2015 秋"
-  },
-  {
-    "id": "anilist-21852",
-    "titleZh": "出包王女 Darkness 2nd (OVA特別篇)",
-    "titleJa": "To LOVEる -とらぶる- ダークネス2nd",
     "yearSeason": "2015 秋"
   },
   {
@@ -1416,21 +1242,9 @@
     "yearSeason": "2015 春"
   },
   {
-    "id": "anilist-21008",
-    "titleZh": "蟲師 特別篇「鈴之雫」",
-    "titleJa": "蟲師 特別編「鈴の雫」",
-    "yearSeason": "2015 春"
-  },
-  {
     "id": "anilist-21077",
     "titleZh": "甘城輝煌樂園「沒有悠哉的空閒！」",
     "titleJa": "甘城ブリリアントパーク 「のんびりしている暇がない!」",
-    "yearSeason": "2015 春"
-  },
-  {
-    "id": "anilist-20692",
-    "titleZh": "劇場版 進擊的巨人 後篇～自由之翼～",
-    "titleJa": "劇場版「進撃の巨人」後編～自由の翼～",
     "yearSeason": "2015 春"
   },
   {
@@ -1536,12 +1350,6 @@
     "yearSeason": "2014 秋"
   },
   {
-    "id": "anilist-20691",
-    "titleZh": "劇場版 進擊的巨人 前篇～紅蓮之弓矢～",
-    "titleJa": "劇場版「進撃の巨人」前編～紅蓮の弓矢～",
-    "yearSeason": "2014 秋"
-  },
-  {
     "id": "anilist-20453",
     "titleZh": "我不受歡迎，怎麼想都是你們的錯！ 未播映第13話",
     "titleJa": "私がモテないのはどう考えてもお前らが悪い! 未放送第13話",
@@ -1632,12 +1440,6 @@
     "yearSeason": "2014 春"
   },
   {
-    "id": "anilist-19193",
-    "titleZh": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:3 Ghost Tears",
-    "titleJa": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:3 Ghost Tears",
-    "yearSeason": "2014 春"
-  },
-  {
     "id": "anilist-20603",
     "titleZh": "黑子的籃球 「要不要再來一次？」",
     "titleJa": "黒子のバスケ 「もう一回やりませんか」",
@@ -1659,12 +1461,6 @@
     "id": "anilist-20531",
     "titleZh": "境界的彼方 迷你劇場",
     "titleJa": "境界の彼方 ミニ劇場",
-    "yearSeason": "2014 冬"
-  },
-  {
-    "id": "anilist-20687",
-    "titleZh": "未確認進行式 鴨肉有種綠色的味道呢。",
-    "titleJa": "未確認で進行形 鴨肉って緑っぽい味がするのね。",
     "yearSeason": "2014 冬"
   },
   {
@@ -1776,12 +1572,6 @@
     "yearSeason": "2013 夏"
   },
   {
-    "id": "anilist-17187",
-    "titleZh": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:1 Ghost Pain",
-    "titleJa": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:1 Ghost Pain",
-    "yearSeason": "2013 夏"
-  },
-  {
     "id": "anilist-19391",
     "titleZh": "「進擊的巨人」Q版角色劇場「飛吧！訓練兵團」",
     "titleJa": "「進撃の巨人」ちみキャラ劇場\"とんでけ! 訓練兵団\"",
@@ -1833,12 +1623,6 @@
     "id": "anilist-17879",
     "titleZh": "玉子市場 扁扁動畫",
     "titleJa": "たまこまーけっと ぺったんこアニメ",
-    "yearSeason": "2013 春"
-  },
-  {
-    "id": "anilist-17397",
-    "titleZh": "獨眼巨人少女賽普～",
-    "titleJa": "サイクロプス少女さいぷ～",
     "yearSeason": "2013 春"
   },
   {
@@ -1902,12 +1686,6 @@
     "yearSeason": "2013 冬"
   },
   {
-    "id": "anilist-15811",
-    "titleZh": "少女與戰車",
-    "titleJa": "ガールズ&パンツァー",
-    "yearSeason": "2013 冬"
-  },
-  {
     "id": "anilist-15881",
     "titleZh": "就算是哥哥，有愛就沒問題了，對吧 特別篇",
     "titleJa": "お兄ちゃんだけど愛さえあれば関係ないよねっ 特別",
@@ -1953,18 +1731,6 @@
     "id": "anilist-16001",
     "titleZh": "心靈鏈環 隨機之路",
     "titleJa": "ココロコネクト ミチランダム",
-    "yearSeason": "2012 秋"
-  },
-  {
-    "id": "anilist-11977",
-    "titleZh": "劇場版 魔法少女小圓 ［前篇］起始的物語",
-    "titleJa": "劇場版 魔法少女まどか☆マギカ 始まりの物語",
-    "yearSeason": "2012 秋"
-  },
-  {
-    "id": "anilist-11979",
-    "titleZh": "劇場版 魔法少女小圓 ［後篇］永遠的物語",
-    "titleJa": "劇場版 魔法少女まどか☆マギカ 永遠の物語",
     "yearSeason": "2012 秋"
   },
   {
@@ -2082,12 +1848,6 @@
     "yearSeason": "2012 夏"
   },
   {
-    "id": "anilist-14073",
-    "titleZh": "蝦掰天文社 公立海老棲川高校天悶部",
-    "titleJa": "えびてん 公立海老栖川高校天悶部",
-    "yearSeason": "2012 夏"
-  },
-  {
     "id": "anilist-11741",
     "titleZh": "Fate/Zero 第二季",
     "titleJa": "Fate/Zero 2ndシーズン",
@@ -2115,12 +1875,6 @@
     "id": "anilist-11813",
     "titleZh": "史上最強弟子兼一 OVA",
     "titleJa": "史上最強の弟子 ケンイチ OVA",
-    "yearSeason": "2012 春"
-  },
-  {
-    "id": "anilist-11313",
-    "titleZh": "有你的小鎮 黃昏十字路口",
-    "titleJa": "君のいる町 黄昏交差点",
     "yearSeason": "2012 春"
   },
   {
@@ -2448,12 +2202,6 @@
     "yearSeason": "2011 冬"
   },
   {
-    "id": "anilist-10330",
-    "titleZh": "爆丸 戰鬥者 機甲旋風",
-    "titleJa": "爆丸 バトルブローラーズ メクタニウムサージ",
-    "yearSeason": "2011 冬"
-  },
-  {
     "id": "anilist-9724",
     "titleZh": "破刃之劍 死線之涯",
     "titleJa": "ブレイク ブレイド 死線ノ涯",
@@ -2481,12 +2229,6 @@
     "id": "anilist-10302",
     "titleZh": "寶可夢 鑽石&珍珠 特別篇",
     "titleJa": "ポケットモンスター ダイヤモンド・パール 特別編",
-    "yearSeason": "2011 冬"
-  },
-  {
-    "id": "anilist-10431",
-    "titleZh": "笨蛋、測驗、召喚獸～祭～",
-    "titleJa": "バカとテストと召喚獣 ～祭～",
     "yearSeason": "2011 冬"
   },
   {
@@ -2571,12 +2313,6 @@
     "id": "anilist-9202",
     "titleZh": "聖痕鍊金士 女帝的肖像",
     "titleJa": "聖痕のクェイサー 女帝の肖像",
-    "yearSeason": "2010 秋"
-  },
-  {
-    "id": "anilist-9563",
-    "titleZh": "向陽素描 × ☆☆☆",
-    "titleJa": "ひだまりスケッチ × ☆☆☆",
     "yearSeason": "2010 秋"
   },
   {
@@ -2724,12 +2460,6 @@
     "yearSeason": "2010 春"
   },
   {
-    "id": "anilist-8302",
-    "titleZh": "大小姐×執事！",
-    "titleJa": "れでぃ×ばと!",
-    "yearSeason": "2010 春"
-  },
-  {
     "id": "anilist-8728",
     "titleZh": "Code Geass 反叛的魯路修 奇蹟的生日 廣播劇",
     "titleJa": "コードギアス 反逆のルルーシュ キセキの誕生日 ピクチャードラマ",
@@ -2763,12 +2493,6 @@
     "id": "anilist-8609",
     "titleZh": "名偵探柯南 ～KID in TRAP ISLAND～",
     "titleJa": "名探偵コナン ～KID in TRAP ISLAND～",
-    "yearSeason": "2010 春"
-  },
-  {
-    "id": "anilist-8619",
-    "titleZh": "大小姐×執事！OVA",
-    "titleJa": "れでぃ×ばと!",
     "yearSeason": "2010 春"
   },
   {
@@ -2850,39 +2574,9 @@
     "yearSeason": "2010 冬"
   },
   {
-    "id": "anilist-8632",
-    "titleZh": "老鼠相撲",
-    "titleJa": "ちゅうずもう",
-    "yearSeason": "2010 冬"
-  },
-  {
     "id": "anilist-3674",
     "titleZh": "再見了，絕望先生 序～絕望少女撰集～",
     "titleJa": "さよなら絶望先生 序〜絶望少女撰集〜",
     "yearSeason": "2008 冬"
-  },
-  {
-    "id": "anilist-2652",
-    "titleZh": "哆啦A夢 我出生的日子",
-    "titleJa": "ドラえもん ぼくの生まれた日",
-    "yearSeason": "2002 冬"
-  },
-  {
-    "id": "anilist-188",
-    "titleZh": "御先祖賛江",
-    "titleJa": "御先祖賛江",
-    "yearSeason": "1998 秋"
-  },
-  {
-    "id": "anilist-531",
-    "titleZh": "美少女戰士R 電影版",
-    "titleJa": "美少女戦士セーラームーンＲ THE MOVIE",
-    "yearSeason": "1993 秋"
-  },
-  {
-    "id": "anilist-178972",
-    "titleZh": "GROTESQQQUE -怪誕-",
-    "titleJa": "GROTESQQQUE -グロテスク-",
-    "yearSeason": "2026 秋"
   }
 ]

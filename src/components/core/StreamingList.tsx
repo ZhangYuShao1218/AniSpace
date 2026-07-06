@@ -199,7 +199,7 @@ export const StreamingList: React.FC<StreamingListProps> = ({ streamings, anime 
       if (orderA !== orderB) return orderA - orderB;
     }
 
-    const regionPriority: Record<string, number> = { '台灣': 1, '台港澳': 2, '港澳台': 3, '亞洲': 4, '全球': 5, '港澳': 6, '日本': 7 };
+    const regionPriority: Record<string, number> = { '台灣': 1, '台港澳': 2, '港澳台': 3, '亞洲': 4, '全球': 5, '港澳': 6, '日本': 7, '中國': 8, '中國大陸': 8, '大陸': 8 };
     return (regionPriority[a.region] || 99) - (regionPriority[b.region] || 99);
   });
 

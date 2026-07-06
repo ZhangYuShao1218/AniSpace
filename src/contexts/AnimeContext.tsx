@@ -36,10 +36,13 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
     
     if (baseData && baseData.length > 0) {
       const mergedData = baseData.map((anime) => {
-        if (overrideData[anime.id]) {
-          return { ...anime, ...overrideData[anime.id] };
-        }
-        return anime;
+        const ov = overrideData[anime.id] || {};
+        const merged = { ...anime, ...ov };
+        const resolvedCover = ov.coverImage || anime.coverImageGamer || anime.coverImageAniList || anime.coverImage || '';
+        return {
+          ...merged,
+          coverImage: resolvedCover,
+        };
       });
       // Filter out anime marked with show: false
       return mergedData.filter((anime) => anime.show !== false && anime.show !== "false");
@@ -88,7 +91,12 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (cachedData) {
       try {
         const parsed = JSON.parse(cachedData);
-        if (Array.isArray(parsed)) return parsed;
+        if (Array.isArray(parsed)) {
+          return parsed.map((item: any) => ({
+            ...item,
+            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || ''
+          }));
+        }
       } catch (e) { }
     }
     return [];
@@ -158,8 +166,12 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       try {
         const parsed = JSON.parse(cachedData);
         if (parsed.length > 0) {
-          loadedData = parsed;
-          setRemoteAnime(parsed);
+          const resolved = parsed.map((item: any) => ({
+            ...item,
+            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || ''
+          }));
+          loadedData = resolved;
+          setRemoteAnime(resolved);
         }
       } catch (e) { }
     }

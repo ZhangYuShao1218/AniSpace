@@ -19,7 +19,7 @@ const STREAMING_SITE_NAMES = {
   bilibili_tw: { name: 'Bilibili', region: '台灣' },
   bilibili_hk_mo_tw: { name: 'Bilibili', region: '港澳台' },
   bilibili_hk_mo: { name: 'Bilibili', region: '港澳' },
-  bilibili: { name: 'Bilibili', region: '大陸' },
+  bilibili: { name: 'Bilibili', region: '中國' },
   iqiyi: { name: '愛奇藝', region: '亞洲' },
   netflix: { name: 'Netflix', region: '全球' },
   disneyplus: { name: 'Disney+', region: '全球' },
@@ -63,7 +63,7 @@ async function sync() {
   });
 
   let updatedCount = 0;
-  const regionPriority = { '台灣': 1, '港澳台': 2, '亞洲': 3, '全球': 4, '大陸': 5, '日本': 6 };
+  const regionPriority = { '台灣': 1, '港澳台': 2, '亞洲': 3, '全球': 4, '中國': 5, '中國大陸': 5, '大陸': 5, '日本': 6 };
 
   for (const anime of allAnime) {
     const aniListId = anime.id.replace('anilist-', '');

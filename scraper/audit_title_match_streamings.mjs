@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { matchBangumiItem } from './scraper_utils.mjs';
 
 const ANIME_DATA_PATH = path.join(process.cwd(), 'public', 'anime_data.json');
 const OVERRIDE_PATH = path.join(process.cwd(), 'public', 'custom_override.json');
@@ -24,7 +25,7 @@ const STREAMING_SITE_NAMES = {
   bilibili_tw: { name: 'Bilibili', region: '台灣' },
   bilibili_hk_mo_tw: { name: 'Bilibili', region: '台港澳' },
   bilibili_hk_mo: { name: 'Bilibili', region: '港澳' },
-  bilibili: { name: 'Bilibili', region: '大陸' },
+  bilibili: { name: 'Bilibili', region: '中國' },
   iqiyi: { name: '愛奇藝', region: '台灣' },
   kktv: { name: 'KKTV', region: '台灣' },
   linetv: { name: 'LINE TV', region: '台灣' },
@@ -88,17 +89,15 @@ async function runAudit() {
 
   for (const anime of animeData) {
     totalChecked++;
-    const shortId = anime.id.replace('anilist-', '');
-    const titleJa = anime.titleJa ? anime.titleJa.trim() : null;
-
-    const matchedId = bgmMap.get(shortId);
-    if (matchedId) {
+    const customOverride = customOverrides[anime.id] || customOverrides[anime.id.replace('anilist-', '')];
+    const matchedItem = matchBangumiItem(anime.id, anime.titleJa, customOverride, bgmMap, bgmTitleMap);
+    if (!matchedItem) continue;
+    if (bgmMap.has(anime.id.replace('anilist-', ''))) {
       matchedById++;
       continue;
     }
 
-    if (!titleJa) continue;
-    const matchedTitle = bgmTitleMap.get(titleJa);
+    const matchedTitle = matchedItem;
     if (!matchedTitle || !matchedTitle.sites || matchedTitle.sites.length === 0) {
       continue;
     }

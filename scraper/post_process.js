@@ -39,6 +39,7 @@ async function run() {
           overrideData[standardKey] = { ...oldVal, ...stdVal };
           if (oldVal.source === 'manual' || stdVal.source === 'manual') overrideData[standardKey].source = 'manual';
           else if (oldVal.source === 'gamer' || stdVal.source === 'gamer') overrideData[standardKey].source = 'gamer';
+          else if (oldVal.source === 'ai' || stdVal.source === 'ai') overrideData[standardKey].source = 'ai';
         }
         delete overrideData[key];
         overrideChanged = true;
@@ -61,8 +62,8 @@ async function run() {
       const ak = newItem.id.toString().startsWith('anilist-') ? newItem.id : `anilist-${newItem.id}`;
       if (oldItem && overrideData[ak]) {
         const override = overrideData[ak];
-        // 絕對尊重最高優先度 manual，如果是手動修改的設定，絕對不可清除或觸發任何異動與日誌
-        if (override.source === 'manual') {
+        // 絕對尊重最高優先度 manual 與次高優先度 gamer，如果是手動或巴哈官方譯名的設定，不進行自動清除
+        if (override.source === 'manual' || override.source === 'gamer') {
           continue;
         }
 

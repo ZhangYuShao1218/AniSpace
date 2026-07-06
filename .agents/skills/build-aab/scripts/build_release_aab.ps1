@@ -1,9 +1,9 @@
-# =====================================================================
+﻿# =====================================================================
 # AniSpace Android App Bundle (AAB) 自動化編譯腳本
 # =====================================================================
 
 $ErrorActionPreference = "Stop"
-$projectRoot = Get-Location
+$projectRoot = (Get-Location).Path
 
 Write-Host "🚀 [Step 1/4] 檢查並設定 JAVA_HOME 環境變數..." -ForegroundColor Cyan
 $jbrPath = "C:\Program Files\Android\Android Studio\jbr"
@@ -39,7 +39,7 @@ try {
     Pop-Location
 }
 
-$aabPath = "$projectRoot\android\app\build\outputs\bundle\release\app-release.aab"
+$aabPath = Join-Path $projectRoot "android\app\build\outputs\bundle\release\app-release.aab"
 if (Test-Path $aabPath) {
     $fileInfo = Get-Item $aabPath
     $sizeMb = [math]::Round($fileInfo.Length / 1MB, 2)

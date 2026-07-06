@@ -36,8 +36,24 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
     
     if (baseData && baseData.length > 0) {
       const mergedData = baseData.map((anime) => {
-        const ov = overrideData[anime.id] || {};
+        const ov: any = overrideData[anime.id] || {};
         const merged = { ...anime, ...ov };
+        
+        // 1. 翻譯優先序處理：先以 anime_data.json 為基底，檢查 custom_override 如果是 gamer/manual 直接呈現，若是 AI 則當 anime_data 翻譯為空才呈現 AI
+        let resolvedTitleZh = anime.titleZh || "";
+        if (ov.titleZh) {
+          if (ov.source === 'gamer' || ov.source === 'manual') {
+            resolvedTitleZh = ov.titleZh;
+          } else if (ov.source === 'ai') {
+            if (!anime.titleZh || anime.titleZh.trim() === "" || anime.titleZh === anime.titleJa) {
+              resolvedTitleZh = ov.titleZh;
+            }
+          } else {
+            // 相容未標註 source 的歷史手動覆蓋
+            resolvedTitleZh = ov.titleZh;
+          }
+        }
+
         const resolvedCover = ov.coverImage || anime.coverImageGamer || anime.coverImageAniList || anime.coverImage || '';
         
         const baseStreamings = ov.streamings || anime.streamings || [];
@@ -45,7 +61,7 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
         let combinedStreamings = baseStreamings;
         if (extraStreamings.length > 0) {
           const streamMap = new Map<string, any>();
-          baseStreamings.forEach((st) => streamMap.set(`${st.site}_${st.url}`, st));
+          baseStreamings.forEach((st: any) => streamMap.set(`${st.site}_${st.url}`, st));
           extraStreamings.forEach((st: any) => {
             const key = `${st.site}_${st.url}`;
             if (!streamMap.has(key)) {
@@ -57,6 +73,7 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
 
         return {
           ...merged,
+          titleZh: resolvedTitleZh,
           streamings: combinedStreamings,
           coverImage: resolvedCover,
         };

@@ -203,10 +203,10 @@ async function main() {
     const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
     if (res.ok) {
       const dataText = await res.text();
-      const bgmFilePath = path.join(process.cwd(), 'public', 'bangumi_data.json');
-      fs.writeFileSync(bgmFilePath, dataText, 'utf-8');
-      console.log(`💾 已將 bangumi-data 完整字典檔寫入本地: ${bgmFilePath}`);
       const data = JSON.parse(dataText);
+      const bgmFilePath = path.join(process.cwd(), 'public', 'bangumi_data.json');
+      fs.writeFileSync(bgmFilePath, JSON.stringify(data, null, 2), 'utf-8');
+      console.log(`💾 已將 bangumi-data 完整字典檔寫入本地: ${bgmFilePath}`);
       bgmSiteMeta = data.siteMeta || {};
       (data.items || []).forEach(item => {
         const aniListSite = item.sites?.find(s => s.site === 'aniList');

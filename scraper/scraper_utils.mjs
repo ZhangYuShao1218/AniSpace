@@ -1,3 +1,6 @@
+import fs from 'fs';
+import path from 'path';
+import { GoogleGenAI } from '@google/genai';
 import * as cheerio from 'cheerio';
 
 const axios = {
@@ -349,6 +352,8 @@ export function normalizeAndMergeStreamings(streamings) {
   return Array.from(mergedMap.values()).sort((a, b) => (regionPriority[a.region] || 99) - (regionPriority[b.region] || 99));
 }
 
+export const aiMatchedRecords = [];
+
 /**
  * 三階段精確對齊 AniList 項目與 bangumi-data 項目/網址：
  * A. AniList ID 精確對照
@@ -390,6 +395,82 @@ export function matchBangumiItem(aniListId, titleJa, customOverride, bgmIdMap, b
 
   return null;
 }
+
+/**
+ * AI 正規化標題批次對照任務：
+ * 將所有經歷過 A/B/C 三階後依然未對應到 bangumi-data 的動畫清單，
+ * 整理完後在一次 Gemini AI 對話中執行整個清單比對。
+ */
+export async function runAiBangumiTitleMatch(unlinkedList, bgmTitleMap) {
+  if (!unlinkedList || unlinkedList.length === 0 || !bgmTitleMap || bgmTitleMap.size === 0) {
+    return [];
+  }
+  if (!process.env.GEMINI_API_KEY) {
+    console.log('⚠️ 未偵測到 GEMINI_API_KEY，略過 AI 正規化標題批次對照。');
+    return [];
+  }
+
+  console.log(`\n🤖 啟動 AI 正規化標題批次對照任務：針對 ${unlinkedList.length} 部無對應動畫，在一次對話中比對字典...`);
+  
+  const dictionaryTitles = [];
+  for (const [title, item] of bgmTitleMap.entries()) {
+    const bgmId = item?.id || (item?.sites && item.sites.find(s => s.site === 'aniList')?.id) || 'N/A';
+    dictionaryTitles.push({ title, id: bgmId });
+  }
+
+  const promptPath = path.join(process.cwd(), 'scraper', 'ai_bangumi_match_prompt.md');
+  if (!fs.existsSync(promptPath)) {
+    console.error('❌ 找不到提示詞檔案:', promptPath);
+    return [];
+  }
+  const promptText = fs.readFileSync(promptPath, 'utf-8');
+
+  try {
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    const payload = {
+      unlinkedList: unlinkedList.map(u => ({ id: u.id, titleJa: u.titleJa })),
+      dictionaryTitles: dictionaryTitles
+    };
+
+    let response;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        response = await ai.models.generateContent({
+          model: 'gemini-3.5-flash',
+          contents: `${promptText}\n\n輸入清單資料 (JSON)：\n${JSON.stringify(payload)}`
+        });
+        break;
+      } catch (apiErr) {
+        if (attempt === 3) throw apiErr;
+        console.warn(`⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt ${attempt}/3)，等待 3 秒後重試...`);
+        await new Promise(r => setTimeout(r, 3000));
+      }
+    }
+
+    const rawAiText = (typeof response.text === 'function' ? response.text() : response.text) || '';
+    const aiText = rawAiText.replace(/```json/g, '').replace(/```/g, '').trim();
+    const matchedResults = JSON.parse(aiText);
+
+    if (Array.isArray(matchedResults)) {
+      matchedResults.forEach(res => {
+        if (res && res.id && res.matchedBgmTitle && !aiMatchedRecords.some(r => r.id === res.id)) {
+          aiMatchedRecords.push({
+            id: res.id,
+            titleJa: res.titleJa || '',
+            matchedBgmTitle: res.matchedBgmTitle,
+            bgmId: res.bgmId || 'N/A'
+          });
+          console.log(`🤖 [AI正規化標題對照成功] [${res.id}] "${res.titleJa}" ➜ 字典:"${res.matchedBgmTitle}" (BGM ID: ${res.bgmId})`);
+        }
+      });
+      return matchedResults;
+    }
+  } catch (err) {
+    console.error('❌ AI 正規化標題批次對照任務執行失敗:', err.message);
+  }
+  return [];
+}
+
 
 
 

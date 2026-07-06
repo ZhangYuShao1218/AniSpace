@@ -2315,8 +2315,8 @@
     "source": "manual"
   },
   "anilist-163144": {
-    "titleZh": "TRIGUN STARGAZE",
-    "source": "manual"
+    "titleZh": "槍神 STARGAZE",
+    "source": "ai"
   },
   "anilist-165056": {
     "titleZh": "海盜戰記 第二季 Same old story",
@@ -4613,5 +4613,13 @@
   "anilist-111048": {
     "titleZh": "拳願阿修羅 後篇",
     "source": "manual"
+  },
+  "anilist-178972": {
+    "titleZh": "GROTESQQQUE -怪誕-",
+    "source": "ai"
+  },
+  "anilist-107202": {
+    "titleZh": "劇場版 FREE! 男子游泳部 -Road to the World-夢",
+    "source": "gamer"
   }
 }

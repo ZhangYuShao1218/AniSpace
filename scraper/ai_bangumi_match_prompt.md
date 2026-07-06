@@ -14,10 +14,16 @@
    - **文字與副標題嚴格禁止不一致**！除了上述全半形/空格/標點外，日文假名、漢字、英文字母必須100%相符。若字典標題多了或少了任何片假名、漢字或副標題，嚴禁配對！
    - 若無法在【字典標題庫】中找到符合上述規則的標題，請直接跳過該動畫，**寧缺勿濫，嚴禁猜測或模糊比對**！
 
+3. **🚨 字典標題原封不動複製鐵律 (MUST COPY EXACTLY FROM DICTIONARY)**：
+   - 當你在 `dictionaryTitles` 找到符合規則的字典項目時，你的輸出欄位 `matchedBgmTitle` 必須 **100% 一字不漏地原封不動複製該字典項目的 `"title"`**（包含所有括號、標點、空格、全半形），嚴禁自行修改、嚴禁去除或增減任何字元！
+   - 你的輸出欄位 `bgmId` 必須 **100% 原封不動地複製該字典項目的 `"bgmId"`**！
+   - **嚴禁將待比對動畫的 `titleJa` 填入 `matchedBgmTitle`**！`matchedBgmTitle` 必須是 `dictionaryTitles` 裡面確實存在的那個字串！
+   - **嚴禁將待比對動畫的 `id` (如 anilist-xxx) 填入 `bgmId`**！`bgmId` 必須來自字典！
+
 ## 輸入格式說明
 你會收到兩個 JSON 資料：
 1. `unlinkedList`: 待比對的動畫清單（包含 `id`, `titleJa` 日文原名）。
-2. `dictionaryTitles`: bangumi-data 字典裡所有日文標題清單與對應的 BGM ID。
+2. `dictionaryTitles`: bangumi-data 字典裡所有日文標題清單，每個項目包含 `title` (字典正確日文標題) 與 `bgmId` (Bangumi 專屬 ID)。
 
 ## 輸出格式要求
 請純粹回傳一個 JSON Array，包含所有成功配對到的項目（嚴禁包含 Markdown 註解或 ```json 包覆以外的多餘文字，請直接回傳合法的 JSON 字串）：
@@ -26,8 +32,8 @@
   {
     "id": "anilist-XXXXX",
     "titleJa": "待比對動畫的原始日文標題",
-    "matchedBgmTitle": "字典庫中完全符合規則的對照日文標題",
-    "bgmId": "對應到的 BGM ID"
+    "matchedBgmTitle": "從 dictionaryTitles 中 100% 原封不動複製過來的字典 title",
+    "bgmId": "從 dictionaryTitles 中 100% 原封不動複製過來的 bgmId"
   }
 ]
 ```

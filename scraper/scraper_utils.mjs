@@ -299,7 +299,8 @@ export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
 }
 
 /**
- * Merge duplicate gamer streamings (gamer and gamer_hk) into a single unified platform.
+ * Merge duplicate gamer streamings (gamer and gamer_hk) into a single unified platform,
+ * and perform strict deduplication on all streaming sites to prevent double-linking.
  * @param {Array} streamings
  * @returns {Array}
  */
@@ -323,9 +324,29 @@ export function normalizeAndMergeStreamings(streamings) {
     }
   });
 
+  // 輔助函式：標準化 URL 以便比對（去除結尾斜線、部分 query tracking 參數）
+  const cleanUrl = (url) => {
+    if (!url) return '';
+    try {
+      let u = url.trim().replace(/\/+$/, ''); // 去除結尾斜線
+      if (u.includes('?')) {
+        // 若不是動畫瘋或 YouTube 播放清單，去除查詢參數避免因 spm_id 等 tracking 導致判定不同
+        if (!u.includes('gamer.com.tw') && !u.includes('youtube.com/playlist') && !u.includes('mikanani.me') && !u.includes('dmhy.org')) {
+          u = u.split('?')[0];
+        }
+      }
+      return u;
+    } catch(e) { return url; }
+  };
+
   streamings.forEach(st => {
     if (!st || !st.site) return;
-    const isGamer = st.site === 'gamer' || st.site === 'gamer_hk' || (st.name && st.name.includes('動畫瘋'));
+    const copy = { ...st };
+    if (copy.region === '中國大陸' || copy.region === '大陸') copy.region = '中國';
+    if (copy.site.startsWith('bilibili') || copy.name?.includes('哔哩哔哩') || copy.name?.toLowerCase().includes('bilibili')) {
+      copy.name = 'Bilibili';
+    }
+    const isGamer = copy.site === 'gamer' || copy.site === 'gamer_hk' || (copy.name && copy.name.includes('動畫瘋'));
     if (isGamer) {
       if (!mergedMap.has('gamer_merged')) {
         let region = '台港澳';
@@ -335,15 +356,23 @@ export function normalizeAndMergeStreamings(streamings) {
           site: 'gamer',
           name: '動畫瘋',
           region,
-          url: gamerUrl || st.url || ''
+          url: gamerUrl || copy.url || ''
         });
       }
     } else {
-      const key = `${st.site}_${st.url}`;
-      if (!mergedMap.has(key)) {
-        const copy = { ...st };
-        if (copy.region === '中國大陸' || copy.region === '大陸') copy.region = '中國';
-        mergedMap.set(key, copy);
+      // 🚨 嚴格去重防呆：對於非 bilibili 等多區域平台，同一 site 只保留最優先或區域最廣的一份
+      const isMultiRegionSite = copy.site.startsWith('bilibili') || copy.site.startsWith('muse_') || copy.site.startsWith('ani_one');
+      const dedupeKey = isMultiRegionSite ? `${copy.site}_${cleanUrl(copy.url)}` : copy.site;
+      
+      if (!mergedMap.has(dedupeKey)) {
+        mergedMap.set(dedupeKey, copy);
+      } else if (!isMultiRegionSite) {
+        // 若已存在相同 site，優先選擇區域是「台灣 / 台港澳」或 URL 更標準的項目覆蓋
+        const existing = mergedMap.get(dedupeKey);
+        const regionPriority = { '台灣': 1, '台港澳': 2, '港澳台': 3, '亞洲': 4, '全球': 5, '港澳': 6, '日本': 7, '中國': 8 };
+        if ((regionPriority[copy.region] || 99) < (regionPriority[existing.region] || 99)) {
+          mergedMap.set(dedupeKey, copy);
+        }
       }
     }
   });
@@ -355,9 +384,8 @@ export function normalizeAndMergeStreamings(streamings) {
 export const aiMatchedRecords = [];
 
 /**
- * 三階段精確對齊 AniList 項目與 bangumi-data 項目/網址：
+ * 兩階段精確物理對齊 AniList 項目與 bangumi-data 項目/網址（判斷是否有原生的 bangumi_data 對應資料）：
  * A. AniList ID 精確對照
- * B. 人工指定標題對照 (讀取 custom_override.json 中的 bangumiDataTitle 欄位與 bgmTitleMap 比對)
  * C. 100% 日文標題精確對照
  *
  * @param {string|number} aniListId 
@@ -377,14 +405,6 @@ export function matchBangumiItem(aniListId, titleJa, customOverride, bgmIdMap, b
     if (bgmIdMap.has(`anilist-${shortId}`)) return bgmIdMap.get(`anilist-${shortId}`);
   }
 
-  // B. 人工指定標題對照 (bangumiDataTitle)
-  if (customOverride && customOverride.bangumiDataTitle && bgmTitleMap) {
-    const manualTitle = customOverride.bangumiDataTitle.trim();
-    if (bgmTitleMap.has(manualTitle)) {
-      return bgmTitleMap.get(manualTitle);
-    }
-  }
-
   // C. 100% 日文標題精確對照
   if (titleJa && bgmTitleMap) {
     const cleanTitle = titleJa.trim();
@@ -397,79 +417,61 @@ export function matchBangumiItem(aniListId, titleJa, customOverride, bgmIdMap, b
 }
 
 /**
- * AI 正規化標題批次對照任務：
- * 將所有經歷過 A/B/C 三階後依然未對應到 bangumi-data 的動畫清單，
- * 整理完後在一次 Gemini AI 對話中執行整個清單比對。
+ * 純本地程式化標題正規化對齊演算法 (Pure Algorithmic Title Normalization Matcher)：
+ * 針對只允許「標點符號、空格、半形全形差異」的設定條件，
+ * 透過 Unicode 標準化 (NFKC) 與全符號移除進行高精度極速對照 (零 Token、秒殺)。
  */
-export async function runAiBangumiTitleMatch(unlinkedList, bgmTitleMap) {
-  if (!unlinkedList || unlinkedList.length === 0 || !bgmTitleMap || bgmTitleMap.size === 0) {
-    return [];
-  }
-  if (!process.env.GEMINI_API_KEY) {
-    console.log('⚠️ 未偵測到 GEMINI_API_KEY，略過 AI 正規化標題批次對照。');
-    return [];
-  }
+export async function runTitleNormalizationMatch(unlinkedList, bgmTitleMap) {
+  if (!unlinkedList || unlinkedList.length === 0 || !bgmTitleMap || bgmTitleMap.size === 0) return [];
 
-  console.log(`\n🤖 啟動 AI 正規化標題批次對照任務：針對 ${unlinkedList.length} 部無對應動畫，在一次對話中比對字典...`);
+  console.log(`\n⚡ 啟動本地程式化標題正規化對照引擎：針對 ${unlinkedList.length} 部無對應動畫，開始進行極速正規化比對...`);
   
-  const dictionaryTitles = [];
+  const validResults = [];
+
+  // 1. 本地演算法正規化核心：處理全半形、標點符號、空格與羅馬數字
+  const normalizeTitle = (str) => {
+    if (!str) return '';
+    return str
+      .normalize('NFKC') // Unicode 標準化：全形英數轉半形、半形假名轉全形、羅馬數字 (Ⅱ->II) 統一
+      .replace(/[\p{P}\p{S}\s]/gu, '') // 移除所有標點符號 (\p{P})、特殊符號/愛心/星號/中點 (\p{S}) 與空白 (\s)
+      .toLowerCase(); // 統一轉為小寫
+  };
+
+  // 2. 建立 Bangumi 字典的正規化索引 Map
+  const normalizedBgmMap = new Map();
   for (const [title, item] of bgmTitleMap.entries()) {
-    const bgmId = item?.id || (item?.sites && item.sites.find(s => s.site === 'aniList')?.id) || 'N/A';
-    dictionaryTitles.push({ title, id: bgmId });
+    const norm = normalizeTitle(title);
+    if (norm && !normalizedBgmMap.has(norm)) {
+      const bgmSite = item?.sites?.find(s => s.site === 'bangumi');
+      const bgmId = bgmSite?.id || (item?.sites && item.sites[0]?.id) || 'N/A';
+      normalizedBgmMap.set(norm, { title, bgmId });
+    }
   }
 
-  const promptPath = path.join(process.cwd(), 'scraper', 'ai_bangumi_match_prompt.md');
-  if (!fs.existsSync(promptPath)) {
-    console.error('❌ 找不到提示詞檔案:', promptPath);
-    return [];
-  }
-  const promptText = fs.readFileSync(promptPath, 'utf-8');
-
-  try {
-    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-    const payload = {
-      unlinkedList: unlinkedList.map(u => ({ id: u.id, titleJa: u.titleJa })),
-      dictionaryTitles: dictionaryTitles
-    };
-
-    let response;
-    for (let attempt = 1; attempt <= 3; attempt++) {
-      try {
-        response = await ai.models.generateContent({
-          model: 'gemini-3.5-flash',
-          contents: `${promptText}\n\n輸入清單資料 (JSON)：\n${JSON.stringify(payload)}`
+  // 3. 遍歷未對應動畫進行極速 Hash 比對
+  unlinkedList.forEach(u => {
+    const normJa = normalizeTitle(u.titleJa);
+    if (normJa && normalizedBgmMap.has(normJa)) {
+      const match = normalizedBgmMap.get(normJa);
+      if (!aiMatchedRecords.some(r => r.id === u.id)) {
+        aiMatchedRecords.push({
+          id: u.id,
+          titleJa: u.titleJa || '',
+          matchedBgmTitle: match.title,
+          bgmId: match.bgmId
         });
-        break;
-      } catch (apiErr) {
-        if (attempt === 3) throw apiErr;
-        console.warn(`⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt ${attempt}/3)，等待 3 秒後重試...`);
-        await new Promise(r => setTimeout(r, 3000));
+        console.log(`⚡ [正規化對照命中] [${u.id}] "${u.titleJa}" ➜ 字典:"${match.title}" (BGM ID: ${match.bgmId})`);
       }
+      validResults.push({ id: u.id, titleJa: u.titleJa, matchedBgmTitle: match.title, bgmId: match.bgmId });
     }
+  });
 
-    const rawAiText = (typeof response.text === 'function' ? response.text() : response.text) || '';
-    const aiText = rawAiText.replace(/```json/g, '').replace(/```/g, '').trim();
-    const matchedResults = JSON.parse(aiText);
-
-    if (Array.isArray(matchedResults)) {
-      matchedResults.forEach(res => {
-        if (res && res.id && res.matchedBgmTitle && !aiMatchedRecords.some(r => r.id === res.id)) {
-          aiMatchedRecords.push({
-            id: res.id,
-            titleJa: res.titleJa || '',
-            matchedBgmTitle: res.matchedBgmTitle,
-            bgmId: res.bgmId || 'N/A'
-          });
-          console.log(`🤖 [AI正規化標題對照成功] [${res.id}] "${res.titleJa}" ➜ 字典:"${res.matchedBgmTitle}" (BGM ID: ${res.bgmId})`);
-        }
-      });
-      return matchedResults;
-    }
-  } catch (err) {
-    console.error('❌ AI 正規化標題批次對照任務執行失敗:', err.message);
-  }
-  return [];
+  console.log(`✨ 本地程式化正規化對照執行完畢！共成功對齊 ${validResults.length} 部動畫 (耗時近乎 0 秒，零 Token 消耗)！\n`);
+  return validResults;
 }
+
+// 保持相容別名
+export const runAiBangumiTitleMatch = runTitleNormalizationMatch;
 
 
 

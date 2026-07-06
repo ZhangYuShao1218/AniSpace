@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
-import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings, matchBangumiItem, aiMatchedRecords, runAiBangumiTitleMatch } from './scraper_utils.mjs';
+import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings, matchBangumiItem, aiMatchedRecords, runTitleNormalizationMatch } from './scraper_utils.mjs';
 import { washGamerStreamings } from './wash_gamer_links.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
@@ -391,7 +391,7 @@ async function main() {
       const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
       const promptText = fs.readFileSync(path.join(process.cwd(), 'scraper', 'ai_translate_prompt.md'), 'utf-8');
       let response;
-      for (let attempt = 1; attempt <= 3; attempt++) {
+      for (let attempt = 1; attempt <= 5; attempt++) {
         try {
           response = await ai.models.generateContent({
             model: 'gemini-3.5-flash',
@@ -399,9 +399,21 @@ async function main() {
           });
           break;
         } catch (apiErr) {
-          if (attempt === 3) throw apiErr;
-          console.warn(`⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt ${attempt}/3)，等待 3 秒後重試...`);
-          await new Promise(r => setTimeout(r, 3000));
+          if (attempt === 5) throw apiErr;
+          let waitSeconds = 5;
+          const errStr = String(apiErr.message || '') + String(apiErr.status || '') + JSON.stringify(apiErr);
+          if (errStr.includes('429') || errStr.includes('RESOURCE_EXHAUSTED') || errStr.includes('quota')) {
+            const match = errStr.match(/retry in (\d+(\.\d+)?)s/i) || errStr.match(/retryDelay":"(\d+)s"/);
+            if (match && match[1]) {
+              waitSeconds = Math.ceil(parseFloat(match[1])) + 2;
+            } else {
+              waitSeconds = 42;
+            }
+            console.warn(`⚠️ 觸發 Gemini API 頻率或 Token 限制 (429)，將等待 ${waitSeconds} 秒後進行重試 (Attempt ${attempt}/5)...`);
+          } else {
+            console.warn(`⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt ${attempt}/5)，等待 5 秒後重試...`);
+          }
+          await new Promise(r => setTimeout(r, waitSeconds * 1000));
         }
       }
       const rawAiText = (typeof response.text === 'function' ? response.text() : response.text) || '';
@@ -456,111 +468,209 @@ async function main() {
     finalAnimeList = Array.from(mergedMap.values());
   }
 
-  // 為所有項目（包含舊有資料庫項目）自動補充 bangumi-data 授權連結 (支援 ID 與 100% 日文標題對應)
-  const unlinkedAnimeList = [];
+  // ==========================================
+  // 四階段對照與匯入架構 (Bangumi Data Integration)
+  // ==========================================
+  const bangumiMappingRecord = {};
+  const unlinkedForAI = [];
+
+  // 1 & 2. 判斷所有動畫是否有對應的 bangumi_data 資料，並將「所有動畫」有沒有對應資料記錄在一個額外的 json 中
   if (bgmMap.size > 0 || bgmTitleMap.size > 0) {
     finalAnimeList.forEach(item => {
       const aniListId = String(item.id).replace('anilist-', '');
       const customOverride = overrideData[item.id] || overrideData[aniListId];
+      // 判斷是否有原生物理對照資料 (優先序 A: AniList ID, 優先序 C: 100% 日文標題)
       const bgmItem = matchBangumiItem(aniListId, item.titleJa, customOverride, bgmMap, bgmTitleMap);
-      if (!bgmItem) {
-        unlinkedAnimeList.push({
-          id: item.id,
-          titleZh: item.titleZh,
-          titleJa: item.titleJa,
-          yearSeason: item.yearSeason
-        });
-      }
-      if ((!item.streamings || item.streamings.length === 0) && bgmItem) {
-        const streamings = [];
-        const blockedSites = customOverride?.blockedSites || [];
-        if (bgmItem.sites) {
-          bgmItem.sites.forEach(s => {
-            if (blockedSites.includes(s.site)) return;
-            const meta = bgmSiteMeta[s.site];
-            if (meta && (meta.type === 'onair' || s.site === 'gamer' || s.site === 'gamer_hk')) {
-              const urlTemplate = meta.urlTemplate || '';
-              const url = urlTemplate.replace('{{id}}', s.id) || s.url || '';
-              if (url) {
-                let region = '全球/日本';
-                if (meta.regions && meta.regions.includes('TW')) region = '台灣';
-                else if (meta.regions && meta.regions.includes('HK')) region = '港澳';
-                else if (meta.regions && meta.regions.includes('CN')) region = '中國';
-                streamings.push({ site: s.site, name: meta.title, region, url });
-              }
-            }
-          });
+      
+      if (bgmItem) {
+        let matchedType = 'C-ExactTitleJa';
+        if (bgmMap.has(aniListId) || bgmMap.has(`anilist-${aniListId}`)) {
+          matchedType = 'A-AniListID';
         }
-        if (streamings.length > 0) item.streamings = normalizeAndMergeStreamings(streamings);
-      }
-
-      // 支援 extraStreamings / extraStreaming 陣列相加
-      if (customOverride && (customOverride.extraStreamings || customOverride.extraStreaming)) {
-        const extra = customOverride.extraStreamings || customOverride.extraStreaming || [];
-        const base = item.streamings || [];
-        item.streamings = normalizeAndMergeStreamings([...base, ...extra]);
+        
+        const bgmSite = bgmItem.sites?.find(s => s.site === 'bangumi');
+        bangumiMappingRecord[item.id] = {
+          id: item.id,
+          titleZh: item.titleZh || '',
+          titleJa: item.titleJa || '',
+          yearSeason: item.yearSeason || '',
+          hasCorrespondingData: true,
+          matchedType,
+          matchedBgmTitle: bgmItem.title || '',
+          bgmId: bgmSite?.id || bgmItem.sites?.[0]?.id || 'N/A',
+          streamingsCount: (item.streamings || []).length
+        };
+      } else {
+        bangumiMappingRecord[item.id] = {
+          id: item.id,
+          titleZh: item.titleZh || '',
+          titleJa: item.titleJa || '',
+          yearSeason: item.yearSeason || '',
+          hasCorrespondingData: false,
+          matchedType: null,
+          matchedBgmTitle: null,
+          bgmId: null,
+          streamingsCount: (item.streamings || []).length
+        };
       }
     });
   }
 
-  if (unlinkedAnimeList.length > 0) {
-    const aiMatchedList = await runAiBangumiTitleMatch(unlinkedAnimeList, bgmTitleMap);
+  // 立即將紀錄寫入額外 JSON，作為後續 AI 查找與匯入基準
+  const mappingRecordPath = path.join(process.cwd(), 'public', 'bangumi_mapping_record.json');
+  fs.writeFileSync(mappingRecordPath, JSON.stringify(bangumiMappingRecord, null, 2), 'utf-8');
+  console.log(`✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (${Object.keys(bangumiMappingRecord).length} 筆) 寫入額外 JSON: public/bangumi_mapping_record.json`);
+
+  // 3. 根據此額外 json 統一按照原本流程 進行本地程式化標題正規化查找 (此步驟成功的會記錄在 bangumiDataTitle)
+  Object.values(bangumiMappingRecord).forEach(rec => {
+    if (!rec.hasCorrespondingData) {
+      const ak = rec.id.toString().startsWith('anilist-') ? rec.id : `anilist-${rec.id}`;
+      const customOverride = overrideData[ak] || overrideData[rec.id];
+      const existingBgmTitle = customOverride?.bangumiDataTitle;
+      // 如果還沒有有效的 bangumiDataTitle，才列入正規化查找清單
+      if (!existingBgmTitle || !bgmTitleMap.has(existingBgmTitle.trim())) {
+        unlinkedForAI.push({
+          id: rec.id,
+          titleZh: rec.titleZh,
+          titleJa: rec.titleJa,
+          yearSeason: rec.yearSeason
+        });
+      }
+    }
+  });
+
+  if (unlinkedForAI.length > 0) {
+    const aiMatchedList = await runTitleNormalizationMatch(unlinkedForAI, bgmTitleMap);
     let overrideUpdated = false;
     if (aiMatchedList && aiMatchedList.length > 0) {
       aiMatchedList.forEach(res => {
         if (!res || !res.id || !res.matchedBgmTitle) return;
-        const targetAnime = finalAnimeList.find(a => a.id === res.id || a.id === `anilist-${res.id}`);
-        const matchedBgmItem = bgmTitleMap.get(res.matchedBgmTitle);
-        
-        // 1. 自動補充 streamings
-        if (targetAnime && (!targetAnime.streamings || targetAnime.streamings.length === 0) && matchedBgmItem) {
-          const streamings = [];
-          const blockedSites = overrideData[targetAnime.id]?.blockedSites || [];
-          if (matchedBgmItem.sites) {
-            matchedBgmItem.sites.forEach(s => {
-              if (blockedSites.includes(s.site)) return;
-              const meta = bgmSiteMeta[s.site];
-              if (meta && (meta.type === 'onair' || s.site === 'gamer' || s.site === 'gamer_hk')) {
-                const urlTemplate = meta.urlTemplate || '';
-                const url = urlTemplate.replace('{{id}}', s.id) || s.url || '';
-                if (url) {
-                  let region = '全球/日本';
-                  if (meta.regions && meta.regions.includes('TW')) region = '台灣';
-                  else if (meta.regions && meta.regions.includes('HK')) region = '港澳';
-                  else if (meta.regions && meta.regions.includes('CN')) region = '中國';
-                  streamings.push({ site: s.site, name: meta.title, region, url });
-                }
-              }
-            });
-          }
-          if (streamings.length > 0) targetAnime.streamings = normalizeAndMergeStreamings(streamings);
-        }
-
-        // 2. 寫入 custom_override.json 的 bangumiDataTitle
         const ak = res.id.toString().startsWith('anilist-') ? res.id : `anilist-${res.id}`;
         if (!overrideData[ak]) overrideData[ak] = {};
         if (overrideData[ak].bangumiDataTitle !== res.matchedBgmTitle) {
           overrideData[ak].bangumiDataTitle = res.matchedBgmTitle;
           overrideUpdated = true;
         }
-
-        // 3. 從 unlinkedAnimeList 中移除已經對應成功者
-        const idx = unlinkedAnimeList.findIndex(u => u.id === res.id || u.id === `anilist-${res.id}`);
-        if (idx !== -1) unlinkedAnimeList.splice(idx, 1);
       });
-
       if (overrideUpdated) {
         const overridePath = path.join(process.cwd(), 'public', 'custom_override.json');
         fs.writeFileSync(overridePath, JSON.stringify(overrideData, null, 2), 'utf-8');
-        console.log(`✅ 已將 AI 標題對比成功的 ${aiMatchedList.length} 筆結果寫入 custom_override.json 的 bangumiDataTitle 欄位中！`);
+        console.log(`✅ 已將標題正規化對應成功的 ${aiMatchedList.length} 筆結果寫入 custom_override.json 的 bangumiDataTitle 欄位中！`);
       }
+    }
+  }
+
+  // 4. 查找 json 中沒有對應資料的動畫，藉由 bangumiDataTitle 匯入相關動畫資料
+  // (本來就有對應資料的 也可能有 bangumiDataTitle，要避免重複匯入資料)
+  let importedCount = 0;
+  for (const rec of Object.values(bangumiMappingRecord)) {
+    // 本來就有對應資料的 (透過 Priority A 或 C 取得)，直接跳過，絕不重複匯入資料！
+    if (rec.hasCorrespondingData) {
+      continue;
+    }
+
+    const ak = rec.id.toString().startsWith('anilist-') ? rec.id : `anilist-${rec.id}`;
+    const customOverride = overrideData[ak] || overrideData[rec.id] || {};
+    const bgmTitle = customOverride.bangumiDataTitle ? customOverride.bangumiDataTitle.trim() : null;
+
+    if (bgmTitle && bgmTitleMap.has(bgmTitle)) {
+      const bgmItem = bgmTitleMap.get(bgmTitle);
+      const targetAnime = finalAnimeList.find(a => a.id === rec.id || a.id === `anilist-${rec.id}`);
+      if (!targetAnime || !bgmItem) continue;
+
+      importedCount++;
+
+      // a. 匯入繁體翻譯：視為有連結到 bangumi_data (Priority 3)，所以把中文翻譯加入到 anime_data.json 中
+      // 絕不清除或覆蓋 custom_override.json 中的任何設定，後續前端判斷顯示哪一個中文翻譯依然按照現有邏輯！
+      let bgmTitleZh = "";
+      if (bgmItem.titleTranslate) {
+        if (bgmItem.titleTranslate['zh-Hant']) {
+          bgmTitleZh = bgmItem.titleTranslate['zh-Hant'][0];
+        } else if (bgmItem.titleTranslate['zh-Hans']) {
+          bgmTitleZh = bgmItem.titleTranslate['zh-Hans'][0];
+        }
+      }
+      if (bgmTitleZh) {
+        bgmTitleZh = converter(bgmTitleZh);
+        if (targetAnime.titleZh !== bgmTitleZh) {
+          console.log(`🔄 [bangumiDataTitle 匯入翻譯] [${targetAnime.id}] "${targetAnime.titleZh}" ➜ "${bgmTitleZh}"`);
+          targetAnime.titleZh = bgmTitleZh;
+          const newlyAddedTarget = newlyAddedAnimes.find(a => a.id === targetAnime.id);
+          if (newlyAddedTarget) newlyAddedTarget.title = bgmTitleZh;
+        }
+      }
+
+      // b. 匯入中文授權平台 (去重合併)
+      const bgmStreamings = [];
+      const blockedSites = customOverride.blockedSites || [];
+      if (bgmItem.sites) {
+        bgmItem.sites.forEach(s => {
+          if (blockedSites.includes(s.site)) return;
+          const meta = bgmSiteMeta[s.site];
+          if (meta && (meta.type === 'onair' || s.site === 'gamer' || s.site === 'gamer_hk')) {
+            const urlTemplate = meta.urlTemplate || '';
+            const url = urlTemplate.replace('{{id}}', s.id) || s.url || '';
+            if (url) {
+              let region = '全球/日本';
+              if (meta.regions && meta.regions.includes('TW')) region = '台灣';
+              else if (meta.regions && meta.regions.includes('HK')) region = '港澳';
+              else if (meta.regions && meta.regions.includes('CN')) region = '中國';
+              let name = STREAMING_SITE_NAMES[s.site]?.name || meta.title;
+              if (s.site.startsWith('bilibili') || name?.includes('哔哩哔哩') || name?.toLowerCase().includes('bilibili')) {
+                name = 'Bilibili';
+              }
+              bgmStreamings.push({ site: s.site, name, region, url });
+            }
+          }
+        });
+      }
+      const base = targetAnime.streamings || [];
+      const extra = customOverride.extraStreamings || customOverride.extraStreaming || [];
+      targetAnime.streamings = normalizeAndMergeStreamings([...base, ...bgmStreamings, ...extra]);
+
+      // c. 匯入封面圖片 (若無巴哈封面則嘗試補充)
+      if (!targetAnime.coverImageGamer) {
+        const sites = bgmItem.sites || [];
+        const gamerSite = sites.find(s => s.site === 'gamer');
+        if (gamerSite && gamerSite.id) {
+          try {
+            const gamerCover = await getBahamutCover(gamerSite.id);
+            if (gamerCover && gamerCover !== targetAnime.coverImageAniList) {
+              targetAnime.coverImageGamer = gamerCover;
+            }
+          } catch (e) {}
+        }
+      }
+
+      // d. 更新 mapping 紀錄與回填狀態
+      const bgmSite = bgmItem.sites?.find(s => s.site === 'bangumi');
+      rec.hasCorrespondingData = true; // 標記為已透過 bangumiDataTitle 成功關聯與匯入
+      rec.matchedType = 'B-bangumiDataTitle';
+      rec.matchedBgmTitle = bgmItem.title || '';
+      rec.bgmId = bgmSite?.id || bgmItem.sites?.[0]?.id || 'N/A';
+      rec.streamingsCount = targetAnime.streamings.length;
     }
   }
 
   await washGamerStreamings(finalAnimeList, newlyAddedAnimes);
 
+  // 再次寫入更新完畢後的 mapping 紀錄
+  fs.writeFileSync(mappingRecordPath, JSON.stringify(bangumiMappingRecord, null, 2), 'utf-8');
+  console.log(`✅ 已將 ${Object.keys(bangumiMappingRecord).length} 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！`);
+
+  const unlinkedAnimeList = Object.values(bangumiMappingRecord)
+    .filter(rec => !rec.hasCorrespondingData)
+    .map(rec => ({
+      id: rec.id,
+      titleZh: rec.titleZh,
+      titleJa: rec.titleJa,
+      yearSeason: rec.yearSeason
+    }));
+
+  const matchedCount = Object.values(bangumiMappingRecord).filter(r => r.hasCorrespondingData).length;
   const summaryPath = path.join(process.cwd(), 'scraper', 'run_summary.txt');
   let summaryContent = `【動畫爬蟲】完成。本次實際抓取 ${crawledCount} 筆，經 ID 比對合併後資料庫共 ${finalAnimeList.length} 筆，新增資料 ${newlyAddedAnimes.length} 筆，AI 翻譯 ${translatedCount} 筆。\n`;
+  summaryContent += `📈 Bangumi 字典對應與授權回填：共 ${matchedCount} 部動畫成功對照字典並無條件整合去重播放授權！\n`;
   if (newlyAddedAnimes.length > 0) {
     summaryContent += `🌟 新增動畫：\n- ${newlyAddedAnimes.map(a => a.title).join('\n- ')}\n`;
   }
@@ -568,7 +678,7 @@ async function main() {
     summaryContent += `🤖 AI 翻譯動畫：\n- ${aiTranslatedAnimes.join('\n- ')}\n`;
   }
   if (aiMatchedRecords.length > 0) {
-    summaryContent += `🧠 AI 正規化標題自動配對成功 (${aiMatchedRecords.length} 部)：\n` +
+    summaryContent += `⚡ 本地程式化標題正規化自動配對成功 (${aiMatchedRecords.length} 部)：\n` +
       aiMatchedRecords.map(r => `- [${r.id}] "${r.titleJa}" ➜ 字典標題 "${r.matchedBgmTitle}" (BGM ID: ${r.bgmId})`).join('\n') + '\n';
   }
   if (unlinkedAnimeList.length > 0) {

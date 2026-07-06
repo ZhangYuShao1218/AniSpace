@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { matchBangumiItem, aiMatchedRecords, runAiBangumiTitleMatch } from './scraper_utils.mjs';
+import { matchBangumiItem, aiMatchedRecords, runTitleNormalizationMatch } from './scraper_utils.mjs';
 
 const ANIME_DATA_PATH = path.join(process.cwd(), 'public', 'anime_data.json');
 const OVERRIDE_PATH = path.join(process.cwd(), 'public', 'custom_override.json');
@@ -166,7 +166,7 @@ async function runAudit() {
   }
 
   if (unmatchedList.length > 0) {
-    await runAiBangumiTitleMatch(unmatchedList, bgmTitleMap);
+    await runTitleNormalizationMatch(unmatchedList, bgmTitleMap);
   }
 
   // 排序：年份由新到舊

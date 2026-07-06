@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add public/anime_data.json public/anime_data_old.json public/anime_data_backup_*.json public/custom_override.json public/bangumi_data.json public/affiliates.json public/product_images.json public/unlinked_anime_list.*
+          git add public/anime_data.json public/anime_data_old.json public/anime_data_backup_*.json public/custom_override.json public/bangumi_data.json public/bangumi_mapping_record.json public/affiliates.json public/product_images.json public/unlinked_anime_list.*
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

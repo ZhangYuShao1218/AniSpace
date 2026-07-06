@@ -25,27 +25,18 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Crawler & AI Translation
+      - name: Run Complete Daily Automation & Send Email Report
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: npm run crawler
-
-      - name: Run Shopee link checker and scraper
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scraper/shopee_checker.mjs
-
-      - name: Send Summary Email
-        env:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-        run: node scraper/email_report.mjs
+        run: npm run dailywork
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add public/anime_data.json public/anime_data_old.json public/anime_data_backup_*.json public/custom_override.json public/bangumi_data.json public/affiliates.json public/product_images.json
+          git add public/anime_data.json public/anime_data_old.json public/anime_data_backup_*.json public/custom_override.json public/bangumi_data.json public/affiliates.json public/product_images.json public/unlinked_anime_list.*
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

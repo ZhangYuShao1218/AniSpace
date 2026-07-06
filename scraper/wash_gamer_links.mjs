@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { pathToFileURL } from 'url';
-import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings } from './scraper_utils.mjs';
+import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings, matchBangumiItem } from './scraper_utils.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const GAMER_CACHE_FILE = path.join(process.cwd(), 'scraper', 'gamer_url_cache.json');
@@ -82,8 +82,10 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
   }
 
   const processItem = async ({ item, st }) => {
-    // 優先以 bangumi-data 字典的 ACG 百科連結為基準 (先 AniList ID，再來 100% 一致日文標題)，若無則用現有的 acgDetail 連結
-    const acgUrl = bgmMap.get(item.id) || (item.titleJa ? titleJaMap.get(item.titleJa) : null) || (st.url && st.url.includes('acgDetail.php') ? st.url : null);
+    // 優先以 bangumi-data 字典的三階段精確對照為基準
+    const ak = item.id.toString().startsWith('anilist-') ? item.id : `anilist-${item.id}`;
+    const customOverride = overrideData[ak] || overrideData[item.id];
+    const acgUrl = matchBangumiItem(item.id, item.titleJa, customOverride, bgmMap, titleJaMap) || (st.url && st.url.includes('acgDetail.php') ? st.url : null);
     
     if (acgUrl) {
       const { resolvedUrl, officialTitle, isBlocked } = await resolveGamerInfo(acgUrl, item.titleZh);

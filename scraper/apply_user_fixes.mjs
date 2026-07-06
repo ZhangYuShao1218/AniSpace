@@ -44,8 +44,6 @@ function setGamerLink(id, url) {
     });
   }
   cacheData[id] = url;
-  const shortId = id.replace('anilist-', '');
-  cacheData[shortId] = url;
 }
 
 // Helper: remove gamer streaming link
@@ -54,8 +52,6 @@ function removeGamerLink(id) {
   if (!item || !item.streamings) return;
   item.streamings = item.streamings.filter(s => s.site !== 'gamer' && s.site !== 'gamer_hk');
   delete cacheData[id];
-  const shortId = id.replace('anilist-', '');
-  delete cacheData[shortId];
 }
 
 // Helper: update titleZh and lock in custom_override
@@ -67,10 +63,6 @@ function setTitleZh(id, newTitle) {
   overrideData[id] = overrideData[id] || {};
   overrideData[id].titleZh = newTitle;
   overrideData[id].source = 'manual';
-  const shortId = id.replace('anilist-', '');
-  overrideData[shortId] = overrideData[shortId] || {};
-  overrideData[shortId].titleZh = newTitle;
-  overrideData[shortId].source = 'manual';
 }
 
 // ----------------------------------------------------

@@ -13,7 +13,7 @@ const STREAMING_SITE_NAMES = {
   hamivideo: { name: 'Hami Video', region: 'TW' },
   bilibili_tw: { name: 'Bilibili (港澳台)', region: 'TW/HK/MO' },
   bilibili_hk_mo_tw: { name: 'Bilibili (港澳台)', region: 'TW/HK/MO' },
-  bilibili: { name: 'Bilibili (大陸)', region: 'CN' },
+  bilibili: { name: 'Bilibili (中國)', region: 'CN' },
   iqiyi: { name: '愛奇藝', region: 'TW/SEA/CN' },
   netflix: { name: 'Netflix', region: 'GLOBAL' },
   disneyplus: { name: 'Disney+', region: 'GLOBAL' },

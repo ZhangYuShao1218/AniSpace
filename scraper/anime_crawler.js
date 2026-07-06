@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
-import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings } from './scraper_utils.mjs';
+import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings, matchBangumiItem } from './scraper_utils.mjs';
 import { washGamerStreamings } from './wash_gamer_links.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
@@ -42,7 +42,7 @@ const STREAMING_SITE_NAMES = {
   bilibili_tw: { name: 'Bilibili', region: '台灣' },
   bilibili_hk_mo_tw: { name: 'Bilibili', region: '港澳台' },
   bilibili_hk_mo: { name: 'Bilibili', region: '港澳' },
-  bilibili: { name: 'Bilibili', region: '大陸' },
+  bilibili: { name: 'Bilibili', region: '中國' },
   iqiyi: { name: '愛奇藝', region: '亞洲' },
   netflix: { name: 'Netflix', region: '全球' },
   disneyplus: { name: 'Disney+', region: '全球' },
@@ -202,7 +202,11 @@ async function main() {
   try {
     const res = await fetch("https://raw.githubusercontent.com/bangumi-data/bangumi-data/master/dist/data.json");
     if (res.ok) {
-      const data = await res.json();
+      const dataText = await res.text();
+      const bgmFilePath = path.join(process.cwd(), 'public', 'bangumi_data.json');
+      fs.writeFileSync(bgmFilePath, dataText, 'utf-8');
+      console.log(`💾 已將 bangumi-data 完整字典檔寫入本地: ${bgmFilePath}`);
+      const data = JSON.parse(dataText);
       bgmSiteMeta = data.siteMeta || {};
       (data.items || []).forEach(item => {
         const aniListSite = item.sites?.find(s => s.site === 'aniList');
@@ -253,7 +257,7 @@ async function main() {
         }
 
         // Priority 3: bangumi-data exact ID or 100% Title mapping (社區開源授權對照表)
-        const bgmItem = bgmMap.get(aniListId) || (nativeTitle ? bgmTitleMap.get(nativeTitle.trim()) : null);
+        const bgmItem = matchBangumiItem(aniListId, nativeTitle, customOverride, bgmMap, bgmTitleMap);
         if (!titleZh && bgmItem) {
           if (bgmItem.titleTranslate) {
             if (bgmItem.titleTranslate['zh-Hant']) {
@@ -306,10 +310,6 @@ async function main() {
           finalCover = await getBahamutCover(gamerSite.id) || "";
         }
         
-        if (!finalCover && bilibiliSite && bilibiliSite.id) {
-          finalCover = await getBilibiliCover(bilibiliSite.id) || "";
-        }
-        
         if (!finalCover) {
           finalCover = item.coverImage?.extraLarge || item.coverImage?.large || "";
         }
@@ -339,7 +339,7 @@ async function main() {
 
         const streamings = [];
         if (bgmItem && bgmItem.sites) {
-          const regionPriority = { '台灣': 1, '港澳台': 2, '亞洲': 3, '全球': 4, '大陸': 5, '日本': 6 };
+          const regionPriority = { '台灣': 1, '港澳台': 2, '亞洲': 3, '全球': 4, '中國': 5, '中國大陸': 5, '大陸': 5, '日本': 6 };
           const blockedSites = customOverride?.blockedSites || [];
           bgmItem.sites.forEach(s => {
             if (blockedSites.includes(s.site)) return;
@@ -356,13 +356,16 @@ async function main() {
           const mergedStreamings = normalizeAndMergeStreamings(streamings);
         }
 
+        const aniListCover = item.coverImage?.extraLarge || item.coverImage?.large || "";
+        const gamerCover = (finalCover && finalCover !== aniListCover) ? finalCover : "";
+
         finalAnimeList.push({
           id: fullId,
           titleZh,
           titleEn: item.title.english || "",
           titleJa: nativeTitle || "",
-          coverImage: finalCover,
-          coverImageAniList: item.coverImage?.extraLarge || item.coverImage?.large || "",
+          coverImageGamer: gamerCover,
+          coverImageAniList: aniListCover,
           startDate: item.startDate || null,
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
           genres,
@@ -445,15 +448,10 @@ async function main() {
     finalAnimeList.forEach(item => {
       const oldItem = oldDataMap.get(item.id);
       if (oldItem) {
-        if (oldItem.preferredCoverImage) {
-          item.preferredCoverImage = oldItem.preferredCoverImage;
-          item.coverImage = oldItem.preferredCoverImage;
-        }
-        if (oldItem.show !== undefined) {
-          item.show = oldItem.show;
-        }
+        if (oldItem.coverImageGamer) item.coverImageGamer = oldItem.coverImageGamer;
+        if (oldItem.coverImageAniList) item.coverImageAniList = oldItem.coverImageAniList;
       }
-      mergedMap.set(item.id, item);        // 2. 新爬取資料覆蓋更新，但尊重並保留 preferredCoverImage
+      mergedMap.set(item.id, item);        // 2. 新爬取資料覆蓋更新
     });
     finalAnimeList = Array.from(mergedMap.values());
   }
@@ -462,10 +460,10 @@ async function main() {
   if (bgmMap.size > 0 || bgmTitleMap.size > 0) {
     finalAnimeList.forEach(item => {
       const aniListId = String(item.id).replace('anilist-', '');
-      const bgmItem = bgmMap.get(aniListId) || (item.titleJa ? bgmTitleMap.get(item.titleJa.trim()) : null);
+      const customOverride = overrideData[item.id] || overrideData[aniListId];
+      const bgmItem = matchBangumiItem(aniListId, item.titleJa, customOverride, bgmMap, bgmTitleMap);
       if ((!item.streamings || item.streamings.length === 0) && bgmItem) {
         const streamings = [];
-        const customOverride = overrideData[item.id] || overrideData[aniListId];
         const blockedSites = customOverride?.blockedSites || [];
         if (bgmItem.sites) {
           bgmItem.sites.forEach(s => {
@@ -478,7 +476,7 @@ async function main() {
                 let region = '全球/日本';
                 if (meta.regions && meta.regions.includes('TW')) region = '台灣';
                 else if (meta.regions && meta.regions.includes('HK')) region = '港澳';
-                else if (meta.regions && meta.regions.includes('CN')) region = '中國大陸';
+                else if (meta.regions && meta.regions.includes('CN')) region = '中國';
                 streamings.push({ site: s.site, name: meta.title, region, url });
               }
             }
@@ -517,6 +515,18 @@ async function main() {
     return year * 10 + season;
   };
   finalAnimeList.sort((a, b) => parseSeasonScore(b.yearSeason) - parseSeasonScore(a.yearSeason));
+
+  // 嚴格確保全庫所有條目不含有舊版的 coverImage 或 show 屬性，並將地區統一為「中國」
+  finalAnimeList.forEach(item => {
+    delete item.coverImage;
+    delete item.preferredCoverImage;
+    delete item.show;
+    if (item.streamings) {
+      item.streamings.forEach(st => {
+        if (st.region === '中國大陸' || st.region === '大陸') st.region = '中國';
+      });
+    }
+  });
 
   fs.writeFileSync(DATA_FILE, JSON.stringify(finalAnimeList, null, 2), 'utf-8');
   console.log(`\n✨ 抓取與清洗完成！極速處理完畢。共 ${finalAnimeList.length} 筆資料已儲存至 ${DATA_FILE}`);

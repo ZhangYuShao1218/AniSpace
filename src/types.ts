@@ -11,6 +11,7 @@ export interface Anime {
   titleEn?: string;
   titleJa?: string;
   coverImage: string;
+  coverImageGamer?: string;
   coverImageAniList?: string;
   preferredCoverImage?: string;
   yearSeason: string;

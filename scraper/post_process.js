@@ -23,8 +23,31 @@ async function run() {
   const newData = JSON.parse(newDataRaw);
 
   let overrideData = {};
+  let overrideChanged = false;
   if (fs.existsSync(OVERRIDE_FILE)) {
     overrideData = JSON.parse(fs.readFileSync(OVERRIDE_FILE, 'utf-8'));
+    
+    // 0. 規範化自訂覆蓋表 ID：將所有純數字 ID 轉換為 "anilist-XXXXX" 結構，避免純數字 ID 殘留
+    for (const key of Object.keys(overrideData)) {
+      if (/^\d+$/.test(key)) {
+        const standardKey = `anilist-${key}`;
+        if (!overrideData[standardKey]) {
+          overrideData[standardKey] = overrideData[key];
+        } else {
+          const oldVal = overrideData[key];
+          const stdVal = overrideData[standardKey];
+          overrideData[standardKey] = { ...oldVal, ...stdVal };
+          if (oldVal.source === 'manual' || stdVal.source === 'manual') overrideData[standardKey].source = 'manual';
+          else if (oldVal.source === 'gamer' || stdVal.source === 'gamer') overrideData[standardKey].source = 'gamer';
+          else if (oldVal.source === 'ai' || stdVal.source === 'ai') overrideData[standardKey].source = 'ai';
+        }
+        delete overrideData[key];
+        overrideChanged = true;
+      }
+    }
+    if (overrideChanged) {
+      console.log('[Normalize] 已自動將 custom_override.json 中的純數字編號全數規範為 anilist-ID 結構。');
+    }
   }
 
   // 1. Compare and clean custom_override.json
@@ -39,8 +62,8 @@ async function run() {
       const ak = newItem.id.toString().startsWith('anilist-') ? newItem.id : `anilist-${newItem.id}`;
       if (oldItem && overrideData[ak]) {
         const override = overrideData[ak];
-        // 絕對尊重最高優先度 manual，如果是手動修改的設定，絕對不可清除或觸發任何異動與日誌
-        if (override.source === 'manual') {
+        // 絕對尊重最高優先度 manual 與次高優先度 gamer，如果是手動或巴哈官方譯名的設定，不進行自動清除
+        if (override.source === 'manual' || override.source === 'gamer') {
           continue;
         }
 

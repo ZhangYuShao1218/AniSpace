@@ -338,13 +338,58 @@ export function normalizeAndMergeStreamings(streamings) {
     } else {
       const key = `${st.site}_${st.url}`;
       if (!mergedMap.has(key)) {
-        mergedMap.set(key, { ...st });
+        const copy = { ...st };
+        if (copy.region === '中國大陸' || copy.region === '大陸') copy.region = '中國';
+        mergedMap.set(key, copy);
       }
     }
   });
 
-  const regionPriority = { '台灣': 1, '台港澳': 2, '港澳台': 3, '亞洲': 4, '全球': 5, '港澳': 6, '日本': 7 };
+  const regionPriority = { '台灣': 1, '台港澳': 2, '港澳台': 3, '亞洲': 4, '全球': 5, '港澳': 6, '日本': 7, '中國': 8, '中國大陸': 8, '大陸': 8 };
   return Array.from(mergedMap.values()).sort((a, b) => (regionPriority[a.region] || 99) - (regionPriority[b.region] || 99));
 }
+
+/**
+ * 三階段精確對齊 AniList 項目與 bangumi-data 項目/網址：
+ * A. AniList ID 精確對照
+ * B. 人工指定標題對照 (讀取 custom_override.json 中的 bangumiDataTitle 欄位與 bgmTitleMap 比對)
+ * C. 100% 日文標題精確對照
+ *
+ * @param {string|number} aniListId 
+ * @param {string} titleJa 
+ * @param {Object} customOverride 
+ * @param {Map} bgmIdMap 
+ * @param {Map} bgmTitleMap 
+ * @returns {any|null}
+ */
+export function matchBangumiItem(aniListId, titleJa, customOverride, bgmIdMap, bgmTitleMap) {
+  if (!bgmIdMap && !bgmTitleMap) return null;
+  
+  // A. AniList ID
+  if (aniListId && bgmIdMap) {
+    const shortId = String(aniListId).replace('anilist-', '');
+    if (bgmIdMap.has(shortId)) return bgmIdMap.get(shortId);
+    if (bgmIdMap.has(`anilist-${shortId}`)) return bgmIdMap.get(`anilist-${shortId}`);
+  }
+
+  // B. 人工指定標題對照 (bangumiDataTitle)
+  if (customOverride && customOverride.bangumiDataTitle && bgmTitleMap) {
+    const manualTitle = customOverride.bangumiDataTitle.trim();
+    if (bgmTitleMap.has(manualTitle)) {
+      return bgmTitleMap.get(manualTitle);
+    }
+  }
+
+  // C. 100% 日文標題精確對照
+  if (titleJa && bgmTitleMap) {
+    const cleanTitle = titleJa.trim();
+    if (bgmTitleMap.has(cleanTitle)) {
+      return bgmTitleMap.get(cleanTitle);
+    }
+  }
+
+  return null;
+}
+
 
 

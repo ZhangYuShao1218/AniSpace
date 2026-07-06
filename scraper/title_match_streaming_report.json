@@ -1,85 +1,230 @@
 {
   "zeroToSomething": [
     {
-      "id": "anilist-108992",
-      "titleZh": "梅比烏斯之塵",
-      "titleJa": "メビウス・ダスト",
-      "yearSeason": "2026 夏",
+      "id": "anilist-171099",
+      "titleZh": "孤獨搖滾！ Re:Re:",
+      "titleJa": "ぼっち・ざ・ろっく！ Re:Re: ",
+      "yearSeason": "2024 夏",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
-      "newFoundStreamingsCount": 1,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/mebiusdust"
-        }
-      ]
-    },
-    {
-      "id": "anilist-111734",
-      "titleZh": "GIVEN 被贈與的未來 劇場版",
-      "titleJa": "映画 ギヴン",
-      "yearSeason": "2020 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
+      "newFoundStreamingsCount": 2,
       "newFoundStreamings": [
         {
           "site": "gamer",
           "name": "動畫瘋",
           "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=109956"
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=144328"
+        },
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md25369044/"
+        }
+      ]
+    },
+    {
+      "id": "anilist-130590",
+      "titleZh": "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～第二季 後篇",
+      "titleJa": "魔王学院の不適合者 ～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～ Ⅱ 2クール",
+      "yearSeason": "2024 春",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 5,
+      "newFoundStreamings": [
+        {
+          "site": "bilibili_tw",
+          "name": "Bilibili",
+          "region": "台灣",
+          "url": "https://www.bilibili.com/bangumi/media/md28480892/"
+        },
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=116223"
+        },
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/maohgakuin2"
         },
         {
           "site": "unext",
           "name": "U-NEXT",
           "region": "日本",
-          "url": "https://video.unext.jp/title/SID0073861"
+          "url": "https://video.unext.jp/title/SID0076920"
         },
         {
           "site": "danime",
           "name": "d動畫商城",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26798"
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25982"
         }
       ]
     },
     {
-      "id": "anilist-113924",
-      "titleZh": "為什麼老師會在這裡！？",
-      "titleJa": "なんでここに先生が!?",
-      "yearSeason": "2019 秋",
+      "id": "anilist-165253",
+      "titleZh": "孤獨搖滾！ Re:",
+      "titleJa": "ぼっち・ざ・ろっく！Re:",
+      "yearSeason": "2024 春",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 2,
+      "newFoundStreamings": [
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=136340"
+        },
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md25369199/"
+        }
+      ]
+    },
+    {
+      "id": "anilist-153906",
+      "titleZh": "鐵拳：血脈",
+      "titleJa": "Tekken: Bloodline",
+      "yearSeason": "2022 夏",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 1,
+      "newFoundStreamings": [
+        {
+          "site": "netflix",
+          "name": "Netflix",
+          "region": "台灣",
+          "url": "https://www.netflix.com/title/81002441"
+        }
+      ]
+    },
+    {
+      "id": "anilist-107203",
+      "titleZh": "劇場版 Free! 男子游泳部 -the Final Stroke- 前篇",
+      "titleJa": "劇場版 Free!–the Final Stroke– 前編",
+      "yearSeason": "2021 夏",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 4,
+      "newFoundStreamings": [
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=113123"
+        },
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md28366421/"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0068542"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26100"
+        }
+      ]
+    },
+    {
+      "id": "anilist-118125",
+      "titleZh": "邪神與廚二病少女’ 千歲篇",
+      "titleJa": "邪神ちゃんドロップキック’ 千歳編",
+      "yearSeason": "2020 春",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
       "newFoundStreamingsCount": 3,
       "newFoundStreamings": [
         {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/nandekokonisenseiga"
-        },
-        {
           "site": "unext",
           "name": "U-NEXT",
           "region": "日本",
-          "url": "https://video.unext.jp/title/SID0040549"
+          "url": "https://video.unext.jp/title/SID0097082"
+        },
+        {
+          "site": "crunchyroll",
+          "name": "Crunchyroll",
+          "region": "全球",
+          "url": "https://www.crunchyroll.com/series/G62487M9Y/"
         },
         {
           "site": "danime",
           "name": "d動畫商城",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22686"
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26780"
         }
       ]
     },
     {
-      "id": "anilist-111729",
-      "titleZh": "平凡職業成就世界最強",
-      "titleJa": "ありふれた職業で世界最強",
-      "yearSeason": "2019 秋",
+      "id": "anilist-99807",
+      "titleZh": "22/7",
+      "titleJa": "22/7 （ナナブンノニジュウニ）",
+      "yearSeason": "2020 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 3,
+      "newFoundStreamings": [
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md28223859/"
+        },
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/22_7"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23162"
+        }
+      ]
+    },
+    {
+      "id": "anilist-102649",
+      "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 - 罪與罰",
+      "titleJa": "PSYCHO-PASS サイコパス Sinners of the System Case.1 - 罪と罰",
+      "yearSeason": "2019 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 2,
+      "newFoundStreamings": [
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0079420"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26104"
+        }
+      ]
+    },
+    {
+      "id": "anilist-106169",
+      "titleZh": "女神异闻录5 Dark Sun…",
+      "titleJa": "PERSONA5 the Animation: Dark Sun…",
+      "yearSeason": "2018 秋",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
       "newFoundStreamingsCount": 5,
@@ -87,423 +232,284 @@
         {
           "site": "bilibili",
           "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md28221390/"
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md5581418/"
         },
         {
           "site": "nicovideo",
           "name": "NicoNico",
           "region": "日本",
-          "url": "https://ch.nicovideo.jp/arifureta"
+          "url": "https://ch.nicovideo.jp/p5a_DarkSun"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0038973"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22534"
         },
         {
           "site": "abema",
           "name": "ABEMA",
           "region": "日本",
-          "url": "https://abema.tv/video/title/149-4"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0041817"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22834"
+          "url": "https://abema.tv/video/title/26-68"
         }
       ]
     },
     {
-      "id": "anilist-108354",
-      "titleZh": "外之國的少女",
-      "titleJa": "とつくにの少女",
-      "yearSeason": "2019 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md28237281/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0148139"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27452"
-        }
-      ]
-    },
-    {
-      "id": "anilist-101382",
-      "titleZh": "暮光幻影",
-      "titleJa": "Phantom in the Twilight",
-      "yearSeason": "2018 夏",
+      "id": "anilist-101812",
+      "titleZh": "Code Geass 反叛的魯路修Ⅱ 叛道",
+      "titleJa": "コードギアス 反逆のルルーシュⅡ 叛道",
+      "yearSeason": "2018 冬",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
       "newFoundStreamingsCount": 4,
       "newFoundStreamings": [
         {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md95272/"
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0035259"
         },
         {
           "site": "nicovideo",
           "name": "NicoNico",
           "region": "日本",
-          "url": "https://ch.nicovideo.jp/phantowa"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0035766"
-        },
-        {
-          "site": "muse_hk",
-          "name": "木棉花",
-          "region": "港澳",
-          "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgOs6MidwR0fKv6F4g9ZXCE"
-        }
-      ]
-    },
-    {
-      "id": "anilist-21127",
-      "titleZh": "命運石之門0",
-      "titleJa": "シュタインズ・ゲート ゼロ",
-      "yearSeason": "2018 春",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/steinsgate0"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0034225"
+          "url": "https://ch.nicovideo.jp/geass-movie2"
         },
         {
           "site": "danime",
           "name": "d動畫商城",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22083"
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22603"
+        },
+        {
+          "site": "disneyplus",
+          "name": "Disney+",
+          "region": "台灣",
+          "url": "https://www.disneyplus.com/movies/code-geass-lelouch-of-the-rebellion-ii-transgression/OQ3OkN24meQu"
         }
       ]
     },
     {
-      "id": "anilist-100715",
-      "titleZh": "魔法少女 我",
-      "titleJa": "魔法少女 俺",
-      "yearSeason": "2018 春",
+      "id": "anilist-20791",
+      "titleZh": "Fate/stay night [Heaven's Feel] I. 預示之花",
+      "titleJa": "Fate/stay night[Heaven's Feel] Ⅰ.presage flower",
+      "yearSeason": "2017 秋",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
-      "newFoundStreamingsCount": 1,
+      "newFoundStreamingsCount": 5,
       "newFoundStreamings": [
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/fate-sn1"
+        },
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=71768"
+        },
         {
           "site": "bilibili",
           "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md82692/"
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md19011368/"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0035981"
+        },
+        {
+          "site": "gamer_hk",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=71768"
         }
       ]
     },
     {
-      "id": "anilist-107622",
-      "titleZh": "狂賭之淵",
-      "titleJa": "賭ケグルイ",
+      "id": "anilist-101811",
+      "titleZh": "Code Geass 反叛的魯路修Ⅰ 興道",
+      "titleJa": "コードギアス 反逆のルルーシュⅠ 興道",
       "yearSeason": "2017 秋",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
       "newFoundStreamingsCount": 4,
       "newFoundStreamings": [
         {
-          "site": "netflix",
-          "name": "Netflix",
-          "region": "台灣",
-          "url": "https://www.netflix.com/title/80175351"
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0033205"
         },
         {
           "site": "nicovideo",
           "name": "NicoNico",
           "region": "日本",
-          "url": "https://ch.nicovideo.jp/kakegurui-anime"
+          "url": "https://ch.nicovideo.jp/geass-movie1"
         },
         {
           "site": "danime",
           "name": "d動畫商城",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27524"
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22602"
         },
         {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0164443"
+          "site": "disneyplus",
+          "name": "Disney+",
+          "region": "台灣",
+          "url": "https://www.disneyplus.com/movies/code-geass-lelouch-of-the-rebellion-i-initiation/7lxqnAYbjTCW"
         }
       ]
     },
     {
-      "id": "anilist-100305",
-      "titleZh": "月色真美",
-      "titleJa": "月がきれい",
+      "id": "anilist-99302",
+      "titleZh": "海賊王 東海篇",
+      "titleJa": "ONE PIECE エピソードオブ東の海〜ルフィと4人の仲間の大冒険!!〜",
       "yearSeason": "2017 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md5989/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0029348"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21588"
-        }
-      ]
-    },
-    {
-      "id": "anilist-21662",
-      "titleZh": "銀之守墓人",
-      "titleJa": "銀の墓守り",
-      "yearSeason": "2017 春",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md6060/"
-        },
-        {
-          "site": "iqiyi",
-          "name": "愛奇藝",
-          "region": "台灣",
-          "url": "https://www.iqiyi.com/a_19rrh9fkfl.html"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21535"
-        }
-      ]
-    },
-    {
-      "id": "anilist-98338",
-      "titleZh": "吹響！上低音號 第二季",
-      "titleJa": "響け！ユーフォニアム2",
-      "yearSeason": "2017 冬",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 4,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/anime-eupho02"
-        },
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md28223434/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0026753"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21109"
-        }
-      ]
-    },
-    {
-      "id": "anilist-97609",
-      "titleZh": "考試王",
-      "titleJa": "チーティングクラフト",
-      "yearSeason": "2016 秋",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 4,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md5595/"
-        },
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/cheating-craft"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0026759"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21167"
-        }
-      ]
-    },
-    {
-      "id": "anilist-21771",
-      "titleZh": "星之夢～星之人～",
-      "titleJa": "planetarian～星の人～",
-      "yearSeason": "2016 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md5051/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0028272"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21675"
-        }
-      ]
-    },
-    {
-      "id": "anilist-21726",
-      "titleZh": "衝吧烈子 (2016 短篇)",
-      "titleJa": "アグレッシブ烈子",
-      "yearSeason": "2016 春",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 1,
-      "newFoundStreamings": [
-        {
-          "site": "netflix",
-          "name": "Netflix",
-          "region": "台灣",
-          "url": "https://www.netflix.com/title/80198505"
-        }
-      ]
-    },
-    {
-      "id": "anilist-20359",
-      "titleZh": "山田君與7人魔女",
-      "titleJa": "山田くんと7人の魔女",
-      "yearSeason": "2013 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 5,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/yamajo"
-        },
-        {
-          "site": "ani_one_asia",
-          "name": "Ani-One",
-          "region": "亞洲",
-          "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjskJ0TWP1V9KqH-szrYbpi"
-        },
-        {
-          "site": "ani_one",
-          "name": "Ani-One",
-          "region": "亞洲",
-          "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTrCbpl4-iKjN0rHItx94Qy"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0013567"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21088"
-        }
-      ]
-    },
-    {
-      "id": "anilist-19211",
-      "titleZh": "翠星之加爾剛蒂亞",
-      "titleJa": "翠星のガルガンティア",
-      "yearSeason": "2013 夏",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
       "newFoundStreamingsCount": 2,
       "newFoundStreamings": [
         {
+          "site": "iqiyi",
+          "name": "愛奇藝",
+          "region": "台灣",
+          "url": "https://www.iqiyi.com/a_19rrhcx3xx.html"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0035255"
+        }
+      ]
+    },
+    {
+      "id": "anilist-98663",
+      "titleZh": "甲鐵城的卡巴內裡 總集篇｛後篇｝燃燒的生命",
+      "titleJa": "甲鉄城のカバネリ 総集編｛後編｝燃える命",
+      "yearSeason": "2017 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 2,
+      "newFoundStreamings": [
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0158549"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27584"
+        }
+      ]
+    },
+    {
+      "id": "anilist-98662",
+      "titleZh": "甲铁城的卡巴内利 总集篇 前篇 聚光",
+      "titleJa": "甲鉄城のカバネリ 総集編｛前編｝集う光",
+      "yearSeason": "2016 秋",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 2,
+      "newFoundStreamings": [
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0158550"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27583"
+        }
+      ]
+    },
+    {
+      "id": "anilist-21732",
+      "titleZh": "planetarian～小小的星之夢～",
+      "titleJa": "planetarian～ちいさなほしのゆめ～",
+      "yearSeason": "2016 夏",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 4,
+      "newFoundStreamings": [
+        {
           "site": "bilibili",
           "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md445/"
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md5045/"
         },
         {
           "site": "nicovideo",
           "name": "NicoNico",
           "region": "日本",
-          "url": "https://ch.nicovideo.jp/gargantia"
+          "url": "https://ch.nicovideo.jp/planetarian"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0025724"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20984"
         }
       ]
     },
     {
-      "id": "anilist-17345",
-      "titleZh": "閃亂神樂",
-      "titleJa": "閃乱カグラ",
-      "yearSeason": "2013 春",
+      "id": "anilist-21853",
+      "titleZh": "出包王女 Darkness 2nd",
+      "titleJa": "To LOVEる -とらぶる- ダークネス2nd",
+      "yearSeason": "2016 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 3,
+      "newFoundStreamings": [
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/to-love-ru4"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0019010"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23621"
+        }
+      ]
+    },
+    {
+      "id": "anilist-21178",
+      "titleZh": "Code Geass 亡國的阿基德 最終章：獻給所愛之人",
+      "titleJa": "コードギアス 亡国のアキト 最終章 愛シキモノタチヘ",
+      "yearSeason": "2016 冬",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
       "newFoundStreamingsCount": 4,
@@ -512,33 +518,167 @@
           "site": "iqiyi",
           "name": "愛奇藝",
           "region": "台灣",
-          "url": "https://www.iqiyi.com/a_19rrjt5ou5.html"
+          "url": "https://www.iqiyi.com/a_19rrh9mhz9.html"
         },
         {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/senran"
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md1659/"
         },
         {
           "site": "unext",
           "name": "U-NEXT",
           "region": "日本",
-          "url": "https://video.unext.jp/title/SID0017743"
+          "url": "https://video.unext.jp/title/SID0013602"
         },
         {
           "site": "danime",
           "name": "d動畫商城",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11539"
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21965"
         }
       ]
     },
     {
-      "id": "anilist-17409",
-      "titleZh": "只要你說你愛我",
-      "titleJa": "好きっていいなよ。",
-      "yearSeason": "2013 冬",
+      "id": "anilist-119947",
+      "titleZh": "偽戀: OAD",
+      "titleJa": "ニセコイ: OAD",
+      "yearSeason": "2016 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 5,
+      "newFoundStreamings": [
+        {
+          "site": "ani_one",
+          "name": "Ani-One",
+          "region": "亞洲",
+          "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRHjA0zbrjXpPBwqmCz1-_b"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0046913"
+        },
+        {
+          "site": "gamer_hk",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=81956"
+        },
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=81956"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23180"
+        }
+      ]
+    },
+    {
+      "id": "anilist-21326",
+      "titleZh": "東京喰種 Tokyo Ghoul 【PINTO】",
+      "titleJa": "東京喰種トーキョーグール【PINTO】",
+      "yearSeason": "2015 秋",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 2,
+      "newFoundStreamings": [
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0020438"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20460"
+        }
+      ]
+    },
+    {
+      "id": "anilist-21348",
+      "titleZh": "排球少年!! VS赤點",
+      "titleJa": "ハイキュー!! VS赤点",
+      "yearSeason": "2015 秋",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 5,
+      "newFoundStreamings": [
+        {
+          "site": "ani_one_asia",
+          "name": "Ani-One",
+          "region": "亞洲",
+          "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JiJ50hiPCCd_lhnAB-y91Jc"
+        },
+        {
+          "site": "abema",
+          "name": "ABEMA",
+          "region": "日本",
+          "url": "https://abema.tv/video/title/19-48"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0050584"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24148"
+        },
+        {
+          "site": "crunchyroll",
+          "name": "Crunchyroll",
+          "region": "全球",
+          "url": "https://www.crunchyroll.com/series/GY8VM8MWY/"
+        }
+      ]
+    },
+    {
+      "id": "anilist-21852",
+      "titleZh": "出包王女 Darkness 2nd (OVA特別篇)",
+      "titleJa": "To LOVEる -とらぶる- ダークネス2nd",
+      "yearSeason": "2015 秋",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 3,
+      "newFoundStreamings": [
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/to-love-ru4"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0019010"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23621"
+        }
+      ]
+    },
+    {
+      "id": "anilist-21008",
+      "titleZh": "蟲師 特別篇「鈴之雫」",
+      "titleJa": "蟲師 特別編「鈴の雫」",
+      "yearSeason": "2015 春",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
       "newFoundStreamingsCount": 4,
@@ -547,32 +687,271 @@
           "site": "nicovideo",
           "name": "NicoNico",
           "region": "日本",
-          "url": "https://ch.nicovideo.jp/sukinayo"
+          "url": "https://ch.nicovideo.jp/mushishi-tokubetsuhen02"
         },
         {
           "site": "bilibili",
           "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md735/"
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md2648/"
         },
         {
           "site": "unext",
           "name": "U-NEXT",
           "region": "日本",
-          "url": "https://video.unext.jp/title/SID0002655"
+          "url": "https://video.unext.jp/title/SID0044767"
         },
         {
           "site": "danime",
           "name": "d動畫商城",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11303"
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23611"
         }
       ]
     },
     {
-      "id": "anilist-13851",
-      "titleZh": "出包王女Darkness",
-      "titleJa": "To LOVEる -とらぶる- ダークネス",
+      "id": "anilist-20692",
+      "titleZh": "劇場版 進擊的巨人 後篇～自由之翼～",
+      "titleJa": "劇場版「進撃の巨人」後編～自由の翼～",
+      "yearSeason": "2015 春",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 7,
+      "newFoundStreamings": [
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/shingeki_movie"
+        },
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=68752"
+        },
+        {
+          "site": "muse_hk",
+          "name": "木棉花",
+          "region": "港澳",
+          "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchkFx6Rl70VbQeT10lIKoL7"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0022658"
+        },
+        {
+          "site": "gamer_hk",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=68752"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21866"
+        },
+        {
+          "site": "muse_tw",
+          "name": "木棉花",
+          "region": "台灣",
+          "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        }
+      ]
+    },
+    {
+      "id": "anilist-20691",
+      "titleZh": "劇場版 進擊的巨人 前篇～紅蓮之弓矢～",
+      "titleJa": "劇場版「進撃の巨人」前編～紅蓮の弓矢～",
+      "yearSeason": "2014 秋",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 7,
+      "newFoundStreamings": [
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/shingeki_movie"
+        },
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=68751"
+        },
+        {
+          "site": "muse_hk",
+          "name": "木棉花",
+          "region": "港澳",
+          "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchkFx6Rl70VbQeT10lIKoL7"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0018728"
+        },
+        {
+          "site": "gamer_hk",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=68751"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21865"
+        },
+        {
+          "site": "muse_tw",
+          "name": "木棉花",
+          "region": "台灣",
+          "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        }
+      ]
+    },
+    {
+      "id": "anilist-19193",
+      "titleZh": "攻壳机动队ARISE border:3 Ghost Tears",
+      "titleJa": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:3 Ghost Tears",
+      "yearSeason": "2014 春",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 4,
+      "newFoundStreamings": [
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md5180/"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0014767"
+        },
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/kokaku-arise"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22229"
+        }
+      ]
+    },
+    {
+      "id": "anilist-20687",
+      "titleZh": "未確認進行式 鴨肉有種綠色的味道呢。",
+      "titleJa": "未確認で進行形 鴨肉って緑っぽい味がするのね。",
+      "yearSeason": "2014 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 1,
+      "newFoundStreamings": [
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md3797/"
+        }
+      ]
+    },
+    {
+      "id": "anilist-17187",
+      "titleZh": "攻壳机动队ARISE border:1 Ghost Pain",
+      "titleJa": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:1 Ghost Pain",
+      "yearSeason": "2013 夏",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 4,
+      "newFoundStreamings": [
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md5180/"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0014767"
+        },
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/kokaku-arise"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22229"
+        }
+      ]
+    },
+    {
+      "id": "anilist-17397",
+      "titleZh": "獨眼巨人少女賽普～",
+      "titleJa": "サイクロプス少女さいぷ～",
+      "yearSeason": "2013 春",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 1,
+      "newFoundStreamings": [
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/saipuu"
+        }
+      ]
+    },
+    {
+      "id": "anilist-15811",
+      "titleZh": "少女與戰車",
+      "titleJa": "ガールズ&パンツァー",
+      "yearSeason": "2013 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 3,
+      "newFoundStreamings": [
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0002511"
+        },
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/girls-und-panzer"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20431"
+        }
+      ]
+    },
+    {
+      "id": "anilist-14073",
+      "titleZh": "蝦掰天文社 公立海老棲川高校天悶部",
+      "titleJa": "えびてん 公立海老栖川高校天悶部",
       "yearSeason": "2012 夏",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
@@ -582,575 +961,327 @@
           "site": "nicovideo",
           "name": "NicoNico",
           "region": "日本",
-          "url": "https://ch.nicovideo.jp/to-love-ru3"
+          "url": "https://ch.nicovideo.jp/ch60325"
         },
         {
           "site": "unext",
           "name": "U-NEXT",
           "region": "日本",
-          "url": "https://video.unext.jp/title/SID0011506"
+          "url": "https://video.unext.jp/title/SID0014097"
         },
         {
           "site": "danime",
           "name": "d動畫商城",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20913"
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10790"
         }
       ]
     },
     {
-      "id": "anilist-12669",
-      "titleZh": "聖誕之吻SS+ plus",
-      "titleJa": "アマガミSS+ plus",
+      "id": "anilist-11313",
+      "titleZh": "有你的小鎮 黃昏十字路口",
+      "titleJa": "君のいる町 黄昏交差点",
       "yearSeason": "2012 春",
       "currentStreamingsCount": 0,
       "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md816/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0010851"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20448"
-        }
-      ]
-    },
-    {
-      "id": "anilist-10582",
-      "titleZh": "露蒂的玩具",
-      "titleJa": "アスタロッテのおもちゃ！",
-      "yearSeason": "2011 秋",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/ch60010"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0012757"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10122"
-        }
-      ]
-    },
-    {
-      "id": "anilist-9117",
-      "titleZh": "聖誕之吻SS",
-      "titleJa": "アマガミSS",
-      "yearSeason": "2011 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md815/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0010850"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20271"
-        }
-      ]
-    },
-    {
-      "id": "anilist-106572",
-      "titleZh": "海賊王 沙漠的王女與海賊們",
-      "titleJa": "ONE PIECE エピソードオブアラバスタ 砂漠の王女と海賊たち",
-      "yearSeason": "2011 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0012957"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26995"
-        },
-        {
-          "site": "disneyplus",
-          "name": "Disney+",
-          "region": "台灣",
-          "url": "https://www.disneyplus.com/movies/one-piece-8-episode-of-alabasta/2acfBXE1zpWe"
-        }
-      ]
-    },
-    {
-      "id": "anilist-10216",
-      "titleZh": "惡魔阿薩謝爾在召喚你",
-      "titleJa": "よんでますよ、アザゼルさん。",
-      "yearSeason": "2011 春",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 2,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/ch60014"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0002920"
-        }
-      ]
-    },
-    {
-      "id": "anilist-11161",
-      "titleZh": "架向星空之橋",
-      "titleJa": "星空へ架かる橋",
-      "yearSeason": "2011 冬",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 4,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/ch60018"
-        },
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md919/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0002327"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10318"
-        }
-      ]
-    },
-    {
-      "id": "anilist-9611",
-      "titleZh": "我的女神",
-      "titleJa": "ああっ女神さまっ",
-      "yearSeason": "2011 冬",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 4,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md1448/"
-        },
-        {
-          "site": "iqiyi",
-          "name": "愛奇藝",
-          "region": "台灣",
-          "url": "https://www.iqiyi.com/a_19rrh7pjk5.html"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0004796"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23628"
-        }
-      ]
-    },
-    {
-      "id": "anilist-8460",
-      "titleZh": "未來日記 (OVA)",
-      "titleJa": "未来日記",
-      "yearSeason": "2010 秋",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/future-diary"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0035661"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10682"
-        }
-      ]
-    },
-    {
-      "id": "anilist-7858",
-      "titleZh": "天降之物",
-      "titleJa": "そらのおとしもの",
-      "yearSeason": "2010 秋",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 4,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/soranootoshimono"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0013161"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10522"
-        },
-        {
-          "site": "abema",
-          "name": "ABEMA",
-          "region": "日本",
-          "url": "https://abema.tv/video/title/25-42"
-        }
-      ]
-    },
-    {
-      "id": "anilist-8408",
-      "titleZh": "無頭騎士異聞錄 DuRaRaRa!!",
-      "titleJa": "デュラララ!!",
-      "yearSeason": "2010 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 4,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/ch332"
-        },
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md1656/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0013211"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10009"
-        }
-      ]
-    },
-    {
-      "id": "anilist-8465",
-      "titleZh": "最後大魔王",
-      "titleJa": "いちばんうしろの大魔王",
-      "yearSeason": "2010 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/daimao"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0002153"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10153"
-        }
-      ]
-    },
-    {
-      "id": "anilist-8197",
-      "titleZh": "空之音",
-      "titleJa": "ソ・ラ・ノ・ヲ・ト",
-      "yearSeason": "2010 夏",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/sorawoto"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0011359"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23600"
-        }
-      ]
-    },
-    {
-      "id": "anilist-8038",
-      "titleZh": "交响情人梦Finale",
-      "titleJa": "のだめカンタービレ フィナーレ",
-      "yearSeason": "2010 春",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 3,
-      "newFoundStreamings": [
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md1041/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0016192"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11198"
-        }
-      ]
-    },
-    {
-      "id": "anilist-10108",
-      "titleZh": "我的妹妹哪有這麼可愛！第一季 ONA特別篇",
-      "titleJa": "俺の妹がこんなに可愛いわけがない",
-      "yearSeason": "2010 冬",
-      "currentStreamingsCount": 0,
-      "currentStreamings": [],
-      "newFoundStreamingsCount": 4,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/ch639"
-        },
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md2660/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0012849"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10642"
-        }
-      ]
-    }
-  ],
-  "partialToMore": [
-    {
-      "id": "anilist-159309",
-      "titleZh": "女性向遊戲世界對路人角色很不友好 第二季",
-      "titleJa": "乙女ゲー世界はモブに厳しい世界です2",
-      "yearSeason": "2026 夏",
-      "currentStreamingsCount": 1,
-      "currentStreamings": [
-        "動畫瘋(台港澳)"
-      ],
-      "newFoundStreamingsCount": 2,
-      "newFoundStreamings": [
-        {
-          "site": "gamer_hk",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=129407"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0305798"
-        }
-      ]
-    },
-    {
-      "id": "anilist-207674",
-      "titleZh": "從後面來的神威先生",
-      "titleJa": "うしろの正面カムイさん",
-      "yearSeason": "2026 夏",
-      "currentStreamingsCount": 1,
-      "currentStreamings": [
-        "動畫瘋(台港澳)"
-      ],
-      "newFoundStreamingsCount": 2,
-      "newFoundStreamings": [
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/kamuisan"
-        },
-        {
-          "site": "abema",
-          "name": "ABEMA",
-          "region": "日本",
-          "url": "https://abema.tv/video/title/643-22"
-        }
-      ]
-    },
-    {
-      "id": "anilist-182206",
-      "titleZh": "劇場版 關於我轉生變成史萊姆這檔事 蒼海之淚篇",
-      "titleJa": "劇場版 転生したらスライムだった件 蒼海の涙編",
-      "yearSeason": "2026 冬",
-      "currentStreamingsCount": 1,
-      "currentStreamings": [
-        "動畫瘋(台港澳)"
-      ],
       "newFoundStreamingsCount": 1,
       "newFoundStreamings": [
         {
           "site": "unext",
           "name": "U-NEXT",
           "region": "日本",
-          "url": "https://video.unext.jp/title/SID0307489"
+          "url": "https://video.unext.jp/title/SID0037691"
         }
       ]
     },
     {
-      "id": "anilist-179706",
-      "titleZh": "Lycoris Recoil 莉可麗絲：友誼是時間的竊賊",
-      "titleJa": "リコリス・リコイル Friends are thieves of time.",
-      "yearSeason": "2025 春",
-      "currentStreamingsCount": 1,
-      "currentStreamings": [
-        "動畫瘋(台港澳)"
-      ],
-      "newFoundStreamingsCount": 7,
+      "id": "anilist-10330",
+      "titleZh": "爆丸 戰鬥者 機甲旋風",
+      "titleJa": "爆丸 バトルブローラーズ メクタニウムサージ",
+      "yearSeason": "2011 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 1,
       "newFoundStreamings": [
         {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0181260"
-        },
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md131672/"
+        }
+      ]
+    },
+    {
+      "id": "anilist-10431",
+      "titleZh": "笨蛋、測驗、召喚獸～祭～",
+      "titleJa": "バカとテストと召喚獣 ～祭～",
+      "yearSeason": "2011 冬",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 7,
+      "newFoundStreamings": [
         {
           "site": "nicovideo",
           "name": "NicoNico",
           "region": "日本",
-          "url": "https://ch.nicovideo.jp/lycoris-recoil-shortmovie"
+          "url": "https://ch.nicovideo.jp/ch60021"
         },
         {
-          "site": "muse_tw",
-          "name": "木棉花",
-          "region": "台灣",
-          "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpDPu78TOYAVKpb7RP0iJGt"
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md3486/"
         },
         {
-          "site": "gamer",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=144313"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
+          "site": "unext",
+          "name": "U-NEXT",
           "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27901"
-        },
-        {
-          "site": "muse_hk",
-          "name": "木棉花",
-          "region": "港澳",
-          "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchtalQvogi6-Balh_sW6UsQ"
+          "url": "https://video.unext.jp/title/SID0013311"
         },
         {
           "site": "gamer_hk",
           "name": "動畫瘋",
           "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=144313"
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=39644"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10099"
+        },
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=39644"
+        },
+        {
+          "site": "muse_tw",
+          "name": "木棉花",
+          "region": "台灣",
+          "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrPbG_SrcvKmBEx0cU1ak3k"
+        }
+      ]
+    },
+    {
+      "id": "anilist-9563",
+      "titleZh": "向陽素描 × ☆☆☆",
+      "titleJa": "ひだまりスケッチ × ☆☆☆",
+      "yearSeason": "2010 秋",
+      "currentStreamingsCount": 0,
+      "currentStreamings": [],
+      "newFoundStreamingsCount": 5,
+      "newFoundStreamings": [
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/hidamari_01"
+        },
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md731/"
+        },
+        {
+          "site": "iqiyi",
+          "name": "愛奇藝",
+          "region": "台灣",
+          "url": "https://www.iqiyi.com/a_19rrh2hh1h.html"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0004813"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21437"
+        }
+      ]
+    }
+  ],
+  "partialToMore": [
+    {
+      "id": "anilist-138700",
+      "titleZh": "憂國的莫里亞蒂 OVA",
+      "titleJa": "憂国のモリアーティ OVA",
+      "yearSeason": "2022 春",
+      "currentStreamingsCount": 1,
+      "currentStreamings": [
+        "動畫瘋(台港澳)"
+      ],
+      "newFoundStreamingsCount": 4,
+      "newFoundStreamings": [
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=120867"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0067790"
+        },
+        {
+          "site": "gamer_hk",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=120867"
+        },
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/moriarty-anime"
+        }
+      ]
+    },
+    {
+      "id": "anilist-133891",
+      "titleZh": "Love Live! 虹咲學園學園偶像同好會 第二季",
+      "titleJa": "ラブライブ！虹ヶ咲学園スクールアイドル同好会 2",
+      "yearSeason": "2022 春",
+      "currentStreamingsCount": 1,
+      "currentStreamings": [
+        "動畫瘋(台港澳)"
+      ],
+      "newFoundStreamingsCount": 8,
+      "newFoundStreamings": [
+        {
+          "site": "bilibili_hk_mo_tw",
+          "name": "Bilibili",
+          "region": "台港澳",
+          "url": "https://www.bilibili.com/bangumi/media/md28237201/"
+        },
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=117465"
+        },
+        {
+          "site": "muse_hk",
+          "name": "木棉花",
+          "region": "港澳",
+          "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcjAzn_9BRC43kjg-lxJYjM8"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0066884"
+        },
+        {
+          "site": "nicovideo",
+          "name": "NicoNico",
+          "region": "日本",
+          "url": "https://ch.nicovideo.jp/nijigasaki2"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25330"
+        },
+        {
+          "site": "muse_tw",
+          "name": "木棉花",
+          "region": "台灣",
+          "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqyVrqC_zYcwiF-3GEfIdJ3"
+        },
+        {
+          "site": "abema",
+          "name": "ABEMA",
+          "region": "日本",
+          "url": "https://abema.tv/video/title/13-167"
+        }
+      ]
+    },
+    {
+      "id": "anilist-133124",
+      "titleZh": "劇場版 Free! 男子游泳部 -the Final Stroke- 後篇",
+      "titleJa": "劇場版 Free!–the Final Stroke– 後編",
+      "yearSeason": "2022 春",
+      "currentStreamingsCount": 1,
+      "currentStreamings": [
+        "動畫瘋(台港澳)"
+      ],
+      "newFoundStreamingsCount": 4,
+      "newFoundStreamings": [
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=136270"
+        },
+        {
+          "site": "bilibili",
+          "name": "Bilibili",
+          "region": "中國",
+          "url": "https://www.bilibili.com/bangumi/media/md28412213/"
+        },
+        {
+          "site": "unext",
+          "name": "U-NEXT",
+          "region": "日本",
+          "url": "https://video.unext.jp/title/SID0079979"
+        },
+        {
+          "site": "danime",
+          "name": "d動畫商城",
+          "region": "日本",
+          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26867"
+        }
+      ]
+    },
+    {
+      "id": "anilist-131681",
+      "titleZh": "進擊的巨人 The Final Season 後篇",
+      "titleJa": "進撃の巨人 The Final Season Part 2",
+      "yearSeason": "2022 冬",
+      "currentStreamingsCount": 1,
+      "currentStreamings": [
+        "動畫瘋(台港澳)"
+      ],
+      "newFoundStreamingsCount": 5,
+      "newFoundStreamings": [
+        {
+          "site": "gamer",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=106374"
+        },
+        {
+          "site": "muse_hk",
+          "name": "木棉花",
+          "region": "港澳",
+          "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchkFx6Rl70VbQeT10lIKoL7"
+        },
+        {
+          "site": "disneyplus",
+          "name": "Disney+",
+          "region": "台灣",
+          "url": "https://www.disneyplus.com/series/view/5D0Qx5ecSvHm"
+        },
+        {
+          "site": "gamer_hk",
+          "name": "動畫瘋",
+          "region": "台港澳",
+          "url": "https://acg.gamer.com.tw/acgDetail.php?s=106374"
+        },
+        {
+          "site": "muse_tw",
+          "name": "木棉花",
+          "region": "台灣",
+          "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
         }
       ]
     },
@@ -1159,65 +1290,25 @@
       "titleZh": "暗殺教室 (JSAT特別篇)",
       "titleJa": "暗殺教室",
       "yearSeason": "2013 秋",
-      "currentStreamingsCount": 1,
+      "currentStreamingsCount": 9,
       "currentStreamings": [
-        "動畫瘋(台港澳)"
+        "動畫瘋(台港澳)",
+        "木棉花(港澳)",
+        "Netflix(台灣)",
+        "動畫瘋(台港澳)",
+        "ABEMA(日本)",
+        "U-NEXT(日本)",
+        "動畫瘋(台港澳)",
+        "d動畫商城(日本)",
+        "Crunchyroll(全球)"
       ],
-      "newFoundStreamingsCount": 9,
+      "newFoundStreamingsCount": 1,
       "newFoundStreamings": [
         {
           "site": "iqiyi",
           "name": "愛奇藝",
           "region": "台灣",
           "url": "https://www.iqiyi.com/a_19rrhay5ht.html"
-        },
-        {
-          "site": "muse_hk",
-          "name": "木棉花",
-          "region": "港澳",
-          "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgmZOiB-pq4hTtAwdpbzySi"
-        },
-        {
-          "site": "netflix",
-          "name": "Netflix",
-          "region": "台灣",
-          "url": "https://www.netflix.com/title/80045948"
-        },
-        {
-          "site": "gamer",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=71034"
-        },
-        {
-          "site": "abema",
-          "name": "ABEMA",
-          "region": "日本",
-          "url": "https://abema.tv/video/title/19-140"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0004917"
-        },
-        {
-          "site": "gamer_hk",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=71034"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11612"
-        },
-        {
-          "site": "crunchyroll",
-          "name": "Crunchyroll",
-          "region": "全球",
-          "url": "https://www.crunchyroll.com/series/GRE59JGX6/"
         }
       ]
     },
@@ -1226,47 +1317,22 @@
       "titleZh": "元氣少女緣結神",
       "titleJa": "神様はじめました",
       "yearSeason": "2013 夏",
-      "currentStreamingsCount": 1,
+      "currentStreamingsCount": 6,
       "currentStreamings": [
-        "動畫瘋(台港澳)"
+        "動畫瘋(台港澳)",
+        "NicoNico(日本)",
+        "動畫瘋(台港澳)",
+        "U-NEXT(日本)",
+        "動畫瘋(台港澳)",
+        "d動畫商城(日本)"
       ],
-      "newFoundStreamingsCount": 6,
+      "newFoundStreamingsCount": 1,
       "newFoundStreamings": [
         {
           "site": "iqiyi",
           "name": "愛奇藝",
           "region": "台灣",
           "url": "https://www.iqiyi.com/a_19rrifubx4.html"
-        },
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/mikagesha"
-        },
-        {
-          "site": "gamer",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=56750"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0002177"
-        },
-        {
-          "site": "gamer_hk",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=56750"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10645"
         }
       ]
     },
@@ -1275,47 +1341,22 @@
       "titleZh": "妖狐×僕SS",
       "titleJa": "妖狐×僕SS",
       "yearSeason": "2012 秋",
-      "currentStreamingsCount": 1,
+      "currentStreamingsCount": 6,
       "currentStreamings": [
+        "動畫瘋(台港澳)",
+        "NicoNico(日本)",
+        "U-NEXT(日本)",
+        "d動畫商城(日本)",
+        "動畫瘋(台港澳)",
         "動畫瘋(台港澳)"
       ],
-      "newFoundStreamingsCount": 6,
+      "newFoundStreamingsCount": 1,
       "newFoundStreamings": [
         {
           "site": "iqiyi",
           "name": "愛奇藝",
           "region": "台灣",
           "url": "https://www.iqiyi.com/a_19rrk52409.html"
-        },
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/inuboku"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0013915"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20865"
-        },
-        {
-          "site": "gamer",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=49924"
-        },
-        {
-          "site": "gamer_hk",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=49924"
         }
       ]
     },
@@ -1324,53 +1365,23 @@
       "titleZh": "男子高校生的日常",
       "titleJa": "男子高校生の日常",
       "yearSeason": "2012 春",
-      "currentStreamingsCount": 1,
+      "currentStreamingsCount": 7,
       "currentStreamings": [
-        "動畫瘋(台港澳)"
+        "動畫瘋(台港澳)",
+        "NicoNico(日本)",
+        "Bilibili(中國)",
+        "U-NEXT(日本)",
+        "d動畫商城(日本)",
+        "動畫瘋(台港澳)",
+        "木棉花(台灣)"
       ],
-      "newFoundStreamingsCount": 7,
+      "newFoundStreamingsCount": 1,
       "newFoundStreamings": [
         {
           "site": "iqiyi",
           "name": "愛奇藝",
           "region": "台灣",
           "url": "https://www.iqiyi.com/a_19rrjtd2cp.html"
-        },
-        {
-          "site": "nicovideo",
-          "name": "NicoNico",
-          "region": "日本",
-          "url": "https://ch.nicovideo.jp/danshinichijyo"
-        },
-        {
-          "site": "bilibili",
-          "name": "Bilibili",
-          "region": "大陸",
-          "url": "https://www.bilibili.com/bangumi/media/md2680/"
-        },
-        {
-          "site": "unext",
-          "name": "U-NEXT",
-          "region": "日本",
-          "url": "https://video.unext.jp/title/SID0015623"
-        },
-        {
-          "site": "danime",
-          "name": "d動畫商城",
-          "region": "日本",
-          "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20282"
-        },
-        {
-          "site": "gamer",
-          "name": "動畫瘋",
-          "region": "台港澳",
-          "url": "https://acg.gamer.com.tw/acgDetail.php?s=52512"
-        },
-        {
-          "site": "muse_tw",
-          "name": "木棉花",
-          "region": "台灣",
-          "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqraJF07Kgtx6iYNmFUyeBS"
         }
       ]
     }

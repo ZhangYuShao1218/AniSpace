@@ -174,7 +174,8 @@
   },
   "anilist-131681": {
     "source": "manual",
-    "titleZh": "進擊的巨人 The Final Season 後篇"
+    "titleZh": "進擊的巨人 The Final Season 後篇",
+    "bangumiDataTitle": "進撃の巨人 The Final Season Part.2"
   },
   "anilist-141534": {
     "source": "manual",
@@ -801,7 +802,8 @@
   },
   "anilist-8302": {
     "titleZh": "大小姐×執事！",
-    "source": "manual"
+    "source": "manual",
+    "bangumiDataTitle": "れでぃ×ばと！"
   },
   "anilist-8408": {
     "titleZh": "無頭騎士異聞錄 DuRaRaRa!!"
@@ -924,7 +926,8 @@
   },
   "anilist-9563": {
     "titleZh": "向陽素描 × ☆☆☆",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "ひだまりスケッチ"
   },
   "anilist-9581": {
     "titleZh": "MM一族",
@@ -1002,7 +1005,8 @@
   },
   "anilist-10330": {
     "titleZh": "爆丸 戰鬥者 機甲旋風",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "爆丸バトルブローラーズ メクタニウムサージ"
   },
   "anilist-10391": {
     "titleZh": "衝吧！尼特族探險隊",
@@ -1018,7 +1022,8 @@
   },
   "anilist-10431": {
     "titleZh": "笨蛋、測驗、召喚獸～祭～",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "バカとテストと召喚獣 〜祭〜"
   },
   "anilist-10469": {
     "titleZh": "再見！絕望先生：喵京的基督",
@@ -1125,7 +1130,8 @@
   },
   "anilist-11313": {
     "titleZh": "有你的小鎮 黃昏十字路口",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "君のいる町～黄昏交差点～"
   },
   "anilist-11359": {
     "titleZh": "七龍珠改：願和平降臨未來！悟空的靈魂永垂不朽",
@@ -1241,7 +1247,8 @@
   },
   "anilist-14073": {
     "titleZh": "蝦掰天文社 公立海老棲川高校天悶部",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "えびてん -公立海老栖川高校天悶部-"
   },
   "anilist-14189": {
     "titleZh": "黃昏乙女 x 失憶幽靈 退魔乙女",
@@ -1286,7 +1293,8 @@
   },
   "anilist-15811": {
     "titleZh": "少女與戰車",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "ガールズ＆パンツァー"
   },
   "anilist-15879": {
     "titleZh": "中二病也想談戀愛！景深 ～愛與憎恨劇場",
@@ -1373,7 +1381,8 @@
   },
   "anilist-17397": {
     "titleZh": "獨眼巨人少女賽普～",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "サイクロプス少女さいぷ〜"
   },
   "anilist-17409": {
     "titleZh": "只要你說你愛我"
@@ -1512,15 +1521,18 @@
   },
   "anilist-20687": {
     "titleZh": "未確認進行式 鴨肉有種綠色的味道呢。",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "未確認で進行形 「鴨肉って緑っぽい味がするのね」"
   },
   "anilist-20691": {
     "titleZh": "劇場版 進擊的巨人 前篇～紅蓮之弓矢～",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "劇場版 進撃の巨人 前編〜紅蓮の弓矢〜"
   },
   "anilist-20692": {
     "titleZh": "劇場版 進擊的巨人 後篇～自由之翼～",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "劇場版 進撃の巨人 後編〜自由の翼〜"
   },
   "anilist-20741": {
     "titleZh": "劇場版 約會大作戰 萬由里審判",
@@ -1601,7 +1613,8 @@
   },
   "anilist-21008": {
     "titleZh": "蟲師 特別篇「鈴之雫」",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "蟲師 特別編 鈴の雫"
   },
   "anilist-21010": {
     "titleZh": "灰色的果實 灰色的特典",
@@ -1641,7 +1654,8 @@
   },
   "anilist-21178": {
     "titleZh": "Code Geass 亡國的阿基德 最終章：獻給所愛之人",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "コードギアス 亡国のアキト 最終章「愛シキモノタチヘ」"
   },
   "anilist-21209": {
     "titleZh": "新妹魔王的契約者〈Testament〉蘿莉色情魅魔萬里亞的角色講評珍藏影像",
@@ -1677,7 +1691,8 @@
   },
   "anilist-21326": {
     "titleZh": "東京喰種 Tokyo Ghoul 【PINTO】",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "東京喰種トーキョーグール［PINTO］"
   },
   "anilist-21328": {
     "titleZh": "乾物妹！小埋S",
@@ -1689,7 +1704,8 @@
   },
   "anilist-21348": {
     "titleZh": "排球少年!! VS赤點",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "ハイキュー!! VS“赤点”"
   },
   "anilist-21376": {
     "titleZh": "吹響吧！上低音號 番外篇：奔跑的Monaka",
@@ -1773,7 +1789,8 @@
   },
   "anilist-21732": {
     "titleZh": "planetarian～小小的星之夢～",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "planetarian ～ちいさなほしのゆめ～"
   },
   "anilist-21765": {
     "titleZh": "終結的熾天使 名古屋決戰篇：「永不結束的熾天使 名古屋決戰篇」",
@@ -1801,11 +1818,13 @@
   },
   "anilist-21852": {
     "titleZh": "出包王女 Darkness 2nd (OVA特別篇)",
-    "source": "manual"
+    "source": "manual",
+    "bangumiDataTitle": "To LOVEる -とらぶる- ダークネス 2nd"
   },
   "anilist-21853": {
     "titleZh": "出包王女 Darkness 2nd",
-    "source": "manual"
+    "source": "manual",
+    "bangumiDataTitle": "To LOVEる -とらぶる- ダークネス 2nd"
   },
   "anilist-21858": {
     "titleZh": "小魔女學園 (TV)",
@@ -1864,8 +1883,9 @@
     "source": "ai"
   },
   "anilist-98663": {
-    "titleZh": "甲鐵城的卡巴內里 總集篇｛後篇｝燃燒的生命",
-    "source": "ai"
+    "titleZh": "甲鐵城的卡巴內裡 總集篇｛後篇｝燃燒的生命",
+    "source": "manual",
+    "bangumiDataTitle": "甲鉄城のカバネリ 総集編 後編 燃える命"
   },
   "anilist-98702": {
     "titleZh": "食戟之靈 貳之皿 OVA",
@@ -1876,8 +1896,9 @@
     "source": "ai"
   },
   "anilist-99302": {
-    "titleZh": "ONE PIECE 航海王 東海篇：魯夫與4名夥伴的大冒險！！",
-    "source": "ai"
+    "titleZh": "海賊王 東海篇",
+    "source": "manual",
+    "bangumiDataTitle": "ONE PIECE エピソードオブ東の海～ルフィと4人の仲間の大冒険!!～"
   },
   "anilist-99394": {
     "titleZh": "亞人醬有話要說 亞人醬的暑假",
@@ -1889,7 +1910,8 @@
   },
   "anilist-99807": {
     "titleZh": "22/7",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "22/7"
   },
   "anilist-100168": {
     "titleZh": "銀翼殺手：2022大停電",
@@ -1932,11 +1954,13 @@
   },
   "anilist-101811": {
     "titleZh": "Code Geass 反叛的魯路修Ⅰ 興道",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "コードギアス 反逆のルルーシュ I 興道"
   },
   "anilist-101812": {
     "titleZh": "Code Geass 反叛的魯路修Ⅱ 叛道",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "コードギアス 反逆のルルーシュ II 叛道"
   },
   "anilist-101816": {
     "titleZh": "黑子的籃球：要不要聊聊呢？",
@@ -1960,7 +1984,8 @@
   },
   "anilist-102649": {
     "titleZh": "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 - 罪與罰",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "PSYCHO-PASS サイコパス Sinners of the System Case.1 罪と罰"
   },
   "anilist-102969": {
     "titleZh": "學園奶爸 OVA",
@@ -2052,7 +2077,7 @@
     "source": "ai"
   },
   "anilist-108992": {
-    "titleZh": "莫比烏斯之塵",
+    "titleZh": "梅比烏斯之塵",
     "source": "ai"
   },
   "anilist-109492": {
@@ -2128,11 +2153,13 @@
   },
   "anilist-118125": {
     "titleZh": "邪神與廚二病少女’ 千歲篇",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "邪神ちゃんドロップキック 世紀末編"
   },
   "anilist-119947": {
     "titleZh": "偽戀: OAD",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "ニセコイ OAD"
   },
   "anilist-120046": {
     "titleZh": "快把我哥帶走4",
@@ -2195,12 +2222,14 @@
     "source": "ai"
   },
   "anilist-130590": {
-    "titleZh": "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～ Ⅱ 第二季",
-    "source": "ai"
+    "titleZh": "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～第二季 後篇",
+    "source": "manual",
+    "bangumiDataTitle": "魔王学院の不適合者II～史上最強の魔王の始祖、転生して子孫たちの学校へ通う～"
   },
   "anilist-133891": {
     "titleZh": "Love Live! 虹咲學園學園偶像同好會 第二季",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "ラブライブ！虹ヶ咲学園スクールアイドル同好会(第2期)"
   },
   "anilist-136263": {
     "titleZh": "異世界超能魔術師：宵星祭典與魔術師",
@@ -2224,7 +2253,8 @@
   },
   "anilist-138700": {
     "titleZh": "憂國的莫里亞蒂 OVA",
-    "source": "ai"
+    "source": "manual",
+    "bangumiDataTitle": "憂国のモリアーティ～百合の追憶～"
   },
   "anilist-139754": {
     "titleZh": "進擊的巨人 Q版角色劇場 Final",
@@ -2315,8 +2345,8 @@
     "source": "manual"
   },
   "anilist-163144": {
-    "titleZh": "槍神 STARGAZE",
-    "source": "ai"
+    "titleZh": "TRIGUN STARGAZE",
+    "source": "manual"
   },
   "anilist-165056": {
     "titleZh": "海盜戰記 第二季 Same old story",
@@ -2537,7 +2567,7 @@
     "source": "manual"
   },
   "anilist-211308": {
-    "titleZh": "緞帶英雄",
+    "titleZh": "THE RIBBON HERO",
     "source": "ai"
   },
   "anilist-211711": {
@@ -4613,6 +4643,81 @@
   "anilist-111048": {
     "titleZh": "拳願阿修羅 後篇",
     "source": "manual"
+  },
+  "anilist-153906": {
+    "titleZh": "Tekken: Bloodline",
+    "source": "manual",
+    "bangumiDataTitle": "TEKKEN BLOODLINE"
+  },
+  "anilist-133124": {
+    "titleZh": "劇場版 Free!–the Final Stroke– 後編",
+    "source": "manual",
+    "bangumiDataTitle": "劇場版 Free!-the Final Stroke- 後編"
+  },
+  "anilist-107203": {
+    "titleZh": "劇場版 Free!–the Final Stroke– 前編",
+    "source": "manual",
+    "bangumiDataTitle": "劇場版 Free!-the Final Stroke- 前編"
+  },
+  "anilist-106169": {
+    "titleZh": "PERSONA5 the Animation: Dark Sun…",
+    "source": "manual",
+    "bangumiDataTitle": "PERSONA5 the Animation Dark Sun…"
+  },
+  "anilist-20791": {
+    "titleZh": "Fate/stay night[Heaven's Feel] Ⅰ.presage flower",
+    "source": "manual",
+    "bangumiDataTitle": "Fate/stay night [Heaven’s Feel] I.presage flower"
+  },
+  "anilist-98662": {
+    "titleZh": "甲鉄城のカバネリ 総集編｛前編｝集う光",
+    "source": "manual",
+    "bangumiDataTitle": "甲鉄城のカバネリ 総集編 前編 集う光"
+  },
+  "anilist-19193": {
+    "titleZh": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:3 Ghost Tears",
+    "source": "manual",
+    "bangumiDataTitle": "攻殻機動隊ARISE border:3 Ghost Tears"
+  },
+  "anilist-17187": {
+    "titleZh": "攻殻機動隊ARISE -GHOST IN THE SHELL- border:1 Ghost Pain",
+    "source": "manual",
+    "bangumiDataTitle": "攻殻機動隊ARISE border:1 Ghost Pain"
+  },
+  "anilist-100714": {
+    "titleZh": "邪神與廚二病少女",
+    "source": "manual",
+    "bangumiDataTitle": "邪神ちゃんドロップキック"
+  },
+  "anilist-107294": {
+    "titleZh": "邪神與廚二病少女 第二季",
+    "source": "manual",
+    "bangumiDataTitle": "邪神ちゃんドロップキック'"
+  },
+  "anilist-124641": {
+    "titleZh": "邪神與廚二病少女 第三季",
+    "source": "manual",
+    "bangumiDataTitle": "邪神ちゃんドロップキックX"
+  },
+  "anilist-163327": {
+    "titleZh": "五等分的新娘∽",
+    "source": "manual",
+    "bangumiDataTitle": "五等分の花嫁"
+  },
+  "anilist-143338": {
+    "titleZh": "關於我在無意間被隔壁的天使變成廢柴這件事",
+    "source": "manual",
+    "bangumiDataTitle": "お隣の天使様にいつの間にか駄目人間にされていた件"
+  },
+  "anilist-129188": {
+    "titleZh": "哥布林殺手 第二季",
+    "source": "manual",
+    "bangumiDataTitle": "ゴブリンスレイヤーⅡ"
+  },
+  "anilist-111322": {
+    "titleZh": "盾之勇者成名錄 第三季",
+    "source": "manual",
+    "bangumiDataTitle": "盾の勇者の成り上がり Season 3"
   },
   "anilist-178972": {
     "titleZh": "GROTESQQQUE -怪誕-",

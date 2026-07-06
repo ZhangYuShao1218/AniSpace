@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { matchBangumiItem } from './scraper_utils.mjs';
+import { matchBangumiItem, aiMatchedRecords, runAiBangumiTitleMatch } from './scraper_utils.mjs';
 
 const ANIME_DATA_PATH = path.join(process.cwd(), 'public', 'anime_data.json');
 const OVERRIDE_PATH = path.join(process.cwd(), 'public', 'custom_override.json');
@@ -86,12 +86,16 @@ async function runAudit() {
   let totalChecked = 0;
   let matchedById = 0;
   let matchedByTitleOnly = 0;
+  const unmatchedList = [];
 
   for (const anime of animeData) {
     totalChecked++;
     const customOverride = customOverrides[anime.id] || customOverrides[anime.id.replace('anilist-', '')];
     const matchedItem = matchBangumiItem(anime.id, anime.titleJa, customOverride, bgmMap, bgmTitleMap);
-    if (!matchedItem) continue;
+    if (!matchedItem) {
+      unmatchedList.push(anime);
+      continue;
+    }
     if (bgmMap.has(anime.id.replace('anilist-', ''))) {
       matchedById++;
       continue;
@@ -161,6 +165,10 @@ async function runAudit() {
     }
   }
 
+  if (unmatchedList.length > 0) {
+    await runAiBangumiTitleMatch(unmatchedList, bgmTitleMap);
+  }
+
   // 排序：年份由新到舊
   const sortFn = (a, b) => {
     const parseYear = (str) => parseInt(str) || 0;
@@ -204,8 +212,23 @@ async function runAudit() {
     md += `\n`;
   }
 
+  md += `## 🤖 第三部分：AI 正規化標題對照自動配對成功清單 (${aiMatchedRecords.length} 部)\n\n`;
+  if (aiMatchedRecords.length === 0) {
+    md += `*本次未觸發 AI 正規化對照或無新增配對！*\n\n`;
+  } else {
+    md += `| 動畫 ID | 日文原名 | 字典對齊標題 | 字典 BGM ID |\n`;
+    md += `|---|---|---|---|\n`;
+    aiMatchedRecords.forEach(item => {
+      md += `| \`${item.id}\` | ${item.titleJa} | **${item.matchedBgmTitle}** | \`${item.bgmId}\` |\n`;
+    });
+    md += `\n`;
+  }
+
   fs.writeFileSync(REPORT_MD, md, 'utf8');
   console.log(`📝 報告已重新儲存，所有譯名已校正為中文！`);
+  if (aiMatchedRecords.length > 0) {
+    console.log(`🤖 共有 ${aiMatchedRecords.length} 部動畫透過 AI 正規化標題對照成功找到 bangumi-data 字典！`);
+  }
 }
 
 runAudit();

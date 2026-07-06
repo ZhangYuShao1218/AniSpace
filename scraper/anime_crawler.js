@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
-import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings, matchBangumiItem } from './scraper_utils.mjs';
+import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings, matchBangumiItem, aiMatchedRecords, runAiBangumiTitleMatch } from './scraper_utils.mjs';
 import { washGamerStreamings } from './wash_gamer_links.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
@@ -503,6 +503,60 @@ async function main() {
     });
   }
 
+  if (unlinkedAnimeList.length > 0) {
+    const aiMatchedList = await runAiBangumiTitleMatch(unlinkedAnimeList, bgmTitleMap);
+    let overrideUpdated = false;
+    if (aiMatchedList && aiMatchedList.length > 0) {
+      aiMatchedList.forEach(res => {
+        if (!res || !res.id || !res.matchedBgmTitle) return;
+        const targetAnime = finalAnimeList.find(a => a.id === res.id || a.id === `anilist-${res.id}`);
+        const matchedBgmItem = bgmTitleMap.get(res.matchedBgmTitle);
+        
+        // 1. 自動補充 streamings
+        if (targetAnime && (!targetAnime.streamings || targetAnime.streamings.length === 0) && matchedBgmItem) {
+          const streamings = [];
+          const blockedSites = overrideData[targetAnime.id]?.blockedSites || [];
+          if (matchedBgmItem.sites) {
+            matchedBgmItem.sites.forEach(s => {
+              if (blockedSites.includes(s.site)) return;
+              const meta = bgmSiteMeta[s.site];
+              if (meta && (meta.type === 'onair' || s.site === 'gamer' || s.site === 'gamer_hk')) {
+                const urlTemplate = meta.urlTemplate || '';
+                const url = urlTemplate.replace('{{id}}', s.id) || s.url || '';
+                if (url) {
+                  let region = '全球/日本';
+                  if (meta.regions && meta.regions.includes('TW')) region = '台灣';
+                  else if (meta.regions && meta.regions.includes('HK')) region = '港澳';
+                  else if (meta.regions && meta.regions.includes('CN')) region = '中國';
+                  streamings.push({ site: s.site, name: meta.title, region, url });
+                }
+              }
+            });
+          }
+          if (streamings.length > 0) targetAnime.streamings = normalizeAndMergeStreamings(streamings);
+        }
+
+        // 2. 寫入 custom_override.json 的 bangumiDataTitle
+        const ak = res.id.toString().startsWith('anilist-') ? res.id : `anilist-${res.id}`;
+        if (!overrideData[ak]) overrideData[ak] = {};
+        if (overrideData[ak].bangumiDataTitle !== res.matchedBgmTitle) {
+          overrideData[ak].bangumiDataTitle = res.matchedBgmTitle;
+          overrideUpdated = true;
+        }
+
+        // 3. 從 unlinkedAnimeList 中移除已經對應成功者
+        const idx = unlinkedAnimeList.findIndex(u => u.id === res.id || u.id === `anilist-${res.id}`);
+        if (idx !== -1) unlinkedAnimeList.splice(idx, 1);
+      });
+
+      if (overrideUpdated) {
+        const overridePath = path.join(process.cwd(), 'public', 'custom_override.json');
+        fs.writeFileSync(overridePath, JSON.stringify(overrideData, null, 2), 'utf-8');
+        console.log(`✅ 已將 AI 標題對比成功的 ${aiMatchedList.length} 筆結果寫入 custom_override.json 的 bangumiDataTitle 欄位中！`);
+      }
+    }
+  }
+
   await washGamerStreamings(finalAnimeList, newlyAddedAnimes);
 
   const summaryPath = path.join(process.cwd(), 'scraper', 'run_summary.txt');
@@ -512,6 +566,10 @@ async function main() {
   }
   if (aiTranslatedAnimes.length > 0) {
     summaryContent += `🤖 AI 翻譯動畫：\n- ${aiTranslatedAnimes.join('\n- ')}\n`;
+  }
+  if (aiMatchedRecords.length > 0) {
+    summaryContent += `🧠 AI 正規化標題自動配對成功 (${aiMatchedRecords.length} 部)：\n` +
+      aiMatchedRecords.map(r => `- [${r.id}] "${r.titleJa}" ➜ 字典標題 "${r.matchedBgmTitle}" (BGM ID: ${r.bgmId})`).join('\n') + '\n';
   }
   if (unlinkedAnimeList.length > 0) {
     const mdPath = path.join(process.cwd(), 'public', 'unlinked_anime_list.md');

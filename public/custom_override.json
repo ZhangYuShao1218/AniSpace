@@ -335,7 +335,8 @@
   },
   "anilist-194829": {
     "source": "manual",
-    "titleZh": "鄉下大叔成為劍聖 第二季"
+    "titleZh": "鄉下大叔成為劍聖 第二季",
+    "bangumiDataTitle": "片田舎のおっさん、剣聖になるⅡ"
   },
   "anilist-163151": {
     "source": "manual",
@@ -525,7 +526,8 @@
   },
   "anilist-8619": {
     "source": "manual",
-    "titleZh": "大小姐×執事！OVA"
+    "titleZh": "大小姐×執事！OVA",
+    "bangumiDataTitle": "れでぃ×ばと!"
   },
   "anilist-21473": {
     "titleZh": "闇芝居 第三季",
@@ -609,11 +611,13 @@
   },
   "anilist-11977": {
     "source": "manual",
-    "titleZh": "劇場版 魔法少女小圓 ［前篇］起始的物語"
+    "titleZh": "劇場版 魔法少女小圓 ［前篇］起始的物語",
+    "bangumiDataTitle": "劇場版 魔法少女まどか☆マギカ 始まりの物語"
   },
   "anilist-11979": {
     "source": "manual",
-    "titleZh": "劇場版 魔法少女小圓 ［後篇］永遠的物語"
+    "titleZh": "劇場版 魔法少女小圓 ［後篇］永遠的物語",
+    "bangumiDataTitle": "劇場版 魔法少女まどか☆マギカ 永遠の物語"
   },
   "anilist-9756": {
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9756-QnUGwlwwnsuN.jpg",
@@ -698,7 +702,8 @@
   },
   "anilist-531": {
     "titleZh": "美少女戰士R 電影版",
-    "source": "manual"
+    "source": "manual",
+    "bangumiDataTitle": "美少女戦士セーラームーンＲ THE MOVIE"
   },
   "anilist-874": {
     "titleZh": "數碼寶貝03馴獸師之王",
@@ -735,7 +740,8 @@
   "anilist-2652": {
     "titleZh": "哆啦A夢 我出生的日子",
     "source": "ai",
-    "show": false
+    "show": false,
+    "bangumiDataTitle": "ドラえもん ぼくの生まれた日"
   },
   "anilist-2966": {
     "titleZh": "狼與辛香料",
@@ -854,7 +860,8 @@
   "anilist-8632": {
     "titleZh": "老鼠相撲",
     "source": "ai",
-    "show": false
+    "show": false,
+    "bangumiDataTitle": "ちゅうずもう"
   },
   "anilist-8668": {
     "titleZh": "聖痕鍊金士 廣播劇",
@@ -2040,7 +2047,8 @@
   },
   "anilist-106918": {
     "titleZh": "君主‧埃爾梅羅二世事件簿 {魔眼蒐集列車} Grace note",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "ロード・エルメロイII世の事件簿 -魔眼蒐集列車 Grace note-"
   },
   "anilist-107138": {
     "titleZh": "天使降臨到我身邊！OVA",
@@ -2106,7 +2114,8 @@
   },
   "anilist-110857": {
     "titleZh": "衝吧烈子 第三季",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "アグレッシブ烈子 シーズン3"
   },
   "anilist-111729": {
     "titleZh": "平凡職業成就世界最強",
@@ -2207,7 +2216,8 @@
   },
   "anilist-127619": {
     "titleZh": "衝吧烈子 第四季",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "アグレッシブ烈子 シーズン4"
   },
   "anilist-128643": {
     "titleZh": "果然我的青春戀愛喜劇搞錯了。完 「所以，青春期不會結束，青春將會繼續下去。」",
@@ -2249,7 +2259,8 @@
   },
   "anilist-138056": {
     "titleZh": "終末的女武神Ⅱ",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "終末のワルキューレⅡ"
   },
   "anilist-138700": {
     "titleZh": "憂國的莫里亞蒂 OVA",
@@ -2345,8 +2356,8 @@
     "source": "manual"
   },
   "anilist-163144": {
-    "titleZh": "TRIGUN STARGAZE",
-    "source": "manual"
+    "titleZh": "槍神 TRIGUN STARGAZE",
+    "source": "ai"
   },
   "anilist-165056": {
     "titleZh": "海盜戰記 第二季 Same old story",
@@ -2359,7 +2370,8 @@
   },
   "anilist-165356": {
     "titleZh": "終末的女武神Ⅱ 後篇",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "終末のワルキューレⅡ 後編"
   },
   "anilist-165557": {
     "titleZh": "輝夜姬想讓人告白-Ultra Romantic- 第三期",
@@ -2567,7 +2579,7 @@
     "source": "manual"
   },
   "anilist-211308": {
-    "titleZh": "THE RIBBON HERO",
+    "titleZh": "緞帶英雄",
     "source": "ai"
   },
   "anilist-211711": {
@@ -4617,7 +4629,8 @@
     "show": false
   },
   "anilist-188": {
-    "show": false
+    "show": false,
+    "bangumiDataTitle": "御先祖賛江"
   },
   "anilist-170": {
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170-cmD8A0vZsp6g.jpg"

@@ -34,11 +34,18 @@ async function sendReport() {
   });
 
   const logFilePath = path.join(__dirname, 'daily_run.log');
+  const unlinkedMdPath = path.join(process.cwd(), 'public', 'unlinked_anime_list.md');
   const attachments = [];
   if (fs.existsSync(logFilePath)) {
     attachments.push({
       filename: `daily_run_${new Date().toLocaleDateString('zh-TW', { timeZone: 'Asia/Taipei' }).replace(/\//g, '-')}.log`,
       path: logFilePath
+    });
+  }
+  if (fs.existsSync(unlinkedMdPath)) {
+    attachments.push({
+      filename: `unlinked_anime_list.md`,
+      path: unlinkedMdPath
     });
   }
 
@@ -50,7 +57,8 @@ async function sendReport() {
       text: reportContent,
       attachments
     });
-    console.log(`✅ 成功寄送每日執行總結報告 Email！（已隨信附帶完整日誌 ${attachments.length > 0 ? attachments[0].filename : ''}）`);
+    const attNames = attachments.map(a => a.filename).join(', ');
+    console.log(`✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：${attNames || '無'}）`);
     
     // 清除舊報告
     if (fs.existsSync(summaryPath)) {

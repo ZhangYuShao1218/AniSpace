@@ -1,4 +1,12 @@
 {
+  "anilist-15323": {
+    "titleZh": "海賊王 娜美特別篇 領航員之淚與夥伴的羈絆",
+    "source": "manual"
+  },
+  "anilist-106862": {
+    "titleZh": "艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note- 守墓人與貓",
+    "source": "manual"
+  },
   "anilist-13403": {
     "titleZh": "妖狐×僕SS",
     "source": "gamer",
@@ -612,12 +620,12 @@
   "anilist-11977": {
     "source": "manual",
     "titleZh": "劇場版 魔法少女小圓 ［前篇］起始的物語",
-    "bangumiDataTitle": "劇場版 魔法少女まどか☆マギカ 始まりの物語"
+    "bangumiDataTitle": "魔法少女まどか☆マギカ [前編] 始まりの物語"
   },
   "anilist-11979": {
     "source": "manual",
     "titleZh": "劇場版 魔法少女小圓 ［後篇］永遠的物語",
-    "bangumiDataTitle": "劇場版 魔法少女まどか☆マギカ 永遠の物語"
+    "bangumiDataTitle": "魔法少女まどか☆マギカ [後編] 永遠の物語"
   },
   "anilist-9756": {
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9756-QnUGwlwwnsuN.jpg",
@@ -1903,7 +1911,7 @@
     "source": "ai"
   },
   "anilist-99302": {
-    "titleZh": "海賊王 東海篇",
+    "titleZh": "海賊王 東海特別篇 路飛與四位夥伴的大冒險！！",
     "source": "manual",
     "bangumiDataTitle": "ONE PIECE エピソードオブ東の海～ルフィと4人の仲間の大冒険!!～"
   },

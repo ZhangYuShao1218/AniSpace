@@ -414,6 +414,12 @@
     "yearSeason": "2023 秋"
   },
   {
+    "id": "anilist-165356",
+    "titleZh": "終末的女武神Ⅱ 後篇",
+    "titleJa": "終末のワルキューレⅡ 後編",
+    "yearSeason": "2023 夏"
+  },
+  {
     "id": "anilist-146638",
     "titleZh": "拳願阿修羅 第二季",
     "titleJa": "ケンガンアシュラ Season2",
@@ -444,6 +450,12 @@
     "yearSeason": "2023 春"
   },
   {
+    "id": "anilist-138056",
+    "titleZh": "終末的女武神Ⅱ",
+    "titleJa": "終末のワルキューレⅡ",
+    "yearSeason": "2023 冬"
+  },
+  {
     "id": "anilist-154982",
     "titleZh": "極道主夫 第二季",
     "titleJa": "極主夫道 シーズン2",
@@ -457,8 +469,8 @@
   },
   {
     "id": "anilist-146475",
-    "titleZh": "C団地 ",
-    "titleJa": "C団地 ",
+    "titleZh": "C団地",
+    "titleJa": "C団地",
     "yearSeason": "2022 秋"
   },
   {
@@ -540,6 +552,12 @@
     "yearSeason": "2021 秋"
   },
   {
+    "id": "anilist-127619",
+    "titleZh": "衝吧烈子 第四季",
+    "titleJa": "アグレッシブ烈子 シーズン4",
+    "yearSeason": "2021 秋"
+  },
+  {
     "id": "anilist-165557",
     "titleZh": "輝夜姬想讓人告白-Ultra Romantic- 第三期",
     "titleJa": "第３期『かぐや様は告らせたい-ウルトラロマンティック-』 ／ ティザーPV 「石上優は語りたい」",
@@ -592,6 +610,12 @@
     "titleZh": "PUPARIA",
     "titleJa": "PUPARIA",
     "yearSeason": "2020 秋"
+  },
+  {
+    "id": "anilist-110857",
+    "titleZh": "衝吧烈子 第三季",
+    "titleJa": "アグレッシブ烈子 シーズン3",
+    "yearSeason": "2020 夏"
   },
   {
     "id": "anilist-126661",
@@ -2496,6 +2520,12 @@
     "yearSeason": "2010 春"
   },
   {
+    "id": "anilist-8619",
+    "titleZh": "大小姐×執事！OVA",
+    "titleJa": "れでぃ×ばと!",
+    "yearSeason": "2010 春"
+  },
+  {
     "id": "anilist-8792",
     "titleZh": "窓辺ななみのWindows 7でPC自作応援コマーシャルっ!!",
     "titleJa": "窓辺ななみのWindows 7でPC自作応援コマーシャルっ!!",
@@ -2574,9 +2604,33 @@
     "yearSeason": "2010 冬"
   },
   {
+    "id": "anilist-8632",
+    "titleZh": "老鼠相撲",
+    "titleJa": "ちゅうずもう",
+    "yearSeason": "2010 冬"
+  },
+  {
     "id": "anilist-3674",
     "titleZh": "再見了，絕望先生 序～絕望少女撰集～",
     "titleJa": "さよなら絶望先生 序〜絶望少女撰集〜",
     "yearSeason": "2008 冬"
+  },
+  {
+    "id": "anilist-2652",
+    "titleZh": "哆啦A夢 我出生的日子",
+    "titleJa": "ドラえもん ぼくの生まれた日",
+    "yearSeason": "2002 冬"
+  },
+  {
+    "id": "anilist-188",
+    "titleZh": "御先祖賛江",
+    "titleJa": "御先祖賛江",
+    "yearSeason": "1998 秋"
+  },
+  {
+    "id": "anilist-531",
+    "titleZh": "美少女戰士R 電影版",
+    "titleJa": "美少女戦士セーラームーンＲ THE MOVIE",
+    "yearSeason": "1993 秋"
   }
 ]

@@ -7,6 +7,7 @@ import type { Anime, WatchedAnime } from '@/types';
 import { ShareImageGenerator } from '@/components/share/ShareImageGenerator';
 import type { ShareImageGeneratorRef } from '@/components/share/ShareImageGenerator';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useAdMob } from '@/contexts/AdMobContext';
 
 export interface ShareTaskData {
   animes: (Anime | WatchedAnime)[];
@@ -30,6 +31,7 @@ const ShareTaskContext = createContext<ShareTaskContextType | undefined>(undefin
 
 export const ShareTaskProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const { t } = useLanguage();
+  const { showInterstitialSafe } = useAdMob();
   const [taskData, setTaskData] = useState<ShareTaskData | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [status, setStatus] = useState<'idle' | 'loading_images' | 'generating_canvas' | 'done'>('idle');
@@ -79,6 +81,7 @@ export const ShareTaskProvider: React.FC<{ children: ReactNode }> = ({ children 
               directory: Directory.Cache
             });
             setGeneratedUri(savedFile.uri);
+            showInterstitialSafe('export');
           } else {
             // Web PC: directly download the image
             const link = document.createElement('a');

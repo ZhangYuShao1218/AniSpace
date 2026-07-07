@@ -201,7 +201,12 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         watchedList, 
         planToWatchList,
         customAnimeList,
-        corrections
+        corrections,
+        admobMeta: {
+          isNotNewUser: localStorage.getItem('admob_is_not_new_user') === 'true',
+          reviewCount: parseInt(localStorage.getItem('admob_review_count') || '0', 10),
+          exportCount: parseInt(localStorage.getItem('admob_export_count') || '0', 10)
+        }
       });
 
       if (!fileId) {
@@ -276,6 +281,14 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       if (res.ok) {
         const data = await res.json();
+        if (data.admobMeta) {
+          if (data.admobMeta.isNotNewUser) localStorage.setItem('admob_is_not_new_user', 'true');
+          if (data.admobMeta.reviewCount) localStorage.setItem('admob_review_count', data.admobMeta.reviewCount.toString());
+          if (data.admobMeta.exportCount) localStorage.setItem('admob_export_count', data.admobMeta.exportCount.toString());
+        } else if (data.watchedList && data.watchedList.filter((a: any) => a.userComment || (a.userRating && a.userRating > 0)).length > 2) {
+          localStorage.setItem('admob_is_not_new_user', 'true');
+        }
+
         if (data.watchedList || data.customAnimeList || data.corrections) {
            if (data.watchedList) handleImport(data.watchedList);
            if (data.customAnimeList) handleImportCustomAnime(data.customAnimeList);

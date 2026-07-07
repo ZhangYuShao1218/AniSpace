@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '@/components/modals/ReviewModal.css';
 import type { Anime, WatchedAnime } from '@/types';
 import { X, Star } from 'lucide-react';
+import { useAdMob } from '@/contexts/AdMobContext';
 
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -14,6 +15,7 @@ interface ReviewModalProps {
 
 const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSave }) => {
   const { t, tCover, tTitle, tYearSeason } = useLanguage();
+  const { showInterstitialSafe } = useAdMob();
   const [rating, setRating] = useState<number>(0);
   const [comment, setComment] = useState<string>('');
   const [hoverRating, setHoverRating] = useState<number>(0);
@@ -38,6 +40,7 @@ const ReviewModal: React.FC<ReviewModalProps> = ({ isOpen, onClose, anime, onSav
       watchedDate
     });
     onClose();
+    showInterstitialSafe('review');
   };
 
   return (

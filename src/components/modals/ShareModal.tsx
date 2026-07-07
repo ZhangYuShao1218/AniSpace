@@ -33,6 +33,7 @@ import { ShareModeSelector } from '@/components/share/ShareModeSelector';
 import { ShareList } from '@/components/share/ShareList';
 import '@/components/modals/ShareModal.css';
 import { logEvent } from '@/utils/analytics';
+import { useAdMob } from '@/contexts/AdMobContext';
 
 export type ExportMode = 'SHEET' | 'GRID_4' | 'GRID_9' | 'GRID_16' | 'GRID_25';
 
@@ -44,6 +45,7 @@ interface ShareModalProps {
 }
 
 export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes, isWatched }) => {
+  const { showInterstitialSafe } = useAdMob();
   const [mode, setModeState] = useState<ExportMode>(() => {
     const saved = localStorage.getItem('preferredShareMode');
     if (saved && ['SHEET', 'GRID_4', 'GRID_9', 'GRID_16', 'GRID_25'].includes(saved)) {
@@ -147,6 +149,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
       const url = await exportToGoogleSheet(accessToken, dataToExport, isWatched);
       
       logEvent('Share', 'Generate_Google_Sheet', `Items: ${dataToExport.length}`);
+      
+      showInterstitialSafe('export');
       
       const isMobileOrTablet = window.innerWidth <= 1024 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       

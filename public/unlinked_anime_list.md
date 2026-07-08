@@ -1,6 +1,6 @@
 # AniList 與 bangumi-data 尚未連結之動畫清單
 
-本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3574 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **435 部**動畫條目。
+本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3576 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **436 部**動畫條目。
 
 > [!NOTE]
 > 這些未連結的條目絕大多數為 **2025/2026 年之後播映的未來新番、續作企劃、OVA、特輯或短期宣傳片**。由於 `bangumi-data` 開源社區主要收錄已開播或當季之正片，對於尚未放送的企劃尚未建檔或標註 AniList ID，因此屬於正常現象。
@@ -442,3 +442,4 @@
 | 433 | `anilist-2652` | 哆啦A夢 我出生的日子 | ドラえもん ぼくの生まれた日 | 2002 冬 |
 | 434 | `anilist-188` | 御先祖賛江 | 御先祖賛江 | 1998 秋 |
 | 435 | `anilist-531` | 美少女戰士R 電影版 | 美少女戦士セーラームーンＲ THE MOVIE | 1993 秋 |
+| 436 | `anilist-143103` | 魔法使之夜 | 魔法使いの夜 | 2026 秋 |

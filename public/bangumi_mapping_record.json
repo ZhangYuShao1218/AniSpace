@@ -1165,6 +1165,17 @@
     "bgmId": "627136",
     "streamingsCount": 2
   },
+  "anilist-208225": {
+    "id": "anilist-208225",
+    "titleZh": "說了不打算愛我的公爵繼承人，不知為何對我寵愛有加",
+    "titleJa": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
+    "yearSeason": "2026 夏",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
+    "bgmId": "631018",
+    "streamingsCount": 1
+  },
   "anilist-147105": {
     "id": "anilist-147105",
     "titleZh": "魔法帽的工作室",
@@ -30898,6 +30909,17 @@
     "bgmId": "54602",
     "streamingsCount": 1
   },
+  "anilist-12857": {
+    "id": "anilist-12857",
+    "titleZh": "閃亮的拓人 劇場版",
+    "titleJa": "スタードライバー THE MOVIE",
+    "yearSeason": "2013 冬",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "スタードライバー THE MOVIE",
+    "bgmId": "48702",
+    "streamingsCount": 4
+  },
   "anilist-14719": {
     "id": "anilist-14719",
     "titleZh": "JOJO 的奇妙冒險",
@@ -39291,26 +39313,26 @@
     "bgmId": "2885",
     "streamingsCount": 5
   },
-  "anilist-12857": {
-    "id": "anilist-12857",
-    "titleZh": "閃亮的拓人 劇場版",
-    "titleJa": "スタードライバー THE MOVIE",
-    "yearSeason": "2013 冬",
-    "hasCorrespondingData": true,
-    "matchedType": "A-AniListID",
-    "matchedBgmTitle": "スタードライバー THE MOVIE",
-    "bgmId": "48702",
-    "streamingsCount": 4
-  },
-  "anilist-208225": {
-    "id": "anilist-208225",
-    "titleZh": "說了不打算愛我的公爵繼承人，不知為何對我寵愛有加",
-    "titleJa": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
+  "anilist-209504": {
+    "id": "anilist-209504",
+    "titleZh": "無用聖女的異世界美食之旅 憑藉隱藏技能召喚露營車",
+    "titleJa": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
-    "matchedType": "A-AniListID",
-    "matchedBgmTitle": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
-    "bgmId": "631018",
-    "streamingsCount": 1
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
+    "bgmId": "636067",
+    "streamingsCount": 2
+  },
+  "anilist-143103": {
+    "id": "anilist-143103",
+    "titleZh": "魔法使之夜",
+    "titleJa": "魔法使いの夜",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

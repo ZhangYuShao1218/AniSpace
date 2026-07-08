@@ -2364,8 +2364,8 @@
     "source": "manual"
   },
   "anilist-163144": {
-    "source": "ai",
-    "titleZh": "槍神 STARGAZE"
+    "titleZh": "槍神 TRIGUN STARGAZE",
+    "source": "manual"
   },
   "anilist-165056": {
     "titleZh": "海盜戰記 第二季 Same old story",
@@ -4754,5 +4754,13 @@
   "anilist-143103": {
     "titleZh": "魔法使之夜",
     "source": "ai"
+  },
+  "anilist-151040": {
+    "titleZh": "槍神 TRIGUN STAMPEDE",
+    "source": "manual"
+  },
+  "anilist-184356": {
+    "titleZh": "盜墓王",
+    "source": "manual"
   }
 }

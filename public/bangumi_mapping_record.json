@@ -582,6 +582,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-143103": {
+    "id": "anilist-143103",
+    "titleZh": "魔法使之夜",
+    "titleJa": "魔法使いの夜",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-178789": {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
@@ -1175,6 +1186,28 @@
     "matchedBgmTitle": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
     "bgmId": "631018",
     "streamingsCount": 1
+  },
+  "anilist-209504": {
+    "id": "anilist-209504",
+    "titleZh": "無用聖女的異世界美食之旅 憑藉隱藏技能召喚露營車",
+    "titleJa": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
+    "yearSeason": "2026 夏",
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
+    "bgmId": "636067",
+    "streamingsCount": 2
+  },
+  "anilist-184356": {
+    "id": "anilist-184356",
+    "titleZh": "盜墓王",
+    "titleJa": "도굴왕",
+    "yearSeason": "2026 夏",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "盗掘王",
+    "bgmId": "621835",
+    "streamingsCount": 0
   },
   "anilist-147105": {
     "id": "anilist-147105",
@@ -2003,7 +2036,7 @@
   },
   "anilist-163144": {
     "id": "anilist-163144",
-    "titleZh": "槍神 STARGAZE",
+    "titleZh": "槍神 TRIGUN STARGAZE",
     "titleJa": "TRIGUN STARGAZE",
     "yearSeason": "2026 冬",
     "hasCorrespondingData": true,
@@ -8526,7 +8559,7 @@
   },
   "anilist-151040": {
     "id": "anilist-151040",
-    "titleZh": "TRIGUN STAMPEDE",
+    "titleZh": "槍神 TRIGUN STAMPEDE",
     "titleJa": "TRIGUN STAMPEDE",
     "yearSeason": "2023 冬",
     "hasCorrespondingData": true,
@@ -39312,27 +39345,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-209504": {
-    "id": "anilist-209504",
-    "titleZh": "無用聖女的異世界美食之旅 憑藉隱藏技能召喚露營車",
-    "titleJa": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
-    "yearSeason": "2026 夏",
-    "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
-    "matchedBgmTitle": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
-    "bgmId": "636067",
-    "streamingsCount": 2
-  },
-  "anilist-143103": {
-    "id": "anilist-143103",
-    "titleZh": "魔法使之夜",
-    "titleJa": "魔法使いの夜",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

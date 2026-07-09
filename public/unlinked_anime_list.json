@@ -318,6 +318,12 @@
     "yearSeason": "2026 秋"
   },
   {
+    "id": "anilist-143103",
+    "titleZh": "魔法使之夜",
+    "titleJa": "魔法使いの夜",
+    "yearSeason": "2026 秋"
+  },
+  {
     "id": "anilist-133007",
     "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯之迴天〉",
     "titleJa": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
@@ -2608,11 +2614,5 @@
     "titleZh": "美少女戰士R 電影版",
     "titleJa": "美少女戦士セーラームーンＲ THE MOVIE",
     "yearSeason": "1993 秋"
-  },
-  {
-    "id": "anilist-143103",
-    "titleZh": "魔法使之夜",
-    "titleJa": "魔法使いの夜",
-    "yearSeason": "2026 秋"
   }
 ]

@@ -39345,5 +39345,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-198727": {
+    "id": "anilist-198727",
+    "titleZh": "千歲同學在彈珠汽水瓶中 第2季度",
+    "titleJa": "千歳くんはラムネ瓶のなか 2クール",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

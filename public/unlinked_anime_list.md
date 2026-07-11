@@ -1,6 +1,6 @@
 # AniList 與 bangumi-data 尚未連結之動畫清單
 
-本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3577 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **436 部**動畫條目。
+本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3578 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **437 部**動畫條目。
 
 > [!NOTE]
 > 這些未連結的條目絕大多數為 **2025/2026 年之後播映的未來新番、續作企劃、OVA、特輯或短期宣傳片**。由於 `bangumi-data` 開源社區主要收錄已開播或當季之正片，對於尚未放送的企劃尚未建檔或標註 AniList ID，因此屬於正常現象。
@@ -443,3 +443,4 @@
 | 434 | `anilist-2652` | 哆啦A夢 我出生的日子 | ドラえもん ぼくの生まれた日 | 2002 冬 |
 | 435 | `anilist-188` | 御先祖賛江 | 御先祖賛江 | 1998 秋 |
 | 436 | `anilist-531` | 美少女戰士R 電影版 | 美少女戦士セーラームーンＲ THE MOVIE | 1993 秋 |
+| 437 | `anilist-198727` | 千歲同學在彈珠汽水瓶中 第2季度 | 千歳くんはラムネ瓶のなか 2クール | 2026 秋 |

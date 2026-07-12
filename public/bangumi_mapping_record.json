@@ -593,6 +593,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-198727": {
+    "id": "anilist-198727",
+    "titleZh": "千歲同學在彈珠汽水瓶中 第2季度",
+    "titleJa": "千歳くんはラムネ瓶のなか 2クール",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-178789": {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
@@ -39345,16 +39356,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-198727": {
-    "id": "anilist-198727",
-    "titleZh": "千歲同學在彈珠汽水瓶中 第2季度",
-    "titleJa": "千歳くんはラムネ瓶のなか 2クール",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

@@ -419,7 +419,7 @@
   },
   "anilist-197543": {
     "id": "anilist-197543",
-    "titleZh": "BanG Dream! Ave Mujica prima aurora",
+    "titleZh": "BanG Dream! Ave Mujica",
     "titleJa": "BanG Dream! Ave Mujica prima aurora",
     "yearSeason": "2026 秋",
     "hasCorrespondingData": false,
@@ -613,7 +613,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "無職転生Ⅲ ～異世界行ったら本気だす～",
     "bgmId": "501963",
-    "streamingsCount": 2
+    "streamingsCount": 10
   },
   "anilist-135865": {
     "id": "anilist-135865",
@@ -624,18 +624,18 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "幼女戦記Ⅱ",
     "bgmId": "339515",
-    "streamingsCount": 1
+    "streamingsCount": 8
   },
   "anilist-196187": {
     "id": "anilist-196187",
-    "titleZh": "在超市後門吸菸的二人",
+    "titleZh": "躲在超市後門抽菸的兩人",
     "titleJa": "スーパーの裏でヤニ吸うふたり",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "スーパーの裏でヤニ吸うふたり",
     "bgmId": "571784",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-185874": {
     "id": "anilist-185874",
@@ -661,14 +661,14 @@
   },
   "anilist-187260": {
     "id": "anilist-187260",
-    "titleZh": "與你相戀到生命盡頭",
+    "titleZh": "與妳相戀到生命盡頭",
     "titleJa": "きみが死ぬまで恋をしたい",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "きみが死ぬまで恋をしたい",
     "bgmId": "541285",
-    "streamingsCount": 1
+    "streamingsCount": 7
   },
   "anilist-159309": {
     "id": "anilist-159309",
@@ -676,10 +676,10 @@
     "titleJa": "乙女ゲー世界はモブに厳しい世界です2",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
+    "matchedType": "A-AniListID",
     "matchedBgmTitle": "乙女ゲー世界はモブに厳しい世界です2",
     "bgmId": "412144",
-    "streamingsCount": 2
+    "streamingsCount": 5
   },
   "anilist-103303": {
     "id": "anilist-103303",
@@ -690,7 +690,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "二十世紀電氣目録-ユーレカ・エヴリカ-",
     "bgmId": "255209",
-    "streamingsCount": 0
+    "streamingsCount": 1
   },
   "anilist-210031": {
     "id": "anilist-210031",
@@ -701,7 +701,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "正反対な君と僕(第2期)",
     "bgmId": "638497",
-    "streamingsCount": 1
+    "streamingsCount": 10
   },
   "anilist-199111": {
     "id": "anilist-199111",
@@ -712,7 +712,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ぐらんぶる Season 3",
     "bgmId": "569116",
-    "streamingsCount": 2
+    "streamingsCount": 7
   },
   "anilist-185542": {
     "id": "anilist-185542",
@@ -723,7 +723,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "骸骨騎士様、只今異世界へお出掛け中Ⅱ",
     "bgmId": "528828",
-    "streamingsCount": 2
+    "streamingsCount": 9
   },
   "anilist-177699": {
     "id": "anilist-177699",
@@ -734,7 +734,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "攻殻機動隊 THE GHOST IN THE SHELL",
     "bgmId": "496276",
-    "streamingsCount": 1
+    "streamingsCount": 4
   },
   "anilist-198946": {
     "id": "anilist-198946",
@@ -745,7 +745,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "クレバテスⅡ-魔獣の王と偽りの勇者伝承-",
     "bgmId": "585820",
-    "streamingsCount": 2
+    "streamingsCount": 9
   },
   "anilist-194829": {
     "id": "anilist-194829",
@@ -756,18 +756,18 @@
     "matchedType": "B-bangumiDataTitle",
     "matchedBgmTitle": "片田舎のおっさん、剣聖になるⅡ",
     "bgmId": "565701",
-    "streamingsCount": 0
+    "streamingsCount": 1
   },
   "anilist-200637": {
     "id": "anilist-200637",
-    "titleZh": "超超超超超喜歡你的100個女朋友 第三季",
+    "titleZh": "超超超超超喜歡你的 100 個女朋友 第三季",
     "titleJa": "君のことが大大大大大好きな100人の彼女 第3期",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "君のことが大大大大大好きな100人の彼女(第3期)",
     "bgmId": "598058",
-    "streamingsCount": 1
+    "streamingsCount": 9
   },
   "anilist-187538": {
     "id": "anilist-187538",
@@ -778,7 +778,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BLACK TORCH",
     "bgmId": "542603",
-    "streamingsCount": 1
+    "streamingsCount": 8
   },
   "anilist-182616": {
     "id": "anilist-182616",
@@ -789,7 +789,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "逃げ上手の若君 第二期",
     "bgmId": "517106",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-180136": {
     "id": "anilist-180136",
@@ -800,7 +800,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "追放された転生重騎士はゲーム知識で無双する",
     "bgmId": "511177",
-    "streamingsCount": 3
+    "streamingsCount": 9
   },
   "anilist-190569": {
     "id": "anilist-190569",
@@ -811,7 +811,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "天幕のジャードゥーガル",
     "bgmId": "552533",
-    "streamingsCount": 2
+    "streamingsCount": 7
   },
   "anilist-207141": {
     "id": "anilist-207141",
@@ -822,18 +822,18 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ヤニねこ",
     "bgmId": "622206",
-    "streamingsCount": 2
+    "streamingsCount": 9
   },
   "anilist-128757": {
     "id": "anilist-128757",
-    "titleZh": "感謝對戰。 ～大小姐才不玩格鬥遊戲～",
+    "titleZh": "感謝對戰。～大小姐才不玩格鬥遊戲～",
     "titleJa": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "対ありでした。～お嬢さまは格闘ゲームなんてしない～",
     "bgmId": "325767",
-    "streamingsCount": 0
+    "streamingsCount": 5
   },
   "anilist-209983": {
     "id": "anilist-209983",
@@ -844,18 +844,18 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～ 2nd Season",
     "bgmId": "638151",
-    "streamingsCount": 2
+    "streamingsCount": 5
   },
   "anilist-188139": {
     "id": "anilist-188139",
-    "titleZh": "惡女不才，請多關照 ～雛宮蝶鼠換身傳～",
+    "titleZh": "我是不才惡女",
     "titleJa": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ふつつかな悪女ではございますが～雛宮蝶鼠とりかえ伝～",
     "bgmId": "545008",
-    "streamingsCount": 0
+    "streamingsCount": 4
   },
   "anilist-201514": {
     "id": "anilist-201514",
@@ -866,18 +866,18 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "才女のお世話 高嶺の花だらけな名門校で、学院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました",
     "bgmId": "602733",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-177637": {
     "id": "anilist-177637",
-    "titleZh": "再見，拉拉",
+    "titleZh": "再見菈菈",
     "titleJa": "さよなら ララ",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "さよならララ",
     "bgmId": "495291",
-    "streamingsCount": 0
+    "streamingsCount": 6
   },
   "anilist-169583": {
     "id": "anilist-169583",
@@ -888,7 +888,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件",
     "bgmId": "456080",
-    "streamingsCount": 1
+    "streamingsCount": 6
   },
   "anilist-208044": {
     "id": "anilist-208044",
@@ -899,18 +899,18 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "落第賢者の学院無双～二度目の転生、Ｓランクチート魔術師冒険録～",
     "bgmId": "630163",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-211711": {
     "id": "anilist-211711",
     "titleZh": "我的英雄學院 I am a hero too",
     "titleJa": "僕のヒーローアカデミア I am a hero too",
     "yearSeason": "2026 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "僕のヒーローアカデミア I am a hero too",
+    "bgmId": "646464",
+    "streamingsCount": 1
   },
   "anilist-206521": {
     "id": "anilist-206521",
@@ -921,7 +921,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ワールド イズ ダンシング",
     "bgmId": "622633",
-    "streamingsCount": 4
+    "streamingsCount": 8
   },
   "anilist-197715": {
     "id": "anilist-197715",
@@ -932,7 +932,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "LV999の村人",
     "bgmId": "579787",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-202269": {
     "id": "anilist-202269",
@@ -943,7 +943,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "透明な夜に駆ける君と、目に見えない恋をした。",
     "bgmId": "607340",
-    "streamingsCount": 3
+    "streamingsCount": 8
   },
   "anilist-204466": {
     "id": "anilist-204466",
@@ -954,7 +954,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "乙女怪獣キャラメリゼ",
     "bgmId": "617123",
-    "streamingsCount": 0
+    "streamingsCount": 8
   },
   "anilist-199748": {
     "id": "anilist-199748",
@@ -965,7 +965,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ここは俺に任せて先に行けと言ってから10年がたったら伝説になっていた。",
     "bgmId": "590786",
-    "streamingsCount": 2
+    "streamingsCount": 6
   },
   "anilist-211308": {
     "id": "anilist-211308",
@@ -980,14 +980,14 @@
   },
   "anilist-197178": {
     "id": "anilist-197178",
-    "titleZh": "航海王 HEROINES",
+    "titleZh": "航海王 女英雄們的故事",
     "titleJa": "ONE PIECE HEROINES",
     "yearSeason": "2026 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ONE PIECE HEROINES",
+    "bgmId": "577191",
+    "streamingsCount": 4
   },
   "anilist-209961": {
     "id": "anilist-209961",
@@ -1020,7 +1020,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "最強出涸らし皇子の暗躍帝位争い",
     "bgmId": "456081",
-    "streamingsCount": 1
+    "streamingsCount": 5
   },
   "anilist-196218": {
     "id": "anilist-196218",
@@ -1031,7 +1031,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "領民0人スタートの辺境領主様",
     "bgmId": "571895",
-    "streamingsCount": 1
+    "streamingsCount": 3
   },
   "anilist-198409": {
     "id": "anilist-198409",
@@ -1042,18 +1042,18 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "世界最強の後衛 ～迷宮国の新人探索者～",
     "bgmId": "583862",
-    "streamingsCount": 2
+    "streamingsCount": 6
   },
   "anilist-199066": {
     "id": "anilist-199066",
-    "titleZh": "花織同學轉生後還是想幹架",
+    "titleZh": "花織即使是轉生也想打架",
     "titleJa": "花織さんは転生しても喧嘩がしたい",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "花織さんは転生しても喧嘩がしたい",
     "bgmId": "587109",
-    "streamingsCount": 0
+    "streamingsCount": 5
   },
   "anilist-199408": {
     "id": "anilist-199408",
@@ -1064,7 +1064,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ブチ切れ令嬢は報復を誓いました。 ～魔導書の力で祖国を叩き潰します～",
     "bgmId": "579246",
-    "streamingsCount": 1
+    "streamingsCount": 3
   },
   "anilist-186863": {
     "id": "anilist-186863",
@@ -1075,7 +1075,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "猫と竜",
     "bgmId": "538760",
-    "streamingsCount": 2
+    "streamingsCount": 9
   },
   "anilist-108992": {
     "id": "anilist-108992",
@@ -1083,7 +1083,7 @@
     "titleJa": "メビウス・ダスト",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
+    "matchedType": "A-AniListID",
     "matchedBgmTitle": "メビウス・ダスト",
     "bgmId": "276787",
     "streamingsCount": 1
@@ -1130,18 +1130,18 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "手札が多めのビクトリア",
     "bgmId": "584641",
-    "streamingsCount": 1
+    "streamingsCount": 8
   },
   "anilist-194219": {
     "id": "anilist-194219",
-    "titleZh": "鬼之花嫁",
+    "titleZh": "鬼的新娘",
     "titleJa": "鬼の花嫁",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "鬼の花嫁",
     "bgmId": "563745",
-    "streamingsCount": 0
+    "streamingsCount": 7
   },
   "anilist-185875": {
     "id": "anilist-185875",
@@ -1163,29 +1163,29 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "無自覚聖女は今日も無意識に力を垂れ流す",
     "bgmId": "571910",
-    "streamingsCount": 0
+    "streamingsCount": 6
   },
   "anilist-203880": {
     "id": "anilist-203880",
-    "titleZh": "令和的斑小姐",
+    "titleZh": "令和妖神斑小姐",
     "titleJa": "令和のダラさん",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "令和のダラさん",
     "bgmId": "614594",
-    "streamingsCount": 1
+    "streamingsCount": 7
   },
   "anilist-207674": {
     "id": "anilist-207674",
-    "titleZh": "正後方的神威",
+    "titleZh": "從後面來的神威先生",
     "titleJa": "うしろの正面カムイさん",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "うしろの正面カムイさん",
     "bgmId": "627136",
-    "streamingsCount": 2
+    "streamingsCount": 5
   },
   "anilist-208225": {
     "id": "anilist-208225",
@@ -1196,7 +1196,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "「きみを愛する気はない」と言った次期公爵様がなぜか溺愛してきます",
     "bgmId": "631018",
-    "streamingsCount": 1
+    "streamingsCount": 6
   },
   "anilist-209504": {
     "id": "anilist-209504",
@@ -1204,10 +1204,10 @@
     "titleJa": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
+    "matchedType": "A-AniListID",
     "matchedBgmTitle": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました",
     "bgmId": "636067",
-    "streamingsCount": 2
+    "streamingsCount": 8
   },
   "anilist-184356": {
     "id": "anilist-184356",
@@ -1233,13 +1233,13 @@
   },
   "anilist-189046": {
     "id": "anilist-189046",
-    "titleZh": "Re：從零開始的異世界生活 第四季",
+    "titleZh": "Re：從零開始的異世界生活 第四季 奪還篇",
     "titleJa": "Re:ゼロから始める異世界生活 4th season",
     "yearSeason": "2026 春",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
-    "matchedBgmTitle": "Re:ゼロから始める異世界生活 4th season 喪失編",
-    "bgmId": "547888",
+    "matchedBgmTitle": "Re:ゼロから始める異世界生活 4th season 奪還編",
+    "bgmId": "633836",
     "streamingsCount": 8
   },
   "anilist-195600": {
@@ -1768,7 +1768,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "スノウボールアース",
     "bgmId": "571555",
-    "streamingsCount": 11
+    "streamingsCount": 10
   },
   "anilist-172463": {
     "id": "anilist-172463",
@@ -1974,10 +1974,10 @@
     "titleJa": "劇場版 転生したらスライムだった件 蒼海の涙編",
     "yearSeason": "2026 冬",
     "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
+    "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 転生したらスライムだった件 蒼海の涙編",
     "bgmId": "515595",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-185993": {
     "id": "anilist-185993",
@@ -2054,7 +2054,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "TRIGUN STARGAZE",
     "bgmId": "426100",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-170110": {
     "id": "anilist-170110",
@@ -2329,7 +2329,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ワンパンマン(第3期)",
     "bgmId": "285757",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-177937": {
     "id": "anilist-177937",
@@ -2362,7 +2362,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "暗殺者である俺のステータスが勇者よりも明らかに強いのだが",
     "bgmId": "537904",
-    "streamingsCount": 10
+    "streamingsCount": 11
   },
   "anilist-181447": {
     "id": "anilist-181447",
@@ -2648,7 +2648,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ディズニー ツイステッドワンダーランド ザ アニメーション エピソード オブ ハーツラビュル",
     "bgmId": "352777",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-180436": {
     "id": "anilist-180436",
@@ -2766,7 +2766,7 @@
     "titleJa": "ゾンビランドサガ ゆめぎんがパラダイス",
     "yearSeason": "2025 秋",
     "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
+    "matchedType": "A-AniListID",
     "matchedBgmTitle": "ゾンビランドサガ ゆめぎんがパラダイス",
     "bgmId": "353181",
     "streamingsCount": 0
@@ -3440,7 +3440,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "LAZARUS ラザロ",
     "bgmId": "446296",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-178680": {
     "id": "anilist-178680",
@@ -3451,7 +3451,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "WIND BREAKER Season 2",
     "bgmId": "501626",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-180367": {
     "id": "anilist-180367",
@@ -3517,7 +3517,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "九龍ジェネリックロマンス",
     "bgmId": "518090",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-153554": {
     "id": "anilist-153554",
@@ -3550,7 +3550,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "履いてください、鷹峰さん",
     "bgmId": "506407",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-174802": {
     "id": "anilist-174802",
@@ -3627,7 +3627,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ロックは淑女の嗜みでして",
     "bgmId": "504678",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-180675": {
     "id": "anilist-180675",
@@ -3671,7 +3671,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "機動戦士Gundam GQuuuuuuX",
     "bgmId": "526816",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-179979": {
     "id": "anilist-179979",
@@ -3704,7 +3704,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "忍者と殺し屋のふたりぐらし",
     "bgmId": "491569",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-179706": {
     "id": "anilist-179706",
@@ -3726,7 +3726,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ちょっとだけ愛が重いダークエルフが異世界から追いかけてきた",
     "bgmId": "511264",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-178701": {
     "id": "anilist-178701",
@@ -3770,7 +3770,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ゴリラの神から加護された令嬢は王立騎士団で可愛がられる",
     "bgmId": "514997",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-181839": {
     "id": "anilist-181839",
@@ -3814,7 +3814,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "かくして！マキナさん!!",
     "bgmId": "493813",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-185939": {
     "id": "anilist-185939",
@@ -3825,7 +3825,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "日々は過ぎれど飯うまし",
     "bgmId": "531159",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-181182": {
     "id": "anilist-181182",
@@ -3869,7 +3869,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "黒執事 -緑の魔女編-",
     "bgmId": "502875",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-167142": {
     "id": "anilist-167142",
@@ -3924,7 +3924,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "謎解きはディナーのあとで",
     "bgmId": "525642",
-    "streamingsCount": 1
+    "streamingsCount": 3
   },
   "anilist-178046": {
     "id": "anilist-178046",
@@ -3946,7 +3946,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ばいばい、アース(第2シーズン)",
     "bgmId": "512817",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-180825": {
     "id": "anilist-180825",
@@ -3957,7 +3957,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "前橋ウィッチーズ",
     "bgmId": "511207",
-    "streamingsCount": 8
+    "streamingsCount": 6
   },
   "anilist-166527": {
     "id": "anilist-166527",
@@ -4067,7 +4067,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ハニーレモンソーダ",
     "bgmId": "482719",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-169441": {
     "id": "anilist-169441",
@@ -4133,7 +4133,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Aランクパーティを離脱した俺は、元教え子たちと迷宮深部を目指す。",
     "bgmId": "511126",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-179689": {
     "id": "anilist-179689",
@@ -4166,7 +4166,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "アラフォー男の異世界通販",
     "bgmId": "508588",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-172439": {
     "id": "anilist-172439",
@@ -4364,7 +4364,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "花は咲く、修羅の如く",
     "bgmId": "498934",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-169295": {
     "id": "anilist-169295",
@@ -4408,7 +4408,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "妃教育から逃げたい私",
     "bgmId": "463205",
-    "streamingsCount": 5
+    "streamingsCount": 7
   },
   "anilist-170916": {
     "id": "anilist-170916",
@@ -4533,7 +4533,7 @@
   },
   "anilist-163134": {
     "id": "anilist-163134",
-    "titleZh": "Re：從零開始的異世界生活 第三季",
+    "titleZh": "Re：從零開始的異世界生活 第三季 反擊篇",
     "titleJa": "Re:ゼロから始める異世界生活 3rd season",
     "yearSeason": "2024 秋",
     "hasCorrespondingData": true,
@@ -4639,7 +4639,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "精霊幻想記2",
     "bgmId": "355803",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-175019": {
     "id": "anilist-175019",
@@ -5046,7 +5046,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "SPECIAL EDITED VERSION 『ONE PIECE』 魚人島編",
     "bgmId": "518603",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-157965": {
     "id": "anilist-157965",
@@ -5057,7 +5057,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "アクロトリップ",
     "bgmId": "408896",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-107372": {
     "id": "anilist-107372",
@@ -5090,7 +5090,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "【推しの子】(第2期)",
     "bgmId": "443428",
-    "streamingsCount": 11
+    "streamingsCount": 10
   },
   "anilist-174576": {
     "id": "anilist-174576",
@@ -5189,7 +5189,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "逃げ上手の若君",
     "bgmId": "424573",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-152681": {
     "id": "anilist-152681",
@@ -5244,7 +5244,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "異世界スーサイド・スクワッド",
     "bgmId": "444046",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-173295": {
     "id": "anilist-173295",
@@ -5310,7 +5310,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕のヒーローアカデミア THE MOVIE ユアネクスト",
     "bgmId": "449154",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-139825": {
     "id": "anilist-139825",
@@ -5321,7 +5321,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "キミと僕の最後の戦場、あるいは世界が始まる聖戦 Season Ⅱ",
     "bgmId": "351349",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-173533": {
     "id": "anilist-173533",
@@ -5398,7 +5398,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "コードギアス 奪還のロゼ",
     "bgmId": "500557",
-    "streamingsCount": 2
+    "streamingsCount": 1
   },
   "anilist-160488": {
     "id": "anilist-160488",
@@ -5486,7 +5486,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ばいばい、アース",
     "bgmId": "408195",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-158166": {
     "id": "anilist-158166",
@@ -5673,7 +5673,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "WIND BREAKER",
     "bgmId": "426947",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-156822": {
     "id": "anilist-156822",
@@ -5717,7 +5717,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ルックバック",
     "bgmId": "480441",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-156415": {
     "id": "anilist-156415",
@@ -5882,7 +5882,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "花野井くんと恋の病",
     "bgmId": "439850",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-155890": {
     "id": "anilist-155890",
@@ -5904,7 +5904,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "じいさんばあさん若返る",
     "bgmId": "449562",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-163147": {
     "id": "anilist-163147",
@@ -5915,7 +5915,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版ブルーロック -EPISODE 凪-",
     "bgmId": "426124",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-151380": {
     "id": "anilist-151380",
@@ -6047,7 +6047,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "黒執事 -寄宿学校編-",
     "bgmId": "444049",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-160589": {
     "id": "anilist-160589",
@@ -6091,7 +6091,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "声優ラジオのウラオモテ",
     "bgmId": "411974",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-165253": {
     "id": "anilist-165253",
@@ -6289,7 +6289,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版ハイキュー!! ゴミ捨て場の決戦",
     "bgmId": "394621",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-155963": {
     "id": "anilist-155963",
@@ -6300,7 +6300,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "道産子ギャルはなまらめんこい",
     "bgmId": "406119",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-168374": {
     "id": "anilist-168374",
@@ -6410,7 +6410,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "愚かな天使は悪魔と踊る",
     "bgmId": "431839",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-160389": {
     "id": "anilist-160389",
@@ -6608,7 +6608,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "GREAT PRETENDER razbliuto",
     "bgmId": "465773",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-167146": {
     "id": "anilist-167146",
@@ -6861,7 +6861,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ラグナクリムゾン",
     "bgmId": "374648",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-158928": {
     "id": "anilist-158928",
@@ -6872,7 +6872,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 SPY×FAMILY CODE: White",
     "bgmId": "411428",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-99088": {
     "id": "anilist-99088",
@@ -6938,7 +6938,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "青春ブタ野郎はランドセルガールの夢を見ない",
     "bgmId": "426239",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-163142": {
     "id": "anilist-163142",
@@ -6960,7 +6960,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "私の推しは悪役令嬢。",
     "bgmId": "410928",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-140501": {
     "id": "anilist-140501",
@@ -7081,7 +7081,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "魔法使いの嫁 SEASON2 第2クール",
     "bgmId": "442523",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-146206": {
     "id": "anilist-146206",
@@ -7741,7 +7741,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BanG Dream! It's MyGO!!!!!",
     "bgmId": "428735",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-155982": {
     "id": "anilist-155982",
@@ -7796,7 +7796,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "AIの遺電子",
     "bgmId": "410203",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-146638": {
     "id": "anilist-146638",
@@ -7862,7 +7862,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "【推しの子】",
     "bgmId": "386809",
-    "streamingsCount": 12
+    "streamingsCount": 11
   },
   "anilist-151801": {
     "id": "anilist-151801",
@@ -7873,7 +7873,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "マッシュル-MASHLE-",
     "bgmId": "389571",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-155783": {
     "id": "anilist-155783",
@@ -7884,7 +7884,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "天国大魔境",
     "bgmId": "404804",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-131518": {
     "id": "anilist-131518",
@@ -7961,7 +7961,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "この素晴らしい世界に爆焔を！",
     "bgmId": "385209",
-    "streamingsCount": 10
+    "streamingsCount": 11
   },
   "anilist-143653": {
     "id": "anilist-143653",
@@ -8016,7 +8016,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "青春ブタ野郎はおでかけシスターの夢を見ない",
     "bgmId": "402656",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-148048": {
     "id": "anilist-148048",
@@ -8038,7 +8038,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "転生貴族の異世界冒険録～自重を知らない神々の使徒～",
     "bgmId": "394746",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-151847": {
     "id": "anilist-151847",
@@ -8082,7 +8082,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "魔法使いの嫁 SEASON2",
     "bgmId": "399820",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-147571": {
     "id": "anilist-147571",
@@ -8104,7 +8104,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "勇者が死んだ！",
     "bgmId": "379639",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-154412": {
     "id": "anilist-154412",
@@ -8159,7 +8159,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "異世界ワンターンキル姉さん ～姉同伴の異世界生活はじめました～",
     "bgmId": "373833",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-155158": {
     "id": "anilist-155158",
@@ -8269,7 +8269,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ポケットモンスター(2023)",
     "bgmId": "411247",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-148370": {
     "id": "anilist-148370",
@@ -8500,7 +8500,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "異世界のんびり農家",
     "bgmId": "376137",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-140596": {
     "id": "anilist-140596",
@@ -8555,7 +8555,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "久保さんは僕を許さない",
     "bgmId": "381793",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-153629": {
     "id": "anilist-153629",
@@ -8687,7 +8687,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "虚構推理 Season2",
     "bgmId": "320839",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-139821": {
     "id": "anilist-139821",
@@ -8775,7 +8775,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ツンデレ悪役令嬢リーゼロッテと実況の遠藤くんと解説の小林さん",
     "bgmId": "363308",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-155202": {
     "id": "anilist-155202",
@@ -9017,7 +9017,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BLEACH 千年血戦篇",
     "bgmId": "302286",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-142770": {
     "id": "anilist-142770",
@@ -9028,7 +9028,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "すずめの戸締まり",
     "bgmId": "362577",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-141949": {
     "id": "anilist-141949",
@@ -9039,7 +9039,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "夫婦以上、恋人未満。",
     "bgmId": "359177",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-139587": {
     "id": "anilist-139587",
@@ -9083,7 +9083,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 転生したらスライムだった件 紅蓮の絆編",
     "bgmId": "350185",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-150695": {
     "id": "anilist-150695",
@@ -9193,7 +9193,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 ソードアート・オンライン プログレッシブ 冥き夕闇のスケルツォ",
     "bgmId": "355004",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-139310": {
     "id": "anilist-139310",
@@ -9237,7 +9237,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Do It Yourself!! -どぅー・いっと・ゆあせるふ-",
     "bgmId": "331445",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-140660": {
     "id": "anilist-140660",
@@ -9710,7 +9710,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ONE PIECE FILM RED",
     "bgmId": "358803",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-128223": {
     "id": "anilist-128223",
@@ -10645,11 +10645,11 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "失格紋の最強賢者",
     "bgmId": "326870",
-    "streamingsCount": 9
+    "streamingsCount": 10
   },
   "anilist-139648": {
     "id": "anilist-139648",
-    "titleZh": "現實主義勇者的王國再建記 第二部",
+    "titleZh": "現實主義勇者的王國重建記 第二季",
     "titleJa": "現実主義勇者の王国再建記 第二部",
     "yearSeason": "2022 冬",
     "hasCorrespondingData": true,
@@ -11272,7 +11272,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "真の仲間じゃないと勇者のパーティーを追い出されたので、辺境でスローライフすることにしました",
     "bgmId": "319739",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-120646": {
     "id": "anilist-120646",
@@ -11305,7 +11305,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 ソードアート・オンライン プログレッシブ 星なき夜のアリア",
     "bgmId": "315375",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-129068": {
     "id": "anilist-129068",
@@ -11690,7 +11690,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "転生したらスライムだった件 第2期 第2部",
     "bgmId": "302523",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-131646": {
     "id": "anilist-131646",
@@ -11701,7 +11701,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ヴァニタスの手記",
     "bgmId": "331692",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-125206": {
     "id": "anilist-125206",
@@ -11800,7 +11800,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕のヒーローアカデミア THE MOVIE ワールドヒーローズミッション",
     "bgmId": "321117",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-107625": {
     "id": "anilist-107625",
@@ -11877,7 +11877,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "出会って5秒でバトル",
     "bgmId": "319286",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-122052": {
     "id": "anilist-122052",
@@ -11888,7 +11888,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "海賊王女",
     "bgmId": "311310",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-127271": {
     "id": "anilist-127271",
@@ -12031,7 +12031,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "SCARLET NEXUS",
     "bgmId": "331031",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-125446": {
     "id": "anilist-125446",
@@ -12086,7 +12086,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "幼女戦記 砂漠のパスタ大作戦",
     "bgmId": "339533",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-107203": {
     "id": "anilist-107203",
@@ -12108,7 +12108,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-",
     "bgmId": "302875",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-131880": {
     "id": "anilist-131880",
@@ -12207,7 +12207,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "アイドリッシュセブン Third BEAT!",
     "bgmId": "323960",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-130392": {
     "id": "anilist-130392",
@@ -12295,7 +12295,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "イジらないで、長瀞さん",
     "bgmId": "309753",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-114232": {
     "id": "anilist-114232",
@@ -12625,7 +12625,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "灼熱カバディ",
     "bgmId": "309921",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-103277": {
     "id": "anilist-103277",
@@ -12647,7 +12647,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "映画大好きポンポさん",
     "bgmId": "223563",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-131930": {
     "id": "anilist-131930",
@@ -12768,7 +12768,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "機動戦士ガンダム 閃光のハサウェイ",
     "bgmId": "243429",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-122148": {
     "id": "anilist-122148",
@@ -12790,7 +12790,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "セブンナイツ レボリューション -英雄の継承者-",
     "bgmId": "327317",
-    "streamingsCount": 7
+    "streamingsCount": 5
   },
   "anilist-124080": {
     "id": "anilist-124080",
@@ -12845,7 +12845,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "転生したらスライムだった件 第2期 第1部",
     "bgmId": "278031",
-    "streamingsCount": 12
+    "streamingsCount": 11
   },
   "anilist-119661": {
     "id": "anilist-119661",
@@ -13109,7 +13109,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "文豪ストレイドッグス わん！",
     "bgmId": "308961",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-126819": {
     "id": "anilist-126819",
@@ -13230,7 +13230,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "アズールレーン びそくぜんしんっ！",
     "bgmId": "297168",
-    "streamingsCount": 5
+    "streamingsCount": 7
   },
   "anilist-110200": {
     "id": "anilist-110200",
@@ -13362,7 +13362,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 鬼滅の刃 無限列車編",
     "bgmId": "291494",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-113538": {
     "id": "anilist-113538",
@@ -13472,7 +13472,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "キミと僕の最後の戦場、あるいは世界が始まる聖戦",
     "bgmId": "292273",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-116673": {
     "id": "anilist-116673",
@@ -14132,7 +14132,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "思い、思われ、ふり、ふられ",
     "bgmId": "281096",
-    "streamingsCount": 2
+    "streamingsCount": 1
   },
   "anilist-110857": {
     "id": "anilist-110857",
@@ -14407,7 +14407,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "クレヨンしんちゃん 激突! ラクガキングダムとほぼ四人の勇者",
     "bgmId": "291038",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-124668": {
     "id": "anilist-124668",
@@ -14462,7 +14462,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "神之塔 -Tower of God-",
     "bgmId": "300839",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-110349": {
     "id": "anilist-110349",
@@ -14473,7 +14473,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "GREAT PRETENDER",
     "bgmId": "285813",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-114963": {
     "id": "anilist-114963",
@@ -14550,7 +14550,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BNA ビー・エヌ・エー",
     "bgmId": "285905",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-113311": {
     "id": "anilist-113311",
@@ -14913,7 +14913,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "シャドウバース",
     "bgmId": "292298",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-115186": {
     "id": "anilist-115186",
@@ -15001,7 +15001,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ハイキュー!! TO THE TOP",
     "bgmId": "269918",
-    "streamingsCount": 11
+    "streamingsCount": 10
   },
   "anilist-108463": {
     "id": "anilist-108463",
@@ -15386,7 +15386,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "空挺ドラゴンズ",
     "bgmId": "277506",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-98515": {
     "id": "anilist-98515",
@@ -15617,7 +15617,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕のヒーローアカデミア THE MOVIE ヒーローズ：ライジング",
     "bgmId": "278429",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-107693": {
     "id": "anilist-107693",
@@ -15683,7 +15683,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "超人高校生たちは異世界でも余裕で生き抜くようです！",
     "bgmId": "277399",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-103275": {
     "id": "anilist-103275",
@@ -15870,7 +15870,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ポケットモンスター(2019)",
     "bgmId": "292522",
-    "streamingsCount": 8
+    "streamingsCount": 6
   },
   "anilist-111048": {
     "id": "anilist-111048",
@@ -16134,7 +16134,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "天気の子",
     "bgmId": "269235",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-101167": {
     "id": "anilist-101167",
@@ -16156,7 +16156,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "映画 この素晴らしい世界に祝福を！紅伝説",
     "bgmId": "220631",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-100668": {
     "id": "anilist-100668",
@@ -16288,7 +16288,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "転生したらスライムだった件 OAD",
     "bgmId": "268726",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-105074": {
     "id": "anilist-105074",
@@ -16354,7 +16354,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ONE PIECE STAMPEDE",
     "bgmId": "258349",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-106918": {
     "id": "anilist-106918",
@@ -16508,7 +16508,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "あんさんぶるスターズ！",
     "bgmId": "159159",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-21673": {
     "id": "anilist-21673",
@@ -16695,7 +16695,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "青春ブタ野郎はゆめみる少女の夢を見ない",
     "bgmId": "260680",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-103223": {
     "id": "anilist-103223",
@@ -16838,7 +16838,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ヲタクに恋は難しい OAD",
     "bgmId": "260946",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-106051": {
     "id": "anilist-106051",
@@ -16871,7 +16871,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "さらざんまい",
     "bgmId": "239646",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-97918": {
     "id": "anilist-97918",
@@ -17036,7 +17036,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ホロのぐらふぃてぃ",
     "bgmId": "282233",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-111789": {
     "id": "anilist-111789",
@@ -17322,7 +17322,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "コードギアス 復活のルルーシュ",
     "bgmId": "199228",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-100815": {
     "id": "anilist-100815",
@@ -17938,7 +17938,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ラディアン",
     "bgmId": "236597",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-102977": {
     "id": "anilist-102977",
@@ -18206,14 +18206,14 @@
   },
   "anilist-106494": {
     "id": "anilist-106494",
-    "titleZh": "衝吧烈子：願你有個金屬聖誕",
+    "titleZh": "衝吧烈子：We Wish You a Metal Christmas",
     "titleJa": "アグレッシブ烈子：We Wish You a Metal Christmas",
     "yearSeason": "2018 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "アグレッシブ烈子: We Wish You A Metal Christmas",
+    "bgmId": "336357",
+    "streamingsCount": 1
   },
   "anilist-104308": {
     "id": "anilist-104308",
@@ -18356,7 +18356,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕のヒーローアカデミア THE MOVIE ～2人の英雄～",
     "bgmId": "231647",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-99629": {
     "id": "anilist-99629",
@@ -18609,7 +18609,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "七星のスバル",
     "bgmId": "225843",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-21712": {
     "id": "anilist-21712",
@@ -18862,7 +18862,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ヲタクに恋は難しい",
     "bgmId": "220312",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-100240": {
     "id": "anilist-100240",
@@ -19115,7 +19115,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "コードギアス 反逆のルルーシュ III 皇道",
     "bgmId": "199231",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-100673": {
     "id": "anilist-100673",
@@ -19335,7 +19335,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ラストピリオド -終わりなき螺旋の物語-",
     "bgmId": "236947",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-87504": {
     "id": "anilist-87504",
@@ -19588,7 +19588,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "映画 中二病でも恋がしたい！ -Take On Me-",
     "bgmId": "215425",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-97768": {
     "id": "anilist-97768",
@@ -19643,7 +19643,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "伊藤潤二『コレクション』",
     "bgmId": "218453",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-99507": {
     "id": "anilist-99507",
@@ -19808,7 +19808,7 @@
     "matchedType": "B-bangumiDataTitle",
     "matchedBgmTitle": "コードギアス 反逆のルルーシュ II 叛道",
     "bgmId": "199230",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-87495": {
     "id": "anilist-87495",
@@ -19951,7 +19951,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ブラッククローバー",
     "bgmId": "202880",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-98436": {
     "id": "anilist-98436",
@@ -20259,7 +20259,7 @@
     "matchedType": "B-bangumiDataTitle",
     "matchedBgmTitle": "コードギアス 反逆のルルーシュ I 興道",
     "bgmId": "199229",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-101965": {
     "id": "anilist-101965",
@@ -21084,7 +21084,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ロクでなし魔術講師と禁忌教典",
     "bgmId": "174138",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-21685": {
     "id": "anilist-21685",
@@ -21260,7 +21260,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "夜は短し歩けよ乙女",
     "bgmId": "202240",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-97903": {
     "id": "anilist-97903",
@@ -21601,7 +21601,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "この素晴らしい世界に祝福を！2",
     "bgmId": "174043",
-    "streamingsCount": 10
+    "streamingsCount": 9
   },
   "anilist-21776": {
     "id": "anilist-21776",
@@ -21689,7 +21689,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "傷物語III 冷血篇",
     "bgmId": "148037",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-21878": {
     "id": "anilist-21878",
@@ -21777,7 +21777,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "黒執事 Book of the Atlantic",
     "bgmId": "148389",
-    "streamingsCount": 7
+    "streamingsCount": 5
   },
   "anilist-21874": {
     "id": "anilist-21874",
@@ -22151,7 +22151,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ハイキュー!! 烏野高校VS白鳥沢学園高校",
     "bgmId": "173849",
-    "streamingsCount": 12
+    "streamingsCount": 11
   },
   "anilist-21679": {
     "id": "anilist-21679",
@@ -22712,7 +22712,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "君の名は。",
     "bgmId": "160209",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-20954": {
     "id": "anilist-20954",
@@ -22811,7 +22811,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "傷物語II 熱血篇",
     "bgmId": "148036",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-21455": {
     "id": "anilist-21455",
@@ -22976,7 +22976,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ONE PIECE FILM GOLD",
     "bgmId": "144846",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-21557": {
     "id": "anilist-21557",
@@ -23284,7 +23284,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "文豪ストレイドッグス",
     "bgmId": "144357",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-21450": {
     "id": "anilist-21450",
@@ -23471,7 +23471,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ジョーカー・ゲーム",
     "bgmId": "142812",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-21360": {
     "id": "anilist-21360",
@@ -23592,7 +23592,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "あんハピ♪",
     "bgmId": "138053",
-    "streamingsCount": 8
+    "streamingsCount": 7
   },
   "anilist-21608": {
     "id": "anilist-21608",
@@ -23823,7 +23823,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "この素晴らしい世界に祝福を！",
     "bgmId": "135275",
-    "streamingsCount": 11
+    "streamingsCount": 10
   },
   "anilist-21170": {
     "id": "anilist-21170",
@@ -23834,7 +23834,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "暗殺教室(第2期)",
     "bgmId": "131891",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-21428": {
     "id": "anilist-21428",
@@ -23845,7 +23845,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "灰と幻想のグリムガル",
     "bgmId": "148726",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-9260": {
     "id": "anilist-9260",
@@ -23856,7 +23856,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "傷物語I 鉄血篇",
     "bgmId": "7707",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-21306": {
     "id": "anilist-21306",
@@ -24373,7 +24373,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ハイキュー!! セカンドシーズン",
     "bgmId": "120236",
-    "streamingsCount": 11
+    "streamingsCount": 10
   },
   "anilist-21128": {
     "id": "anilist-21128",
@@ -24989,7 +24989,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "干物妹！うまるちゃん",
     "bgmId": "120187",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-21093": {
     "id": "anilist-21093",
@@ -25528,7 +25528,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Fate/stay night [Unlimited Blade Works] 2ndシーズン",
     "bgmId": "109386",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-20966": {
     "id": "anilist-20966",
@@ -26012,7 +26012,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "暗殺教室",
     "bgmId": "106818",
-    "streamingsCount": 9
+    "streamingsCount": 10
   },
   "anilist-20931": {
     "id": "anilist-20931",
@@ -26584,7 +26584,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "寄生獣 セイの格率",
     "bgmId": "88433",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-19603": {
     "id": "anilist-19603",
@@ -26595,7 +26595,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Fate/stay night [Unlimited Blade Works]",
     "bgmId": "95225",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-20770": {
     "id": "anilist-20770",
@@ -26815,7 +26815,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "黒執事 Book of Murder",
     "bgmId": "100511",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-20719": {
     "id": "anilist-20719",
@@ -26936,7 +26936,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "天体のメソッド",
     "bgmId": "100040",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-21303": {
     "id": "anilist-21303",
@@ -26958,7 +26958,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "まじっく快斗1412",
     "bgmId": "109203",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-20753": {
     "id": "anilist-20753",
@@ -27233,7 +27233,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "黒執事 Book of Circus",
     "bgmId": "100526",
-    "streamingsCount": 7
+    "streamingsCount": 6
   },
   "anilist-20663": {
     "id": "anilist-20663",
@@ -27519,7 +27519,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ポケモン・ザ・ムービーXY 破壊の繭とディアンシー",
     "bgmId": "90368",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-20518": {
     "id": "anilist-20518",
@@ -27673,7 +27673,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ノーゲーム・ノーライフ",
     "bgmId": "79227",
-    "streamingsCount": 9
+    "streamingsCount": 7
   },
   "anilist-20474": {
     "id": "anilist-20474",
@@ -27739,7 +27739,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ピンポン THE ANIMATION",
     "bgmId": "93739",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-20519": {
     "id": "anilist-20519",
@@ -27750,7 +27750,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "たまこラブストーリー",
     "bgmId": "90880",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-20541": {
     "id": "anilist-20541",
@@ -29246,7 +29246,7 @@
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "暗殺教室",
     "bgmId": "106818",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-19319": {
     "id": "anilist-19319",
@@ -29697,7 +29697,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版ポケットモンスター ベストウイッシュ 神速のゲノセクト ミュウツー覚醒",
     "bgmId": "56842",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-18041": {
     "id": "anilist-18041",
@@ -29862,7 +29862,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "進撃の巨人",
     "bgmId": "55770",
-    "streamingsCount": 10
+    "streamingsCount": 11
   },
   "anilist-15809": {
     "id": "anilist-15809",
@@ -29895,7 +29895,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "言の葉の庭",
     "bgmId": "58949",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-15583": {
     "id": "anilist-15583",
@@ -29917,7 +29917,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Steins;Gate 負荷領域のデジャヴ",
     "bgmId": "23119",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-16049": {
     "id": "anilist-16049",
@@ -29994,7 +29994,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "這いよれ！ニャル子さんW",
     "bgmId": "58015",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-16035": {
     "id": "anilist-16035",
@@ -30467,7 +30467,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕は友達が少ないNEXT",
     "bgmId": "46011",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-14349": {
     "id": "anilist-14349",
@@ -30995,7 +30995,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "中二病でも恋がしたい！",
     "bgmId": "29648",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-13759": {
     "id": "anilist-13759",
@@ -31039,7 +31039,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "新世界より",
     "bgmId": "37785",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-14467": {
     "id": "anilist-14467",
@@ -31193,7 +31193,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ONE PIECE FILM Z",
     "bgmId": "50513",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-16001": {
     "id": "anilist-16001",
@@ -31908,7 +31908,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 ポケットモンスター ベストウイッシュ キュレムVS聖剣士 ケルディオ",
     "bgmId": "28203",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-12581": {
     "id": "anilist-12581",
@@ -32227,7 +32227,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "宇宙兄弟",
     "bgmId": "28533",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-13357": {
     "id": "anilist-13357",
@@ -32700,7 +32700,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ゼロの使い魔F",
     "bgmId": "25823",
-    "streamingsCount": 7
+    "streamingsCount": 4
   },
   "anilist-11285": {
     "id": "anilist-11285",
@@ -33195,7 +33195,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Fate/Zero",
     "bgmId": "10639",
-    "streamingsCount": 9
+    "streamingsCount": 8
   },
   "anilist-10793": {
     "id": "anilist-10793",
@@ -33206,7 +33206,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ギルティクラウン",
     "bgmId": "18635",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-10719": {
     "id": "anilist-10719",
@@ -33217,7 +33217,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕は友達が少ない",
     "bgmId": "17883",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-10800": {
     "id": "anilist-10800",
@@ -33800,7 +33800,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "バカとテストと召喚獣にっ！",
     "bgmId": "11145",
-    "streamingsCount": 8
+    "streamingsCount": 5
   },
   "anilist-10029": {
     "id": "anilist-10029",
@@ -33932,7 +33932,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ぬらりひょんの孫～千年魔京～",
     "bgmId": "12192",
-    "streamingsCount": 3
+    "streamingsCount": 5
   },
   "anilist-10805": {
     "id": "anilist-10805",
@@ -34075,7 +34075,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 ポケットモンスター ベストウイッシュ ビクティニと黒き英雄 ゼクロム",
     "bgmId": "19618",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-10372": {
     "id": "anilist-10372",
@@ -34119,7 +34119,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 ポケットモンスター ベストウイッシュ ビクティニと白き英雄 レシラム",
     "bgmId": "19561",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-9618": {
     "id": "anilist-9618",
@@ -34229,7 +34229,7 @@
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "ONE PIECE エピソードオブアラバスタ 砂漠の王女と海賊たち",
     "bgmId": "1999",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-7135": {
     "id": "anilist-7135",
@@ -34680,7 +34680,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ONE PIECE 3D 麦わらチェイス",
     "bgmId": "20523",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-9925": {
     "id": "anilist-9925",
@@ -34966,7 +34966,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "バカとテストと召喚獣 〜祭〜",
     "bgmId": "12496",
-    "streamingsCount": 6
+    "streamingsCount": 4
   },
   "anilist-9331": {
     "id": "anilist-9331",
@@ -35164,7 +35164,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 マクロスF 恋離飛翼 〜サヨナラノツバサ〜",
     "bgmId": "12618",
-    "streamingsCount": 3
+    "streamingsCount": 2
   },
   "anilist-9890": {
     "id": "anilist-9890",
@@ -35219,7 +35219,7 @@
     "matchedType": "B-bangumiDataTitle",
     "matchedBgmTitle": "バカとテストと召喚獣 〜祭〜",
     "bgmId": "12496",
-    "streamingsCount": 6
+    "streamingsCount": 4
   },
   "anilist-9893": {
     "id": "anilist-9893",
@@ -35461,7 +35461,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "そらのおとしものf",
     "bgmId": "7150",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-8557": {
     "id": "anilist-8557",
@@ -35549,7 +35549,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ポケットモンスター ベストウイッシュ",
     "bgmId": "8401",
-    "streamingsCount": 6
+    "streamingsCount": 5
   },
   "anilist-8934": {
     "id": "anilist-8934",
@@ -35615,7 +35615,7 @@
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "そらのおとしもの",
     "bgmId": "2617",
-    "streamingsCount": 4
+    "streamingsCount": 3
   },
   "anilist-8876": {
     "id": "anilist-8876",
@@ -35967,7 +35967,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "黒執事II",
     "bgmId": "1748",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-8676": {
     "id": "anilist-8676",
@@ -36044,7 +36044,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ぬらりひょんの孫",
     "bgmId": "5474",
-    "streamingsCount": 4
+    "streamingsCount": 6
   },
   "anilist-5277": {
     "id": "anilist-5277",
@@ -36110,7 +36110,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版ポケットモンスター ダイヤモンド&パール 幻影の覇者 ゾロアーク",
     "bgmId": "10542",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-10298": {
     "id": "anilist-10298",
@@ -36693,7 +36693,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "まじっく快斗",
     "bgmId": "4330",
-    "streamingsCount": 5
+    "streamingsCount": 4
   },
   "anilist-6772": {
     "id": "anilist-6772",
@@ -37056,7 +37056,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "バカとテストと召喚獣",
     "bgmId": "3326",
-    "streamingsCount": 8
+    "streamingsCount": 5
   },
   "anilist-6500": {
     "id": "anilist-6500",

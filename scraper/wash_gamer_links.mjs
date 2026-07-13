@@ -97,13 +97,15 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
       const existingOverride = overrideData[ak];
       if (existingOverride && existingOverride.source === 'manual') {
         // Priority 1 最高權威為 Manual，不覆蓋
-      } else if (officialTitle && officialTitle !== item.titleZh && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特') && !officialTitle.includes('請稍後')) {
-        console.log(`✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題: "${item.titleZh}" ➜ "${officialTitle}"`);
-        item.titleZh = officialTitle;
-        if (!overrideData[ak]) overrideData[ak] = {};
-        overrideData[ak].titleZh = officialTitle;
-        overrideData[ak].source = 'gamer';
-        overrideUpdated = true;
+      } else if (officialTitle && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特') && !officialTitle.includes('請稍後')) {
+        const currentOverrideTitle = existingOverride?.titleZh;
+        if (officialTitle !== item.titleZh && (existingOverride?.source !== 'gamer' || currentOverrideTitle !== officialTitle)) {
+          console.log(`✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題 (僅寫入 custom_override.json，不覆蓋 anime_data.json): "${currentOverrideTitle || item.titleZh}" ➜ "${officialTitle}"`);
+          if (!overrideData[ak]) overrideData[ak] = {};
+          overrideData[ak].titleZh = officialTitle;
+          overrideData[ak].source = 'gamer';
+          overrideUpdated = true;
+        }
       }
       if (resolvedUrl) {
         // 規則 2: ACG 百科內有正確的動畫瘋連結，直接採用！不再進行任何動畫瘋關鍵字搜尋！

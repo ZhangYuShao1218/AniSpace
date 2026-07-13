@@ -148,10 +148,10 @@ async function runAudit() {
       }
     }
 
-    // 檢查標題差異 (規則 4: Priority 1 Manual 最高權威不覆蓋)
-    if (officialTitle && officialTitle !== item.titleZh && !isManualTitle && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特')) {
+    // 檢查標題差異 (規則 4: Priority 1 Manual 最高權威不覆蓋，且 custom_override 已記錄為 gamer 者不報錯)
+    if (officialTitle && !isManualTitle && overrideObj.titleZh !== officialTitle && officialTitle !== item.titleZh && !officialTitle.includes('系統維修') && !officialTitle.includes('巴哈姆特')) {
       isMismatch = true;
-      reasons.push(`官方繁中譯名校正 (現有: "${item.titleZh}" ➜ 巴哈官方: "${officialTitle}")`);
+      reasons.push(`官方繁中譯名校正 (現有: "${overrideObj.titleZh || item.titleZh}" ➜ 巴哈官方: "${officialTitle}")`);
     }
 
     if (isMismatch) {

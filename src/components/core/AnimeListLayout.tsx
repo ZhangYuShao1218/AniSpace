@@ -55,8 +55,6 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     isScraping
   } = useAnime();
   const { t } = useLanguage();
-
-  const isInitialMount = React.useRef(true);
   
   const [currentPage, setCurrentPage] = useUrlParams<number>('page', 1);
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -88,26 +86,12 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     }
   };
 
-  const prevLengthRef = React.useRef(filteredData.length);
 
   useEffect(() => {
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-      return;
+    if (totalPages > 0 && currentPage > totalPages) {
+      setCurrentPage(totalPages);
     }
-    
-    // 當從遠端載入資料時（數量從 0 變為 N），不應重置頁碼，讓 sessionStorage 生效
-    if (prevLengthRef.current === 0 && filteredData.length > 0) {
-      prevLengthRef.current = filteredData.length;
-      return;
-    }
-
-    // 若是因為使用者切換篩選條件導致數量改變，則將頁碼重置為 1
-    if (prevLengthRef.current !== filteredData.length) {
-      setCurrentPage(1);
-      prevLengthRef.current = filteredData.length;
-    }
-  }, [filteredData.length, setCurrentPage]);
+  }, [totalPages, currentPage, setCurrentPage]);
 
   return (
     <>

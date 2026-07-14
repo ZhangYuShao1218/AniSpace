@@ -1,4 +1,5 @@
-import { useMemo } from 'react';
+import { useMemo, useCallback } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import type { SortOption } from '@/types';
 import AnimeListLayout from '@/components/core/AnimeListLayout';
 import { useAnime } from '@/contexts/AnimeContext';
@@ -9,9 +10,24 @@ import { parseSeason } from '@/utils/season';
 
 const WatchedPage = () => {
   const { watchedList } = useAnime();
-  const [searchQuery, setSearchQuery] = useUrlParams<string>('search', '');
-  const [sortBy, setSortBy] = useUrlParams<SortOption>('sort', 'date_desc');
+  const [, setSearchParams] = useSearchParams();
+  const [searchQuery] = useUrlParams<string>('search', '');
+  const [sortBy] = useUrlParams<SortOption>('sort', 'date_desc');
   const { t } = useLanguage();
+
+  const updateFilterAndResetPage = useCallback((key: string, value: any) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      const strVal = String(value);
+      if (strVal === '') {
+        next.delete(key);
+      } else {
+        next.set(key, strVal);
+      }
+      next.delete('page');
+      return next;
+    }, { replace: true });
+  }, [setSearchParams]);
 
   const filteredData = useMemo(() => {
     const trimmedQuery = searchQuery.trim().toLowerCase();
@@ -36,12 +52,12 @@ const WatchedPage = () => {
       <SearchBar 
         placeholder={t('searchWatchedPlaceholder')} 
         value={searchQuery} 
-        onChange={setSearchQuery} 
+        onChange={(q) => updateFilterAndResetPage('search', q)} 
         maxWidth="none"
       />
       <select 
         value={sortBy} 
-        onChange={(e) => setSortBy(e.target.value as SortOption)}
+        onChange={(e) => updateFilterAndResetPage('sort', e.target.value)}
         className="filter-select"
         style={{ minWidth: '160px' }}
       >

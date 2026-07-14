@@ -54,6 +54,20 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
           }
         }
 
+        let resolvedTitleJa = anime.titleJa || "";
+        if (ov.titleJa) {
+          if (ov.source === 'gamer' || ov.source === 'manual') {
+            resolvedTitleJa = ov.titleJa;
+          } else if (ov.source === 'ai') {
+            if (!anime.titleJa || anime.titleJa.trim() === "") {
+              resolvedTitleJa = ov.titleJa;
+            }
+          } else {
+            // 相容未標註 source 的歷史手動覆蓋
+            resolvedTitleJa = ov.titleJa;
+          }
+        }
+
         const resolvedCover = ov.coverImage || anime.coverImageGamer || anime.coverImageAniList || anime.coverImage || '';
         
         const baseStreamings = ov.streamings || anime.streamings || [];
@@ -74,6 +88,7 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
         return {
           ...merged,
           titleZh: resolvedTitleZh,
+          titleJa: resolvedTitleJa,
           streamings: combinedStreamings,
           coverImage: resolvedCover,
         };

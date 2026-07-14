@@ -45,6 +45,7 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     customAnimeList,
     corrections,
     handleImport,
+    handleImportPlan,
     handleImportCustomAnime,
     handleImportCorrections
   } = useAnime();
@@ -289,20 +290,22 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           localStorage.setItem('admob_is_not_new_user', 'true');
         }
 
-        if (data.watchedList || data.customAnimeList || data.corrections) {
+        if (data.watchedList || data.planToWatchList || data.customAnimeList || data.corrections) {
            if (data.watchedList) handleImport(data.watchedList);
+           if (data.planToWatchList) handleImportPlan(data.planToWatchList);
            if (data.customAnimeList) handleImportCustomAnime(data.customAnimeList);
            if (data.corrections) handleImportCorrections(data.corrections);
            updateSyncTime();
 
            let confirmMsg = t('foundCloudBackup');
-           if (data.watchedList) confirmMsg += `- ${data.watchedList.length}${t('itemsWatched')}`;
-           if (data.customAnimeList) confirmMsg += `- ${data.customAnimeList.length}${t('itemsCustom')}`;
-           if (data.corrections) confirmMsg += `- ${Object.keys(data.corrections).length}${t('itemsCorrection')}`;
+           confirmMsg += `- ${data.watchedList ? data.watchedList.length : 0}${t('itemsWatched')}`;
+           confirmMsg += `- ${data.planToWatchList ? data.planToWatchList.length : 0}${t('itemsPlanToWatch')}`;
+           confirmMsg += `- ${data.customAnimeList ? data.customAnimeList.length : 0}${t('itemsCustom')}`;
+           confirmMsg += `- ${data.corrections ? Object.keys(data.corrections).length : 0}${t('itemsCorrection')}`;
            confirmMsg += t('mergedWithLocal');
            
            showAlert(confirmMsg);
-        }
+         }
       }
     } catch (error: any) {
       console.error('Restore Error:', error);

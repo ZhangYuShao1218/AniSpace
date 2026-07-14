@@ -26,14 +26,14 @@ export function useDataManagement() {
       exportData.push({
         DataType: 'WATCHED',
         ID: item.id,
-        動畫名稱: item.titleZh,
+        動畫名稱: item.titleZh || '',
         原名: '',
-        推出年份與季節: item.yearSeason,
-        封面圖片網址: item.coverImage,
-        分類標籤: item.genres.join(', '),
-        使用者評分: item.userRating,
-        簡單評論: item.userComment,
-        觀看時間: item.watchedDate
+        推出年份與季節: item.yearSeason || '',
+        封面圖片網址: item.coverImage || '',
+        分類標籤: (Array.isArray(item.genres) ? item.genres : []).join(', '),
+        使用者評分: item.userRating || 0,
+        簡單評論: item.userComment || '',
+        觀看時間: item.watchedDate || ''
       });
     });
 
@@ -42,11 +42,11 @@ export function useDataManagement() {
       exportData.push({
         DataType: 'PLAN',
         ID: item.id,
-        動畫名稱: item.titleZh,
+        動畫名稱: item.titleZh || '',
         原名: '',
-        推出年份與季節: item.yearSeason,
-        封面圖片網址: item.coverImage,
-        分類標籤: item.genres.join(', '),
+        推出年份與季節: item.yearSeason || '',
+        封面圖片網址: item.coverImage || '',
+        分類標籤: (Array.isArray(item.genres) ? item.genres : []).join(', '),
         使用者評分: '',
         簡單評論: '',
         觀看時間: ''
@@ -58,11 +58,11 @@ export function useDataManagement() {
       exportData.push({
         DataType: 'CUSTOM',
         ID: item.id,
-        動畫名稱: item.titleZh,
+        動畫名稱: item.titleZh || '',
         原名: '',
-        推出年份與季節: item.yearSeason,
-        封面圖片網址: item.coverImage,
-        分類標籤: item.genres.join(', '),
+        推出年份與季節: item.yearSeason || '',
+        封面圖片網址: item.coverImage || '',
+        分類標籤: (Array.isArray(item.genres) ? item.genres : []).join(', '),
         使用者評分: '',
         簡單評論: '',
         觀看時間: ''

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>巴哈動畫瘋 · 多季與系列 IP 播放連結檢驗表 (唯讀)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --text-sub: #94a3b8;
+      --primary: #38bdf8;
+      --warn: #f87171;
+      --extra: #34d399;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      padding: 2.5rem 1.5rem;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    .header {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .badge-top {
+      display: inline-block;
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--warn);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 50px;
+      font-size: 0.825rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    h1 { font-size: 2.2rem; margin-bottom: 0.75rem; color: #fff; }
+    p.subtitle { color: var(--text-sub); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .stat-card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .stat-card .value { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.25rem; }
+    .stat-card.warn .value { color: var(--warn); }
+    .stat-card .label { font-size: 0.85rem; color: var(--text-sub); }
+    .controls {
+      display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; align-items: center;
+    }
+    input[type="text"] {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 0.65rem 1rem;
+      color: #fff;
+      font-size: 0.95rem;
+      flex: 1;
+      min-width: 250px;
+    }
+    .btn {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid var(--border);
+      color: #cbd5e1;
+      padding: 0.65rem 1.15rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .btn.active { background: rgba(56, 189, 248, 0.2); border-color: var(--primary); color: var(--primary); }
+    .ip-card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .ip-card.has-dup { border-left: 4px solid var(--warn); }
+    .ip-header {
+      background: rgba(30, 41, 59, 0.65);
+      padding: 1.25rem 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .ip-header h2 { font-size: 1.35rem; color: #fff; }
+    .ip-badge {
+      background: rgba(56, 189, 248, 0.15); color: var(--primary);
+      padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;
+    }
+    .dup-alert {
+      background: rgba(239, 68, 68, 0.18); color: #fca5a5;
+      padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;
+      margin-left: 0.75rem;
+    }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th { padding: 0.9rem 1.5rem; font-size: 0.8rem; color: var(--text-sub); text-transform: uppercase; background: rgba(15, 23, 42, 0.4); border-bottom: 1px solid var(--border); }
+    td { padding: 1.1rem 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.04); vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover { background: rgba(255, 255, 255, 0.02); }
+    tr.dup-row { background: rgba(239, 68, 68, 0.06); }
+    .id-tag { font-family: monospace; background: rgba(30, 41, 59, 0.8); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--text-sub); font-size: 0.85rem; }
+    .title-zh { font-weight: 600; font-size: 1.025rem; display: block; margin-bottom: 0.2rem; }
+    .title-ja { font-size: 0.825rem; color: #64748b; }
+    .url-link { color: var(--primary); text-decoration: none; font-family: monospace; font-size: 0.875rem; word-break: break-all; }
+    .url-link:hover { text-decoration: underline; color: #7dd3fc; }
+    .url-link.warn { color: var(--warn); font-weight: 600; }
+    .badge { padding: 0.2rem 0.55rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-right: 0.35rem; display: inline-block; }
+    .b-extra { background: rgba(16, 185, 129, 0.15); color: var(--extra); border: 1px solid rgba(16, 185, 129, 0.3); }
+    .b-auto { background: rgba(100, 116, 139, 0.15); color: var(--text-sub); border: 1px solid rgba(100, 116, 139, 0.3); }
+    .b-warn { background: rgba(239, 68, 68, 0.18); color: var(--warn); border: 1px solid rgba(239, 68, 68, 0.35); }
+    .copy-btn { background: rgba(30, 41, 59, 0.8); border: 1px solid var(--border); color: #cbd5e1; border-radius: 4px; padding: 0.25rem 0.6rem; font-size: 0.785rem; cursor: pointer; margin-left: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge-top">🛑 唯讀測試檢閱專頁（不會修改任何資料）</span>
+      <h1>巴哈動畫瘋 · 多季與系列 IP 播放連結檢驗表</h1>
+      <p class="subtitle">整理資料庫中所有分季度、或一個 IP 底下擁有多部作品的動畫系列。以文字顯示目前綁定的巴哈網址，點擊可直接在新分頁中打開確認是否錯綁。</p>
+      
+      <div class="stats">
+        <div class="stat-card">
+          <div class="value" id="stat-ips">...</div>
+          <div class="label">多作品 IP 系列總數</div>
+        </div>
+        <div class="stat-card">
+          <div class="value" id="stat-works">...</div>
+          <div class="label">系列作品總筆數</div>
+        </div>
+        <div class="stat-card warn">
+          <div class="value" id="stat-dups">...</div>
+          <div class="label">含有相同 SN 連結之 IP (疑似錯綁)</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input type="text" id="search-input" placeholder="搜尋 IP 系列名稱、作品標題或 ID...">
+        <button class="btn active" id="btn-all" onclick="setFilter('all')">全部多季系列</button>
+        <button class="btn" id="btn-dup" onclick="setFilter('dup')">⚠️ 疑似 SN 重複/錯綁</button>
+      </div>
+    </div>
+
+    <div id="content">正在從 anime_data.json 載入並解析多季授權清單...</div>
+  </div>
+
+  <script>
+    let allGroups = [];
+    let currentFilter = 'all';
+
+    async function init() {
+      try {
+        const [dataRes, overrideRes] = await Promise.all([
+          fetch('./anime_data.json'),
+          fetch('./custom_override.json').catch(() => ({ json: () => ({}) }))
+        ]);
+        const data = await dataRes.json();
+        const overrideData = await overrideRes.json();
+
+        const getMasterIP = (m) => {
+          const ov = overrideData[m.id];
+          let t = (ov && ov.titleZh ? ov.titleZh : (m.titleZh || '')).replace(/^【|】$/g, '').replace(/^(劇場版|電影版|OVA)\s*/, '').trim();
+          
+          const knownIPs = [
+            '鬼滅之刃','進擊的巨人','刀劍神域','關於我轉生變成史萊姆這檔事','Re：從零開始的異世界生活','Re:從零開始的異世界生活',
+            '為美好的世界獻上祝福！','出包王女','約會大作戰','哥布林殺手','無職轉生','歡迎來到實力至上主義的教室',
+            '這個勇者明明超強卻過分慎重','輝夜姬想讓人告白','暮蟬悲鳴時','寒蟬鳴泣之時','一拳超人','心靈判官','PSYCHO-PASS',
+            '暗殺教室','狂賭之淵','潮與虎','排球少年','我的英雄學院','魔法禁書目錄','科學超電磁砲','鶺鴒女神','信蜂',
+            '問答魔法學院','K-ON！輕音部','夏目友人帳','魯邦三世','名偵探柯南','航海王','海賊王','死神','BLEACH',
+            '火影忍者','銀魂','JoJo的奇妙冒險','JOJO的奇妙冒險','五等分的新娘','孤獨搖滾','我推的孩子','間諜家家酒',
+            '水星的魔女','盾之勇者成名錄','OVERLORD','不時輕聲地以俄語遮羞的鄰座艾莉同學','拳願阿修羅','轉生就是劍',
+            '我想成為影之強者！','魔王學院的不適任者','異世界悠閒農家','婚戒物語','賽馬娘','工作細胞','搖曳露營',
+            '魔法少女小圓','庫洛魔法使','精靈寶可夢','數碼寶貝','遊戯王','遊戲王','幸運☆星','涼宮春日的憂鬱',
+            'fate/stay night','fate/zero','fate/kaleid','女性向遊戲世界對路人角色很不友好','骸骨騎士大人異世界冒險中'
+          ];
+
+          for (const k of knownIPs) {
+            if (t.toLowerCase().includes(k.toLowerCase())) {
+              return k.replace('Re:從零開始的異世界生活', 'Re：從零開始的異世界生活');
+            }
+          }
+
+          t = t.replace(/[\s\-_～]*(?:第[一二三四五六七八九十0-9]+[季期羽部分篇]|Season\s*[0-9]+|S[0-9]+|Part\s*[0-9]+|[0-9]+st|[0-9]+nd|[0-9]+rd|[0-9]+th|出題篇|解答篇|反擊篇|奪還篇|完結篇|總集篇|前篇|後篇|中篇|上篇|下篇|記憶篇|結界篇|特別篇|擴～爆發～|業|卒|煌|禮|解|II|III|IV|V|VI|Ⅱ|Ⅲ|Ⅳ|Ⅴ|Ⅵ|OAD|OVA)+(?:\s*-.*|\s*～.*|\s*:.*|\s*：.*|$)/gi, '').trim();
+          if (t.includes(' - ') && t.split(' - ')[0].length >= 3) t = t.split(' - ')[0];
+          if (t.includes('～') && t.split('～')[0].length >= 3) t = t.split('～')[0];
+          if (t.includes('：') && t.split('：')[0].length >= 3) t = t.split('：')[0];
+          if (t.includes(':') && t.split(':')[0].length >= 3) t = t.split(':')[0];
+          return t.trim();
+        };
+
+        const map = new Map();
+        data.forEach(m => {
+          const ov = overrideData[m.id];
+          const gamer = (m.streamings || []).find(s => s.site === 'gamer' || s.site === 'gamer_hk' || (s.name && s.name.includes('動畫瘋')));
+          if (gamer && gamer.url) {
+            const ipName = getMasterIP(m);
+            if (!ipName) return;
+            if (!map.has(ipName)) map.set(ipName, []);
+
+            let sn = '';
+            const snMatch = gamer.url.match(/sn=([0-9]+)/);
+            if (snMatch) sn = snMatch[1];
+
+            const isExtra = Boolean(ov && (ov.extraStreamings || ov.extraStreaming)?.some(e => e.site === 'gamer' || (e.url && e.url.includes('gamer.com.tw'))));
+
+            map.get(ipName).push({
+              id: m.id,
+              titleZh: (ov && ov.titleZh) ? ov.titleZh : (m.titleZh || ''),
+              titleJa: (ov && ov.titleJa) ? ov.titleJa : (m.titleJa || ''),
+              yearSeason: m.yearSeason || '',
+              url: gamer.url,
+              sn,
+              isExtra
+            });
+          }
+        });
+
+        allGroups = [];
+        let totalW = 0;
+        let dupCount = 0;
+
+        map.forEach((works, ipName) => {
+          if (works.length > 1) {
+            works.sort((a, b) => (b.yearSeason || '').localeCompare(a.yearSeason || ''));
+            const snCounts = new Map();
+            works.forEach(w => {
+              if (w.sn) snCounts.set(w.sn, (snCounts.get(w.sn) || 0) + 1);
+            });
+            const duplicateSns = Array.from(snCounts.entries()).filter(([sn, c]) => c > 1 && sn !== '').map(([sn]) => sn);
+            const hasDup = duplicateSns.length > 0;
+
+            if (hasDup) dupCount++;
+            totalW += works.length;
+
+            allGroups.push({
+              ipName,
+              works,
+              hasDup,
+              duplicateSns
+            });
+          }
+        });
+
+        allGroups.sort((a, b) => b.works.length - a.works.length || a.ipName.localeCompare(b.ipName));
+
+        document.getElementById('stat-ips').innerText = allGroups.length;
+        document.getElementById('stat-works').innerText = totalW;
+        document.getElementById('stat-dups').innerText = dupCount;
+
+        document.getElementById('search-input').addEventListener('input', render);
+        render();
+      } catch (e) {
+        document.getElementById('content').innerHTML = `<p style="color:#f87171;">讀取資料失敗：${e.message}</p>`;
+      }
+    }
+
+    function setFilter(mode) {
+      currentFilter = mode;
+      document.getElementById('btn-all').classList.toggle('active', mode === 'all');
+      document.getElementById('btn-dup').classList.toggle('active', mode === 'dup');
+      render();
+    }
+
+    function copyUrl(btn, url) {
+      navigator.clipboard.writeText(url);
+      const old = btn.innerText;
+      btn.innerText = '✓ 已複製';
+      setTimeout(() => btn.innerText = old, 1500);
+    }
+
+    function render() {
+      const q = document.getElementById('search-input').value.toLowerCase();
+      const filtered = allGroups.filter(g => {
+        const matchQ = !q || g.ipName.toLowerCase().includes(q) || g.works.some(w => w.titleZh.toLowerCase().includes(q) || w.id.includes(q));
+        if (!matchQ) return false;
+        if (currentFilter === 'dup') return g.hasDup;
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        document.getElementById('content').innerHTML = `<p style="text-align:center; padding: 3rem;">沒有找到符合條件的系列或作品</p>`;
+        return;
+      }
+
+      let html = '';
+      filtered.forEach(g => {
+        html += `
+          <div class="ip-card ${g.hasDup ? 'has-dup' : ''}">
+            <div class="ip-header">
+              <div>
+                <h2>${g.ipName}</h2>
+              </div>
+              <div>
+                <span class="ip-badge">${g.works.length} 部作品</span>
+                ${g.hasDup ? `<span class="dup-alert">⚠️ SN重複共用 (${g.duplicateSns.map(s=>`sn=${s}`).join(', ')})</span>` : ''}
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:8%">ID</th>
+                  <th style="width:12%">季度</th>
+                  <th style="width:34%">個別作品名稱 (中文/日文)</th>
+                  <th style="width:14%">狀態標籤</th>
+                  <th style="width:32%">目前巴哈網址 (點擊前往)</th>
+                </tr>
+              </thead>
+              <tbody>
+        `;
+        g.works.forEach(w => {
+          const isDup = g.duplicateSns.includes(w.sn);
+          html += `
+            <tr class="${isDup ? 'dup-row' : ''}">
+              <td><span class="id-tag">${w.id.replace('anilist-', '')}</span></td>
+              <td><b>${w.yearSeason || '未標註'}</b></td>
+              <td>
+                <span class="title-zh">${w.titleZh}</span>
+                <span class="title-ja">${w.titleJa || ''}</span>
+              </td>
+              <td>
+                ${w.isExtra ? `<span class="badge b-extra">🔒 手動鎖定</span>` : `<span class="badge b-auto">🤖 自動同步</span>`}
+                ${isDup ? `<span class="badge b-warn">⚠️ SN重複</span>` : ''}
+              </td>
+              <td>
+                <a href="${w.url}" target="_blank" rel="noopener noreferrer" class="url-link ${isDup ? 'warn' : ''}" title="點擊在新分頁開啟">${w.url}</a>
+                <button class="copy-btn" onclick="copyUrl(this, '${w.url}')">📋 複製</button>
+              </td>
+            </tr>
+          `;
+        });
+        html += `</tbody></table></div>`;
+      });
+      document.getElementById('content').innerHTML = html;
+    }
+
+    init();
+  </script>
+</body>
+</html>

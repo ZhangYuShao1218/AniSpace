@@ -831,7 +831,7 @@
     "source": "ai"
   },
   "anilist-8460": {
-    "titleZh": "未來日記 (OVA)",
+    "titleZh": "未來日記 OVA",
     "source": "manual"
   },
   "anilist-8465": {
@@ -916,8 +916,8 @@
     "source": "ai"
   },
   "anilist-9355": {
-    "titleZh": "鶺鴒女神～Pure Engagement～第零羽 閒話兩題 (鶺鴒診斷／鶺鴒餘暇)",
-    "source": "ai"
+    "titleZh": "鶺鴒女神～Pure Engagement 第零羽 閒話兩題",
+    "source": "manual"
   },
   "anilist-9362": {
     "titleZh": "百花繚亂 SAMURAI GIRLS ～乙女♥歡喜羞澀的將士之約～",
@@ -1053,7 +1053,9 @@
     "source": "ai"
   },
   "anilist-10582": {
-    "titleZh": "露蒂的玩具"
+    "titleZh": "露蒂的玩具! EX",
+    "titleJa": "アスタロッテのおもちゃ! EX",
+    "source": "manual"
   },
   "anilist-10604": {
     "titleZh": "緋彈的亞莉亞：武偵前來溫泉研修",
@@ -1405,7 +1407,8 @@
   },
   "anilist-17535": {
     "titleZh": "劇場版 魔導少年 鳳凰的巫女「初始之朝」",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-17717": {
     "titleZh": "機動戰士鋼彈 第08MS小隊 與三次元的戰鬥",
@@ -4767,6 +4770,90 @@
   },
   "anilist-200637": {
     "titleZh": "超超超超超喜歡你的 100 個女朋友 第三季",
+    "source": "manual"
+  },
+  "anilist-6205": {
+    "titleZh": "肯普法Kampfer",
+    "source": "manual"
+  },
+  "anilist-6702": {
+    "titleZh": "FAIRY TAIL 魔導少年 第一季",
+    "source": "manual"
+  },
+  "anilist-6787": {
+    "titleZh": "格拉爾騎士團 Evoked the Beginning Black",
+    "source": "manual"
+  },
+  "anilist-8022": {
+    "titleZh": "信蜂學園",
+    "source": "manual"
+  },
+  "anilist-10098": {
+    "titleZh": "奇蹟少女KOBATO. 初次的KOBATO.",
+    "source": "manual"
+  },
+  "anilist-9673": {
+    "titleZh": "裏信蜂",
+    "source": "manual"
+  },
+  "anilist-7549": {
+    "titleZh": "問答魔法學院 ～原創動畫2～",
+    "source": "manual"
+  },
+  "anilist-6862": {
+    "titleZh": "K-ON！輕音部「Live House！」",
+    "source": "manual"
+  },
+  "anilist-9063": {
+    "titleZh": "科學超電磁砲 在烈日炎炎下進行攝影的模特兒也不輕鬆呢",
+    "source": "manual"
+  },
+  "anilist-5277": {
+    "titleZh": "鶺鴒女神～Pure Engagement",
+    "source": "manual"
+  },
+  "anilist-9047": {
+    "titleZh": "科學超電磁砲 御坂學姐現在是焦點人物",
+    "source": "manual"
+  },
+  "anilist-20686": {
+    "titleZh": "科學超電磁砲S 重要的事情全都是在澡堂學會的",
+    "source": "manual"
+  },
+  "anilist-9181": {
+    "titleZh": "出包王女第二季／更多！出包王女",
+    "source": "manual"
+  },
+  "anilist-9587": {
+    "titleZh": "人家一點都不喜歡啦！",
+    "source": "manual"
+  },
+  "anilist-8241": {
+    "titleZh": "里歐 彩虹之門！",
+    "source": "manual"
+  },
+  "anilist-9735": {
+    "titleZh": "銀魂劇場版 新譯紅櫻篇",
+    "source": "manual"
+  },
+  "anilist-10076": {
+    "titleZh": "肯普法為了愛 動畫特別篇",
+    "source": "manual"
+  },
+  "anilist-9982": {
+    "titleZh": "FAIRY TAIL 魔導少年 OVA",
+    "source": "manual"
+  },
+  "anilist-18393": {
+    "titleZh": "FAIRY TAIL 魔導少年 × RAVE",
+    "source": "manual"
+  },
+  "anilist-20626": {
+    "titleZh": "FAIRY TAIL 魔導少年 第二季",
+    "source": "manual"
+  },
+  "anilist-21191": {
+    "titleZh": "FAIRY TAIL 魔導少年 劇場版 DRAGON CRY",
     "source": "manual"
   }
 }

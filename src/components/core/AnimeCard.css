@@ -642,3 +642,78 @@
     margin-top: var(--spacing-2);
   }
 }
+
+/* Confirm Remove Popup Customizations (Layout for both Light & Dark modes) */
+.confirm-remove-actions {
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 5pt !important;
+}
+
+/* Dark Mode (Default) Confirm Remove Buttons */
+.confirm-remove-actions .card-edit-popup-btn.save {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+  color: #f87171 !important;
+}
+
+.confirm-remove-actions .card-edit-popup-btn.save:hover {
+  background: rgba(239, 68, 68, 0.28) !important;
+  color: #ffffff !important;
+  border-color: rgba(239, 68, 68, 0.55) !important;
+}
+
+/* Light Mode Confirm Remove Popup Overrides */
+[data-theme="light"] .card-edit-popup.confirm-remove-popup {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  outline: 1px solid rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="light"] .confirm-remove-popup .confirm-title {
+  color: #ef4444 !important;
+}
+
+[data-theme="light"] .confirm-remove-popup .confirm-divider {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] .confirm-remove-popup .confirm-desc,
+[data-theme="light"] .confirm-remove-popup .confirm-checkbox-label {
+  color: #374151 !important;
+}
+
+[data-theme="light"] .confirm-remove-popup .circle-checkbox {
+  border-color: #6b7280 !important;
+}
+
+[data-theme="light"] .confirm-remove-popup .circle-checkbox:checked {
+  background: #6366f1 !important;
+  border-color: #6366f1 !important;
+}
+
+/* 淺色模式目前的取消按鈕 要改成原本的視窗背景色 (應該是奶黃色系) */
+[data-theme="light"] .confirm-remove-actions .card-edit-popup-btn.cancel {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-glass-light) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .confirm-remove-actions .card-edit-popup-btn.cancel:hover {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: var(--text-primary) !important;
+  border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="light"] .confirm-remove-actions .card-edit-popup-btn.save {
+  background: rgba(239, 68, 68, 0.12) !important;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+  color: #ef4444 !important;
+}
+
+[data-theme="light"] .confirm-remove-actions .card-edit-popup-btn.save:hover {
+  background: rgba(239, 68, 68, 0.22) !important;
+  color: #dc2626 !important;
+}
+

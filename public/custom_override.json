@@ -1361,7 +1361,7 @@
   },
   "anilist-16700": {
     "titleZh": "暮蟬悲鳴時 擴～爆發～",
-    "source": "ai"
+    "source": "manual"
   },
   "anilist-16762": {
     "titleZh": "未來日記 Redial",
@@ -4919,5 +4919,97 @@
   "anilist-153687": {
     "titleZh": "PSYCHO-PASS 心靈判官 劇場版 PROVIDENCE",
     "source": "manual"
+  },
+  "anilist-934": {
+    "titleZh": "暮蟬悲鳴時 第一季",
+    "source": "manual"
+  },
+  "anilist-1889": {
+    "titleZh": "暮蟬悲鳴時 解",
+    "source": "manual"
+  },
+  "anilist-3652": {
+    "titleZh": "暮蟬悲鳴時 禮",
+    "source": "manual"
+  },
+  "anilist-171026": {
+    "titleZh": "派對咖孔明總集篇 Road to Summer Sonia",
+    "source": "manual"
+  },
+  "anilist-181244": {
+    "titleZh": "為美好的世界獻上祝福！3 BONUS STAGE",
+    "source": "manual"
+  },
+  "anilist-187921": {
+    "titleZh": "終末的女武神III",
+    "source": "manual"
+  },
+  "anilist-114446": {
+    "titleZh": "暮蟬悲鳴時 業",
+    "source": "manual"
+  },
+  "anilist-10491": {
+    "titleZh": "暮蟬悲鳴時 煌",
+    "source": "manual"
+  },
+  "anilist-116242": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=18428"
+      }
+    ]
+  },
+  "anilist-112301": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=16233"
+      }
+    ]
+  },
+  "anilist-146850": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=32337"
+      }
+    ]
+  },
+  "anilist-160389": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=36873"
+      }
+    ]
+  },
+  "anilist-166531": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=47109"
+      }
+    ]
+  },
+  "anilist-182587": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=47109"
+      }
+    ]
   }
 }

@@ -1,4 +1,5 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect, useRef, useCallback } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import type { SortOption } from '@/types';
 import FilterBar from '@/components/layout/FilterBar';
 import AnimeListLayout from '@/components/core/AnimeListLayout';
@@ -9,14 +10,56 @@ import { useUrlParams } from '@/hooks/useUrlParams';
 
 const AllAnimePage = () => {
   const { allAnime } = useAnime();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [isReady, setIsReady] = useState(false);
+  const hasRestoredRef = useRef(false);
 
-  const [selectedYear, setSelectedYear] = useUrlParams<string>('year', '');
-  const [selectedGenres, setSelectedGenres] = useUrlParams<string[]>('genres', [], 
+  useEffect(() => {
+    if (!hasRestoredRef.current) {
+      hasRestoredRef.current = true;
+      const savedSearch = sessionStorage.getItem('all_anime_page_last_search');
+      if (window.location.search === '' && savedSearch && savedSearch !== '') {
+        // 自行重組並設定完整 URL 查詢狀態（同時保留標籤與頁碼）
+        setSearchParams(new URLSearchParams(savedSearch), { replace: true });
+        return;
+      }
+    }
+    setIsReady(true);
+  }, [setSearchParams]);
+
+  useEffect(() => {
+    if (isReady) {
+      const currentSearch = searchParams.toString();
+      if (currentSearch) {
+        sessionStorage.setItem('all_anime_page_last_search', `?${currentSearch}`);
+      } else if (window.location.search === '') {
+        sessionStorage.setItem('all_anime_page_last_search', '');
+      }
+    }
+  }, [searchParams, isReady]);
+
+  const updateFilterAndResetPage = useCallback((key: string, value: any, serialize?: (v: any) => string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      const strVal = serialize ? serialize(value) : String(value);
+      if (strVal === '' || (Array.isArray(value) && value.length === 0)) {
+        next.delete(key);
+      } else {
+        next.set(key, strVal);
+      }
+      next.delete('page');
+      return next;
+    }, { replace: true });
+  }, [setSearchParams]);
+
+  const [selectedYear] = useUrlParams<string>('year', '');
+  const [selectedGenres] = useUrlParams<string[]>('genres', [], 
     (val) => val.join(','), 
     (val) => val ? val.split(',') : []
   );
-  const [searchQuery, setSearchQuery] = useUrlParams<string>('search', '');
-  const [sortBy, setSortBy] = useUrlParams<SortOption>('sort', 'date_desc');
+  const [searchQuery] = useUrlParams<string>('search', '');
+  const [sortBy] = useUrlParams<SortOption>('sort', 'date_desc');
+
 
   const availableYears = useMemo(() => {
     const years = new Set<string>();
@@ -89,12 +132,16 @@ const AllAnimePage = () => {
       selectedGenres={selectedGenres}
       searchQuery={searchQuery}
       sortBy={sortBy}
-      onYearChange={setSelectedYear}
-      onGenreChange={setSelectedGenres}
-      onSearchChange={setSearchQuery}
-      onSortChange={(s) => setSortBy(s as SortOption)}
+      onYearChange={(y) => updateFilterAndResetPage('year', y)}
+      onGenreChange={(g) => updateFilterAndResetPage('genres', g, (val: string[]) => val.join(','))}
+      onSearchChange={(q) => updateFilterAndResetPage('search', q)}
+      onSortChange={(s) => updateFilterAndResetPage('sort', s)}
     />
   );
+
+  if (!isReady) {
+    return <div className="layout-scroll-anchor" style={{ minHeight: '600px' }} />;
+  }
 
   return (
     <AnimeListLayout

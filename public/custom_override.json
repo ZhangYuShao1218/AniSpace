@@ -12,7 +12,8 @@
     "source": "gamer",
     "blockedSites": [
       "iqiyi"
-    ]
+    ],
+    "show": false
   },
   "anilist-153288": {
     "titleZh": "怪獸 8 號",
@@ -89,7 +90,14 @@
   "anilist-172258": {
     "source": "manual",
     "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172258-n23TSWk54aXv.jpg",
-    "titleZh": "超超超超超喜歡你的100個女朋友 第二季"
+    "titleZh": "超超超超超喜歡你的100個女朋友 第二季",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=41803"
+      }
+    ]
   },
   "anilist-158927": {
     "source": "manual",
@@ -126,7 +134,14 @@
   },
   "anilist-185801": {
     "source": "manual",
-    "titleZh": "嘆氣的亡靈想隱退 後篇"
+    "titleZh": "嘆氣的亡靈想隱退 後篇",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=45578"
+      }
+    ]
   },
   "anilist-195240": {
     "source": "manual",
@@ -170,7 +185,14 @@
   },
   "anilist-142838": {
     "source": "manual",
-    "titleZh": "SPY×FAMILY 間諜家家酒 後篇"
+    "titleZh": "SPY×FAMILY 間諜家家酒 後篇",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113011"
+      }
+    ]
   },
   "anilist-139630": {
     "source": "manual",
@@ -207,7 +229,7 @@
   },
   "anilist-113538": {
     "source": "manual",
-    "titleZh": "排球少年!! TO THE TOP 後篇"
+    "titleZh": "排球少年！！第四季 後篇"
   },
   "anilist-104276": {
     "source": "manual",
@@ -251,7 +273,14 @@
   },
   "anilist-162314": {
     "source": "manual",
-    "titleZh": "進擊的巨人 The Final Season完結篇 後篇"
+    "titleZh": "進擊的巨人 The Final Season完結篇 後篇",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113419"
+      }
+    ]
   },
   "anilist-163205": {
     "source": "manual",
@@ -283,7 +312,7 @@
   },
   "anilist-102351": {
     "source": "manual",
-    "titleZh": "東京喰種:re 後篇"
+    "titleZh": "東京喰種:re 第二季"
   },
   "anilist-21450": {
     "source": "manual",
@@ -1209,7 +1238,8 @@
     "titleZh": "男子高校生的日常",
     "blockedSites": [
       "iqiyi"
-    ]
+    ],
+    "show": false
   },
   "anilist-13093": {
     "titleZh": "謎樣女友X 謎樣的夏日祭典",
@@ -1253,7 +1283,8 @@
     "source": "ai"
   },
   "anilist-13851": {
-    "titleZh": "出包王女Darkness"
+    "titleZh": "出包王女 Darkness",
+    "source": "manual"
   },
   "anilist-13939": {
     "titleZh": "加速世界 EX",
@@ -1360,7 +1391,7 @@
   },
   "anilist-16700": {
     "titleZh": "暮蟬悲鳴時 擴～爆發～",
-    "source": "ai"
+    "source": "manual"
   },
   "anilist-16762": {
     "titleZh": "未來日記 Redial",
@@ -1449,8 +1480,8 @@
     "source": "manual"
   },
   "anilist-19123": {
-    "titleZh": "航海王 梅利號篇章 ～另一個夥伴的故事～",
-    "source": "ai"
+    "titleZh": "海賊王 梅利號篇章 ～另一個夥伴的故事～",
+    "source": "manual"
   },
   "anilist-19211": {
     "titleZh": "翠星之加爾剛蒂亞"
@@ -1481,7 +1512,8 @@
     "source": "manual",
     "blockedSites": [
       "iqiyi"
-    ]
+    ],
+    "show": false
   },
   "anilist-20359": {
     "titleZh": "山田君與7人魔女"
@@ -1554,8 +1586,8 @@
     "bangumiDataTitle": "劇場版 進撃の巨人 後編〜自由の翼〜"
   },
   "anilist-20741": {
-    "titleZh": "劇場版 約會大作戰 萬由里審判",
-    "source": "ai"
+    "titleZh": "約會大作戰 DATE A LIVE 劇場版 萬由裡審判",
+    "source": "manual"
   },
   "anilist-20752": {
     "titleZh": "蟲師 續章 棘途",
@@ -1566,8 +1598,8 @@
     "source": "ai"
   },
   "anilist-20767": {
-    "titleZh": "約會大作戰 II 狂三星辰祭",
-    "source": "ai"
+    "titleZh": "約會大作戰 DATE A LIVE II 狂三星辰祭",
+    "source": "manual"
   },
   "anilist-20768": {
     "titleZh": "劇場版 境界的彼方 I'LL BE HERE 過去篇",
@@ -1685,7 +1717,7 @@
     "source": "ai"
   },
   "anilist-21241": {
-    "titleZh": "潮與虎 第二期",
+    "titleZh": "潮與虎 後篇",
     "source": "manual"
   },
   "anilist-21247": {
@@ -1698,7 +1730,8 @@
   },
   "anilist-21303": {
     "titleZh": "暗殺教室 episode:0 相遇的時間",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-21305": {
     "titleZh": "OVERLORD Ple Ple Pleiades",
@@ -1736,7 +1769,8 @@
   },
   "anilist-21386": {
     "titleZh": "一拳超人：英雄之路",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-21415": {
     "titleZh": "灰色的樂園 灰色的特典",
@@ -1843,7 +1877,8 @@
   "anilist-21853": {
     "titleZh": "出包王女 Darkness 2nd",
     "source": "manual",
-    "bangumiDataTitle": "To LOVEる -とらぶる- ダークネス 2nd"
+    "bangumiDataTitle": "To LOVEる -とらぶる- ダークネス 2nd",
+    "show": false
   },
   "anilist-21858": {
     "titleZh": "小魔女學園 (TV)",
@@ -2073,7 +2108,8 @@
     "source": "ai"
   },
   "anilist-107622": {
-    "titleZh": "狂賭之淵"
+    "titleZh": "狂賭之淵",
+    "show": false
   },
   "anilist-108267": {
     "titleZh": "怪怪守護神 OVA",
@@ -2128,7 +2164,7 @@
     "bangumiDataTitle": "アグレッシブ烈子 シーズン3"
   },
   "anilist-111729": {
-    "titleZh": "平凡職業成就世界最強",
+    "titleZh": "平凡職業造就世界最強",
     "show": false,
     "source": "manual"
   },
@@ -2149,7 +2185,14 @@
   },
   "anilist-113813": {
     "titleZh": "出租女友",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=109203"
+      }
+    ]
   },
   "anilist-113924": {
     "titleZh": "為什麼老師會在這裡！？"
@@ -2497,7 +2540,8 @@
     "source": "ai"
   },
   "anilist-197178": {
-    "source": "ai"
+    "source": "manual",
+    "titleZh": "海賊王 女英雄們的故事"
   },
   "anilist-197543": {
     "titleZh": "BanG Dream! Ave Mujica",
@@ -2685,7 +2729,14 @@
   },
   "anilist-185736": {
     "titleZh": "正義使者 - 我的英雄學院之非法英雄",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113748"
+      }
+    ]
   },
   "anilist-180516": {
     "titleZh": "賽馬娘 灰髮灰姑娘",
@@ -2845,7 +2896,14 @@
   },
   "anilist-116674": {
     "titleZh": "BLEACH 死神 千年血戰篇",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113149"
+      }
+    ]
   },
   "anilist-141949": {
     "titleZh": "夫婦以上，戀人未滿",
@@ -2853,7 +2911,14 @@
   },
   "anilist-139274": {
     "titleZh": "機動戰士鋼彈 水星的魔女",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113139"
+      }
+    ]
   },
   "anilist-139092": {
     "titleZh": "入間同學入魔了！第三季",
@@ -2901,7 +2966,14 @@
   },
   "anilist-140960": {
     "titleZh": "SPY×FAMILY 間諜家家酒",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113011"
+      }
+    ]
   },
   "anilist-125367": {
     "titleZh": "輝夜姬想讓人告白 ー超級浪漫ー",
@@ -2945,7 +3017,14 @@
   },
   "anilist-126192": {
     "titleZh": "女朋友 and 女朋友",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112752"
+      }
+    ]
   },
   "anilist-126659": {
     "titleZh": "我的英雄學院：世界英雄任務",
@@ -2969,7 +3048,14 @@
   },
   "anilist-112608": {
     "titleZh": "持續狩獵史萊姆三百年，不知不覺就練到 LV MAX",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112669"
+      }
+    ]
   },
   "anilist-117448": {
     "titleZh": "異世界魔王與召喚少女的奴隸魔術 Ω",
@@ -3005,15 +3091,36 @@
   },
   "anilist-110277": {
     "titleZh": "進擊的巨人 The Final Season",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112522"
+      }
+    ]
   },
   "anilist-112667": {
     "titleZh": "這是妳與我的最後戰場，或是開創世界的聖戰",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113600"
+      }
+    ]
   },
   "anilist-118399": {
     "titleZh": "半妖的夜叉姬",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112465"
+      }
+    ]
   },
   "anilist-117757": {
     "titleZh": "攀岩少女！",
@@ -3113,7 +3220,14 @@
   },
   "anilist-107693": {
     "titleZh": "入間同學入魔了！",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=104400"
+      }
+    ]
   },
   "anilist-103275": {
     "titleZh": "Fate/Grand Order - 絕對魔獸戰線巴比倫尼亞 -簡介STAFFCAST",
@@ -3121,7 +3235,14 @@
   },
   "anilist-108478": {
     "titleZh": "非槍人生 NO GUNS LIFE",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=104526"
+      }
+    ]
   },
   "anilist-109089": {
     "titleZh": "廚病激發 BOY",
@@ -3161,11 +3282,25 @@
   },
   "anilist-100240": {
     "titleZh": "東京喰種：re",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=91929"
+      }
+    ]
   },
   "anilist-98514": {
     "titleZh": "賽馬娘 Pretty Derby",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112622"
+      }
+    ]
   },
   "anilist-99531": {
     "titleZh": "DEVILSLINE 惡魔戰線",
@@ -3173,7 +3308,14 @@
   },
   "anilist-98444": {
     "titleZh": "搖曳露營△",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112623"
+      }
+    ]
   },
   "anilist-97832": {
     "titleZh": "citrus～柑橘味香氣～",
@@ -3249,7 +3391,14 @@
   },
   "anilist-21507": {
     "titleZh": "路人超能 100",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=80767"
+      }
+    ]
   },
   "anilist-21711": {
     "titleZh": "91 Days",
@@ -3397,7 +3546,14 @@
   },
   "anilist-101921": {
     "titleZh": "輝夜姬想讓人告白～天才們的戀愛頭腦戰～",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=98176"
+      }
+    ]
   },
   "anilist-112641": {
     "titleZh": "輝夜姬想讓人告白～天才們的戀愛頭腦戰～ 第二季",
@@ -3543,7 +3699,9 @@
     "coverImage": "https://i0.hdslb.com/bfs/bangumi/0ab129325044ff4acbf808a3e38b71a1e0ea5b57.jpg"
   },
   "anilist-98153": {
-    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9b576406aab5d004d85d78239afb6dd2d74355d0.jpg"
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9b576406aab5d004d85d78239afb6dd2d74355d0.jpg",
+    "titleZh": "超級槍彈辯駁2.5 狛枝凪鬥與世界的破壞者",
+    "source": "manual"
   },
   "anilist-20986": {
     "coverImage": "https://i0.hdslb.com/bfs/bangumi/edfd12a2c83cd19b331200be303b83141a3d4c82.jpg"
@@ -4729,7 +4887,14 @@
   "anilist-143338": {
     "titleZh": "關於我在無意間被隔壁的天使變成廢柴這件事",
     "source": "manual",
-    "bangumiDataTitle": "お隣の天使様にいつの間にか駄目人間にされていた件"
+    "bangumiDataTitle": "お隣の天使様にいつの間にか駄目人間にされていた件",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113195"
+      }
+    ]
   },
   "anilist-129188": {
     "titleZh": "哥布林殺手 第二季",
@@ -4855,5 +5020,546 @@
   "anilist-21191": {
     "titleZh": "FAIRY TAIL 魔導少年 劇場版 DRAGON CRY",
     "source": "manual"
+  },
+  "anilist-3455": {
+    "titleZh": "出包王女 第一季",
+    "source": "manual"
+  },
+  "anilist-124136": {
+    "titleZh": "大人的防具店 第二季",
+    "source": "manual"
+  },
+  "anilist-108355": {
+    "titleZh": "大人的防具店 裏面",
+    "source": "manual"
+  },
+  "anilist-13663": {
+    "show": false
+  },
+  "anilist-13601": {
+    "titleZh": "PSYCHO-PASS 心靈判官",
+    "source": "manual"
+  },
+  "anilist-20513": {
+    "titleZh": "PSYCHO-PASS 心靈判官 第二季",
+    "source": "manual"
+  },
+  "anilist-20514": {
+    "titleZh": "PSYCHO-PASS 心靈判官：劇場版",
+    "source": "manual"
+  },
+  "anilist-21335": {
+    "titleZh": "海賊王劇場版：GOLD",
+    "source": "manual"
+  },
+  "anilist-105143": {
+    "titleZh": "海賊王劇場版：奪寶爭霸戰",
+    "source": "manual"
+  },
+  "anilist-141902": {
+    "titleZh": "海賊王劇場版：紅髮歌姬",
+    "source": "manual"
+  },
+  "anilist-182469": {
+    "titleZh": "海賊王 粉絲來信",
+    "source": "manual"
+  },
+  "anilist-108307": {
+    "titleZh": "PSYCHO-PASS 心靈判官 第三季",
+    "source": "manual"
+  },
+  "anilist-113917": {
+    "titleZh": "PSYCHO-PASS 心靈判官3 FIRST INSPECTOR",
+    "source": "manual"
+  },
+  "anilist-153687": {
+    "titleZh": "PSYCHO-PASS 心靈判官 劇場版 PROVIDENCE",
+    "source": "manual"
+  },
+  "anilist-934": {
+    "titleZh": "暮蟬悲鳴時 出題篇",
+    "source": "manual"
+  },
+  "anilist-1889": {
+    "titleZh": "暮蟬悲鳴時 解答篇",
+    "source": "manual"
+  },
+  "anilist-3652": {
+    "titleZh": "暮蟬悲鳴時 禮",
+    "source": "manual"
+  },
+  "anilist-171026": {
+    "titleZh": "派對咖孔明總集篇 Road to Summer Sonia",
+    "source": "manual"
+  },
+  "anilist-181244": {
+    "titleZh": "為美好的世界獻上祝福！3 BONUS STAGE",
+    "source": "manual"
+  },
+  "anilist-187921": {
+    "titleZh": "終末的女武神III",
+    "source": "manual"
+  },
+  "anilist-114446": {
+    "titleZh": "暮蟬悲鳴時 業",
+    "source": "manual"
+  },
+  "anilist-10491": {
+    "titleZh": "暮蟬悲鳴時 煌",
+    "source": "manual"
+  },
+  "anilist-116242": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=18428"
+      }
+    ]
+  },
+  "anilist-112301": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=16233"
+      }
+    ]
+  },
+  "anilist-146850": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=32337"
+      }
+    ]
+  },
+  "anilist-160389": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=36873"
+      }
+    ]
+  },
+  "anilist-166531": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=38968"
+      }
+    ]
+  },
+  "anilist-182587": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=47109"
+      }
+    ]
+  },
+  "anilist-204356": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=46902"
+      }
+    ]
+  },
+  "anilist-100183": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=91868"
+      }
+    ]
+  },
+  "anilist-100182": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=91867"
+      }
+    ]
+  },
+  "anilist-108759": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=106777"
+      }
+    ]
+  },
+  "anilist-101280": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=94601"
+      }
+    ]
+  },
+  "anilist-129277": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112756"
+      }
+    ]
+  },
+  "anilist-108465": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112541"
+      }
+    ]
+  },
+  "anilist-99263": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113047"
+      }
+    ]
+  },
+  "anilist-4081": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=16376"
+      }
+    ]
+  },
+  "anilist-98659": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=88688"
+      }
+    ]
+  },
+  "anilist-100977": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=93488"
+      }
+    ]
+  },
+  "anilist-114535": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112674"
+      }
+    ]
+  },
+  "anilist-114124": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112472"
+      }
+    ]
+  },
+  "anilist-100922": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113854"
+      }
+    ]
+  },
+  "anilist-21366": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=79679"
+      }
+    ]
+  },
+  "anilist-103302": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=102280"
+      }
+    ]
+  },
+  "anilist-173295": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113578"
+      }
+    ]
+  },
+  "anilist-140830": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113024"
+      }
+    ]
+  },
+  "anilist-125206": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112731"
+      }
+    ]
+  },
+  "anilist-153845": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113240"
+      }
+    ]
+  },
+  "anilist-108463": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=104523"
+      }
+    ]
+  },
+  "anilist-143277": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113159"
+      }
+    ]
+  },
+  "anilist-153152": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113246"
+      }
+    ]
+  },
+  "anilist-130298": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113154"
+      }
+    ]
+  },
+  "anilist-132052": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113041"
+      }
+    ]
+  },
+  "anilist-158898": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113492"
+      }
+    ]
+  },
+  "anilist-128547": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112664"
+      }
+    ]
+  },
+  "anilist-128034": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112975"
+      }
+    ]
+  },
+  "anilist-97716": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112839"
+      }
+    ]
+  },
+  "anilist-101759": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=97790"
+      }
+    ]
+  },
+  "anilist-151970": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113380"
+      }
+    ]
+  },
+  "anilist-105228": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=114060"
+      }
+    ]
+  },
+  "anilist-183161": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113778"
+      }
+    ]
+  },
+  "anilist-107201": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=103427"
+      }
+    ]
+  },
+  "anilist-123802": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112660"
+      }
+    ]
+  },
+  "anilist-156067": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113185"
+      }
+    ]
+  },
+  "anilist-156415": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113514"
+      }
+    ]
+  },
+  "anilist-164702": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113521"
+      }
+    ]
+  },
+  "anilist-141821": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113451"
+      }
+    ]
+  },
+  "anilist-132405": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112953"
+      }
+    ]
+  },
+  "anilist-135778": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113340"
+      }
+    ]
+  },
+  "anilist-21455": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112529"
+      }
+    ]
+  },
+  "anilist-163270": {
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "巴哈姆特動畫瘋",
+        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113501"
+      }
+    ]
+  },
+  "anilist-100668": {
+    "titleZh": "平凡職業造就世界最強",
+    "source": "manual"
+  },
+  "anilist-14713": {
+    "show": false
   }
 }

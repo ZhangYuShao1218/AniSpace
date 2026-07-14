@@ -271,7 +271,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
         <>
           <div className="card-edit-backdrop" onClick={() => setIsConfirmingRemove(false)} />
           <div
-            className="card-edit-popup"
+            className="card-edit-popup confirm-remove-popup"
             style={{ top: popoverPos.top, left: popoverPos.left, width: popoverPos.width }}
             onClick={e => e.stopPropagation()}
           >
@@ -291,11 +291,11 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
               {t('doNotAskAgain')}
             </label>
 
-            <div className="card-edit-popup-actions">
+            <div className="card-edit-popup-actions confirm-remove-actions">
               <button type="button" className="card-edit-popup-btn cancel" onClick={() => setIsConfirmingRemove(false)} title={t('cancel')}>
                 <X size={15} />
               </button>
-              <button type="button" className="card-edit-popup-btn save" onClick={handleConfirmRemove} title={t('confirmRemoveBtn')} style={{ color: '#f87171' }}>
+              <button type="button" className="card-edit-popup-btn save" onClick={handleConfirmRemove} title={t('confirmRemoveBtn')}>
                 <Check size={15} />
               </button>
             </div>

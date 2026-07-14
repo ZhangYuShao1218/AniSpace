@@ -625,8 +625,7 @@ async function main() {
         });
       }
       const base = targetAnime.streamings || [];
-      const extra = customOverride.extraStreamings || customOverride.extraStreaming || [];
-      targetAnime.streamings = normalizeAndMergeStreamings([...base, ...bgmStreamings, ...extra]);
+      targetAnime.streamings = normalizeAndMergeStreamings([...base, ...bgmStreamings]);
 
       // c. 匯入封面圖片 (若無巴哈封面則嘗試補充)
       if (!targetAnime.coverImageGamer) {

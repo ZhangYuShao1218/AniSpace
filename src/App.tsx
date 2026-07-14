@@ -8,6 +8,7 @@ import AllAnimePage from './pages/AllAnimePage';
 import PlanToWatchPage from './pages/PlanToWatchPage';
 import WatchedPage from './pages/WatchedPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import { GamerAuditPage } from './pages/GamerAuditPage';
 import Footer from '@/components/layout/Footer';
 import { ShareProgressPill } from '@/components/share/ShareProgressPill';
 import TutorialModal from '@/components/modals/TutorialModal';
@@ -43,6 +44,7 @@ function App() {
           <Route path="/plan" element={<PlanToWatchPage />} />
           <Route path="/records" element={<WatchedPage />} />
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/gamer-audit" element={<GamerAuditPage />} />
         </Routes>
       </main>
 

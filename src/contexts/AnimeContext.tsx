@@ -75,11 +75,16 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
         let combinedStreamings = baseStreamings;
         if (extraStreamings.length > 0) {
           const streamMap = new Map<string, any>();
-          baseStreamings.forEach((st: any) => streamMap.set(`${st.site}_${st.url}`, st));
+          baseStreamings.forEach((st: any) => {
+            if (st && st.site) streamMap.set(st.site, st);
+          });
           extraStreamings.forEach((st: any) => {
-            const key = `${st.site}_${st.url}`;
-            if (!streamMap.has(key)) {
-              streamMap.set(key, st);
+            if (st && st.site) {
+              if (st.site === 'gamer' || st.site === 'gamer_hk') {
+                streamMap.delete('gamer');
+                streamMap.delete('gamer_hk');
+              }
+              streamMap.set(st.site, st);
             }
           });
           combinedStreamings = Array.from(streamMap.values());

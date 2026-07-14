@@ -1253,7 +1253,8 @@
     "source": "ai"
   },
   "anilist-13851": {
-    "titleZh": "出包王女Darkness"
+    "titleZh": "出包王女 Darkness",
+    "source": "manual"
   },
   "anilist-13939": {
     "titleZh": "加速世界 EX",
@@ -1449,8 +1450,8 @@
     "source": "manual"
   },
   "anilist-19123": {
-    "titleZh": "航海王 梅利號篇章 ～另一個夥伴的故事～",
-    "source": "ai"
+    "titleZh": "海賊王 梅利號篇章 ～另一個夥伴的故事～",
+    "source": "manual"
   },
   "anilist-19211": {
     "titleZh": "翠星之加爾剛蒂亞"
@@ -1481,7 +1482,8 @@
     "source": "manual",
     "blockedSites": [
       "iqiyi"
-    ]
+    ],
+    "show": false
   },
   "anilist-20359": {
     "titleZh": "山田君與7人魔女"
@@ -1685,7 +1687,7 @@
     "source": "ai"
   },
   "anilist-21241": {
-    "titleZh": "潮與虎 第二期",
+    "titleZh": "潮與虎 後篇",
     "source": "manual"
   },
   "anilist-21247": {
@@ -1698,7 +1700,8 @@
   },
   "anilist-21303": {
     "titleZh": "暗殺教室 episode:0 相遇的時間",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-21305": {
     "titleZh": "OVERLORD Ple Ple Pleiades",
@@ -1736,7 +1739,8 @@
   },
   "anilist-21386": {
     "titleZh": "一拳超人：英雄之路",
-    "source": "ai"
+    "source": "ai",
+    "show": false
   },
   "anilist-21415": {
     "titleZh": "灰色的樂園 灰色的特典",
@@ -1843,7 +1847,8 @@
   "anilist-21853": {
     "titleZh": "出包王女 Darkness 2nd",
     "source": "manual",
-    "bangumiDataTitle": "To LOVEる -とらぶる- ダークネス 2nd"
+    "bangumiDataTitle": "To LOVEる -とらぶる- ダークネス 2nd",
+    "show": false
   },
   "anilist-21858": {
     "titleZh": "小魔女學園 (TV)",
@@ -2073,7 +2078,8 @@
     "source": "ai"
   },
   "anilist-107622": {
-    "titleZh": "狂賭之淵"
+    "titleZh": "狂賭之淵",
+    "show": false
   },
   "anilist-108267": {
     "titleZh": "怪怪守護神 OVA",
@@ -2497,7 +2503,8 @@
     "source": "ai"
   },
   "anilist-197178": {
-    "source": "ai"
+    "source": "manual",
+    "titleZh": "海賊王 女英雄們的故事"
   },
   "anilist-197543": {
     "titleZh": "BanG Dream! Ave Mujica",
@@ -3543,7 +3550,9 @@
     "coverImage": "https://i0.hdslb.com/bfs/bangumi/0ab129325044ff4acbf808a3e38b71a1e0ea5b57.jpg"
   },
   "anilist-98153": {
-    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9b576406aab5d004d85d78239afb6dd2d74355d0.jpg"
+    "coverImage": "https://i0.hdslb.com/bfs/bangumi/9b576406aab5d004d85d78239afb6dd2d74355d0.jpg",
+    "titleZh": "超級槍彈辯駁2.5 狛枝凪鬥與世界的破壞者",
+    "source": "manual"
   },
   "anilist-20986": {
     "coverImage": "https://i0.hdslb.com/bfs/bangumi/edfd12a2c83cd19b331200be303b83141a3d4c82.jpg"
@@ -4854,6 +4863,61 @@
   },
   "anilist-21191": {
     "titleZh": "FAIRY TAIL 魔導少年 劇場版 DRAGON CRY",
+    "source": "manual"
+  },
+  "anilist-3455": {
+    "titleZh": "出包王女 第一季",
+    "source": "manual"
+  },
+  "anilist-124136": {
+    "titleZh": "大人的防具店 第二季",
+    "source": "manual"
+  },
+  "anilist-108355": {
+    "titleZh": "大人的防具店 裏面",
+    "source": "manual"
+  },
+  "anilist-13663": {
+    "show": false
+  },
+  "anilist-13601": {
+    "titleZh": "PSYCHO-PASS 心靈判官",
+    "source": "manual"
+  },
+  "anilist-20513": {
+    "titleZh": "PSYCHO-PASS 心靈判官 第二季",
+    "source": "manual"
+  },
+  "anilist-20514": {
+    "titleZh": "PSYCHO-PASS 心靈判官：劇場版",
+    "source": "manual"
+  },
+  "anilist-21335": {
+    "titleZh": "海賊王劇場版：GOLD",
+    "source": "manual"
+  },
+  "anilist-105143": {
+    "titleZh": "海賊王劇場版：奪寶爭霸戰",
+    "source": "manual"
+  },
+  "anilist-141902": {
+    "titleZh": "海賊王劇場版：紅髮歌姬",
+    "source": "manual"
+  },
+  "anilist-182469": {
+    "titleZh": "海賊王 粉絲來信",
+    "source": "manual"
+  },
+  "anilist-108307": {
+    "titleZh": "PSYCHO-PASS 心靈判官 第三季",
+    "source": "manual"
+  },
+  "anilist-113917": {
+    "titleZh": "PSYCHO-PASS 心靈判官3 FIRST INSPECTOR",
+    "source": "manual"
+  },
+  "anilist-153687": {
+    "titleZh": "PSYCHO-PASS 心靈判官 劇場版 PROVIDENCE",
     "source": "manual"
   }
 }

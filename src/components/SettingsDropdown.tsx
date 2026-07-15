@@ -9,6 +9,7 @@ import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useDataManagement } from '@/hooks/useDataManagement';
 import { logEvent } from '@/utils/analytics';
+import { APP_VERSION } from '@/utils/version';
 
 interface SettingsDropdownProps {
   useSettingsIcon?: boolean;
@@ -239,6 +240,24 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
               <AlertTriangle size={16} className="danger-icon" />
               {t('clearAllData')}
             </button>
+            <div style={{ height: '1px', background: 'var(--border-glass-light)', margin: '4px 6px' }} />
+            <div 
+              style={{ 
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                padding: '4px 10px',
+                fontSize: 'calc(0.85rem + 2pt)', 
+                color: 'var(--text-primary)', 
+                letterSpacing: '0.04em', 
+                whiteSpace: 'nowrap',
+                fontWeight: 500,
+                userSelect: 'none'
+              }}
+            >
+              v{APP_VERSION}
+            </div>
           </>
         </div>
       )}

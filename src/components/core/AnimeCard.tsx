@@ -65,13 +65,16 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     return len;
   };
 
+  const safeGenres = Array.isArray(anime?.genres) ? anime.genres : [];
+  const safeStreamings = Array.isArray(anime?.streamings) ? anime.streamings : [];
+
   const MAX_VISUAL_LENGTH = 22;
   let currentLen = 0;
   let visibleTagCount = 0;
   
-  for (let i = 0; i < anime.genres.length; i++) {
-    const textLen = getVisualLength(tGenre(anime.genres[i]));
-    const isLast = i === anime.genres.length - 1;
+  for (let i = 0; i < safeGenres.length; i++) {
+    const textLen = getVisualLength(tGenre(safeGenres[i]));
+    const isLast = i === safeGenres.length - 1;
     const badgeSpace = isLast ? 0 : 3.5; // Reserve space for "+N" badge
     
     if (visibleTagCount > 0 && (currentLen + textLen + badgeSpace) > MAX_VISUAL_LENGTH) {
@@ -80,7 +83,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     currentLen += textLen + 1; // +1 for the gap between tags
     visibleTagCount++;
   }
-  if (visibleTagCount === 0 && anime.genres.length > 0) visibleTagCount = 1;
+  if (visibleTagCount === 0 && safeGenres.length > 0) visibleTagCount = 1;
 
   const handleTitleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -105,14 +108,36 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect();
       const popupWidth = Math.max(rect.width * 1.365, 315);
+      const finalWidth = Math.min(popupWidth, window.innerWidth - 20); // 確保寬度左右至少保留 10px 防呆空間
+      
+      const rawLeft = rect.left + window.scrollX + rect.width * 0.5;
+      const clampedLeft = Math.max(
+        window.scrollX + finalWidth / 2 + 10,
+        Math.min(rawLeft, window.scrollX + window.innerWidth - finalWidth / 2 - 10)
+      );
+
+      const estHeight = 240; // 評價確認與名稱編輯彈窗預估最大安全高度
+      const rawTop = rect.top + window.scrollY + rect.height * 0.5;
+      const clampedTop = Math.max(
+        window.scrollY + estHeight / 2 + 10,
+        Math.min(rawTop, window.scrollY + window.innerHeight - estHeight / 2 - 10)
+      );
       
       setPopoverPos({
-        top: rect.top + window.scrollY + rect.height * 0.5,
-        left: rect.left + window.scrollX + rect.width * 0.5,
-        width: Math.min(popupWidth, window.innerWidth - 32),
+        top: clampedTop,
+        left: clampedLeft,
+        width: finalWidth,
       });
     }
   };
+
+  useEffect(() => {
+    if (isEditingTitle || isConfirmingRemove) {
+      const handleResize = () => calculatePopupPosition();
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, [isEditingTitle, isConfirmingRemove]);
 
   const handleEditClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -174,7 +199,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       </button>
 
       {/* Streaming menu — Top Right Below Heart */}
-      <StreamingList streamings={anime.streamings} anime={anime} />
+      <StreamingList streamings={safeStreamings} anime={anime} />
 
       <div className="card-image-container">
         <img src={displayCover} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />
@@ -205,15 +230,15 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
 
         <div className="card-tags-container">
           <div className="card-tags-summary">
-            {anime.genres.slice(0, visibleTagCount).map(genre => (
+            {safeGenres.slice(0, visibleTagCount).map(genre => (
               <span key={genre} className="genre-tag mini">{tGenre(genre)}</span>
             ))}
-            {anime.genres.length > visibleTagCount && (
-              <span className="genre-tag mini count">+{anime.genres.length - visibleTagCount}</span>
+            {safeGenres.length > visibleTagCount && (
+              <span className="genre-tag mini count">+{safeGenres.length - visibleTagCount}</span>
             )}
           </div>
           <div className="card-tags-full">
-            {anime.genres.map(genre => (
+            {safeGenres.map(genre => (
               <span key={genre} className="genre-tag mini">{tGenre(genre)}</span>
             ))}
           </div>

@@ -11,12 +11,20 @@ const GAMER_CACHE_FILE = path.join(process.cwd(), 'scraper', 'gamer_url_cache.js
 const START_YEAR = 2010;
 
 const genreMap = {
+  // English to Standard Traditional Chinese
   'Action': '動作', 'Adventure': '冒險', 'Comedy': '喜劇', 'Drama': '劇情',
   'Fantasy': '奇幻', 'Horror': '恐怖', 'Mystery': '懸疑', 'Romance': '愛情',
   'Sci-Fi': '科幻', 'Slice of Life': '日常', 'Sports': '運動', 'Supernatural': '超自然',
   'Suspense': '懸疑', 'Award Winning': '獲獎', 'Avant Garde': '前衛', 'Boys Love': '耽美',
   'Girls Love': '百合', 'Gourmet': '美食', 'Mecha': '機甲', 'Music': '音樂', 'Psychological': '心理',
-  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '福利', 'Ecchi': '福利'
+  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '福利', 'Ecchi': '福利',
+  'Erotica': '福利', 'Isekai': '異世界', 'Super Power': '超能力',
+  'School': '校園', 'Tragedy': '憂鬱',
+  'Dark Fantasy': '憂鬱', 'Villainess': '惡役千金', 'Food': '美食',
+  'Harem': '後宮', 'Post-Apocalyptic': '末日', 'Time Loop': '時空輪迴', 'Time Manipulation': '時空輪迴',
+  // Chinese synonyms
+  '搞笑': '喜劇', '戀愛': '愛情', '競技': '運動', '紳士': '福利', '魔法': '奇幻',
+  '學園': '校園', '惡役': '惡役千金', '胃痛': '憂鬱', '後宮番': '後宮', '廢土': '末日', '時空穿越': '時空輪迴', '輪迴': '時空輪迴'
 };
 
 const SEASON_MONTH_MAP = {
@@ -331,6 +339,41 @@ async function main() {
           genres.push('超能力');
         }
 
+        const isSchool = item.tags?.some(t => t.name === 'School' && t.rank >= 75);
+        if (isSchool && !genres.includes('校園')) {
+          genres.push('校園');
+        }
+
+        const isTragedy = item.tags?.some(t => (t.name === 'Tragedy' || t.name === 'Dark Fantasy') && t.rank >= 75);
+        if (isTragedy && !genres.includes('憂鬱')) {
+          genres.push('憂鬱');
+        }
+
+        const isVillainess = item.tags?.some(t => t.name === 'Villainess' && t.rank >= 75);
+        if (isVillainess && !genres.includes('惡役千金')) {
+          genres.push('惡役千金');
+        }
+
+        const isFood = item.tags?.some(t => t.name === 'Food' && t.rank >= 75);
+        if (isFood && !genres.includes('美食')) {
+          genres.push('美食');
+        }
+
+        const isHarem = item.tags?.some(t => t.name.includes('Harem') && t.rank >= 75);
+        if (isHarem && !genres.includes('後宮')) {
+          genres.push('後宮');
+        }
+
+        const isPostApocalyptic = item.tags?.some(t => t.name === 'Post-Apocalyptic' && t.rank >= 75);
+        if (isPostApocalyptic && !genres.includes('末日')) {
+          genres.push('末日');
+        }
+
+        const isTimeLoop = item.tags?.some(t => (t.name === 'Time Loop' || t.name === 'Time Manipulation') && t.rank >= 75);
+        if (isTimeLoop && !genres.includes('時空輪迴')) {
+          genres.push('時空輪迴');
+        }
+
         const seasonMap = { 'WINTER': '冬', 'SPRING': '春', 'SUMMER': '夏', 'FALL': '秋' };
         const fullId = `anilist-${item.id}`;
         if (!existingIds.has(fullId)) {
@@ -368,7 +411,7 @@ async function main() {
           coverImageAniList: aniListCover,
           startDate: item.startDate || null,
           yearSeason: `${year} ${seasonMap[currentSeason]}`,
-          genres,
+          genres: Array.from(new Set(genres)).filter(Boolean).sort(),
           ...(streamings.length > 0 && { streamings: normalizeAndMergeStreamings(streamings) })
         });
       }

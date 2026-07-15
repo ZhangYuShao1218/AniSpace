@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
 import type { Anime, WatchedAnime } from '@/types';
-import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY, LAST_SYNC_TIME_KEY } from '@/utils/constants';
+import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY, LAST_SYNC_TIME_KEY, normalizeGenre } from '@/utils/constants';
 
 import { useTitleCorrections } from '@/hooks/useTitleCorrections';
 
@@ -90,12 +90,16 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
           combinedStreamings = Array.from(streamMap.values());
         }
 
+        const rawGenres = ov.genres || anime.genres || [];
+        const normalizedGenres = Array.from(new Set((Array.isArray(rawGenres) ? rawGenres : []).map((g: any) => normalizeGenre(g)))).filter(Boolean).sort();
+
         return {
           ...merged,
           titleZh: resolvedTitleZh,
           titleJa: resolvedTitleJa,
           streamings: combinedStreamings,
           coverImage: resolvedCover,
+          genres: normalizedGenres,
         };
       });
       // Filter out anime marked with show: false
@@ -372,7 +376,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         titleZh: customTitle || (item as any).titleZh || `未知作品 (${item.id || 'ID'})`,
         titleJa: (item as any).titleJa || '',
         titleEn: (item as any).titleEn || '',
-        genres: Array.isArray((item as any).genres) ? (item as any).genres : [],
+        genres: Array.from(new Set((Array.isArray((item as any).genres) ? (item as any).genres : []).map((g: any) => normalizeGenre(g)))).filter(Boolean).sort(),
         yearSeason: (item as any).yearSeason || '未知',
         coverImage: customCover || (item as any).coverImage || '',
         streamings: Array.isArray((item as any).streamings) ? (item as any).streamings : [],
@@ -386,7 +390,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
     return {
       ...master, // 1. 基礎動畫元資料（標題、封面、年份、分類、播放平台等）全數由主表權威授權
-      genres: Array.isArray(master.genres) ? master.genres : [],
+      genres: Array.from(new Set((Array.isArray(master.genres) ? master.genres : []).map((g: any) => normalizeGenre(g)))).filter(Boolean).sort(),
       streamings: Array.isArray(master.streamings) ? master.streamings : [],
       // 2. 嚴格提取並繼承使用者評價紀錄（完美兼容舊版全包資料與新版輕量資料格式）
       ...((item as any).userRating !== undefined ? { userRating: (item as any).userRating } : {}),

@@ -164,6 +164,13 @@ export const translations = {
     genreThriller: '驚悚',
     genreIsekai: '異世界',
     genreSuperPower: '超能力',
+    genreSchool: '校園',
+    genreTragedy: '憂鬱',
+    genreDarkFantasy: '憂鬱',
+    genreFood: '美食',
+    genreHarem: '後宮',
+    genrePostApocalyptic: '末日',
+    genreTimeLoop: '時空輪迴',
 
     // Pages
     searchPlanPlaceholder: '搜尋期待清單...',
@@ -422,6 +429,13 @@ export const translations = {
     genreThriller: 'Thriller',
     genreIsekai: 'Isekai',
     genreSuperPower: 'Super Power',
+    genreSchool: 'School',
+    genreTragedy: 'Dark / Tragedy',
+    genreDarkFantasy: 'Dark / Tragedy',
+    genreFood: 'Food / Gourmet',
+    genreHarem: 'Harem',
+    genrePostApocalyptic: 'Post-Apocalyptic',
+    genreTimeLoop: 'Time Loop',
 
     // Pages
     searchPlanPlaceholder: 'Search Plan to Watch...',
@@ -680,6 +694,13 @@ export const translations = {
     genreThriller: 'スリラー',
     genreIsekai: '異世界',
     genreSuperPower: '超能力',
+    genreSchool: '学園',
+    genreTragedy: '鬱・ダーク',
+    genreDarkFantasy: '鬱・ダーク',
+    genreFood: 'グルメ',
+    genreHarem: 'ハーレム',
+    genrePostApocalyptic: 'ポストアポカリプス',
+    genreTimeLoop: 'タイムリープ',
 
     // Pages
     searchPlanPlaceholder: '期待リストを検索...',

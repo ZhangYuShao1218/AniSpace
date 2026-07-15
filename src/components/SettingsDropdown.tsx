@@ -247,10 +247,10 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
                 alignItems: 'center',
                 justifyContent: 'center',
                 width: '100%',
-                padding: '4px 10px',
-                fontSize: 'calc(0.85rem + 2pt)', 
+                padding: '3px 10px',
+                fontSize: '0.9rem', 
                 color: 'var(--text-primary)', 
-                letterSpacing: '0.04em', 
+                letterSpacing: '0.05em', 
                 whiteSpace: 'nowrap',
                 fontWeight: 500,
                 userSelect: 'none'

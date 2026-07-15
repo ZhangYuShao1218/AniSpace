@@ -41,8 +41,8 @@ const WatchedPage = () => {
     return result.sort((a, b) => {
       if (sortBy === 'rating_desc') return (b.userRating || 0) - (a.userRating || 0);
       if (sortBy === 'rating_asc') return (a.userRating || 0) - (b.userRating || 0);
-      if (sortBy === 'date_desc') return parseSeason(b.yearSeason) - parseSeason(a.yearSeason);
-      if (sortBy === 'date_asc') return parseSeason(a.yearSeason) - parseSeason(b.yearSeason);
+      if (sortBy === 'date_desc') return parseSeason(b.yearSeason || '') - parseSeason(a.yearSeason || '');
+      if (sortBy === 'date_asc') return parseSeason(a.yearSeason || '') - parseSeason(b.yearSeason || '');
       return 0;
     });
   }, [watchedList, searchQuery, sortBy]);

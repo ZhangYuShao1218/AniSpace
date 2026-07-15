@@ -77,7 +77,7 @@ const AllAnimePage = () => {
   const availableGenres = useMemo(() => {
     const genres = new Set<string>();
     allAnime.forEach(a => {
-      a.genres.forEach(g => {
+      (Array.isArray(a.genres) ? a.genres : []).forEach(g => {
         if (!NSFW_GENRES.includes(g)) genres.add(g);
       });
     });
@@ -96,15 +96,16 @@ const AllAnimePage = () => {
       let matchYear = true;
       if (selectedYear) {
         if (selectedYear === '~ 2009') {
-          const yearMatch = anime.yearSeason.match(/\d+/);
+          const yearMatch = (anime.yearSeason || '').match(/\d+/);
           matchYear = yearMatch ? parseInt(yearMatch[0], 10) <= 2009 : false;
         } else {
           matchYear = anime.yearSeason === selectedYear;
         }
       }
+      const safeGenres = Array.isArray(anime.genres) ? anime.genres : [];
       const matchGenre = selectedGenres.length === 0 ? true : selectedGenres.some(sg => {
-        if (sg === '福利') return anime.genres.includes('福利') || anime.genres.includes('Hentai') || anime.genres.includes('Ecchi') || anime.genres.includes('紳士');
-        return anime.genres.includes(sg);
+        if (sg === '福利') return safeGenres.includes('福利') || safeGenres.includes('Hentai') || safeGenres.includes('Ecchi') || safeGenres.includes('紳士');
+        return safeGenres.includes(sg);
       });
       const trimmedQuery = searchQuery.trim().toLowerCase();
       const matchSearch = trimmedQuery ? (

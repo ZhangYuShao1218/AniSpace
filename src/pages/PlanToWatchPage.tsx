@@ -39,8 +39,8 @@ const PlanToWatchPage = () => {
     );
 
     return result.sort((a, b) => {
-      if (sortBy === 'date_desc') return parseSeason(b.yearSeason) - parseSeason(a.yearSeason);
-      if (sortBy === 'date_asc') return parseSeason(a.yearSeason) - parseSeason(b.yearSeason);
+      if (sortBy === 'date_desc') return parseSeason(b.yearSeason || '') - parseSeason(a.yearSeason || '');
+      if (sortBy === 'date_asc') return parseSeason(a.yearSeason || '') - parseSeason(b.yearSeason || '');
       return 0;
     });
   }, [planToWatchList, searchQuery, sortBy]);

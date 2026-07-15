@@ -73,18 +73,23 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     setIsModalOpen(true);
   }, [watchedList]);
 
-  const handlePageChange = (page: number) => {
+  const handlePageChange = useCallback((page: number) => {
+    if (page === currentPage) return;
     setCurrentPage(page);
     
-    const headerElement = document.querySelector('.layout-scroll-anchor') || document.querySelector('.page-header');
-    if (headerElement) {
-      const yOffset = 5;
-      const y = headerElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const headerElement = document.querySelector('.layout-scroll-anchor') || document.querySelector('.page-header') || document.querySelector('#main-content');
+        if (headerElement) {
+          const yOffset = 5;
+          const y = headerElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }, 30);
+    });
+  }, [currentPage]);
 
 
   useEffect(() => {

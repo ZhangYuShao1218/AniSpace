@@ -339,21 +339,55 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     clearCorrections();
   }, [clearCorrections]);
 
-  const remoteAnimeMap = useMemo(() => {
+  const allAnimeMap = useMemo(() => {
     const map = new Map<string, Anime>();
     remoteAnime.forEach(a => map.set(a.id, a));
+    customAnimeList.forEach(a => map.set(a.id, a));
     return map;
-  }, [remoteAnime]);
+  }, [remoteAnime, customAnimeList]);
+
+  useEffect(() => {
+    // 當主動畫庫與自訂清單皆完全載入完畢後，若某個動畫 ID 在兩處資料庫中皆找不到，直接從動畫紀錄或期待動畫刪除
+    if (remoteAnime.length === 0 && customAnimeList.length === 0) return;
+
+    setWatchedList(prev => {
+      const filtered = prev.filter(item => allAnimeMap.has(item.id));
+      return filtered.length !== prev.length ? filtered : prev;
+    });
+
+    setPlanToWatchList(prev => {
+      const filtered = prev.filter(item => allAnimeMap.has(item.id));
+      return filtered.length !== prev.length ? filtered : prev;
+    });
+  }, [remoteAnime.length, customAnimeList.length, allAnimeMap]);
 
   const mergeItemWithMaster = useCallback(<T extends Anime>(item: T): T => {
-    const master = remoteAnimeMap.get(item.id);
-    if (!master) return item;
+    const master = allAnimeMap.get(item.id);
+    const customTitle = userData?.[item.id]?.customTitle || (item as any).customTitle || (master as any)?.customTitle;
+    const customCover = userData?.[item.id]?.customCover || (item as any).customCover || (master as any)?.customCover;
 
-    const customTitle = userData?.[item.id]?.customTitle || (item as any).customTitle;
-    const customCover = userData?.[item.id]?.customCover || (item as any).customCover;
+    if (!master) {
+      return {
+        id: item.id || 'unknown',
+        titleZh: customTitle || (item as any).titleZh || `未知作品 (${item.id || 'ID'})`,
+        titleJa: (item as any).titleJa || '',
+        titleEn: (item as any).titleEn || '',
+        genres: Array.isArray((item as any).genres) ? (item as any).genres : [],
+        yearSeason: (item as any).yearSeason || '未知',
+        coverImage: customCover || (item as any).coverImage || '',
+        streamings: Array.isArray((item as any).streamings) ? (item as any).streamings : [],
+        ...((item as any).userRating !== undefined ? { userRating: (item as any).userRating } : {}),
+        ...((item as any).userComment !== undefined ? { userComment: (item as any).userComment } : {}),
+        ...((item as any).watchedDate !== undefined ? { watchedDate: (item as any).watchedDate } : {}),
+        ...(customTitle ? { customTitle } : {}),
+        ...(customCover ? { customCover } : {}),
+      } as unknown as T;
+    }
 
     return {
-      ...master, // 1. 基礎動畫元資料（標題、封面、年份、分類、播放平台等）全數由主表 remoteAnimeMap 權威授權
+      ...master, // 1. 基礎動畫元資料（標題、封面、年份、分類、播放平台等）全數由主表權威授權
+      genres: Array.isArray(master.genres) ? master.genres : [],
+      streamings: Array.isArray(master.streamings) ? master.streamings : [],
       // 2. 嚴格提取並繼承使用者評價紀錄（完美兼容舊版全包資料與新版輕量資料格式）
       ...((item as any).userRating !== undefined ? { userRating: (item as any).userRating } : {}),
       ...((item as any).userComment !== undefined ? { userComment: (item as any).userComment } : {}),
@@ -362,11 +396,11 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       ...(customTitle ? { titleZh: customTitle, customTitle } : {}),
       ...(customCover ? { coverImage: customCover, customCover } : {}),
     } as unknown as T;
-  }, [remoteAnimeMap, userData]);
+  }, [allAnimeMap, userData]);
 
   const enrichedCustomAnimeList = useMemo(() => customAnimeList.map(mergeItemWithMaster), [customAnimeList, mergeItemWithMaster]);
-  const enrichedWatchedList = useMemo(() => watchedList.map(mergeItemWithMaster), [watchedList, mergeItemWithMaster]);
-  const enrichedPlanToWatchList = useMemo(() => planToWatchList.map(mergeItemWithMaster), [planToWatchList, mergeItemWithMaster]);
+  const enrichedWatchedList = useMemo(() => watchedList.filter(item => (remoteAnime.length === 0 && customAnimeList.length === 0) ? true : allAnimeMap.has(item.id)).map(mergeItemWithMaster), [watchedList, remoteAnime.length, customAnimeList.length, allAnimeMap, mergeItemWithMaster]);
+  const enrichedPlanToWatchList = useMemo(() => planToWatchList.filter(item => (remoteAnime.length === 0 && customAnimeList.length === 0) ? true : allAnimeMap.has(item.id)).map(mergeItemWithMaster), [planToWatchList, remoteAnime.length, customAnimeList.length, allAnimeMap, mergeItemWithMaster]);
   const enrichedAllAnime = useMemo(() => [...enrichedCustomAnimeList, ...remoteAnime], [enrichedCustomAnimeList, remoteAnime]);
 
   const contextValue = useMemo(() => ({

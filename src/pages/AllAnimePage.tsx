@@ -4,7 +4,7 @@ import type { SortOption } from '@/types';
 import FilterBar from '@/components/layout/FilterBar';
 import AnimeListLayout from '@/components/core/AnimeListLayout';
 import { useAnime } from '@/contexts/AnimeContext';
-import { NSFW_GENRES } from '@/utils/constants';
+import { NSFW_GENRES, normalizeGenre } from '@/utils/constants';
 import { parseSeason, getRelativeSeasonString } from '@/utils/season';
 import { useUrlParams } from '@/hooks/useUrlParams';
 
@@ -54,8 +54,8 @@ const AllAnimePage = () => {
 
   const [selectedYear] = useUrlParams<string>('year', '');
   const [selectedGenres] = useUrlParams<string[]>('genres', [], 
-    (val) => val.join(','), 
-    (val) => val ? val.split(',') : []
+    (val) => val.join(','),
+    (val) => val ? val.split(',').filter(Boolean) : []
   );
   const [searchQuery] = useUrlParams<string>('search', '');
   const [sortBy] = useUrlParams<SortOption>('sort', 'date_desc');
@@ -78,7 +78,8 @@ const AllAnimePage = () => {
     const genres = new Set<string>();
     allAnime.forEach(a => {
       (Array.isArray(a.genres) ? a.genres : []).forEach(g => {
-        if (!NSFW_GENRES.includes(g)) genres.add(g);
+        const norm = normalizeGenre(g);
+        if (norm && !NSFW_GENRES.includes(norm)) genres.add(norm);
       });
     });
     return Array.from(genres).sort();
@@ -102,10 +103,11 @@ const AllAnimePage = () => {
           matchYear = anime.yearSeason === selectedYear;
         }
       }
-      const safeGenres = Array.isArray(anime.genres) ? anime.genres : [];
+      const safeGenres = (Array.isArray(anime.genres) ? anime.genres : []).map(normalizeGenre);
       const matchGenre = selectedGenres.length === 0 ? true : selectedGenres.some(sg => {
-        if (sg === '福利') return safeGenres.includes('福利') || safeGenres.includes('Hentai') || safeGenres.includes('Ecchi') || safeGenres.includes('紳士');
-        return safeGenres.includes(sg);
+        const normSg = normalizeGenre(sg);
+        if (normSg === '福利') return safeGenres.includes('福利') || safeGenres.includes('Hentai') || safeGenres.includes('Ecchi') || safeGenres.includes('紳士');
+        return safeGenres.includes(normSg);
       });
       const trimmedQuery = searchQuery.trim().toLowerCase();
       const matchSearch = trimmedQuery ? (

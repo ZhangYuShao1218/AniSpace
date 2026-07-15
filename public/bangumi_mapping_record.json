@@ -980,7 +980,7 @@
   },
   "anilist-197178": {
     "id": "anilist-197178",
-    "titleZh": "航海王 女英雄們的故事",
+    "titleZh": "海賊王 女英雄們的故事",
     "titleJa": "ONE PIECE HEROINES",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
@@ -2608,7 +2608,7 @@
   },
   "anilist-187921": {
     "id": "anilist-187921",
-    "titleZh": "終末のワルキューレ III",
+    "titleZh": "終末的女武神III",
     "titleJa": "終末のワルキューレ III",
     "yearSeason": "2025 秋",
     "hasCorrespondingData": false,
@@ -3598,7 +3598,7 @@
   },
   "anilist-181244": {
     "id": "anilist-181244",
-    "titleZh": "この素晴らしい世界に祝福を！３ーBONUS STAGEー",
+    "titleZh": "為美好的世界獻上祝福！3 BONUS STAGE",
     "titleJa": "この素晴らしい世界に祝福を！３ーBONUS STAGEー",
     "yearSeason": "2025 春",
     "hasCorrespondingData": false,
@@ -4720,7 +4720,7 @@
   },
   "anilist-182469": {
     "id": "anilist-182469",
-    "titleZh": "航海王 粉絲來信",
+    "titleZh": "海賊王 粉絲來信",
     "titleJa": "ONE PIECE FAN LETTER",
     "yearSeason": "2024 秋",
     "hasCorrespondingData": true,
@@ -6711,7 +6711,7 @@
   },
   "anilist-171026": {
     "id": "anilist-171026",
-    "titleZh": "派對浪客諸葛孔明 Road to Summer Sonia",
+    "titleZh": "派對咖孔明總集篇 Road to Summer Sonia",
     "titleJa": "パリピ孔明 Road to Summer Sonia",
     "yearSeason": "2024 冬",
     "hasCorrespondingData": true,
@@ -8284,7 +8284,7 @@
   },
   "anilist-153687": {
     "id": "anilist-153687",
-    "titleZh": "劇場版 心理測量者 PROVIDENCE",
+    "titleZh": "PSYCHO-PASS 心靈判官 劇場版 PROVIDENCE",
     "titleJa": "劇場版 PSYCHO-PASS サイコパス PROVIDENCE",
     "yearSeason": "2023 春",
     "hasCorrespondingData": true,
@@ -9703,7 +9703,7 @@
   },
   "anilist-141902": {
     "id": "anilist-141902",
-    "titleZh": "航海王劇場版：紅髮歌姬",
+    "titleZh": "海賊王劇場版：紅髮歌姬",
     "titleJa": "ONE PIECE FILM RED",
     "yearSeason": "2022 夏",
     "hasCorrespondingData": true,
@@ -13342,6 +13342,17 @@
     "bgmId": "295766",
     "streamingsCount": 5
   },
+  "anilist-124136": {
+    "id": "anilist-124136",
+    "titleZh": "大人的防具店 第二季",
+    "titleJa": "おとなの防具屋さんII",
+    "yearSeason": "2021 冬",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "おとなの防具屋さんⅡ",
+    "bgmId": "322926",
+    "streamingsCount": 6
+  },
   "anilist-113415": {
     "id": "anilist-113415",
     "titleZh": "咒術迴戰",
@@ -13366,7 +13377,7 @@
   },
   "anilist-113538": {
     "id": "anilist-113538",
-    "titleZh": "排球少年!! TO THE TOP 後篇",
+    "titleZh": "排球少年！！第四季 後篇",
     "titleJa": "ハイキュー!! TO THE TOP 2",
     "yearSeason": "2020 秋",
     "hasCorrespondingData": true,
@@ -14642,7 +14653,7 @@
   },
   "anilist-113917": {
     "id": "anilist-113917",
-    "titleZh": "心理測量者3 FIRST INSPECTOR",
+    "titleZh": "PSYCHO-PASS 心靈判官3 FIRST INSPECTOR",
     "titleJa": "PSYCHO-PASS サイコパス 3 FIRST INSPECTOR",
     "yearSeason": "2020 春",
     "hasCorrespondingData": true,
@@ -15720,7 +15731,7 @@
   },
   "anilist-108307": {
     "id": "anilist-108307",
-    "titleZh": "心理測量者 第三季",
+    "titleZh": "PSYCHO-PASS 心靈判官 第三季",
     "titleJa": "PSYCHO-PASS サイコパス3",
     "yearSeason": "2019 秋",
     "hasCorrespondingData": true,
@@ -15940,7 +15951,7 @@
   },
   "anilist-111729": {
     "id": "anilist-111729",
-    "titleZh": "平凡職業成就世界最強",
+    "titleZh": "平凡職業造就世界最強",
     "titleJa": "ありふれた職業で世界最強",
     "yearSeason": "2019 秋",
     "hasCorrespondingData": true,
@@ -16160,7 +16171,7 @@
   },
   "anilist-100668": {
     "id": "anilist-100668",
-    "titleZh": "平凡職業成就世界最強",
+    "titleZh": "平凡職業造就世界最強",
     "titleJa": "ありふれた職業で世界最強",
     "yearSeason": "2019 夏",
     "hasCorrespondingData": true,
@@ -16347,7 +16358,7 @@
   },
   "anilist-105143": {
     "id": "anilist-105143",
-    "titleZh": "航海王：奪寶爭霸戰",
+    "titleZh": "海賊王劇場版：奪寶爭霸戰",
     "titleJa": "ONE PIECE STAMPEDE",
     "yearSeason": "2019 夏",
     "hasCorrespondingData": true,
@@ -17742,6 +17753,17 @@
     "bgmId": "238640",
     "streamingsCount": 5
   },
+  "anilist-108355": {
+    "id": "anilist-108355",
+    "titleZh": "大人的防具店 裏面",
+    "titleJa": "おとなの防具屋さん(裏面)",
+    "yearSeason": "2019 冬",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "おとなの防具屋さん（裏面）",
+    "bgmId": "275359",
+    "streamingsCount": 2
+  },
   "anilist-101291": {
     "id": "anilist-101291",
     "titleZh": "青春豬頭少年不會夢到兔女郎學姊",
@@ -17799,7 +17821,7 @@
   },
   "anilist-102351": {
     "id": "anilist-102351",
-    "titleZh": "東京喰種:re 後篇",
+    "titleZh": "東京喰種:re 第二季",
     "titleJa": "東京喰種-トーキョーグール-:re 2",
     "yearSeason": "2018 秋",
     "hasCorrespondingData": true,
@@ -21858,7 +21880,7 @@
   },
   "anilist-98153": {
     "id": "anilist-98153",
-    "titleZh": "超級彈丸論破2.5 狛枝凪鬥與世界的破壞者",
+    "titleZh": "超級槍彈辯駁2.5 狛枝凪鬥與世界的破壞者",
     "titleJa": "スーパーダンガンロンパ2.5 狛枝凪斗と世界の破壊者",
     "yearSeason": "2017 冬",
     "hasCorrespondingData": true,
@@ -22969,7 +22991,7 @@
   },
   "anilist-21335": {
     "id": "anilist-21335",
-    "titleZh": "航海王電影：GOLD",
+    "titleZh": "海賊王劇場版：GOLD",
     "titleJa": "ONE PIECE FILM GOLD",
     "yearSeason": "2016 夏",
     "hasCorrespondingData": true,
@@ -23541,7 +23563,7 @@
   },
   "anilist-21241": {
     "id": "anilist-21241",
-    "titleZh": "潮與虎 第二期",
+    "titleZh": "潮與虎 後篇",
     "titleJa": "うしおととら 2 (TV)",
     "yearSeason": "2016 春",
     "hasCorrespondingData": true,
@@ -25158,7 +25180,7 @@
   },
   "anilist-20741": {
     "id": "anilist-20741",
-    "titleZh": "劇場版 約會大作戰 萬由裡審判",
+    "titleZh": "約會大作戰 DATE A LIVE 劇場版 萬由裡審判",
     "titleJa": "劇場版デート・ア・ライブ 万由里ジャッジメント",
     "yearSeason": "2015 夏",
     "hasCorrespondingData": false,
@@ -26137,7 +26159,7 @@
   },
   "anilist-20514": {
     "id": "anilist-20514",
-    "titleZh": "心靈判官：劇場版",
+    "titleZh": "PSYCHO-PASS 心靈判官：劇場版",
     "titleJa": "劇場版 PSYCHO-PASS サイコパス",
     "yearSeason": "2015 冬",
     "hasCorrespondingData": true,
@@ -26654,7 +26676,7 @@
   },
   "anilist-20513": {
     "id": "anilist-20513",
-    "titleZh": "心靈判官 第二季",
+    "titleZh": "PSYCHO-PASS 心靈判官 第二季",
     "titleJa": "PSYCHO-PASS サイコパス2",
     "yearSeason": "2014 秋",
     "hasCorrespondingData": true,
@@ -26786,7 +26808,7 @@
   },
   "anilist-20767": {
     "id": "anilist-20767",
-    "titleZh": "約會大作戰 II 狂三星辰祭",
+    "titleZh": "約會大作戰 DATE A LIVE II 狂三星辰祭",
     "titleJa": "デート・ア・ライブ II 狂三スターフェスティバル",
     "yearSeason": "2014 秋",
     "hasCorrespondingData": false,
@@ -29745,7 +29767,7 @@
   },
   "anilist-19123": {
     "id": "anilist-19123",
-    "titleZh": "航海王 梅利號篇章 ～另一個夥伴的故事～",
+    "titleZh": "海賊王 梅利號篇章 ～另一個夥伴的故事～",
     "titleJa": "ONE PIECE エピソードオブメリー 〜もうひとりの仲間の物語〜",
     "yearSeason": "2013 夏",
     "hasCorrespondingData": false,
@@ -30977,7 +30999,7 @@
   },
   "anilist-13601": {
     "id": "anilist-13601",
-    "titleZh": "心靈判官",
+    "titleZh": "PSYCHO-PASS 心靈判官",
     "titleJa": "PSYCHO-PASS サイコパス",
     "yearSeason": "2012 秋",
     "hasCorrespondingData": true,
@@ -31769,7 +31791,7 @@
   },
   "anilist-13851": {
     "id": "anilist-13851",
-    "titleZh": "出包王女Darkness",
+    "titleZh": "出包王女 Darkness",
     "titleJa": "To LOVEる -とらぶる- ダークネス",
     "yearSeason": "2012 夏",
     "hasCorrespondingData": true,
@@ -33991,7 +34013,7 @@
   },
   "anilist-10491": {
     "id": "anilist-10491",
-    "titleZh": "寒蟬鳴泣之時 煌",
+    "titleZh": "暮蟬悲鳴時 煌",
     "titleJa": "ひぐらしのなく頃に煌",
     "yearSeason": "2011 夏",
     "hasCorrespondingData": true,
@@ -37674,6 +37696,17 @@
     "bgmId": "891",
     "streamingsCount": 5
   },
+  "anilist-3652": {
+    "id": "anilist-3652",
+    "titleZh": "暮蟬悲鳴時 禮",
+    "titleJa": "ひぐらしのなく頃に礼",
+    "yearSeason": "2009 冬",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ひぐらしのなく頃に礼",
+    "bgmId": "1326",
+    "streamingsCount": 3
+  },
   "anilist-4181": {
     "id": "anilist-4181",
     "titleZh": "CLANNAD ~AFTER STORY~",
@@ -37795,6 +37828,17 @@
     "bgmId": "236",
     "streamingsCount": 5
   },
+  "anilist-3455": {
+    "id": "anilist-3455",
+    "titleZh": "出包王女 第一季",
+    "titleJa": "To LOVEる -とらぶる-",
+    "yearSeason": "2008 春",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "To LOVEる -とらぶる-",
+    "bgmId": "849",
+    "streamingsCount": 3
+  },
   "anilist-2966": {
     "id": "anilist-2966",
     "titleZh": "狼與辛香料",
@@ -37881,6 +37925,17 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BACCANO!",
     "bgmId": "965",
+    "streamingsCount": 3
+  },
+  "anilist-1889": {
+    "id": "anilist-1889",
+    "titleZh": "暮蟬悲鳴時 解答篇",
+    "titleJa": "ひぐらしのなく頃に解",
+    "yearSeason": "2007 夏",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ひぐらしのなく頃に解",
+    "bgmId": "288",
     "streamingsCount": 3
   },
   "anilist-2001": {
@@ -38113,6 +38168,17 @@
     "matchedBgmTitle": "スクールランブル二学期",
     "bgmId": "1878",
     "streamingsCount": 3
+  },
+  "anilist-934": {
+    "id": "anilist-934",
+    "titleZh": "暮蟬悲鳴時 出題篇",
+    "titleJa": "ひぐらしのなく頃に",
+    "yearSeason": "2006 春",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ひぐらしのなく頃に",
+    "bgmId": "289",
+    "streamingsCount": 4
   },
   "anilist-457": {
     "id": "anilist-457",

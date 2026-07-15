@@ -21,12 +21,19 @@ const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const OVERRIDE_FILE = path.join(process.cwd(), 'public', 'custom_override.json');
 
 const GENRE_MAP = {
+  // English to Standard Traditional Chinese
   'Action': '動作', 'Adventure': '冒險', 'Comedy': '喜劇', 'Drama': '劇情',
   'Fantasy': '奇幻', 'Horror': '恐怖', 'Mystery': '懸疑', 'Romance': '愛情',
   'Sci-Fi': '科幻', 'Slice of Life': '日常', 'Sports': '運動', 'Supernatural': '超自然',
-  'Suspense': '懸疑', 'Mecha': '機甲', 'Music': '音樂', 'Psychological': '心理',
-  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Boys Love': '耽美',
-  'Girls Love': '百合', 'Gourmet': '美食', 'Ecchi': '福利', 'Hentai': '福利'
+  'Suspense': '懸疑', 'Award Winning': '獲獎', 'Avant Garde': '前衛', 'Boys Love': '耽美',
+  'Girls Love': '百合', 'Gourmet': '美食', 'Mecha': '機甲', 'Music': '音樂', 'Psychological': '心理',
+  'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '福利', 'Ecchi': '福利',
+  'Erotica': '福利', 'Isekai': '異世界', 'Super Power': '超能力',
+  'School': '校園', 'Overpowered Main Character': '龍傲天', 'Tragedy': '憂鬱',
+  'Dark Fantasy': '憂鬱', 'Villainess': '惡役千金', 'Food': '美食',
+  // Chinese synonyms
+  '搞笑': '喜劇', '戀愛': '愛情', '競技': '運動', '紳士': '福利', '魔法': '奇幻',
+  '學園': '校園', '惡役': '惡役千金', '胃痛': '憂鬱'
 };
 
 const STREAMING_SITE_NAMES = {
@@ -210,6 +217,12 @@ if (anilistData?.genres) {
   if (tags.some(t => t.name === 'Isekai' && t.rank >= 75) && !genres.includes('異世界')) genres.push('異世界');
   if (tags.some(t => t.name === 'Super Power' && t.rank >= 75) && !genres.includes('超能力')) genres.push('超能力');
   if (tags.some(t => (t.name === 'Nudity' || t.name === 'Sexual Content') && t.rank > 75) && !genres.includes('福利')) genres.push('福利');
+  if (tags.some(t => t.name === 'School' && t.rank >= 75) && !genres.includes('校園')) genres.push('校園');
+  if (tags.some(t => t.name === 'Overpowered Main Character' && t.rank >= 75) && !genres.includes('龍傲天')) genres.push('龍傲天');
+  if (tags.some(t => (t.name === 'Tragedy' || t.name === 'Dark Fantasy') && t.rank >= 75) && !genres.includes('憂鬱')) genres.push('憂鬱');
+  if (tags.some(t => t.name === 'Villainess' && t.rank >= 75) && !genres.includes('惡役千金')) genres.push('惡役千金');
+  if (tags.some(t => t.name === 'Food' && t.rank >= 75) && !genres.includes('美食')) genres.push('美食');
+  genres = Array.from(new Set(genres)).filter(Boolean).sort();
 }
 
 // 串流平台（從 bangumi-data 取得全部 onair 平台）

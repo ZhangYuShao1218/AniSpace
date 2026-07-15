@@ -32,6 +32,8 @@ interface AnimeListLayoutProps {
   shareData: (Anime | WatchedAnime)[];
   isWatchedShare: boolean;
   hideAffiliate?: boolean;
+  currentPage?: number;
+  onPageChange?: (page: number) => void;
 }
 
 const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
@@ -45,7 +47,9 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   isWatchedContext = false,
   shareData,
   isWatchedShare,
-  hideAffiliate = false
+  hideAffiliate = false,
+  currentPage: currentPageProp,
+  onPageChange: onPageChangeProp
 }) => {
   const { 
     watchedList, 
@@ -56,7 +60,10 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   } = useAnime();
   const { t } = useLanguage();
   
-  const [currentPage, setCurrentPage] = useUrlParams<number>('page', 1);
+  const [internalPage, setInternalPage] = useUrlParams<number>('page', 1);
+  const currentPage = currentPageProp !== undefined ? currentPageProp : internalPage;
+  const setCurrentPage = onPageChangeProp !== undefined ? onPageChangeProp : setInternalPage;
+
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [isShareModalOpen, setIsShareModalOpen] = React.useState(false);
   const [selectedAnime, setSelectedAnime] = React.useState<Anime | WatchedAnime | null>(null);
@@ -89,7 +96,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
         }
       }, 30);
     });
-  }, [currentPage]);
+  }, [currentPage, setCurrentPage]);
 
 
   useEffect(() => {

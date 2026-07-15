@@ -19,11 +19,12 @@ const genreMap = {
   'Girls Love': '百合', 'Gourmet': '美食', 'Mecha': '機甲', 'Music': '音樂', 'Psychological': '心理',
   'Thriller': '驚悚', 'Mahou Shoujo': '魔法少女', 'Hentai': '福利', 'Ecchi': '福利',
   'Erotica': '福利', 'Isekai': '異世界', 'Super Power': '超能力',
-  'School': '校園', 'Overpowered Main Character': '龍傲天', 'Tragedy': '憂鬱',
+  'School': '校園', 'Tragedy': '憂鬱',
   'Dark Fantasy': '憂鬱', 'Villainess': '惡役千金', 'Food': '美食',
+  'Harem': '後宮', 'Post-Apocalyptic': '末日', 'Time Loop': '時空輪迴', 'Time Manipulation': '時空輪迴',
   // Chinese synonyms
   '搞笑': '喜劇', '戀愛': '愛情', '競技': '運動', '紳士': '福利', '魔法': '奇幻',
-  '學園': '校園', '惡役': '惡役千金', '胃痛': '憂鬱'
+  '學園': '校園', '惡役': '惡役千金', '胃痛': '憂鬱', '後宮番': '後宮', '廢土': '末日', '時空穿越': '時空輪迴', '輪迴': '時空輪迴'
 };
 
 const SEASON_MONTH_MAP = {
@@ -343,11 +344,6 @@ async function main() {
           genres.push('校園');
         }
 
-        const isOP = item.tags?.some(t => t.name === 'Overpowered Main Character' && t.rank >= 75);
-        if (isOP && !genres.includes('龍傲天')) {
-          genres.push('龍傲天');
-        }
-
         const isTragedy = item.tags?.some(t => (t.name === 'Tragedy' || t.name === 'Dark Fantasy') && t.rank >= 75);
         if (isTragedy && !genres.includes('憂鬱')) {
           genres.push('憂鬱');
@@ -361,6 +357,21 @@ async function main() {
         const isFood = item.tags?.some(t => t.name === 'Food' && t.rank >= 75);
         if (isFood && !genres.includes('美食')) {
           genres.push('美食');
+        }
+
+        const isHarem = item.tags?.some(t => t.name.includes('Harem') && t.rank >= 75);
+        if (isHarem && !genres.includes('後宮')) {
+          genres.push('後宮');
+        }
+
+        const isPostApocalyptic = item.tags?.some(t => t.name === 'Post-Apocalyptic' && t.rank >= 75);
+        if (isPostApocalyptic && !genres.includes('末日')) {
+          genres.push('末日');
+        }
+
+        const isTimeLoop = item.tags?.some(t => (t.name === 'Time Loop' || t.name === 'Time Manipulation') && t.rank >= 75);
+        if (isTimeLoop && !genres.includes('時空輪迴')) {
+          genres.push('時空輪迴');
         }
 
         const seasonMap = { 'WINTER': '冬', 'SPRING': '春', 'SUMMER': '夏', 'FALL': '秋' };

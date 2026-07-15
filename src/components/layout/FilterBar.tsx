@@ -73,6 +73,11 @@ const FilterBar: React.FC<FilterBarProps> = ({
   const [localSearch, setLocalSearch] = useState(searchQuery);
   const isComposing = React.useRef(false);
   const lastSentValue = React.useRef(searchQuery);
+  const onSearchChangeRef = React.useRef(onSearchChange);
+
+  React.useEffect(() => {
+    onSearchChangeRef.current = onSearchChange;
+  }, [onSearchChange]);
 
   React.useEffect(() => {
     if (!isComposing.current && searchQuery !== localSearch) {
@@ -87,12 +92,14 @@ const FilterBar: React.FC<FilterBarProps> = ({
     const handler = setTimeout(() => {
       if (!isComposing.current && localSearch !== searchQuery) {
         const trimmed = localSearch.trim();
-        lastSentValue.current = trimmed;
-        onSearchChange(trimmed);
+        if (trimmed !== lastSentValue.current) {
+          lastSentValue.current = trimmed;
+          onSearchChangeRef.current(trimmed);
+        }
       }
     }, 300);
     return () => clearTimeout(handler);
-  }, [localSearch, searchQuery, onSearchChange]);
+  }, [localSearch, searchQuery]);
 
   return (
     <div className="filter-bar-container">

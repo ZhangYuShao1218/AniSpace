@@ -59,6 +59,7 @@ const AllAnimePage = () => {
   );
   const [searchQuery] = useUrlParams<string>('search', '');
   const [sortBy] = useUrlParams<SortOption>('sort', 'date_desc');
+  const [currentPage, setCurrentPage] = useUrlParams<number>('page', 1);
 
 
   const availableYears = useMemo(() => {
@@ -156,6 +157,8 @@ const AllAnimePage = () => {
       emptyStateMessage="請嘗試其他搜尋關鍵字或調整過濾條件。"
       shareData={[]} // No share logic heavily utilized here, just empty
       isWatchedShare={false}
+      currentPage={currentPage}
+      onPageChange={setCurrentPage}
     />
   );
 };

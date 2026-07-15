@@ -39,11 +39,14 @@ export const NORMALIZE_GENRE_MAP: Record<string, string> = {
   'Award Winning': '獲獎',
   'Avant Garde': '前衛',
   'School': '校園',
-  'Overpowered Main Character': '龍傲天',
   'Tragedy': '憂鬱',
   'Dark Fantasy': '憂鬱',
   'Villainess': '惡役千金',
   'Food': '美食',
+  'Harem': '後宮',
+  'Post-Apocalyptic': '末日',
+  'Time Loop': '時空輪迴',
+  'Time Manipulation': '時空輪迴',
 
   // Chinese synonyms to Standard Traditional Chinese
   '搞笑': '喜劇',
@@ -53,7 +56,11 @@ export const NORMALIZE_GENRE_MAP: Record<string, string> = {
   '魔法': '奇幻',
   '學園': '校園',
   '惡役': '惡役千金',
-  '胃痛': '憂鬱'
+  '胃痛': '憂鬱',
+  '後宮番': '後宮',
+  '廢土': '末日',
+  '時空穿越': '時空輪迴',
+  '輪迴': '時空輪迴'
 };
 
 export function normalizeGenre(genre: string): string {

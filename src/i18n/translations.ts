@@ -164,6 +164,12 @@ export const translations = {
     genreThriller: '驚悚',
     genreIsekai: '異世界',
     genreSuperPower: '超能力',
+    genreSchool: '校園',
+    genreOverpoweredMainCharacter: '龍傲天',
+    genreTragedy: '憂鬱',
+    genreDarkFantasy: '憂鬱',
+    genreVillainess: '惡役千金',
+    genreFood: '美食',
 
     // Pages
     searchPlanPlaceholder: '搜尋期待清單...',
@@ -422,6 +428,12 @@ export const translations = {
     genreThriller: 'Thriller',
     genreIsekai: 'Isekai',
     genreSuperPower: 'Super Power',
+    genreSchool: 'School',
+    genreOverpoweredMainCharacter: 'OP Protagonist',
+    genreTragedy: 'Dark / Tragedy',
+    genreDarkFantasy: 'Dark / Tragedy',
+    genreVillainess: 'Villainess',
+    genreFood: 'Food / Gourmet',
 
     // Pages
     searchPlanPlaceholder: 'Search Plan to Watch...',
@@ -680,6 +692,12 @@ export const translations = {
     genreThriller: 'スリラー',
     genreIsekai: '異世界',
     genreSuperPower: '超能力',
+    genreSchool: '学園',
+    genreOverpoweredMainCharacter: '俺TUEEE',
+    genreTragedy: '鬱・ダーク',
+    genreDarkFantasy: '鬱・ダーク',
+    genreVillainess: '悪役令嬢',
+    genreFood: 'グルメ',
 
     // Pages
     searchPlanPlaceholder: '期待リストを検索...',

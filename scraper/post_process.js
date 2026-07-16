@@ -5,6 +5,7 @@ const PUBLIC_DIR = path.resolve('public');
 const DATA_FILE = path.join(PUBLIC_DIR, 'anime_data.json');
 const OLD_DATA_FILE = path.join(PUBLIC_DIR, 'anime_data_old.json');
 const OVERRIDE_FILE = path.join(PUBLIC_DIR, 'custom_override.json');
+const VERSION_FILE = path.join(PUBLIC_DIR, 'data_version.json');
 
 function getYYYYMMDD(date) {
   const yyyy = date.getFullYear();
@@ -134,6 +135,25 @@ async function run() {
   if (deletedCount === 0) {
     console.log('No old backups required deletion.');
   }
+
+  // 5. Update data_version.json (+1)
+  let currentVersion = 100;
+  if (fs.existsSync(VERSION_FILE)) {
+    try {
+      const vData = JSON.parse(fs.readFileSync(VERSION_FILE, 'utf-8'));
+      if (typeof vData.version === 'number') {
+        currentVersion = vData.version + 1;
+      }
+    } catch (e) {
+      console.warn('Could not parse existing data_version.json, defaulting to 100.');
+    }
+  }
+  const versionPayload = {
+    version: currentVersion,
+    lastUpdated: new Date().toISOString()
+  };
+  fs.writeFileSync(VERSION_FILE, JSON.stringify(versionPayload, null, 2), 'utf-8');
+  console.log(`Updated data_version.json to version: ${String(currentVersion).padStart(5, '0')} (${currentVersion})`);
 }
 
 run().catch(err => {

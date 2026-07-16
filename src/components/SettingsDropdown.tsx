@@ -23,7 +23,7 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
   
   const { isAutoSyncEnabled, toggleAutoSync } = useGoogleSync();
   const { hideAd, showAd } = useAdMob();
-  const { handleClearRecords, handleClearAllData } = useAnime();
+  const { handleClearRecords, handleClearAllData, dataVersion } = useAnime();
   const { language, setLanguage, t } = useLanguage();
   const { fileInputRef, handleExport, handleImportFile, isExportDisabled } = useDataManagement();
   const isNative = Capacitor.isNativePlatform();
@@ -244,19 +244,26 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
             <div 
               style={{ 
                 display: 'flex',
-                alignItems: 'center',
+                alignItems: 'baseline',
                 justifyContent: 'center',
+                gap: '6px',
                 width: '100%',
                 padding: '3px 10px',
-                fontSize: '0.9rem', 
-                color: 'var(--text-primary)', 
-                letterSpacing: '0.05em', 
                 whiteSpace: 'nowrap',
-                fontWeight: 500,
                 userSelect: 'none'
               }}
             >
-              v{APP_VERSION}
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-primary)', letterSpacing: '0.05em', fontWeight: 500 }}>
+                v{APP_VERSION}
+              </span>
+              {dataVersion !== null && (
+                <>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>-</span>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', fontWeight: 400 }}>
+                    ({String(dataVersion).padStart(5, '0')})
+                  </span>
+                </>
+              )}
             </div>
           </>
         </div>

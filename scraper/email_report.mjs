@@ -15,13 +15,30 @@ async function sendReport() {
     return;
   }
 
+  let appVersion = '1.0.14';
+  try {
+    const pkgData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf-8'));
+    if (pkgData && pkgData.version) appVersion = pkgData.version;
+  } catch (e) { }
+
+  let dataVersionStr = '00100';
+  try {
+    const vData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public', 'data_version.json'), 'utf-8'));
+    if (typeof vData.version === 'number') {
+      dataVersionStr = String(vData.version).padStart(5, '0');
+    }
+  } catch (e) { }
+
   let reportContent = "本日排程執行完畢，動畫資料與周邊商品皆維持最新狀態。\n詳細執行過程與檢閱紀錄請參考隨信附帶的完整執行日誌 (daily_run.log)。";
   if (fs.existsSync(summaryPath)) {
     reportContent = fs.readFileSync(summaryPath, 'utf-8');
   }
 
+  const versionHeader = `📌 當前系統版本資訊\n・應用程式版本號：v${appVersion}\n・動畫資料庫版號：(${dataVersionStr})\n-------------------------------------\n\n`;
+  reportContent = versionHeader + reportContent;
+
   console.log('\n=====================================');
-  console.log('📧 每日執行總結報告摘要 (同步印表)：');
+  console.log(`📧 每日執行總結報告摘要 [v${appVersion} - (${dataVersionStr})] (同步印表)：`);
   console.log(reportContent.trim());
   console.log('=====================================\n');
   
@@ -53,7 +70,7 @@ async function sendReport() {
     await transporter.sendMail({
       from: EMAIL_USER,
       to: EMAIL_USER,
-      subject: `【AniSpace 每日執行報告】${new Date().toLocaleDateString('zh-TW', { timeZone: 'Asia/Taipei' })}`,
+      subject: `【AniSpace 每日報告】v${appVersion} - (${dataVersionStr}) (${new Date().toLocaleDateString('zh-TW', { timeZone: 'Asia/Taipei' })})`,
       text: reportContent,
       attachments
     });

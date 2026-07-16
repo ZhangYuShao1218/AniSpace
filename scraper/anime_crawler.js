@@ -514,6 +514,13 @@ async function main() {
   // ==========================================
   // 四階段對照與匯入架構 (Bangumi Data Integration)
   // ==========================================
+  let oldBangumiMappingRecord = {};
+  const mappingRecordPath = path.join(process.cwd(), 'public', 'bangumi_mapping_record.json');
+  if (fs.existsSync(mappingRecordPath)) {
+    try {
+      oldBangumiMappingRecord = JSON.parse(fs.readFileSync(mappingRecordPath, 'utf-8'));
+    } catch (e) {}
+  }
   const bangumiMappingRecord = {};
   const unlinkedForAI = [];
 
@@ -560,7 +567,6 @@ async function main() {
   }
 
   // 立即將紀錄寫入額外 JSON，作為後續 AI 查找與匯入基準
-  const mappingRecordPath = path.join(process.cwd(), 'public', 'bangumi_mapping_record.json');
   fs.writeFileSync(mappingRecordPath, JSON.stringify(bangumiMappingRecord, null, 2), 'utf-8');
   console.log(`✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (${Object.keys(bangumiMappingRecord).length} 筆) 寫入額外 JSON: public/bangumi_mapping_record.json`);
 
@@ -694,7 +700,18 @@ async function main() {
     }
   }
 
-  await washGamerStreamings(finalAnimeList, newlyAddedAnimes);
+  const washResult = await washGamerStreamings(finalAnimeList, newlyAddedAnimes);
+  const washedRecords = washResult?.washedRecords || [];
+
+  const newlyMatchedBangumiList = [];
+  Object.values(bangumiMappingRecord).forEach(rec => {
+    if (rec.hasCorrespondingData) {
+      const oldRec = oldBangumiMappingRecord[rec.id];
+      if (oldRec && !oldRec.hasCorrespondingData) {
+        newlyMatchedBangumiList.push(rec);
+      }
+    }
+  });
 
   // 再次寫入更新完畢後的 mapping 紀錄
   fs.writeFileSync(mappingRecordPath, JSON.stringify(bangumiMappingRecord, null, 2), 'utf-8');
@@ -722,6 +739,18 @@ async function main() {
   if (aiMatchedRecords.length > 0) {
     summaryContent += `⚡ 本地程式化標題正規化自動配對成功 (${aiMatchedRecords.length} 部)：\n` +
       aiMatchedRecords.map(r => `- [${r.id}] "${r.titleJa}" ➜ 字典標題 "${r.matchedBgmTitle}" (BGM ID: ${r.bgmId})`).join('\n') + '\n';
+  }
+  if (washedRecords.length > 0) {
+    summaryContent += `🛡️ 洗滌成功的動畫 (共 ${washedRecords.length} 部)：\n`;
+    washedRecords.forEach(wr => {
+      summaryContent += `- 《${wr.title}》\n  ・洗滌前：${wr.oldUrl}\n  ・洗滌後：${wr.newUrl}\n`;
+    });
+  }
+  if (newlyMatchedBangumiList.length > 0) {
+    summaryContent += `🎉 本來未對應到 bangumi_data 但新對應到的動畫 (共 ${newlyMatchedBangumiList.length} 部)：\n`;
+    newlyMatchedBangumiList.forEach(nr => {
+      summaryContent += `- 《${nr.titleZh || nr.titleJa || nr.id}》 ➜ 成功對應至字典：${nr.matchedBgmTitle || 'N/A'} (BGM ID: ${nr.bgmId || 'N/A'})\n`;
+    });
   }
   if (unlinkedAnimeList.length > 0) {
     const mdPath = path.join(process.cwd(), 'public', 'unlinked_anime_list.md');

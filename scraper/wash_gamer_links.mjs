@@ -45,6 +45,7 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
   }
 
   let newlyWashedCount = 0;
+  const washedRecords = [];
   const newlyAddedIdSet = new Set(newlyAddedAnimes.map(a => a.id));
   const unwashedGamerItems = [];
   const isFullWash = options.fullWash || process.env.FULL_WASH === 'true' || process.argv.includes('--full-wash');
@@ -82,6 +83,7 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
   }
 
   const processItem = async ({ item, st }) => {
+    const oldUrl = st.url || '無 / 未綁定';
     // 優先以 bangumi-data 字典的三階段精確對照為基準
     const ak = item.id.toString().startsWith('anilist-') ? item.id : `anilist-${item.id}`;
     const customOverride = overrideData[ak] || overrideData[item.id];
@@ -111,11 +113,25 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
         // 規則 2: ACG 百科內有正確的動畫瘋連結，直接採用！不再進行任何動畫瘋關鍵字搜尋！
         st.url = resolvedUrl;
         gamerCache[item.id] = resolvedUrl;
-        newlyWashedCount++;
+        if (oldUrl !== resolvedUrl) {
+          newlyWashedCount++;
+          washedRecords.push({
+            title: item.titleZh || item.titleJa || item.id,
+            oldUrl,
+            newUrl: resolvedUrl
+          });
+        }
       } else {
         // 百科頁面沒有播放連結（例如尚未開播之新番），保留並還原為 ACG 百科頁面
         st.url = acgUrl;
         gamerCache[item.id] = acgUrl;
+        if (oldUrl !== acgUrl && oldUrl !== '無 / 未綁定') {
+          washedRecords.push({
+            title: item.titleZh || item.titleJa || item.id,
+            oldUrl,
+            newUrl: acgUrl
+          });
+        }
       }
     } else {
       // 無 ACG 百科連結時，嘗試使用標題搜尋動畫瘋，但必須滿足相似度 >= 80%
@@ -123,7 +139,14 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
       if (searchedUrl) {
         st.url = searchedUrl;
         gamerCache[item.id] = searchedUrl;
-        newlyWashedCount++;
+        if (oldUrl !== searchedUrl) {
+          newlyWashedCount++;
+          washedRecords.push({
+            title: item.titleZh || item.titleJa || item.id,
+            oldUrl,
+            newUrl: searchedUrl
+          });
+        }
       }
     }
   };
@@ -160,6 +183,7 @@ export async function washGamerStreamings(animeList, newlyAddedAnimes = [], opti
       item.streamings = normalizeAndMergeStreamings(item.streamings);
     }
   });
+  return { newlyWashedCount, washedRecords };
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {

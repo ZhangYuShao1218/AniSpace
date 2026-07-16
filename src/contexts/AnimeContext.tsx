@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
 import type { Anime, WatchedAnime } from '@/types';
-import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY, LAST_SYNC_TIME_KEY, normalizeGenre } from '@/utils/constants';
+import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY, LAST_SYNC_TIME_KEY, CACHED_DATA_VERSION_KEY, normalizeGenre } from '@/utils/constants';
 
 import { useTitleCorrections } from '@/hooks/useTitleCorrections';
 
@@ -15,6 +15,21 @@ const getDbUrl = () => {
 const REMOTE_DB_URL = getDbUrl();
 
 const OVERRIDE_DB_URL = REMOTE_DB_URL.replace('anime_data.json', 'custom_override.json');
+const DATA_VERSION_URL = REMOTE_DB_URL.replace('anime_data.json', 'data_version.json');
+
+const fetchDataVersion = async (): Promise<number | null> => {
+  const timestamp = new Date().getTime();
+  try {
+    const res = await fetch(`${DATA_VERSION_URL}?v=${timestamp}`);
+    if (res.ok) {
+      const json = await res.json();
+      if (typeof json.version === 'number') {
+        return json.version;
+      }
+    }
+  } catch (e) { }
+  return null;
+};
 
 const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
   const timestamp = new Date().getTime();
@@ -139,11 +154,16 @@ interface AnimeContextType {
   clearCorrections: () => void;
   handleClearRecords: () => void;
   handleClearAllData: () => void;
+  dataVersion: number | null;
 }
 
 const AnimeContext = createContext<AnimeContextType | undefined>(undefined);
 
 export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [dataVersion, setDataVersion] = useState<number | null>(() => {
+    const cached = localStorage.getItem(CACHED_DATA_VERSION_KEY);
+    return cached ? parseInt(cached, 10) : null;
+  });
   const [remoteAnime, setRemoteAnime] = useState<Anime[]>(() => {
     const cachedData = localStorage.getItem(CACHED_DATA_KEY);
     if (cachedData) {
@@ -195,7 +215,14 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       const nowMs = Date.now();
       localStorage.setItem(LAST_SYNC_TIME_KEY, nowMs.toString());
       setLastSyncTime(nowMs);
-      const data = await fetchAndMergeAnimeData();
+      const [data, vNum] = await Promise.all([
+        fetchAndMergeAnimeData(),
+        fetchDataVersion()
+      ]);
+      if (vNum !== null) {
+        setDataVersion(vNum);
+        localStorage.setItem(CACHED_DATA_VERSION_KEY, vNum.toString());
+      }
       const elapsed = Date.now() - startTime;
       if (elapsed < 800) await new Promise(r => setTimeout(r, 800 - elapsed));
       
@@ -241,6 +268,13 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
     if (loadedData.length === 0 || isOverOneDay) {
       handleSync();
+    } else {
+      fetchDataVersion().then((vNum) => {
+        if (vNum !== null) {
+          setDataVersion(vNum);
+          localStorage.setItem(CACHED_DATA_VERSION_KEY, vNum.toString());
+        }
+      });
     }
   }, [handleSync]);
 
@@ -433,9 +467,10 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     handleImportCorrections,
     clearCorrections,
     handleClearRecords,
-    handleClearAllData
+    handleClearAllData,
+    dataVersion
   }), [
-    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, userData, corrections,
+    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, userData, corrections, dataVersion,
     handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
     handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, removeCorrection, setCustomCover, getCorrectedTitle, getCustomCover,
     handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData

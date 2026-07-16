@@ -7,6 +7,7 @@ export const TITLE_CORRECTIONS_KEY = 'anispace_title_corrections';
 export const USER_DATA_KEY = 'anime_userdata';
 export const CUSTOM_ANIME_KEY = 'anispace_custom_anime';
 export const LAST_SYNC_TIME_KEY = 'anispace_last_sync_time';
+export const CACHED_DATA_VERSION_KEY = 'anispace_cached_data_version';
 
 export const NORMALIZE_GENRE_MAP: Record<string, string> = {
   // English to Standard Traditional Chinese

@@ -6,7 +6,7 @@ import { useAnime } from '@/contexts/AnimeContext';
 import SearchBar from '@/components/layout/SearchBar';
 import { useUrlParams } from '@/hooks/useUrlParams';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { parseSeason } from '@/utils/season';
+import { cachedParseSeason } from '@/utils/season';
 
 const WatchedPage = () => {
   const { watchedList } = useAnime();
@@ -15,34 +15,43 @@ const WatchedPage = () => {
   const [sortBy] = useUrlParams<SortOption>('sort', 'date_desc');
   const { t } = useLanguage();
 
-  const updateFilterAndResetPage = useCallback((key: string, value: any) => {
+  const updateFilterAndResetPage = useCallback((type: 'search' | 'sort', value: string) => {
     setSearchParams(prev => {
-      const next = new URLSearchParams(prev);
-      const strVal = String(value);
-      if (strVal === '') {
-        next.delete(key);
-      } else {
-        next.set(key, strVal);
+      const newParams = new URLSearchParams(prev);
+      if (type === 'search') {
+        if (value.trim()) newParams.set('search', value.trim());
+        else newParams.delete('search');
       }
-      next.delete('page');
-      return next;
-    }, { replace: true });
+      if (type === 'sort') {
+        if (value !== 'date_desc') newParams.set('sort', value);
+        else newParams.delete('sort');
+      }
+      newParams.set('page', '1');
+      return newParams;
+    });
   }, [setSearchParams]);
 
   const filteredData = useMemo(() => {
-    const trimmedQuery = searchQuery.trim().toLowerCase();
-    let result = watchedList.filter(anime => 
-      !trimmedQuery ||
-      (anime.titleZh || '').toLowerCase().includes(trimmedQuery) ||
-      (anime.titleJa || '').toLowerCase().includes(trimmedQuery) ||
-      (anime.titleEn || '').toLowerCase().includes(trimmedQuery)
-    );
+    let result = watchedList;
+
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(anime => 
+        (anime.titleZh && anime.titleZh.toLowerCase().includes(query)) ||
+        (anime.titleJa && anime.titleJa.toLowerCase().includes(query)) ||
+        (anime.titleEn && anime.titleEn.toLowerCase().includes(query)) ||
+        ((anime as any).customTitle && (anime as any).customTitle.toLowerCase().includes(query)) ||
+        (anime.userComment && anime.userComment.toLowerCase().includes(query))
+      );
+    }
 
     return result.sort((a, b) => {
       if (sortBy === 'rating_desc') return (b.userRating || 0) - (a.userRating || 0);
       if (sortBy === 'rating_asc') return (a.userRating || 0) - (b.userRating || 0);
-      if (sortBy === 'date_desc') return parseSeason(b.yearSeason || '') - parseSeason(a.yearSeason || '');
-      if (sortBy === 'date_asc') return parseSeason(a.yearSeason || '') - parseSeason(b.yearSeason || '');
+      const scoreA = a._seasonScore ?? cachedParseSeason(a.yearSeason || '');
+      const scoreB = b._seasonScore ?? cachedParseSeason(b.yearSeason || '');
+      if (sortBy === 'date_desc') return scoreB - scoreA;
+      if (sortBy === 'date_asc') return scoreA - scoreB;
       return 0;
     });
   }, [watchedList, searchQuery, sortBy]);

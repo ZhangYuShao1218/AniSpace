@@ -6,7 +6,7 @@ import { useAnime } from '@/contexts/AnimeContext';
 import SearchBar from '@/components/layout/SearchBar';
 import { useUrlParams } from '@/hooks/useUrlParams';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { parseSeason } from '@/utils/season';
+import { cachedParseSeason } from '@/utils/season';
 
 const PlanToWatchPage = () => {
   const { planToWatchList } = useAnime();
@@ -39,8 +39,10 @@ const PlanToWatchPage = () => {
     );
 
     return result.sort((a, b) => {
-      if (sortBy === 'date_desc') return parseSeason(b.yearSeason || '') - parseSeason(a.yearSeason || '');
-      if (sortBy === 'date_asc') return parseSeason(a.yearSeason || '') - parseSeason(b.yearSeason || '');
+      const scoreA = a._seasonScore ?? cachedParseSeason(a.yearSeason || '');
+      const scoreB = b._seasonScore ?? cachedParseSeason(b.yearSeason || '');
+      if (sortBy === 'date_desc') return scoreB - scoreA;
+      if (sortBy === 'date_asc') return scoreA - scoreB;
       return 0;
     });
   }, [planToWatchList, searchQuery, sortBy]);

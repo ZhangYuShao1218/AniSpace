@@ -22,6 +22,7 @@ export interface Anime {
   endDate?: { year?: number | null; month?: number | null; day?: number | null };
   updatedAt?: number;
   status?: string;
+  _seasonScore?: number;
 }
 
 export interface WatchedAnime extends Anime {

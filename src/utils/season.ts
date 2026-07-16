@@ -1,12 +1,20 @@
 export const seasonWeight: Record<string, number> = { '秋': 4, '夏': 3, '春': 2, '冬': 1 };
 
-export const parseSeason = (ys: string) => {
+const seasonParseCache = new Map<string, number>();
+
+export const parseSeason = (ys: string): number => {
   if (!ys) return 0;
+  const cached = seasonParseCache.get(ys);
+  if (cached !== undefined) return cached;
   const parts = ys.split(' ');
-  const year = parseInt(parts[0]) || 0;
+  const year = parseInt(parts[0], 10) || 0;
   const seasonValue = seasonWeight[parts[1]] || 0;
-  return year * 10 + seasonValue;
+  const score = year * 10 + seasonValue;
+  seasonParseCache.set(ys, score);
+  return score;
 };
+
+export const cachedParseSeason = parseSeason;
 
 // Chronological order within a single year: Winter (Q1) -> Spring (Q2) -> Summer (Q3) -> Fall (Q4)
 const SEASONS_ZH = ['冬', '春', '夏', '秋'];

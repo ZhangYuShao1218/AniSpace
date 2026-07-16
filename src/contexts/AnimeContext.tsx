@@ -1,7 +1,7 @@
-import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import type { Anime, WatchedAnime } from '@/types';
 import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY, LAST_SYNC_TIME_KEY, CACHED_DATA_VERSION_KEY, normalizeGenre } from '@/utils/constants';
-
+import { cachedParseSeason } from '@/utils/season';
 import { useTitleCorrections } from '@/hooks/useTitleCorrections';
 
 const getDbUrl = () => {
@@ -107,6 +107,7 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
 
         const rawGenres = ov.genres || anime.genres || [];
         const normalizedGenres = Array.from(new Set((Array.isArray(rawGenres) ? rawGenres : []).map((g: any) => normalizeGenre(g)))).filter(Boolean).sort();
+        const rawSeason = ov.yearSeason || anime.yearSeason || '未知';
 
         return {
           ...merged,
@@ -115,6 +116,8 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
           streamings: combinedStreamings,
           coverImage: resolvedCover,
           genres: normalizedGenres,
+          yearSeason: rawSeason,
+          _seasonScore: cachedParseSeason(rawSeason),
         };
       });
       // Filter out anime marked with show: false
@@ -131,6 +134,9 @@ interface AnimeContextType {
   customAnimeList: Anime[];
   watchedList: WatchedAnime[];
   planToWatchList: Anime[];
+  watchedMap: Map<string, WatchedAnime>;
+  watchedIdsSet: Set<string>;
+  planToWatchIdsSet: Set<string>;
   isScraping: boolean;
   scrapeProgress: string;
   lastSyncTimeFormatted: string | null;
@@ -172,7 +178,8 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         if (Array.isArray(parsed)) {
           return parsed.map((item: any) => ({
             ...item,
-            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || ''
+            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || '',
+            _seasonScore: item._seasonScore !== undefined ? item._seasonScore : cachedParseSeason(item.yearSeason || '')
           }));
         }
       } catch (e) { }
@@ -181,7 +188,18 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   });
   const [customAnimeList, setCustomAnimeList] = useState<Anime[]>(() => {
     const saved = localStorage.getItem(CUSTOM_ANIME_KEY);
-    return saved ? JSON.parse(saved) : [];
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          return parsed.map((item: any) => ({
+            ...item,
+            _seasonScore: item._seasonScore !== undefined ? item._seasonScore : cachedParseSeason(item.yearSeason || '')
+          }));
+        }
+      } catch (e) { }
+    }
+    return [];
   });
   const [watchedList, setWatchedList] = useState<WatchedAnime[]>(() => {
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -253,7 +271,8 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         if (parsed.length > 0) {
           const resolved = parsed.map((item: any) => ({
             ...item,
-            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || ''
+            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || '',
+            _seasonScore: item._seasonScore !== undefined ? item._seasonScore : cachedParseSeason(item.yearSeason || '')
           }));
           loadedData = resolved;
           setRemoteAnime(resolved);
@@ -278,42 +297,64 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
   }, [handleSync]);
 
+  const watchedTimerRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
-    // 輕量正規化儲存：使用者儲存空間只記錄動畫 ID 與評分、評論、日期及個人修改屬性
-    const lightweightWatched = watchedList.map(w => ({
-      id: w.id,
-      userRating: w.userRating,
-      userComment: w.userComment,
-      watchedDate: w.watchedDate,
-      ...((w as any).customTitle ? { customTitle: (w as any).customTitle } : {}),
-      ...((w as any).customCover ? { customCover: (w as any).customCover } : {}),
-    }));
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(lightweightWatched));
+    if (watchedTimerRef.current) clearTimeout(watchedTimerRef.current);
+    watchedTimerRef.current = setTimeout(() => {
+      // 輕量正規化儲存：使用者儲存空間只記錄動畫 ID 與評分、評論、日期及個人修改屬性
+      const lightweightWatched = watchedList.map(w => ({
+        id: w.id,
+        userRating: w.userRating,
+        userComment: w.userComment,
+        watchedDate: w.watchedDate,
+        ...((w as any).customTitle ? { customTitle: (w as any).customTitle } : {}),
+        ...((w as any).customCover ? { customCover: (w as any).customCover } : {}),
+      }));
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(lightweightWatched));
+    }, 300);
+    return () => { if (watchedTimerRef.current) clearTimeout(watchedTimerRef.current); };
   }, [watchedList]);
 
+  const planTimerRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
-    // 輕量正規化儲存：期待清單只保存動畫 ID 與個人客製設定
-    const lightweightPlan = planToWatchList.map(p => ({
-      id: p.id,
-      ...((p as any).customTitle ? { customTitle: (p as any).customTitle } : {}),
-      ...((p as any).customCover ? { customCover: (p as any).customCover } : {}),
-    }));
-    localStorage.setItem(PLAN_TO_WATCH_KEY, JSON.stringify(lightweightPlan));
+    if (planTimerRef.current) clearTimeout(planTimerRef.current);
+    planTimerRef.current = setTimeout(() => {
+      // 輕量正規化儲存：期待清單只保存動畫 ID 與個人客製設定
+      const lightweightPlan = planToWatchList.map(p => ({
+        id: p.id,
+        ...((p as any).customTitle ? { customTitle: (p as any).customTitle } : {}),
+        ...((p as any).customCover ? { customCover: (p as any).customCover } : {}),
+      }));
+      localStorage.setItem(PLAN_TO_WATCH_KEY, JSON.stringify(lightweightPlan));
+    }, 300);
+    return () => { if (planTimerRef.current) clearTimeout(planTimerRef.current); };
   }, [planToWatchList]);
 
+  const customTimerRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
-    localStorage.setItem(CUSTOM_ANIME_KEY, JSON.stringify(customAnimeList));
+    if (customTimerRef.current) clearTimeout(customTimerRef.current);
+    customTimerRef.current = setTimeout(() => {
+      localStorage.setItem(CUSTOM_ANIME_KEY, JSON.stringify(customAnimeList));
+    }, 300);
+    return () => { if (customTimerRef.current) clearTimeout(customTimerRef.current); };
   }, [customAnimeList]);
 
 
 
   const handleAddCustomAnime = useCallback((anime: Anime) => {
-    setCustomAnimeList(prev => [anime, ...prev]);
+    const withScore = {
+      ...anime,
+      _seasonScore: anime._seasonScore !== undefined ? anime._seasonScore : cachedParseSeason(anime.yearSeason || '')
+    };
+    setCustomAnimeList(prev => [withScore, ...prev]);
   }, []);
 
   const handleImportCustomAnime = useCallback((importedData: Anime[]) => {
     setCustomAnimeList(prev => {
-      const newMap = new Map(importedData.map(i => [i.id, i]));
+      const newMap = new Map<string, Anime>(importedData.map(i => [i.id, {
+        ...i,
+        _seasonScore: i._seasonScore !== undefined ? i._seasonScore : cachedParseSeason(i.yearSeason || '')
+      }]));
       prev.forEach(item => newMap.set(item.id, item));
       return Array.from(newMap.values());
     });
@@ -412,6 +453,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         titleEn: (item as any).titleEn || '',
         genres: Array.from(new Set((Array.isArray((item as any).genres) ? (item as any).genres : []).map((g: any) => normalizeGenre(g)))).filter(Boolean).sort(),
         yearSeason: (item as any).yearSeason || '未知',
+        _seasonScore: (item as any)._seasonScore ?? cachedParseSeason((item as any).yearSeason || ''),
         coverImage: customCover || (item as any).coverImage || '',
         streamings: Array.isArray((item as any).streamings) ? (item as any).streamings : [],
         ...((item as any).userRating !== undefined ? { userRating: (item as any).userRating } : {}),
@@ -424,7 +466,6 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
     return {
       ...master, // 1. 基礎動畫元資料（標題、封面、年份、分類、播放平台等）全數由主表權威授權
-      genres: Array.from(new Set((Array.isArray(master.genres) ? master.genres : []).map((g: any) => normalizeGenre(g)))).filter(Boolean).sort(),
       streamings: Array.isArray(master.streamings) ? master.streamings : [],
       // 2. 嚴格提取並繼承使用者評價紀錄（完美兼容舊版全包資料與新版輕量資料格式）
       ...((item as any).userRating !== undefined ? { userRating: (item as any).userRating } : {}),
@@ -441,11 +482,18 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const enrichedPlanToWatchList = useMemo(() => planToWatchList.filter(item => (remoteAnime.length === 0 && customAnimeList.length === 0) ? true : allAnimeMap.has(item.id)).map(mergeItemWithMaster), [planToWatchList, remoteAnime.length, customAnimeList.length, allAnimeMap, mergeItemWithMaster]);
   const enrichedAllAnime = useMemo(() => [...enrichedCustomAnimeList, ...remoteAnime], [enrichedCustomAnimeList, remoteAnime]);
 
+  const watchedMap = useMemo(() => new Map(enrichedWatchedList.map(w => [w.id, w])), [enrichedWatchedList]);
+  const watchedIdsSet = useMemo(() => new Set(enrichedWatchedList.map(w => w.id)), [enrichedWatchedList]);
+  const planToWatchIdsSet = useMemo(() => new Set(enrichedPlanToWatchList.map(p => p.id)), [enrichedPlanToWatchList]);
+
   const contextValue = useMemo(() => ({
     allAnime: enrichedAllAnime,
     customAnimeList: enrichedCustomAnimeList,
     watchedList: enrichedWatchedList,
     planToWatchList: enrichedPlanToWatchList,
+    watchedMap,
+    watchedIdsSet,
+    planToWatchIdsSet,
     isScraping,
     scrapeProgress,
     lastSyncTimeFormatted,
@@ -470,7 +518,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     handleClearAllData,
     dataVersion
   }), [
-    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, isScraping, scrapeProgress, lastSyncTimeFormatted, userData, corrections, dataVersion,
+    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, watchedMap, watchedIdsSet, planToWatchIdsSet, isScraping, scrapeProgress, lastSyncTimeFormatted, userData, corrections, dataVersion,
     handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
     handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, removeCorrection, setCustomCover, getCorrectedTitle, getCustomCover,
     handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData

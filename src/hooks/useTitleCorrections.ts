@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { USER_DATA_KEY } from '@/utils/constants';
 
 export interface UserAnimeData {
@@ -15,12 +15,25 @@ export function useTitleCorrections() {
     return saved ? JSON.parse(saved) : {};
   });
 
+  const userDataRef = useRef(userData);
   useEffect(() => {
-    localStorage.setItem(USER_DATA_KEY, JSON.stringify(userData));
+    userDataRef.current = userData;
+  }, [userData]);
+
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    timerRef.current = setTimeout(() => {
+      localStorage.setItem(USER_DATA_KEY, JSON.stringify(userData));
+    }, 300);
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
   }, [userData]);
 
   // 設定或更新自訂名稱（優先使用動畫 ID 作為 key 儲存）
-  const setCorrection = (original: string, corrected: string, id?: string) => {
+  const setCorrection = useCallback((original: string, corrected: string, id?: string) => {
     const targetKey = id || original;
     setUserData(prev => ({
       ...prev,
@@ -29,10 +42,10 @@ export function useTitleCorrections() {
         customTitle: corrected
       }
     }));
-  };
+  }, []);
 
   // 設定或更新自訂封面 / URL
-  const setCustomCover = (idOrTitle: string, coverUrl: string) => {
+  const setCustomCover = useCallback((idOrTitle: string, coverUrl: string) => {
     setUserData(prev => ({
       ...prev,
       [idOrTitle]: {
@@ -40,25 +53,26 @@ export function useTitleCorrections() {
         customCover: coverUrl
       }
     }));
-  };
+  }, []);
 
   // 取得自訂名稱：優先以 ID 查詢，次要以字串查詢
-  const getCorrectedTitle = (original: string, id?: string) => {
-    if (id && userData[id]?.customTitle) {
-      return userData[id].customTitle!;
+  const getCorrectedTitle = useCallback((original: string, id?: string) => {
+    const map = userDataRef.current;
+    if (id && map[id]?.customTitle) {
+      return map[id].customTitle!;
     }
-    if (userData[original]?.customTitle) {
-      return userData[original].customTitle!;
+    if (map[original]?.customTitle) {
+      return map[original].customTitle!;
     }
     return original;
-  };
+  }, []);
 
   // 取得自訂封面 / URL
-  const getCustomCover = (idOrTitle: string) => {
-    return userData[idOrTitle]?.customCover;
-  };
+  const getCustomCover = useCallback((idOrTitle: string) => {
+    return userDataRef.current[idOrTitle]?.customCover;
+  }, []);
 
-  const removeCorrection = (original: string, id?: string) => {
+  const removeCorrection = useCallback((original: string, id?: string) => {
     setUserData(prev => {
       const next = { ...prev };
       if (id && next[id]) {
@@ -75,9 +89,9 @@ export function useTitleCorrections() {
       }
       return next;
     });
-  };
+  }, []);
 
-  const handleImportCorrections = (importedCorrections: Record<string, any>) => {
+  const handleImportCorrections = useCallback((importedCorrections: Record<string, any>) => {
     setUserData(prev => {
       const merged = { ...prev };
       Object.entries(importedCorrections).forEach(([k, v]) => {
@@ -89,17 +103,20 @@ export function useTitleCorrections() {
       });
       return merged;
     });
-  };
+  }, []);
 
-  const clearCorrections = () => {
+  const clearCorrections = useCallback(() => {
     setUserData({});
-  };
+  }, []);
 
   // 為了向後相容將 corrections 轉為字串映射
-  const corrections: Record<string, string> = {};
-  Object.entries(userData).forEach(([k, v]) => {
-    if (v.customTitle) corrections[k] = v.customTitle;
-  });
+  const corrections: Record<string, string> = useMemo(() => {
+    const result: Record<string, string> = {};
+    Object.entries(userData).forEach(([k, v]) => {
+      if (v.customTitle) result[k] = v.customTitle;
+    });
+    return result;
+  }, [userData]);
 
   return {
     userData,

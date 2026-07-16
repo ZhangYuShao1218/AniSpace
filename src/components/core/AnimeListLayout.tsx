@@ -52,13 +52,18 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   onPageChange: onPageChangeProp
 }) => {
   const { 
-    watchedList, 
-    planToWatchList,
-    handleSaveReview, 
+    watchedMap,
+    watchedIdsSet,
+    planToWatchIdsSet,
+    handleSaveReview,
+    handleRemoveReview,
     handlePlanToWatchToggle,
+    setCorrection,
+    removeCorrection,
+    getCorrectedTitle,
     isScraping
   } = useAnime();
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   
   const [internalPage, setInternalPage] = useUrlParams<number>('page', 1);
   const currentPage = currentPageProp !== undefined ? currentPageProp : internalPage;
@@ -75,10 +80,29 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   }, [filteredData, currentPage]);
 
   const handleActionClick = useCallback((anime: Anime | WatchedAnime) => {
-    const existingWatched = watchedList.find(w => w.id === anime.id);
+    const existingWatched = watchedMap.get(anime.id);
     setSelectedAnime(existingWatched || anime);
     setIsModalOpen(true);
-  }, [watchedList]);
+  }, [watchedMap]);
+
+  const handleEditTitle = useCallback((originalZh: string, newTitle: string, id: string) => {
+    setCorrection(originalZh, newTitle, id);
+  }, [setCorrection]);
+
+  const handleResetTitle = useCallback((originalZh: string, id: string) => {
+    if (removeCorrection) removeCorrection(originalZh, id);
+  }, [removeCorrection]);
+
+  const handleRemoveReviewClick = useCallback((id: string) => {
+    handleRemoveReview(id);
+  }, [handleRemoveReview]);
+
+  const getDisplayTitle = useCallback((anime: Anime | WatchedAnime) => {
+    let baseTitle = anime.titleZh;
+    if (language === 'en' && anime.titleEn) baseTitle = anime.titleEn;
+    else if (language === 'ja' && anime.titleJa) baseTitle = anime.titleJa;
+    return getCorrectedTitle(baseTitle, anime.id);
+  }, [language, getCorrectedTitle]);
 
   const handlePageChange = useCallback((page: number) => {
     if (page === currentPage) return;
@@ -175,11 +199,15 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
                 {!hideAffiliate && index === 10 && <AffiliateCard />}
                 
                 <AnimeCard
-                  anime={isWatchedContext ? anime : (watchedList.find(w => w.id === anime.id) || anime)}
-                  isWatched={watchedList.some(w => w.id === anime.id)}
-                  isPlanToWatch={planToWatchList.some(p => p.id === anime.id)}
+                  anime={isWatchedContext ? anime : (watchedMap.get(anime.id) || anime)}
+                  isWatched={watchedIdsSet.has(anime.id)}
+                  isPlanToWatch={planToWatchIdsSet.has(anime.id)}
                   onActionClick={handleActionClick}
                   onPlanToWatchToggle={handlePlanToWatchToggle}
+                  displayTitle={getDisplayTitle(anime)}
+                  onEditTitle={handleEditTitle}
+                  onResetTitle={handleResetTitle}
+                  onRemoveReview={handleRemoveReviewClick}
                 />
               </React.Fragment>
             ))}

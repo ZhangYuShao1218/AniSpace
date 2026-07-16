@@ -3,7 +3,6 @@ import { createPortal } from 'react-dom';
 import '@/components/core/AnimeCard.css';
 import type { Anime, WatchedAnime } from '@/types';
 import { Star, Heart, Edit2, Check, X, Trash2, RotateCcw } from 'lucide-react';
-import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useAdMob } from '@/contexts/AdMobContext';
 import { StreamingList } from '@/components/core/StreamingList';
@@ -14,6 +13,10 @@ interface AnimeCardProps {
   isPlanToWatch: boolean;
   onActionClick: (anime: Anime) => void;
   onPlanToWatchToggle: (anime: Anime) => void;
+  displayTitle: string;
+  onEditTitle: (originalZh: string, newTitle: string, id: string) => void;
+  onResetTitle: (originalZh: string, id: string) => void;
+  onRemoveReview: (id: string) => void;
 }
 
 interface PopoverPos {
@@ -28,8 +31,11 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   isPlanToWatch,
   onActionClick,
   onPlanToWatchToggle,
+  displayTitle,
+  onEditTitle,
+  onResetTitle,
+  onRemoveReview,
 }) => {
-  const { setCorrection, removeCorrection, getCorrectedTitle, handleRemoveReview } = useAnime();
   const { language, t, tCover, tGenre, tYearSeason } = useLanguage();
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [newTitle, setNewTitle] = useState('');
@@ -52,8 +58,6 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   } else if (language === 'ja' && anime.titleJa) {
     baseTitle = anime.titleJa;
   }
-  
-  const displayTitle = getCorrectedTitle(baseTitle, anime.id);
 
   const displayCover = tCover(anime);
 
@@ -88,19 +92,17 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   const handleTitleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (newTitle.trim()) {
-      if (newTitle.trim() === baseTitle && removeCorrection) {
-        removeCorrection(anime.titleZh, anime.id);
+      if (newTitle.trim() === baseTitle) {
+        onResetTitle(anime.titleZh, anime.id);
       } else {
-        setCorrection(anime.titleZh, newTitle.trim(), anime.id);
+        onEditTitle(anime.titleZh, newTitle.trim(), anime.id);
       }
       setIsEditingTitle(false);
     }
   };
 
   const handleResetTitle = () => {
-    if (removeCorrection) {
-      removeCorrection(anime.titleZh, anime.id);
-    }
+    onResetTitle(anime.titleZh, anime.id);
     setNewTitle(baseTitle);
   };
 
@@ -150,7 +152,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     e.stopPropagation();
     const shouldSkip = sessionStorage.getItem('skip_remove_review_confirm') === 'true';
     if (shouldSkip) {
-      handleRemoveReview(anime.id);
+      onRemoveReview(anime.id);
     } else {
       calculatePopupPosition();
       setIsConfirmingRemove(true);
@@ -161,7 +163,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
     if (skipConfirm) {
       sessionStorage.setItem('skip_remove_review_confirm', 'true');
     }
-    handleRemoveReview(anime.id);
+    onRemoveReview(anime.id);
     setIsConfirmingRemove(false);
   };
 

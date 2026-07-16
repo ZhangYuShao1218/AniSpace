@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
 import type { TranslationKey } from '../i18n/translations';
 import { translations } from '../i18n/translations';
 
@@ -24,6 +24,8 @@ export const LanguageContext = createContext<LanguageContextType>({
   tYearSeason: () => ''
 });
 
+const genreCache = new Map<string, string>();
+
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem('appLanguage');
@@ -33,31 +35,35 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     return 'zh-TW';
   });
 
-  const setLanguage = (lang: Language) => {
+  const setLanguage = useCallback((lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('appLanguage', lang);
-  };
+  }, []);
 
   useEffect(() => {
     document.documentElement.lang = language === 'ja' ? 'ja' : language === 'en' ? 'en' : 'zh-TW';
   }, [language]);
 
-  const t = (key: TranslationKey): string => {
+  const t = useCallback((key: TranslationKey): string => {
     return translations[language][key] || translations['en'][key] || key;
-  };
+  }, [language]);
 
-  const tTitle = (anime: { titleZh: string; titleEn?: string; titleJa?: string }): string => {
+  const tTitle = useCallback((anime: { titleZh: string; titleEn?: string; titleJa?: string }): string => {
     if (language === 'en' && anime.titleEn) return anime.titleEn;
     if (language === 'ja' && anime.titleJa) return anime.titleJa;
     return anime.titleZh;
-  };
+  }, [language]);
 
-  const tCover = (anime: { coverImage: string; coverImageAniList?: string }): string => {
+  const tCover = useCallback((anime: { coverImage: string; coverImageAniList?: string }): string => {
     return language !== 'zh-TW' && anime.coverImageAniList ? anime.coverImageAniList : anime.coverImage;
-  };
+  }, [language]);
 
-  const tGenre = (rawGenre: string): string => {
+  const tGenre = useCallback((rawGenre: string): string => {
     const genre = rawGenre.trim();
+    const cacheKey = `${language}:${genre}`;
+    const cached = genreCache.get(cacheKey);
+    if (cached !== undefined) return cached;
+
     let key = `genre${genre.replace(/[\s-]/g, '')}` as TranslationKey;
     
     if (!translations['en'][key as TranslationKey]) {
@@ -74,18 +80,18 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       }
     }
 
-    if (translations['en'][key as TranslationKey]) {
-      return translations[language][key as TranslationKey] || genre;
-    }
-    return genre;
-  };
+    const result = translations['en'][key as TranslationKey]
+      ? (translations[language][key as TranslationKey] || genre)
+      : genre;
 
-  const tYearSeason = (yearSeason: string): string => {
-    // Usually formatted as "YYYY Season" or "YYYY 季節"
+    genreCache.set(cacheKey, result);
+    return result;
+  }, [language]);
+
+  const tYearSeason = useCallback((yearSeason: string): string => {
     if (!yearSeason || !yearSeason.includes(' ')) return yearSeason;
     const [year, seasonStr] = yearSeason.split(' ');
     
-    // Check if seasonStr matches any known season
     const seasonKey = ['Spring', 'Summer', 'Autumn', 'Winter', '春', '夏', '秋', '冬'].includes(seasonStr) 
       ? `season${seasonStr.replace(/春|Spring/, 'Spring').replace(/夏|Summer/, 'Summer').replace(/秋|Autumn|Fall/, 'Autumn').replace(/冬|Winter/, 'Winter')}` as TranslationKey
       : null;
@@ -94,10 +100,14 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       return `${year} ${translations[language][seasonKey]}`;
     }
     return yearSeason;
-  };
+  }, [language]);
+
+  const contextValue = useMemo(() => ({
+    language, setLanguage, t, tTitle, tCover, tGenre, tYearSeason
+  }), [language, setLanguage, t, tTitle, tCover, tGenre, tYearSeason]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, tTitle, tCover, tGenre, tYearSeason }}>
+    <LanguageContext.Provider value={contextValue}>
       {children}
     </LanguageContext.Provider>
   );

@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
 import './App.css';
 import { useGlobalKeyboardFix } from '@/hooks/useGlobalKeyboardFix';
@@ -16,6 +16,7 @@ const WatchedPage = lazy(() => import('./pages/WatchedPage'));
 const GamerAuditPage = lazy(() => import('./pages/GamerAuditPage').then(m => ({ default: m.GamerAuditPage || (m as any).default })));
 const InfoCenterPage = lazy(() => import('./pages/InfoCenterPage'));
 const AnimeDetailPage = lazy(() => import('./pages/AnimeDetailPage'));
+const AnimeDetailModal = lazy(() => import('./components/modals/AnimeDetailModal').then(m => ({ default: m.AnimeDetailModal || (m as any).default })));
 
 const PageLoader = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '400px' }}>
@@ -26,6 +27,9 @@ const PageLoader = () => (
 function App() {
   const isNative = Capacitor.isNativePlatform();
   const [isTutorialOpen, setIsTutorialOpen] = useState(false);
+  const location = useLocation();
+  const state = location.state as { backgroundLocation?: any };
+  const backgroundLocation = state?.backgroundLocation;
 
   useGlobalKeyboardFix();
 
@@ -49,7 +53,7 @@ function App() {
 
       <main className="container wrapper">
         <Suspense fallback={<PageLoader />}>
-          <Routes>
+          <Routes location={backgroundLocation || location}>
             <Route path="/" element={<AllAnimePage />} />
             <Route path="/plan" element={<PlanToWatchPage />} />
             <Route path="/records" element={<WatchedPage />} />
@@ -60,6 +64,12 @@ function App() {
             <Route path="/anime/:id" element={<AnimeDetailPage />} />
             <Route path="/gamer-audit" element={<GamerAuditPage />} />
           </Routes>
+
+          {backgroundLocation && (
+            <Routes>
+              <Route path="/anime/:id" element={<AnimeDetailModal />} />
+            </Routes>
+          )}
         </Suspense>
       </main>
 
@@ -74,3 +84,4 @@ function App() {
 }
 
 export default App;
+

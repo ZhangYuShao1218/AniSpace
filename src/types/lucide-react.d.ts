@@ -58,4 +58,5 @@ declare module 'lucide-react' {
   export const RefreshCw: Icon;
   export const Shield: Icon;
   export const ShieldCheck: Icon;
+  export const Calendar: Icon;
 }

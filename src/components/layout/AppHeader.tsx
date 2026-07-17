@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
 import { Layers, Download, Loader2, Menu, Clock } from 'lucide-react';
+
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useAdMob } from '@/contexts/AdMobContext';

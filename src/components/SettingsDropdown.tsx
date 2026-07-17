@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
-import { Menu, Settings, Trash2, AlertTriangle, Check, Upload, Download, HelpCircle } from 'lucide-react';
+import { Menu, Settings, Trash2, AlertTriangle, Check, Upload, Download, HelpCircle, Info } from 'lucide-react';
 import ThemeToggle from '@/components/core/ThemeToggle';
 import ConfirmModal from '@/components/modals/ConfirmModal';
 import { useGoogleSync } from '@/contexts/GoogleSyncContext';
@@ -16,7 +17,9 @@ interface SettingsDropdownProps {
 }
 
 const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = false }) => {
+  const navigate = useNavigate();
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
   const [isClearRecordsModalOpen, setIsClearRecordsModalOpen] = useState(false);
   const [isClearAllModalOpen, setIsClearAllModalOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
@@ -222,6 +225,18 @@ const SettingsDropdown: React.FC<SettingsDropdownProps> = ({ useSettingsIcon = f
             >
               <HelpCircle size={16} />
               {t('tutorialHelp')}
+            </button>
+
+            <button 
+              className="dropdown-item" 
+              onClick={() => {
+                navigate('/about');
+                setIsSettingsOpen(false);
+              }} 
+              style={{ fontSize: '0.95rem', fontWeight: 500, color: 'var(--text-primary)', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}
+            >
+              <Info size={16} style={{ color: 'var(--accent-color)' }} />
+              {t('aboutAndFaq')}
             </button>
 
             <button 

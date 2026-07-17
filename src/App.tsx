@@ -13,8 +13,9 @@ import { Loader2 } from 'lucide-react';
 
 const PlanToWatchPage = lazy(() => import('./pages/PlanToWatchPage'));
 const WatchedPage = lazy(() => import('./pages/WatchedPage'));
-const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 const GamerAuditPage = lazy(() => import('./pages/GamerAuditPage').then(m => ({ default: m.GamerAuditPage || (m as any).default })));
+const InfoCenterPage = lazy(() => import('./pages/InfoCenterPage'));
+const AnimeDetailPage = lazy(() => import('./pages/AnimeDetailPage'));
 
 const PageLoader = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '400px' }}>
@@ -52,7 +53,11 @@ function App() {
             <Route path="/" element={<AllAnimePage />} />
             <Route path="/plan" element={<PlanToWatchPage />} />
             <Route path="/records" element={<WatchedPage />} />
-            <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            <Route path="/info" element={<InfoCenterPage />} />
+            <Route path="/about" element={<InfoCenterPage />} />
+            <Route path="/faq" element={<InfoCenterPage />} />
+            <Route path="/privacy" element={<InfoCenterPage />} />
+            <Route path="/anime/:id" element={<AnimeDetailPage />} />
             <Route path="/gamer-audit" element={<GamerAuditPage />} />
           </Routes>
         </Suspense>

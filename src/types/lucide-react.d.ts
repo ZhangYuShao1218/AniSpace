@@ -56,4 +56,6 @@ declare module 'lucide-react' {
   export const ShoppingBag: Icon;
   export const RotateCcw: Icon;
   export const RefreshCw: Icon;
+  export const Shield: Icon;
+  export const ShieldCheck: Icon;
 }

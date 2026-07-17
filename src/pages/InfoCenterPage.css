@@ -1,0 +1,291 @@
+.info-container {
+  padding: 2rem 1rem;
+  max-width: 860px;
+  margin: 0 auto;
+  color: var(--text-primary);
+}
+
+.info-card {
+  padding: 2.5rem;
+  min-height: 550px;
+}
+
+.info-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 1.5rem;
+}
+
+.info-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.info-title-wrapper h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+  background: var(--accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info-icon-title {
+  color: var(--accent-color);
+}
+
+/* Tabs Bar */
+.info-tabs-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto 1.5rem auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.info-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex: 1 1 220px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.info-tab-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-glass-hover);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 180, 216, 0.35);
+}
+
+.info-tab-btn.active {
+  color: #ffffff;
+  background: var(--accent-gradient);
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.35);
+}
+
+.info-tab-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sections & Typography matching PrivacyPolicyPage */
+.info-section {
+  margin-bottom: 2.5rem;
+}
+
+.info-section h2 {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-section h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-section p {
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.info-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.info-section li {
+  margin-bottom: 0.65rem;
+  line-height: 1.6;
+}
+
+.info-section strong {
+  color: var(--text-primary);
+}
+
+.info-section a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  font-weight: 500;
+}
+
+.info-section a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Feature Grid for About Page */
+.about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.about-feature-card {
+  padding: 1.5rem;
+  background: var(--bg-card, var(--bg-glass));
+  border: 1px solid var(--border-glass-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.about-feature-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.about-feature-icon {
+  color: var(--accent-color);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-feature-card h4 {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.about-feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* FAQ Accordion */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border-glass-light);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card, var(--bg-glass));
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: var(--border-glass);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  user-select: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  gap: 1rem;
+}
+
+.faq-question-icon {
+  color: var(--accent-color);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.faq-item.open .faq-question-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.4rem 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.98rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 1rem;
+}
+
+.last-updated {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-glass-light);
+}
+
+.privacy-divider {
+  height: 1px;
+  background: var(--border-glass-light);
+  margin: 3rem 0;
+}
+
+.english-section, .japanese-section {
+  opacity: 0.88;
+}
+
+@media (max-width: 768px) {
+  .info-card {
+    padding: 1.5rem;
+  }
+  .info-title-wrapper h1 {
+    font-size: 1.8rem;
+  }
+  .info-tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.88rem;
+  }
+  .faq-question {
+    padding: 1rem 1.25rem;
+    font-size: 0.98rem;
+  }
+}

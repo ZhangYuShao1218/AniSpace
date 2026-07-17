@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '@/components/core/AnimeCard.css';
 import type { Anime, WatchedAnime } from '@/types';
 import { Star, Heart, Edit2, Check, X, Trash2, RotateCcw } from 'lucide-react';
@@ -36,8 +37,11 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   onResetTitle,
   onRemoveReview,
 }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const { language, t, tCover, tGenre, tYearSeason } = useLanguage();
   const [isEditingTitle, setIsEditingTitle] = useState(false);
+
   const [newTitle, setNewTitle] = useState('');
   const [isConfirmingRemove, setIsConfirmingRemove] = useState(false);
   const [skipConfirm, setSkipConfirm] = useState(false);
@@ -194,7 +198,10 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       {/* Plan-to-watch — Top Right */}
       <button
         className={`heart-btn ${isPlanToWatch ? 'active' : ''}`}
-        onClick={() => onPlanToWatchToggle(anime as Anime)}
+        onClick={(e) => {
+          e.stopPropagation();
+          onPlanToWatchToggle(anime as Anime);
+        }}
         title={isPlanToWatch ? t('removeFromPlan') : t('addToPlan')}
       >
         <Heart size={20} className={isPlanToWatch ? 'heart-fill' : ''} />
@@ -203,7 +210,14 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       {/* Streaming menu — Top Right Below Heart */}
       <StreamingList streamings={safeStreamings} anime={anime} />
 
-      <div className="card-image-container">
+      <div 
+        className="card-image-container clickable-cover"
+        style={{ cursor: 'pointer' }}
+        onClick={() => {
+          navigate(`/anime/${encodeURIComponent(anime.id)}`, { state: { backgroundLocation: location } });
+        }}
+        title="點擊展開詳細資訊"
+      >
         <img src={displayCover} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />
 
         {isWatched && (anime as WatchedAnime).userRating && (

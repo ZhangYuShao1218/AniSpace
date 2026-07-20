@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const summaryPath = path.join(__dirname, 'run_summary.txt');
+const SYNOPSIS_NEW_FILE = path.join(process.cwd(), 'scraper', 'synopsis_newly_fetched.json');
 
 async function sendReport() {
   const { EMAIL_USER, EMAIL_PASS } = process.env;
@@ -32,6 +33,21 @@ async function sendReport() {
   let reportContent = "本日排程執行完畢，動畫資料與周邊商品皆維持最新狀態。\n詳細執行過程與檢閱紀錄請參考隨信附帶的完整執行日誌 (daily_run.log)。";
   if (fs.existsSync(summaryPath)) {
     reportContent = fs.readFileSync(summaryPath, 'utf-8');
+  }
+
+  if (fs.existsSync(SYNOPSIS_NEW_FILE)) {
+    try {
+      const newlyFetched = JSON.parse(fs.readFileSync(SYNOPSIS_NEW_FILE, 'utf-8'));
+      if (newlyFetched.length > 0) {
+        reportContent += `\n\n【劇情簡介抓取與 AI 翻譯】本次成功新增 ${newlyFetched.length} 筆簡介。\n詳細清單：\n`;
+        newlyFetched.forEach(item => {
+          reportContent += `- [${item.id}] ${item.title}\n`;
+        });
+      }
+      fs.unlinkSync(SYNOPSIS_NEW_FILE);
+    } catch (e) {
+      console.error("讀取 synopsis_newly_fetched.json 失敗", e);
+    }
   }
 
   const versionHeader = `📌 當前系統版本資訊\n・應用程式版本號：v${appVersion}\n・動畫資料庫版號：(${dataVersionStr})\n-------------------------------------\n\n`;

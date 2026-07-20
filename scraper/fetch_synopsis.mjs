@@ -6,6 +6,7 @@ import { GoogleGenAI } from '@google/genai';
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const MAPPING_FILE = path.join(process.cwd(), 'public', 'bangumi_mapping_record.json');
 const TRACKING_FILE = path.join(process.cwd(), 'scraper', 'synopsis_tracking.json');
+const NEWLY_FETCHED_FILE = path.join(process.cwd(), 'scraper', 'synopsis_newly_fetched.json');
 const SYNOPSIS_DIR = path.join(process.cwd(), 'public', 'synopsis');
 const PROMPTS_FILE = path.join(process.cwd(), 'scraper', 'ai_synopsis_prompt.md');
 
@@ -14,28 +15,6 @@ const ai = process.env.GEMINI_API_KEY ? new GoogleGenAI({ apiKey: process.env.GE
 
 // Helpers
 const delay = (ms) => new Promise(res => setTimeout(res, ms));
-
-async function fetchAniListDescription(anilistId) {
-  const query = `
-    query ($id: Int) {
-      Media(id: $id) {
-        description(asHtml: false)
-      }
-    }
-  `;
-  try {
-    const res = await fetch('https://graphql.anilist.co', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ query, variables: { id: parseInt(anilistId, 10) } })
-    });
-    const json = await res.json();
-    return json?.data?.Media?.description || '';
-  } catch (e) {
-    console.error(`AniList API Error for ${anilistId}: ${e.message}`);
-    return '';
-  }
-}
 
 async function fetchBangumiSummary(bgmId) {
   try {
@@ -51,35 +30,36 @@ async function fetchBangumiSummary(bgmId) {
   }
 }
 
-async function aiTranslate(promptSectionName, inputs) {
-  if (!ai) return '';
-  const promptsText = fs.readFileSync(PROMPTS_FILE, 'utf-8');
-  const sections = promptsText.split('---');
-  const targetSection = sections.find(s => s.includes(promptSectionName));
-  if (!targetSection) return '';
-
-  let prompt = targetSection;
-  for (const [key, value] of Object.entries(inputs)) {
-    prompt = prompt.replace(`{${key}}`, value || '');
-  }
+async function aiTranslateBatch(batchArray) {
+  if (!ai || batchArray.length === 0) return null;
+  const promptTemplate = fs.readFileSync(PROMPTS_FILE, 'utf-8');
+  
+  // Format input as pretty JSON
+  const batchInputString = JSON.stringify(batchArray, null, 2);
+  const prompt = promptTemplate.replace('{batchInput}', batchInputString);
 
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
       const response = await ai.models.generateContent({
         model: 'gemini-3.5-flash',
         contents: prompt,
-        config: { temperature: 0.2 }
+        config: { 
+          temperature: 0.2,
+          responseMimeType: "application/json" 
+        }
       });
-      return response.text.trim();
+      const text = response.text.trim();
+      return JSON.parse(text); // Should be an Array of { id, zh, ja, en }
     } catch (apiErr) {
       if (attempt === 3) {
-        console.error(`AI Translation Error (${promptSectionName}): ${apiErr.message}`);
-        return '';
+        console.error(`AI Translation Error (Batch): ${apiErr.message}`);
+        return null;
       }
-      await delay(2000 * attempt);
+      console.log(`⚠️ AI 觸發頻率限制或發生錯誤，強制冷卻 60 秒後重試 (第 ${attempt}/3 次)...`);
+      await delay(60000); // 延長為 60 秒以確保 Bucket 清空
     }
   }
-  return '';
+  return null;
 }
 
 async function main() {
@@ -99,7 +79,15 @@ async function main() {
     tracker = JSON.parse(fs.readFileSync(TRACKING_FILE, 'utf-8'));
   }
 
-  // Build AniList -> Bangumi ID Map from mapping record
+  // Load Newly Fetched list
+  let newlyFetched = [];
+  if (fs.existsSync(NEWLY_FETCHED_FILE)) {
+    try {
+      newlyFetched = JSON.parse(fs.readFileSync(NEWLY_FETCHED_FILE, 'utf-8'));
+    } catch(e) {}
+  }
+
+  // Build AniList -> Bangumi ID Map
   const anilistToBgmMap = new Map();
   for (const key of Object.keys(mappingRecord)) {
     const item = mappingRecord[key];
@@ -109,8 +97,65 @@ async function main() {
   }
 
   let processedCount = 0;
+  let batchQueue = [];
+  const BATCH_SIZE = 10;
+  const TOTAL_LIMIT = 30;
+
+  // Process a collected batch
+  async function flushBatch() {
+    if (batchQueue.length === 0) return;
+    
+    console.log(`\n📦 準備發送 AI 批次翻譯請求，共包含 ${batchQueue.length} 筆動畫...`);
+    const aiResults = await aiTranslateBatch(batchQueue);
+    
+    if (aiResults && Array.isArray(aiResults)) {
+      for (const res of aiResults) {
+        const id = res.id;
+        const originalAnime = batchQueue.find(b => b.id === id);
+        if (!originalAnime) continue;
+
+        // Load existing synopsis if any
+        const synopsisPath = path.join(SYNOPSIS_DIR, `${id}.json`);
+        let currentSynopsis = { zh: '', ja: '', en: '' };
+        if (fs.existsSync(synopsisPath)) {
+          currentSynopsis = { ...currentSynopsis, ...JSON.parse(fs.readFileSync(synopsisPath, 'utf-8')) };
+        }
+
+        // Apply new translations
+        currentSynopsis.zh = res.zh || '';
+        currentSynopsis.ja = res.ja || '';
+        currentSynopsis.en = res.en || '';
+
+        // Save
+        fs.writeFileSync(synopsisPath, JSON.stringify(currentSynopsis, null, 2), 'utf-8');
+        
+        // Mark as fully fetched in tracker
+        tracker[id] = { zh: true, ja: true, en: true };
+        
+        // Add to newly fetched for email
+        newlyFetched.push({ id, title: originalAnime.titleZh });
+        
+        console.log(`✅ [${id}] 成功完成批次翻譯: ${originalAnime.titleZh}`);
+        processedCount++;
+      }
+      // Save global tracker state
+      fs.writeFileSync(TRACKING_FILE, JSON.stringify(tracker, null, 2), 'utf-8');
+      fs.writeFileSync(NEWLY_FETCHED_FILE, JSON.stringify(newlyFetched, null, 2), 'utf-8');
+    } else {
+      console.error("❌ 此批次翻譯失敗，將跳過並在未來重新嘗試。");
+    }
+    
+    // 清空駐列並強制冷卻，保護 API
+    batchQueue = [];
+    console.log("⏳ 冷卻中 (5 秒)...");
+    await delay(5000);
+  }
 
   for (const anime of animeData) {
+    if (processedCount + batchQueue.length >= TOTAL_LIMIT) {
+      break; 
+    }
+
     const id = anime.id; // e.g. "anilist-12345"
     if (!id.startsWith('anilist-')) continue;
     
@@ -120,90 +165,36 @@ async function main() {
     const t = tracker[id];
     if (t.zh && t.ja && t.en) continue; // Fully fetched
 
-    const synopsisPath = path.join(SYNOPSIS_DIR, `${id}.json`);
-    let currentSynopsis = { zh: '', ja: '', en: '' };
-    if (fs.existsSync(synopsisPath)) {
-      currentSynopsis = { ...currentSynopsis, ...JSON.parse(fs.readFileSync(synopsisPath, 'utf-8')) };
-    }
-
-    let needsWait = false;
-    let bgmSummary = null;
     const bgmId = anilistToBgmMap.get(id);
+    if (!bgmId) continue; // 沒有建檔跳過
 
-    // EN
-    if (!t.en) {
-      needsWait = true;
-      const numericId = id.replace('anilist-', '');
-      const enDesc = await fetchAniListDescription(numericId);
-      if (enDesc) {
-        currentSynopsis.en = enDesc;
-        t.en = true;
-        console.log(`✅ [${id}] EN Fetch success`);
-      } else {
-        // Mark true if AniList genuinely returns empty, but let's be safe: if empty, maybe it really has no desc.
-        // Actually, if we hit network error we shouldn't mark true. The helper returns '' on error.
-        // We'll mark true to prevent endless retries for missing animes.
-        t.en = true; 
-      }
-      await delay(1000);
-    }
+    // Fetch from Bangumi
+    const bgmSummary = await fetchBangumiSummary(bgmId);
+    await delay(1000); // Bangumi Rate Limit (1s)
 
-    // ZH & JA
-    if (!t.zh || !t.ja) {
-      if (bgmId) {
-        needsWait = true;
-        bgmSummary = await fetchBangumiSummary(bgmId);
-        await delay(1000);
-      } else {
-        // Cannot fetch without bgmId, mark as true so we skip it in the future
-        t.zh = true;
-        t.ja = true;
-      }
-    }
+    if (bgmSummary && bgmSummary.trim() !== '') {
+      batchQueue.push({
+        id: id,
+        titleZh: anime.titleZh,
+        titleJa: anime.titleJa,
+        titleEn: anime.titleEn || anime.titleJa,
+        sourceSummary: bgmSummary
+      });
+      console.log(`📥 [${id}] 已加入批次佇列: ${anime.titleZh} (佇列: ${batchQueue.length}/${BATCH_SIZE})`);
 
-    if (bgmSummary) {
-      if (!t.zh) {
-        const zhResult = await aiTranslate('Traditional Chinese Localization', {
-          titleZh: anime.titleZh,
-          titleJa: anime.titleJa,
-          sourceSummary: bgmSummary
-        });
-        if (zhResult) {
-          currentSynopsis.zh = zhResult;
-          t.zh = true;
-          console.log(`✅ [${id}] ZH Translate success`);
-        }
-        await delay(1000);
+      if (batchQueue.length >= BATCH_SIZE || (processedCount + batchQueue.length) >= TOTAL_LIMIT) {
+        await flushBatch();
       }
-
-      if (!t.ja) {
-        const jaResult = await aiTranslate('Japanese Translation', {
-          titleZh: anime.titleZh,
-          titleJa: anime.titleJa,
-          zhSummary: bgmSummary
-        });
-        if (jaResult) {
-          currentSynopsis.ja = jaResult;
-          t.ja = true;
-          console.log(`✅ [${id}] JA Translate success`);
-        }
-        await delay(1000);
-      }
-    }
-
-    if (needsWait) {
-      // Save data incrementally
-      fs.writeFileSync(synopsisPath, JSON.stringify(currentSynopsis, null, 2), 'utf-8');
-      fs.writeFileSync(TRACKING_FILE, JSON.stringify(tracker, null, 2), 'utf-8');
-      processedCount++;
-      // Stop after 20 to avoid exhausting API or running forever during development/testing
-      if (processedCount >= 20) {
-        console.log("Reached batch limit of 20, stopping for this run. Next run will continue.");
-        break;
-      }
+    } else {
+      // 沒有簡介就不處理，不改 tracker 讓他明天再來查
     }
   }
   
+  // Flush any remaining items in the queue
+  if (batchQueue.length > 0 && processedCount < TOTAL_LIMIT) {
+    await flushBatch();
+  }
+
   console.log(`\n🎉 Synopsis fetching complete. Processed ${processedCount} animes.`);
 }
 

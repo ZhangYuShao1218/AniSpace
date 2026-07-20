@@ -635,7 +635,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "スーパーの裏でヤニ吸うふたり",
     "bgmId": "571784",
-    "streamingsCount": 2
+    "streamingsCount": 4
   },
   "anilist-185874": {
     "id": "anilist-185874",
@@ -734,7 +734,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "攻殻機動隊 THE GHOST IN THE SHELL",
     "bgmId": "496276",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-198946": {
     "id": "anilist-198946",
@@ -778,7 +778,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BLACK TORCH",
     "bgmId": "542603",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-182616": {
     "id": "anilist-182616",
@@ -833,7 +833,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "対ありでした。～お嬢さまは格闘ゲームなんてしない～",
     "bgmId": "325767",
-    "streamingsCount": 5
+    "streamingsCount": 7
   },
   "anilist-209983": {
     "id": "anilist-209983",
@@ -848,14 +848,14 @@
   },
   "anilist-188139": {
     "id": "anilist-188139",
-    "titleZh": "我是不才惡女",
+    "titleZh": "我是不才惡女～雛宮蝶鼠互換傳～",
     "titleJa": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ふつつかな悪女ではございますが～雛宮蝶鼠とりかえ伝～",
     "bgmId": "545008",
-    "streamingsCount": 4
+    "streamingsCount": 8
   },
   "anilist-201514": {
     "id": "anilist-201514",
@@ -892,7 +892,7 @@
   },
   "anilist-208044": {
     "id": "anilist-208044",
-    "titleZh": "落第賢者的學院無雙～第二回轉生，S等級作弊魔術師冒險記～",
+    "titleZh": "落第賢者的學院無雙～第二次轉生的S級開外掛魔術師冒險錄～",
     "titleJa": "落第賢者の学院無双～二度目の転生、Sランクチート魔術師冒険録～",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
@@ -958,7 +958,7 @@
   },
   "anilist-199748": {
     "id": "anilist-199748",
-    "titleZh": "『你們先走我斷後』，於是10年後我成為了傳說",
+    "titleZh": "說出這邊交給我你們先走以後十年過去成了傳說。",
     "titleJa": "ここは俺に任せて先に行けと言ってから１０年がたったら伝説になっていた。",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
@@ -987,22 +987,22 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ONE PIECE HEROINES",
     "bgmId": "577191",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-209961": {
     "id": "anilist-209961",
     "titleZh": "靠死亡遊戲混飯吃。44:CLOUDY BEACH",
     "titleJa": "死亡遊戯で飯を食う。44:CLOUDY BEACH",
     "yearSeason": "2026 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "死亡遊戯で飯を食う。 44:CLOUDY BEACH",
+    "bgmId": "638185",
+    "streamingsCount": 3
   },
   "anilist-192800": {
     "id": "anilist-192800",
-    "titleZh": "女主角？聖女？不，我是雜役女僕（自豪）！",
+    "titleZh": "女主角？聖女？都不對，我是雜役女僕（自豪）！",
     "titleJa": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
@@ -1013,7 +1013,7 @@
   },
   "anilist-169582": {
     "id": "anilist-169582",
-    "titleZh": "最強出涸皇子的暗躍帝位爭奪",
+    "titleZh": "最強廢渣皇子暗中活躍於帝位之爭",
     "titleJa": "最強出涸らし皇子の暗躍帝位争い 無能を演じるSSランク皇子は皇位継承戦を影から支配する",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
@@ -1130,7 +1130,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "手札が多めのビクトリア",
     "bgmId": "584641",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-194219": {
     "id": "anilist-194219",
@@ -1185,7 +1185,7 @@
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "うしろの正面カムイさん",
     "bgmId": "627136",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-208225": {
     "id": "anilist-208225",
@@ -1332,7 +1332,7 @@
   },
   "anilist-199588": {
     "id": "anilist-199588",
-    "titleZh": "沒有辣妹會對阿宅溫柔!?",
+    "titleZh": "哪裡有溫柔對待阿宅的辣妹！？",
     "titleJa": "オタクに優しいギャルはいない!?",
     "yearSeason": "2026 春",
     "hasCorrespondingData": true,
@@ -1530,7 +1530,7 @@
   },
   "anilist-200769": {
     "id": "anilist-200769",
-    "titleZh": "最強的職業不是勇者也不是賢者好像是鑑定士(偽)的樣子?",
+    "titleZh": "最強的職業不是勇者也不是賢者好像是鑑定士（暫定）的樣子",
     "titleJa": "最強の職業は勇者でも賢者でもなく鑑定士（仮）らしいですよ？",
     "yearSeason": "2026 春",
     "hasCorrespondingData": true,
@@ -1574,7 +1574,7 @@
   },
   "anilist-192808": {
     "id": "anilist-192808",
-    "titleZh": "自稱惡役大小姐的婚約者觀察記錄。",
+    "titleZh": "自稱惡役千金的未婚妻觀察紀錄。",
     "titleJa": "自称悪役令嬢な婚約者の観察記録。",
     "yearSeason": "2026 春",
     "hasCorrespondingData": true,
@@ -2828,7 +2828,7 @@
   },
   "anilist-186190": {
     "id": "anilist-186190",
-    "titleZh": "小阿爾瑪想要成為家人",
+    "titleZh": "阿爾瑪醬想成為家人",
     "titleJa": "アルマちゃんは家族になりたい",
     "yearSeason": "2025 秋",
     "hasCorrespondingData": true,
@@ -3202,7 +3202,7 @@
   },
   "anilist-169420": {
     "id": "anilist-169420",
-    "titleZh": "渡君的XX即將崩壞",
+    "titleZh": "渡同學的××瀕臨崩壞",
     "titleJa": "渡くんの××が崩壊寸前",
     "yearSeason": "2025 夏",
     "hasCorrespondingData": true,
@@ -3825,7 +3825,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "日々は過ぎれど飯うまし",
     "bgmId": "531159",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-181182": {
     "id": "anilist-181182",
@@ -5101,7 +5101,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "杖と剣のウィストリア",
     "bgmId": "479477",
-    "streamingsCount": 11
+    "streamingsCount": 12
   },
   "anilist-171457": {
     "id": "anilist-171457",
@@ -5750,7 +5750,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Lv2からチートだった元勇者候補のまったり異世界ライフ",
     "bgmId": "459725",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-158417": {
     "id": "anilist-158417",
@@ -8852,7 +8852,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "大雪海のカイナ",
     "bgmId": "366250",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-125869": {
     "id": "anilist-125869",
@@ -13846,7 +13846,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版ポケットモンスター ココ",
     "bgmId": "298119",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-117755": {
     "id": "anilist-117755",
@@ -16618,7 +16618,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ミュウツーの逆襲 EVOLUTION",
     "bgmId": "256283",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-106894": {
     "id": "anilist-106894",
@@ -17905,7 +17905,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "SSSS.GRIDMAN",
     "bgmId": "218712",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-101316": {
     "id": "anilist-101316",
@@ -18840,7 +18840,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 ポケットモンスター みんなの物語",
     "bgmId": "231970",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-101382": {
     "id": "anilist-101382",
@@ -19141,14 +19141,14 @@
   },
   "anilist-100673": {
     "id": "anilist-100673",
-    "titleZh": "檜曾根與間租譚",
+    "titleZh": "飛龍女孩",
     "titleJa": "ひそねとまそたん",
     "yearSeason": "2018 春",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ひそねとまそたん",
     "bgmId": "231474",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-101924": {
     "id": "anilist-101924",
@@ -20875,7 +20875,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版ポケットモンスター キミにきめた!",
     "bgmId": "202242",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-97979": {
     "id": "anilist-97979",
@@ -21931,7 +21931,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "けものフレンズ",
     "bgmId": "176478",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-97665": {
     "id": "anilist-97665",
@@ -22481,7 +22481,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ポケットモンスター サン＆ムーン",
     "bgmId": "192680",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-21764": {
     "id": "anilist-21764",
@@ -26727,7 +26727,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "SHIROBAKO",
     "bgmId": "110467",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-20646": {
     "id": "anilist-20646",

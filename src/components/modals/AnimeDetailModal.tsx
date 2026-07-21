@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { X, Star, Clock, Film, Play, ExternalLink, Loader2, Heart, Check } from 'lucide-react';
+import { X, Star, Clock, Film, Play, Layers, Loader2, Heart, Check } from 'lucide-react';
 import type { Anime } from '@/types';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -251,7 +251,7 @@ export const AnimeDetailModal: React.FC = () => {
                     className="modal-badge clickable-badge"
                     onClick={(e) => handleBadgeClick(e, 'source')}
                   >
-                    <ExternalLink size={14} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
+                    <Layers size={14} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
                     <span className="modal-badge-truncate">{getSourceTranslation(richDetail.source, language)}</span>
                     {tooltip === 'source' && (
                       <div className="badge-tooltip">{getSourceTranslation(richDetail.source, language)}</div>

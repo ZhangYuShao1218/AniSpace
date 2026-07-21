@@ -587,35 +587,37 @@
   .modal-top-hero {
     flex-direction: row; /* Horizontal layout for cover and info */
     align-items: stretch; /* Stretch to match cover height */
-    gap: 1rem;
+    gap: clamp(0.75rem, 3.5vw, 1.25rem);
   }
 
   /* Cover image smaller */
   .modal-cover-wrapper {
-    width: 140px; /* Enlarge per request */
+    width: clamp(120px, 35vw, 175px);
+    aspect-ratio: 1 / 1.45;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border-radius: var(--radius-lg); /* Reverted to lg to match previous 140px */
+    border-radius: var(--radius-lg);
     flex-shrink: 0;
-    background: transparent; /* Ensure no yellow background shows through */
-    border: none; /* Remove any desktop border that might look yellow */
+    background: transparent;
+    border: none;
   }
 
   .modal-cover-img {
-    height: 200px;
+    height: 100%;
   }
 
   /* Info area */
   .modal-meta-info {
-    gap: 0.5rem;
+    gap: clamp(0.4rem, 1.5vw, 0.65rem);
     align-items: flex-start; /* Left align */
     text-align: left;
     padding-right: 0; /* Remove right padding since close btn is absolute */
-    width: calc(100% - 140px - 1rem); /* ensure no overflow */
+    flex: 1;
+    min-width: 0;
   }
 
   /* Title adjustment */
   .modal-title-zh {
-    font-size: 1.15rem;
+    font-size: clamp(1.1rem, 4.5vw, 1.35rem);
     height: auto; /* Let it wrap naturally */
     min-height: 0;
     line-height: 1.3;
@@ -624,9 +626,9 @@
     display: flex;
     align-items: center; /* Center text vertically in the space */
   }
-  .modal-title-zh.long-title { font-size: 1.05rem; }
-  .modal-title-zh.extra-long-title { font-size: 0.95rem; }
-  .modal-title-zh.ultra-long-title { font-size: 0.85rem; }
+  .modal-title-zh.long-title { font-size: clamp(1rem, 4vw, 1.2rem); }
+  .modal-title-zh.extra-long-title { font-size: clamp(0.9rem, 3.5vw, 1.1rem); }
+  .modal-title-zh.ultra-long-title { font-size: clamp(0.8rem, 3vw, 1rem); }
   
   .title-text-clamp {
     -webkit-line-clamp: 4 !important; /* Max 4 lines on mobile */
@@ -634,23 +636,23 @@
 
   /* Badges */
   .modal-badges-row {
-    gap: 0.4rem;
+    gap: clamp(0.35rem, 1.5vw, 0.5rem);
     margin-top: 0;
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
 
   .modal-badge-truncate {
-    max-width: 45px; /* Reduced to ensure 2 badges fit with some spacing on small screens */
+    max-width: clamp(45px, 15vw, 60px); /* Adjust max-width scaling */
   }
 
   .modal-badge {
-    padding: 0.4rem 0.8rem 0.4rem 0.5rem; /* Increased right by 3px */
-    font-size: 0.85rem;
+    padding: clamp(0.3rem, 1.2vw, 0.5rem) clamp(0.5rem, 2vw, 0.8rem) clamp(0.3rem, 1.2vw, 0.5rem) clamp(0.4rem, 1.5vw, 0.6rem);
+    font-size: clamp(0.8rem, 3.2vw, 0.95rem);
   }
   .modal-badge svg {
-    width: 12px;
-    height: 12px;
+    width: clamp(12px, 3.5vw, 14px);
+    height: clamp(12px, 3.5vw, 14px);
   }
 
   .badge-tooltip {
@@ -695,33 +697,33 @@
   .modal-action-row {
     display: flex;
     flex-wrap: nowrap;
-    gap: 0.5rem;
+    gap: clamp(0.4rem, 1.8vw, 0.6rem);
     margin-top: 0;
     margin-bottom: 5px; /* Align slightly above the bottom of the cover image */
     justify-content: flex-start;
   }
 
   .circle-action-btn {
-    width: 36px;
-    height: 36px;
+    width: clamp(34px, 10vw, 42px);
+    height: clamp(34px, 10vw, 42px);
   }
   .circle-action-btn svg {
-    width: 16px;
-    height: 16px;
+    width: clamp(16px, 5vw, 20px);
+    height: clamp(16px, 5vw, 20px);
   }
 
   .rect-action-btn {
-    height: 36px;
-    padding: 0 10px;
-    font-size: 0.8rem;
+    height: clamp(34px, 10vw, 42px);
+    padding: 0 clamp(8px, 2.5vw, 14px);
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.3rem; /* Add some space between icon and text */
   }
   .rect-action-btn svg {
-    width: 16px;
-    height: 16px;
+    width: clamp(16px, 5vw, 20px);
+    height: clamp(16px, 5vw, 20px);
   }
 
   /* Sections */

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Star, Clock, Film, ChevronLeft, ExternalLink, Loader2, Play, Heart, Check } from 'lucide-react';
+import { Star, Clock, Film, ChevronLeft, Layers, Loader2, Play, Heart, Check } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
@@ -100,7 +100,7 @@ const AnimeDetailPage: React.FC = () => {
               )}
               {richDetail.source && (
                 <span className="detail-badge">
-                  <ExternalLink size={14} style={{ color: 'var(--accent-color)' }} />
+                  <Layers size={14} style={{ color: 'var(--accent-color)' }} />
                   {richDetail.source}
                 </span>
               )}

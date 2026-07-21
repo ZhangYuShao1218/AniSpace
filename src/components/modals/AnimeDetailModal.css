@@ -215,6 +215,45 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.clickable-badge {
+  position: relative;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+.clickable-badge:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--accent-color);
+}
+
+.badge-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass-light);
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  pointer-events: none;
+  font-weight: normal;
+}
+
+.modal-badge-truncate {
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
 .modal-badge.rating {
   background: rgba(251, 191, 36, 0.15);
   border-color: rgba(251, 191, 36, 0.45);
@@ -226,9 +265,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.25rem;
+  margin-top: calc(0.25rem - 4px);
+  padding-top: 4px;
   justify-content: flex-start;
-  height: 4.6rem;
+  height: calc(4.6rem + 4px);
   align-content: flex-start;
   overflow: hidden;
 }
@@ -282,6 +322,18 @@
   background: rgba(255, 77, 79, 0.15);
   border-color: rgba(255, 77, 79, 0.4);
   color: #ff4d4f;
+}
+
+[data-theme="light"] .circle-action-btn.active {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #059669; /* Darker green for contrast on light bg */
+}
+
+[data-theme="light"] .circle-action-btn.active-pink {
+  background: rgba(255, 77, 79, 0.1);
+  border-color: rgba(255, 77, 79, 0.3);
+  color: #cf1322; /* Darker red for contrast on light bg */
 }
 
 .circle-action-btn.youtube:hover {
@@ -431,7 +483,7 @@
   transform: translateY(-2px) scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .anime-detail-modal-overlay {
     padding: 0.75rem;
   }

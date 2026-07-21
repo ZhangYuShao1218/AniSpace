@@ -44,6 +44,18 @@ export const AnimeDetailModal: React.FC = () => {
   const location = useLocation();
   const { allAnime, watchedMap, watchedIdsSet, planToWatchIdsSet, handleSaveReview, handlePlanToWatchToggle } = useAnime();
   const { language, t, tCover, tGenre, tYearSeason } = useLanguage();
+  const [tooltip, setTooltip] = useState<string | null>(null);
+
+  const handleBadgeClick = useCallback((e: React.MouseEvent, type: string) => {
+    e.stopPropagation();
+    setTooltip(prev => prev === type ? null : type);
+  }, []);
+
+  useEffect(() => {
+    const handleClick = () => setTooltip(null);
+    window.addEventListener('click', handleClick);
+    return () => window.removeEventListener('click', handleClick);
+  }, []);
 
   useEffect(() => {
     // Determine if scrollbar is present to prevent layout shift
@@ -193,7 +205,7 @@ export const AnimeDetailModal: React.FC = () => {
         }
       }}
     >
-      <div className="anime-detail-modal-card" onClick={e => e.stopPropagation()}>
+      <div className="anime-detail-modal-card" onClick={(e) => { e.stopPropagation(); setTooltip(null); }}>
         <button className="anime-detail-modal-close" onClick={handleClose} title="關閉視窗 (ESC)">
           <X size={20} />
         </button>
@@ -228,15 +240,27 @@ export const AnimeDetailModal: React.FC = () => {
             {(richDetail.studio || richDetail.source) && (
               <div className="modal-badges-row">
                 {richDetail.studio && richDetail.studio !== '官方授權播出' && (
-                  <span className="modal-badge">
-                    <Film size={14} style={{ color: 'var(--accent-color)' }} />
-                    {richDetail.studio}
+                  <span 
+                    className="modal-badge clickable-badge"
+                    onClick={(e) => handleBadgeClick(e, 'studio')}
+                  >
+                    <Film size={14} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
+                    <span className="modal-badge-truncate">{richDetail.studio}</span>
+                    {tooltip === 'studio' && (
+                      <div className="badge-tooltip">{richDetail.studio}</div>
+                    )}
                   </span>
                 )}
                 {richDetail.source && (
-                  <span className="modal-badge">
-                    <BookOpen size={14} style={{ color: 'var(--accent-color)' }} />
-                    {getSourceTranslation(richDetail.source, language)}
+                  <span 
+                    className="modal-badge clickable-badge"
+                    onClick={(e) => handleBadgeClick(e, 'source')}
+                  >
+                    <BookOpen size={14} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
+                    <span className="modal-badge-truncate">{getSourceTranslation(richDetail.source, language)}</span>
+                    {tooltip === 'source' && (
+                      <div className="badge-tooltip">{getSourceTranslation(richDetail.source, language)}</div>
+                    )}
                   </span>
                 )}
               </div>
@@ -377,6 +401,7 @@ export const AnimeDetailModal: React.FC = () => {
           )}
         </div>
       </div>
+
       {/* 疊加在詳細視窗上的評分短評視窗 (ReviewModal 具有 z-index: 2000) */}
       <ReviewModal
         isOpen={isReviewModalOpen}

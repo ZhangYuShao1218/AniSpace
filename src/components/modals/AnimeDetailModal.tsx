@@ -65,6 +65,14 @@ export const AnimeDetailModal: React.FC = () => {
 
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   
+  // Scroll to top when anime changes
+  const modalScrollRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (modalScrollRef.current) {
+      modalScrollRef.current.scrollTop = 0;
+    }
+  }, [id]);
+  
   // Drag to scroll logic
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -205,7 +213,7 @@ export const AnimeDetailModal: React.FC = () => {
           <X size={20} />
         </button>
 
-        <div className="modal-scroll-content">
+        <div className="modal-scroll-content" ref={modalScrollRef}>
           {/* Top Hero Section */}
           <div className="modal-top-hero">
             <div className="modal-cover-wrapper">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Star, Clock, Film, ChevronLeft, Layers, Loader2, Play, Heart, Check } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
@@ -12,6 +12,10 @@ const AnimeDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { allAnime, watchedMap, watchedIdsSet, planToWatchIdsSet, handleSaveReview, handlePlanToWatchToggle } = useAnime();
   const { tCover, tGenre, tYearSeason, t } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
 

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Star, Clock, Film, ChevronLeft, ExternalLink, Loader2, Play, Heart, Check, Calendar } from 'lucide-react';
+import { Star, Clock, Film, ChevronLeft, ExternalLink, Loader2, Play, Heart, Check, Calendar, BookOpen, Bookmark, PlayCircle } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
 import ReviewModal from '@/components/modals/ReviewModal';
+import { getPlatformIcon } from '@/components/core/PlatformIcon';
 import './AnimeDetailPage.css';
 
 const FREE_SITES = new Set([
@@ -44,13 +45,21 @@ const AnimeDetailPage: React.FC = () => {
   const safeStreamings = Array.isArray(anime.streamings) ? anime.streamings : [];
   const watchedData = watchedMap.get(anime.id);
 
-  let formattedStartDate = anime.yearSeason;
+  let displayTime = anime.yearSeason;
+  if (displayTime && /^\d{5}$/.test(displayTime)) {
+    const y = displayTime.substring(0, 4);
+    const s = displayTime.substring(4, 5);
+    const seasonMap: Record<string, string> = { '1': '春', '2': '夏', '3': '秋', '4': '冬' };
+    displayTime = `${y} ${seasonMap[s] || s}`;
+  }
+  displayTime = tYearSeason(displayTime);
+
   if (anime.startDate && anime.startDate.year) {
     const y = anime.startDate.year;
     const m = anime.startDate.month ? String(anime.startDate.month).padStart(2, '0') : '';
     const d = anime.startDate.day ? String(anime.startDate.day).padStart(2, '0') : '';
-    if (y && m && d) formattedStartDate = `${y}-${m}-${d} 首播`;
-    else if (y && m) formattedStartDate = `${y}年${m}月 首播`;
+    if (y && m && d) displayTime = `${y}-${m}-${d} 首播`;
+    else if (y && m) displayTime = `${y}年${m}月 首播`;
   }
 
   return (
@@ -88,22 +97,18 @@ const AnimeDetailPage: React.FC = () => {
             <div className="detail-badges-row" style={{ marginTop: '0.5rem' }}>
               <span className="detail-badge">
                 <Clock size={14} style={{ color: 'var(--accent-color)' }} />
-                {tYearSeason(anime.yearSeason)}
+                {displayTime}
               </span>
-              <span className="detail-badge">
-                <Calendar size={14} style={{ color: 'var(--accent-color)' }} />
-                {formattedStartDate}
-              </span>
-              {richDetail.studio && (
+              {richDetail.studio && richDetail.studio !== '官方授權播出' && (
                 <span className="detail-badge">
                   <Film size={14} style={{ color: 'var(--accent-color)' }} />
                   {richDetail.studio}
                 </span>
               )}
-              {richDetail.rating && (
-                <span className="detail-badge rating">
-                  <Star size={14} fill="#fbbf24" />
-                  <span>{richDetail.rating}</span>
+              {richDetail.source && (
+                <span className="detail-badge">
+                  <BookOpen size={14} style={{ color: 'var(--accent-color)' }} />
+                  {richDetail.source}
                 </span>
               )}
             </div>
@@ -114,74 +119,59 @@ const AnimeDetailPage: React.FC = () => {
               ))}
             </div>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', marginTop: '0.85rem' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', alignItems: 'center', marginTop: '0.85rem' }}>
               <button
                 type="button"
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '0.65rem', padding: '0.8rem 1.6rem',
-                  borderRadius: 'var(--radius-lg)', fontSize: '1rem', fontWeight: 700, cursor: 'pointer',
-                  background: isWatched ? 'rgba(16, 185, 129, 0.2)' : 'var(--accent-gradient)',
-                  color: isWatched ? '#34d399' : '#ffffff',
-                  border: isWatched ? '1px solid rgba(16, 185, 129, 0.5)' : '1px solid rgba(255, 255, 255, 0.3)',
-                  boxShadow: '0 4px 18px rgba(0, 0, 0, 0.3)', transition: 'all 0.2s'
-                }}
+                className={`circle-action-btn ${isWatched ? 'active' : ''}`}
                 onClick={() => setIsReviewModalOpen(true)}
+                title={isWatched ? '查看/修改短評' : '加入已看短評'}
               >
-                {isWatched ? (
-                  <>
-                    <Star size={18} fill="#34d399" style={{ color: '#34d399' }} />
-                    <span>查看 / 修改評價 {watchedData?.userRating ? `(★ ${watchedData.userRating})` : ''}</span>
-                  </>
-                ) : (
-                  <>
-                    <Check size={18} />
-                    <span>加入已看短評</span>
-                  </>
-                )}
+                <Bookmark size={20} className={isWatched ? 'fill-current' : ''} />
               </button>
 
               <button
                 type="button"
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '0.65rem', padding: '0.8rem 1.6rem',
-                  borderRadius: 'var(--radius-lg)', fontSize: '1rem', fontWeight: 700, cursor: 'pointer',
-                  background: isPlanToWatch ? 'rgba(236, 72, 153, 0.2)' : 'var(--bg-glass)',
-                  color: isPlanToWatch ? '#f472b6' : 'var(--text-primary)',
-                  border: isPlanToWatch ? '1px solid rgba(236, 72, 153, 0.6)' : '1px solid var(--border-glass-light)',
-                  transition: 'all 0.2s'
-                }}
+                className={`circle-action-btn ${isPlanToWatch ? 'active-pink' : ''}`}
                 onClick={() => handlePlanToWatchToggle(anime)}
+                title={isPlanToWatch ? '已在觀看計劃' : '加入觀看計劃'}
               >
-                <Heart size={18} className={isPlanToWatch ? 'heart-fill' : ''} />
-                <span>{isPlanToWatch ? '已在觀看計劃' : '加入觀看計劃'}</span>
+                <Heart size={20} className={isPlanToWatch ? 'fill-current' : ''} />
               </button>
+
+              {richDetail.trailerYoutubeId && (
+                <button
+                  type="button"
+                  className="circle-action-btn youtube"
+                  onClick={() => window.open(`https://www.youtube.com/watch?v=${richDetail.trailerYoutubeId}`, '_blank')}
+                  title="觀看 PV / 預告"
+                >
+                  <PlayCircle size={20} />
+                </button>
+              )}
             </div>
           </div>
         </div>
 
         {/* Synopsis Section */}
         <div className="detail-synopsis-section">
-          <h3><Star size={18} style={{ color: 'var(--accent-color)' }} /> 劇情簡介 / Story Synopsis</h3>
+          <h3><Star size={18} style={{ color: 'var(--accent-color)' }} /> 故事簡介</h3>
           <p className="detail-synopsis-text">
             {richDetail.loading ? (
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)' }}>
                 <Loader2 size={16} className="animate-spin" /> 正在讀取權威動畫資料庫之劇情概要與最新製作團隊資訊...
               </span>
             ) : (
-              richDetail.synopsis || '暫無該動畫的詳細劇情概要，請點擊下方官方授權平台直接前往觀看。'
+              richDetail.synopsis || '尚未收錄'
             )}
           </p>
         </div>
 
         {/* Official Streaming Links */}
-        <div className="detail-streaming-section">
-          <h3><Film size={18} style={{ color: 'var(--accent-color)' }} /> 官方正版授權線上看 ({safeStreamings.length})</h3>
-          {safeStreamings.length === 0 ? (
-            <p style={{ color: 'var(--text-muted)' }}>目前資料庫尚未收錄該作品的正版授權播放位址。</p>
-          ) : (
+        {safeStreamings.length > 0 && (
+          <div className="detail-streaming-section">
+            <h3 style={{ marginBottom: '1rem' }}><Film size={18} style={{ color: 'var(--accent-color)' }} /> 官方授權平台</h3>
             <div className="detail-streaming-grid">
               {safeStreamings.map((st, idx) => {
-                const isFree = FREE_SITES.has(st.site);
                 return (
                   <a
                     key={`${st.site}-${idx}`}
@@ -189,23 +179,17 @@ const AnimeDetailPage: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="detail-streaming-link"
+                    title={st.name || st.site}
                   >
-                    <Play size={16} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
-                    <div style={{ flex: 1, overflow: 'hidden' }}>
-                      <div style={{ fontSize: '0.95rem', fontWeight: 700, textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' }}>
-                        {st.name || st.site}
-                      </div>
-                      <div style={{ fontSize: '0.75rem', color: isFree ? '#4ade80' : 'var(--text-muted)' }}>
-                        {isFree ? '免費 / 首播' : '付費會員'}
-                      </div>
+                    <div className="platform-icon-wrapper">
+                      {getPlatformIcon(st.site, 32)}
                     </div>
-                    <ExternalLink size={14} style={{ opacity: 0.6, flexShrink: 0 }} />
                   </a>
                 );
               })}
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       <ReviewModal

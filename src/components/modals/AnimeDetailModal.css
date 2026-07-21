@@ -231,19 +231,17 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--bg-primary);
-  background-image: linear-gradient(var(--bg-glass-active), var(--bg-glass-active));
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 12px rgba(99, 102, 241, 0.15);
   padding: 6px 12px;
   border-radius: 6px;
   color: var(--text-primary);
   font-size: 0.85rem;
   z-index: 9999;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   white-space: nowrap;
   pointer-events: none;
-  font-weight: normal;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .modal-badge-truncate {

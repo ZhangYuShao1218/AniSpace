@@ -700,26 +700,26 @@
   }
 
   .circle-action-btn {
-    width: clamp(34px, 10vw, 52px);
-    height: clamp(34px, 10vw, 52px);
+    width: clamp(28px, 8vw, 42px);
+    height: clamp(28px, 8vw, 42px);
   }
   .circle-action-btn svg {
-    width: clamp(16px, 5vw, 24px);
-    height: clamp(16px, 5vw, 24px);
+    width: clamp(14px, 4.5vw, 20px);
+    height: clamp(14px, 4.5vw, 20px);
   }
 
   .rect-action-btn {
-    height: clamp(34px, 10vw, 52px);
-    padding: 0 clamp(8px, 2.5vw, 18px);
-    font-size: clamp(0.75rem, 3vw, 1.1rem);
+    height: clamp(28px, 8vw, 42px);
+    padding: 0 clamp(6px, 2.5vw, 16px);
+    font-size: clamp(0.7rem, 3vw, 1.05rem);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.3rem; /* Add some space between icon and text */
   }
   .rect-action-btn svg {
-    width: clamp(16px, 5vw, 24px);
-    height: clamp(16px, 5vw, 24px);
+    width: clamp(14px, 4.5vw, 20px);
+    height: clamp(14px, 4.5vw, 20px);
   }
 
   /* Sections */

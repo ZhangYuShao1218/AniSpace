@@ -5,6 +5,7 @@ import { X, Star, Clock, Film, Play, Layers, Loader2, Heart, Check } from 'lucid
 import type { Anime } from '@/types';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useAdMob } from '@/contexts/AdMobContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
 import ReviewModal from '@/components/modals/ReviewModal';
 import { getPlatformIcon } from '@/components/core/PlatformIcon';
@@ -53,15 +54,19 @@ export const AnimeDetailModal: React.FC = () => {
     return () => window.removeEventListener('click', handleClick);
   }, []);
 
+  const { hideAd, showAd } = useAdMob();
+
   useEffect(() => {
     // Determine if scrollbar is present to prevent layout shift
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
     document.body.classList.add('modal-open');
+    hideAd();
     return () => {
       document.body.classList.remove('modal-open');
+      showAd();
     };
-  }, []);
+  }, [hideAd, showAd]);
 
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   

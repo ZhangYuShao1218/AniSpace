@@ -230,10 +230,10 @@
   bottom: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
-  background: var(--bg-glass);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--border-glass-light);
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 6px 12px;
   border-radius: 6px;
   color: var(--text-primary);
@@ -544,11 +544,8 @@
     to { transform: translateY(100%); opacity: 0; }
   }
 
-  .anime-detail-modal-card.slide-up {
+  .anime-detail-modal-card {
     animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-  .anime-detail-modal-card.slide-down {
-    animation: slideDown 0.25s cubic-bezier(0.4, 0, 1, 1) forwards;
   }
 
   /* Add a visual drag handle for bottom sheet feel */

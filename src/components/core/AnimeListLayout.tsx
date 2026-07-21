@@ -104,8 +104,13 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     return getCorrectedTitle(baseTitle, anime.id);
   }, [language, getCorrectedTitle]);
 
+  const gridRef = React.useRef<HTMLDivElement>(null);
+
   const handlePageChange = useCallback((page: number) => {
     if (page !== currentPage) {
+      if (gridRef.current) {
+        gridRef.current.style.minHeight = `${gridRef.current.offsetHeight}px`;
+      }
       setCurrentPage(page);
     }
     
@@ -119,6 +124,12 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
         } else {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        setTimeout(() => {
+          if (gridRef.current) {
+            gridRef.current.style.minHeight = '';
+          }
+        }, 800);
       }, 30);
     });
   }, [currentPage, setCurrentPage]);
@@ -193,7 +204,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
         <div id="main-content">
           <AdBanner adSlot="3811211519" />
           
-          <div className="anime-grid">
+          <div className="anime-grid" ref={gridRef}>
             {paginatedData.map((anime, index) => (
               <React.Fragment key={anime.id}>
                 {/* 插入聯盟行銷原生廣告卡片 (第 11 格) */}

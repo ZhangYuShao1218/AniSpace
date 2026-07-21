@@ -79,8 +79,7 @@ const AllAnimePage = () => {
     const genres = new Set<string>();
     allAnime.forEach(a => {
       (Array.isArray(a.genres) ? a.genres : []).forEach(g => {
-        const norm = normalizeGenre(g);
-        if (norm && !NSFW_GENRES.includes(norm)) genres.add(norm);
+        if (g && !NSFW_GENRES.includes(g)) genres.add(g);
       });
     });
     return Array.from(genres).sort();
@@ -88,6 +87,7 @@ const AllAnimePage = () => {
 
   const filteredData = useMemo(() => {
     const nextSeason = getRelativeSeasonString(1);
+    const normalizedSelectedGenres = selectedGenres.map(sg => normalizeGenre(sg));
 
     let result = allAnime.filter(anime => {
       // Hide next season anime by default UNLESS explicitly selected or searching
@@ -104,11 +104,11 @@ const AllAnimePage = () => {
           matchYear = anime.yearSeason === selectedYear;
         }
       }
-      const safeGenres = (Array.isArray(anime.genres) ? anime.genres : []).map(normalizeGenre);
-      const matchGenre = selectedGenres.length === 0 ? true : selectedGenres.some(sg => {
-        const normSg = normalizeGenre(sg);
-        if (normSg === '福利') return safeGenres.includes('福利') || safeGenres.includes('Hentai') || safeGenres.includes('Ecchi') || safeGenres.includes('紳士');
-        return safeGenres.includes(normSg);
+      
+      const safeGenres = Array.isArray(anime.genres) ? anime.genres : [];
+      const matchGenre = normalizedSelectedGenres.length === 0 ? true : normalizedSelectedGenres.some(sg => {
+        if (sg === '福利') return safeGenres.includes('福利') || safeGenres.includes('Hentai') || safeGenres.includes('Ecchi') || safeGenres.includes('紳士');
+        return safeGenres.includes(sg);
       });
       const trimmedQuery = searchQuery.trim().toLowerCase();
       const matchSearch = trimmedQuery ? (

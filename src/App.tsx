@@ -9,6 +9,7 @@ import AllAnimePage from './pages/AllAnimePage';
 import Footer from '@/components/layout/Footer';
 import { ShareProgressPill } from '@/components/share/ShareProgressPill';
 import TutorialModal from '@/components/modals/TutorialModal';
+import { AnimeDetailModal } from '@/components/modals/AnimeDetailModal';
 import { Loader2 } from 'lucide-react';
 
 const PlanToWatchPage = lazy(() => import('./pages/PlanToWatchPage'));
@@ -16,7 +17,6 @@ const WatchedPage = lazy(() => import('./pages/WatchedPage'));
 const GamerAuditPage = lazy(() => import('./pages/GamerAuditPage').then(m => ({ default: m.GamerAuditPage || (m as any).default })));
 const InfoCenterPage = lazy(() => import('./pages/InfoCenterPage'));
 const AnimeDetailPage = lazy(() => import('./pages/AnimeDetailPage'));
-const AnimeDetailModal = lazy(() => import('./components/modals/AnimeDetailModal').then(m => ({ default: m.AnimeDetailModal || (m as any).default })));
 
 const PageLoader = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '400px' }}>

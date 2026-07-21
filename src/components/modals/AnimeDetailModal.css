@@ -205,9 +205,9 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.4rem 0.85rem;
+  padding: 0.5rem 0.85rem;
   border-radius: 9999px;
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   font-weight: 600;
   background: var(--bg-glass);
   border: 1px solid var(--border-glass-light);
@@ -273,6 +273,10 @@
   overflow: hidden;
 }
 
+.mobile-only-genres {
+  display: none;
+}
+
 .modal-genre-tag {
   padding: 0.35rem 0.75rem;
   border-radius: var(--radius-md);
@@ -306,8 +310,16 @@
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.circle-action-btn:hover {
-  transform: translateY(-2px) scale(1.05);
+@media (hover: hover) {
+  .circle-action-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    background: var(--bg-glass-hover);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.circle-action-btn:active {
+  transform: translateY(0) scale(0.95);
   background: var(--bg-glass-hover);
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -336,7 +348,15 @@
   color: #cf1322; /* Darker red for contrast on light bg */
 }
 
-.circle-action-btn.youtube:hover {
+@media (hover: hover) {
+  .circle-action-btn.youtube:hover {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #ef4444;
+  }
+}
+
+.circle-action-btn.youtube:active {
   background: rgba(239, 68, 68, 0.15);
   border-color: rgba(239, 68, 68, 0.4);
   color: #ef4444;
@@ -359,13 +379,27 @@
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.rect-action-btn:hover {
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .rect-action-btn:hover {
+    transform: translateY(-2px);
+    background: var(--bg-glass-hover);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .rect-action-btn.youtube:hover {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #ef4444;
+  }
+}
+
+.rect-action-btn:active {
+  transform: translateY(0);
   background: var(--bg-glass-hover);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.rect-action-btn.youtube:hover {
+.rect-action-btn.youtube:active {
   background: rgba(239, 68, 68, 0.15);
   border-color: rgba(239, 68, 68, 0.4);
   color: #ef4444;
@@ -376,7 +410,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  margin-top: 0.75rem;
+  margin-top: -0.16rem; /* Moved up by another ~5px */
 }
 
 .btn-modal-action {
@@ -484,37 +518,249 @@
 }
 
 @media (max-width: 767px) {
+  /* Overlay - Bottom Sheet alignment */
   .anime-detail-modal-overlay {
-    padding: 0.75rem;
+    padding: 0;
+    align-items: flex-end; /* Snap to bottom */
   }
+
+  /* Card - Bottom Sheet shape */
   .anime-detail-modal-card {
-    padding: 1.5rem;
-    max-height: 92vh;
-    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    max-height: 75vh; /* Leave top space for closing context */
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
   }
+
+  @keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0.8; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes slideDown {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(100%); opacity: 0; }
+  }
+
+  .anime-detail-modal-card.slide-up {
+    animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .anime-detail-modal-card.slide-down {
+    animation: slideDown 0.25s cubic-bezier(0.4, 0, 1, 1) forwards;
+  }
+
+  /* Add a visual drag handle for bottom sheet feel */
+  .anime-detail-modal-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 5px;
+    background: var(--border-glass);
+    border-radius: 4px;
+    z-index: 20;
+  }
+
+  /* Close button adjustment */
+  .anime-detail-modal-close {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass-light);
+  }
+
+  /* Content area padding */
+  .modal-scroll-content {
+    padding: 1.25rem;
+    padding-top: 2.2rem; /* Make room for drag handle */
+    padding-bottom: 2.5rem; /* Extra space at bottom */
+    gap: 1.25rem;
+  }
+
+  /* Top Hero Section */
   .modal-top-hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row; /* Horizontal layout for cover and info */
+    align-items: stretch; /* Stretch to match cover height */
+    gap: 1rem;
   }
+
+  /* Cover image smaller */
   .modal-cover-wrapper {
-    width: 170px;
+    width: 140px; /* Enlarge per request */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: var(--radius-lg); /* Reverted to lg to match previous 140px */
+    flex-shrink: 0;
+    background: transparent; /* Ensure no yellow background shows through */
+    border: none; /* Remove any desktop border that might look yellow */
   }
+
   .modal-cover-img {
-    height: 245px;
+    height: 200px;
   }
+
+  /* Info area */
   .modal-meta-info {
-    padding-right: 0;
+    gap: 0.5rem;
+    align-items: flex-start; /* Left align */
+    text-align: left;
+    padding-right: 0; /* Remove right padding since close btn is absolute */
+    width: calc(100% - 140px - 1rem); /* ensure no overflow */
+  }
+
+  /* Title adjustment */
+  .modal-title-zh {
+    font-size: 1.15rem;
+    height: auto; /* Let it wrap naturally */
+    min-height: 0;
+    line-height: 1.3;
+    padding-right: 1.25rem; /* Avoid close button overlap if long */
+    flex: 1; /* Take remaining space */
+    display: flex;
+    align-items: center; /* Center text vertically in the space */
+  }
+  .modal-title-zh.long-title { font-size: 1.05rem; }
+  .modal-title-zh.extra-long-title { font-size: 0.95rem; }
+  .modal-title-zh.ultra-long-title { font-size: 0.85rem; }
+  
+  .title-text-clamp {
+    -webkit-line-clamp: 4 !important; /* Max 4 lines on mobile */
+  }
+
+  /* Badges */
+  .modal-badges-row {
+    gap: 0.4rem;
+    margin-top: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .modal-badge-truncate {
+    max-width: 45px; /* Reduced to ensure 2 badges fit with some spacing on small screens */
+  }
+
+  .modal-badge {
+    padding: 0.4rem 0.8rem 0.4rem 0.5rem; /* Increased right by 3px */
+    font-size: 0.85rem;
+  }
+  .modal-badge svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .badge-tooltip {
+    /* Allow tooltips on mobile since we handle click events */
+    display: block;
+  }
+
+  /* Genres */
+  .desktop-only-genres {
+    display: none;
+  }
+  .mobile-only-genres {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 24px;
+    padding-bottom: 0.2rem;
+    margin-top: -0.25rem; /* pull up slightly closer to hero */
+    flex-shrink: 0; /* Prevent squishing overlap with section border */
+  }
+
+  .modal-genres-row {
+    height: auto !important;
+    max-height: none !important; /* Let them wrap naturally */
+    gap: 0.4rem;
+    padding-top: 0;
+    margin-top: 0;
+    justify-content: flex-start;
+    overflow: visible !important;
+  }
+
+  .modal-genre-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    display: inline-flex;
     align-items: center;
   }
-  .modal-badges-row, .modal-genres-row, .modal-action-row {
-    justify-content: center;
+
+  /* Actions */
+  .modal-action-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 5px; /* Align slightly above the bottom of the cover image */
+    justify-content: flex-start;
   }
-  .modal-title-zh {
-    font-size: 1.5rem;
+
+  .circle-action-btn {
+    width: 36px;
+    height: 36px;
   }
-  .modal-title-sub-item {
+  .circle-action-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .rect-action-btn {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    gap: 0.3rem; /* Add some space between icon and text */
+  }
+  .rect-action-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Sections */
+  .modal-section {
+    padding-top: 1.25rem;
+  }
+  .modal-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  .modal-synopsis-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Streaming */
+  .modal-streaming-grid {
+    gap: 0.6rem;
+    justify-content: flex-start;
+  }
+
+  /* Related Anime */
+  .related-anime-card-mini {
+    width: 105px; /* Smaller cards */
+  }
+  .related-anime-card-mini .related-anime-info {
+    padding: 0.5rem 0.4rem;
+  }
+  .related-anime-card-mini .related-anime-title {
+    font-size: 0.75rem;
+    min-height: 2.6em; /* Adjust to font-size */
+  }
+  .related-anime-card-mini .related-anime-season {
+    font-size: 0.65rem;
+  }
+  
+  /* Remove hero background glow for performance and cleanness on mobile */
+  .modal-top-hero::before {
+    display: none;
   }
 }
 

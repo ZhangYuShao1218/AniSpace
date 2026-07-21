@@ -2,6 +2,8 @@ export type TranslationKey = keyof typeof translations['zh-TW'];
 
 export const translations = {
   'zh-TW': {
+    synopsis: '故事簡介',
+    trailer: 'PV/預告',
     // Header & Nav
     appTitle: 'AniSpace 動畫庫',
     appSubtitle: '— 為您記錄每一場感動 —',
@@ -368,6 +370,8 @@ export const translations = {
     infoPrivacyLastUpdated: '最後更新日期：2026年7月17日'
   },
   'en': {
+    synopsis: 'Synopsis',
+    trailer: 'PV/Trailer',
     appTitle: 'AniSpace',
     appSubtitle: '— Record every touching moment —',
     navAllAnime: 'All Anime',
@@ -416,7 +420,7 @@ export const translations = {
     removeFromPlan: 'Remove from Plan',
     addToPlan: 'Add to Plan',
     viewReview: 'View Review',
-    addToWatched: 'Add to Watched',
+    addToWatched: 'Watched',
     displayName: 'Display Name',
     resetTitle: 'Reset to default title',
     save: 'Save',
@@ -721,6 +725,8 @@ export const translations = {
     infoPrivacyLastUpdated: 'Last Updated: July 17, 2026'
   },
   'ja': {
+    synopsis: 'あらすじ',
+    trailer: 'PV/予告',
     appTitle: 'AniSpace アニメ記録',
     appSubtitle: '— すべての感動を記録する —',
     navAllAnime: 'すべてのアニメ',
@@ -768,7 +774,7 @@ export const translations = {
     removeReview: '記録を削除',
     removeFromPlan: '期待リストから削除',
     addToPlan: '期待リストに追加',
-    viewReview: 'レビューを見る',
+    viewReview: 'レビュー',
     addToWatched: '記録に追加',
     displayName: '表示名',
     resetTitle: '元のタイトルに戻す',

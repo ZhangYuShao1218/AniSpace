@@ -185,8 +185,8 @@ export const AnimeDetailModal: React.FC = () => {
     const y = anime.startDate.year;
     const m = anime.startDate.month ? String(anime.startDate.month).padStart(2, '0') : '';
     const d = anime.startDate.day ? String(anime.startDate.day).padStart(2, '0') : '';
-    if (y && m && d) displayTime = `${y}-${m}-${d} 首播`;
-    else if (y && m) displayTime = `${y}年${m}月 首播`;
+    if (y && m && d) displayTime = `${y}-${m}-${d}`;
+    else if (y && m) displayTime = `${y}/${m}`;
   }
 
   const content = (
@@ -266,15 +266,15 @@ export const AnimeDetailModal: React.FC = () => {
               </div>
             )}
 
-            {/* Genres */}
-            <div className="modal-genres-row">
+            {/* Genres (Desktop) */}
+            <div className="modal-genres-row desktop-only-genres">
               {safeGenres.map(g => (
                 <span key={g} className="modal-genre-tag">{tGenre(g)}</span>
               ))}
             </div>
 
             {/* Circle Action Buttons */}
-            <div className="modal-actions-row" style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', marginTop: '0.8rem' }}>
+            <div className="modal-action-row">
               <button
                 type="button"
                 className={`circle-action-btn ${isWatched ? 'active' : ''}`}
@@ -294,23 +294,30 @@ export const AnimeDetailModal: React.FC = () => {
               </button>
 
               {richDetail.trailerYoutubeId && (
-                <button
+                <button 
                   type="button"
                   className="rect-action-btn youtube"
                   onClick={() => window.open(`https://www.youtube.com/watch?v=${richDetail.trailerYoutubeId}`, '_blank')}
-                  title="觀看 PV / 預告"
+                  title={t('trailer')}
                 >
                   <PlayCircle size={18} />
-                  <span>觀看 PV / 預告</span>
+                  <span>{t('trailer')}</span>
                 </button>
               )}
             </div>
           </div>
         </div>
 
+        {/* Genres (Mobile only, rendered below hero) */}
+        <div className="modal-genres-row mobile-only-genres">
+          {safeGenres.map(g => (
+            <span key={g} className="modal-genre-tag">{tGenre(g)}</span>
+          ))}
+        </div>
+
         {/* Synopsis Section */}
         <div className="modal-section">
-          <h3><Star size={18} style={{ color: 'var(--accent-color)' }} /> 故事簡介</h3>
+          <h3><Star size={18} style={{ color: 'var(--accent-color)' }} /> {t('synopsis')}</h3>
           <p className="modal-synopsis-text">
             {richDetail.loading ? (
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)' }}>

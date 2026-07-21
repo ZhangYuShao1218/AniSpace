@@ -1,11 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { X, Star, Clock, Film, Play, ExternalLink, Loader2, Heart, Check, Calendar } from 'lucide-react';
+import { X, Star, Clock, Film, Play, ExternalLink, Loader2, Heart, Check, Calendar, BookOpen, Bookmark, PlayCircle } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
 import ReviewModal from '@/components/modals/ReviewModal';
+import { getPlatformIcon } from '@/components/core/PlatformIcon';
 import './AnimeDetailModal.css';
 
 const FREE_SITES = new Set([
@@ -14,35 +15,118 @@ const FREE_SITES = new Set([
   'linetv', 'abema', 'bilibili_tw', 'bilibili_hk_mo_tw', 'bilibili'
 ]);
 
+const getSourceTranslation = (source: string, lang: string) => {
+  if (!source) return '';
+  const src = source.toLowerCase();
+  if (lang === 'zh-TW') {
+    if (src.includes('light novel')) return '輕小說';
+    if (src.includes('visual novel')) return '視覺小說';
+    if (src.includes('novel')) return '小說';
+    if (src.includes('manga')) return '漫畫';
+    if (src.includes('original')) return '原創';
+    if (src.includes('game')) return '遊戲';
+    if (src.includes('other')) return '其他';
+  } else if (lang === 'ja') {
+    if (src.includes('light novel')) return 'ライトノベル';
+    if (src.includes('visual novel')) return 'ビジュアルノベル';
+    if (src.includes('novel')) return '小説';
+    if (src.includes('manga')) return '漫画';
+    if (src.includes('original')) return 'オリジナル';
+    if (src.includes('game')) return 'ゲーム';
+    if (src.includes('other')) return 'その他';
+  }
+  return source;
+};
+
 export const AnimeDetailModal: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const location = useLocation();
   const { allAnime, watchedMap, watchedIdsSet, planToWatchIdsSet, handleSaveReview, handlePlanToWatchToggle } = useAnime();
-  const { tCover, tGenre, tYearSeason } = useLanguage();
+  const { language, t, tCover, tGenre, tYearSeason } = useLanguage();
+
+  useEffect(() => {
+    // Determine if scrollbar is present to prevent layout shift
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+    document.body.classList.add('modal-open');
+    return () => {
+      document.body.classList.remove('modal-open');
+    };
+  }, []);
 
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+  
+  // Drag to scroll logic
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
 
   const anime = allAnime.find(a => String(a.id) === String(id) || `anilist-${a.id}` === id || a.titleZh === id);
   const richDetail = useRichAnimeDetail(anime, true);
 
+  const displayTitle = anime ? (language === 'en' && anime.titleEn ? anime.titleEn :
+                                language === 'ja' && anime.titleJa ? anime.titleJa :
+                                anime.titleZh) : '';
+
+  let displayRating = richDetail.rating;
+  if (typeof displayRating === 'number') {
+    displayRating = (displayRating / 10).toFixed(1);
+  }
+
   const handleClose = useCallback(() => {
     const state = location.state as { backgroundLocation?: any };
     if (state?.backgroundLocation) {
-      navigate(-1);
+      navigate(state.backgroundLocation.pathname + state.backgroundLocation.search);
     } else {
       navigate('/');
     }
-  }, [location.state, navigate]);
+  }, [navigate, location.state]);
+
+  const relatedAnimeList = useMemo(() => {
+    if (!richDetail.relatedAnimeIds) return [];
+    return richDetail.relatedAnimeIds
+      .map(rid => allAnime.find(a => String(a.id) === String(rid) || `anilist-${a.id}` === String(rid)))
+      .filter((a): a is Anime => a !== undefined && String(a.id) !== String(anime?.id));
+  }, [richDetail.relatedAnimeIds, allAnime, anime?.id]);
 
   useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && !isReviewModalOpen) {
         handleClose();
       }
     };
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [handleClose, isReviewModalOpen]);
 
   if (!anime) {
@@ -71,13 +155,21 @@ export const AnimeDetailModal: React.FC = () => {
   const watchedData = watchedMap.get(anime.id);
 
   // 格式化首播日期
-  let formattedStartDate = anime.yearSeason;
+  let displayTime = anime.yearSeason;
+  if (displayTime && /^\d{5}$/.test(displayTime)) {
+    const y = displayTime.substring(0, 4);
+    const s = displayTime.substring(4, 5);
+    const seasonMap: Record<string, string> = { '1': '春', '2': '夏', '3': '秋', '4': '冬' };
+    displayTime = `${y} ${seasonMap[s] || s}`;
+  }
+  displayTime = tYearSeason(displayTime);
+
   if (anime.startDate && anime.startDate.year) {
     const y = anime.startDate.year;
     const m = anime.startDate.month ? String(anime.startDate.month).padStart(2, '0') : '';
     const d = anime.startDate.day ? String(anime.startDate.day).padStart(2, '0') : '';
-    if (y && m && d) formattedStartDate = `${y}-${m}-${d} 首播`;
-    else if (y && m) formattedStartDate = `${y}年${m}月 首播`;
+    if (y && m && d) displayTime = `${y}-${m}-${d} 首播`;
+    else if (y && m) displayTime = `${y}年${m}月 首播`;
   }
 
   const content = (
@@ -87,54 +179,49 @@ export const AnimeDetailModal: React.FC = () => {
           <X size={20} />
         </button>
 
-        {/* Top Hero Section */}
-        <div className="modal-top-hero">
-          <div className="modal-cover-wrapper">
+        <div className="modal-scroll-content">
+          {/* Top Hero Section */}
+          <div className="modal-top-hero">
+            <div className="modal-cover-wrapper">
             <img src={displayCover} alt={anime.titleZh} className="modal-cover-img" referrerPolicy="no-referrer" />
           </div>
 
           <div className="modal-meta-info">
-            {/* 三語言標題 */}
-            <h1 className="modal-title-zh">{anime.titleZh}</h1>
-            
-            <div className="modal-title-sub-row">
-              {anime.titleJa && anime.titleJa !== anime.titleZh && (
-                <div className="modal-title-sub-item">
-                  <span className="modal-lang-badge">JA</span>
-                  <span>{anime.titleJa}</span>
-                </div>
-              )}
-              {anime.titleEn && anime.titleEn !== anime.titleZh && anime.titleEn !== anime.titleJa && (
-                <div className="modal-title-sub-item">
-                  <span className="modal-lang-badge">EN</span>
-                  <span>{anime.titleEn}</span>
-                </div>
-              )}
-            </div>
+            {/* 標題 */}
+            <h1 className={`modal-title-zh ${displayTitle.length > 50 ? 'ultra-long-title' : displayTitle.length > 35 ? 'extra-long-title' : displayTitle.length > 22 ? 'long-title' : ''}`}>
+              <span className="title-text-clamp">{displayTitle}</span>
+            </h1>
 
             {/* Badges */}
             <div className="modal-badges-row">
+              {displayRating && (
+                <span className="modal-badge">
+                  <Star size={14} style={{ color: 'var(--accent-color)' }} />
+                  {displayRating}
+                </span>
+              )}
               <span className="modal-badge">
                 <Clock size={14} style={{ color: 'var(--accent-color)' }} />
-                {tYearSeason(anime.yearSeason)}
+                {displayTime}
               </span>
-              <span className="modal-badge">
-                <Calendar size={14} style={{ color: 'var(--accent-color)' }} />
-                {formattedStartDate}
-              </span>
-              {richDetail.studio && (
-                <span className="modal-badge">
-                  <Film size={14} style={{ color: 'var(--accent-color)' }} />
-                  {richDetail.studio}
-                </span>
-              )}
-              {richDetail.rating && (
-                <span className="modal-badge rating">
-                  <Star size={14} fill="#fbbf24" />
-                  <span>{richDetail.rating}</span>
-                </span>
-              )}
             </div>
+            
+            {(richDetail.studio || richDetail.source) && (
+              <div className="modal-badges-row">
+                {richDetail.studio && richDetail.studio !== '官方授權播出' && (
+                  <span className="modal-badge">
+                    <Film size={14} style={{ color: 'var(--accent-color)' }} />
+                    {richDetail.studio}
+                  </span>
+                )}
+                {richDetail.source && (
+                  <span className="modal-badge">
+                    <BookOpen size={14} style={{ color: 'var(--accent-color)' }} />
+                    {getSourceTranslation(richDetail.source, language)}
+                  </span>
+                )}
+              </div>
+            )}
 
             {/* Genres */}
             <div className="modal-genres-row">
@@ -143,61 +230,61 @@ export const AnimeDetailModal: React.FC = () => {
               ))}
             </div>
 
-            {/* 兩個入口按鈕之：詳細視窗內部加入已看按鈕 / 追番計劃按鈕 */}
-            <div className="modal-action-row">
+            {/* Circle Action Buttons */}
+            <div className="modal-actions-row" style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', marginTop: '0.8rem' }}>
               <button
                 type="button"
-                className={`btn-modal-action ${isWatched ? 'watched' : 'primary'}`}
+                className={`circle-action-btn ${isWatched ? 'active' : ''}`}
                 onClick={() => setIsReviewModalOpen(true)}
+                title={isWatched ? '編輯動畫紀錄' : '加入動畫紀錄'}
               >
-                {isWatched ? (
-                  <>
-                    <Star size={18} fill="#34d399" style={{ color: '#34d399' }} />
-                    <span>查看 / 修改評價 {watchedData?.userRating ? `(★ ${watchedData.userRating})` : ''}</span>
-                  </>
-                ) : (
-                  <>
-                    <Check size={18} />
-                    <span>加入已看短評</span>
-                  </>
-                )}
+                <Bookmark size={20} className={isWatched ? 'fill-current' : ''} />
               </button>
 
               <button
                 type="button"
-                className={`btn-modal-action secondary ${isPlanToWatch ? 'active' : ''}`}
+                className={`circle-action-btn ${isPlanToWatch ? 'active-pink' : ''}`}
                 onClick={() => handlePlanToWatchToggle(anime)}
+                title={isPlanToWatch ? '從期待動畫移除' : '加入期待動畫'}
               >
-                <Heart size={18} className={isPlanToWatch ? 'heart-fill' : ''} />
-                <span>{isPlanToWatch ? '已在觀看計劃' : '加入觀看計劃'}</span>
+                <Heart size={20} className={isPlanToWatch ? 'fill-current' : ''} />
               </button>
+
+              {richDetail.trailerYoutubeId && (
+                <button
+                  type="button"
+                  className="rect-action-btn youtube"
+                  onClick={() => window.open(`https://www.youtube.com/watch?v=${richDetail.trailerYoutubeId}`, '_blank')}
+                  title="觀看 PV / 預告"
+                >
+                  <PlayCircle size={18} />
+                  <span>觀看 PV / 預告</span>
+                </button>
+              )}
             </div>
           </div>
         </div>
 
         {/* Synopsis Section */}
         <div className="modal-section">
-          <h3><Star size={18} style={{ color: 'var(--accent-color)' }} /> 故事簡介 / Synopsis</h3>
+          <h3><Star size={18} style={{ color: 'var(--accent-color)' }} /> 故事簡介</h3>
           <p className="modal-synopsis-text">
             {richDetail.loading ? (
               <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-color)' }}>
                 <Loader2 size={16} className="animate-spin" /> 正在為您加載最新官方與權威資料庫之劇情概要...
               </span>
             ) : (
-              richDetail.synopsis || '暫無該動畫的詳細劇情概要，請點擊下方正版授權平台直接前往觀看。'
+              richDetail.synopsis || t('modalNoSynopsis')
             )}
           </p>
         </div>
 
         {/* Streaming Section */}
-        <div className="modal-section">
-          <h3><Film size={18} style={{ color: 'var(--accent-color)' }} /> 授權播放平台 ({safeStreamings.length})</h3>
-          {safeStreamings.length === 0 ? (
-            <p style={{ color: 'var(--text-muted)' }}>目前資料庫尚未收錄該作品的正版授權播放位址。</p>
-          ) : (
+        {safeStreamings.length > 0 && (
+          <div className="modal-section">
+            <h3 style={{ marginBottom: '1rem' }}><PlayCircle size={18} style={{ color: 'var(--accent-color)' }} /> {t('modalPlatforms')}</h3>
             <div className="modal-streaming-grid">
               {safeStreamings.map((st, idx) => {
-                const isFree = FREE_SITES.has(st.site);
                 return (
                   <a
                     key={`${st.site}-${idx}`}
@@ -205,25 +292,69 @@ export const AnimeDetailModal: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="modal-streaming-link"
+                    title={st.name || st.site}
                   >
-                    <Play size={16} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
-                    <div style={{ flex: 1, overflow: 'hidden' }}>
-                      <div style={{ fontSize: '0.95rem', fontWeight: 700, textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' }}>
-                        {st.name || st.site}
-                      </div>
-                      <div style={{ fontSize: '0.75rem', color: isFree ? '#4ade80' : 'var(--text-muted)' }}>
-                        {isFree ? '免費 / 首播' : '付費會員'}
-                      </div>
+                    <div className="platform-icon-wrapper">
+                      {getPlatformIcon(st.site, 32)}
                     </div>
-                    <ExternalLink size={14} style={{ opacity: 0.6, flexShrink: 0 }} />
                   </a>
                 );
               })}
             </div>
+          </div>
+        )}
+
+        {/* Related Anime Section */}
+        {relatedAnimeList.length > 0 && (
+          <div className="modal-section" style={{ marginTop: '0.5rem' }}>
+            <h3 style={{ marginBottom: '1rem' }}><Film size={18} style={{ color: 'var(--accent-color)' }} /> {t('modalRelated')}</h3>
+            <div 
+              ref={scrollRef}
+              className="related-anime-scroll-container" 
+              style={{
+                display: 'flex', gap: '0.8rem', overflowX: 'auto', paddingBottom: '1rem',
+                cursor: isDragging ? 'grabbing' : 'grab'
+              }}
+              onMouseDown={handleMouseDown}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseUp}
+              onMouseMove={handleMouseMove}
+            >
+              {relatedAnimeList.map(ra => (
+                <div 
+                  key={ra.id} 
+                  className="related-anime-card-mini"
+                  style={{ flexShrink: 0 }}
+                  onClick={(e) => {
+                    // Prevent click if we were dragging
+                    if (isDragging && Math.abs((e.pageX - (scrollRef.current?.offsetLeft || 0)) - startX) > 5) {
+                      e.preventDefault();
+                      return;
+                    }
+                    navigate(`/anime/${encodeURIComponent(ra.id)}`, { state: location.state });
+                  }}
+                  title={language === 'en' && ra.titleEn ? ra.titleEn : (language === 'ja' && ra.titleJa ? ra.titleJa : ra.titleZh)}
+                >
+                  <img 
+                    src={tCover(ra)} 
+                    alt={ra.titleZh} 
+                    className="related-anime-cover"
+                  />
+                  <div className="related-anime-info">
+                    <div className="related-anime-title">
+                      {language === 'en' && ra.titleEn ? ra.titleEn : (language === 'ja' && ra.titleJa ? ra.titleJa : ra.titleZh)}
+                    </div>
+                    {ra.yearSeason && (
+                      <div className="related-anime-season">{tYearSeason(ra.yearSeason)}</div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+            </div>
           )}
         </div>
       </div>
-
       {/* 疊加在詳細視窗上的評分短評視窗 (ReviewModal 具有 z-index: 2000) */}
       <ReviewModal
         isOpen={isReviewModalOpen}

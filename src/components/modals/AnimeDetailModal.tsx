@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { X, Star, Clock, Film, Play, ExternalLink, Loader2, Heart, Check, Calendar, BookOpen, Bookmark, PlayCircle } from 'lucide-react';
+import { X, Star, Clock, Film, Play, ExternalLink, Loader2, Heart, Check } from 'lucide-react';
+import type { Anime } from '@/types';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
@@ -9,11 +10,6 @@ import ReviewModal from '@/components/modals/ReviewModal';
 import { getPlatformIcon } from '@/components/core/PlatformIcon';
 import './AnimeDetailModal.css';
 
-const FREE_SITES = new Set([
-  'gamer', 'gamer_hk', 'muse_tw', 'muse_hk',
-  'ani_one', 'ani_one_asia', 'tropics', 'youtube',
-  'linetv', 'abema', 'bilibili_tw', 'bilibili_hk_mo_tw', 'bilibili'
-]);
 
 const getSourceTranslation = (source: string, lang: string) => {
   if (!source) return '';
@@ -169,7 +165,6 @@ export const AnimeDetailModal: React.FC = () => {
   const isPlanToWatch = planToWatchIdsSet.has(anime.id);
   const safeGenres = Array.isArray(anime.genres) ? anime.genres : [];
   const safeStreamings = Array.isArray(anime.streamings) ? anime.streamings : [];
-  const watchedData = watchedMap.get(anime.id);
 
   // 格式化首播日期
   let displayTime = anime.yearSeason;
@@ -256,7 +251,7 @@ export const AnimeDetailModal: React.FC = () => {
                     className="modal-badge clickable-badge"
                     onClick={(e) => handleBadgeClick(e, 'source')}
                   >
-                    <BookOpen size={14} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
+                    <ExternalLink size={14} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
                     <span className="modal-badge-truncate">{getSourceTranslation(richDetail.source, language)}</span>
                     {tooltip === 'source' && (
                       <div className="badge-tooltip">{getSourceTranslation(richDetail.source, language)}</div>
@@ -281,7 +276,7 @@ export const AnimeDetailModal: React.FC = () => {
                 onClick={() => setIsReviewModalOpen(true)}
                 title={isWatched ? '編輯動畫紀錄' : '加入動畫紀錄'}
               >
-                <Bookmark size={20} className={isWatched ? 'fill-current' : ''} />
+                <Check size={20} className={isWatched ? 'fill-current' : ''} />
               </button>
 
               <button
@@ -300,7 +295,7 @@ export const AnimeDetailModal: React.FC = () => {
                   onClick={() => window.open(`https://www.youtube.com/watch?v=${richDetail.trailerYoutubeId}`, '_blank')}
                   title={t('trailer')}
                 >
-                  <PlayCircle size={18} />
+                  <Play size={18} />
                   <span>{t('trailer')}</span>
                 </button>
               )}
@@ -332,7 +327,7 @@ export const AnimeDetailModal: React.FC = () => {
         {/* Streaming Section */}
         {safeStreamings.length > 0 && (
           <div className="modal-section">
-            <h3 style={{ marginBottom: '1rem' }}><PlayCircle size={18} style={{ color: 'var(--accent-color)' }} /> {t('modalPlatforms')}</h3>
+            <h3 style={{ marginBottom: '1rem' }}><Play size={18} style={{ color: 'var(--accent-color)' }} /> {t('modalPlatforms')}</h3>
             <div className="modal-streaming-grid">
               {safeStreamings.map((st, idx) => {
                 return (

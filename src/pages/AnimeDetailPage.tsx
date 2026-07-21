@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Star, Clock, Film, ChevronLeft, ExternalLink, Loader2, Play, Heart, Check, Calendar, BookOpen, Bookmark, PlayCircle } from 'lucide-react';
+import { Star, Clock, Film, ChevronLeft, ExternalLink, Loader2, Play, Heart, Check } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
 import ReviewModal from '@/components/modals/ReviewModal';
 import { getPlatformIcon } from '@/components/core/PlatformIcon';
 import './AnimeDetailPage.css';
-
-const FREE_SITES = new Set([
-  'gamer', 'gamer_hk', 'muse_tw', 'muse_hk',
-  'ani_one', 'ani_one_asia', 'tropics', 'youtube',
-  'linetv', 'abema', 'bilibili_tw', 'bilibili_hk_mo_tw', 'bilibili'
-]);
 
 const AnimeDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -43,7 +37,6 @@ const AnimeDetailPage: React.FC = () => {
   const isPlanToWatch = planToWatchIdsSet.has(anime.id);
   const safeGenres = Array.isArray(anime.genres) ? anime.genres : [];
   const safeStreamings = Array.isArray(anime.streamings) ? anime.streamings : [];
-  const watchedData = watchedMap.get(anime.id);
 
   let displayTime = anime.yearSeason;
   if (displayTime && /^\d{5}$/.test(displayTime)) {
@@ -107,7 +100,7 @@ const AnimeDetailPage: React.FC = () => {
               )}
               {richDetail.source && (
                 <span className="detail-badge">
-                  <BookOpen size={14} style={{ color: 'var(--accent-color)' }} />
+                  <ExternalLink size={14} style={{ color: 'var(--accent-color)' }} />
                   {richDetail.source}
                 </span>
               )}
@@ -126,7 +119,7 @@ const AnimeDetailPage: React.FC = () => {
                 onClick={() => setIsReviewModalOpen(true)}
                 title={isWatched ? '查看/修改短評' : '加入已看短評'}
               >
-                <Bookmark size={20} className={isWatched ? 'fill-current' : ''} />
+                <Check size={20} className={isWatched ? 'fill-current' : ''} />
               </button>
 
               <button
@@ -145,7 +138,8 @@ const AnimeDetailPage: React.FC = () => {
                   onClick={() => window.open(`https://www.youtube.com/watch?v=${richDetail.trailerYoutubeId}`, '_blank')}
                   title="觀看 PV / 預告"
                 >
-                  <PlayCircle size={20} />
+                  <Play size={18} />
+                  <span>{t('trailer' as any)}</span>
                 </button>
               )}
             </div>

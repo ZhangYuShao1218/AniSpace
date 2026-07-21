@@ -7,7 +7,7 @@ const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const MAPPING_FILE = path.join(process.cwd(), 'public', 'bangumi_mapping_record.json');
 const TRACKING_FILE = path.join(process.cwd(), 'scraper', 'synopsis_tracking.json');
 const NEWLY_FETCHED_FILE = path.join(process.cwd(), 'scraper', 'synopsis_newly_fetched.json');
-const SYNOPSIS_DIR = path.join(process.cwd(), 'public', 'synopsis');
+const SYNOPSIS_DIR = path.join(process.cwd(), 'public', 'anime_meta');
 const PROMPTS_FILE = path.join(process.cwd(), 'scraper', 'ai_synopsis_prompt.md');
 
 // Setup Google Gen AI
@@ -101,54 +101,41 @@ async function main() {
   const BATCH_SIZE = 10;
   const TOTAL_LIMIT = 30;
 
-  // Process a collected batch
+  // AI Translation Batch logic is temporarily disabled as per user request
+  // It is replaced by simply saving the fetched raw Bangumi summary to the meta json.
   async function flushBatch() {
     if (batchQueue.length === 0) return;
     
-    console.log(`\n📦 準備發送 AI 批次翻譯請求，共包含 ${batchQueue.length} 筆動畫...`);
-    const aiResults = await aiTranslateBatch(batchQueue);
+    console.log(`\n📦 準備儲存 ${batchQueue.length} 筆簡體中文簡介 (暫停 AI 翻譯)...`);
     
-    if (aiResults && Array.isArray(aiResults)) {
-      for (const res of aiResults) {
-        const id = res.id;
-        const originalAnime = batchQueue.find(b => b.id === id);
-        if (!originalAnime) continue;
-
-        // Load existing synopsis if any
-        const synopsisPath = path.join(SYNOPSIS_DIR, `${id}.json`);
-        let currentSynopsis = { zh: '', ja: '', en: '' };
-        if (fs.existsSync(synopsisPath)) {
-          currentSynopsis = { ...currentSynopsis, ...JSON.parse(fs.readFileSync(synopsisPath, 'utf-8')) };
-        }
-
-        // Apply new translations
-        currentSynopsis.zh = res.zh || '';
-        currentSynopsis.ja = res.ja || '';
-        currentSynopsis.en = res.en || '';
-
-        // Save
-        fs.writeFileSync(synopsisPath, JSON.stringify(currentSynopsis, null, 2), 'utf-8');
-        
-        // Mark as fully fetched in tracker
-        tracker[id] = { zh: true, ja: true, en: true };
-        
-        // Add to newly fetched for email
-        newlyFetched.push({ id, title: originalAnime.titleZh });
-        
-        console.log(`✅ [${id}] 成功完成批次翻譯: ${originalAnime.titleZh}`);
-        processedCount++;
+    for (const originalAnime of batchQueue) {
+      const id = originalAnime.id;
+      const synopsisPath = path.join(SYNOPSIS_DIR, `${id}.json`);
+      let currentSynopsis = {};
+      if (fs.existsSync(synopsisPath)) {
+        currentSynopsis = { ...JSON.parse(fs.readFileSync(synopsisPath, 'utf-8')) };
       }
-      // Save global tracker state
-      fs.writeFileSync(TRACKING_FILE, JSON.stringify(tracker, null, 2), 'utf-8');
-      fs.writeFileSync(NEWLY_FETCHED_FILE, JSON.stringify(newlyFetched, null, 2), 'utf-8');
-    } else {
-      console.error("❌ 此批次翻譯失敗，將跳過並在未來重新嘗試。");
+
+      // Save the raw simplified Chinese summary for future translation
+      currentSynopsis.bgmSummary = originalAnime.sourceSummary || '';
+      
+      // Save
+      fs.writeFileSync(synopsisPath, JSON.stringify(currentSynopsis, null, 2), 'utf-8');
+      
+      // Mark as fully fetched in tracker (we pretend it is fetched to prevent re-fetching Bangumi API endlessly)
+      tracker[id] = { zh: true, ja: true, en: true };
+      
+      // Add to newly fetched for email
+      newlyFetched.push({ id, title: originalAnime.titleZh });
+      
+      console.log(`✅ [${id}] 已儲存簡體中文簡介: ${originalAnime.titleZh}`);
+      processedCount++;
     }
+
+    fs.writeFileSync(TRACKING_FILE, JSON.stringify(tracker, null, 2), 'utf-8');
+    fs.writeFileSync(NEWLY_FETCHED_FILE, JSON.stringify(newlyFetched, null, 2), 'utf-8');
     
-    // 清空駐列並強制冷卻，保護 API
     batchQueue = [];
-    console.log("⏳ 冷卻中 (5 秒)...");
-    await delay(5000);
   }
 
   for (const anime of animeData) {

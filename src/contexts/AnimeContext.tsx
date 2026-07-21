@@ -3,6 +3,7 @@ import type { Anime, WatchedAnime } from '@/types';
 import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY, LAST_SYNC_TIME_KEY, CACHED_DATA_VERSION_KEY, normalizeGenre } from '@/utils/constants';
 import { cachedParseSeason } from '@/utils/season';
 import { useTitleCorrections } from '@/hooks/useTitleCorrections';
+import { clearRichDetailCache } from '@/hooks/useRichAnimeDetail';
 
 const getDbUrl = () => {
   const source = import.meta.env.VITE_DATA_SOURCE;
@@ -231,7 +232,9 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const startTime = Date.now();
     try {
       const nowMs = Date.now();
+      localStorage.removeItem('anispace_detail_cache_v4');
       localStorage.setItem(LAST_SYNC_TIME_KEY, nowMs.toString());
+      clearRichDetailCache();
       setLastSyncTime(nowMs);
       const [data, vNum] = await Promise.all([
         fetchAndMergeAnimeData(),

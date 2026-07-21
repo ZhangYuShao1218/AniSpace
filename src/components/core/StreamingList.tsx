@@ -236,10 +236,9 @@ export const StreamingList: React.FC<StreamingListProps> = ({ streamings, anime 
 
   const handleMouseLeave = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    // 將關閉延遲從 250ms 縮減至極短的 60ms (人類視覺無感知延遲)，既能支援滑鼠過渡到選單也能立刻消失
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false);
-    }, 60);
+    }, 300);
   };
 
   const renderRegionDisplay = (region: string) => {

@@ -505,58 +505,74 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
- . r e l a t e d - a n i m e - c a r d - m i n i   { 
-     d i s p l a y :   f l e x ; 
-     f l e x - d i r e c t i o n :   c o l u m n ; 
-     w i d t h :   1 1 0 p x ; 
-     c u r s o r :   p o i n t e r ; 
-     b o r d e r - r a d i u s :   8 p x ; 
-     b a c k g r o u n d :   v a r ( - - b g - g l a s s ) ; 
-     b o r d e r :   1 p x   s o l i d   v a r ( - - b o r d e r - g l a s s ) ; 
-     o v e r f l o w :   h i d d e n ; 
-     t r a n s i t i o n :   t r a n s f o r m   0 . 2 s   e a s e ,   b o x - s h a d o w   0 . 2 s   e a s e ; 
-     u s e r - s e l e c t :   n o n e ; 
- } 
- . r e l a t e d - a n i m e - c a r d - m i n i : h o v e r   { 
-     t r a n s f o r m :   t r a n s l a t e Y ( - 4 p x ) ; 
-     b o x - s h a d o w :   0   8 p x   1 6 p x   r g b a ( 0 , 0 , 0 , 0 . 4 ) ; 
-     b a c k g r o u n d :   v a r ( - - b g - g l a s s - h o v e r ) ; 
- } 
- . r e l a t e d - a n i m e - c a r d - m i n i   . r e l a t e d - a n i m e - c o v e r   { 
-     w i d t h :   1 0 0 % ; 
-     h e i g h t :   1 5 6 p x ; 
-     o b j e c t - f i t :   c o v e r ; 
-     p o i n t e r - e v e n t s :   n o n e ; 
- } 
- . r e l a t e d - a n i m e - c a r d - m i n i   . r e l a t e d - a n i m e - i n f o   { 
-     p a d d i n g :   0 . 5 r e m ; 
-     d i s p l a y :   f l e x ; 
-     f l e x - d i r e c t i o n :   c o l u m n ; 
-     g a p :   0 . 2 5 r e m ; 
-     f l e x :   1 ; 
- } 
- . r e l a t e d - a n i m e - c a r d - m i n i   . r e l a t e d - a n i m e - t i t l e   { 
-     f o n t - s i z e :   0 . 7 5 r e m ; 
-     f o n t - w e i g h t :   6 0 0 ; 
-     c o l o r :   v a r ( - - t e x t - p r i m a r y ) ; 
-     d i s p l a y :   - w e b k i t - b o x ; 
-     - w e b k i t - l i n e - c l a m p :   2 ; 
-     l i n e - c l a m p :   2 ; 
-     - w e b k i t - b o x - o r i e n t :   v e r t i c a l ; 
-     o v e r f l o w :   h i d d e n ; 
-     l i n e - h e i g h t :   1 . 3 ; 
- } 
- . r e l a t e d - a n i m e - c a r d - m i n i   . r e l a t e d - a n i m e - s e a s o n   { 
-     f o n t - s i z e :   0 . 6 5 r e m ; 
-     c o l o r :   v a r ( - - t e x t - s e c o n d a r y ) ; 
-     m a r g i n - t o p :   a u t o ; 
- } 
- . r e l a t e d - a n i m e - s c r o l l - c o n t a i n e r : : - w e b k i t - s c r o l l b a r   { 
-     h e i g h t :   6 p x ; 
- } 
- . r e l a t e d - a n i m e - s c r o l l - c o n t a i n e r : : - w e b k i t - s c r o l l b a r - t h u m b   { 
-     b a c k g r o u n d - c o l o r :   v a r ( - - b o r d e r - g l a s s ) ; 
-     b o r d e r - r a d i u s :   v a r ( - - r a d i u s - f u l l ) ; 
- } 
-  
- 
+
+/* Related Anime Section Redesign */
+.related-anime-card-mini {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  user-select: none;
+  height: 100%;
+}
+.related-anime-card-mini:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+.related-anime-image-container {
+  width: 100%;
+  aspect-ratio: 2 / 2.85;
+  overflow: hidden;
+  background: #1f2937;
+  flex-shrink: 0;
+}
+.related-anime-card-mini .related-anime-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: transform var(--transition-slow);
+}
+.related-anime-card-mini:hover .related-anime-cover {
+  transform: scale(1.05);
+}
+.related-anime-card-mini .related-anime-info {
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+  justify-content: flex-start;
+}
+.related-anime-card-mini .related-anime-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  min-height: 2.8em; /* Forces exactly 2 lines height */
+  text-align: center;
+}
+.related-anime-card-mini .related-anime-season {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: auto;
+}
+.related-anime-scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+.related-anime-scroll-container::-webkit-scrollbar-thumb {
+  background-color: var(--border-glass);
+  border-radius: var(--radius-full);
+}

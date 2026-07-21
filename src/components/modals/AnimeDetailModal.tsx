@@ -60,12 +60,14 @@ export const AnimeDetailModal: React.FC = () => {
   // Drag to scroll logic
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [hasDragged, setHasDragged] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!scrollRef.current) return;
     setIsDragging(true);
+    setHasDragged(false);
     setStartX(e.pageX - scrollRef.current.offsetLeft);
     setScrollLeft(scrollRef.current.scrollLeft);
   };
@@ -83,6 +85,9 @@ export const AnimeDetailModal: React.FC = () => {
     e.preventDefault();
     const x = e.pageX - scrollRef.current.offsetLeft;
     const walk = (x - startX) * 2;
+    if (Math.abs(walk) > 10) {
+      setHasDragged(true);
+    }
     scrollRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -173,7 +178,21 @@ export const AnimeDetailModal: React.FC = () => {
   }
 
   const content = (
-    <div className="anime-detail-modal-overlay" onClick={handleClose}>
+    <div 
+      className="anime-detail-modal-overlay" 
+      onMouseDown={(e) => {
+        if (e.target === e.currentTarget) {
+          e.currentTarget.dataset.closeable = 'true';
+        } else {
+          e.currentTarget.dataset.closeable = 'false';
+        }
+      }}
+      onClick={(e) => {
+        if (e.target === e.currentTarget && e.currentTarget.dataset.closeable === 'true') {
+          handleClose();
+        }
+      }}
+    >
       <div className="anime-detail-modal-card" onClick={e => e.stopPropagation()}>
         <button className="anime-detail-modal-close" onClick={handleClose} title="關閉視窗 (ESC)">
           <X size={20} />
@@ -326,8 +345,7 @@ export const AnimeDetailModal: React.FC = () => {
                   className="related-anime-card-mini"
                   style={{ flexShrink: 0 }}
                   onClick={(e) => {
-                    // Prevent click if we were dragging
-                    if (isDragging && Math.abs((e.pageX - (scrollRef.current?.offsetLeft || 0)) - startX) > 5) {
+                    if (hasDragged) {
                       e.preventDefault();
                       return;
                     }
@@ -335,11 +353,15 @@ export const AnimeDetailModal: React.FC = () => {
                   }}
                   title={language === 'en' && ra.titleEn ? ra.titleEn : (language === 'ja' && ra.titleJa ? ra.titleJa : ra.titleZh)}
                 >
-                  <img 
-                    src={tCover(ra)} 
-                    alt={ra.titleZh} 
-                    className="related-anime-cover"
-                  />
+                  <div className="related-anime-image-container">
+                    <img 
+                      src={tCover(ra)} 
+                      alt={ra.titleZh} 
+                      className="related-anime-cover"
+                      draggable={false}
+                      onDragStart={(e) => e.preventDefault()}
+                    />
+                  </div>
                   <div className="related-anime-info">
                     <div className="related-anime-title">
                       {language === 'en' && ra.titleEn ? ra.titleEn : (language === 'ja' && ra.titleJa ? ra.titleJa : ra.titleZh)}

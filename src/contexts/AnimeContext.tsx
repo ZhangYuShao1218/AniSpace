@@ -4,6 +4,7 @@ import { LOCAL_STORAGE_KEY, PLAN_TO_WATCH_KEY, CACHED_DATA_KEY, CUSTOM_ANIME_KEY
 import { cachedParseSeason } from '@/utils/season';
 import { useTitleCorrections } from '@/hooks/useTitleCorrections';
 import { clearRichDetailCache } from '@/hooks/useRichAnimeDetail';
+import { getDbData, setDbData, migrateLocalStorageToIndexedDB } from '@/utils/indexedDB';
 
 const getDbUrl = () => {
   const source = import.meta.env.VITE_DATA_SOURCE;
@@ -162,61 +163,21 @@ interface AnimeContextType {
   handleClearRecords: () => void;
   handleClearAllData: () => void;
   dataVersion: number | null;
+  isInitializing: boolean;
 }
 
 const AnimeContext = createContext<AnimeContextType | undefined>(undefined);
 
 export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [dataVersion, setDataVersion] = useState<number | null>(() => {
-    const cached = localStorage.getItem(CACHED_DATA_VERSION_KEY);
-    return cached ? parseInt(cached, 10) : null;
-  });
-  const [remoteAnime, setRemoteAnime] = useState<Anime[]>(() => {
-    const cachedData = localStorage.getItem(CACHED_DATA_KEY);
-    if (cachedData) {
-      try {
-        const parsed = JSON.parse(cachedData);
-        if (Array.isArray(parsed)) {
-          return parsed.map((item: any) => ({
-            ...item,
-            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || '',
-            _seasonScore: item._seasonScore !== undefined ? item._seasonScore : cachedParseSeason(item.yearSeason || '')
-          }));
-        }
-      } catch (e) { }
-    }
-    return [];
-  });
-  const [customAnimeList, setCustomAnimeList] = useState<Anime[]>(() => {
-    const saved = localStorage.getItem(CUSTOM_ANIME_KEY);
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed)) {
-          return parsed.map((item: any) => ({
-            ...item,
-            _seasonScore: item._seasonScore !== undefined ? item._seasonScore : cachedParseSeason(item.yearSeason || '')
-          }));
-        }
-      } catch (e) { }
-    }
-    return [];
-  });
-  const [watchedList, setWatchedList] = useState<WatchedAnime[]>(() => {
-    const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-    return saved ? JSON.parse(saved) : [];
-  });
-  const [planToWatchList, setPlanToWatchList] = useState<Anime[]>(() => {
-    const saved = localStorage.getItem(PLAN_TO_WATCH_KEY);
-    return saved ? JSON.parse(saved) : [];
-  });
+  const [isInitializing, setIsInitializing] = useState<boolean>(true);
+  const [dataVersion, setDataVersion] = useState<number | null>(null);
+  const [remoteAnime, setRemoteAnime] = useState<Anime[]>([]);
+  const [customAnimeList, setCustomAnimeList] = useState<Anime[]>([]);
+  const [watchedList, setWatchedList] = useState<WatchedAnime[]>([]);
+  const [planToWatchList, setPlanToWatchList] = useState<Anime[]>([]);
   const [isScraping, setIsScraping] = useState<boolean>(false);
   const [scrapeProgress, setScrapeProgress] = useState<string>('');
-
-  const [lastSyncTime, setLastSyncTime] = useState<number>(() => {
-    const saved = localStorage.getItem(LAST_SYNC_TIME_KEY);
-    return saved ? parseInt(saved, 10) : 0;
-  });
+  const [lastSyncTime, setLastSyncTime] = useState<number>(0);
 
   const lastSyncTimeFormatted = useMemo(() => {
     if (!lastSyncTime) return null;
@@ -233,7 +194,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     try {
       const nowMs = Date.now();
       localStorage.removeItem('anispace_detail_cache_v4');
-      localStorage.setItem(LAST_SYNC_TIME_KEY, nowMs.toString());
+      await setDbData(LAST_SYNC_TIME_KEY, nowMs.toString());
       clearRichDetailCache();
       setLastSyncTime(nowMs);
       const [data, vNum] = await Promise.all([
@@ -242,14 +203,14 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       ]);
       if (vNum !== null) {
         setDataVersion(vNum);
-        localStorage.setItem(CACHED_DATA_VERSION_KEY, vNum.toString());
+        await setDbData(CACHED_DATA_VERSION_KEY, vNum.toString());
       }
       const elapsed = Date.now() - startTime;
       if (elapsed < 800) await new Promise(r => setTimeout(r, 800 - elapsed));
       
       if (data && data.length > 0) {
         setRemoteAnime(data);
-        localStorage.setItem(CACHED_DATA_KEY, JSON.stringify(data));
+        await setDbData(CACHED_DATA_KEY, data);
         setScrapeProgress('syncSuccess');
       } else {
         setScrapeProgress('syncFailedEmpty');
@@ -266,45 +227,62 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, []);
 
   useEffect(() => {
-    let loadedData: Anime[] = [];
-    const cachedData = localStorage.getItem(CACHED_DATA_KEY);
-    if (cachedData) {
-      try {
-        const parsed = JSON.parse(cachedData);
-        if (parsed.length > 0) {
-          const resolved = parsed.map((item: any) => ({
-            ...item,
-            coverImage: item.coverImage || item.coverImageGamer || item.coverImageAniList || '',
-            _seasonScore: item._seasonScore !== undefined ? item._seasonScore : cachedParseSeason(item.yearSeason || '')
-          }));
-          loadedData = resolved;
-          setRemoteAnime(resolved);
-        }
-      } catch (e) { }
-    }
+    let mounted = true;
+    const initDb = async () => {
+      await migrateLocalStorageToIndexedDB();
 
-    const lastSyncTimeStr = localStorage.getItem(LAST_SYNC_TIME_KEY);
-    const lastSyncTime = lastSyncTimeStr ? parseInt(lastSyncTimeStr, 10) : 0;
-    const oneDayInMs = 24 * 60 * 60 * 1000;
-    const isOverOneDay = Date.now() - lastSyncTime > oneDayInMs;
+      const dbWatched = await getDbData<WatchedAnime[]>(LOCAL_STORAGE_KEY) || [];
+      const dbPlan = await getDbData<Anime[]>(PLAN_TO_WATCH_KEY) || [];
+      const dbCustom = await getDbData<Anime[]>(CUSTOM_ANIME_KEY) || [];
+      const dbRemote = await getDbData<Anime[]>(CACHED_DATA_KEY) || [];
+      const dbVersionStr = await getDbData<string>(CACHED_DATA_VERSION_KEY);
+      const dbVersion = dbVersionStr ? parseInt(dbVersionStr, 10) : null;
+      const dbSyncTimeStr = await getDbData<string>(LAST_SYNC_TIME_KEY);
+      const dbSyncTime = dbSyncTimeStr ? parseInt(dbSyncTimeStr, 10) : 0;
 
-    if (loadedData.length === 0 || isOverOneDay) {
-      handleSync();
-    } else {
-      fetchDataVersion().then((vNum) => {
-        if (vNum !== null) {
-          setDataVersion(vNum);
-          localStorage.setItem(CACHED_DATA_VERSION_KEY, vNum.toString());
-        }
-      });
-    }
+      if (!mounted) return;
+
+      setWatchedList(dbWatched);
+      setPlanToWatchList(dbPlan);
+      setCustomAnimeList(dbCustom);
+
+      let finalRemote = dbRemote;
+
+      if (dbRemote.length > 0) {
+        setRemoteAnime(finalRemote);
+      }
+      setDataVersion(dbVersion);
+      setLastSyncTime(dbSyncTime);
+
+      const oneDayInMs = 24 * 60 * 60 * 1000;
+      const isOverOneDay = Date.now() - dbSyncTime > oneDayInMs;
+
+      if (finalRemote.length === 0 || isOverOneDay) {
+        await handleSync();
+        setIsInitializing(false);
+      } else {
+        setIsInitializing(false);
+        fetchDataVersion().then(async (vNum) => {
+          if (vNum !== null && vNum !== dbVersion) {
+            await handleSync();
+          } else if (vNum !== null) {
+            setDataVersion(vNum);
+            await setDbData(CACHED_DATA_VERSION_KEY, vNum.toString());
+          }
+        });
+      }
+    };
+
+    initDb();
+
+    return () => { mounted = false; };
   }, [handleSync]);
 
   const watchedTimerRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
     if (watchedTimerRef.current) clearTimeout(watchedTimerRef.current);
     watchedTimerRef.current = setTimeout(() => {
-      // 輕量正規化儲存：使用者儲存空間只記錄動畫 ID 與評分、評論、日期及個人修改屬性
+      if (isInitializing) return; // Prevent overwriting with initial empty array
       const lightweightWatched = watchedList.map(w => ({
         id: w.id,
         userRating: w.userRating,
@@ -313,34 +291,35 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         ...((w as any).customTitle ? { customTitle: (w as any).customTitle } : {}),
         ...((w as any).customCover ? { customCover: (w as any).customCover } : {}),
       }));
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(lightweightWatched));
+      setDbData(LOCAL_STORAGE_KEY, lightweightWatched);
     }, 300);
     return () => { if (watchedTimerRef.current) clearTimeout(watchedTimerRef.current); };
-  }, [watchedList]);
+  }, [watchedList, isInitializing]);
 
   const planTimerRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
     if (planTimerRef.current) clearTimeout(planTimerRef.current);
     planTimerRef.current = setTimeout(() => {
-      // 輕量正規化儲存：期待清單只保存動畫 ID 與個人客製設定
+      if (isInitializing) return;
       const lightweightPlan = planToWatchList.map(p => ({
         id: p.id,
         ...((p as any).customTitle ? { customTitle: (p as any).customTitle } : {}),
         ...((p as any).customCover ? { customCover: (p as any).customCover } : {}),
       }));
-      localStorage.setItem(PLAN_TO_WATCH_KEY, JSON.stringify(lightweightPlan));
+      setDbData(PLAN_TO_WATCH_KEY, lightweightPlan);
     }, 300);
     return () => { if (planTimerRef.current) clearTimeout(planTimerRef.current); };
-  }, [planToWatchList]);
+  }, [planToWatchList, isInitializing]);
 
   const customTimerRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
     if (customTimerRef.current) clearTimeout(customTimerRef.current);
     customTimerRef.current = setTimeout(() => {
-      localStorage.setItem(CUSTOM_ANIME_KEY, JSON.stringify(customAnimeList));
+      if (isInitializing) return;
+      setDbData(CUSTOM_ANIME_KEY, customAnimeList);
     }, 300);
     return () => { if (customTimerRef.current) clearTimeout(customTimerRef.current); };
-  }, [customAnimeList]);
+  }, [customAnimeList, isInitializing]);
 
 
 
@@ -499,6 +478,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     planToWatchIdsSet,
     isScraping,
     scrapeProgress,
+    isInitializing,
     lastSyncTimeFormatted,
     handleSync,
     handleAddCustomAnime,
@@ -521,7 +501,7 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     handleClearAllData,
     dataVersion
   }), [
-    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, watchedMap, watchedIdsSet, planToWatchIdsSet, isScraping, scrapeProgress, lastSyncTimeFormatted, userData, corrections, dataVersion,
+    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, watchedMap, watchedIdsSet, planToWatchIdsSet, isScraping, scrapeProgress, isInitializing, lastSyncTimeFormatted, userData, corrections, dataVersion,
     handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
     handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, removeCorrection, setCustomCover, getCorrectedTitle, getCustomCover,
     handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData

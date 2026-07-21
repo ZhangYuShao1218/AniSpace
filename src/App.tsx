@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
 import './App.css';
 import { useGlobalKeyboardFix } from '@/hooks/useGlobalKeyboardFix';
+import { useAnime } from '@/contexts/AnimeContext';
 import AppHeader from '@/components/layout/AppHeader';
 import BottomNavBar from '@/components/layout/BottomNavBar';
 import AllAnimePage from './pages/AllAnimePage';
@@ -30,6 +31,7 @@ function App() {
   const location = useLocation();
   const state = location.state as { backgroundLocation?: any };
   const backgroundLocation = state?.backgroundLocation;
+  const { isInitializing, isScraping } = useAnime();
 
   useGlobalKeyboardFix();
 
@@ -46,6 +48,16 @@ function App() {
       window.removeEventListener('open-tutorial', handleOpenTutorial);
     };
   }, []);
+
+  if (isInitializing) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', background: 'var(--bg-color)', color: 'var(--text-color)' }}>
+        <Loader2 className="animate-spin" size={48} style={{ color: 'var(--accent-color)', marginBottom: '16px' }} />
+        <h2 style={{ fontSize: '1.2rem', fontWeight: 600, margin: 0 }}>載入動畫資料庫...</h2>
+        {isScraping && <p style={{ opacity: 0.7, marginTop: '8px', fontSize: '0.9rem' }}>正在與雲端同步資料，這可能需要幾秒鐘</p>}
+      </div>
+    );
+  }
 
   return (
     <div className={`app-container ${isNative ? 'has-bottom-nav' : ''}`}>

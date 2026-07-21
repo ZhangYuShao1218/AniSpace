@@ -345,6 +345,10 @@ export function normalizeAndMergeStreamings(streamings) {
     if (copy.region === '中國大陸' || copy.region === '大陸') copy.region = '中國';
     if (copy.site.startsWith('bilibili') || copy.name?.includes('哔哩哔哩') || copy.name?.toLowerCase().includes('bilibili')) {
       copy.name = 'Bilibili';
+      if (copy.region === '港澳' || copy.region === '港澳台' || copy.region === '台灣') {
+        copy.site = 'bilibili_tw';
+        copy.region = '台灣';
+      }
     }
     const isGamer = copy.site === 'gamer' || copy.site === 'gamer_hk' || (copy.name && copy.name.includes('動畫瘋'));
     if (isGamer) {

@@ -5,6 +5,7 @@ import * as OpenCC from 'opencc-js';
 import { GoogleGenAI } from '@google/genai';
 import { resolveGamerStreamingUrl, resolveGamerInfo, normalizeAndMergeStreamings, matchBangumiItem, aiMatchedRecords, runTitleNormalizationMatch } from './scraper_utils.mjs';
 import { washGamerStreamings } from './wash_gamer_links.mjs';
+import { buildFranchiseRelations } from './build_franchises.mjs';
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'anime_data.json');
 const GAMER_CACHE_FILE = path.join(process.cwd(), 'scraper', 'gamer_url_cache.json');
@@ -138,8 +139,13 @@ async function fetchAniListBySeason(year, season) {
           genres
           tags { name rank }
           coverImage { large extraLarge }
+          source
+          episodes
+          trailer { id site thumbnail }
+          averageScore
+          studios(isMain: true) { nodes { name } }
           relations {
-            edges { relationType node { id title { romaji native english } } }
+            edges { relationType node { id startDate { year month day } } }
           }
         }
       }
@@ -228,7 +234,24 @@ async function main() {
       console.log(`✅ 字典檔載入完成，共建立 ${bgmMap.size} 筆 AniList ID 映射，${bgmTitleMap.size} 筆日文標題 100% 精確映射。`);
     }
   } catch(e) {
-    console.warn("⚠️ 無法獲取 bangumi-data，將退回使用 ACG Secrets 與原生標題。");
+    console.warn("⚠️ 獲取遠端 bangumi-data 失敗，嘗試載入本地備份...");
+    try {
+      const bgmFilePath = path.join(process.cwd(), 'public', 'bangumi_data.json');
+      const localData = JSON.parse(fs.readFileSync(bgmFilePath, 'utf-8'));
+      bgmSiteMeta = localData.siteMeta || {};
+      (localData.items || []).forEach(item => {
+        const aniListSite = item.sites?.find(s => s.site === 'aniList');
+        if (aniListSite && aniListSite.id) {
+          bgmMap.set(String(aniListSite.id), item);
+        }
+        if (item.title) {
+          bgmTitleMap.set(item.title.trim(), item);
+        }
+      });
+      console.log(`✅ 成功載入本地字典備份，共建立 ${bgmMap.size} 筆 AniList ID 映射。`);
+    } catch(err) {
+      console.warn("⚠️ 本地備份讀取失敗，將退回使用 ACG Secrets 與原生標題。");
+    }
   }
 
   for (let year = START_YEAR; year <= END_YEAR; year++) {
@@ -414,6 +437,46 @@ async function main() {
           genres: Array.from(new Set(genres)).filter(Boolean).sort(),
           ...(streamings.length > 0 && { streamings: normalizeAndMergeStreamings(streamings) })
         });
+
+        // 寫入額外的 Metadata 到 public/anime_meta
+        const metaDir = path.join(process.cwd(), 'public', 'anime_meta');
+        if (!fs.existsSync(metaDir)) fs.mkdirSync(metaDir, { recursive: true });
+        const metaFilePath = path.join(metaDir, `${fullId}.json`);
+        
+        let existingMeta = {};
+        if (fs.existsSync(metaFilePath)) {
+          try { existingMeta = JSON.parse(fs.readFileSync(metaFilePath, 'utf-8')); } catch(e) {}
+        }
+        
+        let sourceFmt = item.source || "";
+        if (sourceFmt) {
+          sourceFmt = sourceFmt.toLowerCase().split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        }
+
+        let relatedAnimeIds = [];
+        if (item.relations && item.relations.edges) {
+          // 過濾無效節點，依照 startDate 排序
+          const validEdges = item.relations.edges.filter(e => e.node && e.node.id);
+          validEdges.sort((a, b) => {
+            const dateA = (a.node.startDate?.year || 9999) * 10000 + (a.node.startDate?.month || 12) * 100 + (a.node.startDate?.day || 31);
+            const dateB = (b.node.startDate?.year || 9999) * 10000 + (b.node.startDate?.month || 12) * 100 + (b.node.startDate?.day || 31);
+            return dateA - dateB;
+          });
+          relatedAnimeIds = validEdges.map(e => `anilist-${e.node.id}`);
+          // 去重複
+          relatedAnimeIds = [...new Set(relatedAnimeIds)];
+        }
+
+        const newMeta = {
+          ...existingMeta,
+          studio: item.studios?.nodes?.[0]?.name || existingMeta.studio,
+          source: sourceFmt || existingMeta.source,
+          episodes: item.episodes || existingMeta.episodes,
+          trailerYoutubeId: (item.trailer?.site === 'youtube' ? item.trailer.id : null) || existingMeta.trailerYoutubeId,
+          averageScore: item.averageScore || existingMeta.averageScore,
+          relatedAnimeIds: relatedAnimeIds.length > 0 ? relatedAnimeIds : existingMeta.relatedAnimeIds
+        };
+        fs.writeFileSync(metaFilePath, JSON.stringify(newMeta, null, 2), 'utf-8');
       }
       
       // Delay to avoid AniList & ACG Secrets Rate Limit (429)
@@ -794,6 +857,9 @@ async function main() {
       });
     }
   });
+
+  // 建構全系列關聯圖 (Franchise Graph)
+  buildFranchiseRelations();
 
   fs.writeFileSync(DATA_FILE, JSON.stringify(finalAnimeList, null, 2), 'utf-8');
   console.log(`\n✨ 抓取與清洗完成！極速處理完畢。共 ${finalAnimeList.length} 筆資料已儲存至 ${DATA_FILE}`);

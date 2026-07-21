@@ -756,9 +756,16 @@
     font-size: 0.65rem;
   }
   
-  /* Remove hero background glow for performance and cleanness on mobile */
+  /* Keep hero background glow but adjust for mobile */
   .modal-top-hero::before {
-    display: none;
+    display: block;
+    top: -1rem;
+    left: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    filter: blur(35px);
+    opacity: 0.15;
+    border-radius: 50%;
   }
 }
 

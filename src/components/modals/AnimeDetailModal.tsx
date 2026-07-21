@@ -69,7 +69,7 @@ export const AnimeDetailModal: React.FC = () => {
   const modalScrollRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (modalScrollRef.current) {
-      modalScrollRef.current.scrollTop = 0;
+      modalScrollRef.current.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [id]);
   

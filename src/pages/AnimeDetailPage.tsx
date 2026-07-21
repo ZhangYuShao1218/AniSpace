@@ -14,7 +14,7 @@ const AnimeDetailPage: React.FC = () => {
   const { tCover, tGenre, tYearSeason, t } = useLanguage();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [id]);
 
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);

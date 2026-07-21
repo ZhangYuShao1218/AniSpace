@@ -195,7 +195,7 @@
 /* Badges Row */
 .modal-badges-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.65rem;
   align-items: center;
   margin-top: 0.25rem;

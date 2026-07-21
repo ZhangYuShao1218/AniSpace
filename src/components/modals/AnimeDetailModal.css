@@ -368,7 +368,7 @@
   gap: 6px;
   height: 42px;
   padding: 0 16px;
-  border-radius: 9999px;
+  border-radius: 13px;
   border: 1px solid var(--border-glass-light);
   background: var(--bg-glass);
   color: var(--text-primary);

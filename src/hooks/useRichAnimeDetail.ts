@@ -106,7 +106,7 @@ export function useRichAnimeDetail(anime?: Anime | null, enabled: boolean = true
 
             const fetched: RichDetail = {
               synopsis: syn,
-              studio: localJson.studio || '知名動畫工作室',
+              studio: localJson.studio || undefined,
               rating: localJson.averageScore || (anime as any).rating || (anime as any).userRating,
               episodes: localJson.episodes || undefined,
               source: localJson.source || undefined,
@@ -137,7 +137,7 @@ export function useRichAnimeDetail(anime?: Anime | null, enabled: boolean = true
           const cleanedSynopsis = rawSynopsis.replace(/\[Written by MAL Rewrite\]/i, '').trim();
           const fetched: RichDetail = {
             synopsis: cleanedSynopsis || ((anime as any).userComment ? `備忘記錄：${(anime as any).userComment}` : '尚未收錄'),
-            studio: item.studios?.[0]?.name || '知名動畫工作室',
+            studio: item.studios?.[0]?.name || undefined,
             rating: item.score || (anime as any).rating || (anime as any).userRating || (anime as any)._seasonScore || '推薦',
             episodes: item.episodes || undefined,
             source: item.source || undefined,

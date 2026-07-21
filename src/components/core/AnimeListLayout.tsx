@@ -105,8 +105,9 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
   }, [language, getCorrectedTitle]);
 
   const handlePageChange = useCallback((page: number) => {
-    if (page === currentPage) return;
-    setCurrentPage(page);
+    if (page !== currentPage) {
+      setCurrentPage(page);
+    }
     
     requestAnimationFrame(() => {
       setTimeout(() => {

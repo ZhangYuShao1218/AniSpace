@@ -176,6 +176,17 @@ export const translations = {
     searchPlanPlaceholder: '搜尋期待清單...',
     emptySearchTitle: '找不到符合的動畫',
     emptySearchMsg: '請嘗試其他搜尋關鍵字。',
+    emptyAnimeList: '還沒有加入任何動畫',
+    emptyPlanList: '期待清單是空的',
+
+    // Modal
+    modalPlatforms: '官方授權平台',
+    modalRating: '評分',
+    modalNoSynopsis: '尚未收錄該作品之劇情簡介',
+    modalSource: '原著類型',
+    modalStudio: '動畫工作室',
+    modalRelated: '相關作品',
+
     emptyPlanTitle: '尚未添加任何期待動畫',
     emptyPlanMsg: '在所有動畫中點擊 ❤️ 圖示，即可在此查看。',
     searchWatchedPlaceholder: '搜尋觀看紀錄...',
@@ -382,6 +393,17 @@ export const translations = {
     statusDropped: 'Dropped',
 
     noRating: 'Unrated',
+    emptyAnimeList: 'No anime added yet',
+    emptyPlanList: 'Plan to watch list is empty',
+
+    // Modal
+    modalPlatforms: 'Official Streaming Platforms',
+    modalRating: 'Rating',
+    modalNoSynopsis: 'Synopsis not available.',
+    modalSource: 'Source Material',
+    modalStudio: 'Studio',
+    modalRelated: 'Related Anime',
+
     deleteAnime: 'Delete Anime',
     markAsPlanToWatch: 'Plan to Watch',
     markAsWatching: 'Watching',
@@ -722,6 +744,17 @@ export const translations = {
     statusCompleted: '視聴完了',
     statusOnHold: '保留',
     statusDropped: '視聴中止',
+
+    emptyAnimeList: 'まだアニメが追加されていません',
+    emptyPlanList: '気になるリストは空です',
+
+    // Modal
+    modalPlatforms: '公式配信プラットフォーム',
+    modalRating: '評価',
+    modalNoSynopsis: 'あらすじはまだ収録されていません',
+    modalSource: '原作',
+    modalStudio: '制作会社',
+    modalRelated: '関連作品',
 
     noRating: '評価なし',
     deleteAnime: 'このアニメを削除',

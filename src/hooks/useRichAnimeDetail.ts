@@ -117,8 +117,8 @@ export function useRichAnimeDetail(anime?: Anime | null, enabled: boolean = true
             MEMORY_CACHE[cacheKey] = fetched;
             saveToLocalStorage();
             setDetail(fetched);
-            return; // Successfully loaded from local, exit early
           }
+          return; // Always exit early if localRes.ok is true, regardless of isMounted
         }
       } catch (err) {
         console.warn(`Local meta fetch failed for ${anime.id}`, err);

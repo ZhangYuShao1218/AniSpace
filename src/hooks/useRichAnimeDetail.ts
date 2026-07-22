@@ -95,7 +95,6 @@ export function useRichAnimeDetail(anime?: Anime | null, enabled: boolean = true
               if (localJson.ja) syn = localJson.ja;
             } else {
               if (localJson.zh) syn = localJson.zh;
-              else if (localJson.bgmSummary) syn = localJson.bgmSummary;
             }
             if (syn === '尚未收錄' && (anime as any).userComment) {
               syn = `備忘記錄：${(anime as any).userComment}`;

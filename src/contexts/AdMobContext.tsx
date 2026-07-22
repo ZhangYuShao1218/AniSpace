@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
-import { AdMob, BannerAdPluginEvents, BannerAdSize, BannerAdPosition } from '@capacitor-community/admob';
-import type { BannerAdOptions } from '@capacitor-community/admob';
+import { AdMob } from '@capacitor-community/admob';
+// [Feature Toggle]: 暫時隱藏底部橫幅廣告
+// import type { BannerAdOptions } from '@capacitor-community/admob';
 import { logEvent } from '@/utils/analytics';
 
 interface AdMobContextType {
@@ -47,7 +48,8 @@ const getTriggerEventName = (triggerType: 'review' | 'export' | 'timer_15min'): 
 export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isNative] = useState(() => Capacitor.isNativePlatform());
   const isAdInitializedRef = useRef(false);
-  const hiddenCountRef = useRef(0);
+  // [Feature Toggle]: 暫時隱藏底部橫幅廣告
+  // const hiddenCountRef = useRef(0);
 
   const prepareInterstitialAd = useCallback(async () => {
     if (!isNative) return;
@@ -71,9 +73,10 @@ export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         await AdMob.initialize();
         if (!isMounted) return;
 
-        AdMob.addListener(BannerAdPluginEvents.SizeChanged, (info: any) => {
-          document.documentElement.style.setProperty('--admob-height', `${info.height}px`);
-        });
+        // [Feature Toggle]: 暫時取消 Banner 事件監聽
+        // AdMob.addListener(BannerAdPluginEvents.SizeChanged, (info: any) => {
+        //   document.documentElement.style.setProperty('--admob-height', `${info.height}px`);
+        // });
 
         // [Feature Toggle]: 暫時隱藏底部橫幅廣告
         // const options: BannerAdOptions = {

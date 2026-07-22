@@ -104,32 +104,41 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     return getCorrectedTitle(baseTitle, anime.id);
   }, [language, getCorrectedTitle]);
 
-  const gridRef = React.useRef<HTMLDivElement>(null);
-
   const handlePageChange = useCallback((page: number) => {
     if (page !== currentPage) {
-      if (gridRef.current) {
-        gridRef.current.style.minHeight = `${gridRef.current.offsetHeight}px`;
-      }
       setCurrentPage(page);
     }
-    
+
     requestAnimationFrame(() => {
       setTimeout(() => {
         const headerElement = document.querySelector('.layout-scroll-anchor') || document.querySelector('.page-header') || document.querySelector('#main-content');
-        if (headerElement) {
-          const yOffset = 5;
-          const y = headerElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
-        } else {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        const targetY = headerElement ? Math.max(0, headerElement.getBoundingClientRect().top + window.pageYOffset + 5) : 0;
+        
+        const startY = window.pageYOffset;
+        const distance = targetY - startY;
+        const startTime = performance.now();
+        const duration = 450; // 450ms for a natural smooth feel
 
-        setTimeout(() => {
-          if (gridRef.current) {
-            gridRef.current.style.minHeight = '';
+        // easeOutCubic for a natural deceleration
+        const easeOutCubic = (t: number, b: number, c: number, d: number) => {
+          t /= d;
+          t--;
+          return c * (t * t * t + 1) + b;
+        };
+
+        const animation = (currentTime: number) => {
+          const timeElapsed = currentTime - startTime;
+          const nextY = easeOutCubic(timeElapsed, startY, distance, duration);
+          window.scrollTo(0, nextY);
+          
+          if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+          } else {
+            window.scrollTo(0, targetY);
           }
-        }, 800);
+        };
+        
+        requestAnimationFrame(animation);
       }, 30);
     });
   }, [currentPage, setCurrentPage]);
@@ -204,7 +213,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
         <div id="main-content">
           <AdBanner adSlot="3811211519" />
           
-          <div className="anime-grid" ref={gridRef}>
+          <div className="anime-grid">
             {paginatedData.map((anime, index) => (
               <React.Fragment key={anime.id}>
                 {/* 插入聯盟行銷原生廣告卡片 (第 11 格) */}

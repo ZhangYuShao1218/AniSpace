@@ -75,25 +75,26 @@ export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           document.documentElement.style.setProperty('--admob-height', `${info.height}px`);
         });
 
-        const options: BannerAdOptions = {
-          adId: import.meta.env.VITE_ADMOB_BANNER_ID || 'ca-app-pub-3940256099942544/6300978111', // Test Banner ID fallback
-          adSize: BannerAdSize.ADAPTIVE_BANNER,
-          position: BannerAdPosition.BOTTOM_CENTER,
-          margin: 0,
-          isTesting: import.meta.env.DEV,
-        };
+        // [Feature Toggle]: 暫時隱藏底部橫幅廣告
+        // const options: BannerAdOptions = {
+        //   adId: import.meta.env.VITE_ADMOB_BANNER_ID || 'ca-app-pub-3940256099942544/6300978111', // Test Banner ID fallback
+        //   adSize: BannerAdSize.ADAPTIVE_BANNER,
+        //   position: BannerAdPosition.BOTTOM_CENTER,
+        //   margin: 0,
+        //   isTesting: import.meta.env.DEV,
+        // };
 
         // 顯示廣告
-        await AdMob.showBanner(options);
+        // await AdMob.showBanner(options);
         isAdInitializedRef.current = true;
         
         // 預先準備全版廣告
         prepareInterstitialAd();
 
         // If there are pending hide requests that happened before initialization, hide it now.
-        if (hiddenCountRef.current > 0) {
-          AdMob.hideBanner().catch(console.error);
-        }
+        // if (hiddenCountRef.current > 0) {
+        //   AdMob.hideBanner().catch(console.error);
+        // }
       } catch (error) {
         console.error('AdMob initialization error:', error);
       }
@@ -101,30 +102,39 @@ export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
     initAd();
 
+    // [Feature Toggle]: 暫時取消 Banner 事件監聽
     return () => {
       isMounted = false;
-      if (isNative) {
-        AdMob.removeBanner().catch(err => console.error('Error removing banner:', err));
-      }
+      // if (isNative) {
+      //   AdMob.removeBanner().catch(err => console.error('Error removing banner:', err));
+      // }
     };
   }, [isNative, prepareInterstitialAd]);
 
-  const hideAd = useCallback(() => {
-    if (!isNative) return;
-    hiddenCountRef.current += 1;
-    // 只有在第一個需要隱藏的元件呼叫時，才真的呼叫原生 hideBanner
-    if (hiddenCountRef.current === 1 && isAdInitializedRef.current) {
-      AdMob.hideBanner().catch(console.error);
-    }
+  const hideAd = useCallback(async () => {
+    // [Feature Toggle]: 暫時隱藏底部橫幅廣告
+    // if (!isNative) return;
+    // try {
+    //   hiddenCountRef.current++;
+    //   if (isAdInitializedRef.current && hiddenCountRef.current === 1) {
+    //     await AdMob.hideBanner();
+    //   }
+    // } catch (error) {
+    //   console.error('AdMob hide banner error:', error);
+    // }
   }, [isNative]);
 
-  const showAd = useCallback(() => {
-    if (!isNative) return;
-    hiddenCountRef.current = Math.max(0, hiddenCountRef.current - 1);
-    // 只有當所有要求隱藏的元件都呼叫 showAd 後，才真的恢復顯示
-    if (hiddenCountRef.current === 0 && isAdInitializedRef.current) {
-      AdMob.resumeBanner().catch(console.error);
-    }
+  const showAd = useCallback(async () => {
+    // [Feature Toggle]: 暫時隱藏底部橫幅廣告
+    // if (!isNative) return;
+    // try {
+    //   hiddenCountRef.current = Math.max(0, hiddenCountRef.current - 1);
+    //   if (isAdInitializedRef.current && hiddenCountRef.current === 0) {
+    //     await AdMob.resumeBanner();
+    //   }
+    // } catch (error) {
+    //   console.error('AdMob resume banner error:', error);
+    // }
   }, [isNative]);
 
   const showInterstitialSafe = useCallback(async (triggerType: 'review' | 'export' | 'timer_15min'): Promise<boolean> => {
@@ -149,11 +159,11 @@ export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       return false;
     }
 
-    // 3. 檢查 30 分鐘共用冷卻時間 (Cooldown)
+    // 3. 檢查 8 小時共用冷卻時間 (Cooldown)
     const lastTimeStr = localStorage.getItem('admob_last_interstitial_time');
     const lastTime = lastTimeStr ? parseInt(lastTimeStr, 10) : 0;
     const now = Date.now();
-    const cooldownMs = 30 * 60 * 1000; // 30 分鐘
+    const cooldownMs = 8 * 60 * 60 * 1000; // 8 小時
 
     if (now - lastTime < cooldownMs) {
       const remainsMin = Math.round((cooldownMs - (now - lastTime)) / 60000);

@@ -283,7 +283,7 @@ export async function resolveGamerInfo(acgDetailUrl, currentTitle) {
             }
             $('a').each((_, el) => {
                 let href = $(el).attr('href') || '';
-                if (href.includes('ani.gamer.com.tw') && !resolvedUrl) {
+                if (href.includes('ani.gamer.com.tw') && (href.includes('animeVideo.php') || href.includes('animeRef.php')) && !resolvedUrl) {
                     if (href.startsWith('//')) href = 'https:' + href;
                     else if (href.startsWith('http://')) href = href.replace('http://', 'https://');
                     resolvedUrl = href;

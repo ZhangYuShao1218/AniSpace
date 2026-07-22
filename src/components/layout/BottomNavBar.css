@@ -18,11 +18,14 @@
   z-index: 9999;
   
   /* Smooth transition for scroll-to-hide */
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Added 0.2s delay when sliding UP to allow Capacitor AdMob Native View to fully destroy and release touch blocking */
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
   transform: translateY(0);
 }
 
 .bottom-nav-bar.hidden {
+  /* No delay when sliding DOWN, hides instantly */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   transform: translateY(100%);
 }
 

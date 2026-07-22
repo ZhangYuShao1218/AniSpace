@@ -11,7 +11,7 @@ const AdBanner: React.FC<AdBannerProps> = ({ adSlot, className = '' }) => {
   const [isNative] = useState(() => Capacitor.isNativePlatform());
 
   useEffect(() => {
-    if (!isNative) {
+    if (!isNative && !import.meta.env.DEV) {
       // Web AdSense logic
       try {
         if (adSlot) {
@@ -27,6 +27,11 @@ const AdBanner: React.FC<AdBannerProps> = ({ adSlot, className = '' }) => {
   if (isNative) {
     // Native AdMob floats over the WebView, so we don't render a DOM element.
     // AdMob is now managed globally in App.tsx / AdMobContext.tsx
+    return null;
+  }
+
+  // 隱藏開發環境的 AdSense (尚未過審)
+  if (import.meta.env.DEV) {
     return null;
   }
 

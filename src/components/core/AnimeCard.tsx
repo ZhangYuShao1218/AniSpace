@@ -18,6 +18,7 @@ interface AnimeCardProps {
   onEditTitle: (originalZh: string, newTitle: string, id: string) => void;
   onResetTitle: (originalZh: string, id: string) => void;
   onRemoveReview: (id: string) => void;
+  priorityLoad?: boolean;
 }
 
 interface PopoverPos {
@@ -36,6 +37,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   onEditTitle,
   onResetTitle,
   onRemoveReview,
+  priorityLoad = false,
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -218,7 +220,14 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
         }}
         title="點擊展開詳細資訊"
       >
-        <img src={displayCover} alt={displayTitle} className="card-image" loading="lazy" referrerPolicy="no-referrer" />
+        <img 
+          src={displayCover} 
+          alt={displayTitle} 
+          className="card-image" 
+          loading={priorityLoad ? "eager" : "lazy"} 
+          fetchPriority={priorityLoad ? "high" : "auto"}
+          referrerPolicy="no-referrer" 
+        />
 
         {isWatched && (anime as WatchedAnime).userRating && (
           <div className="rating-badge">

@@ -139,8 +139,6 @@ interface AnimeContextType {
   watchedMap: Map<string, WatchedAnime>;
   watchedIdsSet: Set<string>;
   planToWatchIdsSet: Set<string>;
-  isScraping: boolean;
-  scrapeProgress: string;
   lastSyncTimeFormatted: string | null;
   handleSync: () => Promise<void>;
   handleAddCustomAnime: (anime: Anime) => void;
@@ -166,7 +164,13 @@ interface AnimeContextType {
   isInitializing: boolean;
 }
 
+interface AnimeSyncContextType {
+  isScraping: boolean;
+  scrapeProgress: string;
+}
+
 const AnimeContext = createContext<AnimeContextType | undefined>(undefined);
+const AnimeSyncContext = createContext<AnimeSyncContextType | undefined>(undefined);
 
 export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isInitializing, setIsInitializing] = useState<boolean>(true);
@@ -476,8 +480,6 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     watchedMap,
     watchedIdsSet,
     planToWatchIdsSet,
-    isScraping,
-    scrapeProgress,
     isInitializing,
     lastSyncTimeFormatted,
     handleSync,
@@ -501,16 +503,18 @@ export const AnimeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     handleClearAllData,
     dataVersion
   }), [
-    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, watchedMap, watchedIdsSet, planToWatchIdsSet, isScraping, scrapeProgress, isInitializing, lastSyncTimeFormatted, userData, corrections, dataVersion,
+    enrichedAllAnime, enrichedCustomAnimeList, enrichedWatchedList, enrichedPlanToWatchList, watchedMap, watchedIdsSet, planToWatchIdsSet, isInitializing, lastSyncTimeFormatted, userData, corrections, dataVersion,
     handleSync, handleAddCustomAnime, handleImportCustomAnime, handleSaveReview, handleRemoveReview,
     handlePlanToWatchToggle, handleImport, handleImportPlan, setCorrection, removeCorrection, setCustomCover, getCorrectedTitle, getCustomCover,
     handleImportCorrections, clearCorrections, handleClearRecords, handleClearAllData
   ]);
 
   return (
-    <AnimeContext.Provider value={contextValue}>
-      {children}
-    </AnimeContext.Provider>
+    <AnimeSyncContext.Provider value={{ isScraping, scrapeProgress }}>
+      <AnimeContext.Provider value={contextValue}>
+        {children}
+      </AnimeContext.Provider>
+    </AnimeSyncContext.Provider>
   );
 };
 
@@ -518,6 +522,14 @@ export const useAnime = () => {
   const context = useContext(AnimeContext);
   if (context === undefined) {
     throw new Error('useAnime must be used within an AnimeProvider');
+  }
+  return context;
+};
+
+export const useAnimeSync = () => {
+  const context = useContext(AnimeSyncContext);
+  if (context === undefined) {
+    throw new Error('useAnimeSync must be used within an AnimeProvider');
   }
   return context;
 };

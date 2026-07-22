@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
 import './App.css';
 import { useGlobalKeyboardFix } from '@/hooks/useGlobalKeyboardFix';
-import { useAnime } from '@/contexts/AnimeContext';
+import { useAnime, useAnimeSync } from '@/contexts/AnimeContext';
 import AppHeader from '@/components/layout/AppHeader';
 import BottomNavBar from '@/components/layout/BottomNavBar';
 import AllAnimePage from './pages/AllAnimePage';
@@ -31,7 +31,8 @@ function App() {
   const location = useLocation();
   const state = location.state as { backgroundLocation?: any };
   const backgroundLocation = state?.backgroundLocation;
-  const { isInitializing, isScraping } = useAnime();
+  const { isInitializing } = useAnime();
+  const { isScraping } = useAnimeSync();
 
   useGlobalKeyboardFix();
 

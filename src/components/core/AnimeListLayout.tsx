@@ -1,16 +1,17 @@
-import React, { useMemo, useEffect, useCallback } from 'react';
+import React, { useMemo, useEffect, useCallback, lazy, Suspense } from 'react';
 import type { Anime, WatchedAnime } from '@/types';
 import AnimeCard from '@/components/core/AnimeCard';
 import AdBanner from '@/components/layout/AdBanner';
-import AffiliateCard from '@/components/core/AffiliateCard';
 import Pagination from '@/components/layout/Pagination';
-import ReviewModal from '@/components/modals/ReviewModal';
-import { ShareModal } from '@/components/modals/ShareModal';
-import { useAnime } from '@/contexts/AnimeContext';
+import { useAnime, useAnimeSync } from '@/contexts/AnimeContext';
 import { ITEMS_PER_PAGE } from '@/utils/constants';
 import { ThumbsUp, Loader2 } from 'lucide-react';
 import { useUrlParams } from '@/hooks/useUrlParams';
 import { useLanguage } from '@/contexts/LanguageContext';
+
+const AffiliateCard = lazy(() => import('@/components/core/AffiliateCard'));
+const ReviewModal = lazy(() => import('@/components/modals/ReviewModal'));
+const ShareModal = lazy(() => import('@/components/modals/ShareModal').then(module => ({ default: module.ShareModal })));
 
 interface AnimeListLayoutProps {
   title: string;
@@ -60,9 +61,9 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
     handlePlanToWatchToggle,
     setCorrection,
     removeCorrection,
-    getCorrectedTitle,
-    isScraping
+    getCorrectedTitle
   } = useAnime();
+  const { isScraping } = useAnimeSync();
   const { language, t } = useLanguage();
   
   const [internalPage, setInternalPage] = useUrlParams<number>('page', 1);
@@ -217,7 +218,11 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
             {paginatedData.map((anime, index) => (
               <React.Fragment key={anime.id}>
                 {/* 插入聯盟行銷原生廣告卡片 (第 11 格) */}
-                {!hideAffiliate && index === 10 && <AffiliateCard />}
+                {!hideAffiliate && index === 10 && (
+                  <Suspense fallback={null}>
+                    <AffiliateCard />
+                  </Suspense>
+                )}
                 
                 <AnimeCard
                   anime={isWatchedContext ? anime : (watchedMap.get(anime.id) || anime)}
@@ -229,6 +234,7 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
                   onEditTitle={handleEditTitle}
                   onResetTitle={handleResetTitle}
                   onRemoveReview={handleRemoveReviewClick}
+                  priorityLoad={index < 8}
                 />
               </React.Fragment>
             ))}
@@ -245,20 +251,24 @@ const AnimeListLayout: React.FC<AnimeListLayoutProps> = ({
       )}
 
       {/* Modals */}
-      <ReviewModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        anime={selectedAnime}
-        onSave={handleSaveReview}
-      />
+      <Suspense fallback={null}>
+        <ReviewModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          anime={selectedAnime}
+          onSave={handleSaveReview}
+        />
+      </Suspense>
 
       {/* For AllAnimePage, the share button is in FilterBar, but we can still provide the modal here */}
-      <ShareModal
-        isOpen={isShareModalOpen}
-        onClose={() => setIsShareModalOpen(false)}
-        animes={shareData}
-        isWatched={isWatchedShare}
-      />
+      <Suspense fallback={null}>
+        <ShareModal
+          isOpen={isShareModalOpen}
+          onClose={() => setIsShareModalOpen(false)}
+          animes={shareData}
+          isWatched={isWatchedShare}
+        />
+      </Suspense>
     </>
   );
 };

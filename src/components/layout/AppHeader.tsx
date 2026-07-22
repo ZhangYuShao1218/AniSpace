@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
 import { Layers, Download, Loader2, Menu, Clock } from 'lucide-react';
 
-import { useAnime } from '@/contexts/AnimeContext';
+import { useAnime, useAnimeSync } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useAdMob } from '@/contexts/AdMobContext';
 import GoogleSyncButton from '@/components/core/GoogleSyncButton';
@@ -13,10 +13,10 @@ const AppHeader: React.FC = () => {
   const isNative = Capacitor.isNativePlatform();
   const {
     handleSync,
-    isScraping,
-    scrapeProgress,
     lastSyncTimeFormatted
   } = useAnime();
+  
+  const { isScraping, scrapeProgress } = useAnimeSync();
   
   const { t } = useLanguage();
 

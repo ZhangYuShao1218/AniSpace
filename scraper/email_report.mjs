@@ -35,11 +35,33 @@ async function sendReport() {
     reportContent = fs.readFileSync(summaryPath, 'utf-8');
   }
 
+  // Read anime_data.json for total count
+  const animeDataFile = path.join(process.cwd(), 'public', 'anime_data.json');
+  let totalAnime = 0;
+  if (fs.existsSync(animeDataFile)) {
+    try {
+      const arr = JSON.parse(fs.readFileSync(animeDataFile, 'utf-8'));
+      totalAnime = arr.length;
+    } catch(e) {}
+  }
+  
+  // Read synopsis_tracking.json for translated count
+  const TRACKING_FILE = path.join(process.cwd(), 'scraper', 'synopsis_tracking.json');
+  let translatedCount = 0;
+  if (fs.existsSync(TRACKING_FILE)) {
+    try {
+      const tracker = JSON.parse(fs.readFileSync(TRACKING_FILE, 'utf-8'));
+      translatedCount = Object.values(tracker).filter(t => t.zh).length;
+    } catch(e) {}
+  }
+  const lackSynopsisCount = Math.max(0, totalAnime - translatedCount);
+
   if (fs.existsSync(SYNOPSIS_NEW_FILE)) {
     try {
       const newlyFetched = JSON.parse(fs.readFileSync(SYNOPSIS_NEW_FILE, 'utf-8'));
+      reportContent += `\n\n【劇情簡介狀態】\n總計收錄: ${totalAnime} 部動畫\n缺乏簡介: ${lackSynopsisCount} 部\n本日新增: ${newlyFetched.length} 筆簡介\n`;
       if (newlyFetched.length > 0) {
-        reportContent += `\n\n【劇情簡介抓取與 AI 翻譯】本次成功新增 ${newlyFetched.length} 筆簡介。\n詳細清單：\n`;
+        reportContent += `新增清單：\n`;
         newlyFetched.forEach(item => {
           reportContent += `- [${item.id}] ${item.title}\n`;
         });
@@ -48,6 +70,8 @@ async function sendReport() {
     } catch (e) {
       console.error("讀取 synopsis_newly_fetched.json 失敗", e);
     }
+  } else {
+    reportContent += `\n\n【劇情簡介狀態】\n總計收錄: ${totalAnime} 部動畫\n缺乏簡介: ${lackSynopsisCount} 部\n本日新增: 0 筆簡介\n`;
   }
 
   const versionHeader = `📌 當前系統版本資訊\n・應用程式版本號：v${appVersion}\n・動畫資料庫版號：(${dataVersionStr})\n-------------------------------------\n\n`;

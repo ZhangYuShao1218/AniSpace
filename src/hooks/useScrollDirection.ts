@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 
-export const useScrollDirection = () => {
+export const useScrollDirection = (pathname?: string) => {
   const [scrollDirection, setScrollDirection] = useState<'up' | 'down' | null>(null);
   const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
+    // 當路徑改變時，重置為向上捲動 (顯示導航列)
+    setScrollDirection('up');
     let lastScrollY = window.pageYOffset;
     let ticking = false;
 
@@ -46,7 +48,7 @@ export const useScrollDirection = () => {
 
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [pathname]);
 
   return { scrollDirection, isAtTop };
 };

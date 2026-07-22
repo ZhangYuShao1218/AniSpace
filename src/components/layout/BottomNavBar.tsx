@@ -11,7 +11,7 @@ const BottomNavBar: React.FC = () => {
   const location = useLocation();
   const currentPath = location.pathname;
   const { t } = useLanguage();
-  const { scrollDirection } = useScrollDirection();
+  const { scrollDirection } = useScrollDirection(currentPath);
   const { hideAd, showAd } = useAdMob();
 
   const isHidden = scrollDirection === 'down';

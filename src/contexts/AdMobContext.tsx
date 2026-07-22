@@ -159,11 +159,11 @@ export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       return false;
     }
 
-    // 3. 檢查 8 小時共用冷卻時間 (Cooldown)
+    // 3. 檢查 30 分鐘共用冷卻時間 (Cooldown)
     const lastTimeStr = localStorage.getItem('admob_last_interstitial_time');
     const lastTime = lastTimeStr ? parseInt(lastTimeStr, 10) : 0;
     const now = Date.now();
-    const cooldownMs = 8 * 60 * 60 * 1000; // 8 小時
+    const cooldownMs = 30 * 60 * 1000; // 30 分鐘
 
     if (now - lastTime < cooldownMs) {
       const remainsMin = Math.round((cooldownMs - (now - lastTime)) / 60000);

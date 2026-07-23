@@ -31,13 +31,14 @@ async function main() {
 
     console.log('Filtering items...');
     let toFetch = [];
+    let currentBatchFailures = []; // Track failures in this run
     
     // Find up to 100 items to fetch, skip those without bgmId directly
     for (const anime of animeData) {
         const id = anime.id;
         const track = tracking[id];
         
-        // Already successfully translated or marked as failed
+        // Already successfully translated or marked as failed previously
         if (track && (track.failed || (track.zh && track.ja && track.en))) {
             continue;
         }
@@ -46,6 +47,7 @@ async function main() {
         if (!bgmRecord || !bgmRecord.bgmId) {
             // Directly mark as failed in tracking and skip
             tracking[id] = { zh: false, ja: false, en: false, failed: true, reason: 'no_bgm_id' };
+            currentBatchFailures.push({ title: anime.titleZh, reason: '找不到 bangumi_data 對應資料' });
             continue;
         }
 
@@ -55,7 +57,7 @@ async function main() {
     
     console.log(`Found ${toFetch.length} valid items to fetch in this batch.`);
     
-    if (toFetch.length === 0) {
+    if (toFetch.length === 0 && currentBatchFailures.length === 0) {
         console.log("No items to translate. Database complete!");
         // Update tracking to save the skipped ones
         fs.writeFileSync(trackingPath, JSON.stringify(tracking, null, 2));
@@ -75,7 +77,7 @@ async function main() {
 
     console.log('Fetching summaries from Bangumi...');
     const results = [];
-    const failures = [];
+    const failures = []; // Console log simple failures
     
     for (let i = 0; i < toFetch.length; i++) {
         const anime = toFetch[i];
@@ -96,11 +98,13 @@ async function main() {
                 console.log(`  No summary found.`);
                 tracking[id] = { zh: false, ja: false, en: false, failed: true, reason: 'no_summary' };
                 failures.push(anime.titleZh);
+                currentBatchFailures.push({ title: anime.titleZh, reason: '沒有 summary 為空' });
             }
         } catch (e) {
             console.error(`  Error fetching: ${e.message}`);
             tracking[id] = { zh: false, ja: false, en: false, failed: true, reason: 'fetch_error' };
             failures.push(anime.titleZh);
+            currentBatchFailures.push({ title: anime.titleZh, reason: 'API 抓取失敗或錯誤' });
         }
         if (i < toFetch.length - 1) {
             await delay(1000); // 1s delay to be nice to API
@@ -109,6 +113,7 @@ async function main() {
     
     console.log(`Successfully fetched ${results.length} summaries. ${failures.length} fetch failures.`);
     fs.writeFileSync(trackingPath, JSON.stringify(tracking, null, 2));
+    fs.writeFileSync('scraper/synopsis_failures.json', JSON.stringify(currentBatchFailures, null, 2));
 
     const numChunks = 10;
     for (let i = 0; i < numChunks; i++) {

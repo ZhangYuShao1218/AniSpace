@@ -115,7 +115,7 @@ async function main() {
     fs.writeFileSync(trackingPath, JSON.stringify(tracking, null, 2));
     fs.writeFileSync('scraper/synopsis_failures.json', JSON.stringify(currentBatchFailures, null, 2));
 
-    const numChunks = 10;
+    const numChunks = 4;
     for (let i = 0; i < numChunks; i++) {
         fs.writeFileSync(`scraper/to_translate_${i}.json`, JSON.stringify([], null, 2));
     }

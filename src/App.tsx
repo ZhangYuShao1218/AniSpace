@@ -34,10 +34,31 @@ function App() {
   let backgroundLocation = (location.state as any)?.backgroundLocation;
 
   // 攔截直接造訪 /anime/:id 的情況 (例如直接輸入網址或重新整理)
-  // 如果沒有 backgroundLocation，強制將背景設定為首頁 ('/')
+  // 如果沒有 backgroundLocation，嘗試從 sessionStorage 讀取最後的背景，否則強制將背景設定為首頁 ('/')
   if (!backgroundLocation && location.pathname.startsWith('/anime/')) {
-    backgroundLocation = { pathname: '/', search: '', hash: '', state: null, key: 'default-bg' };
+    let savedBg = null;
+    try {
+      const savedStr = sessionStorage.getItem('last_background_location');
+      if (savedStr) {
+        savedBg = JSON.parse(savedStr);
+        savedBg = { ...savedBg, state: null, key: 'default-bg' };
+      }
+    } catch (e) {
+      console.error('Failed to parse last_background_location', e);
+    }
+    backgroundLocation = savedBg || { pathname: '/', search: '', hash: '', state: null, key: 'default-bg' };
   }
+
+  // 記錄最後的有效背景頁面 (非 /anime/ 開頭的)，以便在重新整理或貼上網址時還原背景
+  useEffect(() => {
+    if (!location.pathname.startsWith('/anime/')) {
+      sessionStorage.setItem('last_background_location', JSON.stringify({
+        pathname: location.pathname,
+        search: location.search,
+        hash: location.hash
+      }));
+    }
+  }, [location.pathname, location.search, location.hash]);
 
   const { isInitializing } = useAnime();
   const { isScraping } = useAnimeSync();

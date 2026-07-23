@@ -81,10 +81,15 @@ function App() {
 
   if (isInitializing) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', background: 'var(--bg-color)', color: 'var(--text-color)' }}>
-        <Loader2 className="animate-spin" size={48} style={{ color: 'var(--accent-color)', marginBottom: '16px' }} />
-        <h2 style={{ fontSize: '1.2rem', fontWeight: 600, margin: 0 }}>載入動畫資料庫...</h2>
-        {isScraping && <p style={{ opacity: 0.7, marginTop: '8px', fontSize: '0.9rem' }}>正在與雲端同步資料，這可能需要幾秒鐘</p>}
+      <div className={`app-container ${isNative ? 'has-bottom-nav' : ''}`}>
+        <AppHeader />
+        <main className="container wrapper" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
+          <Loader2 className="animate-spin" size={48} style={{ color: 'var(--accent-color)', marginBottom: '16px' }} />
+          <h2 style={{ fontSize: '1.2rem', fontWeight: 600, margin: 0 }}>載入動畫資料庫...</h2>
+          {isScraping && <p style={{ opacity: 0.7, marginTop: '8px', fontSize: '0.9rem' }}>正在與雲端同步資料，這可能需要幾秒鐘</p>}
+        </main>
+        {!isNative && <Footer />}
+        {isNative && <BottomNavBar />}
       </div>
     );
   }

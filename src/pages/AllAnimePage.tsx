@@ -18,7 +18,11 @@ const AllAnimePage = () => {
     if (!hasRestoredRef.current) {
       hasRestoredRef.current = true;
       const savedSearch = sessionStorage.getItem('all_anime_page_last_search');
-      if (window.location.search === '' && savedSearch && savedSearch !== '') {
+      
+      // 如果目前真實網址是在動畫詳細彈窗中，不要自動回復搜尋狀態，以免觸發 router 導向 / 導致彈窗關閉
+      const isModalForeground = window.location.pathname.startsWith('/anime/');
+
+      if (window.location.search === '' && savedSearch && savedSearch !== '' && !isModalForeground) {
         // 自行重組並設定完整 URL 查詢狀態（同時保留標籤與頁碼）
         setSearchParams(new URLSearchParams(savedSearch), { replace: true });
         return;

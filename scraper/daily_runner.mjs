@@ -39,5 +39,6 @@ runStep('2. 後處理比對與 Override 清理 (post_process)', 'node scraper/po
 runStep('3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)', 'node scraper/fetch_synopsis.mjs');
 runStep('4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)', 'node scraper/shopee_checker.mjs');
 runStep('5. 每日總結 Email 寄送 (email_report)', 'node scraper/email_report.mjs');
+runStep('6. 自動更新網站地圖 (sitemap)', 'node scraper/generate_sitemap.mjs');
 
 logOutput(`\n✨ 所有每日任務執行完畢！完整日誌已儲存至 ${LOG_FILE}\n`);

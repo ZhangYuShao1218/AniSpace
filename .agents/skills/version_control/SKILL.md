@@ -31,10 +31,10 @@ git --version
 
 採用彈性的四級分支模型，可依專案規模縮減使用：
 
-### `main` / `Pro` — 正式環境
+### `main` — 正式環境
 - **定義**: 永遠保持穩定、可直接部署到正式環境的狀態。
 - **規則**: **嚴禁直接 push**。只接受來自 `develop`/`Dev` 的合併，或緊急 `hotfix` 合併。
-- **別名**: 大型專案用 `main`；本專案慣例用 `Pro`。
+- **別名**: 通用慣例用 `main`，本專案亦統一使用 `main` 作為正式環境分支。
 
 ### `develop` / `Dev` — 開發整合
 - **定義**: 所有功能整合與日常開發的基準線。
@@ -49,7 +49,7 @@ git --version
 ### `hotfix/<name>` — 緊急修復
 - **定義**: 針對正式環境的緊急 Bug 修復，不走正常開發流程。
 - **命名範例**: `hotfix/login-crash`、`hotfix/payment-null-error`
-- **規則**: 從 `main`/`Pro` checkout，修復後同時合併回 `main`/`Pro` 與 `Dev`/`develop`。
+- **規則**: 從 `main` checkout，修復後同時合併回 `main` 與 `Dev`/`develop`。
 
 ---
 
@@ -102,7 +102,7 @@ git log --oneline -10  # 回顧最近 10 筆 commit
 需求類型判斷：
 ├── 小修復 / 設定調整 → 在 Dev/develop 直接操作
 ├── 大型新功能        → 從 Dev 建立 feature/<name>
-└── 線上緊急 Bug      → 從 main/Pro 建立 hotfix/<name>
+└── 線上緊急 Bug      → 從 main 建立 hotfix/<name>
 ```
 
 建立新分支（若需要）：
@@ -157,8 +157,8 @@ git push origin <branch-name>
 # 首次推送新建分支（尚未存在於遠端）
 git push -u origin feature/<name>
 
-# 分支管理建議：若在 Dev 推送且功能已里程碑，可詢問是否合併至 Pro
-# git checkout Pro ; git merge Dev ; git push origin Pro ; git checkout Dev
+# 分支管理建議：若在 Dev 推送且功能已里程碑，可詢問是否合併至 main
+# git checkout main ; git merge Dev ; git push origin main ; git checkout Dev
 ```
 
 ---
@@ -206,7 +206,7 @@ git restore src/components/AnimeCard.tsx
 ## 6. 分支生命週期圖
 
 ```
-main/Pro ──────────────────────────────── (永遠穩定)
+main ──────────────────────────────── (永遠穩定)
     │                              ↑
     │                         merge (PR)
     │                              │

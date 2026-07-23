@@ -129,6 +129,18 @@ export const AnimeDetailModal: React.FC = () => {
     if (state?.backgroundLocation) {
       navigate(state.backgroundLocation.pathname + state.backgroundLocation.search);
     } else {
+      try {
+        const savedStr = sessionStorage.getItem('last_background_location');
+        if (savedStr) {
+          const savedBg = JSON.parse(savedStr);
+          if (savedBg && savedBg.pathname) {
+            navigate(savedBg.pathname + (savedBg.search || ''));
+            return;
+          }
+        }
+      } catch (e) {
+        console.error('Failed to parse last_background_location on close', e);
+      }
       navigate('/');
     }
   }, [navigate, location.state]);

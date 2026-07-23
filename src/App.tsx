@@ -29,8 +29,16 @@ function App() {
   const isNative = Capacitor.isNativePlatform();
   const [isTutorialOpen, setIsTutorialOpen] = useState(false);
   const location = useLocation();
-  const state = location.state as { backgroundLocation?: any };
-  const backgroundLocation = state?.backgroundLocation;
+  
+  // 取得路由狀態中的背景位置
+  let backgroundLocation = (location.state as any)?.backgroundLocation;
+
+  // 攔截直接造訪 /anime/:id 的情況 (例如直接輸入網址或重新整理)
+  // 如果沒有 backgroundLocation，強制將背景設定為首頁 ('/')
+  if (!backgroundLocation && location.pathname.startsWith('/anime/')) {
+    backgroundLocation = { pathname: '/', search: '', hash: '', state: null, key: 'default-bg' };
+  }
+
   const { isInitializing } = useAnime();
   const { isScraping } = useAnimeSync();
 

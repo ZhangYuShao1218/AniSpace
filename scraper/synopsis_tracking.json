@@ -9876,5 +9876,595 @@
     "zh": true,
     "ja": true,
     "en": true
+  },
+  "anilist-87486": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-98702": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-130183": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-98502": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-98425": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-102167": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-97637": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-99394": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-98524": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-98778": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_bgm_id"
+  },
+  "anilist-97643": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-98874": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-97889": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-97645": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-97875": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-98153": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-98873": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-98629": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-97890": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-21679": {
+    "zh": false,
+    "ja": false,
+    "en": false,
+    "failed": true,
+    "reason": "no_summary"
+  },
+  "anilist-20958": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21685": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21180": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21377": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21684": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21191": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97660": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97821": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97891": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98511": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21613": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21861": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97592": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21823": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-87435": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-20986": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97673": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-87539": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97619": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21744": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21298": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21123": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21460": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21856": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98202": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21851": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97682": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97917": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-20705": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97932": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21498": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98249": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98495": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21857": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21858": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21887": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21425": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21696": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21731": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21407": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98663": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21677": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98186": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21698": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21639": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21769": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97938": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97980": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21676": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97625": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97903": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21563": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21773": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21662": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97642": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21699": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21403": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21400": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97730": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21874": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97636": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-87496": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21836": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97985": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97590": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21730": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21709": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21686": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21700": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21860": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21517": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21184": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21361": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97983": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-87517": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21452": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97909": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21776": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21701": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21878": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21733": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97857": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21126": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97665": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-20919": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-97734": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98338": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-98059": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21366": {
+    "zh": true,
+    "ja": true,
+    "en": true
+  },
+  "anilist-21051": {
+    "zh": true,
+    "ja": true,
+    "en": true
   }
 }

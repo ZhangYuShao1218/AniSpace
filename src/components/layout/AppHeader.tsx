@@ -48,7 +48,14 @@ const AppHeader: React.FC = () => {
   return (
     <header className="app-header container">
       <div className="header-left">
-        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link 
+          to="/" 
+          style={{ textDecoration: 'none', color: 'inherit' }}
+          onClick={() => {
+            sessionStorage.removeItem('all_anime_page_last_search');
+            sessionStorage.removeItem('/_scroll');
+          }}
+        >
           <h1 className="app-title"><Layers className="header-icon" /> {t('appTitle')}</h1>
         </Link>
         <p className="subtitle" style={{ 

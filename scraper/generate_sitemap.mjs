@@ -13,7 +13,8 @@ try {
   // Read anime data
   const rawData = fs.readFileSync(DATA_PATH, 'utf-8');
   const animeData = JSON.parse(rawData);
-  const animeIds = Object.keys(animeData);
+  // animeData 是一個陣列，每個元素是一個物件，裡面有 id 欄位
+  const animeIds = animeData.map(item => item.id);
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

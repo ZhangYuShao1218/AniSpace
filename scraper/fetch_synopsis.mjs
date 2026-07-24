@@ -109,6 +109,25 @@ async function main() {
   let batchQueue = [];
   const BATCH_SIZE = 10;
   const TOTAL_LIMIT = 100;
+  
+  let stats = {
+    total: animeData.length,
+    withSynopsis: 0,
+    newlyAdded: 0,
+    noBgmId: 0,
+    emptySummary: 0
+  };
+
+  // Pre-calculate some stats
+  for (const anime of animeData) {
+    const id = anime.id;
+    if (tracker[id] && tracker[id].zh && tracker[id].ja && tracker[id].en) {
+      stats.withSynopsis++;
+    }
+    if (!anilistToBgmMap.has(id)) {
+      stats.noBgmId++;
+    }
+  }
 
   async function flushBatch() {
     if (batchQueue.length === 0) return;
@@ -142,6 +161,8 @@ async function main() {
       if (original) {
         newlyFetched.push({ id, title: original.titleZh });
         console.log(`✅ [${id}] AI 翻譯完成: ${original.titleZh}`);
+        stats.newlyAdded++;
+        stats.withSynopsis++;
       }
       processedCount++;
     }
@@ -154,20 +175,23 @@ async function main() {
 
   for (const anime of animeData) {
     if (processedCount + batchQueue.length >= TOTAL_LIMIT) {
+      console.log(`\n⚠️ 已達每日 AI 翻譯上限 (${TOTAL_LIMIT})，停止掃描新項目。`);
       break; 
     }
 
-    const id = anime.id; // e.g. "anilist-12345"
+    const id = anime.id;
     if (!id.startsWith('anilist-')) continue;
     
     if (!tracker[id]) {
       tracker[id] = { zh: false, ja: false, en: false };
     }
     const t = tracker[id];
-    if (t.zh && t.ja && t.en) continue; // Fully fetched
+    if (t.zh && t.ja && t.en) continue; // 已有簡介，跳過
 
     const bgmId = anilistToBgmMap.get(id);
-    if (!bgmId) continue; // 沒有建檔跳過
+    if (!bgmId) {
+        continue; // 步驟 1: 沒有 bangumi_data 對應資料，直接跳過
+    }
 
     // Fetch from Bangumi
     const bgmSummary = await fetchBangumiSummary(bgmId);
@@ -187,7 +211,8 @@ async function main() {
         await flushBatch();
       }
     } else {
-      // 沒有簡介就不處理，不改 tracker 讓他明天再來查
+      // 步驟 2: 對應簡介為空，直接跳過，不改 tracker，明天會再試
+      stats.emptySummary++;
     }
   }
   
@@ -197,6 +222,12 @@ async function main() {
   }
 
   console.log(`\n🎉 Synopsis fetching complete. Processed ${processedCount} animes.`);
+  console.log(`\n📊 每日任務劇情簡介統計回報:`);
+  console.log(`- 當前動畫總數: ${stats.total}`);
+  console.log(`- 沒找到對應 bangumi_data 的數量: ${stats.noBgmId}`);
+  console.log(`- 本次掃描發現對應資料為空的數量: ${stats.emptySummary}`);
+  console.log(`- 有劇情簡介的動畫總數量: ${stats.withSynopsis}`);
+  console.log(`- 本次新增 ${stats.newlyAdded} 筆簡介`);
 }
 
 main().catch(console.error);

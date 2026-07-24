@@ -1,0 +1,13 @@
+【動畫爬蟲】完成。本次實際抓取 3400 筆，經 ID 比對合併後資料庫共 3586 筆，新增資料 0 筆，AI 翻譯 1 筆。
+📈 Bangumi 字典對應與授權回填：共 3153 部動畫成功對照字典並無條件整合去重播放授權！
+🤖 AI 翻譯動畫：
+- 借出的魔力以【循環付款】強制徵收
+🛡️ 洗滌成功的動畫 (共 2 部)：
+- 《擅長逃跑的殿下 第二季》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=141781
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=49853
+- 《靠死亡遊戲混飯吃。44:CLOUDY BEACH》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=141219
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=46994
+🔗 未對應 bangumi_data 動畫數量：433 部 (完整清單已隨信附帶)
+

@@ -3,7 +3,9 @@
   "source": "Manga",
   "episodes": 20,
   "averageScore": 61,
-  "relatedAnimeIds": [],
+  "relatedAnimeIds": [
+    "anilist-53086"
+  ],
   "zh": "網路動畫《動畫心療系》改編自結城優負責腳本、創負責作畫的漫畫《漫畫心療系》。故事以一間小診所「優精神科」為舞台，登場角色除了專門吐槽的身心科主治醫師心內療、天真爛漫但喜歡下流妄想的小護士官越明日奈以外，還有個性鮮明的官越一家人、多次登場的幾個變態紳士（暴露狂、偷窺狂、跟蹤狂、內褲小偷）等等。這群人一同針對五花八門的心理問題，展開一連串既脫線又歡樂的研究與解說。",
   "ja": "ウェブアニメ『アニメで分かる心療内科』は、ゆうきゆう原作、ソウ作画による漫画『マンガで分かる心療内科』が原作。本作は小さなクリニック「ゆうメンタルクリニック」を舞台に、ツッコミ役の心療内科医・心内療、天真爛漫で下ネタ妄想が好きなナース・官越あすなをはじめ、個性豊かな官越家の人々や、変態紳士たち（露出狂、のぞき魔、ストーカー、下着泥棒）が登場する。彼らがさまざまな心理的問題について、脱線しながらも楽しく解説していくドタバタコメディ。",
   "en": "Based on a comedy manga about psychology and mental health. The story takes place in a small clinic, the Yuu Mental Clinic, and revolves around the psychotherapist Ryou Shinnai and his cheerful nurse Asuna Kangoshi. Together with Asuna's eccentric family and various eccentric patients, they explain various mental disorders, psychological issues, and treatments in a highly comedic, often inappropriate, and chaotic manner."

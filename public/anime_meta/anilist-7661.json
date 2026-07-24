@@ -3,5 +3,7 @@
   "source": "Manga",
   "episodes": 26,
   "averageScore": 72,
-  "relatedAnimeIds": []
+  "relatedAnimeIds": [
+    "anilist-43897"
+  ]
 }

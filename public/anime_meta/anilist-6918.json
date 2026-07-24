@@ -2,6 +2,11 @@
   "studio": "MADHOUSE",
   "source": "Other",
   "episodes": 12,
-  "averageScore": 54,
-  "relatedAnimeIds": []
+  "averageScore": 53,
+  "relatedAnimeIds": [
+    "anilist-6875",
+    "anilist-6920",
+    "anilist-15847",
+    "anilist-6919"
+  ]
 }

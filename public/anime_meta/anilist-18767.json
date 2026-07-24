@@ -3,5 +3,7 @@
   "source": "Video Game",
   "episodes": 12,
   "averageScore": 55,
-  "relatedAnimeIds": []
+  "relatedAnimeIds": [
+    "anilist-90108"
+  ]
 }

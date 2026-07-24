@@ -3,7 +3,12 @@
   "source": "Light Novel",
   "episodes": 1,
   "averageScore": 67,
-  "relatedAnimeIds": [],
+  "relatedAnimeIds": [
+    "anilist-20462",
+    "anilist-20719",
+    "anilist-62831",
+    "anilist-62097"
+  ],
   "zh": "TV未放送第1話，作為OVA與小說第12卷限定版同捆發售。",
   "ja": "TV未放送1話のOVAを同梱した小説12巻限定版。",
   "en": "An unaired episode bundled as an OVA with the limited edition of the 12th volume of the light novel."

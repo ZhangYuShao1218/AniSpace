@@ -540,7 +540,7 @@
   },
   "anilist-202250": {
     "id": "anilist-202250",
-    "titleZh": "借出的魔力以【循環分期】強制徵收",
+    "titleZh": "借出的魔力以【循環付款】強制徵收",
     "titleJa": "貸した魔力は【リボ払い】で強制徴収",
     "yearSeason": "2026 秋",
     "hasCorrespondingData": false,
@@ -3038,7 +3038,7 @@
   "anilist-178869": {
     "id": "anilist-178869",
     "titleZh": "Clevatess －魔獸之王與嬰兒與屍之勇者－",
-    "titleJa": "クレバテス-魔獣の王と赤子と屍の勇者",
+    "titleJa": "クレバテス-魔獣の王と赤子と屍の勇者-",
     "yearSeason": "2025 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
@@ -16270,7 +16270,7 @@
   },
   "anilist-107068": {
     "id": "anilist-107068",
-    "titleZh": "擅長捉弄的高木同學 第二季",
+    "titleZh": "擅長捉弄人的高木同學 第二季",
     "titleJa": "からかい上手の高木さん 2",
     "yearSeason": "2019 夏",
     "hasCorrespondingData": true,
@@ -18162,7 +18162,7 @@
   },
   "anilist-104170": {
     "id": "anilist-104170",
-    "titleZh": "遊戲三人娘 (OAD)",
+    "titleZh": "遊戲3人娘 (OAD)",
     "titleJa": "あそびあそばせ (OAD)",
     "yearSeason": "2018 秋",
     "hasCorrespondingData": false,
@@ -18195,7 +18195,7 @@
   },
   "anilist-104368": {
     "id": "anilist-104368",
-    "titleZh": "遊戲三人娘 迷你動畫",
+    "titleZh": "遊戲3人娘 迷你動畫",
     "titleJa": "あそびあそばせ ミニアニメ",
     "yearSeason": "2018 秋",
     "hasCorrespondingData": false,
@@ -18701,7 +18701,7 @@
   },
   "anilist-101426": {
     "id": "anilist-101426",
-    "titleZh": "擅長捉弄的高木同學 OVA",
+    "titleZh": "擅長捉弄人的高木同學 OVA",
     "titleJa": "からかい上手の高木さん ウォータースライダー",
     "yearSeason": "2018 夏",
     "hasCorrespondingData": true,
@@ -19482,7 +19482,7 @@
   },
   "anilist-99468": {
     "id": "anilist-99468",
-    "titleZh": "擅長捉弄的高木同學",
+    "titleZh": "擅長捉弄人的高木同學",
     "titleJa": "からかい上手の高木さん",
     "yearSeason": "2018 冬",
     "hasCorrespondingData": true,

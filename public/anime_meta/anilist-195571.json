@@ -2,5 +2,7 @@
   "studio": "100studio",
   "source": "Manga",
   "trailerYoutubeId": "hEjYt73pYEE",
-  "relatedAnimeIds": []
+  "relatedAnimeIds": [
+    "anilist-130729"
+  ]
 }

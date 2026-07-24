@@ -3,7 +3,9 @@
   "source": "Manga",
   "episodes": 1,
   "averageScore": 73,
-  "relatedAnimeIds": [],
+  "relatedAnimeIds": [
+    "anilist-66595"
+  ],
   "zh": "在某個夏日，某座南洋島嶼上少女們的遭遇，或許某天也會發生在我們身上……。當平穩的日常在不知不覺中化為戰場，生命面臨絕望處境時，我們究竟會感受到什麼？\n本片改編自今日町子以太平洋戰爭中的沖繩戰役為靈感所創作的漫畫《cocoon》，由肩負日本動畫未來的年輕新銳與資深老手齊聚一堂，刻畫出這部 2025 年必看之作。這是一部讓人反思過去、現在與未來的動畫電影。",
   "ja": "ある夏のどこかの南の島で、少女たちに起こったことは、いつか私たちに起こることかもしれない…。穏やかな日常がいつの間にか戦場へと変わり、命が絶望的な状況に置かれたとき、私たちは何を感じるのか。太平洋戦争での沖縄戦に着想を得た今日マチ子によるマンガ『cocoon』を原作に、日本アニメの将来を嘱望される若き才能とベテランたちが、2025年に届けたい物語として描き出した。過去と今、そして未来を考えるためのアニメーション。",
   "en": "What happened to the girls on a southern island somewhere one summer might happen to us someday... When peaceful everyday life unnoticeably turns into a battlefield, and lives are placed in desperate situations, what will we feel?\nBased on Machiko Kyo's manga \"cocoon,\" which was inspired by the Battle of Okinawa during the Pacific War, promising young talents and veterans of the Japanese anime industry have come together to depict a story they want to deliver in 2025. This is an animation meant to make us reflect on the past, the present, and the future."

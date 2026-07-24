@@ -3,5 +3,9 @@
   "source": "Original",
   "episodes": 1,
   "averageScore": 69,
-  "relatedAnimeIds": []
+  "relatedAnimeIds": [
+    "anilist-20505",
+    "anilist-20504",
+    "anilist-20502"
+  ]
 }

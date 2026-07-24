@@ -2,5 +2,9 @@
   "source": "Light Novel",
   "episodes": 13,
   "averageScore": 63,
-  "relatedAnimeIds": []
+  "relatedAnimeIds": [
+    "anilist-15225",
+    "anilist-55876",
+    "anilist-55679"
+  ]
 }

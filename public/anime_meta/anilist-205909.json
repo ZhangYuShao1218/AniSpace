@@ -2,5 +2,7 @@
   "studio": "david production",
   "source": "Manga",
   "trailerYoutubeId": "feXx-UG9iZk",
-  "relatedAnimeIds": []
+  "relatedAnimeIds": [
+    "anilist-159142"
+  ]
 }

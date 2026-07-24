@@ -2,11 +2,16 @@
   "studio": "bones",
   "source": "Manga",
   "episodes": 2,
-  "averageScore": 75,
+  "averageScore": 76,
   "relatedAnimeIds": [
     "anilist-20447",
     "anilist-20494",
-    "anilist-21128"
+    "anilist-21128",
+    "anilist-54692",
+    "anilist-85392",
+    "anilist-102507",
+    "anilist-102618",
+    "anilist-100716"
   ],
   "zh": "限定版單行本第15卷、第16卷同捆OAD",
   "ja": "限定版コミックス第15巻、第16巻同梱OAD",

@@ -3,7 +3,11 @@
   "source": "Manga",
   "episodes": 12,
   "averageScore": 60,
-  "relatedAnimeIds": [],
+  "relatedAnimeIds": [
+    "anilist-21359",
+    "anilist-86341",
+    "anilist-86545"
+  ],
   "zh": "故事的主角是過於溫柔而無法拒絕他人請求的女國中生・小森朱梨。從幫忙做粗活到輔導朋友學習，在此過程中獲得各種能力的小森，變得更加受人依賴了。無法說不的性格，以及備考學習和朋友關係等青春期煩惱交織而成的青春畫卷。",
   "ja": "物語の主人公は、優しすぎて他人からの頼みごとを断れない女子中学生・小森しゅり。力仕事の手伝いから友達の勉強の指導まで、その過程で様々な能力を身につけた小森は、さらに頼りにされるようになっていく。ノーと言えない性格や、受験勉強、人間関係といった思春期の悩みが交錯する青春グラフィティ。",
   "en": "The story follows Shuri Komori, a middle school girl who is too kind to refuse requests from others. From helping with physical labor to tutoring friends, Komori gains various skills along the way and becomes increasingly relied upon. It is a youth portrait woven from her inability to say no and adolescent worries such as exam prep and friendships."

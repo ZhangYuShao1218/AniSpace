@@ -32,3 +32,5 @@ export interface WatchedAnime extends Anime {
 }
 
 export type SortOption = 'date_desc' | 'date_asc' | 'rating_desc' | 'rating_asc';
+
+declare const __APP_VERSION__: string;

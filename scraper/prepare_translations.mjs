@@ -52,7 +52,7 @@ async function main() {
         }
 
         toFetch.push(anime);
-        if (toFetch.length >= 100) break;
+        if (toFetch.length >= 150) break;
     }
     
     console.log(`Found ${toFetch.length} valid items to fetch in this batch.`);

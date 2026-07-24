@@ -136,24 +136,33 @@ async function run() {
     console.log('No old backups required deletion.');
   }
 
-  // 5. Update data_version.json (+1)
+  // 5. Update dataVersion in package.json and sync to data_version.json
+  const pkgPath = path.resolve('package.json');
   let currentVersion = 100;
-  if (fs.existsSync(VERSION_FILE)) {
+  let pkgData = {};
+
+  if (fs.existsSync(pkgPath)) {
     try {
-      const vData = JSON.parse(fs.readFileSync(VERSION_FILE, 'utf-8'));
-      if (typeof vData.version === 'number') {
-        currentVersion = vData.version + 1;
+      pkgData = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'));
+      if (typeof pkgData.dataVersion === 'number') {
+        currentVersion = pkgData.dataVersion + 1;
       }
     } catch (e) {
-      console.warn('Could not parse existing data_version.json, defaulting to 100.');
+      console.warn('Could not parse package.json, defaulting dataVersion to 100.');
     }
   }
+
+  // Update package.json
+  pkgData.dataVersion = currentVersion;
+  fs.writeFileSync(pkgPath, JSON.stringify(pkgData, null, 2) + '\n', 'utf-8');
+
+  // Sync to public/data_version.json for client-side fetching
   const versionPayload = {
     version: currentVersion,
     lastUpdated: new Date().toISOString()
   };
   fs.writeFileSync(VERSION_FILE, JSON.stringify(versionPayload, null, 2), 'utf-8');
-  console.log(`Updated data_version.json to version: ${String(currentVersion).padStart(5, '0')} (${currentVersion})`);
+  console.log(`Updated dataVersion in package.json and public/data_version.json to: ${String(currentVersion).padStart(5, '0')} (${currentVersion})`);
 }
 
 run().catch(err => {

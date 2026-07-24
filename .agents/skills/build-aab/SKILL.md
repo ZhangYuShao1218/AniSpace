@@ -10,9 +10,12 @@ description: 自動檢查與更新版號，建構前端專案並同步至 Capaci
 ## 📋 標準作業流程 (SOP)
 
 ### 1. 確認與調整版本號 (若使用者要求升級版號)
-打包前，請優先檢查以下兩個檔案的版本號是否一致同步：
-* **`package.json`**：檢查 `version` 欄位（例如 `"1.0.9"`）。
-* **`android/app/build.gradle`**：檢查 `defaultConfig` 區塊中的 `versionCode` (整數遞增，例如 `11`) 與 `versionName` (字串字面量，例如 `"1.0.9"`)。
+目前專案已採用 **Single Source of Truth** 機制，所有的版本號均統一維護在 **`package.json`** 檔案的根層級中，請在打包前優先檢查與修改此檔案：
+* **`version`**：前端與 Android App 顯示用版本號 (字串，例如 `"1.1.2"`)。
+* **`androidVersionCode`**：Android App 更新用版本代碼 (整數遞增，例如 `19`)。
+* **`dataVersion`**：資料庫版本號 (整數遞增，爬蟲會自動更新，也可手動修改，例如 `105`)。
+
+修改完成後，在打包流程中，`android/app/build.gradle`、前端 Vite 環境變數以及資料流都會自動從 `package.json` 抓取最新設定，無須手動更改其他檔案。
 
 > [!IMPORTANT]
 > 如果 `src/types/` 下有自訂的外掛型別擴充（例如 `lucide-react.d.ts`），編譯前務必確認是否有遺漏的 Export 定義，以防 TypeScript 檢查報錯中斷打包。

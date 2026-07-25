@@ -1,15 +1,15 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/7/20 上午10:42:23
+執行時間: 2026/7/25 下午1:31:53
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [上午10:42:23] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午1:31:53] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
-💾 已將 bangumi-data 完整字典檔寫入本地: C:\Users\aaron\Documents\WorkSpace\Animation\public\bangumi_data.json
-✅ 字典檔載入完成，共建立 7699 筆 AniList ID 映射，8522 筆日文標題 100% 精確映射。
+💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
+✅ 字典檔載入完成，共建立 7972 筆 AniList ID 映射，8522 筆日文標題 100% 精確映射。
 
 🔍 正在爬取: 2010 年 WINTER 季...
 🚀 取得 50 部動畫資料，進行本地超高速清洗...
@@ -215,17 +215,14 @@ AniSpace 每日任務完整執行 Log
 🔍 正在爬取: 2026 年 FALL 季...
 🚀 取得 50 部動畫資料，進行本地超高速清洗...
 
-🤖 發現 2 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
+🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
+✅ AI 翻譯完成，更新了 1 筆資料至 custom_override.json
 ✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3586 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 433 部無對應動畫，開始進行極速正規化比對...
+⚡ 啟動本地程式化標題正規化對照引擎：針對 402 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-171099] "孤獨搖滾！ Re:Re:" ➜ "劇場總集篇 孤獨搖滾！Re: Re:"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-130590] "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～第二季 後篇" ➜ "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～第2季"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-165253] "孤獨搖滾！ Re:" ➜ "劇場總集篇 孤獨搖滾！Re:"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-153906] "Tekken: Bloodline" ➜ "鐵拳：血脈"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-133891] "Love Live! 虹咲學園學園偶像同好會 第二季" ➜ "Love Live! 虹咲學園 學園偶像同好會 第二季"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-133124] "劇場版 Free!–the Final Stroke– 後編" ➜ "劇場版 Free! 男子游泳部 -the Final Stroke- 後篇"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-131681] "進擊的巨人 The Final Season 後篇" ➜ "進擊的巨人 Final Season"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-107203] "劇場版 Free!–the Final Stroke– 前編" ➜ "劇場版 Free! 男子游泳部 -the Final Stroke- 前篇"
@@ -234,9 +231,7 @@ AniSpace 每日任務完整執行 Log
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-102649] "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 - 罪與罰" ➜ "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 罪與罰"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-104990] "PSYCHO-PASS サイコパス Sinners of the System Case.3 - 恩讐の彼方に____" ➜ "PSYCHO-PASS 心靈判官 Sinners of the System Case.3 恩仇的彼方"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-106169] "PERSONA5 the Animation: Dark Sun…" ➜ "女神異聞錄5 Dark Sun…"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-101812] "Code Geass 反叛的魯路修Ⅱ 叛道" ➜ "Code Geass 反叛的魯路修 II 叛道"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-20791] "Fate/stay night[Heaven's Feel] Ⅰ.presage flower" ➜ "Fate/stay night [Heaven's Feel] I. 預示之花"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-101811] "Code Geass 反叛的魯路修Ⅰ 興道" ➜ "Code Geass 反叛的魯路修 I 興道"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-98663] "甲鐵城的卡巴內裡 總集篇｛後篇｝燃燒的生命" ➜ "甲鐵城的卡巴內利 總集篇 後篇 燃燒的生命"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-98662] "甲鉄城のカバネリ 総集編｛前編｝集う光" ➜ "甲鐵城的卡巴內利 總集篇 前篇 聚光"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-21732] "planetarian～小小的星之夢～" ➜ "星之夢"
@@ -246,17 +241,8 @@ AniSpace 每日任務完整執行 Log
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-21326] "東京喰種 Tokyo Ghoul 【PINTO】" ➜ "東京喰種 PINTO"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-21348] "排球少年!! VS赤點" ➜ "排球少年!! OVA 2: VS"掛科""
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-21852] "出包王女 Darkness 2nd (OVA特別篇)" ➜ "出包王女Darkness 2nd"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-21008] "蟲師 特別篇「鈴之雫」" ➜ "蟲師 續章 鈴之雫"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-20692] "劇場版 進擊的巨人 後篇～自由之翼～" ➜ "劇場版 進擊的巨人 後編 自由之翼"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-20691] "劇場版 進擊的巨人 前篇～紅蓮之弓矢～" ➜ "劇場版 進擊的巨人 前編 紅蓮的弓矢"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-19193] "攻殻機動隊ARISE -GHOST IN THE SHELL- border:3 Ghost Tears" ➜ "攻殼機動隊ARISE border:3 Ghost Tears"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-20687] "未確認進行式 鴨肉有種綠色的味道呢。" ➜ "未確認進行式 OAD"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-17187] "攻殻機動隊ARISE -GHOST IN THE SHELL- border:1 Ghost Pain" ➜ "攻殼機動隊ARISE border:1 Ghost Pain"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-13659] "我的妹妹哪有這麼可愛。第二季" ➜ "我的妹妹哪有這麼可愛！"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-17397] "獨眼巨人少女賽普～" ➜ "獨眼巨人少女斎楓～"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-11977] "劇場版 魔法少女小圓 ［前篇］起始的物語" ➜ "魔法少女小圓 劇場版 前編 最初的物語"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-11979] "劇場版 魔法少女小圓 ［後篇］永遠的物語" ➜ "魔法少女小圓 劇場版 後編 永遠的物語"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-14073] "蝦掰天文社 公立海老棲川高校天悶部" ➜ "公立海老棲川高校天悶部"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-11313] "有你的小鎮 黃昏十字路口" ➜ "有你的小鎮 OAD 黃昏交叉點"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-10330] "爆丸 戰鬥者 機甲旋風" ➜ "爆丸4 機械波濤"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-10431] "笨蛋、測驗、召喚獸～祭～" ➜ "笨蛋，測驗，召喚獸～祭典～"
@@ -265,130 +251,3162 @@ AniSpace 每日任務完整執行 Log
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-8619] "大小姐×執事！OVA" ➜ "管家後宮學園"
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
-📦 成功載入 bangumi-data 字典，映射 1628 筆 AniList ID 及 1708 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 10 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-⚠️ [防呆保護] 跳過 "BLEACH 死神 千年血戰篇-禍進譚-"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=146138
-⚠️ [防呆保護] 跳過 "擅長逃跑的殿下 第二季"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=141781
-⚠️ [防呆保護] 跳過 "我的英雄學院 I am a hero too"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=151274
-⚠️ [防呆保護] 跳過 "靠死亡遊戲混飯吃。44:CLOUDY BEACH"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=141219
-⚠️ [防呆保護] 跳過 "RE-MAIN"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=116190
-⚠️ [防呆保護] 跳過 "七騎士：革命 -英雄的繼承者-"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=115759
-⚠️ [防呆保護] 跳過 "劇場版 FREE! 男子游泳部 -Road to the World-夢"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=103432
-⚠️ [防呆保護] 跳過 "岸邊露伴一動也不動"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=107400
-⚠️ [防呆保護] 跳過 "Anne-Happy"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=78004
-⚠️ [防呆保護] 跳過 "零之使魔"，保持原 URL: https://acg.gamer.com.tw/acgDetail.php?s=176
-⏳ 洗滌進度: 10 / 10 (本次成功轉換: 0)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
+📦 成功載入 bangumi-data 字典，映射 1659 筆 AniList ID 及 1708 筆 100% 精確日文標題。
+📦【動畫瘋洗滌檢驗】偵測到 12 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+⏳ 洗滌進度: 12 / 12 (本次成功轉換: 4)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 4 筆作品。
 ✅ 已將 3586 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3400 筆，經 ID 比對合併後資料庫共 3586 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3153 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：433 部 (完整清單已隨信附帶)
+【動畫爬蟲】完成。本次實際抓取 3400 筆，經 ID 比對合併後資料庫共 3586 筆，新增資料 0 筆，AI 翻譯 1 筆。
+📈 Bangumi 字典對應與授權回填：共 3184 部動畫成功對照字典並無條件整合去重播放授權！
+🤖 AI 翻譯動畫：
+- 借出的魔力以【循環分期】強制徵收
+🛡️ 洗滌成功的動畫 (共 4 部)：
+- 《輝夜姬想讓人告白－永不結束的初吻－》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=125624
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=33277
+- 《獵人劇場版 - 最終任務》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=59672
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=5746
+- 《獵人劇場版 - 緋色幻影》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=54816
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=5747
+- 《家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=118307
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=23299
+🎉 本來未對應到 bangumi_data 但新對應到的動畫 (共 31 部)：
+- 《終末的女武神Ⅱ 前篇》 ➜ 成功對應至字典：終末のワルキューレⅡ 前編 (BGM ID: 346982)
+- 《平凡職業造就世界最強 OVA》 ➜ 成功對應至字典：ありふれた職業で世界最強 OVA (BGM ID: 376349)
+- 《地球外少年少女》 ➜ 成功對應至字典：地球外少年少女 後編 (BGM ID: 363309)
+- 《DEEMO 櫻花之音 -你奏響的音樂，如今依舊迴盪- I still hear the sound of your piano》 ➜ 成功對應至字典：DEEMO サクラノオト -あなたの奏でた音が、今も響く- I still hear the sound of your piano (BGM ID: 294752)
+- 《沒有給我哥吃的藥！4》 ➜ 成功對應至字典：兄に付ける薬はない！4-快把我哥帯走4- (BGM ID: 311978)
+- 《我們真的學不來 OVA》 ➜ 成功對應至字典：ぼくたちは勉強ができない OVA (BGM ID: 294059)
+- 《沒有給我哥吃的藥！3》 ➜ 成功對應至字典：兄に付ける薬はない！3-快把我哥帯走3- (BGM ID: 287316)
+- 《幼女戰記 劇場版》 ➜ 成功對應至字典：幼女戦記 劇場版 (BGM ID: 234771)
+- 《來自深淵 劇場版總集篇 前編：啟程的黎明》 ➜ 成功對應至字典：劇場版総集編メイドインアビス【前編】旅立ちの夜明け (BGM ID: 240798)
+- 《灰色：幻影扳機 01/02》 ➜ 成功對應至字典：グリザイア：ファントムトリガー THE ANIMATIION 01/02 (BGM ID: 219263)
+- 《沒有給我哥吃的藥！2》 ➜ 成功對應至字典：兄に付ける薬はない！2 -快把我哥帯走2- (BGM ID: 219143)
+- 《結城友奈是勇者 鷲尾須美之章&勇者之章》 ➜ 成功對應至字典：結城友奈は勇者である -鷲尾須美の章-/-勇者の章- (BGM ID: 195937)
+- 《沒有給我哥吃的藥！》 ➜ 成功對應至字典：兄に付ける薬はない！-快把我哥帯走- (BGM ID: 210811)
+- 《悠哉日常大王 Repeat OAD》 ➜ 成功對應至字典：のんのんびより りぴーと OAD (BGM ID: 165738)
+- 《終結的熾天使 OVA》 ➜ 成功對應至字典：終わりのセラフ OVA (BGM ID: 148096)
+- 《食戟之靈 OAD》 ➜ 成功對應至字典：食戟のソーマ OAD (BGM ID: 148098)
+- 《約會大作戰 DATE A LIVE 劇場版 萬由裡審判》 ➜ 成功對應至字典：デート・ア・ライブ 万由里ジャッジメント (BGM ID: 106060)
+- 《青春之旅 OAD》 ➜ 成功對應至字典：アオハライド OAD (BGM ID: 103812)
+- 《悠哉日常大王 OAD》 ➜ 成功對應至字典：のんのんびより OAD (BGM ID: 86895)
+- 《在盛夏等待 特別篇》 ➜ 成功對應至字典：あの夏で待ってる 特別編 (BGM ID: 100450)
+- 《獵人劇場版 - 最終任務》 ➜ 成功對應至字典：HUNTER×HUNTER The Last Mission (BGM ID: 80607)
+- 《鄰座的怪同學 OAD》 ➜ 成功對應至字典：となりの怪物くん OAD (BGM ID: 59077)
+- 《海賊王 梅利號篇章 ～另一個夥伴的故事～》 ➜ 成功對應至字典：ワンピース エピソード オブ メリー～もうひとりの仲間の物語～ (BGM ID: 90792)
+- 《網球少女 2期》 ➜ 成功對應至字典：てーきゅう(第2期) (BGM ID: 69943)
+- 《獵人劇場版 - 緋色幻影》 ➜ 成功對應至字典：HUNTER×HUNTER 緋色の幻影 (BGM ID: 44705)
+- 《電影 哆啦A夢 大雄的秘密道具博物館》 ➜ 成功對應至字典：ドラえもん のび太のひみつ道具博物館 (BGM ID: 55467)
+- 《寶貝公主》 ➜ 成功對應至字典：Baby Princess 2Dぱらだいす0 (BGM ID: 14933)
+- 《世界第一初戀 OAD》 ➜ 成功對應至字典：世界一初恋 OAD (BGM ID: 13973)
+- 《文學少女 熱戀少女們的狂想曲》 ➜ 成功對應至字典：“文学少女”メモワールIII-恋する乙女の狂想曲（ラプソディ）- (BGM ID: 6814)
+- 《家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！》 ➜ 成功對應至字典：家庭教師ヒットマンREBORN！ボンゴレ式修学旅行、来る！ (BGM ID: 18576)
+- 《美少女戰士R 電影版》 ➜ 成功對應至字典：劇場版 美少女戦士セーラームーンR (BGM ID: 5435)
+🔗 未對應 bangumi_data 動畫數量：402 部 (完整清單已隨信附帶)
 =====================================
 
+🔄 正在建構全系列關聯圖 (Franchise Graph)...
+✅ 建構完成！共整理出 1739 個系列，更新了 2130 筆 Metadata 關聯檔案。
 
-✨ 抓取與清洗完成！極速處理完畢。共 3586 筆資料已儲存至 C:\Users\aaron\Documents\WorkSpace\Animation\public\anime_data.json
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=146138)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=141781)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=151274)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=141219)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=116190)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=115759)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=103432)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=107400)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=78004)
-[防呆保護] 遭遇巴哈姆特防護或系統維護攔截 (https://acg.gamer.com.tw/acgDetail.php?s=176)
+✨ 抓取與清洗完成！極速處理完畢。共 3586 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [上午10:49:56] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午1:43:01] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-No relevant translation changes detected.
+[Diff] 發現更官方譯名 anilist-138056: 舊譯名 "終末的女武神Ⅱ" ➜ 新譯名 "終末的女武神Ⅱ 前篇"，清除過時的 Override: "終末的女武神Ⅱ"
+[Diff] 發現更官方譯名 anilist-146921: 舊譯名 "平凡職業造就世界最強 虛幻的冒險與奇蹟的邂逅" ➜ 新譯名 "平凡職業造就世界最強 OVA"，清除過時的 Override: "平凡職業造就世界最強 虛幻的冒險與奇蹟的邂逅"
+[Diff] 發現更官方譯名 anilist-113345: 舊譯名 "DEEMO 櫻花音色 -你彈奏的琴音，至今仍迴響-" ➜ 新譯名 "DEEMO 櫻花之音 -你奏響的音樂，如今依舊迴盪- I still hear the sound of your piano"，清除過時的 Override: "DEEMO 櫻花音色 -你彈奏的琴音，至今仍迴響-"
+[Diff] 發現更官方譯名 anilist-120046: 舊譯名 "快把我哥帶走4" ➜ 新譯名 "沒有給我哥吃的藥！4"，清除過時的 Override: "快把我哥帶走4"
+[Diff] 發現更官方譯名 anilist-109492: 舊譯名 "我們真的學不來！OVA" ➜ 新譯名 "我們真的學不來 OVA"，清除過時的 Override: "我們真的學不來！OVA"
+[Diff] 發現更官方譯名 anilist-110088: 舊譯名 "快把我哥帶走！3" ➜ 新譯名 "沒有給我哥吃的藥！3"，清除過時的 Override: "快把我哥帶走！3"
+[Diff] 發現更官方譯名 anilist-101343: 舊譯名 "來自深淵 啟程的黎明" ➜ 新譯名 "來自深淵 劇場版總集篇 前編：啟程的黎明"，清除過時的 Override: "來自深淵 啟程的黎明"
+[Diff] 發現更官方譯名 anilist-99470: 舊譯名 "灰色的幻影扳機 THE ANIMATION" ➜ 新譯名 "灰色：幻影扳機 01/02"，清除過時的 Override: "灰色的幻影扳機 THE ANIMATION"
+[Diff] 發現更官方譯名 anilist-101844: 舊譯名 "快把我哥帶走！2" ➜ 新譯名 "沒有給我哥吃的藥！2"，清除過時的 Override: "快把我哥帶走！2"
+[Diff] 發現更官方譯名 anilist-100791: 舊譯名 "結城友奈是勇者 -鷲尾須美之章-" ➜ 新譯名 "結城友奈是勇者 鷲尾須美之章&勇者之章"，清除過時的 Override: "結城友奈是勇者 -鷲尾須美之章-"
+[Diff] 發現更官方譯名 anilist-98425: 舊譯名 "快把我哥帶走！" ➜ 新譯名 "沒有給我哥吃的藥！"，清除過時的 Override: "快把我哥帶走！"
+[Diff] 發現更官方譯名 anilist-21585: 舊譯名 "悠哉日常大王 Repeat：小螢所享受的" ➜ 新譯名 "悠哉日常大王 Repeat OAD"，清除過時的 Override: "悠哉日常大王 Repeat：小螢所享受的"
+[Diff] 發現更官方譯名 anilist-21586: 舊譯名 "終結的熾天使：吸血鬼沙哈爾" ➜ 新譯名 "終結的熾天使 OVA"，清除過時的 Override: "終結的熾天使：吸血鬼沙哈爾"
+[Diff] 發現更官方譯名 anilist-21691: 舊譯名 "食戟之靈 OVA" ➜ 新譯名 "食戟之靈 OAD"，清除過時的 Override: "食戟之靈 OVA"
+[Diff] 發現更官方譯名 anilist-20900: 舊譯名 "青春之旅 第13頁" ➜ 新譯名 "青春之旅 OAD"，清除過時的 Override: "青春之旅 第13頁"
+[Diff] 發現更官方譯名 anilist-20497: 舊譯名 "悠哉日常大王 要去沖繩了" ➜ 新譯名 "悠哉日常大王 OAD"，清除過時的 Override: "悠哉日常大王 要去沖繩了"
+[Diff] 發現更官方譯名 anilist-20659: 舊譯名 "在那個夏天等待 我們在度過高中最後一個夏天的同時，等待著那個夏天。" ➜ 新譯名 "在盛夏等待 特別篇"，清除過時的 Override: "在那個夏天等待 我們在度過高中最後一個夏天的同時，等待著那個夏天。"
+[Diff] 發現更官方譯名 anilist-16866: 舊譯名 "隔壁的極道同學" ➜ 新譯名 "鄰座的怪同學 OAD"，清除過時的 Override: "隔壁的極道同學"
+[Diff] 發現更官方譯名 anilist-18121: 舊譯名 "網球並不可笑 第二季" ➜ 新譯名 "網球少女 2期"，清除過時的 Override: "網球並不可笑 第二季"
+[Diff] 發現更官方譯名 anilist-13271: 舊譯名 "劇場版 獵人 緋色的幻影 (幻影紅)" ➜ 新譯名 "獵人劇場版 - 緋色幻影"，清除過時的 Override: "劇場版 獵人 緋色的幻影 (幻影紅)"
+[Diff] 發現更官方譯名 anilist-15925: 舊譯名 "電影哆啦A夢 大雄的秘密道具博物館" ➜ 新譯名 "電影 哆啦A夢 大雄的秘密道具博物館"，清除過時的 Override: "電影哆啦A夢 大雄的秘密道具博物館"
+[Diff] 發現更官方譯名 anilist-10196: 舊譯名 "寶貝公主 3D天堂0[愛]" ➜ 新譯名 "寶貝公主"，清除過時的 Override: "寶貝公主 3D天堂0[愛]"
+[Diff] 發現更官方譯名 anilist-8481: 舊譯名 "文學少女 回憶錄" ➜ 新譯名 "文學少女 熱戀少女們的狂想曲"，清除過時的 Override: "文學少女 回憶錄"
+[Diff] 發現更官方譯名 anilist-8532: 舊譯名 "家庭教師HITMAN REBORN! 彭哥列家族總登場！彭哥列式修學旅行，來了！！" ➜ 新譯名 "家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！"，清除過時的 Override: "家庭教師HITMAN REBORN! 彭哥列家族總登場！彭哥列式修學旅行，來了！！"
+Updated custom_override.json based on translation diffs.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260720.json
-Deleted old backup: anime_data_backup_20260709.json
-Deleted old backup: anime_data_backup_20260710.json
-Deleted old backup: anime_data_backup_20260711.json
-Deleted old backup: anime_data_backup_20260712.json
-Deleted old backup: anime_data_backup_20260713.json
-Updated data_version.json to version: 00105 (105)
+Created daily backup: anime_data_backup_20260725.json
+Deleted old backup: anime_data_backup_20260718.json
+Updated dataVersion in package.json and public/data_version.json to: 00107 (107)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [上午10:49:57] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午1:43:01] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
-✅ [anilist-208025] EN Fetch success
-✅ [anilist-207329] EN Fetch success
-✅ [anilist-211778] EN Fetch success
-✅ [anilist-199007] EN Fetch success
-✅ [anilist-200455] EN Fetch success
-✅ [anilist-199426] EN Fetch success
-✅ [anilist-209499] EN Fetch success
-✅ [anilist-203473] EN Fetch success
-✅ [anilist-187316] EN Fetch success
-✅ [anilist-202250] EN Fetch success
-✅ [anilist-213805] EN Fetch success
-✅ [anilist-191656] EN Fetch success
-✅ [anilist-178972] EN Fetch success
-✅ [anilist-143103] EN Fetch success
-✅ [anilist-198727] EN Fetch success
-✅ [anilist-178789] EN Fetch success
-✅ [anilist-178789] ZH Translate success
-✅ [anilist-178789] JA Translate success
-✅ [anilist-135865] EN Fetch success
-✅ [anilist-135865] ZH Translate success
-✅ [anilist-135865] JA Translate success
-✅ [anilist-196187] EN Fetch success
-✅ [anilist-196187] ZH Translate success
-✅ [anilist-196187] JA Translate success
-✅ [anilist-185874] EN Fetch success
-✅ [anilist-185874] ZH Translate success
-✅ [anilist-185874] JA Translate success
-✅ [anilist-133007] EN Fetch success
-Reached batch limit of 20, stopping for this run. Next run will continue.
+📥 [anilist-120046] 已加入批次佇列: 沒有給我哥吃的藥！4 (佇列: 1/10)
+📥 [anilist-109492] 已加入批次佇列: 我們真的學不來 OVA (佇列: 2/10)
+📥 [anilist-110088] 已加入批次佇列: 沒有給我哥吃的藥！3 (佇列: 3/10)
+📥 [anilist-100878] 已加入批次佇列: 幼女戰記 劇場版 (佇列: 4/10)
+📥 [anilist-101343] 已加入批次佇列: 來自深淵 劇場版總集篇 前編：啟程的黎明 (佇列: 5/10)
+📥 [anilist-99470] 已加入批次佇列: 灰色：幻影扳機 01/02 (佇列: 6/10)
+📥 [anilist-101844] 已加入批次佇列: 沒有給我哥吃的藥！2 (佇列: 7/10)
+📥 [anilist-100791] 已加入批次佇列: 結城友奈是勇者 鷲尾須美之章&勇者之章 (佇列: 8/10)
+📥 [anilist-98425] 已加入批次佇列: 沒有給我哥吃的藥！ (佇列: 9/10)
+📥 [anilist-21585] 已加入批次佇列: 悠哉日常大王 Repeat OAD (佇列: 10/10)
 
-🎉 Synopsis fetching complete. Processed 20 animes.
+📦 準備進行 AI 翻譯 (批次: 10)...
+✅ [anilist-120046] AI 翻譯完成: 沒有給我哥吃的藥！4
+✅ [anilist-109492] AI 翻譯完成: 我們真的學不來 OVA
+✅ [anilist-110088] AI 翻譯完成: 沒有給我哥吃的藥！3
+✅ [anilist-100878] AI 翻譯完成: 幼女戰記 劇場版
+✅ [anilist-101343] AI 翻譯完成: 來自深淵 劇場版總集篇 前編：啟程的黎明
+✅ [anilist-99470] AI 翻譯完成: 灰色：幻影扳機 01/02
+✅ [anilist-101844] AI 翻譯完成: 沒有給我哥吃的藥！2
+✅ [anilist-100791] AI 翻譯完成: 結城友奈是勇者 鷲尾須美之章&勇者之章
+✅ [anilist-98425] AI 翻譯完成: 沒有給我哥吃的藥！
+✅ [anilist-21585] AI 翻譯完成: 悠哉日常大王 Repeat OAD
+📥 [anilist-21586] 已加入批次佇列: 終結的熾天使 OVA (佇列: 1/10)
+📥 [anilist-21691] 已加入批次佇列: 食戟之靈 OAD (佇列: 2/10)
+📥 [anilist-20741] 已加入批次佇列: 約會大作戰 DATE A LIVE 劇場版 萬由裡審判 (佇列: 3/10)
+📥 [anilist-20900] 已加入批次佇列: 青春之旅 OAD (佇列: 4/10)
+📥 [anilist-20497] 已加入批次佇列: 悠哉日常大王 OAD (佇列: 5/10)
+📥 [anilist-20659] 已加入批次佇列: 在盛夏等待 特別篇 (佇列: 6/10)
+📥 [anilist-19951] 已加入批次佇列: 獵人劇場版 - 最終任務 (佇列: 7/10)
+📥 [anilist-16866] 已加入批次佇列: 鄰座的怪同學 OAD (佇列: 8/10)
+📥 [anilist-19123] 已加入批次佇列: 海賊王 梅利號篇章 ～另一個夥伴的故事～ (佇列: 9/10)
+📥 [anilist-18121] 已加入批次佇列: 網球少女 2期 (佇列: 10/10)
+
+📦 準備進行 AI 翻譯 (批次: 10)...
+✅ [anilist-21586] AI 翻譯完成: 終結的熾天使 OVA
+✅ [anilist-21691] AI 翻譯完成: 食戟之靈 OAD
+✅ [anilist-20741] AI 翻譯完成: 約會大作戰 DATE A LIVE 劇場版 萬由裡審判
+✅ [anilist-20900] AI 翻譯完成: 青春之旅 OAD
+✅ [anilist-20497] AI 翻譯完成: 悠哉日常大王 OAD
+✅ [anilist-20659] AI 翻譯完成: 在盛夏等待 特別篇
+✅ [anilist-19951] AI 翻譯完成: 獵人劇場版 - 最終任務
+✅ [anilist-16866] AI 翻譯完成: 鄰座的怪同學 OAD
+✅ [anilist-19123] AI 翻譯完成: 海賊王 梅利號篇章 ～另一個夥伴的故事～
+✅ [anilist-18121] AI 翻譯完成: 網球少女 2期
+📥 [anilist-13271] 已加入批次佇列: 獵人劇場版 - 緋色幻影 (佇列: 1/10)
+📥 [anilist-15925] 已加入批次佇列: 電影 哆啦A夢 大雄的秘密道具博物館 (佇列: 2/10)
+📥 [anilist-10196] 已加入批次佇列: 寶貝公主 (佇列: 3/10)
+📥 [anilist-8063] 已加入批次佇列: 世界第一初戀 OAD (佇列: 4/10)
+📥 [anilist-8481] 已加入批次佇列: 文學少女 熱戀少女們的狂想曲 (佇列: 5/10)
+📥 [anilist-8532] 已加入批次佇列: 家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！ (佇列: 6/10)
+📥 [anilist-531] 已加入批次佇列: 美少女戰士R 電影版 (佇列: 7/10)
+
+📦 準備進行 AI 翻譯 (批次: 7)...
+✅ [anilist-13271] AI 翻譯完成: 獵人劇場版 - 緋色幻影
+✅ [anilist-15925] AI 翻譯完成: 電影 哆啦A夢 大雄的秘密道具博物館
+✅ [anilist-10196] AI 翻譯完成: 寶貝公主
+✅ [anilist-8063] AI 翻譯完成: 世界第一初戀 OAD
+✅ [anilist-8481] AI 翻譯完成: 文學少女 熱戀少女們的狂想曲
+✅ [anilist-8532] AI 翻譯完成: 家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！
+✅ [anilist-531] AI 翻譯完成: 美少女戰士R 電影版
+
+🎉 Synopsis fetching complete. Processed 27 animes.
+
+📊 每日任務劇情簡介統計回報:
+- 當前動畫總數: 3586
+- 沒找到對應 bangumi_data 的數量: 402
+- 本次掃描發現對應資料為空的數量: 80
+- 有劇情簡介的動畫總數量: 3191
+- 本次新增 27 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [上午10:51:37] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午1:47:04] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 105 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 93 項高價值商品。
+準備將 101 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 88 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
 ✔️ 正常: 玩具反斗城 Toysrus
 ✔️ 正常: TOYeGO 玩具e哥
 
-✅ 檢查與更新完成！已寫入 C:\Users\aaron\Documents\WorkSpace\Animation\public\affiliates.json 與 C:\Users\aaron\Documents\WorkSpace\Animation\public\product_images.json
+✅ 檢查與更新完成！已寫入 /home/runner/work/AniSpace/AniSpace/public/affiliates.json 與 /home/runner/work/AniSpace/AniSpace/public/product_images.json
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [上午10:53:56] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午1:48:47] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.0.14 - (00105)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00107)] (同步印表)：
 📌 當前系統版本資訊
-・應用程式版本號：v1.0.14
-・動畫資料庫版號：(00105)
+・應用程式版本號：v1.1.2
+・動畫資料庫版號：(00107)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3400 筆，經 ID 比對合併後資料庫共 3586 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3153 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：433 部 (完整清單已隨信附帶)
+【動畫爬蟲】完成。本次實際抓取 3400 筆，經 ID 比對合併後資料庫共 3586 筆，新增資料 0 筆，AI 翻譯 1 筆。
+📈 Bangumi 字典對應與授權回填：共 3184 部動畫成功對照字典並無條件整合去重播放授權！
+🤖 AI 翻譯動畫：
+- 借出的魔力以【循環分期】強制徵收
+🛡️ 洗滌成功的動畫 (共 4 部)：
+- 《輝夜姬想讓人告白－永不結束的初吻－》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=125624
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=33277
+- 《獵人劇場版 - 最終任務》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=59672
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=5746
+- 《獵人劇場版 - 緋色幻影》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=54816
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=5747
+- 《家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=118307
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=23299
+🎉 本來未對應到 bangumi_data 但新對應到的動畫 (共 31 部)：
+- 《終末的女武神Ⅱ 前篇》 ➜ 成功對應至字典：終末のワルキューレⅡ 前編 (BGM ID: 346982)
+- 《平凡職業造就世界最強 OVA》 ➜ 成功對應至字典：ありふれた職業で世界最強 OVA (BGM ID: 376349)
+- 《地球外少年少女》 ➜ 成功對應至字典：地球外少年少女 後編 (BGM ID: 363309)
+- 《DEEMO 櫻花之音 -你奏響的音樂，如今依舊迴盪- I still hear the sound of your piano》 ➜ 成功對應至字典：DEEMO サクラノオト -あなたの奏でた音が、今も響く- I still hear the sound of your piano (BGM ID: 294752)
+- 《沒有給我哥吃的藥！4》 ➜ 成功對應至字典：兄に付ける薬はない！4-快把我哥帯走4- (BGM ID: 311978)
+- 《我們真的學不來 OVA》 ➜ 成功對應至字典：ぼくたちは勉強ができない OVA (BGM ID: 294059)
+- 《沒有給我哥吃的藥！3》 ➜ 成功對應至字典：兄に付ける薬はない！3-快把我哥帯走3- (BGM ID: 287316)
+- 《幼女戰記 劇場版》 ➜ 成功對應至字典：幼女戦記 劇場版 (BGM ID: 234771)
+- 《來自深淵 劇場版總集篇 前編：啟程的黎明》 ➜ 成功對應至字典：劇場版総集編メイドインアビス【前編】旅立ちの夜明け (BGM ID: 240798)
+- 《灰色：幻影扳機 01/02》 ➜ 成功對應至字典：グリザイア：ファントムトリガー THE ANIMATIION 01/02 (BGM ID: 219263)
+- 《沒有給我哥吃的藥！2》 ➜ 成功對應至字典：兄に付ける薬はない！2 -快把我哥帯走2- (BGM ID: 219143)
+- 《結城友奈是勇者 鷲尾須美之章&勇者之章》 ➜ 成功對應至字典：結城友奈は勇者である -鷲尾須美の章-/-勇者の章- (BGM ID: 195937)
+- 《沒有給我哥吃的藥！》 ➜ 成功對應至字典：兄に付ける薬はない！-快把我哥帯走- (BGM ID: 210811)
+- 《悠哉日常大王 Repeat OAD》 ➜ 成功對應至字典：のんのんびより りぴーと OAD (BGM ID: 165738)
+- 《終結的熾天使 OVA》 ➜ 成功對應至字典：終わりのセラフ OVA (BGM ID: 148096)
+- 《食戟之靈 OAD》 ➜ 成功對應至字典：食戟のソーマ OAD (BGM ID: 148098)
+- 《約會大作戰 DATE A LIVE 劇場版 萬由裡審判》 ➜ 成功對應至字典：デート・ア・ライブ 万由里ジャッジメント (BGM ID: 106060)
+- 《青春之旅 OAD》 ➜ 成功對應至字典：アオハライド OAD (BGM ID: 103812)
+- 《悠哉日常大王 OAD》 ➜ 成功對應至字典：のんのんびより OAD (BGM ID: 86895)
+- 《在盛夏等待 特別篇》 ➜ 成功對應至字典：あの夏で待ってる 特別編 (BGM ID: 100450)
+- 《獵人劇場版 - 最終任務》 ➜ 成功對應至字典：HUNTER×HUNTER The Last Mission (BGM ID: 80607)
+- 《鄰座的怪同學 OAD》 ➜ 成功對應至字典：となりの怪物くん OAD (BGM ID: 59077)
+- 《海賊王 梅利號篇章 ～另一個夥伴的故事～》 ➜ 成功對應至字典：ワンピース エピソード オブ メリー～もうひとりの仲間の物語～ (BGM ID: 90792)
+- 《網球少女 2期》 ➜ 成功對應至字典：てーきゅう(第2期) (BGM ID: 69943)
+- 《獵人劇場版 - 緋色幻影》 ➜ 成功對應至字典：HUNTER×HUNTER 緋色の幻影 (BGM ID: 44705)
+- 《電影 哆啦A夢 大雄的秘密道具博物館》 ➜ 成功對應至字典：ドラえもん のび太のひみつ道具博物館 (BGM ID: 55467)
+- 《寶貝公主》 ➜ 成功對應至字典：Baby Princess 2Dぱらだいす0 (BGM ID: 14933)
+- 《世界第一初戀 OAD》 ➜ 成功對應至字典：世界一初恋 OAD (BGM ID: 13973)
+- 《文學少女 熱戀少女們的狂想曲》 ➜ 成功對應至字典：“文学少女”メモワールIII-恋する乙女の狂想曲（ラプソディ）- (BGM ID: 6814)
+- 《家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！》 ➜ 成功對應至字典：家庭教師ヒットマンREBORN！ボンゴレ式修学旅行、来る！ (BGM ID: 18576)
+- 《美少女戰士R 電影版》 ➜ 成功對應至字典：劇場版 美少女戦士セーラームーンR (BGM ID: 5435)
+🔗 未對應 bangumi_data 動畫數量：402 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 93 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 88 項高價值商品。
+
+
+
+【劇情簡介狀態】
+總計收錄: 3586 部動畫
+缺乏簡介: 393 部
+本日新增: 2884 筆簡介
+新增清單：
+- [anilist-186052] 水屬性的魔法師
+- [anilist-171046] 青春豬頭少年不會夢到聖誕服女郎
+- [anilist-189117] Dr. STONE 新石紀 第四季 中篇
+- [anilist-178869] Clevatess －魔獸之王與嬰兒與屍之勇者－
+- [anilist-177474] 桃源暗鬼
+- [anilist-173780] 盾之勇者成名錄 第四季
+- [anilist-182309] GRAND BLUE 碧藍之海 第二季
+- [anilist-178090] 轉生為第七王子，隨心所欲的魔法學習之路 第二季
+- [anilist-184591] 我們不可能成為戀人！絕對不行。（※似乎可行？）
+- [anilist-178433] 異世界默示錄麥諾格拉～從毀滅文明開始征服世界～
+- [anilist-178886] 帝乃三姊妹意外地容易相處。
+- [anilist-181841] 小城日常
+- [anilist-180929] 琉璃的寶石
+- [anilist-177687] 極速一百米。
+- [anilist-151799] 新 吊帶襪天使
+- [anilist-179885] 被驅逐出勇者隊伍的白魔導師，被 S 級冒險者撿到
+- [anilist-179344] 出租女友 第四季
+- [anilist-155838] 強者的新傳說
+- [anilist-169420] 渡同學的××瀕臨崩壞
+- [anilist-179828] 杜鵑婚約 第二季
+- [anilist-185544] 歡迎光臨流放者食堂！
+- [anilist-169440] 轉生成自動販賣機的我今天也在迷宮徘徊 第二季
+- [anilist-170113] 公爵千金的家庭教師
+- [anilist-180425] 和雨．和你
+- [anilist-179879] 破爛千金被姊姊的原婚約者溺愛著
+- [anilist-186561] 氣絕勇者與暗殺公主
+- [anilist-185965] 雙人單身露營
+- [anilist-180460] 最近的偵探真沒用
+- [anilist-184575] 醜男真戰士
+- [anilist-189326] 地縛少年花子君 第二季 後篇
+- [anilist-178675] Bad Girl 不良少女
+- [anilist-185519] 明天，美食廣場見。
+- [anilist-195494] Bâan -大人的彊界-
+- [anilist-180794] 與遊戲中心的少女異文化交流的故事
+- [anilist-177175] 明日方舟：焰燼曙明
+- [anilist-179678] 靈異教師神眉
+- [anilist-187387] 陰陽迴天 Re:Birth Verse
+- [anilist-156395] 為醜女獻上花束
+- [anilist-149118] 炎炎消防隊 參之章
+- [anilist-167336] LAZARUS 拉撒路
+- [anilist-178680] WIND BREAKER—防風少年— 第二季
+- [anilist-180367] WITCH WATCH 魔女守護者
+- [anilist-183161] 終末起點
+- [anilist-179955] 鄉下大叔成為劍聖
+- [anilist-185736] 正義使者 - 我的英雄學院之非法英雄
+- [anilist-175872] 瞬間治癒卻被當成廢物踢出隊伍的天才治療師，改當無照治療師快樂過活
+- [anilist-182814] 九龍大眾浪漫
+- [anilist-153554] 男女之間存在純友情嗎？（不，不存在！）
+- [anilist-143598] 鬼人幻燈抄
+- [anilist-179965] 拜託請穿上，鷹峰同學
+- [anilist-174802] 紫雲寺家的兄弟姊妹
+- [anilist-143337] 持續狩獵史萊姆三百年，不知不覺就練到 LV MAX 第二季
+- [anilist-180516] 賽馬娘 灰髮灰姑娘
+- [anilist-183133] 使人誤解的工房主～關於原英雄隊伍的雜役人員，實際上除了戰鬥能力外全是SSS的故事～
+- [anilist-183274] 我是星際國家的惡德領主！
+- [anilist-179694] 搖滾樂是淑女的嗜好
+- [anilist-180675] 啟示錄酒店
+- [anilist-143200] Summer Pockets
+- [anilist-183275] 完美到難以接近的聖女遭到解除婚約後被賣到鄰國
+- [anilist-185213] 機動戰士高達 GQuuuuuuX
+- [anilist-179979] anilist-179979
+- [anilist-178781] anilist-178781
+- [anilist-177120] anilist-177120
+- [anilist-179706] anilist-179706
+- [anilist-180829] anilist-180829
+- [anilist-178701] anilist-178701
+- [anilist-176246] anilist-176246
+- [anilist-181449] anilist-181449
+- [anilist-182060] anilist-182060
+- [anilist-181839] anilist-181839
+- [anilist-177509] anilist-177509
+- [anilist-185939] anilist-185939
+- [anilist-167142] anilist-167142
+- [anilist-184279] anilist-184279
+- [anilist-165445] anilist-165445
+- [anilist-178046] anilist-178046
+- [anilist-180825] anilist-180825
+- [anilist-166527] anilist-166527
+- [anilist-177709] anilist-177709
+- [anilist-176301] anilist-176301
+- [anilist-172019] anilist-172019
+- [anilist-172258] anilist-172258
+- [anilist-167143] anilist-167143
+- [anilist-179689] anilist-179689
+- [anilist-176642] anilist-176642
+- [anilist-165171] anilist-165171
+- [anilist-170892] anilist-170892
+- [anilist-175198] anilist-175198
+- [anilist-180052] anilist-180052
+- [anilist-174654] anilist-174654
+- [anilist-179999] anilist-179999
+- [anilist-178022] anilist-178022
+- [anilist-169295] anilist-169295
+- [anilist-145740] anilist-145740
+- [anilist-154392] anilist-154392
+- [anilist-163134] anilist-163134
+- [anilist-170942] anilist-170942
+- [anilist-163146] anilist-163146
+- [anilist-151514] anilist-151514
+- [anilist-169755] anilist-169755
+- [anilist-176508] anilist-176508
+- [anilist-154473] anilist-154473
+- [anilist-141182] anilist-141182
+- [anilist-178533] anilist-178533
+- [anilist-173693] anilist-173693
+- [anilist-170083] anilist-170083
+- [anilist-163135] anilist-163135
+- [anilist-170468] anilist-170468
+- [anilist-168139] anilist-168139
+- [anilist-164172] anilist-164172
+- [anilist-165790] anilist-165790
+- [anilist-178434] anilist-178434
+- [anilist-167141] anilist-167141
+- [anilist-136880] anilist-136880
+- [anilist-164299] anilist-164299
+- [anilist-171038] anilist-171038
+- [anilist-169931] anilist-169931
+- [anilist-162785] anilist-162785
+- [anilist-171637] anilist-171637
+- [anilist-172355] anilist-172355
+- [anilist-168500] anilist-168500
+- [anilist-171642] anilist-171642
+- [anilist-171025] anilist-171025
+- [anilist-169258] anilist-169258
+- [anilist-169315] anilist-169315
+- [anilist-170893] anilist-170893
+- [anilist-157965] anilist-157965
+- [anilist-107372] anilist-107372
+- [anilist-162804] anilist-162804
+- [anilist-171457] anilist-171457
+- [anilist-153406] anilist-153406
+- [anilist-175977] anilist-175977
+- [anilist-152137] anilist-152137
+- [anilist-163623] anilist-163623
+- [anilist-170695] anilist-170695
+- [anilist-152681] anilist-152681
+- [anilist-163292] anilist-163292
+- [anilist-133845] anilist-133845
+- [anilist-158559] anilist-158559
+- [anilist-166710] anilist-166710
+- [anilist-173295] anilist-173295
+- [anilist-139095] anilist-139095
+- [anilist-167419] anilist-167419
+- [anilist-168013] anilist-168013
+- [anilist-139825] anilist-139825
+- [anilist-173533] anilist-173533
+- [anilist-170938] anilist-170938
+- [anilist-171031] anilist-171031
+- [anilist-167420] anilist-167420
+- [anilist-160488] anilist-160488
+- [anilist-154963] anilist-154963
+- [anilist-168623] anilist-168623
+- [anilist-166477] anilist-166477
+- [anilist-167144] anilist-167144
+- [anilist-157371] anilist-157371
+- [anilist-158166] anilist-158166
+- [anilist-151117] anilist-151117
+- [anilist-167991] anilist-167991
+- [anilist-168345] anilist-168345
+- [anilist-166700] anilist-166700
+- [anilist-112269] anilist-112269
+- [anilist-155657] anilist-155657
+- [anilist-155908] anilist-155908
+- [anilist-109731] anilist-109731
+- [anilist-169927] anilist-169927
+- [anilist-166715] anilist-166715
+- [anilist-160589] anilist-160589
+- [anilist-159039] anilist-159039
+- [anilist-167927] anilist-167927
+- [anilist-135643] anilist-135643
+- [anilist-151807] anilist-151807
+- [anilist-153518] anilist-153518
+- [anilist-146066] anilist-146066
+- [anilist-137908] anilist-137908
+- [anilist-139518] anilist-139518
+- [anilist-147642] anilist-147642
+- [anilist-162780] anilist-162780
+- [anilist-158028] anilist-158028
+- [anilist-153818] anilist-153818
+- [anilist-160389] anilist-160389
+- [anilist-143866] anilist-143866
+- [anilist-156891] anilist-156891
+- [anilist-161476] anilist-161476
+- [anilist-162985] anilist-162985
+- [anilist-152682] anilist-152682
+- [anilist-162144] anilist-162144
+- [anilist-162002] anilist-162002
+- [anilist-166522] anilist-166522
+- [anilist-152072] anilist-152072
+- [anilist-162987] anilist-162987
+- [anilist-146609] anilist-146609
+- [anilist-163151] anilist-163151
+- [anilist-155227] anilist-155227
+- [anilist-147850] anilist-147850
+- [anilist-154587] anilist-154587
+- [anilist-161645] anilist-161645
+- [anilist-161964] anilist-161964
+- [anilist-162314] anilist-162314
+- [anilist-154116] anilist-154116
+- [anilist-162694] anilist-162694
+- [anilist-146493] anilist-146493
+- [anilist-158928] anilist-158928
+- [anilist-99088] anilist-99088
+- [anilist-156039] anilist-156039
+- [anilist-163329] anilist-163329
+- [anilist-154459] anilist-154459
+- [anilist-160900] anilist-160900
+- [anilist-163142] anilist-163142
+- [anilist-158704] anilist-158704
+- [anilist-140501] anilist-140501
+- [anilist-158926] anilist-158926
+- [anilist-161802] anilist-161802
+- [anilist-162803] anilist-162803
+- [anilist-154214] anilist-154214
+- [anilist-161364] anilist-161364
+- [anilist-146206] anilist-146206
+- [anilist-156184] anilist-156184
+- [anilist-155389] anilist-155389
+- [anilist-154384] anilist-154384
+- [anilist-142666] anilist-142666
+- [anilist-143327] anilist-143327
+- [anilist-148862] anilist-148862
+- [anilist-155527] anilist-155527
+- [anilist-156632] anilist-156632
+- [anilist-159559] anilist-159559
+- [anilist-138788] anilist-138788
+- [anilist-155419] anilist-155419
+- [anilist-154454] anilist-154454
+- [anilist-146065] anilist-146065
+- [anilist-159831] anilist-159831
+- [anilist-163132] anilist-163132
+- [anilist-147103] anilist-147103
+- [anilist-159322] anilist-159322
+- [anilist-160188] anilist-160188
+- [anilist-157397] anilist-157397
+- [anilist-146953] anilist-146953
+- [anilist-154391] anilist-154391
+- [anilist-154745] anilist-154745
+- [anilist-142598] anilist-142598
+- [anilist-153360] anilist-153360
+- [anilist-131863] anilist-131863
+- [anilist-162983] anilist-162983
+- [anilist-142877] anilist-142877
+- [anilist-139606] anilist-139606
+- [anilist-156822] anilist-156822
+- [anilist-158417] anilist-158417
+- [anilist-156023] anilist-156023
+- [anilist-130590] anilist-130590
+- [anilist-143271] anilist-143271
+- [anilist-155890] anilist-155890
+- [anilist-168138] anilist-168138
+- [anilist-160181] anilist-160181
+- [anilist-144176] anilist-144176
+- [anilist-160090] anilist-160090
+- [anilist-166910] anilist-166910
+- [anilist-167820] anilist-167820
+- [anilist-109979] anilist-109979
+- [anilist-148465] anilist-148465
+- [anilist-136149] anilist-136149
+- [anilist-155418] anilist-155418
+- [anilist-155730] anilist-155730
+- [anilist-145140] anilist-145140
+- [anilist-149883] anilist-149883
+- [anilist-150972] anilist-150972
+- [anilist-153339] anilist-153339
+- [anilist-146836] anilist-146836
+- [anilist-139435] anilist-139435
+- [anilist-154643] anilist-154643
+- [anilist-163571] anilist-163571
+- [anilist-150429] anilist-150429
+- [anilist-151513] anilist-151513
+- [anilist-158530] anilist-158530
+- [anilist-145139] anilist-145139
+- [anilist-150672] anilist-150672
+- [anilist-151801] anilist-151801
+- [anilist-155783] anilist-155783
+- [anilist-131518] anilist-131518
+- [anilist-154965] anilist-154965
+- [anilist-153152] anilist-153152
+- [anilist-153845] anilist-153845
+- [anilist-141911] anilist-141911
+- [anilist-131680] anilist-131680
+- [anilist-141208] anilist-141208
+- [anilist-154967] anilist-154967
+- [anilist-148048] anilist-148048
+- [anilist-153332] anilist-153332
+- [anilist-151847] anilist-151847
+- [anilist-148098] anilist-148098
+- [anilist-140754] anilist-140754
+- [anilist-148109] anilist-148109
+- [anilist-154412] anilist-154412
+- [anilist-153452] anilist-153452
+- [anilist-151189] anilist-151189
+- [anilist-146234] anilist-146234
+- [anilist-155158] anilist-155158
+- [anilist-134131] anilist-134131
+- [anilist-128715] anilist-128715
+- [anilist-127550] anilist-127550
+- [anilist-144932] anilist-144932
+- [anilist-150957] anilist-150957
+- [anilist-149028] anilist-149028
+- [anilist-147369] anilist-147369
+- [anilist-148370] anilist-148370
+- [anilist-155070] anilist-155070
+- [anilist-151606] anilist-151606
+- [anilist-146984] anilist-146984
+- [anilist-151806] anilist-151806
+- [anilist-143338] anilist-143338
+- [anilist-142853] anilist-142853
+- [anilist-130588] anilist-130588
+- [anilist-145665] anilist-145665
+- [anilist-156067] anilist-156067
+- [anilist-140596] anilist-140596
+- [anilist-144553] anilist-144553
+- [anilist-151252] anilist-151252
+- [anilist-148969] anilist-148969
+- [anilist-116867] anilist-116867
+- [anilist-144092] anilist-144092
+- [anilist-147864] anilist-147864
+- [anilist-137909] anilist-137909
+- [anilist-146323] anilist-146323
+- [anilist-152523] anilist-152523
+- [anilist-142193] anilist-142193
+- [anilist-139821] anilist-139821
+- [anilist-135778] anilist-135778
+- [anilist-146346] anilist-146346
+- [anilist-146954] anilist-146954
+- [anilist-152765] anilist-152765
+- [anilist-143064] anilist-143064
+- [anilist-142849] anilist-142849
+- [anilist-150653] anilist-150653
+- [anilist-141785] anilist-141785
+- [anilist-146743] anilist-146743
+- [anilist-140499] anilist-140499
+- [anilist-144144] anilist-144144
+- [anilist-125869] anilist-125869
+- [anilist-153841] anilist-153841
+- [anilist-142684] anilist-142684
+- [anilist-151679] anilist-151679
+- [anilist-130696] anilist-130696
+- [anilist-127230] anilist-127230
+- [anilist-137822] anilist-137822
+- [anilist-130298] anilist-130298
+- [anilist-139630] anilist-139630
+- [anilist-150654] anilist-150654
+- [anilist-177476] anilist-177476
+- [anilist-176496] anilist-176496
+- [anilist-178462] anilist-178462
+- [anilist-180812] anilist-180812
+- [anilist-178100] anilist-178100
+- [anilist-180292] anilist-180292
+- [anilist-172439] anilist-172439
+- [anilist-172453] anilist-172453
+- [anilist-176063] anilist-176063
+- [anilist-179297] anilist-179297
+- [anilist-166699] anilist-166699
+- [anilist-179878] anilist-179878
+- [anilist-175409] anilist-175409
+- [anilist-176234] anilist-176234
+- [anilist-178495] anilist-178495
+- [anilist-176158] anilist-176158
+- [anilist-171018] anilist-171018
+- [anilist-175019] anilist-175019
+- [anilist-166531] anilist-166531
+- [anilist-162896] anilist-162896
+- [anilist-177697] anilist-177697
+- [anilist-166240] anilist-166240
+- [anilist-136804] anilist-136804
+- [anilist-174788] anilist-174788
+- [anilist-156415] anilist-156415
+- [anilist-145728] anilist-145728
+- [anilist-158898] anilist-158898
+- [anilist-169417] anilist-169417
+- [anilist-164212] anilist-164212
+- [anilist-166372] anilist-166372
+- [anilist-166216] anilist-166216
+- [anilist-158927] anilist-158927
+- [anilist-151970] anilist-151970
+- [anilist-145064] anilist-145064
+- [anilist-156040] anilist-156040
+- [anilist-158871] anilist-158871
+- [anilist-146975] anilist-146975
+- [anilist-146850] anilist-146850
+- [anilist-142838] anilist-142838
+- [anilist-130003] anilist-130003
+- [anilist-116674] anilist-116674
+- [anilist-139587] anilist-139587
+- [anilist-138565] anilist-138565
+- [anilist-151379] anilist-151379
+- [anilist-146676] anilist-146676
+- [anilist-146233] anilist-146233
+- [anilist-155011] anilist-155011
+- [anilist-137341] anilist-137341
+- [anilist-120377] anilist-120377
+- [anilist-141391] anilist-141391
+- [anilist-145545] anilist-145545
+- [anilist-143270] anilist-143270
+- [anilist-114745] anilist-114745
+- [anilist-135806] anilist-135806
+- [anilist-142769] anilist-142769
+- [anilist-145260] anilist-145260
+- [anilist-144509] anilist-144509
+- [anilist-103118] anilist-103118
+- [anilist-140960] anilist-140960
+- [anilist-129201] anilist-129201
+- [anilist-137281] anilist-137281
+- [anilist-142074] anilist-142074
+- [anilist-132474] anilist-132474
+- [anilist-140457] anilist-140457
+- [anilist-141774] anilist-141774
+- [anilist-132010] anilist-132010
+- [anilist-121176] anilist-121176
+- [anilist-133898] anilist-133898
+- [anilist-132532] anilist-132532
+- [anilist-108357] anilist-108357
+- [anilist-132351] anilist-132351
+- [anilist-108353] anilist-108353
+- [anilist-136080] anilist-136080
+- [anilist-140842] anilist-140842
+- [anilist-131681] anilist-131681
+- [anilist-132405] anilist-132405
+- [anilist-129190] anilist-129190
+- [anilist-131548] anilist-131548
+- [anilist-122808] anilist-122808
+- [anilist-119056] anilist-119056
+- [anilist-128034] anilist-128034
+- [anilist-136428] anilist-136428
+- [anilist-102891] anilist-102891
+- [anilist-142329] anilist-142329
+- [anilist-127720] anilist-127720
+- [anilist-129898] anilist-129898
+- [anilist-131083] anilist-131083
+- [anilist-126213] anilist-126213
+- [anilist-132473] anilist-132473
+- [anilist-124140] anilist-124140
+- [anilist-131019] anilist-131019
+- [anilist-127412] anilist-127412
+- [anilist-137877] anilist-137877
+- [anilist-109946] anilist-109946
+- [anilist-116742] anilist-116742
+- [anilist-125206] anilist-125206
+- [anilist-132126] anilist-132126
+- [anilist-128712] anilist-128712
+- [anilist-120608] anilist-120608
+- [anilist-192809] 咒術回戰 懷玉·玉折 總集篇
+- [anilist-181182] 小市民系列 第二季
+- [anilist-184639] 安妮・雪莉
+- [anilist-179054] 黑執事 綠之魔女篇
+- [anilist-176702] 神統記
+- [anilist-184989] 推理要在晚餐後
+- [anilist-181078] 再見，地球 第二季
+- [anilist-176273] 全修。
+- [anilist-175443] 青春特調蜂蜜檸檬蘇打
+- [anilist-169441] 我的幸福婚姻 第二季
+- [anilist-178548] 不幸職業【鑑定士】其實是最強的
+- [anilist-179696] 這公司有我喜歡的人
+- [anilist-177506] 遲早是最強的鍊金術師？
+- [anilist-177552] 我的可愛對黑巖目高不管用
+- [anilist-185880] 青之驅魔師 終夜篇
+- [anilist-179998] 怪獸8號 第一季總集篇
+- [anilist-178550] 無名記憶 第二季
+- [anilist-170650] 我想蹺掉太子妃培訓
+- [anilist-170916] 魔法使的約定
+- [anilist-177159] MOMENTARY LILY 剎那之花
+- [anilist-174596] 一桿青空
+- [anilist-179852] 劇場版物怪：第 2 章：火鼠
+- [anilist-182158] 學姊是男孩劇場版：雨後天晴
+- [anilist-111314] 漩渦
+- [anilist-170732] 在地下城尋求邂逅是否搞錯了什麼 第五季
+- [anilist-172190] 女僕冥土小姐
+- [anilist-182469] 海賊王 粉絲來信
+- [anilist-177104] 最狂輔助職業【話術士】世界最強戰團聽我號令
+- [anilist-174043] 被逐出隊伍的治癒師，其實是最強
+- [anilist-176053] 再見龍生，你好人生
+- [anilist-176311] 青之驅魔師 雪之盡頭篇
+- [anilist-179919] 悲喜漁生
+- [anilist-154673] 機械臂
+- [anilist-171545] 妖怪學校的菜鳥老師
+- [anilist-176292] 七大罪 默示錄的四騎士 第二季
+- [anilist-166611] 夏目友人帳 柒
+- [anilist-183423] SPECIAL EDITED VERSION 海賊王 魚人島篇
+- [anilist-174576] 杖與劍的魔劍譚
+- [anilist-173694] 靠廢柴技能【狀態異常】成為最強的我將蹂躪一切
+- [anilist-173584] 魔王軍最強的魔術師是人類
+- [anilist-163133] 學姊是男孩
+- [anilist-126830] CODE GEASS 奪回的Rozé
+- [anilist-172416] 從路人角色開始的探索英雄譚
+- [anilist-174044] 深夜 Punch
+- [anilist-175450] 我的妻子不具感情
+- [anilist-163077] 這個世界漏洞百出
+- [anilist-177191] 五等分的新娘＊
+- [anilist-173388] 精靈小姐瘦不了
+- [anilist-170891] 亦葉亦花
+- [anilist-171099] 劇場總集篇 孤獨搖滾！Re: Re:
+- [anilist-171748] SHY 靦腆英雄 第二季
+- [anilist-175199] 劇場版 GIVEN 被贈與的未來：去海邊
+- [anilist-153288] 怪獸 8 號
+- [anilist-163270] WIND BREAKER—防風少年—
+- [anilist-163139] 我的英雄學院 第七季
+- [anilist-170130] 從 Lv2 開始開外掛的前勇者候補過著悠哉異世界生活
+- [anilist-164702] 轉生貴族憑鑑定技能扭轉人生
+- [anilist-163078] 夜晚的水母不會游泳
+- [anilist-158709] 無名記憶
+- [anilist-170890] THE NEW GATE
+- [anilist-165855] 花野井同學與戀愛病
+- [anilist-163147] 劇場版藍色監獄：EPISODE 凪
+- [anilist-151380] 約會大作戰 DATE A LIVE V
+- [anilist-174653] 格鬥實況
+- [anilist-172420] 賽馬娘 Pretty Derby 新時代之門
+- [anilist-166828] 怪人的沙拉碗
+- [anilist-165253] 劇場總集篇 孤獨搖滾！Re:
+- [anilist-169584] 死神少爺與黑女僕 第三季
+- [anilist-170503] 烏鴉不擇主
+- [anilist-170604] 吸血鬼男子宿舍
+- [anilist-148080] 我的鬼女孩
+- [anilist-169698] 我回來了、歡迎回家
+- [anilist-166610] 肌肉魔法使-MASHLE- 神覺者候補選拔試驗篇
+- [anilist-166794] 指尖相觸，戀戀不捨
+- [anilist-141821] 魔都精兵的奴隸
+- [anilist-153658] 排球少年！！劇場版：垃圾場的決戰
+- [anilist-155963] 北海道辣妹賊拉可愛
+- [anilist-168374] 輪迴七次的惡役千金，在前敵國享受隨心所欲的新婚生活
+- [anilist-151639] 忍者神威
+- [anilist-163076] 反派千金等級 99～我是隱藏頭目但不是魔王～
+- [anilist-158931] 青之驅魔師 島根啟明結社篇
+- [anilist-156131] 因為不是真正的夥伴而被逐出勇者隊伍，流落到邊境展開慢活人生 第二季
+- [anilist-164244] 愚蠢天使與惡魔共舞
+- [anilist-165254] 綻裂?!
+- [anilist-169935] 最強肉盾的迷宮攻略～擁有稀少技能體力 9999 的肉盾，被勇者隊伍辭退了～
+- [anilist-167087] 如果 30 歲還是處男，似乎就能成為魔法師
+- [anilist-168194] 戰國妖狐
+- [anilist-167486] 我幸福的形式
+- [anilist-167404] MONSTERS 一百三情飛龍侍極
+- [anilist-170935] 大欺詐師 razbliuto
+- [anilist-167146] 百千家的妖怪王子
+- [anilist-165598] 勇氣爆發 BANG BRAVERN
+- [anilist-165314] 碰之道
+- [anilist-171019] 名湯「異世界溫泉」開拓記～30 多歲溫泉狂熱者，轉生到悠閒的溫泉天國～
+- [anilist-171026] 派對咖孔明總集篇 Road to Summer Sonia
+- [anilist-167984] 大室家-親愛的姊妹
+- [anilist-111322] 盾之勇者成名錄 第三季
+- [anilist-162670] Dr. STONE 新石紀 第三季 後半
+- [anilist-129188] 哥布林殺手 第二季
+- [anilist-161474] 青春豬頭少年不會夢到紅書包女孩
+- [anilist-159808] 家裡蹲吸血姬的鬱悶
+- [anilist-155168] 打工吧！魔王大人 第二季 後篇
+- [anilist-163205] 物之古物奇譚 後篇
+- [anilist-160442] 六道的惡女們
+- [anilist-126529] 虛構推理 第二季
+- [anilist-150695] 被勇者隊伍開除的馭獸使，邂逅了最強種的貓耳少女
+- [anilist-139311] 僕愛君愛：致深愛妳的那個我
+- [anilist-141400] 彼得・格里爾的賢者時間 Super Extra
+- [anilist-130592] 打工吧，魔王大人！第二季
+- [anilist-129192] 轉生賢者的異世界生活～取得第二職業，成為世界最強～
+- [anilist-143085] 世界盡頭的聖騎士 鐵鏽之山的君王
+- [anilist-154966] Fate/strange Fake -Whispers of Dawn-
+- [anilist-128893] 地獄樂
+- [anilist-163137] 大奧
+- [anilist-135102] 眾神眷顧的男人 2
+- [anilist-143277] 她來自煩星
+- [anilist-131516] 少女手工
+- [anilist-145739] 鏡之孤城
+- [anilist-124410] 出租女友 第二季
+- [anilist-141902] 海賊王劇場版：紅髮歌姬
+- [anilist-154692] 女朋友 and 女朋友 第二季
+- [anilist-160447] 妙廟美少女
+- [anilist-151384] 輝夜大小姐想讓我告白-初吻不會結束-
+- [anilist-156854] 境界服務
+- [anilist-155202] 復仇者
+- [anilist-139274] 機動戰士鋼彈 水星的魔女
+- [anilist-140660] 明日方舟：黎明前奏
+- [anilist-143086] POP TEAM EPIC 第二季
+- [anilist-129196] 在地下城尋求邂逅是否搞錯了什麼 第四季 新章 迷宮篇
+- [anilist-128223] 就算這樣，仍然步步進逼
+- [anilist-166452] 魔法使的新娘 第二季 後篇
+- [anilist-163327] 五等分的新娘∽
+- [anilist-150075] 為美好的世界獻上爆焰！
+- [anilist-136430] 海盜戰記 第二季
+- [anilist-155089] 阿魯斯的巨獸
+- [anilist-139092] 入間同學入魔了！第三季
+- [anilist-142701] 後宮之烏
+- [anilist-21294] 艦隊 Collection 總有一天，在那片海
+- [anilist-146722] JOJO的奇妙冒險 石之海 後篇
+- [anilist-141351] 狂賭之淵：雙
+- [anilist-160515] 競速 OVERTAKE!
+- [anilist-146646] 範馬刃牙 第二季
+- [anilist-143653] 放學後失眠的你
+- [anilist-155907] Buddy Daddies 殺手奶爸
+- [anilist-158870] 寶可夢 旅途 目標是寶可夢大師
+- [anilist-139820] 因為是反派大小姐所以養了魔王
+- [anilist-141212] 總之就是很可愛～制服～
+- [anilist-141352] 七大罪：愛丁堡的恩怨 1
+- [anilist-142876] Dr.STONE 新石紀 (龍水)
+- [anilist-149326] 新來的女傭有點怪
+- [anilist-159074] 放學後少年花子君
+- [anilist-162893] 萊莎的鍊金工房 ～常闇女王與秘密藏身處～
+- [anilist-157198] 屍體如山的死亡遊戲
+- [anilist-141249] 文豪Stray Dogs 第4季
+- [anilist-140439] 路人超能 100 第三季
+- [anilist-124395] 宇崎學妹想要玩！ω
+- [anilist-147885] 呆萌酷男孩
+- [anilist-146962] 四人各有小秘密
+- [anilist-146210] 金裝的維爾梅～瀕臨留級的魔法師聯手最強災厄勇闖魔法世界～
+- [anilist-139093] SHADOWS HOUSE-影宅 第二季
+- [anilist-165070] 我的新上司是天然呆
+- [anilist-166104] 總之就是非常可愛 女子高中篇
+- [anilist-154364] 魔法使的新娘 第二季
+- [anilist-155211] 在地下城尋求邂逅是否搞錯了什麼 第四季 深章 厄災篇
+- [anilist-142770] 鈴芽之旅
+- [anilist-145604] 忍者一時
+- [anilist-142343] 黃金神威 第四季
+- [anilist-126425] 天使降臨到我身邊！珍貴的朋友
+- [anilist-136934] 繼母的拖油瓶是我的前女友
+- [anilist-146668] RWBY 冰雪帝國
+- [anilist-164312] 柚木家的四兄弟
+- [anilist-163079] 銀砂糖師與黑妖精 後篇
+- [anilist-147571] 帶著智慧型手機闖蕩異世界。2
+- [anilist-153629] 轉生公主與天才千金的魔法革命
+- [anilist-141949] 夫婦以上，戀人未滿
+- [anilist-140999] 刀劍神域劇場版－Progressive－陰沉薄暮的詼諧曲
+- [anilist-128207] THE FIRST SLAM DUNK
+- [anilist-131182] 向山進發 Next Summit
+- [anilist-146625] 契約之吻
+- [anilist-163263] 文豪Stray Dogs 第5季
+- [anilist-155982] AYAKA  -綾島奇譚-
+- [anilist-157295] 什麼情況都不知道的轉校生一個勁的湊過來。
+- [anilist-151040] 槍神 TRIGUN STAMPEDE
+- [anilist-153930] 浪漫殺手
+- [anilist-139310] 僕愛君愛：致我深愛的每個妳
+- [anilist-144533] 書蟲公主
+- [anilist-142481] 飆速宅男 第五季
+- [anilist-136707] 異世界藥局
+- [anilist-152802] 黑暗集會
+- [anilist-163542] 間諜教室 後篇
+- [anilist-153687] PSYCHO-PASS 心靈判官 劇場版 PROVIDENCE
+- [anilist-148116] 冰劍的魔術師將要統一世界
+- [anilist-139498] 關於我轉生變成史萊姆這檔事劇場版 紅蓮之絆篇
+- [anilist-145815] 點滿農民相關技能後，不知為何就變強了。
+- [anilist-139369] 菜鳥鍊金術師開店營業中
+- [anilist-133844] OVERLORD IV
+- [anilist-138882] 組長女兒與保姆
+- [anilist-104460] 電影版 搖曳露營△
+- [anilist-140642] Love Live! SuperStar!! 第二季
+- [anilist-125367] 輝夜姬想讓人告白 ー超級浪漫ー
+- [anilist-129193] 處刑少女的生存之道
+- [anilist-109928] 犬王
+- [anilist-139303] BLACK ROCK SHOOTER DAWN FALL
+- [anilist-130166] 里亞德錄大地
+- [anilist-139804] TRIBE NINE
+- [anilist-130389] 魔法科高中的劣等生 追憶篇
+- [anilist-120646] 前輩有夠煩
+- [anilist-139643] 漂流家園
+- [anilist-124641] 邪神與廚二病少女 第三季
+- [anilist-111321] 盾之勇者成名錄 第二季
+- [anilist-133175] 魔法使黎明期
+- [anilist-143080] 電影版 奇巧計程車：撲朔謎林
+- [anilist-125447] 新羅馬浴場
+- [anilist-138424] 擅長捉弄人的高木同學 第三季
+- [anilist-136302] 再見了，橡果兄弟！
+- [anilist-131573] 咒術迴戰 0 劇場版
+- [anilist-129068] 進化果實～不知不覺踏上勝利的人生～
+- [anilist-146922] 機動戰士高達 水星的魔女 PROLOGUE
+- [anilist-146650] 幕末替身傳說
+- [anilist-127911] 式守同學不只可愛而已
+- [anilist-125124] 理科生墜入情網故嘗試證明[r=1-sinθ ]❤
+- [anilist-130319] RPG不動產
+- [anilist-112323] 平凡職業造就世界最強 第二季
+- [anilist-136192] 魔法水果籃 -前奏曲-
+- [anilist-112719] Futsal Boys！！！！！
+- [anilist-129874] 鬼滅之刃 無限列車篇
+- [anilist-124195] 範馬刃牙
+- [anilist-144677] BASTARD！！暗黑破壞神
+- [anilist-143082] 佐佐木與宮野 OVA
+- [anilist-141014] 朋友遊戲
+- [anilist-132171] 舞動不止
+- [anilist-140350] 王者天下 第四季
+- [anilist-129191] 失格紋的最強賢者
+- [anilist-130550] 外之國的少女
+- [anilist-125682] CUE!
+- [anilist-133965] 古見同學是溝通魯蛇
+- [anilist-130050] 夏日幽靈
+- [anilist-137819] 四疊半時光機藍調
+- [anilist-149874] 綻放的阿爾斯諾特利亞
+- [anilist-131520] 電影 五等分的新娘
+- [anilist-138425] 劇場版 擅長捉弄人的高木同學
+- [anilist-138700] 憂國的莫里亞蒂 OVA
+- [anilist-139648] 現實主義勇者的王國重建記 第二季
+- [anilist-127549] Slow Loop
+- [anilist-123752] 莎木
+- [anilist-113717] 國王排名
+- [anilist-144323] 惑星公主蜥蜴騎士
+- [anilist-112640] 傳頌之物 二人的白皇
+- [anilist-132052] 杜鵑婚約
+- [anilist-117074] 劇場版 異世界四重奏 ～Another World～
+- [anilist-133891] Love Live! 虹咲學園 學園偶像同好會 第二季
+- [anilist-130591] 食鏽末世錄
+- [anilist-140502] 白領羽球部
+- [anilist-138379] BLUE THERMAL
+- [anilist-131586] 86 -不存在的戰區- 後篇
+- [anilist-131912] 風都偵探
+- [anilist-140753] SHINE POST
+- [anilist-130586] 史上最強大魔王轉生為村民 A
+- [anilist-123330] 街角魔族 2丁目
+- [anilist-133412] 歌愈少女
+- [anilist-126288] 佐佐木與宮野
+- [anilist-140643] 東京 24 區
+- [anilist-137247] 幻想三國誌 — 天元靈心記
+- [anilist-131942] JOJO的奇妙冒險 石之海
+- [anilist-149073] 我的英雄學院 HLB 英雄棒球聯盟
+- [anilist-153906] 鐵拳：血脈
+- [anilist-142455] 泡泡
+- [anilist-140830] 小鳥之翼
+- [anilist-136226] 噬血狂襲 FINAL
+- [anilist-127050] 相愛相殺
+- [anilist-124060] 薔薇王的葬列
+- [anilist-117765] BanG Dream！Poppin'Dream！
+- [anilist-131565] 宿命迴響：命運節拍
+- [anilist-117196] 東京貓貓 NEW～♡
+- [anilist-142095] 神渣☆偶像
+- [anilist-134732] 青之蘆葦
+- [anilist-138459] 身為女主角 討厭的女主角與秘密的工作
+- [anilist-135384] 社畜小姐想被幽靈幼女治癒。
+- [anilist-139589] 小太郎一個人生活
+- [anilist-128828] 少女前線
+- [anilist-142080] 美味派對♡光之美少女
+- [anilist-128705] 藍色時期
+- [anilist-146637] 東方少年 第二季
+- [anilist-143417] 頂點!!!!!!!!!!!!!!!
+- [anilist-116605] 約會大作戰 DATE A LIVE IV
+- [anilist-141350] 女忍者椿的心事
+- [anilist-137633] Love All Play
+- [anilist-134252] 與變成了異世界美少女的大叔一起冒險
+- [anilist-137312] 秘密內幕-女警的反擊
+- [anilist-140950] 彩綠
+- [anilist-127401] 白金終局
+- [anilist-123899] 讓我聽見愛的歌聲
+- [anilist-138060] 星球大戰：幻境
+- [anilist-138714] 平家物語
+- [anilist-112716] MUV-LUV ALTERNATIVE
+- [anilist-131646] 瓦尼塔斯的手札
+- [anilist-129277] 死神少爺與黑女僕
+- [anilist-130549] RE-MAIN
+- [anilist-107203] 劇場版 Free! 男子游泳部 -the Final Stroke- 前篇
+- [anilist-125838] 海岬的迷途之家
+- [anilist-128547] 奇巧計程車
+- [anilist-124675] 青梅竹馬絕對不會輸的戀愛喜劇
+- [anilist-113428] 美少年偵探團
+- [anilist-108987] 迷宮標記者
+- [anilist-136947] 狂熱深淵-迷失的孩子
+- [anilist-107717] 小林家的龍女僕S
+- [anilist-120209] 轉生成女性向遊戲只有毀滅 END 的壞人大小姐 X
+- [anilist-131149] 暮蟬悲鳴時 卒
+- [anilist-117002] 魔法紀錄 魔法少女小圓外傳 第二季
+- [anilist-120120] 東京復仇者
+- [anilist-112608] 持續狩獵史萊姆三百年，不知不覺就練到 LV MAX
+- [anilist-124858] 憂國的莫里亞蒂 後篇
+- [anilist-113418] 本田小狼與我
+- [anilist-132806] 異世界食堂 2
+- [anilist-136344] 艾梅洛閣下 II 世事件簿 -魔眼蒐集列車 Grace note- 特別篇
+- [anilist-117612] 現實主義勇者的王國重建記
+- [anilist-126047] 急戰 5 秒殊死鬥
+- [anilist-128740] 七大罪：被光詛咒的人們
+- [anilist-131880] Obey Me!
+- [anilist-117193] 我的英雄學院 第五季
+- [anilist-127399] 終末的女武神
+- [anilist-126791] 如果究極進化的完全沉浸RPG比現實還更像垃圾遊戲的話
+- [anilist-122348] 真白之音
+- [anilist-118103] 吸血鬼馬上死
+- [anilist-131264] 半妖的夜叉姬 第二季
+- [anilist-126546] 精靈幻想記
+- [anilist-122052] 海賊王女
+- [anilist-127688] 魔法科高中的優等生
+- [anilist-118743] 魔法少女伊莉雅：Licht 無名的少女
+- [anilist-114535] 給不滅的你
+- [anilist-117448] 異世界魔王與召喚少女的奴隸魔術 Ω
+- [anilist-119675] 通靈王
+- [anilist-115183] MARS RED
+- [anilist-134710] GIVEN 被贈與的未來 劇場版：反面的存在
+- [anilist-132545] 我讓最想被擁抱的男人給威脅了 劇場版～西班牙篇～
+- [anilist-126192] 女朋友 and 女朋友
+- [anilist-127271] 龍與雀斑公主
+- [anilist-131150] 緋紅結繫
+- [anilist-125868] 暗夜第六感 2041
+- [anilist-116589] 86－不存在的戰區－
+- [anilist-116588] 戰鬥員派遣中！
+- [anilist-123802] 聖女魔力無所不能
+- [anilist-125839] 後空翻少年!!
+- [anilist-139449] 星期一的豐滿 第二季
+- [anilist-133411] 180秒能讓你的耳朵幸福嗎？
+- [anilist-114065] 我們的重製人生
+- [anilist-117989] 女神宿舍的管理員。
+- [anilist-125446] 歌劇少女！！
+- [anilist-127227] 劇場編集版 隱瞞之事 -秘密是什麼-
+- [anilist-120697] 不要欺負我，長瀞同學
+- [anilist-116338] 入間同學入魔了 第二季
+- [anilist-110733] 佐賀偶像是傳奇 捲土重來
+- [anilist-120859] 灼熱卡巴迪
+- [anilist-132525] BUILD-DIVIDE -#000000- CODE BLACK
+- [anilist-131005] 境界戰機
+- [anilist-126659] 我的英雄學院：世界英雄任務
+- [anilist-128545] 白沙的 Aquatope
+- [anilist-130713] 魔法使的新娘 西之少年與青嵐的騎士
+- [anilist-130997] 幻變夢境
+- [anilist-114232] 刮掉鬍子的我與撿到的女高中生
+- [anilist-125038] SHADOWS HOUSE-影宅
+- [anilist-131773] 奇蛋物語 特別篇
+- [anilist-103277] Fate/Grand Order - 神聖圓桌領域卡美洛 - Paladin; Agateram
+- [anilist-126790] SELECTION PROJECT
+- [anilist-136829] 轉生成女性向遊戲只有毀滅END的壞人大小姐X OAD
+- [anilist-107625] 言語如汽水般湧現
+- [anilist-122434] 平穩世代的韋駄天們
+- [anilist-116756] Fate/Grand Order - 終局特異點 冠位時間神殿所羅門 -
+- [anilist-127721] IDOLiSH7 - 偶像星願 - Third BEAT！
+- [anilist-128546] Vivy -Fluorite Eye's Song-
+- [anilist-116741] 轉生史萊姆日記 關於我轉生變成史萊姆這檔事
+- [anilist-114840] 如果這叫愛情感覺會很噁心
+- [anilist-99900] 酷愛電影的龐波小姐
+- [anilist-131584] VISUAL PRISON 視覺監獄
+- [anilist-137227] 當雛菊邂逅少女
+- [anilist-112802] 陰晴不定的體操哥哥
+- [anilist-122441] 桃子男孩渡海而來
+- [anilist-114979] Love Live! Superstar!!
+- [anilist-130392] 叫我對大哥
+- [anilist-124194] 魔法水果籃 最終季
+- [anilist-125368] 輝夜姬想讓人告白？～天才們的戀愛頭腦戰～ 第二季  OVA
+- [anilist-113359] NOMAD MEGALOBOX 機甲拳擊 第二季
+- [anilist-126897] 三角窗外是黑夜
+- [anilist-126793] 橘色榮耀！
+- [anilist-132456] 迦希大人不氣餒！
+- [anilist-114302] 開掛藥師的異世界悠閒生活
+- [anilist-135866] 幼女戰記 沙漠意麵大作戰
+- [anilist-116676] 劇場版 黃金拼圖 謝謝你!!
+- [anilist-125426] 極主夫道
+- [anilist-119683] 伊甸星原
+- [anilist-113950] SSSS.DYNAZENON
+- [anilist-131930] 武士彌助
+- [anilist-122148] 燒窯的話也要馬克杯
+- [anilist-109261] 五等分的新娘∬
+- [anilist-108631] 工作細胞 第二季
+- [anilist-126819] 銀魂 THE SEMI-FINAL
+- [anilist-113692] 劇場版 妄想學生會2
+- [anilist-112151] 鬼滅之刃劇場版 無限列車篇
+- [anilist-116673] BURN THE WITCH 龍與魔女
+- [anilist-111324] 池袋西口公園
+- [anilist-114099] 勇者鬥惡龍 達伊的大冒險
+- [anilist-129664] 擾亂 THE PRINCESS OF SNOW AND BLOOD
+- [anilist-129386] 七騎士：革命 -英雄的繼承者-
+- [anilist-103632] 轉生成蜘蛛又怎樣！
+- [anilist-104459] 搖曳露營△ 第二季
+- [anilist-123779] 怪病醫拉姆尼
+- [anilist-103713] 劇場版 美少女戰士Sailor Moon Eternal（上）
+- [anilist-116267] 總之就是非常可愛
+- [anilist-116242] 我立於百萬生命之上
+- [anilist-103276] Fate/Grand Order - 神聖圓桌領域卡美洛 - Wandering；Agateram
+- [anilist-118376] 王之逆襲：意志的繼承者
+- [anilist-127368] 在地下城尋求邂逅是否搞錯了什麼 第三季 OVA
+- [anilist-124080] 堀與宮村
+- [anilist-114194] 動物狂想曲 第二季
+- [anilist-114862] 記錄的地平線 圓桌崩壞
+- [anilist-117696] 天地創造設計部
+- [anilist-124132] 夏目友人帳特別上映版：喚石與可疑訪客
+- [anilist-112124] 在地下城尋求邂逅是否搞錯了什麼 第三季
+- [anilist-116005] 大貴族
+- [anilist-118399] 半妖的夜叉姬
+- [anilist-122807] 體操武士
+- [anilist-132096] 迷你龍小劇場
+- [anilist-108465] 無職轉生～到了異世界就拿出真本事～
+- [anilist-112443] 弱角友崎同學
+- [anilist-117533] 工作細胞 Black
+- [anilist-106503] EX-ARM
+- [anilist-123785] Praeter 之傷
+- [anilist-113596] 喬瑟與虎與魚群
+- [anilist-118419] 成神之日
+- [anilist-112479] 突擊莉莉 BOUQUET
+- [anilist-104198] 請問您今天要來點兔子嗎？BLOOM
+- [anilist-120376] 美麗新世界 The Animation
+- [anilist-113936] Dr.STONE 新石紀 第二季
+- [anilist-116752] 七大罪 憤怒的審判
+- [anilist-114129] 銀魂 THE FINAL
+- [anilist-113814] IDOLY PRIDE
+- [anilist-103712] 劇場版 美少女戰士Sailor Moon Eternal（下）
+- [anilist-116566] 惡玉DRIVE
+- [anilist-114446] 暮蟬悲鳴時 業
+- [anilist-117757] 攀巖少女！
+- [anilist-112930] 愛情可以分割嗎？
+- [anilist-124786] 哥吉拉：奇異點
+- [anilist-108725] 約定的夢幻島 第二季
+- [anilist-125428] 天空侵犯
+- [anilist-116287] 裡世界遠足！
+- [anilist-114301] 蒼之騎士團
+- [anilist-127690] PUI PUI 天竺鼠車車
+- [anilist-114124] 憂國的莫里亞蒂
+- [anilist-111428] 在魔王城說晚安
+- [anilist-113970] Love Live！虹咲學園 學園偶像同好會
+- [anilist-115069] D4DJ First Mix
+- [anilist-127149] Fate/Grand Carnival
+- [anilist-108511] 關於我轉生變成史萊姆這檔事 第二季
+- [anilist-118375] 只有我能進入的隱藏迷宮
+- [anilist-113231] 2.43 清陰高中男子排球社
+- [anilist-101595] Princess Principal Crown Handler 第1章
+- [anilist-110277] 進擊的巨人 The Final Season
+- [anilist-112609] 魔女之旅
+- [anilist-115740] 眾神眷顧的男人
+- [anilist-121034] 約會大作戰 DATE A BULLET 赤黑新章：紅或白
+- [anilist-116173] 戰翼的希格德莉法
+- [anilist-112376] 龍先生，想要買個家。
+- [anilist-119661] Re:從零開始的異世界生活 第二季 後篇
+- [anilist-114085] 怪物事變
+- [anilist-124223] 賽馬娘 Pretty Derby 第二季
+- [anilist-114307] BACK ARROW
+- [anilist-113585] 花樣滑冰Stars
+- [anilist-117343] 無能力者娜娜
+- [anilist-109287] 安達與島村
+- [anilist-122137] 土下座跪求給看
+- [anilist-113024] 劇場版 少女☆歌劇 Revue Starlight
+- [anilist-124845] 奇蛋物語 Wonder Egg Priority
+- [anilist-3786] 新・福音戰士劇場版：終
+- [anilist-109403] 悠悠哉哉少女日和 第三季
+- [anilist-114473] 碧藍航線 微速前進！
+- [anilist-124136] 大人的防具店 第二季
+- [anilist-112300] 魔法科高中的劣等生 來訪者篇
+- [anilist-114340] 熊熊勇闖異世界
+- [anilist-116226] 你是彼方
+- [anilist-105595] 機動戰士鋼彈：閃光的哈薩威
+- [anilist-124153] SK8 the Infinity
+- [anilist-112649] 比方說，這是個出身魔王關附近的少年在新手村生活的故事
+- [anilist-120150] 文豪野犬 汪！
+- [anilist-110200] 吸血鬼之愛
+- [anilist-113415] 咒術迴戰
+- [anilist-112667] 這是妳與我的最後戰場，或是開創世界的聖戰
+- [anilist-110355] 黃金神威 第三季
+- [anilist-113652] 催眠麥克風
+- [anilist-108713] 滿溢的水果撻
+- [anilist-108632] Re：從零開始的異世界生活 第二季
+- [anilist-110353] DECA - DENCE
+- [anilist-111852] 約會大作戰 DATE A BULLET 赤黑新章：虛或實
+- [anilist-120180] 忍者收藏
+- [anilist-114888] 富豪刑警Balance: UNLIMITED
+- [anilist-108522] 刃牙 大擂臺賽篇
+- [anilist-109856] LISTENERS
+- [anilist-108629] 啄木鳥偵探社
+- [anilist-113051] ARGONAVIS from BanG Dream!
+- [anilist-111137] WAVE!! ~來衝浪吧!!~
+- [anilist-113813] 出租女友
+- [anilist-111734] GIVEN 被贈與的未來 劇場版
+- [anilist-109125] 交錯的想念
+- [anilist-119696] 女武神的餐桌II
+- [anilist-108241] 格萊普尼爾
+- [anilist-112444] 天晴爛漫！
+- [anilist-114811] 數碼獸大冒險：
+- [anilist-116384] 旭日
+- [anilist-106625] 排球少年！！第四季
+- [anilist-116147] One Room 第三季
+- [anilist-114236] 炎炎消防隊 貳之章
+- [anilist-112788] 海邊的異邦人
+- [anilist-112803] 非槍人生 NO GUNS LIFE 第二季
+- [anilist-113669] 電影哆啦A夢: 大雄的新恐龍
+- [anilist-114043] 食戟之靈 豪之皿
+- [anilist-110547] 阿爾蒂
+- [anilist-107294] 邪神與廚二病少女 第二季
+- [anilist-111500] 新櫻花大戰 the Animation
+- [anilist-108463] 地縛少年花子君
+- [anilist-120892] 灰色：幻影扳機 STARGAZER
+- [anilist-116006] 高校之神
+- [anilist-113286] 魔物孃的醫生
+- [anilist-110371] 戀與製作人
+- [anilist-111312] 蠟筆小新：激戰！塗鴉王國與差不多四勇者
+- [anilist-104647] 轉生成女性向遊戲只有毀滅 END 的壞人大小姐
+- [anilist-113917] PSYCHO-PASS 心靈判官3 FIRST INSPECTOR
+- [anilist-114411] 文豪與鍊金術師～審判的齒輪～
+- [anilist-112325] 闇影詩章
+- [anilist-105228] 異獸魔都
+- [anilist-114564] 寶可夢：皮卡丘與可可的冒險
+- [anilist-112301] 魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～
+- [anilist-111965] 彼得・格里爾的賢者時間
+- [anilist-110446] GIBIATE 獵魔武士
+- [anilist-115082] 荒野的壽飛行隊 完全版
+- [anilist-110354] BNA
+- [anilist-110458] 白貓 Project Zero Chronicle 零之紀元
+- [anilist-111323] 辣妹與恐龍Gal & Dino
+- [anilist-115186] 別冊奧林匹克之環
+- [anilist-106479] 怕痛的我，把防禦力點滿就對了
+- [anilist-117755] 光之戰記 -ZUERST-
+- [anilist-108489] 果然我的青春戀愛喜劇搞錯了。完
+- [anilist-122349] 我的英雄學院 OVA：活下來！殊死的生存訓練
+- [anilist-104937] Lapis Re：LiGHTs
+- [anilist-112641] 輝夜姬想讓人告白～天才們的戀愛頭腦戰～ 第二季
+- [anilist-113311] 隱瞞之事
+- [anilist-108266] 繼怪怪守護神
+- [anilist-108260] 數碼寶貝大冒險：最後的進化·羈絆
+- [anilist-112302] 棒球大聯盟 2nd 第二季
+- [anilist-105190] 達爾文遊戲
+- [anilist-114263] 鐵路浪漫譚
+- [anilist-103047] 紫羅蘭永恆花園劇場版
+- [anilist-112357] 日本沉沒 2020
+- [anilist-108941] 賽馬娘四格
+- [anilist-115230] 神之塔 -Tower of God-
+- [anilist-109020] 昨日之歌
+- [anilist-112353] 聽我的電波吧
+- [anilist-110130] 球詠
+- [anilist-114072] 遊戲王! SEVENS
+- [anilist-100643] 劇場版 來自深淵 深沉靈魂的黎明
+- [anilist-113416] 順其自然的日子
+- [anilist-114308] 刀劍神域 Alicization War of Underworld -THE LAST SEASON-
+- [anilist-112818] 弩級戰隊 HXEROS
+- [anilist-108356] 龍族教義
+- [anilist-110349] 詐騙之王
+- [anilist-107871] 超異域公主連結☆Re:Dive
+- [anilist-112296] 噬血狂襲 IV
+- [anilist-106154] 攻殼機動隊：SAC_2045
+- [anilist-118125] 邪神與廚二病少女【世紀末篇】
+- [anilist-107201] 虛構推理
+- [anilist-103119] 強襲魔女 通往柏林之路
+- [anilist-115113] 宇崎學妹想要玩！
+- [anilist-114195] 喜歡本大爺的竟然就你一個？～我們的比賽結束～
+- [anilist-110028] 魔法律事務所 第二季
+- [anilist-114963] 想哭的我戴上了貓的面具
+- [anilist-106319] 八男？別鬧了！
+- [anilist-109019] 放學後堤防日誌
+- [anilist-113570] 社長，戰鬥的時間到了！
+- [anilist-113906] BanG Dream! 少女樂團派對！☆PICO～大份～
+- [anilist-101168] 星掠者
+- [anilist-111145] A3! 《秋冬篇》
+- [anilist-21719] Fate/stay night [Heaven's Feel]：III. 春櫻之歌
+- [anilist-119113] 進擊的巨人 劇場版 CHRONICLE
+- [anilist-113023] 少女☆歌劇 Revue Starlight RONDO·RONDO·RONDO
+- [anilist-111762] 魔法水果籃 第二季
+- [anilist-113693] 小書痴的下剋上：為了成為圖書管理員不擇手段！第二季
+- [anilist-113108] 王者天下 第三季
+- [anilist-103110] IDOLiSH7 - 偶像星願 - Second BEAT！
+- [anilist-111310] 甜夢貓
+- [anilist-110350] ID:INVADED
+- [anilist-104051] 魔法紀錄 魔法少女小圓外傳
+- [anilist-101574] 劇場版 白箱
+- [anilist-113932] 破曉之翼
+- [anilist-107660] 動物狂想曲
+- [anilist-112625] 齊木楠雄的災難：重啟
+- [anilist-107339] 萌獸寵物店
+- [anilist-109321] 戰×戀
+- [anilist-109089] 廚病激發 BOY
+- [anilist-102976] 為美好的世界獻上祝福！紅傳說
+- [anilist-111790] 排球少年!! OVA 4: 陸VS空 & OVA 5: 球之"道"
+- [anilist-111501] 請在伸展臺上微笑
+- [anilist-99807] 22/7
+- [anilist-114744] 瑪露露庫的日常
+- [anilist-108759] 刀劍神域 Alicization War of Underworld
+- [anilist-108388] 超人高中生們即便在異世界也能從容生存！
+- [anilist-104159] 碧藍航線
+- [anilist-109616] 無限之住人
+- [anilist-110413] 魯邦三世 THE FIRST
+- [anilist-100668] 平凡職業造就世界最強
+- [anilist-107067] 理科生墜入情網，故嘗試證明。
+- [anilist-112125] 期待在地下城邂逅有錯嗎Ⅱ OVA
+- [anilist-104391] 神推偶像登上武道館我就死而無憾
+- [anilist-112324] 噬血狂襲 消失的聖槍篇
+- [anilist-108928] 七大罪 眾神的逆鱗
+- [anilist-103275] Fate/Grand Order - 絕對魔獸戰線巴比倫尼亞 -簡介STAFFCAST
+- [anilist-101349] 巴比倫
+- [anilist-113924] 為什麼老師會在這裡！？
+- [anilist-108554] 警視廳特務部特殊兇惡犯對策室第七課
+- [anilist-108430] GIVEN 被贈與的未來
+- [anilist-109298] 別對映像研出手！
+- [anilist-108092] 戀愛中的小行星
+- [anilist-113811] 小書痴的下剋上：為了成為圖書管理員不擇手段！ 外傳
+- [anilist-107880] 巨蟲列島
+- [anilist-105156] 這個勇者明明超 TUEEE 卻過度謹慎！
+- [anilist-110229] 我們真的學不來！第二季
+- [anilist-108891] 一弦定音！ 第二季
+- [anilist-111729] 平凡職業造就世界最強
+- [anilist-104679] 美妙射擊部
+- [anilist-109190] 紫羅蘭永恆花園外傳：永遠與自動手記人偶
+- [anilist-108623] 哥布林殺手 -GOBLIN’S CROWN-
+- [anilist-104461] 房間露營
+- [anilist-110445] 普通攻擊是全體攻擊而且能二次攻擊的媽媽你喜歡嗎？ OVA
+- [anilist-111944] 音樂
+- [anilist-109963] 食戟之靈 神之皿
+- [anilist-104052] 星合之空
+- [anilist-108577] 知曉天空之藍的人啊
+- [anilist-103638] 歌舞伎町夏洛克
+- [anilist-102090] 搖曳百合、
+- [anilist-107226] 流汗吧！健身少女
+- [anilist-108617] 索瑪麗與森林之神
+- [anilist-101350] 思維覆寫
+- [anilist-101634] BanG Dream！第三季
+- [anilist-113397] 緣結熊本
+- [anilist-108553] 我的英雄學院：英雄新世紀
+- [anilist-108307] PSYCHO-PASS 心靈判官 第三季
+- [anilist-101215] 花牌情緣 第三季
+- [anilist-108487] 時光沙漏 fragtime
+- [anilist-105333] Dr.STONE 新石紀
+- [anilist-105932] 騷亂時節的少女們
+- [anilist-104462] 科學超電磁砲T
+- [anilist-101367] 魔術士歐菲 流浪之旅
+- [anilist-108450] 空挺 Dragons
+- [anilist-109964] 淘氣貓 2020：家有圓圓？！我家的圓圓你知道嗎～
+- [anilist-107693] 入間同學入魔了！
+- [anilist-101227] 我不是說了能力要平均值嗎？
+- [anilist-108581] 高分少女 第二季
+- [anilist-107346] 碧藍幻想 第二季
+- [anilist-101348] 海盜戰記
+- [anilist-107663] 彼方的阿斯特拉
+- [anilist-106863] 貓娘樂園
+- [anilist-108628] number24
+- [anilist-98515] 奇幻怪盜 Hatena☆Illusion
+- [anilist-112033] 神巫奇才
+- [anilist-104464] 喜歡本大爺的竟然就妳一個？
+- [anilist-108478] 非槍人生 NO GUNS LIFE
+- [anilist-112153] 寶可夢旅途
+- [anilist-104115] 放學後桌遊俱樂部
+- [anilist-105310] 炎炎消防隊
+- [anilist-107420] 無盡連鎖
+- [anilist-111951] 寶石商人理察的謎鑑定
+- [anilist-109586] 蟲籠的卡伽斯特爾
+- [anilist-108714] ACCA13 區監察課 Regards
+- [anilist-108268] 小書痴的下剋上：為了成為圖書管理員不擇手段！
+- [anilist-101239] 籃球少年王
+- [anilist-111048] 拳願阿修羅 後篇
+- [anilist-110810] 神田川 JET GIRLS
+- [anilist-106286] 天氣之子
+- [anilist-112293] 成群結伴！西頓學園
+- [anilist-104936] 暗黑破壞神在身邊
+- [anilist-107651] A3! 《春夏篇》
+- [anilist-104276] 我的英雄學院 第四季
+- [anilist-104722] 刺客守則
+- [anilist-100675] 路人女主的養成方法 Fine
+- [anilist-101317] 黑狐
+- [anilist-104979] 一臉嫌棄表情的妹子給你看胖次2
+- [anilist-101167] 在地下城尋求邂逅是否搞錯了什麼 第二季
+- [anilist-101547] 異世界超能魔術師 
+- [anilist-104723] 普通攻擊是全體二連擊，這樣的媽媽你喜歡嗎？
+- [anilist-104463] 科學一方通行
+- [anilist-106918] 艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note-
+- [anilist-102926] 實況主的逃脫遊戲【直播中】
+- [anilist-108354] 外之國的少女
+- [anilist-21512] 偶像夢幻祭
+- [anilist-107202] 劇場版 FREE! 男子游泳部 -Road to the World-夢
+- [anilist-101922] 鬼滅之刃
+- [anilist-104157] 青春豬頭少年不會夢到懷夢美少女
+- [anilist-99425] 普羅米亞
+- [anilist-103302] 一弦定音！
+- [anilist-101386] 一個人的○○小日子
+- [anilist-101261] 皿三昧
+- [anilist-107418] Fairy Gone
+- [anilist-101992] 劇場版 吹響！悠風號～誓言的終章～
+- [anilist-101814] 消滅都市
+- [anilist-9488] CENCOROLL CONNECT
+- [anilist-100269] 魔法少女☆伊莉雅 百變嘉年華
+- [anilist-100663] 機動奧特曼
+- [anilist-101921] 輝夜姬想讓人告白～天才們的戀愛頭腦戰～
+- [anilist-103572] 五等分的新娘
+- [anilist-100722] 約會大作戰 DATE A LIVE III
+- [anilist-101166] 劇場版 在地下城尋求邂逅是否搞錯了什麼 ─ 獵戶座之箭 ─
+- [anilist-21322] 馬納歷亞的親愛摯友
+- [anilist-107961] 只要長的可愛, 即使是變態你也喜歡嗎?
+- [anilist-106509] 關於我轉生變成史萊姆這檔事OAD
+- [anilist-107956] 為了女兒，我說不定連魔王都能幹掉。
+- [anilist-100891] 拳願阿修羅
+- [anilist-105081] 女高中生的虛度日常
+- [anilist-107727] 第二國度
+- [anilist-21673] 戰姬絕唱SYMPHOGEAR XV
+- [anilist-104199] 請問您今天要來點兔子嗎？～Sing For You～
+- [anilist-104578] 進擊的巨人 第三季 後篇
+- [anilist-103223] 文豪Stray Dogs 第三季
+- [anilist-104325] 為什麼老師會在這裡！？
+- [anilist-101281] 凱洛與塔斯黛
+- [anilist-104217] 宅男腐女戀愛真難 OAD
+- [anilist-97918] 甲鐵城的卡巴內裡：海門決戰
+- [anilist-105807] 幻海奇情
+- [anilist-105749] 鑽石王牌 actII
+- [anilist-104147] 高中女生
+- [anilist-105928] RobiHachi
+- [anilist-104989] 八月的棒球甜心
+- [anilist-103555] MIX
+- [anilist-99263] 盾之勇者成名錄
+- [anilist-100876] 狂賭之淵 ××
+- [anilist-97880] Code Geass 復活的魯路修
+- [anilist-102680] 天使降臨到了我身邊
+- [anilist-103631] 劇場版 七人魔法使 天空圖書館與真紅的魔王
+- [anilist-106240] 你好 世界
+- [anilist-105074] 魔術學姐
+- [anilist-107490] 小惡魔女在街角
+- [anilist-108111] 你遭難了嗎？
+- [anilist-107672] 獵獸神兵
+- [anilist-108147] 滿月之戰
+- [anilist-111733] 異世界
+- [anilist-106287] 寶可夢：超夢的逆襲：進化
+- [anilist-97668] 一拳超人 第二季
+- [anilist-100112] 賢者之孫
+- [anilist-105914] 請讓我撒嬌，仙狐大人！
+- [anilist-105018] 乘浪之約
+- [anilist-106051] 川柳少女
+- [anilist-106967] 褲襪視界
+- [anilist-101597] 拾又之國
+- [anilist-106239] 信長老師的年幼妻子
+- [anilist-107208] 少女與戰車 最終章 第2話
+- [anilist-102064] 八十龜醬觀察日記
+- [anilist-107012] 生日幻境
+- [anilist-108039] 機動戰士高達 THE ORIGIN 前夜 紅色彗星
+- [anilist-101338] 路人超能100 第二季
+- [anilist-103139] 家有女友
+- [anilist-100815] 續·終物語
+- [anilist-103874] 同居人是貓
+- [anilist-107068] 擅長捉弄的高木同學 第二季
+- [anilist-104252] 魔王大人、RETRY！
+- [anilist-105143] 海賊王劇場版：奪寶爭霸戰
+- [anilist-109819] 靈能百分百 第一回靈能相談所犒勞旅行～心滿意足的治癒之旅～
+- [anilist-106893] COP CRAFT
+- [anilist-107876] 妖怪人間BEM
+- [anilist-111131] 火炮剋星
+- [anilist-106894] 胡蝶綺～少年信長～
+- [anilist-105334] 魔法水果籃
+- [anilist-103900] 我們真的學不來！
+- [anilist-104454] 異世界四重奏
+- [anilist-105989] 滿腦都是○○的我沒辦法談戀愛
+- [anilist-103221] 海獸之子
+- [anilist-97995] YU-NO 在這世界盡頭詠唱愛的少女
+- [anilist-105200] 衝吧烈子 第二季
+- [anilist-102939] 深夜的超自然公務員
+- [anilist-118123] holo的塗鴉
+- [anilist-98784] 薄暮
+- [anilist-106206] 名偵探柯南：紺青之拳
+- [anilist-101759] 約定的夢幻島
+- [anilist-101347] 多羅羅
+- [anilist-21718] Fate/stay night [Heaven's Feel] II.迷途之蝶
+- [anilist-101283] 不吉波普不笑
+- [anilist-101773] 笨拙之極的上野
+- [anilist-102649] PSYCHO-PASS 心靈判官 Sinners of the System Case.1 罪與罰
+- [anilist-103222] 魔法少女特殊戰明日香
+- [anilist-100965] LoveLive! Sunshine!! 劇場版 彩虹之上
+- [anilist-104253] 荒野的壽飛行隊
+- [anilist-101337] W'Z
+- [anilist-101291] 青春豬頭少年不會夢到兔女郎學姊
+- [anilist-100182] 刀劍神域 Alicization
+- [anilist-101573] 終將成為你
+- [anilist-99424] SSSS.GRIDMAN
+- [anilist-100185] 魔法禁書目錄 Ⅲ
+- [anilist-101381] 我讓最想被擁抱的男人給威脅了
+- [anilist-101506] 我家的女僕有夠煩!
+- [anilist-100990] 火之丸相撲
+- [anilist-100432] 尤利西斯 貞德與鍊金騎士
+- [anilist-104308] 大人的防具店
+- [anilist-99147] 進擊的巨人 第三季
+- [anilist-100922] GRAND BLUE 碧藍之海
+- [anilist-100977] 工作細胞
+- [anilist-99540] 七大罪劇場版：天空的囚人
+- [anilist-101231] 詩季織織
+- [anilist-98658] 少女☆歌劇 Revue Starlight
+- [anilist-100665] 後街女孩
+- [anilist-99586] 遙的接球
+- [anilist-101970] 一臉嫌棄表情的妹子給你看胖次
+- [anilist-104382] PSYCHO-PASS 心靈判官 Sinners of the System Case.2 First Guardian
+- [anilist-101930] 飛翔吧！戰機少女
+- [anilist-99000] 明治東京戀伽
+- [anilist-104674] 笑容的代價
+- [anilist-104286] 劇場版 王室教師海涅
+- [anilist-101280] 關於我轉生變成史萊姆這檔事
+- [anilist-102351] 東京喰種:re 第二季
+- [anilist-101302] 七龍珠超：布羅利
+- [anilist-101316] 來自繽紛世界的明日
+- [anilist-101024] Radiant 虛空魔境
+- [anilist-100382] 我喜歡的是妹妹但不是妹妹
+- [anilist-101371] 鄰家的吸血鬼小妹
+- [anilist-101505] 只要別西卜大小姐喜歡就好
+- [anilist-101013] ANIMAYELL!
+- [anilist-101313] 逆轉裁判 第二季
+- [anilist-99750] 我想吃掉你的胰臟
+- [anilist-100723] 我的英雄學院：兩個人的英雄：電影版
+- [anilist-101001] 遊戲3人娘
+- [anilist-100483] 搖曳莊的幽奈小姐
+- [anilist-101117] 熱血自由式III
+- [anilist-101045] 輕羽飛揚!
+- [anilist-101249] 企鵝公路
+- [anilist-99366] 千緒的通學路
+- [anilist-101426] 擅長捉弄的高木同學 OVA
+- [anilist-104990] PSYCHO-PASS 心靈判官 Sinners of the System Case.3 恩仇的彼方
+- [anilist-104307] 高分少女 EXTRA STAGE
+- [anilist-103735] 格林筆記
+- [anilist-101123] 菸草
+- [anilist-101379] 粉彩回憶
+- [anilist-101165] 哥布林殺手
+- [anilist-103871] 佐賀偶像是傳奇
+- [anilist-101310] 寄宿學校的朱麗葉
+- [anilist-101903] 強風吹拂
+- [anilist-102977] 黃金神威 第二季
+- [anilist-100093] 書店裡的骷髏店員本田
+- [anilist-102436] 噬血狂襲 III
+- [anilist-101014] 月影特工
+- [anilist-103000] 嫁給非人類
+- [anilist-101359] 叛逆性百萬亞瑟王
+- [anilist-100388] BANANA FISH
+- [anilist-99629] 殺戮天使
+- [anilist-97888] 刃牙
+- [anilist-20574] 高分少女
+- [anilist-101289] 百鍊霸王與聖約女武神
+- [anilist-100556] 春原莊的管理員小姐
+- [anilist-100085] 昴宿七星
+- [anilist-101213] 政宗君的復仇 OAD
+- [anilist-103301] ENDRO！
+- [anilist-102835] 澀谷新視界
+- [anilist-102949] 不愉快的妖怪庵 續
+- [anilist-104562] 相對世界。明日終結？
+- [anilist-108355] 大人的防具店 裏面
+- [anilist-102883] JOJO的奇妙冒險 黃金之風
+- [anilist-99749] FAIRY TAIL 魔導少年 最終章
+- [anilist-100049] Re：從零開始的異世界生活 Memory Snow
+- [anilist-104580] 齊木楠雄的災難 完結篇
+- [anilist-100402] 絃音 -風舞高中弓道部-
+- [anilist-101336] 魔偶馬戲團
+- [anilist-101609] Conception 產子救世錄
+- [anilist-106862] 艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note- 守墓人與貓
+- [anilist-106494] 衝吧烈子：We Wish You a Metal Christmas
+- [anilist-101360] 夕照少女
+- [anilist-101474] OVERLORD III
+- [anilist-101004] 異世界魔王與召喚少女的奴隸魔術
+- [anilist-101351] Happy Sugar Life
+- [anilist-101361] 天狼 Sirius the Jaeger
+- [anilist-100749] 未來的未來
+- [anilist-100714] 邪神與廚二病少女
+- [anilist-21712] ISLAND
+- [anilist-21748] FLCL Alternative
+- [anilist-98779] 劇場版 悠哉日常大王 Vacation
+- [anilist-101292] 京都寺町三條商店街的福爾摩斯
+- [anilist-101161] 中間管理錄利根川
+- [anilist-100166] 我的英雄學院 第三季
+- [anilist-100183] 刀劍神域外傳 Gun Gale Online
+- [anilist-97767] 惡魔高校 D×D HERO
+- [anilist-99531] DEVILSLINE 惡魔戰線
+- [anilist-101571] 衝吧烈子 (2018 TV版)
+- [anilist-99131] 漫畫女孩
+- [anilist-100673] 飛龍女孩
+- [anilist-100248] 忍者蝙蝠俠
+- [anilist-100251] 奴隸區 The Animation
+- [anilist-101002] 踏切時間
+- [anilist-101044] 最終休止符
+- [anilist-100532] 藍海少女 第二季
+- [anilist-98460] 惡魔人 crybaby
+- [anilist-99426] 比宇宙更遠的地方
+- [anilist-97907] 爆肝工程師的異世界狂想曲
+- [anilist-98385] 戀如雨止
+- [anilist-98549] pop子和pipi美的日常
+- [anilist-100332] 刻刻
+- [anilist-99483] 博多豚骨拉麵團
+- [anilist-98439] 三顆星彩色冒險
+- [anilist-98693] 慢活開始
+- [anilist-101368] 行星與共
+- [anilist-100133] One Room 第二季
+- [anilist-100744] 劇場版 寶可夢 大家的故事
+- [anilist-99578] 宅男腐女戀愛真難
+- [anilist-100077] 黑社會的超能力女兒
+- [anilist-100526] 3D彼女
+- [anilist-99693] 女神異聞錄 5 the Animation
+- [anilist-99916] 牽牛花與加瀨同學。
+- [anilist-21746] FLCL Progressive
+- [anilist-20628] 銀河英雄傳說 Die Neue These 邂逅
+- [anilist-100569] 卡利古拉
+- [anilist-97873] 異世界居酒屋～古都阿伊特力亞的居酒屋「阿信」
+- [anilist-100957] 魯邦三世 PART5
+- [anilist-87504] 罪人與龍共舞
+- [anilist-99963] 冷然之天秤
+- [anilist-99539] 七大罪 戒律的復活
+- [anilist-98444] 搖曳露營△
+- [anilist-98635] ReLIFE 完結篇
+- [anilist-98384] 文豪 Stray Dogs 劇場版 DEAD APPLE
+- [anilist-21717] Fate/新章 最終迴響
+- [anilist-100855] 衛宮家今天的餐桌風景
+- [anilist-100245] BEATLESS -沒有心跳的少女-
+- [anilist-99725] A.I.C.O.：化身
+- [anilist-101812] Code Geass 反叛的魯路修 II 叛道
+- [anilist-101581] 湯搖莊的幽奈同學 OAD
+- [anilist-99412] 元寇合戰記
+- [anilist-101382] 暮光幻影
+- [anilist-100240] 東京喰種：re
+- [anilist-100298] MEGALOBOX 機甲拳擊
+- [anilist-98514] 賽馬娘 Pretty Derby
+- [anilist-100010] 魔法少女網站
+- [anilist-100645] 敦君與女朋友
+- [anilist-100401] 鋼琴之森
+- [anilist-21451] 驚爆危機 Invisible Victory
+- [anilist-100762] 立花館戀愛三角鈴
+- [anilist-100978] 鬼太郎 6
+- [anilist-21879] 閃電十一人 阿瑞斯的天平
+- [anilist-99638] ALICE or ALICE
+- [anilist-21827] 紫羅蘭永恆花園
+- [anilist-98437] OVERLORD II
+- [anilist-99457] 道別的早晨就用約定之花點綴吧
+- [anilist-98503] 學園奶爸
+- [anilist-98762] 中二病也要談戀愛！ -Take On Me-
+- [anilist-99940] 伊藤潤二驚選集
+- [anilist-98389] 牙鬥
+- [anilist-99390] 小木乃伊到我家
+- [anilist-97881] 庫洛魔法使 透明牌篇
+- [anilist-87495] IDOLiSH7 - 偶像星願 -
+- [anilist-100268] 劇場版 夏目友人帳～緣結空蟬～
+- [anilist-101340] 魔法律事務所
+- [anilist-21798] K Seven Stories R:B ～BLAZE～
+- [anilist-21127] 命運石之門 0
+- [anilist-99699] 黃金神威
+- [anilist-100179] 多田君不戀愛
+- [anilist-100178] 莉茲與青鳥
+- [anilist-100500] 妖怪旅館營業中
+- [anilist-101813] Code Geass 反叛的魯路修 III 皇道
+- [anilist-100715] 魔法少女 我
+- [anilist-100745] 隊長小翼
+- [anilist-98073] 失落的歌謠
+- [anilist-100181] 數碼獸大冒險 tri. 第六章「我們的未來」
+- [anilist-100561] 哥斯拉：決戰機動增殖都市
+- [anilist-99423] Darling in the Franxx
+- [anilist-99468] 擅長捉弄的高木同學
+- [anilist-97832] citrus～柑橘味香氣～
+- [anilist-21665] B：彼之初
+- [anilist-97768] 皇帝聖印戰記
+- [anilist-99507] 龍王的工作！
+- [anilist-99734] 粗點心戰爭2
+- [anilist-100353] 路人超能100 特別篇【不為人知的奇蹟靈能者】
+- [anilist-100451] 新妹魔王的契約者 DEPARTURES
+- [anilist-100465] 劇場版 進擊的巨人 覺醒的咆哮
+- [anilist-98747] 刀使巫女
+- [anilist-98529] 愛吃拉麵的小泉同學
+- [anilist-99753] 酒鬼妹子
+- [anilist-99255] 食戟之靈 餐之皿
+- [anilist-20791] Fate/stay night [Heaven's Feel] I. 預示之花
+- [anilist-97886] 血界戰線 & BEYOND
+- [anilist-98951] 我的女友是個過度認真的處女 Bitch
+- [anilist-99698] 國王遊戲 The Animation
+- [anilist-99714] 銀魂. 走光篇
+- [anilist-98497] 特別版 FREE! 男子游泳部 -Take Your Marks-
+- [anilist-100728] 命運-冠位指定 -月光／失落之室-
+- [anilist-99796] 牙狼 VANISHING LINE
+- [anilist-98513] URAHARA
+- [anilist-98659] 歡迎來到實力至上主義的教室
+- [anilist-97766] GAMERS電玩咖
+- [anilist-98251] 單蠢女孩
+- [anilist-98005] 舞動青春
+- [anilist-97663] 騎士&魔法
+- [anilist-87494] 獨佔我的英雄
+- [anilist-97757] 魔法少女☆伊莉雅 – 雪下的誓言
+- [anilist-97979] 猜謎王
+- [anilist-98512] 18if 夢境異聞錄
+- [anilist-99302] 海賊王 東海特別篇 路飛與四位夥伴的大冒險！！
+- [anilist-100305] 月色真美
+- [anilist-99748] 哈庫梅伊與蜜珂析
+- [anilist-100644] 七美德
+- [anilist-99148] 銀之守墓人 第二季
+- [anilist-97994] 調教咖啡廳
+- [anilist-99420] 少女終末旅行
+- [anilist-98596] 如果有妹妹就好了。
+- [anilist-98443] 十二大戰
+- [anilist-98657] 品酒要在成為夫妻之後
+- [anilist-98506] 此花綺譚
+- [anilist-98878] 第一次的Gal OAD
+- [anilist-107622] 狂賭之淵
+- [anilist-87458] 哥吉拉：怪獸惑星
+- [anilist-99994] Pingu in the City
+- [anilist-97986] 來自深淵
+- [anilist-98491] 帶著智慧型手機闖蕩異世界
+- [anilist-21745] 終物語 第二季
+- [anilist-97617] 異世界食堂
+- [anilist-98505] Princess Principal
+- [anilist-97833] 捏造陷阱 -NTR-
+- [anilist-98631] 便利店男友
+- [anilist-97984] 將國戡亂記
+- [anilist-98379] 地獄少女 宵伽
+- [anilist-98402] 數碼獸大冒險 tri. 第五章「共生」
+- [anilist-98496] 劇場版 FREE! 男子游泳部 Timeless Medley- 約束
+- [anilist-20875] SWORD GAI 裝刀凱
+- [anilist-99476] 飆速宅男 第四季
+- [anilist-97940] 黑色五葉草
+- [anilist-97922] 犬屋敷
+- [anilist-99726] 網路勝利組
+- [anilist-99634] 進擊的巨人：Wall Sina,Goodbye―Part One―
+- [anilist-98449] 泥鯨之子們在沙地上歌唱
+- [anilist-21855] UQ HOLDER！悠久持有者！
+- [anilist-21555] Dies irae 神怒之日
+- [anilist-99939] NEKOPARA OVA
+- [anilist-98630] Code:Realize ～創世的姬君～
+- [anilist-21813] 請問您今天要來點兔子嗎？？～Dear My Sister～
+- [anilist-98438] 鬼燈的冷徹 第二季
+- [anilist-21875] NO GAME NO LIFE 遊戲人生 ZERO
+- [anilist-97863] 辣妹與我的第一次
+- [anilist-98320] 戀愛與謊言
+- [anilist-98292] New Game! 第二季
+- [anilist-98205] 潔癖男子！青山君
+- [anilist-97981] 瑪麗與魔女之花
+- [anilist-98519] 半獸人的煩惱
+- [anilist-97683] 天使的3P!
+- [anilist-98501] 妖怪公寓的優雅日常
+- [anilist-98554] 魔卡少女櫻 透明牌篇 序幕 小櫻與兩人的小熊
+- [anilist-97921] 跳水男孩
+- [anilist-98217] 三麗鷗男子
+- [anilist-100518] 關於我女友是個一本正經的碧池這件事 OAD
+- [anilist-98436] 魔法使的新娘
+- [anilist-98707] 寶石之國
+- [anilist-98478] 3 月的獅子 第二季
+- [anilist-98820] Just Because！
+- [anilist-98572] 我家有個魚乾妹 R
+- [anilist-98448] 奇諾之旅 the Beautiful World
+- [anilist-101811] Code Geass 反叛的魯路修 I 興道
+- [anilist-98607] 動畫同好會
+- [anilist-99938] 少女與戰車 最終章 第1話
+- [anilist-98565] 阿松 第二季
+- [anilist-98314] 狂賭之淵
+- [anilist-98291] 徒然喜歡你
+- [anilist-98035] Fate/Apocrypha
+- [anilist-97996] 為美好的世界獻上祝福！ OAD
+- [anilist-97908] 煙花
+- [anilist-21778] 岸邊露伴一動也不動
+- [anilist-21742] 活撃/刀剣亂舞
+- [anilist-98298] 劇場版寶可夢 就決定是你了！
+- [anilist-98240] 劇場版 妄想學生會
+- [anilist-97939] 時間支配者
+- [anilist-21683] 想要傳達你的聲音
+- [anilist-20958] 進擊的巨人 第二季
+- [anilist-21685] 情色漫畫老師
+- [anilist-21180] 不起眼女主角培育法 第二季
+- [anilist-21377] 電影版影子籃球員：LAST GAME
+- [anilist-21684] 魔法科高中的劣等生 呼喚繁星的少女
+- [anilist-21191] FAIRY TAIL 魔導少年 劇場版 DRAGON CRY
+- [anilist-97660] 重啟咲良田
+- [anilist-97821] 愛麗絲與藏六
+- [anilist-97891] 青之驅魔師 OAD
+- [anilist-98511] 你的光芒~牽牛花與加瀨同學~
+- [anilist-21613] 幼女戰記
+- [anilist-21861] 青之驅魔師 京都不淨王篇
+- [anilist-97592] 亞人醬有話要說
+- [anilist-21823] ACCA13 區監察課
+- [anilist-87435] BanG Dream！
+- [anilist-20986] 鎖鏈戰記: 赫克瑟塔斯之光
+- [anilist-97673] 喵咪days
+- [anilist-87539] 龍之牙醫
+- [anilist-97619] 魯邦三世 血煙的石川五右衛門
+- [anilist-21744] 靈劍山 通往睿智的資格
+- [anilist-21298] 南鎌倉高校女子自行車社
+- [anilist-21123] 漂流武士 
+- [anilist-21460] 吹響！上低音號 第二季
+- [anilist-21856] 我的英雄學院 第二季
+- [anilist-98202] 月色真美
+- [anilist-21851] 武裝少女 Machiavellism
+- [anilist-97682] 從零開始的魔法書
+- [anilist-97917] 夜短夢長，少女前進吧！
+- [anilist-20705] sin 七宗罪
+- [anilist-97932] 王室教師海涅
+- [anilist-21498] BLAME!
+- [anilist-98249] 宣告黎明的露之歌
+- [anilist-98495] 劇場版 FREE! 男子游泳部 Timeless Medley- 絆
+- [anilist-21857] 政宗君的復仇
+- [anilist-21858] 小魔女學園 (TV)
+- [anilist-21887] 風夏
+- [anilist-21425] 黑執事 劇場版 豪華客船編
+- [anilist-21696] 烏菈菈迷路帖
+- [anilist-21731] Hand Shakers
+- [anilist-21407] 飆速宅男 第三季
+- [anilist-98663] 甲鐵城的卡巴內利 總集篇 後篇 燃燒的生命
+- [anilist-21677] 宇宙警探elDLIVE
+- [anilist-98186] 迷你幼女戰記
+- [anilist-21698] 排球少年！！第三季
+- [anilist-21639] 競女!!!!!!!!
+- [anilist-21769] 我的青春戀愛物語果然有問題 續 OVA
+- [anilist-97938] 慕留人 - 火影新世代 -
+- [anilist-97980] Re:CREATORS
+- [anilist-21676] 劍姬神聖譚
+- [anilist-97625] 怪怪守護神
+- [anilist-97903] 櫻花任務
+- [anilist-21563] 時鐘機關之星
+- [anilist-21773] 假面Noise
+- [anilist-21662] 銀之守墓人
+- [anilist-97642] 有頂天家族 2
+- [anilist-21699] 為美好的世界獻上祝福！2
+- [anilist-21403] 刀劍神域 劇場版 序列爭戰
+- [anilist-21400] 傷物語 III 冷血篇
+- [anilist-97730] 清戀
+- [anilist-21874] 劇場版 七人魔法使 -悠久圖書館與鍊金術少女-
+- [anilist-97636] 秋葉原之旅
+- [anilist-87496] 動物朋友
+- [anilist-21836] 超級戀人 第二季
+- [anilist-97985] 殺老師 Q！
+- [anilist-97590] 鬼平
+- [anilist-21730] 宇宙戰艦大和號2202 愛的戰士們
+- [anilist-21709] YURI!!!on ICE
+- [anilist-21686] 我太受歡迎了該怎麼辦
+- [anilist-21700] 不正經的魔術講師與禁忌教典
+- [anilist-21860] 末日時在做什麼？有沒有空？可以來拯救嗎？
+- [anilist-21517] 戀愛暴君
+- [anilist-21184] 巴哈姆特之怒 VIRGIN SOUL
+- [anilist-21361] 碧藍幻想
+- [anilist-97983] 夏目友人帳 陸
+- [anilist-87517] 雛子的筆記
+- [anilist-21452] 正確的KADO
+- [anilist-97909] 喧譁番長 乙女-Girl Beats Boys-
+- [anilist-21776] 小林家的龍女僕
+- [anilist-21701] 人渣的本願
+- [anilist-21878] 珈百璃的墮落
+- [anilist-21733] 昭和元祿 落語心中 第二季
+- [anilist-97857] One Room
+- [anilist-21126] 混沌之子
+- [anilist-97665] Rewrite 第二季
+- [anilist-20919] 虐殺器官
+- [anilist-97734] 數碼獸大冒險 tri. 第四章「喪失」
+- [anilist-98338] 吹響！上低音號 第二季
+- [anilist-98059] KiraKira☆光之美少女 A La Mode
+- [anilist-21366] 3 月的獅子
+- [anilist-21051] 黑白來看守所
+- [anilist-97815] Fate/Grand Order ‐First Order‐
+- [anilist-21660] 期待在地下城邂逅有錯嗎 OVA
+- [anilist-21340] 魔法少女育成計劃
+- [anilist-21710] 夏目友人帳 伍
+- [anilist-97634] 寶可夢 太陽＆月亮
+- [anilist-21627] 少女編號
+- [anilist-21871] ViVid Strike！
+- [anilist-97609] 一課一練
+- [anilist-21772] 失憶煽動WIXOSS
+- [anilist-21519] 你的名字。
+- [anilist-21518] 食戟之靈 貳之皿
+- [anilist-21385] 七大罪 聖戰的預兆
+- [anilist-21825] 槍彈辯駁 3 絕望編
+- [anilist-21410] 發條精靈戰記 天鏡的極北之星
+- [anilist-21378] 魔裝學園H×H
+- [anilist-21335] 海賊王劇場版：GOLD
+- [anilist-21379] Fate/kaleid liner 魔法少女☆伊莉雅 3rei！！
+- [anilist-21424] 亞爾斯蘭戰記 風塵亂舞
+- [anilist-21588] 銀魂 愛染香篇
+- [anilist-21596] 數碼獸大冒險 tri. 第三章「告白」
+- [anilist-21439] Ange Vierge
+- [anilist-21355] Re：從零開始的異世界生活
+- [anilist-21196] 甲鐵城的卡巴內裡
+- [anilist-21499] 雙星之陰陽師
+- [anilist-21284] 飛翔的魔女
+- [anilist-21714] FLIP FLAPPERS
+- [anilist-21815] 噬血狂襲 II
+- [anilist-21708] 超自然9人組
+- [anilist-101102] 暗殺教室 365 日倒數計時
+- [anilist-21764] WWW.WORKING!! 迷糊餐廳
+- [anilist-21650] 魔物孃的同居日常 OAD
+- [anilist-21496] 殺戮都市 GANTZ：O
+- [anilist-21715] 灼熱的乒乓球娘
+- [anilist-21837] 學園帥哥
+- [anilist-20954] 聲之形
+- [anilist-21049] ReLIFE 重返 17 歲
+- [anilist-21399] 傷物語 II 熱血篇
+- [anilist-21659] 天真與閃電
+- [anilist-21560] 烙印勇士
+- [anilist-21269] 吸血鬼僕人
+- [anilist-21557] 心靈代碼 QUALIDEA CODE
+- [anilist-21578] DAYS
+- [anilist-21406] 藍海少女
+- [anilist-21704] Bananya 香蕉喵
+- [anilist-21432] 女神異聞錄5 -THE DAY BREAKERS-
+- [anilist-21891] Re：從迷你開始的異世界生活
+- [anilist-21311] 文豪 Stray Dogs
+- [anilist-21595] 在下坂本，有何貴幹？
+- [anilist-21394] 魔笛MAGI 辛巴達的冒險
+- [anilist-21296] 從好久以前就喜歡你
+- [anilist-15227] 在這世界的角落
+- [anilist-97716] 星期一的豐滿
+- [anilist-21803] 斬首循環 藍色學者與戲言跟班
+- [anilist-21703] 編舟記
+- [anilist-21757] 喜歡上你的那瞬間
+- [anilist-21832] TRICKSTER -來自江戶川亂步「少年偵探團」-
+- [anilist-21741] 刀劍亂舞-花丸-
+- [anilist-98033] 元氣少女緣結神 新婚篇
+- [anilist-21850] 超心動！文藝復興
+- [anilist-21507] 路人超能 100
+- [anilist-21647] Orange 橘色奇蹟
+- [anilist-21455] New Game!
+- [anilist-21626] 半田君
+- [anilist-21221] 時空幻境熱情傳奇 THE X
+- [anilist-21031] 禁忌咒紋
+- [anilist-21382] Rewrite
+- [anilist-21643] 不愉快的妖怪庵
+- [anilist-21242] 初戀怪獸
+- [anilist-21404] 加速世界 INFINITE BURST
+- [anilist-21782] 腐男子高校生活
+- [anilist-21771] 星之夢～星之人～
+- [anilist-21450] JOJO的奇妙冒險 不滅鑽石
+- [anilist-21290] 線上遊戲的老婆不可能是女生？
+- [anilist-21390] 學戰都市Asterisk 2期
+- [anilist-21445] 至高指令
+- [anilist-21799] 亞人 第二季
+- [anilist-21838] 終末的伊澤塔
+- [anilist-97669] 橘色奇蹟 -未來-
+- [anilist-21749] 機動戰士鋼彈 鐵血孤兒 第二季
+- [anilist-21631] 烏冬麵之國的金色毛毬
+- [anilist-21349] ALL OUT!!
+- [anilist-97635] 寶可夢：世代
+- [anilist-20454] 無畏魔女
+- [anilist-98662] 甲鐵城的卡巴內利 總集篇 前篇 聚光
+- [anilist-21804] 齊木楠雄的災難 (TV)
+- [anilist-21711] 91 Days
+- [anilist-21509] 槍彈辯駁 3 未來編
+- [anilist-21457] 這個美術社大有問題！
+- [anilist-21688] 魔法使的新娘 等待星星的人
+- [anilist-21584] Love Live! Sunshine!!
+- [anilist-21558] 驅魔少年 HALLOW
+- [anilist-21732] 星之夢
+- [anilist-21831] 海賊王 特別篇 黃金之心
+- [anilist-87489] Play Play 昴宿星團
+- [anilist-21002] Under The Dog
+- [anilist-21459] 我的英雄學院
+- [anilist-21421] 羈絆者
+- [anilist-21495] 田中君總是如此慵懶
+- [anilist-21362] 百武裝戰記
+- [anilist-21637] 宇宙巡警露露子
+- [anilist-21516] 黑色殘骸
+- [anilist-20680] 超時空要塞Delta
+- [anilist-21265] 遊戲王 次元的黑暗面
+- [anilist-21334] 三者三葉
+- [anilist-21462] 美少女戰士 Crystal 3期
+- [anilist-21236] 戰鬥陀螺 爆裂
+- [anilist-9260] 傷物語 I 鐵血篇
+- [anilist-21188] 最弱無敗神裝機龍《巴哈姆特》
+- [anilist-20972] 昭和元祿 落語心中
+- [anilist-21292] 虹色時光
+- [anilist-21380] 神聖之門
+- [anilist-21444] 少女們向荒野進發
+- [anilist-21248] 女神異聞錄 3 劇場版 第四章 Winter of Rebirth
+- [anilist-21458] 機動戰士高達 雷霆宙域
+- [anilist-21239] 大叔與棉花糖
+- [anilist-21359] 房東妹子青春期
+- [anilist-21092] 落第騎士英雄譚
+- [anilist-20704] 對魔導學園35試驗小隊
+- [anilist-20913] K: Return of Kings
+- [anilist-119941] 野良神 ARAGOTO OAD
+- [anilist-21138] 拂曉的尤娜 OAD
+- [anilist-21348] 排球少年!! OVA 2: VS"掛科"
+- [anilist-21567] 迷家
+- [anilist-21316] 高校艦隊
+- [anilist-21238] Anne-Happy
+- [anilist-21321] 少年女僕
+- [anilist-21300] 火星異種 REVENGE
+- [anilist-21695] 無頭騎士異聞錄×2 結 DuFuFuFu!!
+- [anilist-21234] 只有我不存在的城市
+- [anilist-21306] 無彩限的幻影世界
+- [anilist-21258] 赤髮白雪姬 第二季
+- [anilist-20880] 無頭騎士異聞錄 DuRaRaRa!!×2 結
+- [anilist-21472] 告訴我！辣妹子醬
+- [anilist-21319] 蒼之彼方的四重奏
+- [anilist-21201] 黑之宣告
+- [anilist-21178] Code Geass 亡國的阿基德 最終章「致我所愛」
+- [anilist-20643] 命運九重奏
+- [anilist-21264] 夢幻之星 Online 2
+- [anilist-21417] ACTIVERAID -機動強襲室第八組-
+- [anilist-21131] 學戰都市Asterisk
+- [anilist-21281] 進擊！巨人中學
+- [anilist-21326] 東京喰種 PINTO
+- [anilist-21190] 全部成為F
+- [anilist-21116] 女武神驅動
+- [anilist-18617] 少女與戰車 劇場版
+- [anilist-21291] JOKER GAME
+- [anilist-21177] 超級戀人
+- [anilist-21608] 龍心戰紀
+- [anilist-21728] 最終幻想15 兄弟情
+- [anilist-21726] 衝吧烈子 (2016 短篇)
+- [anilist-21611] Endride X fragments
+- [anilist-21202] 為美好的世界獻上祝福！
+- [anilist-21341] 亞人
+- [anilist-21520] 歷物語
+- [anilist-21416] 一拳超人 OVA
+- [anilist-21330] 疾走王子
+- [anilist-21629] 大貴族：回醒
+- [anilist-21482] Luck & Logic
+- [anilist-119947] 偽戀 OVA
+- [anilist-21500] 數碼獸大冒險 tri. 第二章「決意」
+- [anilist-21471] 舞武器 舞亂伎
+- [anilist-21087] 一拳超人
+- [anilist-21262] 終物語
+- [anilist-21268] 機動戰士鋼彈 鐵血孤兒
+- [anilist-19489] 小魔女學園 魔法遊行
+- [anilist-21356] 寶可夢 XY＆Z
+- [anilist-21034] 請問您今天要來點兔子嗎？？
+- [anilist-21360] 逆轉裁判
+- [anilist-21795] 暖心日記
+- [anilist-21423] 當女孩遇到熊
+- [anilist-21197] 爆音少女!!
+- [anilist-21678] 暗殺教室 第二季 課外授課篇
+- [anilist-21640] 血界戰線 王者餐廳的王者
+- [anilist-21428] 灰與幻想的格林姆迦爾
+- [anilist-21365] 粗點心戰爭
+- [anilist-21096] 同級生 劇場版
+- [anilist-21256] Dimension W 維度戰記
+- [anilist-21577] 她和她的貓 -Everything Flows-
+- [anilist-21050] 小桃小栗 Love Love 物語
+- [anilist-21213] 春&夏推理事件簿～春太與千夏的青春～
+- [anilist-21313] 赤發白雪姬 OAD
+- [anilist-21497] 從前有座靈劍山
+- [anilist-21329] 石膏BOYS
+- [anilist-21128] 流浪神差 ARAGOTO
+- [anilist-21110] 新妹魔王的契約者 BURST
+- [anilist-20771] 關於我被綁架到貴族女校當“庶民樣本”的事
+- [anilist-21066] 櫻子小姐的腳下埋著屍體
+- [anilist-21261] 阿松
+- [anilist-20881] 重裝武器
+- [anilist-21158] FREE! 男子游泳部 電影 High☆Speed! -Free! Starting Days-
+- [anilist-21218] 傳頌之物 虛偽的假面
+- [anilist-21098] 噬血狂襲 女武神的王國篇
+- [anilist-20932] 和諧
+- [anilist-20807] 監獄學園
+- [anilist-21058] 赤髮白雪姬
+- [anilist-20955] 六花的勇者
+- [anilist-21220] 火影忍者劇場版11：慕留人
+- [anilist-21033] 其實我是
+- [anilist-21038] 潮與虎
+- [anilist-21186] 元氣少女緣結神 過去篇
+- [anilist-21120] 排球少年！！劇場版：結束與開始
+- [anilist-20560] 戰姬絕唱SYMPHOGEAR GX
+- [anilist-21009] 那就是聲優！
+- [anilist-20698] 果然我的青春戀愛喜劇搞錯了。續
+- [anilist-20966] 山田君與7人魔女
+- [anilist-21006] 灰色的樂園
+- [anilist-20778] 龍珠Z 復活的F
+- [anilist-20566] 長門有希醬的消失
+- [anilist-21008] 蟲師 續章 鈴之雫
+- [anilist-20762] 銀河騎士傳 第九行星戰役
+- [anilist-20930] 干支魂
+- [anilist-20824] 潛行吧！奈亞子F
+- [anilist-20772] 忍者殺手
+- [anilist-21249] Concrete Revolutio 超人幻想
+- [anilist-20991] 緋彈的亞里亞AA
+- [anilist-21243] 小森同學拒絕不了！
+- [anilist-21182] 駭客娃娃
+- [anilist-21175] 龍珠超
+- [anilist-20987] 我家有個魚乾妹
+- [anilist-20754] 學園孤島
+- [anilist-20968] 心靈想要大聲呼喊。
+- [anilist-21132] 東京喰種 JACK
+- [anilist-20951] 城下町的蒲公英
+- [anilist-21112] 教室☆危機
+- [anilist-21192] 比基尼勇士
+- [anilist-20487] 新科學小飛俠 insight
+- [anilist-20923] 食戟之靈
+- [anilist-20872] 可塑性記憶
+- [anilist-20745] High School D×D BorN
+- [anilist-20935] 亞爾斯蘭戰記
+- [anilist-21000] 關於完全聽不懂老公在說什麼的事 第二季
+- [anilist-21018] 電波教師
+- [anilist-20692] 劇場版 進擊的巨人 後編 自由之翼
+- [anilist-20737] 女神異聞錄 3 劇場版 第三章 Falling Down
+- [anilist-20953] 境界之Rinne
+- [anilist-20979] 槍神斯托拉塔斯
+- [anilist-21045] 與魔共舞
+- [anilist-20965] 屍者的帝國
+- [anilist-21327] 幹物妹小埋 OAD
+- [anilist-20997] 夏洛特
+- [anilist-20910] 下流梗不存在的灰暗世界
+- [anilist-21093] 魔物娘相伴的日常
+- [anilist-20849] 噬神者
+- [anilist-20879] 無頭騎士異聞錄 DuRaRaRa!!×2 轉
+- [anilist-20774] 空戰魔導士候補生的教官
+- [anilist-21078] 青春 x 機關槍
+- [anilist-21189] 亂步奇譚
+- [anilist-21055] 混沌之龍 赤龍戰役
+- [anilist-21214] 搖曳百合 夏日時光！+
+- [anilist-20920] 在地下城尋求邂逅是否搞錯了什麼
+- [anilist-20727] 血界戰線
+- [anilist-20946] 俺物語！！
+- [anilist-21005] 灰色的迷宮
+- [anilist-20766] Love Live! 學園偶像 電影
+- [anilist-21085] 鑽石王牌 第二季
+- [anilist-20843] SHOW BY ROCK!!
+- [anilist-20654] Hello！！黃金拼圖
+- [anilist-20854] 網球優等生 第二季
+- [anilist-20814] 靈感！
+- [anilist-20802] 數碼獸大冒險 tri. 第一章「再會」
+- [anilist-21275] 彗星路西法
+- [anilist-21187] 青年黑傑克
+- [anilist-20832] OVERLORD
+- [anilist-20994] GATE 奇幻自衛隊
+- [anilist-20773] GANGSTA
+- [anilist-20981] 怪物之子
+- [anilist-20984] 我老婆是學生會長
+- [anilist-20694] 悠哉日常大王 Repeat
+- [anilist-20845] Fate/kaleid liner 魔法少女☆伊莉雅 2wei Herz！
+- [anilist-21059] 群居姐妹
+- [anilist-15201] Code Geass 亡國的阿基德 第四章「憎恨記憶」
+- [anilist-20906] 魯邦三世 PART4
+- [anilist-20829] 終結的熾天使
+- [anilist-20792] Fate/stay night [Unlimited Blade Works] 第二季
+- [anilist-20912] 吹響！上低音號
+- [anilist-20964] Punch Line
+- [anilist-20839] 絕命制裁X
+- [anilist-21039] 四月是你的謊言 OAD
+- [anilist-15199] Code Geass 亡國的阿基德 第三章「輝芒隕落」
+- [anilist-20983] 御神學園組曲
+- [anilist-21068] 無頭騎士異聞錄×2 承 我的心是火鍋的形狀
+- [anilist-21007] 狼少女與黑王子 OAD
+- [anilist-21140] 颱風的諾爾達
+- [anilist-20931] 死亡遊行
+- [anilist-20678] 新妹魔王的契約者
+- [anilist-20627] 聖劍使的禁咒詠唱
+- [anilist-20758] 銃皇無盡的法夫納
+- [anilist-20740] 山田君與7位魔女 OAD
+- [anilist-20625] 搖曳百合 夏日時光！
+- [anilist-20793] 軍人少女
+- [anilist-20938] Exodus!
+- [anilist-17080] 蒼穹的法芙娜 EXODUS
+- [anilist-20623] 寄生獸：生命的準則
+- [anilist-20602] 甘城光輝遊樂園
+- [anilist-20671] 記錄的地平線 第二季
+- [anilist-20646] 日常系的異能戰鬥
+- [anilist-20809] 魔彈之王與戰姬
+- [anilist-20629] 火星異種
+- [anilist-20884] 排球少年！！列夫前來拜見！
+- [anilist-20672] 天體的秩序
+- [anilist-20817] 笑對陰天
+- [anilist-20952] 彌留之國的愛麗絲
+- [anilist-20605] 東京喰種
+- [anilist-20596] 閃爍的青春
+- [anilist-20632] ALDNOAH.ZERO
+- [anilist-20663] 精靈使的劍舞
+- [anilist-17919] 放課後的昴宿星團
+- [anilist-20850] 東京喰種√A
+- [anilist-20785] 絕對雙刃
+- [anilist-20514] PSYCHO-PASS 心靈判官：劇場版
+- [anilist-20827] 百合熊風暴
+- [anilist-20693] 偶像大師 灰姑娘女孩
+- [anilist-20877] 美男高校地球防衛部LOVE!
+- [anilist-20724] 棺姬嘉依卡 OVA
+- [anilist-20844] 魔鬼戀人 OAD
+- [anilist-21069] 秋之鼓點
+- [anilist-19603] Fate/stay night [Unlimited Blade Works]
+- [anilist-17729] 灰色的果實
+- [anilist-20918] 憑物語
+- [anilist-20701] 狼少女和黑王子
+- [anilist-20806] 天使與龍的輪舞
+- [anilist-20728] 偽戀 OVA
+- [anilist-17827] 大圖書館的牧羊人
+- [anilist-20790] 神偷怪盜 1412
+- [anilist-20723] 飆速宅男 第二季
+- [anilist-20591] 尋找失去的未來
+- [anilist-20613] 斬！赤紅之瞳
+- [anilist-20668] 月刊少女野崎同學
+- [anilist-20614] FREE! 男子游泳部 -Eternal Summer-
+- [anilist-16904] K MISSING KINGS
+- [anilist-21057] 攻殼機動隊 新劇場版
+- [anilist-20799] JOJO 的奇妙冒險 星塵遠徵軍 埃及篇
+- [anilist-20652] 無頭騎士異聞錄 DuRaRaRa!!×2 承
+- [anilist-20553] 艦隊Collection
+- [anilist-20746] 伊斯卡
+- [anilist-10937] 機動戰士高達 THE ORIGIN
+- [anilist-20908] 花與愛麗絲殺人事件
+- [anilist-20601] 魔女的使命 OAD
+- [anilist-21001] Go! Princess 光之美少女
+- [anilist-20665] 四月是你的謊言
+- [anilist-20770] 拂曉的尤娜
+- [anilist-16870] 火影忍者劇場版10：最終章
+- [anilist-20729] 境界觸發者
+- [anilist-20590] 巴哈姆特之怒GENESIS
+- [anilist-20800] 結城友奈是勇者
+- [anilist-20565] 我，要成為雙馬尾
+- [anilist-20710] 電器街的漫畫店
+- [anilist-20753] 牙狼〈GARO〉-炎之刻印-
+- [anilist-13391] 樂園追放 -Expelled From Paradise-
+- [anilist-20714] 選擇擴散者WIXOSS
+- [anilist-20594] 刀劍神域 Sword Art Online 第二季
+- [anilist-20722] 元氣囝仔
+- [anilist-20555] 回憶中的瑪妮
+- [anilist-20520] LOVE STAGE!!
+- [anilist-20755] 暗殺教室
+- [anilist-20657] 不起眼女主角培育法
+- [anilist-20801] 元氣少女緣結神 第二季
+- [anilist-20840] 純潔的瑪利亞
+- [anilist-20815] 旋轉☆少女
+- [anilist-20744] 幸腹塗鴉
+- [anilist-20901] 動畫心療系
+- [anilist-20922] 夜之小雙俠
+- [anilist-20763] 蒼藍鋼鐵的琶音 DC
+- [anilist-20789] 七大罪
+- [anilist-20631] TRINITY SEVEN 魔道書 7 使者
+- [anilist-20513] PSYCHO-PASS 心靈判官 第二季
+- [anilist-20812] 白箱 SHIROBAKO
+- [anilist-20735] 關於完全聽不懂老公在說什麼的事
+- [anilist-20670] 黑執事 幽鬼城殺人事件篇
+- [anilist-20656] 銀仙
+- [anilist-20907] 命運石之門 聰明睿智的認知計算
+- [anilist-20691] 劇場版 進擊的巨人 前編 紅蓮的弓矢
+- [anilist-20720] 我家浴室的二三事
+- [anilist-20571] IS2 OVA 世界清洗篇
+- [anilist-20661] 恐怖殘響
+- [anilist-20593] 花物語
+- [anilist-20606] 黑執事 馬戲團篇
+- [anilist-20583] 日本國有鐵道公安隊
+- [anilist-20711] 濱虎 第二季
+- [anilist-14751] 美少女戰士Crystal
+- [anilist-20835] 海賊王3D2Y 跨越艾斯之死！與路飛夥伴的誓言
+- [anilist-18619] 少女與戰車 這次是真正的安齊奧戰！
+- [anilist-20515] STAND BY ME 多啦 A 夢
+- [anilist-19815] NO GAME NO LIFE 遊戲人生
+- [anilist-19163] 約會大作戰 DATE A LIVE II
+- [anilist-20462] 棺姬嘉依卡
+- [anilist-20517] 請問您今天要來點兔子嗎？
+- [anilist-19429] 惡魔的謎語
+- [anilist-19775] 銀河騎士傳
+- [anilist-20615] 選擇感染者WIXOSS
+- [anilist-20736] 女神異聞錄 3 劇場版 第二章 Midsummer Knight's Dream
+- [anilist-12783] 天降之物Final 永遠的我的鳥籠
+- [anilist-20446] 地球隊長
+- [anilist-20546] 名偵探柯南：異次元的狙擊手
+- [anilist-18897] 偽戀
+- [anilist-20031] 屬性同好會
+- [anilist-20521] 濱虎
+- [anilist-19315] pupa
+- [anilist-20526] 蟲師 蝕日之翳
+- [anilist-20533] Buddy Complex
+- [anilist-20467] 魔法少女☆伊莉雅 2wei ! 
+- [anilist-20645] GLASSLIP
+- [anilist-20677] 戲劇性謀殺
+- [anilist-20708] 修業魔女璐璐萌
+- [anilist-20856] 屬性同好會 OAD
+- [anilist-20611] 普通女高中生要做當地偶像
+- [anilist-20474] JOJO 的奇妙冒險 星塵遠徵軍
+- [anilist-20607] 乒乓
+- [anilist-20529] 我們大家的河合莊
+- [anilist-20599] 儘管如此世界依然美麗
+- [anilist-20537] 漫畫家和助手
+- [anilist-19685] 如果折斷她的旗
+- [anilist-20510] 網球優等生
+- [anilist-20619] 劍靈
+- [anilist-20618] 破刃之劍
+- [anilist-20588] 健全機鬥士
+- [anilist-20978] 魯邦三世 次元大介的墓標
+- [anilist-18671] 中二病也要談戀愛！戀
+- [anilist-20503] 魔女的使命
+- [anilist-18139] 鄰座同學是怪咖
+- [anilist-17777] 最近妹妹的樣子有點怪
+- [anilist-20431] 鬼燈的冷徹
+- [anilist-20455] 超級索尼子
+- [anilist-20638] 三坪房間的侵略者！？
+- [anilist-20634] 搞姬日常
+- [anilist-20575] 花舞少女
+- [anilist-20644] 寶可夢XY-破壞之繭與蒂安希
+- [anilist-20485] 前進吧!登山少女 第二季
+- [anilist-20842] 新劇場版 頭文字D Legend1 -覺醒-
+- [anilist-20458] 魔法科高中的劣等生
+- [anilist-20519] 玉子愛情故事
+- [anilist-20534] 極黑的布倫希爾特
+- [anilist-20595] 蟲師 續章
+- [anilist-20556] 龍娘七七七埋藏的寶藏
+- [anilist-20547] 噬魂師NOT
+- [anilist-20609] 天方魔譚MAGI 辛巴達的冒險
+- [anilist-20826] 妄想學生會＊ OAD
+- [anilist-20506] 艾斯卡與羅吉的工作室～黃昏之空的鍊金術士～
+- [anilist-20647] M3 ~黑鋼~
+- [anilist-20567] GJ部@
+- [anilist-20483] 未確認進行式
+- [anilist-20494] 野良神 OAD
+- [anilist-19769] 魔法戰爭
+- [anilist-20488] 稻荷戀之歌
+- [anilist-20473] 姐姐來了
+- [anilist-18851] Fate/kaleid liner 魔法少女☆伊莉雅 OAD
+- [anilist-20475] 生存遊戲社
+- [anilist-19199] 東京ESP 
+- [anilist-20713] 女神異聞錄 4 黃金版
+- [anilist-20518] 人生
+- [anilist-20717] 信長協奏曲
+- [anilist-20464] 排球少年!!
+- [anilist-20457] 黑色子彈
+- [anilist-20541] 目隱都市的演繹者
+- [anilist-20527] 一週的朋友
+- [anilist-19111] Love Live! 第二季
+- [anilist-20592] 星刻的龍騎士
+- [anilist-19613] 頭文字D Final Stage
+- [anilist-20542] 眾神的惡作劇
+- [anilist-20604] 犬神同學和貓山同學
+- [anilist-20552] 遊戲王ARC-V
+- [anilist-19193] 攻殼機動隊ARISE border:3 Ghost Tears
+- [anilist-20447] 流浪神差
+- [anilist-20057] 太空丹迪
+- [anilist-20047] 櫻Trick
+- [anilist-18095] 農林
+- [anilist-20496] 世界征服～謀略之星～
+- [anilist-19117] 獻給某飛行員的戀歌
+- [anilist-20509] 愚者信長
+- [anilist-20501] 阿茹茉妮
+- [anilist-20053] WIZARD BARRISTERS～弁魔士賽希爾
+- [anilist-20600] 上課小動作 OAD
+- [anilist-17437] 偶像大師 劇場版 前往光輝的另一端！
+- [anilist-17265] 記錄的地平線
+- [anilist-18397] 進擊的巨人：伊爾澤的筆記
+- [anilist-16011] 東京闇鴉
+- [anilist-18247] IS-Infinite Stratos 2
+- [anilist-17513] 魔鬼戀人
+- [anilist-18245] 白色相簿2
+- [anilist-14407] 女神異聞錄 3 劇場版 第一章 Spring of Birth
+- [anilist-18497] 夜櫻四重奏 ～花之歌～
+- [anilist-19151] 少女騎士物語
+- [anilist-18295] 革命機Valvrave 第二季
+- [anilist-18767] 蒼翼默示錄
+- [anilist-17074] 物語系列 第二季
+- [anilist-15039] 劇場版 我們仍未知道那天所看見的花的名字。
+- [anilist-15335] 銀魂劇場版 完結篇：永遠的萬事屋
+- [anilist-17909] 有頂天家族
+- [anilist-17831] 狗與剪刀的正確用法
+- [anilist-18661] 元氣少女緣結神
+- [anilist-18041] 新薔薇少女
+- [anilist-19469] 齊木楠雄的災難 (ONA短篇)
+- [anilist-18523] 戰勇。第2期
+- [anilist-14813] 果然我的青春戀愛喜劇搞錯了。
+- [anilist-20478] 夏目友人帳 曾幾何時下雪之日
+- [anilist-19855] 信長之槍
+- [anilist-16123] 天才麻將少女 全國篇
+- [anilist-18679] KILL la KILL
+- [anilist-16894] 影子籃球員 第二季
+- [anilist-18277] 噬血狂襲
+- [anilist-19221] 我的腦內戀礙選項
+- [anilist-20021] 刀劍神域 Extra Edition
+- [anilist-17247] 機巧少女不會受傷
+- [anilist-20159] 寶可夢 起源
+- [anilist-18195] Little Busters ! ～Refrain～
+- [anilist-19021] 小鳥遊六花・改 劇場版 中二病也想談戀愛！
+- [anilist-15197] Code Geass 亡國的阿基德 第二章「翼龍折翅」
+- [anilist-19759] 暗殺教室 (JSAT特別篇)
+- [anilist-16592] 槍彈辯駁
+- [anilist-16742] 我不受歡迎，怎麼想都是你們的錯！
+- [anilist-14829] Fate/kaleid liner 魔法少女☆伊莉雅
+- [anilist-18119] SERVANT × SERVICE 迷糊公務員
+- [anilist-16009] 神不在的星期天
+- [anilist-17741] 有你的小鎮
+- [anilist-15793] 戰姬絕唱SYMPHOGEAR G
+- [anilist-20359] 山田君與7人魔女
+- [anilist-18495] 歸宅部活動記錄
+- [anilist-19211] 翠星之加爾剛蒂亞
+- [anilist-19023] Wake Up, Girls!
+- [anilist-20687] 未確認進行式 OAD
+- [anilist-19157] 妖怪手錶
+- [anilist-18153] 境界的彼方
+- [anilist-18115] MAGI魔奇少年 第二季
+- [anilist-17549] 悠哉日常大王
+- [anilist-19369] 萌萌侵略者
+- [anilist-16664] 輝耀姬物語
+- [anilist-19703] 京騷戲畫 (TV)
+- [anilist-18179] 飆速宅男
+- [anilist-19365] 武士弗拉明戈
+- [anilist-18893] 蒼藍鋼鐵的琶音
+- [anilist-18441] 血意少年 OAD
+- [anilist-19319] 高達創戰者
+- [anilist-15451] High School D×D NEW
+- [anilist-11633] 血意少年
+- [anilist-16918] 銀之匙
+- [anilist-16353] 戀愛研究所
+- [anilist-18229] 新科學小飛俠
+- [anilist-15605] 兄弟戰爭
+- [anilist-16890] 魔界王子
+- [anilist-17187] 攻殼機動隊ARISE border:1 Ghost Pain
+- [anilist-17821] 斯特拉女子學院高等科C3部
+- [anilist-16498] 進擊的巨人
+- [anilist-20481] Little Busters ! EX
+- [anilist-20633] 未確認進行式 OVA
+- [anilist-19115] 喬望尼之島
+- [anilist-17895] 青春紀行
+- [anilist-16067] 來自風平浪靜的明日
+- [anilist-11981] 魔法少女小圓 劇場版 新篇 叛逆的物語
+- [anilist-12477] 顛倒的帕特瑪
+- [anilist-18677] 當不成勇者的我，只好認真找工作了。
+- [anilist-18689] 鑽石王牌
+- [anilist-19291] 寶可夢 XY
+- [anilist-14807] 劇場版 空之境界 未來福音
+- [anilist-18001] 零度戰姬Vibration
+- [anilist-9479] 核爆默示錄
+- [anilist-20697] 劇場版 空之境界 未來福音 extra chorus
+- [anilist-18507] FREE! 男子游泳部
+- [anilist-16662] 風起
+- [anilist-16706] 只有神知道的世界 女神篇
+- [anilist-16732] 黃金拼圖
+- [anilist-16157] 超次元遊戲 海王星
+- [anilist-19383] 闇芝居
+- [anilist-16680] 劇場版 寶可夢超級願望—最終章—：神速的蓋諾賽克特 超夢覺醒
+- [anilist-17651] 穿透幻影的太陽
+- [anilist-18465] 現視研 二代目
+- [anilist-15809] 打工吧！魔王大人
+- [anilist-16782] 言葉之庭
+- [anilist-15225] 變態王子與不笑貓
+- [anilist-16201] 惡之華
+- [anilist-14669] AURA ～魔龍院光牙最後的戰鬥～
+- [anilist-16512] 惡魔倖存者2
+- [anilist-14921] RDG 瀕危物種少女
+- [anilist-17873] 寶可夢超級願望 第二季 德科羅拉大冒險
+- [anilist-17397] 獨眼巨人少女斎楓～
+- [anilist-16241] 惡魔阿薩謝爾在召喚你Z
+- [anilist-17635] 戀旅～True Tours Nanto～
+- [anilist-15051] Love Live!
+- [anilist-15379] 琴浦小姐
+- [anilist-15085] AMNESIA 失憶症
+- [anilist-16005] THE UNLIMITED 兵部京介
+- [anilist-15613] 八犬傳-東方八犬異聞-
+- [anilist-15811] 少女與戰車
+- [anilist-14045] 漫畫少女
+- [anilist-13863] Arve Rezzle 機器化的妖精們
+- [anilist-14347] 龍 -RYO-
+- [anilist-13601] PSYCHO-PASS 心靈判官
+- [anilist-14513] MAGI魔奇少年
+- [anilist-14345] BTOOOM! 驚爆遊戲
+- [anilist-14075] 絕園的暴風雨
+- [anilist-14199] 就算是哥哥只要有愛就沒問題對吧
+- [anilist-12365] 爆漫王。 第三季
+- [anilist-15583] 約會大作戰 DATE A LIVE
+- [anilist-13659] 我的妹妹哪有這麼可愛！
+- [anilist-15699] 襲來！美少女邪神 W
+- [anilist-16528] HAL
+- [anilist-15771] 聖哥傳
+- [anilist-16355] 斷裁分離的罪惡之剪
+- [anilist-16518] 革神語
+- [anilist-14735] 名偵探柯南：絕海的偵探
+- [anilist-17681] 絕對防衛利維坦
+- [anilist-14749] 我女友與青梅竹馬的慘烈修羅場
+- [anilist-14833] 魔王勇者
+- [anilist-14353] 死亡檯球
+- [anilist-14811] GJ部
+- [anilist-15751] 戰勇。
+- [anilist-14283] Vividred Operation
+- [anilist-15195] 義呆利 The Beautiful World
+- [anilist-16169] 漫研部
+- [anilist-15611] 卡片戰鬥先導者 鏈環傀儡篇
+- [anilist-16317] 石田和朝倉
+- [anilist-14741] 中二病也要談戀愛！
+- [anilist-13125] 來自新世界
+- [anilist-14289] 只要你說你愛我
+- [anilist-14131] 少女與戰車
+- [anilist-13655] Little Busters !
+- [anilist-11737] 青之驅魔師 劇場版
+- [anilist-11577] 命運石之門 負荷領域的既視感
+- [anilist-16524] 翠星之加爾剛蒂亞
+- [anilist-16035] 狂歡節
+- [anilist-15911] 悠悠式
+- [anilist-17082] AIURA
+- [anilist-17505] 蟲奉行
+- [anilist-15863] 銀河機攻隊 Majestic Prince
+- [anilist-16982] 旋風管家 Cuties
+- [anilist-16436] 天使的水果糖
+- [anilist-16417] 玉子市場
+- [anilist-14967] 我的朋友很少NEXT
+- [anilist-14397] 花牌情緣 第二季
+- [anilist-15119] 閃亂神樂
+- [anilist-14515] 鎖鎖美同學@提不起勁
+- [anilist-17115] 寶可夢超級願望 第二季 N之章
+- [anilist-17409] 只要你說你愛我
+- [anilist-14941] AKB0048 next stage
+- [anilist-16395] 學園救援團 OAD
+- [anilist-12857] 閃亮的拓人 劇場版
+- [anilist-13759] 櫻花莊的寵物女孩
+- [anilist-14467] K
+- [anilist-15689] 貓物語（黑）
+- [anilist-15417] 銀魂' 延長戰
+- [anilist-11703] 法外製裁者
+- [anilist-16049] 科學超電磁砲Ｓ
+- [anilist-14837] 龍珠Z 神與神
+- [anilist-16668] 革命機Valvrave
+- [anilist-16397] 寫真女友
+- [anilist-14175] 花開伊呂波 HOME SWEET HOME
+- [anilist-12711] 歌之王子殿下 真愛2000%
+- [anilist-16910] 人魚又上鉤
+- [anilist-17637] 宮河家的空腹
+- [anilist-17345] 閃亂神樂
+- [anilist-15315] 問題兒童都來自異世界？
+- [anilist-14349] 小魔女學園 (2013 劇場短篇)
+- [anilist-12115] 劍風傳奇 黃金時代篇III 降臨
+- [anilist-14355] 前進吧!登山少女 第一季
+- [anilist-15109] Q弟偵探因幡
+- [anilist-14511] 南家三姊妹 我回來了
+- [anilist-16419] DokiDoki! 光之美少女
+- [anilist-14827] 初音島III
+- [anilist-15649] 迷你偶像
+- [anilist-14719] JOJO 的奇妙冒險
+- [anilist-14227] 鄰座的怪同學
+- [anilist-14713] 元氣少女緣結神
+- [anilist-3785] 新世紀福音戰士劇場版：Q
+- [anilist-13663] 出包王女Darkness
+- [anilist-12859] 海賊王劇場版：Z
+- [anilist-11977] 魔法少女小圓 劇場版 前編 最初的物語
+- [anilist-15059] 頭文字D Fifth Stage
+- [anilist-14027] 我的朋友很少 Add-on disk
+- [anilist-15775] 聖哥傳 OAD
+- [anilist-14653] 旋風管家 CAN'T TAKE MY EYES OFF YOU
+- [anilist-12549] 美少女死神 還我H之魂
+- [anilist-11933] 織田信奈的野望
+- [anilist-13535] 窮神
+- [anilist-12049] FAIRY TAIL 魔導少年 劇場版 鳳凰巫女
+- [anilist-12967] 聖靈家族
+- [anilist-11783] DOG DAYS 第二季
+- [anilist-15323] 海賊王 娜美特別篇 領航員之淚與夥伴的羈絆
+- [anilist-12671] 劇場版 寶可夢超級願望：酋雷姆VS聖劍士 凱路迪歐
+- [anilist-13859] 加素世界
+- [anilist-12189] 冰菓
+- [anilist-11499] 散華禮彌
+- [anilist-11785] 襲來！美少女邪神
+- [anilist-11761] 最強會長黑神
+- [anilist-12029] 宇宙戰艦大和號2199
+- [anilist-12815] 白熊咖啡館
+- [anilist-12317] 槍械少女
+- [anilist-9751] 強襲魔女 劇場版
+- [anilist-12929] 聖鬥士星矢Ω
+- [anilist-12753] Phi-Brain～神之謎題2
+- [anilist-12611] 戰國Collection
+- [anilist-11979] 魔法少女小圓 劇場版 後編 永遠的物語
+- [anilist-16774] 地獄刑事
+- [anilist-14293] 被狙擊的學園
+- [anilist-13403] 妖狐×僕SS
+- [anilist-11757] 刀劍神域 Sword Art Online
+- [anilist-12293] 弒神者
+- [anilist-12031] 王者天下
+- [anilist-12113] 劍風傳奇 黃金時代篇II 多爾多雷攻略
+- [anilist-14753] 堀桑與宮村君
+- [anilist-13851] 出包王女 Darkness
+- [anilist-14093] 寶可夢超級願望 第二季
+- [anilist-12685] Code Geass 反叛的魯路修 娜娜莉夢遊仙境
+- [anilist-13115] 薄櫻鬼 黎明錄
+- [anilist-14073] 公立海老棲川高校天悶部
+- [anilist-11771] 影子籃球員
+- [anilist-12531] 坂道上的阿波羅
+- [anilist-12467] 謎樣女友X
+- [anilist-12431] 宇宙兄弟
+- [anilist-10681] 血戰-C：The Last Dark
+- [anilist-12979] 火影忍者 SD 李洛克的青春全力忍傳
+- [anilist-11739] 少年同盟 2
+- [anilist-12117] 名偵探柯南：第 11 位前鋒
+- [anilist-12669] 聖誕之吻SS+ plus
+- [anilist-12367] 光明之心-幸福的麵包
+- [anilist-13331] 軍火女王 PERFECT ORDER
+- [anilist-15117] 只有神知道的世界 天理篇
+- [anilist-15125] 網球少女
+- [anilist-10464] 學生會的一己之見 Lv.2
+- [anilist-11887] 心靈鏈環
+- [anilist-13667] 火影忍者劇場版9：忍者之路
+- [anilist-10357] 人類衰退之後
+- [anilist-12403] 搖曳百合♪♪
+- [anilist-13333] TARI TARI
+- [anilist-13055] 散華禮彌 OAD
+- [anilist-13585] 夏雪密會
+- [anilist-12487] 境界線上的地平線 第二季
+- [anilist-20760] 銀魂總集篇 on Theatre 2D
+- [anilist-10928] 乃木坂春香的秘密 Finale♪
+- [anilist-12355] 狼的孩子雨和雪
+- [anilist-12445] 黃昏少女×失憶
+- [anilist-12291] 一起一起這裡那裡
+- [anilist-12883] 釣球
+- [anilist-11837] ZETMAN
+- [anilist-12471] 交響詩篇AO
+- [anilist-12149] AKB0048
+- [anilist-10884] 天才麻將少女 阿知賀篇
+- [anilist-11313] 有你的小鎮 OAD 黃昏交叉點
+- [anilist-12695] 鋼索危情
+- [anilist-13599] 機器人筆記
+- [anilist-14527] 最強會長黑神 Abnormal
+- [anilist-14765] 伊克西翁傳說DT
+- [anilist-16239] 海賊王 路飛特別篇 手掌島的冒險
+- [anilist-13161] 無賴勇者的鬼畜美學
+- [anilist-12679] 女子落
+- [anilist-12175] 戀愛與選舉與巧克力
+- [anilist-13367] 三人行必有我妹
+- [anilist-8888] Code Geass 亡國的阿基德 第一章「翼龍降臨」
+- [anilist-13411] 罪惡王冠 失落的聖誕節 an episode of port town
+- [anilist-11021] Muv-Luv Alternative Total Eclipse
+- [anilist-15005] 天然萌少女明日香
+- [anilist-15359] 京騷戲畫 (2012短篇)
+- [anilist-12281] 輪迴的拉格朗日 第二季
+- [anilist-11759] 加速世界
+- [anilist-12413] 軍火女王
+- [anilist-10790] 這樣算是殭屍嗎？OF THE DEAD
+- [anilist-12893] 男子高校生的日常
+- [anilist-13203] 魯邦三世 ～名為峰不二子的女人～
+- [anilist-12461] 緋色的欠片
+- [anilist-12119] 夏色奇蹟
+- [anilist-13263] 拜託了 愛因茲貝倫諮詢室
+- [anilist-11859] 女皇之刃 叛亂
+- [anilist-13377] 豎笛與雙肩書包 2♪
+- [anilist-11111] Another
+- [anilist-11013] 妖狐×僕SS
+- [anilist-10218] 劍風傳奇 黃金時代篇I 霸王之卵
+- [anilist-11235] 聖誕之吻SS+ plus
+- [anilist-10447] 創聖的大天使EVOL
+- [anilist-11491] 豎笛與雙肩書包
+- [anilist-11917] 棒球大聯盟 世界大賽篇 OVA
+- [anilist-11339] A 頻道 OVA
+- [anilist-12021] 嘟嘟貓觀察日記
+- [anilist-13169] 俠豬布塔
+- [anilist-10087] Fate/zero
+- [anilist-9617] 電影 K-ON！輕音部
+- [anilist-10213] 認真和我戀愛！！
+- [anilist-10456] 境界線上的地平線
+- [anilist-12231] 龍珠 巴達克之章
+- [anilist-11123] 世界一初戀2
+- [anilist-10336] 最終流放-銀翼的飛夢-
+- [anilist-11531] UN-GO episode: 0 因果論
+- [anilist-11237] 向陽素描×SP
+- [anilist-10161] 未來都市NO.6
+- [anilist-10495] 搖曳百合
+- [anilist-10012] 幻想嘉年華
+- [anilist-10278] 偶像大師
+- [anilist-9790] 天降之物 計時的悲傷女神
+- [anilist-10389] 給桃子的信
+- [anilist-11617] High School D×D
+- [anilist-11433] 在盛夏等待
+- [anilist-11665] 夏目友人帳 肆
+- [anilist-11079] 愛殺寶貝
+- [anilist-12191] Smile 光之美少女！
+- [anilist-11371] 新網球王子
+- [anilist-11769] 極樂院女子高寮物語
+- [anilist-5784] 間之楔
+- [anilist-11375] .hack//世界的彼方
+- [anilist-10690] 神奇樹屋
+- [anilist-10793] Guilty Crown 罪惡王冠
+- [anilist-10396] 便·當
+- [anilist-10588] 女神異聞錄4
+- [anilist-10460] 少年同盟
+- [anilist-10397] 純白交響曲
+- [anilist-9981] Phi-Brain～神之謎題
+- [anilist-10624] 殼中少女 燃燒
+- [anilist-10999] 閃電十一人GO 究極之絆 獅鷲獸
+- [anilist-11355] 這個男子，在與外星人作戰
+- [anilist-10162] 白兔糖
+- [anilist-10721] 迴轉企鵝罐
+- [anilist-10589] 火影忍者劇場版8：血獄
+- [anilist-9135] 鋼之鍊金術師 嘆息之丘的聖星
+- [anilist-10049] 妖怪少爺 千年魔京
+- [anilist-10491] 暮蟬悲鳴時 煌
+- [anilist-11843] 男子高校生的日常
+- [anilist-11319] 零之使魔 F
+- [anilist-11751] 戰姬絕唱SYMPHOGEAR
+- [anilist-11241] BRAVE10～真田十勇士～
+- [anilist-8917] 暴力宇宙海賊
+- [anilist-13171] 勿忘蛛
+- [anilist-12321] 羅馬浴場
+- [anilist-11341] 偵探歌劇 少女福爾摩斯 第二幕
+- [anilist-11053] 電影 哆啦A夢：大雄與奇跡之島～Animal adventure
+- [anilist-11061] 獵人 Hunter x Hunter
+- [anilist-10719] 我的朋友很少
+- [anilist-9936] 魔劍姬！
+- [anilist-10521] WORKING!!迷糊餐廳 第二季
+- [anilist-10578] C3 -魔方少女-
+- [anilist-11266] 青之驅魔師 小黑出走記
+- [anilist-9000] 對某飛行員的追憶
+- [anilist-10582] 露蒂的玩具! EX
+- [anilist-11385] 數碼獸合體戰爭 穿越時空的少年獵人們
+- [anilist-11255] 一騎當千 集鍔鬥士血風錄
+- [anilist-10110] 迷茫管家與懦弱的我
+- [anilist-8516] 笨蛋，測驗，召喚獸 第二季
+- [anilist-10568] 神的記事本
+- [anilist-8915] 丹特麗安的書架
+- [anilist-10805] 只有神知道的世界 四人與偶像
+- [anilist-10465] 魔乳秘劍帖
+- [anilist-11597] 偽物語
+- [anilist-11285] 黑巖射手 (TV)
+- [anilist-11179] 要聽爸爸的話！
+- [anilist-11227] 輪迴的拉格朗日
+- [anilist-11697] 足球騎士
+- [anilist-13429] 顛倒的帕特瑪 初始之日
+- [anilist-13629] 時光鐘擺
+- [anilist-12437] 百合星人奈緒子 OVA
+- [anilist-12221] 光之美少女全明星 New Stage 未來的朋友
+- [anilist-10620] 未來日記
+- [anilist-10800] 花牌情緣
+- [anilist-10030] 爆漫王。 第二季
+- [anilist-6773] 灼眼的夏娜 第三季
+- [anilist-10798] UN-GO
+- [anilist-10378] 侵略！？烏賊娘
+- [anilist-10232] 玉響～hitotose～
+- [anilist-10808] 機動戰士高達AGE
+- [anilist-12001] 海賊王 3D 激走！陷阱過山車
+- [anilist-10408] 螢火之森
+- [anilist-10490] BLOOD-C
+- [anilist-10029] 來自紅花坂
+- [anilist-10379] 夏目友人帳 參
+- [anilist-10321] 歌之王子殿下 真愛1000%
+- [anilist-9750] 曾幾何時天魔的黑兔
+- [anilist-10572] 蘿球社！
+- [anilist-10372] 神樣DOLLS
+- [anilist-9958] 旋風管家 HEAVEN IS A PLACE ON EARTH
+- [anilist-10197] 吸血貓
+- [anilist-9253] 命運石之門
+- [anilist-10165] 日常
+- [anilist-8630] 緋彈的亞里亞
+- [anilist-10271] 賭博默示錄 破戒錄篇
+- [anilist-10155] DOG DAYS
+- [anilist-10119] 妄想學生會 OAD
+- [anilist-9776] A 頻道
+- [anilist-10370] 戰鬥陀螺金屬對決4D
+- [anilist-9963] 名偵探柯南：沈默的 15 分鐘
+- [anilist-10092] 破刃之劍 第六章 慟哭之寨
+- [anilist-9656] 只想告訴你 第二季
+- [anilist-8426] 放浪男孩
+- [anilist-9834] 靈異E接觸
+- [anilist-9539] 卡片戰鬥先導者
+- [anilist-9332] .hack//Quantum
+- [anilist-11161] 架向星空之橋
+- [anilist-11441] 神劍闖江湖 新京都篇
+- [anilist-10534] 電影 哆啦A夢 新大雄與鐵人兵團～振翅吧 天使們～
+- [anilist-7674] 爆漫王。
+- [anilist-8129] 海月姬
+- [anilist-8424] MM一族
+- [anilist-10611] R-15
+- [anilist-9938] 異國迷宮的十字路口
+- [anilist-9934] 貓神八百萬
+- [anilist-106572] 海賊王 沙漠的王女與海賊們
+- [anilist-9919] 青之驅魔師
+- [anilist-9969] 銀魂'
+- [anilist-9379] 電波女與青春男
+- [anilist-10711] +模型姐妹
+- [anilist-10079] 架向星空之橋
+- [anilist-10033] 美食的俘虜
+- [anilist-10015] 遊戲王ZEXAL
+- [anilist-9999] 海賊王 追尋草帽
+- [anilist-9996] 戰國鬼才傳
+- [anilist-9756] 魔法少女小圓
+- [anilist-8841] 這樣算是殭屍嗎？
+- [anilist-9330] 龍之界點
+- [anilist-9587] 人家一點都不喜歡啦！
+- [anilist-9510] 超元氣三姐妹 增量中！
+- [anilist-7222] 劇場版超時空要塞F～戀離飛翼～
+- [anilist-9598] 潛行吧！奈亞子 Remember My Love
+- [anilist-10500] 爺爺的煤油燈
+- [anilist-9611] 我的女神
+- [anilist-8795] 吊帶襪天使
+- [anilist-8407] 天降之物f
+- [anilist-8247] 死神劇場版 地獄篇
+- [anilist-10156] Sacred Seven
+- [anilist-9117] 聖誕之吻SS
+- [anilist-10671] 森田同學很沉默
+- [anilist-7135] 魔法老師涅吉! ANIME FINAL
+- [anilist-9989] 我們仍未知道那天所看見的花名。
+- [anilist-9289] 花開物語
+- [anilist-10163] 「C」
+- [anilist-9941] TIGER & BUNNY
+- [anilist-9926] 世界一初戀
+- [anilist-10073] 聖痕鍊金士II
+- [anilist-9922] 我們沒有翅膀
+- [anilist-10076] 肯普法為了愛 動畫特別篇
+- [anilist-10187] 變態生理研究班
+- [anilist-9041] IS 〈Infinite Stratos〉
+- [anilist-9513] 惡魔奶爸
+- [anilist-9471] 笨蛋，測驗，召喚獸～祭典～
+- [anilist-9314] 分形世界
+- [anilist-10330] 爆丸4 機械波濤
+- [anilist-9890] 棒球大聯盟 訊息 OVA
+- [anilist-10431] 笨蛋，測驗，召喚獸～祭典～
+- [anilist-9347] FORTUNE ARTERIAL -赤之約束- OAD
+- [anilist-8769] 我的妹妹哪有這麼可愛！第一季
+- [anilist-8937] 魔法禁書目錄 Ⅱ
+- [anilist-8557] 侵略！烏賊娘
+- [anilist-8277] 百花繚亂 SAMURAI GIRLS
+- [anilist-9917] 劇場版 寶可夢超級願望：比克提尼與黑英雄 捷克羅姆
+- [anilist-10740] 劇場版 寶可夢超級願望：比克提尼與白英雄 雷希拉姆
+- [anilist-6920] 刀鋒戰士
+- [anilist-4713] 心之國愛麗絲 劇場版
+- [anilist-6880] 死囚樂園
+- [anilist-10080] 只有神知道的世界II
+- [anilist-9760] 追逐繁星的孩子
+- [anilist-9863] 學園救援團
+- [anilist-9736] 露蒂的玩具
+- [anilist-10507] 閃電十一人GO
+- [anilist-10216] 惡魔阿薩謝爾在召喚你
+- [anilist-9624] 30歲的保健體育
+- [anilist-10308] 戰國乙女～桃色Paradox～
+- [anilist-8425] GOSICK
+- [anilist-9367] 零度戰姬
+- [anilist-9331] 食夢者瑪利
+- [anilist-10893] 京騷戲畫 (2011短篇)
+- [anilist-8241] 裡歐 彩虹之門！
+- [anilist-8986] 邪惡力量
+- [anilist-9893] 組曲光之美少女♪
+- [anilist-6918] 金剛狼
+- [anilist-8525] 只有神知道的世界
+- [anilist-9181] 出包王女第二季／更多！出包王女
+- [anilist-8460] 未來日記 OVA
+- [anilist-9074] 荒川爆笑團 2
+- [anilist-7662] 心靈偵探八雲
+- [anilist-8100] 殼中少女 壓縮
+- [anilist-8449] 咎狗之血
+- [anilist-8457] 夜櫻四重奏 星之海
+- [anilist-9465] 破刃之劍 第四章 慘禍之地
+- [anilist-9563] 向陽素描
+- [anilist-8074] 學園默示錄
+- [anilist-6707] 黑執事 II
+- [anilist-8246] 火影忍者劇場版7：疾風傳！失落之塔
+- [anilist-5277] 鶺鴒女神～Pure Engagement
+- [anilist-7627] 超元氣三姐妹
+- [anilist-8768] 緋色戀
+- [anilist-6634] 戰國BASARA 貳
+- [anilist-6280] 貓屎一號
+- [anilist-7054] 會長是女僕大人
+- [anilist-7088] 最後大魔王
+- [anilist-7817] B型H系
+- [anilist-6637] 東之伊甸 劇場版II Paradise Lost
+- [anilist-8410] 戰鬥陀螺 金屬對決 爆
+- [anilist-7661] 逆轉監督
+- [anilist-7334] 爆丸3 狩獵保衛者
+- [anilist-7720] 王牌投手 振臂高揮～夏日大會篇～
+- [anilist-7596] 潛行吧！奈亞子
+- [anilist-8217] 寶石寵物 Tinkle☆
+- [anilist-9107] 寶可夢超級願望
+- [anilist-8476] 半妖少女綺麗譚
+- [anilist-9055] 玉響
+- [anilist-9065] 薄櫻鬼 碧血錄
+- [anilist-8311] 信蜂 REVERSE
+- [anilist-9120] 惡魔奶爸 OAD
+- [anilist-8098] 蒼穹之法芙娜 HEAVEN AND EARTH
+- [anilist-7724] 屍鬼
+- [anilist-8676] 聖誕之吻SS
+- [anilist-8142] 意外的幸運籤
+- [anilist-6166] 玩伴貓耳娘
+- [anilist-7695] 劇場版 寶可夢DP：幻影的霸者 索羅亞克
+- [anilist-10659] 火影忍者疾風傳 劇場版 鳴人、魔神與三個願望
+- [anilist-8465] 最後大魔王
+- [anilist-6979] 祝福的鐘聲
+- [anilist-7791] K-ON！！輕音部
+- [anilist-6956] WORKING!!迷糊餐廳
+- [anilist-7472] 銀魂劇場版 新譯紅櫻篇
+- [anilist-7590] 迷途貓OVER RUN
+- [anilist-8310] 魔術快鬥
+- [anilist-6864] ×××HOLiC 籠
+- [anilist-7580] 一騎當千 XTREME XECUTOR
+- [anilist-6973] 閃光的夜襲
+- [anilist-5306] 仙樂傳說 迪賽雅蘭篇
+- [anilist-6746] 無頭騎士異聞錄 DuRaRaRa!!
+- [anilist-8934] STAR DRIVER 閃亮的拓人
+- [anilist-7858] 天降之物
+- [anilist-6288] 機動戰士高達00 先驅者的覺醒
+- [anilist-9201] 飛輪少年 黑翼與沉睡森林 -Break on the sky-
+- [anilist-9252] 破刃之劍 第三章 兇刃之痕
+- [anilist-9204] 你看起來很好吃
+- [anilist-10918] 劇場版 快要壞掉的八音盒
+- [anilist-8675] 妄想學生會
+- [anilist-4901] 黑礁 Roberta’s Blood Trail
+- [anilist-7769] 大神與七位夥伴
+- [anilist-8408] 無頭騎士異聞錄 DuRaRaRa!!
+- [anilist-6974] 世紀末超自然學院
+- [anilist-9203] K-On!!:Ura-On!!
+- [anilist-8197] 空之音
+- [anilist-8245] 劇場版 金屬對決 戰鬥陀螺VS太陽 灼熱的侵略者 索爾火焰
+- [anilist-7785] 四疊半神話大系
+- [anilist-6114] 少年犯之七人
+- [anilist-4106] 槍神 Badlands Rumble
+- [anilist-7588] 江戶盜賊團五葉
+- [anilist-7058] 無法逃離的背叛
+- [anilist-7655] 棒球大聯盟 第六季
+- [anilist-8038] 交響情人夢Finale
+- [anilist-7337] 黑塔利亞劇場版
+- [anilist-8057] 真・戀姬無雙～少女大亂～
+- [anilist-7311] 涼宮春日的消失
+- [anilist-8726] 女僕咖啡廳
+- [anilist-8536] FORTUNE ARTERIAL -赤之約束-
+- [anilist-7768] 偵探歌劇 少女福爾摩斯
+- [anilist-10017] 龍珠：超級賽亞人滅絕計劃
+- [anilist-9032] 閃電十一人 最強軍團王牙來襲
+- [anilist-6875] 鋼鐵俠
+- [anilist-9288] Heart Catch光之美少女 超級時尚秀在花之都...真的嗎！？
+- [anilist-7711] 借物少女艾莉緹
+- [anilist-8086] 傳說中勇者的傳說
+- [anilist-7592] 妖怪少爺
+- [anilist-7059] 黑巖射手 (OVA)
+- [anilist-6381] 強襲魔女 第二季
+- [anilist-8624] 數碼獸合體戰爭
+- [anilist-8101] 變態生理研究班 OAD
+- [anilist-6547] Angel Beats！
+- [anilist-7593] 親吻姐姐
+- [anilist-7647] 荒川爆笑團
+- [anilist-7465] 夏娃的時間 劇場版
+- [anilist-6895] 薄櫻鬼
+- [anilist-6408] 文學少女 劇場版
+- [anilist-6467] 名偵探柯南：天空的劫難船
+- [anilist-4334] HEROMAN
+- [anilist-8302] 管家後宮學園
+- [anilist-8619] 管家後宮學園
+- [anilist-6594] 刀語
+- [anilist-7148] 大小姐×執事！
+- [anilist-6747] 吸血鬼同盟
+- [anilist-6951] 遊戲王 ～超融合！超越時空的羈絆～
+- [anilist-7062] 向陽素描×☆☆☆
+- [anilist-7762] 惡魔阿薩謝爾在召喚你
+- [anilist-10108] 我的妹妹哪有這麼可愛！第一季 ONA特別篇
+- [anilist-8097] 魯邦三世：the Last Job
+- [anilist-8134] 超劇場版 Keroro軍曹 誕生！究極Keroro奇蹟的時空之島！！
+- [anilist-6444] 信蜂
+- [anilist-5681] 夏日大作戰
+- [anilist-3652] 暮蟬悲鳴時 禮
+- [anilist-4752] 吸血鬼騎士 Guilty
+- [anilist-2904] Code Geass 反叛的魯路修 R2
+- [anilist-3455] 出包王女 第一季
+- [anilist-2787] 灼眼的夏娜 第二季
+- [anilist-1889] 暮蟬悲鳴時 解答篇
+- [anilist-1887] 幸運星
+- [anilist-1535] 死亡筆記本
+- [anilist-1943] 盜夢偵探
+- [anilist-1222] 我們的存在
+- [anilist-889] 黑礁
+- [anilist-99] 舞-乙HiME
+- [anilist-141] 人机续篇
+- [anilist-24] 校園迷糊大王
+- [anilist-6347] 笨蛋，測驗，召喚獸
+- [anilist-6802] 空之音
+- [anilist-6336] 機動戰士高達UC
+- [anilist-7645] Heart Catch 光之美少女!
+- [anilist-4985] 魔法少女奈葉 The MOVIE 1st
+- [anilist-7705] 星座彼氏
+- [anilist-9744] 一起洗澡吧
+- [anilist-5032] 哥普拉 六人勇士
+- [anilist-7597] 我是御宅上班族
+- [anilist-6205] 肯普法Kampfer
+- [anilist-5680] K-ON！輕音部
+- [anilist-4181] CLANNAD ~AFTER STORY~
+- [anilist-4898] 黑執事
+- [anilist-3588] 噬魂者
+- [anilist-2966] 狼與辛香料
+- [anilist-2963] 南家三姊妹
+- [anilist-2001] 天元突破 紅蓮螺巖
+- [anilist-1689] 秒速5公分
+- [anilist-1604] 家庭教師 HITMAN REBORN！
+- [anilist-2236] 穿越時空的少女
+- [anilist-849] 涼宮春日的憂鬱
+- [anilist-934] 暮蟬悲鳴時 出題篇
+- [anilist-73] 全金屬狂潮 The Second Raid
+- [anilist-101] AIR
+- [anilist-94] 機動戰士鋼彈SEED DESTINY
+- [anilist-6500] 聖痕鍊金士
+- [anilist-7338] DARKER THAN BLACK -黑之契約者- 外傳
+- [anilist-6574] 花丸幼稚園
+- [anilist-7079] 神隱之狼
+- [anilist-8115] 歡迎來到宇宙SHOW
+- [anilist-7897] 一起睡覺吧
+- [anilist-8133] 光之美少女全明星DX2 希望之光☆守護彩虹寶石!
+- [anilist-8249] 裝甲騎兵 探尋者
+- [anilist-6213] 科學超電磁砲
+- [anilist-6702] FAIRY TAIL 魔導少年 第一季
+- [anilist-5114] 鋼之鍊金術師 BROTHERHOOD
+- [anilist-4224] TIGER×DRAGON！龍與虎
+- [anilist-4654] 魔法禁書目錄
+- [anilist-3457] 吸血鬼騎士
+- [anilist-2167] CLANNAD
+- [anilist-2246] 物怪
+- [anilist-1827] 精靈守護者
+- [anilist-1698] 交響情人夢
+- [anilist-1482] 驅魔少年
+- [anilist-1195] 零之使魔
+- [anilist-853] 櫻蘭高校男公關部
+- [anilist-457] 蟲師
+- [anilist-237] 交響詩篇艾蕾卡7
+- [anilist-269] BLEACH 死神
+- [anilist-6922] Fate/stay night - 無限劍製
+- [anilist-6324] 守護貓娘緋鞠
+- [anilist-5690] 交響情人夢Finale
+- [anilist-6645] 青春CUP
+- [anilist-9213] 快要壞掉的八音盒
+- [anilist-9608] 百合星人奈緒子 OAD
+- [anilist-6988] 電影 哆啦A夢 大雄的人魚大海戰
+- [anilist-7561] 怪盜麗奈
+- [anilist-5678] 奇蹟少女 KOBATO.
+- [anilist-5081] 化物語
+- [anilist-5300] 續 夏目友人帳
+- [anilist-3927] 機動戰士高達00 第二季
+- [anilist-4081] 夏目友人帳
+- [anilist-3572] 超時空要塞F
+- [anilist-2581] 機動戰士鋼彈00
+- [anilist-2251] BACCANO！大騷動！
+- [anilist-1818] 獵魔戰記
+- [anilist-1575] Code Geass 反叛的魯路修
+- [anilist-1519] 黑礁 The Second Barrage
+- [anilist-1210] 歡迎加入NHK！
+- [anilist-918] 銀魂
+- [anilist-355] 灼眼的夏娜
+- [anilist-16] 蜂蜜與幸運草
+- [anilist-431] 霍爾的移動城堡
+- [anilist-64] 薔薇少女
+- [anilist-121] 鋼之鍊金術師 2003
+- [anilist-196] 拜託了雙子星
+- [anilist-387] 灰羽連盟
+- [anilist-53] 青出於藍
+- [anilist-195] 拜託了老師
+- [anilist-154] 通靈王
+- [anilist-249] 犬夜叉
+- [anilist-1313] 數碼寶貝大冒險02
+- [anilist-245] 麻辣教師 GTO
+- [anilist-145] 男女蹺蹺板
+- [anilist-185] 頭文字D
+- [anilist-527] 寶可夢-無印篇
+- [anilist-1183] 格鬥女神
+- [anilist-235] 名偵探柯南
+- [anilist-43] 攻殼機動隊 1995劇場版
+- [anilist-435] 魔法騎士雷阿斯
+- [anilist-49] 我的女神 OVA
+- [anilist-1391] 閃電霹靂車
+- [anilist-82] 機動戰士鋼彈0080 口袋裡的戰爭
+- [anilist-820] 銀河英雄傳說
+- [anilist-967] 北斗神拳
+- [anilist-184034] 殺手旅店 第一季
+- [anilist-5028] 棒球大聯盟 第五季
+- [anilist-558] 棒球大聯盟 第二季
+- [anilist-205] 混沌武士
+- [anilist-329] 星空清理者
+- [anilist-202] 狼雨
+- [anilist-1033] 千年女優
+- [anilist-122] 尋找滿月
+- [anilist-22] 網球王子
+- [anilist-874] 數碼寶貝03馴獸師之王
+- [anilist-1281] 學校怪談
+- [anilist-136] HUNTER×HUNTER 獵人
+- [anilist-552] 數碼寶貝大冒險
+- [anilist-1] 星際牛仔
+- [anilist-437] 藍色恐懼
+- [anilist-2076] 金田一少年事件簿
+- [anilist-1394] 閃電霹靂車SAGA
+- [anilist-45] 神劍闖江湖
+- [anilist-536] 秀逗魔導士 完全無欠版
+- [anilist-1393] 閃電霹靂車ZERO
+- [anilist-392] 幽遊白書
+- [anilist-207] 羅德斯島戰記
+- [anilist-949] 勇往直前 GunBuster
+- [anilist-513] 天空之城
+- [anilist-1089] 超時空要塞 可曾記得愛
+- [anilist-100306] 棒球大聯盟 2nd 第一季
+- [anilist-3226] 棒球大聯盟 第四季
+- [anilist-19] 怪物 MONSTER
+- [anilist-801] 攻殼機動隊 S.A.C. 2nd GIG
+- [anilist-60] 聖槍修女
+- [anilist-467] 攻殼機動隊 STAND ALONE COMPLEX
+- [anilist-529] 最終兵器彼女
+- [anilist-1132] 數碼寶貝04無限地帶
+- [anilist-135] 棋靈王
+- [anilist-522] 大都会
+- [anilist-481] 遊戲王 怪獸之決鬥
+- [anilist-186] 頭文字D Second Stage
+- [anilist-1395] 閃電霹靂車SIN
+- [anilist-6] 槍神 Trigun
+- [anilist-33] 烙印勇士
+- [anilist-890] 勇者王
+- [anilist-535] 秀逗魔導士NEXT
+- [anilist-81] 機動戰士鋼彈 第08MS小隊
+- [anilist-534] 秀逗魔導士
+- [anilist-532] 美少女戰士S
+- [anilist-1392] 閃電霹靂車11
+- [anilist-1352] 機動刑事808
+- [anilist-523] 龍貓
+- [anilist-1441] 銀河鐵道之夜
+- [anilist-1088] 超時空要塞
+- [anilist-21473] 闇芝居 第三季
+- [anilist-5029] 棒球大聯盟 劇場版 友情的一球
+- [anilist-226] 妖精的旋律
+- [anilist-759] 東京教父
+- [anilist-72] 全金屬狂潮 校園篇
+- [anilist-93] 機動戰士鋼彈 Seed
+- [anilist-153] 十二國記
+- [anilist-71] 全金屬狂潮
+- [anilist-199] 神隱少女
+- [anilist-187] 頭文字D Third Stage
+- [anilist-189] 純情房東俏房客
+- [anilist-21] 航海王 埃鲁巴夫篇
+- [anilist-350] 小魔女DoReMi
+- [anilist-232] 庫洛魔法使
+- [anilist-164] 魔法公主
+- [anilist-218] 機動戰艦撫子號
+- [anilist-92] 機動新世紀鋼彈X
+- [anilist-30] 新世紀福音戰士
+- [anilist-90] 新機動戰記鋼彈W
+- [anilist-170] 灌籃高手
+- [anilist-530] 美少女戰士
+- [anilist-512] 魔女宅急便
+- [anilist-87] 機動戰士鋼彈：逆襲的夏亞
+- [anilist-85] 機動戰士Z鋼彈
+- [anilist-80] 機動戰士高達
+- [anilist-6045] 只想告訴你 第一季
+- [anilist-1842] 棒球大聯盟 第三季
+- [anilist-627] 棒球大聯盟 第一季
+- [anilist-120046] 沒有給我哥吃的藥！4
+- [anilist-109492] 我們真的學不來 OVA
+- [anilist-110088] 沒有給我哥吃的藥！3
+- [anilist-100878] 幼女戰記 劇場版
+- [anilist-101343] 來自深淵 劇場版總集篇 前編：啟程的黎明
+- [anilist-99470] 灰色：幻影扳機 01/02
+- [anilist-101844] 沒有給我哥吃的藥！2
+- [anilist-100791] 結城友奈是勇者 鷲尾須美之章&勇者之章
+- [anilist-98425] 沒有給我哥吃的藥！
+- [anilist-21585] 悠哉日常大王 Repeat OAD
+- [anilist-21586] 終結的熾天使 OVA
+- [anilist-21691] 食戟之靈 OAD
+- [anilist-20741] 約會大作戰 DATE A LIVE 劇場版 萬由裡審判
+- [anilist-20900] 青春之旅 OAD
+- [anilist-20497] 悠哉日常大王 OAD
+- [anilist-20659] 在盛夏等待 特別篇
+- [anilist-19951] 獵人劇場版 - 最終任務
+- [anilist-16866] 鄰座的怪同學 OAD
+- [anilist-19123] 海賊王 梅利號篇章 ～另一個夥伴的故事～
+- [anilist-18121] 網球少女 2期
+- [anilist-13271] 獵人劇場版 - 緋色幻影
+- [anilist-15925] 電影 哆啦A夢 大雄的秘密道具博物館
+- [anilist-10196] 寶貝公主
+- [anilist-8063] 世界第一初戀 OAD
+- [anilist-8481] 文學少女 熱戀少女們的狂想曲
+- [anilist-8532] 家庭教師 HITMAN REBORN！彭格列式戶外教學，來了！
+- [anilist-531] 美少女戰士R 電影版
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-7-20.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-7-25.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-✨ 所有每日任務執行完畢！完整日誌已儲存至 C:\Users\aaron\Documents\WorkSpace\Animation\scraper\daily_run.log
+▶ [下午1:48:50] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+-------------------------------------
+Successfully generated sitemap.xml with 3590 URLs.
+
+✅ 步驟 [6. 自動更新網站地圖 (sitemap)] 執行成功完成。
+
+✨ 所有每日任務執行完畢！完整日誌已儲存至 /home/runner/work/AniSpace/AniSpace/scraper/daily_run.log

@@ -295,7 +295,7 @@
   },
   {
     "id": "anilist-202250",
-    "titleZh": "借出的魔力以【循環付款】強制徵收",
+    "titleZh": "借出的魔力以【循環分期】強制徵收",
     "titleJa": "貸した魔力は【リボ払い】で強制徴収",
     "yearSeason": "2026 秋"
   },
@@ -444,12 +444,6 @@
     "yearSeason": "2023 春"
   },
   {
-    "id": "anilist-138056",
-    "titleZh": "終末的女武神Ⅱ",
-    "titleJa": "終末のワルキューレⅡ",
-    "yearSeason": "2023 冬"
-  },
-  {
     "id": "anilist-154982",
     "titleZh": "極道主夫 第二季",
     "titleJa": "極主夫道 シーズン2",
@@ -466,12 +460,6 @@
     "titleZh": "C団地",
     "titleJa": "C団地",
     "yearSeason": "2022 秋"
-  },
-  {
-    "id": "anilist-146921",
-    "titleZh": "平凡職業造就世界最強 虛幻的冒險與奇蹟的邂逅",
-    "titleJa": "ありふれた職業で世界最強 幻の冒険と奇跡の邂逅",
-    "yearSeason": "2022 夏"
   },
   {
     "id": "anilist-151126",
@@ -498,12 +486,6 @@
     "yearSeason": "2022 冬"
   },
   {
-    "id": "anilist-101705",
-    "titleZh": "地球外少年少女",
-    "titleJa": "地球外少年少女",
-    "yearSeason": "2022 冬"
-  },
-  {
     "id": "anilist-142411",
     "titleZh": "我的英雄學院 THE MOVIE 世界英雄任務 ≪啟程≫",
     "titleJa": "僕のヒーローアカデミア THE MOVIE ワールド ヒーローズ ミッション ≪旅立ち≫",
@@ -525,12 +507,6 @@
     "id": "anilist-146503",
     "titleZh": "關於我轉生變成史萊姆這檔事 拯救拉米莉絲",
     "titleJa": "転生したらスライムだった件 救われるラミリス",
-    "yearSeason": "2022 冬"
-  },
-  {
-    "id": "anilist-113345",
-    "titleZh": "DEEMO 櫻花音色 -你彈奏的琴音，至今仍迴響-",
-    "titleJa": "DEEMO サクラノオト -あなたの奏でた音が、今も響く-",
     "yearSeason": "2022 冬"
   },
   {
@@ -621,12 +597,6 @@
     "id": "anilist-120700",
     "titleZh": "Re:從零開始的休息時間 第二季",
     "titleJa": "Re:ゼロから始める休憩時間(ブレイクタイム) 2nd Season",
-    "yearSeason": "2020 夏"
-  },
-  {
-    "id": "anilist-120046",
-    "titleZh": "快把我哥帶走4",
-    "titleJa": "兄に付ける薬はない！4",
     "yearSeason": "2020 夏"
   },
   {
@@ -732,12 +702,6 @@
     "yearSeason": "2019 秋"
   },
   {
-    "id": "anilist-109492",
-    "titleZh": "我們真的學不來！OVA",
-    "titleJa": "ぼくたちは勉強ができない OVAs",
-    "yearSeason": "2019 秋"
-  },
-  {
     "id": "anilist-110851",
     "titleZh": "Fate/Grand Order -絕對魔獸戰線巴比倫尼亞- Initium Iter",
     "titleJa": "Fate/Grand Order -絶対魔獣戦線バビロニア- Initium Iter",
@@ -753,12 +717,6 @@
     "id": "anilist-110738",
     "titleZh": "褲襪視界 Cosplay攝影褲襪",
     "titleJa": "みるタイツ コスプレ撮影タイツ",
-    "yearSeason": "2019 夏"
-  },
-  {
-    "id": "anilist-110088",
-    "titleZh": "快把我哥帶走！3",
-    "titleJa": "兄に付ける薬はない！3",
     "yearSeason": "2019 夏"
   },
   {
@@ -786,12 +744,6 @@
     "yearSeason": "2019 春"
   },
   {
-    "id": "anilist-100878",
-    "titleZh": "劇場版 幼女戦記",
-    "titleJa": "劇場版 幼女戦記",
-    "yearSeason": "2019 冬"
-  },
-  {
     "id": "anilist-101344",
     "titleZh": "來自深淵 流浪的黃昏",
     "titleJa": "メイドインアビス 放浪する黄昏",
@@ -804,21 +756,9 @@
     "yearSeason": "2019 冬"
   },
   {
-    "id": "anilist-101343",
-    "titleZh": "來自深淵 啟程的黎明",
-    "titleJa": "メイドインアビス 旅立ちの夜明け",
-    "yearSeason": "2019 冬"
-  },
-  {
     "id": "anilist-104174",
     "titleZh": "命運石之門 0 結晶多形的情人節",
     "titleJa": "シュタインズ・ゲート ゼロ 結晶多形のバレンタイン",
-    "yearSeason": "2019 冬"
-  },
-  {
-    "id": "anilist-99470",
-    "titleZh": "灰色的幻影扳機 THE ANIMATION",
-    "titleJa": "グリザイア：ファントムトリガー THE ANIMATION",
     "yearSeason": "2019 冬"
   },
   {
@@ -888,12 +828,6 @@
     "yearSeason": "2018 夏"
   },
   {
-    "id": "anilist-101844",
-    "titleZh": "快把我哥帶走！2",
-    "titleJa": "兄に付ける薬はない！2",
-    "yearSeason": "2018 夏"
-  },
-  {
     "id": "anilist-101924",
     "titleZh": "食戟之靈 餐之皿 極星寮的繪裡奈",
     "titleJa": "食戟のソーマ 餐ノ皿 極星寮のえりな",
@@ -933,12 +867,6 @@
     "id": "anilist-98856",
     "titleZh": "武裝少女Machiavellianism OVA",
     "titleJa": "武装少女マキャヴェリズム OVA",
-    "yearSeason": "2017 秋"
-  },
-  {
-    "id": "anilist-100791",
-    "titleZh": "結城友奈是勇者 -鷲尾須美之章-",
-    "titleJa": "結城友奈は勇者である -鷲尾須美の章-",
     "yearSeason": "2017 秋"
   },
   {
@@ -993,12 +921,6 @@
     "id": "anilist-98502",
     "titleZh": "小林家的○○龍",
     "titleJa": "小林さんちの○○ドラゴン",
-    "yearSeason": "2017 春"
-  },
-  {
-    "id": "anilist-98425",
-    "titleZh": "快把我哥帶走！",
-    "titleJa": "兄に付ける薬はない！",
     "yearSeason": "2017 春"
   },
   {
@@ -1068,27 +990,9 @@
     "yearSeason": "2016 夏"
   },
   {
-    "id": "anilist-21585",
-    "titleZh": "悠哉日常大王 Repeat：小螢所享受的",
-    "titleJa": "のんのんびより りぴーと 蛍が楽しんだ",
-    "yearSeason": "2016 夏"
-  },
-  {
     "id": "anilist-21574",
     "titleZh": "為美好的世界獻上祝福！ 為美好的項圈獻上祝福！",
     "titleJa": "この素晴らしい世界に祝福を！ この素晴らしいチョーカーに祝福を!",
-    "yearSeason": "2016 春"
-  },
-  {
-    "id": "anilist-21586",
-    "titleZh": "終結的熾天使：吸血鬼沙哈爾",
-    "titleJa": "終わりのセラフ 吸血鬼シャハル",
-    "yearSeason": "2016 春"
-  },
-  {
-    "id": "anilist-21691",
-    "titleZh": "食戟之靈 OVA",
-    "titleJa": "食戟のソーマ OVA",
     "yearSeason": "2016 春"
   },
   {
@@ -1186,12 +1090,6 @@
     "titleZh": "黑子的籃球 ~最棒的禮物~",
     "titleJa": "黒子のバスケ ~最高のプレゼントです~",
     "yearSeason": "2015 秋"
-  },
-  {
-    "id": "anilist-20741",
-    "titleZh": "約會大作戰 DATE A LIVE 劇場版 萬由裡審判",
-    "titleJa": "劇場版デート・ア・ライブ 万由里ジャッジメント",
-    "yearSeason": "2015 夏"
   },
   {
     "id": "anilist-21104",
@@ -1356,12 +1254,6 @@
     "yearSeason": "2014 秋"
   },
   {
-    "id": "anilist-20900",
-    "titleZh": "青春之旅 第13頁",
-    "titleJa": "アオハライド PAGE.13",
-    "yearSeason": "2014 秋"
-  },
-  {
     "id": "anilist-21155",
     "titleZh": "刀劍神域・離線版 2",
     "titleJa": "そーどあーと・おふらいん つー",
@@ -1401,18 +1293,6 @@
     "id": "anilist-20752",
     "titleZh": "蟲師 續章 棘途",
     "titleJa": "蟲師 続章「棘のみち」",
-    "yearSeason": "2014 夏"
-  },
-  {
-    "id": "anilist-20497",
-    "titleZh": "悠哉日常大王 要去沖繩了",
-    "titleJa": "のんのんびより 沖縄へ行くことになった",
-    "yearSeason": "2014 夏"
-  },
-  {
-    "id": "anilist-20659",
-    "titleZh": "在那個夏天等待 我們在度過高中最後一個夏天的同時，等待著那個夏天。",
-    "titleJa": "あの夏を待っている 僕達は高校最後の夏を過ごしながら、あの夏を待っている。",
     "yearSeason": "2014 夏"
   },
   {
@@ -1500,12 +1380,6 @@
     "yearSeason": "2013 秋"
   },
   {
-    "id": "anilist-19951",
-    "titleZh": "劇場版 HUNTER×HUNTER THE LAST MISSION",
-    "titleJa": "劇場版 HUNTER×HUNTER THE LAST MISSION",
-    "yearSeason": "2013 秋"
-  },
-  {
     "id": "anilist-19511",
     "titleZh": "火影忍者疾風傳 Sunny Side Battle!!!",
     "titleJa": "NARUTO -ナルト- 疾風伝 サニー・サイド・バトル!!!",
@@ -1560,12 +1434,6 @@
     "yearSeason": "2013 夏"
   },
   {
-    "id": "anilist-16866",
-    "titleZh": "隔壁的極道同學",
-    "titleJa": "となりの極道くん",
-    "yearSeason": "2013 夏"
-  },
-  {
     "id": "anilist-16700",
     "titleZh": "暮蟬悲鳴時 擴～爆發～",
     "titleJa": "ひぐらしのなく頃に拡〜アウトブレイク〜",
@@ -1578,21 +1446,9 @@
     "yearSeason": "2013 夏"
   },
   {
-    "id": "anilist-19123",
-    "titleZh": "海賊王 梅利號篇章 ～另一個夥伴的故事～",
-    "titleJa": "ONE PIECE エピソードオブメリー 〜もうひとりの仲間の物語〜",
-    "yearSeason": "2013 夏"
-  },
-  {
     "id": "anilist-16868",
     "titleZh": "只要妳說妳喜歡我。某個人",
     "titleJa": "好きっていいなよ。誰かが",
-    "yearSeason": "2013 夏"
-  },
-  {
-    "id": "anilist-18121",
-    "titleZh": "網球並不可笑 第二季",
-    "titleJa": "てーきゅう2",
     "yearSeason": "2013 夏"
   },
   {
@@ -1642,12 +1498,6 @@
     "titleZh": "戦勇. OVAs",
     "titleJa": "戦勇. OVAs",
     "yearSeason": "2013 春"
-  },
-  {
-    "id": "anilist-13271",
-    "titleZh": "劇場版 獵人 緋色的幻影 (幻影紅)",
-    "titleJa": "劇場版 HUNTER×HUNTER 緋色の幻影（ファントム・ルージュ）",
-    "yearSeason": "2013 冬"
   },
   {
     "id": "anilist-11743",
@@ -1713,12 +1563,6 @@
     "id": "anilist-17717",
     "titleZh": "機動戰士鋼彈 第08MS小隊 與三次元的戰鬥",
     "titleJa": "機動戦士ガンダム 第08MS小隊 三次元との戦い",
-    "yearSeason": "2013 冬"
-  },
-  {
-    "id": "anilist-15925",
-    "titleZh": "電影哆啦A夢 大雄的秘密道具博物館",
-    "titleJa": "映画ドラえもん のび太のひみつ道具博物館[ミュージアム]",
     "yearSeason": "2013 冬"
   },
   {
@@ -2076,12 +1920,6 @@
     "yearSeason": "2011 夏"
   },
   {
-    "id": "anilist-10196",
-    "titleZh": "寶貝公主 3D天堂0[愛]",
-    "titleJa": "ベイビー・プリンセス 3Dぱらだいす0[ラブ]",
-    "yearSeason": "2011 夏"
-  },
-  {
     "id": "anilist-10479",
     "titleZh": "惡魔奶爸：奔跑吧！小貝魯刑警！！",
     "titleJa": "べるぜバブ 走れ！ベル坊刑事！！",
@@ -2145,12 +1983,6 @@
     "id": "anilist-10739",
     "titleZh": "Panty & Stocking in Sanitarybox",
     "titleJa": "Panty & Stocking in Sanitarybox",
-    "yearSeason": "2011 春"
-  },
-  {
-    "id": "anilist-8063",
-    "titleZh": "世界一初戀 OVA",
-    "titleJa": "世界一初恋 OVA",
     "yearSeason": "2011 春"
   },
   {
@@ -2358,12 +2190,6 @@
     "yearSeason": "2010 夏"
   },
   {
-    "id": "anilist-8481",
-    "titleZh": "文學少女 回憶錄",
-    "titleJa": "文学少女 メモワール",
-    "yearSeason": "2010 夏"
-  },
-  {
     "id": "anilist-8456",
     "titleZh": "女王之刃 美麗的鬥士們",
     "titleJa": "クイーンズブレイド 美しき闘士たち",
@@ -2469,12 +2295,6 @@
     "id": "anilist-5719",
     "titleZh": "SEX PISTOLS",
     "titleJa": "SEX PISTOLS",
-    "yearSeason": "2010 春"
-  },
-  {
-    "id": "anilist-8532",
-    "titleZh": "家庭教師HITMAN REBORN! 彭哥列家族總登場！彭哥列式修學旅行，來了！！",
-    "titleJa": "家庭教師ヒットマンREBORN! ボンゴレファミリー総登場! ボンゴレ式修学旅行、来る!!",
     "yearSeason": "2010 春"
   },
   {
@@ -2590,11 +2410,5 @@
     "titleZh": "御先祖賛江",
     "titleJa": "御先祖賛江",
     "yearSeason": "1998 秋"
-  },
-  {
-    "id": "anilist-531",
-    "titleZh": "美少女戰士R 電影版",
-    "titleJa": "美少女戦士セーラームーンＲ THE MOVIE",
-    "yearSeason": "1993 秋"
   }
 ]

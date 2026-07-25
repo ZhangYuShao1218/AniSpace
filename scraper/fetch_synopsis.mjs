@@ -81,12 +81,8 @@ async function main() {
   }
 
   // Load Newly Fetched list
+  // 每日任務只紀錄當下新增的清單，不讀取遺留的舊暫存檔
   let newlyFetched = [];
-  if (fs.existsSync(NEWLY_FETCHED_FILE)) {
-    try {
-      newlyFetched = JSON.parse(fs.readFileSync(NEWLY_FETCHED_FILE, 'utf-8'));
-    } catch(e) {}
-  }
 
   // Load Raw BGM Summary
   let rawBgmSummaries = {};

@@ -810,7 +810,7 @@ async function main() {
     });
   }
   if (newlyMatchedBangumiList.length > 0) {
-    summaryContent += `🎉 本來未對應到 bangumi_data 但新對應到的動畫 (共 ${newlyMatchedBangumiList.length} 部)：\n`;
+    summaryContent += `🎉 新增對應 bangumi_data 的動畫清單 (共 ${newlyMatchedBangumiList.length} 部)：\n`;
     newlyMatchedBangumiList.forEach(nr => {
       summaryContent += `- 《${nr.titleZh || nr.titleJa || nr.id}》 ➜ 成功對應至字典：${nr.matchedBgmTitle || 'N/A'} (BGM ID: ${nr.bgmId || 'N/A'})\n`;
     });

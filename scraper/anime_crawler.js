@@ -128,10 +128,10 @@ async function getBilibiliCover(bilibiliId) {
   return null;
 }
 
-async function fetchAniListBySeason(year, season) {
+async function fetchAniListBySeason(year, season, limit = 50) {
   const query = `
-    query ($season: MediaSeason, $seasonYear: Int) {
-      Page(page: 1, perPage: 100) {
+    query ($season: MediaSeason, $seasonYear: Int, $page: Int, $perPage: Int) {
+      Page(page: $page, perPage: $perPage) {
         media(season: $season, seasonYear: $seasonYear, type: ANIME, sort: POPULARITY_DESC, isAdult: false) {
           id
           title { romaji english native }
@@ -152,13 +152,27 @@ async function fetchAniListBySeason(year, season) {
     }
   `;
   try {
-    const res = await fetch('https://graphql.anilist.co', {
+    let allMedia = [];
+    const res1 = await fetch('https://graphql.anilist.co', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ query, variables: { season, seasonYear: year } })
+      body: JSON.stringify({ query, variables: { season, seasonYear: year, page: 1, perPage: 50 } })
     });
-    const json = await res.json();
-    return json.data.Page.media || [];
+    const json1 = await res1.json();
+    allMedia.push(...(json1.data?.Page?.media || []));
+
+    if (limit > 50) {
+      await new Promise(r => setTimeout(r, 1000));
+      const res2 = await fetch('https://graphql.anilist.co', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ query, variables: { season, seasonYear: year, page: 2, perPage: 50 } })
+      });
+      const json2 = await res2.json();
+      const page2Media = json2.data?.Page?.media || [];
+      allMedia.push(...page2Media.slice(0, limit - 50));
+    }
+    return allMedia;
   } catch (e) {
     console.error(`AniList API error for ${year} ${season}:`, e.message);
     return [];
@@ -264,9 +278,14 @@ async function main() {
         continue;
       }
 
-      console.log(`\n🔍 正在爬取: ${year} 年 ${currentSeason} 季...`);
+      const seasonScore = getSeasonScore(year, seasonIdx);
+      // Is this season within the last 8 seasons + next 1 season (total 9)?
+      const isRecent = seasonScore >= currentScore - 7 && seasonScore <= currentScore + 1;
+      const limit = isRecent ? 60 : 50;
+
+      console.log(`\n🔍 正在爬取: ${year} 年 ${currentSeason} 季 (Limit: ${limit})...`);
       const acgTitlesMap = await fetchACGSecretsTitles(year, currentSeason);
-      const seasonData = await fetchAniListBySeason(year, currentSeason);
+      const seasonData = await fetchAniListBySeason(year, currentSeason, limit);
       console.log(`🚀 取得 ${seasonData.length} 部動畫資料，進行本地超高速清洗...`);
       
       for (const item of seasonData) {

@@ -2,5 +2,7 @@
   "studio": "Studio Comet",
   "source": "Manga",
   "trailerYoutubeId": "KbXVkk7UH9Q",
-  "relatedAnimeIds": []
+  "relatedAnimeIds": [
+    "anilist-150463"
+  ]
 }

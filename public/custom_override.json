@@ -4903,7 +4903,75 @@
   },
   "anilist-184356": {
     "titleZh": "盜墓王",
-    "source": "manual"
+    "source": "manual",
+    "extraStreamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台灣",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=49945"
+      },
+      {
+        "site": "gamer_hk",
+        "name": "動畫瘋 HK",
+        "region: ": "全球/日本",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149339"
+      },
+      {
+        "site": "nicovideo",
+        "name": "Niconico",
+        "region": "全球/日本",
+        "url": "https://ch.nicovideo.jp/tombraiderking"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球/日本",
+        "url": "https://www.crunchyroll.com/series/GT00378123/"
+      },
+      {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLUJFQAoO5V4k"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLRwxYv2koIzY"
+      },
+      {
+        "site": "mytv",
+        "name": "myTV SUPER",
+        "region": "全球/日本",
+        "url": "https://www.mytvsuper.com/tc/programme/tombraiderkin_146761/"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "全球/日本",
+        "url": "https://abema.tv/video/title/25-330"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0305803"
+      },
+      {
+        "site": "danime",
+        "name": "dアニメストア",
+        "region": "全球/日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29139"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球/日本",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FWK4FHRT"
+      }
+    ]
   },
   "anilist-198727": {
     "titleZh": "千歲同學在彈珠汽水瓶中 第2季度",
@@ -5557,5 +5625,65 @@
   "anilist-202250": {
     "titleZh": "借出的魔力以【循環分期】強制徵收",
     "source": "ai"
+  },
+  "anilist-198373": {
+    "titleZh": "劇場版 暗殺教室 我們的時間",
+    "source": "ai"
+  },
+  "anilist-113971": {
+    "titleZh": "機動戰士鋼彈 閃光的哈薩威 喀耳刻的魔女",
+    "source": "ai"
+  },
+  "anilist-177132": {
+    "titleZh": "花綠青破曉之時",
+    "source": "ai"
+  },
+  "anilist-177501": {
+    "titleZh": "淡島百景",
+    "source": "ai"
+  },
+  "anilist-208754": {
+    "titleZh": "Unanswered//butterfly: 刀劍神域",
+    "source": "ai"
+  },
+  "anilist-203275": {
+    "titleZh": "惡魔紋章",
+    "source": "ai"
+  },
+  "anilist-213658": {
+    "titleZh": "鑽石王牌 act2 第二季 後篇",
+    "source": "manual"
+  },
+  "anilist-187316": {
+    "titleZh": "幻想水滸傳",
+    "source": "ai"
+  },
+  "anilist-209219": {
+    "titleZh": "轉生哥布林，有問題想問嗎？",
+    "source": "ai"
+  },
+  "anilist-209463": {
+    "titleZh": "來自遠方",
+    "source": "ai"
+  },
+  "anilist-205896": {
+    "titleZh": "與信徒為零的女神展開異世界攻略",
+    "source": "ai"
+  },
+  "anilist-196356": {
+    "titleZh": "不虐待我的繼母與繼姐",
+    "source": "gamer"
+  },
+  "anilist-178312": {
+    "titleZh": "FARMAGIA 魔農傳記",
+    "source": "gamer"
+  },
+  "anilist-170018": {
+    "titleZh": "藍色管弦樂 第二季",
+    "source": "gamer"
+  },
+  "anilist-214031": {
+    "titleZh": "路人超能100 10週年記念特別映像",
+    "source": "manual"
   }
 }

@@ -1,7 +1,7 @@
 {
   "source": "Manga",
   "episodes": 32,
-  "averageScore": 53,
+  "averageScore": 54,
   "relatedAnimeIds": [
     "anilist-43",
     "anilist-467",
@@ -226,6 +226,8 @@
     "anilist-152633",
     "anilist-162400",
     "anilist-155502",
-    "anilist-168501"
+    "anilist-168501",
+    "anilist-183383",
+    "anilist-204496"
   ]
 }

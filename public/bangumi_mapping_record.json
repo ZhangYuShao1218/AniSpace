@@ -1273,7 +1273,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "盗掘王",
     "bgmId": "621835",
-    "streamingsCount": 11
+    "streamingsCount": 10
   },
   "anilist-196356": {
     "id": "anilist-196356",
@@ -2367,7 +2367,7 @@
   "anilist-187941": {
     "id": "anilist-187941",
     "titleZh": "轉生之後的我變成了龍蛋～目標是世界最強～",
-    "titleJa": "転生したらドラゴンの卵だった",
+    "titleJa": "転生したらドラゴンの卵だった～最強以外目指さねぇ～",
     "yearSeason": "2026 冬",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
@@ -2586,13 +2586,13 @@
   },
   "anilist-198373": {
     "id": "anilist-198373",
-    "titleZh": "劇場版 暗殺教室 我們的時間",
+    "titleZh": "劇場版 暗殺教室 大家的時間",
     "titleJa": "暗殺教室 みんなの時間",
     "yearSeason": "2026 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "劇場版 暗殺教室 みんなの時間",
+    "bgmId": "583746",
     "streamingsCount": 0
   },
   "anilist-185753": {

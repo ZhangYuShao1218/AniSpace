@@ -36,3 +36,9 @@ keystore.properties
 
 # Scratch directory
 scratch/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example

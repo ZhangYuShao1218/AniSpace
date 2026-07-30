@@ -926,7 +926,7 @@
   "anilist-177637": {
     "id": "anilist-177637",
     "titleZh": "再見菈菈",
-    "titleJa": "さよなら ララ",
+    "titleJa": "さよならララ",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
@@ -3367,13 +3367,13 @@
   },
   "anilist-178788": {
     "id": "anilist-178788",
-    "titleZh": "劇場版「鬼滅之刃」無限城篇 第一章 猗窩座再來",
+    "titleZh": "劇場版 鬼滅之刃 無限城篇 第一章 猗窩座再來",
     "titleJa": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
     "yearSeason": "2025 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "劇場版 鬼滅の刃 無限城編 第一章 猗窩座再来",
+    "bgmId": "501958",
     "streamingsCount": 0
   },
   "anilist-154768": {

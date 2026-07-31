@@ -1,6 +1,6 @@
 # AniList 與 bangumi-data 尚未連結之動畫清單
 
-本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3666 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **419 部**動畫條目。
+本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3667 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **420 部**動畫條目。
 
 > [!NOTE]
 > 這些未連結的條目絕大多數為 **2025/2026 年之後播映的未來新番、續作企劃、OVA、特輯或短期宣傳片**。由於 `bangumi-data` 開源社區主要收錄已開播或當季之正片，對於尚未放送的企劃尚未建檔或標註 AniList ID，因此屬於正常現象。
@@ -426,3 +426,4 @@
 | 417 | `anilist-3674` | 再見了，絕望先生 序～絕望少女撰集～ | さよなら絶望先生 序〜絶望少女撰集〜 | 2008 冬 |
 | 418 | `anilist-2652` | 哆啦A夢 我出生的日子 | ドラえもん ぼくの生まれた日 | 2002 冬 |
 | 419 | `anilist-188` | 御先祖賛江 | 御先祖賛江 | 1998 秋 |
+| 420 | `anilist-212667` | 不擅長與人相處的未亡人雪女小姐與詛咒戒指 | 人付き合いが苦手な未亡人の雪女さんと呪いの指輪 | 2026 秋 |

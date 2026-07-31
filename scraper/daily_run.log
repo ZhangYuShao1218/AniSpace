@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/7/30 下午1:28:16
+執行時間: 2026/7/31 下午1:52:49
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午1:28:16] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午1:52:49] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -215,10 +215,11 @@ AniSpace 每日任務完整執行 Log
 🔍 正在爬取: 2026 年 FALL 季 (Limit: 60)...
 🚀 取得 60 部動畫資料，進行本地超高速清洗...
 
-🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
-✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3666 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
+🤖 發現 4 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
+✅ AI 翻譯完成，更新了 1 筆資料至 custom_override.json
+✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3667 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 419 部無對應動畫，開始進行極速正規化比對...
+⚡ 啟動本地程式化標題正規化對照引擎：針對 420 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-171099] "孤獨搖滾！ Re:Re:" ➜ "劇場總集篇 孤獨搖滾！Re: Re:"
@@ -254,58 +255,61 @@ AniSpace 每日任務完整執行 Log
 📦【動畫瘋洗滌檢驗】偵測到 7 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
 ⏳ 洗滌進度: 7 / 7 (本次成功轉換: 0)
 ✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
-✅ 已將 3666 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
+✅ 已將 3667 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3666 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3667 筆，新增資料 1 筆，AI 翻譯 1 筆。
 📈 Bangumi 字典對應與授權回填：共 3247 部動畫成功對照字典並無條件整合去重播放授權！
-🎉 新增對應 bangumi_data 的動畫清單 (共 1 部)：
-- 《劇場版 鬼滅之刃 無限城篇 第一章 猗窩座再來》 ➜ 成功對應至字典：劇場版 鬼滅の刃 無限城編 第一章 猗窩座再来 (BGM ID: 501958)
-🔗 未對應 bangumi_data 動畫數量：419 部 (完整清單已隨信附帶)
+🌟 新增動畫：
+- 不擅長與人相處的未亡人雪女小姐與詛咒戒指
+🤖 AI 翻譯動畫：
+- 不擅長與人相處的未亡人雪女小姐與詛咒戒指
+🔗 未對應 bangumi_data 動畫數量：420 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1787 個系列，更新了 2167 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1788 個系列，更新了 2166 筆 Metadata 關聯檔案。
 
-✨ 抓取與清洗完成！極速處理完畢。共 3666 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
+✨ 抓取與清洗完成！極速處理完畢。共 3667 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午1:39:54] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午2:03:43] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-[Diff] 發現更官方譯名 anilist-178788: 舊譯名 "劇場版「鬼滅之刃」無限城篇 第一章 猗窩座再來" ➜ 新譯名 "劇場版 鬼滅之刃 無限城篇 第一章 猗窩座再來"，清除過時的 Override: "劇場版「鬼滅之刃」無限城篇 第一章 猗窩座再來"
-Updated custom_override.json based on translation diffs.
+No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260730.json
+Created daily backup: anime_data_backup_20260731.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
 Deleted old backup: anime_data_backup_20260721.json
 Deleted old backup: anime_data_backup_20260722.json
-Updated dataVersion in package.json and public/data_version.json to: 00112 (112)
+Deleted old backup: anime_data_backup_20260724.json
+Updated dataVersion in package.json and public/data_version.json to: 00113 (113)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午1:39:54] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午2:03:43] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
 
 🎉 Synopsis fetching complete. Processed 0 animes.
 
 📊 每日任務劇情簡介統計回報:
-- 當前動畫總數: 3666
-- 沒找到對應 bangumi_data 的數量: 419
+- 當前動畫總數: 3667
+- 沒找到對應 bangumi_data 的數量: 420
 - 本次掃描發現對應資料為空的數量: 80
 - 有劇情簡介的動畫總數量: 3253
 - 本次新增 0 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午1:41:28] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午2:05:16] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 97 筆原始資料交由 Gemini AI 進行分析與篩選...
+準備將 100 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 93 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -313,44 +317,45 @@ Updated dataVersion in package.json and public/data_version.json to: 00112 (112)
 ✔️ 正常: TOYeGO 玩具e哥
 
 ✅ 檢查與更新完成！已寫入 /home/runner/work/AniSpace/AniSpace/public/affiliates.json 與 /home/runner/work/AniSpace/AniSpace/public/product_images.json
-Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午1:41:51] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午2:07:12] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.2 - (00112)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00113)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.2
-・動畫資料庫版號：(00112)
+・動畫資料庫版號：(00113)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3666 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3667 筆，新增資料 1 筆，AI 翻譯 1 筆。
 📈 Bangumi 字典對應與授權回填：共 3247 部動畫成功對照字典並無條件整合去重播放授權！
-🎉 新增對應 bangumi_data 的動畫清單 (共 1 部)：
-- 《劇場版 鬼滅之刃 無限城篇 第一章 猗窩座再來》 ➜ 成功對應至字典：劇場版 鬼滅の刃 無限城編 第一章 猗窩座再来 (BGM ID: 501958)
-🔗 未對應 bangumi_data 動畫數量：419 部 (完整清單已隨信附帶)
+🌟 新增動畫：
+- 不擅長與人相處的未亡人雪女小姐與詛咒戒指
+🤖 AI 翻譯動畫：
+- 不擅長與人相處的未亡人雪女小姐與詛咒戒指
+🔗 未對應 bangumi_data 動畫數量：420 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 97 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 93 項高價值商品。
 
 
 
 【劇情簡介狀態】
-總計收錄: 3666 部動畫
-缺乏簡介: 411 部
+總計收錄: 3667 部動畫
+缺乏簡介: 412 部
 本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-7-30.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-7-31.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午1:41:54] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午2:07:15] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
-Successfully generated sitemap.xml with 3670 URLs.
+Successfully generated sitemap.xml with 3671 URLs.
 
 ✅ 步驟 [6. 自動更新網站地圖 (sitemap)] 執行成功完成。
 

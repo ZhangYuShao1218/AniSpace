@@ -670,6 +670,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-206401": {
+    "id": "anilist-206401",
+    "titleZh": "FX戰士久留美",
+    "titleJa": "FX戦士くるみちゃん",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-178789": {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
@@ -701,7 +712,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "スーパーの裏でヤニ吸うふたり",
     "bgmId": "571784",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-185874": {
     "id": "anilist-185874",
@@ -712,7 +723,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BLEACH 千年血戦篇-禍進譚-",
     "bgmId": "530725",
-    "streamingsCount": 1
+    "streamingsCount": 3
   },
   "anilist-133007": {
     "id": "anilist-133007",
@@ -745,7 +756,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "乙女ゲー世界はモブに厳しい世界です2",
     "bgmId": "412144",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-103303": {
     "id": "anilist-103303",
@@ -853,9 +864,9 @@
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
-    "matchedBgmTitle": "逃げ上手の若君 第二期",
+    "matchedBgmTitle": "逃げ上手の若君(第二期)",
     "bgmId": "517106",
-    "streamingsCount": 2
+    "streamingsCount": 6
   },
   "anilist-180136": {
     "id": "anilist-180136",
@@ -910,7 +921,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～ 2nd Season",
     "bgmId": "638151",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-188139": {
     "id": "anilist-188139",
@@ -932,7 +943,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "才女のお世話 高嶺の花だらけな名門校で、学院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました",
     "bgmId": "602733",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-177637": {
     "id": "anilist-177637",
@@ -976,7 +987,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕のヒーローアカデミア I am a hero too",
     "bgmId": "646464",
-    "streamingsCount": 1
+    "streamingsCount": 3
   },
   "anilist-206521": {
     "id": "anilist-206521",
@@ -1097,7 +1108,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "領民0人スタートの辺境領主様",
     "bgmId": "571895",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-198409": {
     "id": "anilist-198409",
@@ -1119,7 +1130,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "花織さんは転生しても喧嘩がしたい",
     "bgmId": "587109",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-199408": {
     "id": "anilist-199408",
@@ -1196,7 +1207,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "手札が多めのビクトリア",
     "bgmId": "584641",
-    "streamingsCount": 9
+    "streamingsCount": 10
   },
   "anilist-194219": {
     "id": "anilist-194219",
@@ -3121,7 +3132,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ゾンビランドサガ ゆめぎんがパラダイス",
     "bgmId": "353181",
-    "streamingsCount": 0
+    "streamingsCount": 1
   },
   "anilist-194447": {
     "id": "anilist-194447",
@@ -3378,14 +3389,14 @@
   },
   "anilist-178788": {
     "id": "anilist-178788",
-    "titleZh": "劇場版 鬼滅之刃 無限城篇 第一章 猗窩座再來",
+    "titleZh": "劇場版「鬼滅之刃」無限城篇 第一章 猗窩座再襲",
     "titleJa": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
     "yearSeason": "2025 夏",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 鬼滅の刃 無限城編 第一章 猗窩座再来",
     "bgmId": "501958",
-    "streamingsCount": 0
+    "streamingsCount": 3
   },
   "anilist-154768": {
     "id": "anilist-154768",
@@ -4705,7 +4716,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "君のことが大大大大大好きな100人の彼女 第2期",
     "bgmId": "471793",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-178462": {
     "id": "anilist-178462",
@@ -5035,7 +5046,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版プロジェクトセカイ 壊れたセカイと歌えないミク",
     "bgmId": "505776",
-    "streamingsCount": 2
+    "streamingsCount": 5
   },
   "anilist-178022": {
     "id": "anilist-178022",
@@ -6091,7 +6102,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "逃げ上手の若君",
     "bgmId": "424573",
-    "streamingsCount": 9
+    "streamingsCount": 11
   },
   "anilist-152681": {
     "id": "anilist-152681",
@@ -7741,7 +7752,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "君のことが大大大大大好きな100人の彼女",
     "bgmId": "424379",
-    "streamingsCount": 9
+    "streamingsCount": 10
   },
   "anilist-129188": {
     "id": "anilist-129188",
@@ -8823,14 +8834,14 @@
   },
   "anilist-151384": {
     "id": "anilist-151384",
-    "titleZh": "輝夜姬想讓人告白－永不結束的初吻－",
+    "titleZh": "輝夜大小姐想讓我告白-初吻不會結束-",
     "titleJa": "かぐや様は告らせたい -ファーストキッスは終わらない-",
     "yearSeason": "2023 春",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "かぐや様は告らせたい-ファーストキッスは終わらない-",
-    "bgmId": "425211",
-    "streamingsCount": 7
+    "bgmId": "389474",
+    "streamingsCount": 1
   },
   "anilist-153845": {
     "id": "anilist-153845",
@@ -16783,7 +16794,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ポケットモンスター(2019)",
     "bgmId": "292522",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-111048": {
     "id": "anilist-111048",
@@ -30552,10 +30563,10 @@
     "titleJa": "神様はじめました",
     "yearSeason": "2013 夏",
     "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
-    "matchedBgmTitle": "神様はじめました",
-    "bgmId": "43525",
-    "streamingsCount": 4
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "神様はじめました OAD",
+    "bgmId": "80996",
+    "streamingsCount": 0
   },
   "anilist-15793": {
     "id": "anilist-15793",
@@ -30874,7 +30885,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "俺の妹がこんなに可愛いわけがない。(2期)",
     "bgmId": "37898",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-16524": {
     "id": "anilist-16524",
@@ -31978,14 +31989,14 @@
   },
   "anilist-14713": {
     "id": "anilist-14713",
-    "titleZh": "元氣少女緣結神 OAD",
+    "titleZh": "元氣少女緣結神",
     "titleJa": "神様はじめました",
     "yearSeason": "2012 秋",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
-    "matchedBgmTitle": "神様はじめました OAD",
-    "bgmId": "80996",
-    "streamingsCount": 0
+    "matchedBgmTitle": "神様はじめました",
+    "bgmId": "43525",
+    "streamingsCount": 5
   },
   "anilist-14345": {
     "id": "anilist-14345",
@@ -36297,7 +36308,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "俺の妹がこんなに可愛いわけがない",
     "bgmId": "5436",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-8525": {
     "id": "anilist-8525",
@@ -38266,7 +38277,7 @@
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "俺の妹がこんなに可愛いわけがない",
     "bgmId": "5436",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-6946": {
     "id": "anilist-6946",
@@ -40335,16 +40346,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-206401": {
-    "id": "anilist-206401",
-    "titleZh": "FX戰士久留美",
-    "titleJa": "FX戦士くるみちゃん",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

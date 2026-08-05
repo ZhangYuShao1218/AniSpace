@@ -40346,5 +40346,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-204389": {
+    "id": "anilist-204389",
+    "titleZh": "野生 Boss 出現了！ 第二季",
+    "titleJa": "野生のラスボスが現れた！ 第2期",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

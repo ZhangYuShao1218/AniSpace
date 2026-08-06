@@ -681,6 +681,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-204389": {
+    "id": "anilist-204389",
+    "titleZh": "野生 Boss 出現了！ 第二季",
+    "titleJa": "野生のラスボスが現れた！ 第2期",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-178789": {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
@@ -40347,11 +40358,11 @@
     "bgmId": "2885",
     "streamingsCount": 5
   },
-  "anilist-204389": {
-    "id": "anilist-204389",
-    "titleZh": "野生 Boss 出現了！ 第二季",
-    "titleJa": "野生のラスボスが現れた！ 第2期",
-    "yearSeason": "2026 秋",
+  "anilist-12447": {
+    "id": "anilist-12447",
+    "titleZh": "ベン・トー ピクチャードラマ",
+    "titleJa": "ベン・トー ピクチャードラマ",
+    "yearSeason": "2011 冬",
     "hasCorrespondingData": false,
     "matchedType": null,
     "matchedBgmTitle": null,

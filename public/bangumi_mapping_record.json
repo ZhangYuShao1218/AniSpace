@@ -36310,6 +36310,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-12447": {
+    "id": "anilist-12447",
+    "titleZh": "ベン・トー ピクチャードラマ",
+    "titleJa": "ベン・トー ピクチャードラマ",
+    "yearSeason": "2011 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-8769": {
     "id": "anilist-8769",
     "titleZh": "我的妹妹哪有這麼可愛！第一季",
@@ -40357,16 +40368,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-12447": {
-    "id": "anilist-12447",
-    "titleZh": "ベン・トー ピクチャードラマ",
-    "titleJa": "ベン・トー ピクチャードラマ",
-    "yearSeason": "2011 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

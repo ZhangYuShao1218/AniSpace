@@ -2214,6 +2214,12 @@
     "yearSeason": "2011 冬"
   },
   {
+    "id": "anilist-12447",
+    "titleZh": "ベン・トー ピクチャードラマ",
+    "titleJa": "ベン・トー ピクチャードラマ",
+    "yearSeason": "2011 冬"
+  },
+  {
     "id": "anilist-9062",
     "titleZh": "Angel Beats! 特別篇",
     "titleJa": "エンジェルビーツ 特別篇",
@@ -2530,11 +2536,5 @@
     "titleZh": "御先祖賛江",
     "titleJa": "御先祖賛江",
     "yearSeason": "1998 秋"
-  },
-  {
-    "id": "anilist-12447",
-    "titleZh": "ベン・トー ピクチャードラマ",
-    "titleJa": "ベン・トー ピクチャードラマ",
-    "yearSeason": "2011 冬"
   }
 ]

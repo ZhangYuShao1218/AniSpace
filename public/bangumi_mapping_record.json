@@ -734,7 +734,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "BLEACH 千年血戦篇-禍進譚-",
     "bgmId": "530725",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-133007": {
     "id": "anilist-133007",
@@ -998,7 +998,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "僕のヒーローアカデミア I am a hero too",
     "bgmId": "646464",
-    "streamingsCount": 3
+    "streamingsCount": 8
   },
   "anilist-206521": {
     "id": "anilist-206521",
@@ -1042,7 +1042,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "乙女怪獣キャラメリゼ",
     "bgmId": "617123",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-199748": {
     "id": "anilist-199748",
@@ -1086,7 +1086,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "死亡遊戯で飯を食う。 44:CLOUDY BEACH",
     "bgmId": "638185",
-    "streamingsCount": 3
+    "streamingsCount": 6
   },
   "anilist-192800": {
     "id": "anilist-192800",
@@ -1270,7 +1270,7 @@
     "titleJa": "うしろの正面カムイさん",
     "yearSeason": "2026 夏",
     "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
+    "matchedType": "A-AniListID",
     "matchedBgmTitle": "うしろの正面カムイさん",
     "bgmId": "627136",
     "streamingsCount": 6
@@ -2054,7 +2054,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "葬送のフリーレン(第2期)",
     "bgmId": "515759",
-    "streamingsCount": 11
+    "streamingsCount": 12
   },
   "anilist-166613": {
     "id": "anilist-166613",
@@ -2344,13 +2344,13 @@
   },
   "anilist-182317": {
     "id": "anilist-182317",
-    "titleZh": "劇場版 我內心的糟糕念頭",
+    "titleZh": "劇場版 我心裡危險的東西",
     "titleJa": "劇場版 僕の心のヤバイやつ",
     "yearSeason": "2026 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "劇場版 僕の心のヤバイやつ",
+    "bgmId": "515869",
     "streamingsCount": 0
   },
   "anilist-187901": {
@@ -3407,7 +3407,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 鬼滅の刃 無限城編 第一章 猗窩座再来",
     "bgmId": "501958",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-154768": {
     "id": "anilist-154768",
@@ -3693,7 +3693,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "渡くんの××が崩壊寸前",
     "bgmId": "455454",
-    "streamingsCount": 1
+    "streamingsCount": 3
   },
   "anilist-179828": {
     "id": "anilist-179828",
@@ -7664,7 +7664,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "葬送のフリーレン",
     "bgmId": "400602",
-    "streamingsCount": 12
+    "streamingsCount": 13
   },
   "anilist-161645": {
     "id": "anilist-161645",
@@ -11140,7 +11140,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "アオアシ",
     "bgmId": "337459",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-132010": {
     "id": "anilist-132010",
@@ -12911,7 +12911,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "RE-MAIN",
     "bgmId": "329909",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-131149": {
     "id": "anilist-131149",
@@ -22448,7 +22448,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版総集編 オーバーロード 漆黒の英雄",
     "bgmId": "198968",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-98524": {
     "id": "anilist-98524",
@@ -22778,7 +22778,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "テイルズ オブ ゼスティリア ザ クロス(第2期)",
     "bgmId": "186184",
-    "streamingsCount": 3
+    "streamingsCount": 5
   },
   "anilist-97636": {
     "id": "anilist-97636",
@@ -22877,7 +22877,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版総集編 オーバーロード 不死者の王",
     "bgmId": "194036",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-97673": {
     "id": "anilist-97673",
@@ -23856,7 +23856,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "テイルズ オブ ゼスティリア ザ クロス",
     "bgmId": "136371",
-    "streamingsCount": 2
+    "streamingsCount": 4
   },
   "anilist-21688": {
     "id": "anilist-21688",
@@ -24219,7 +24219,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Re:ゼロから始める異世界生活",
     "bgmId": "140001",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-21311": {
     "id": "anilist-21311",
@@ -24362,7 +24362,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ふらいんぐうぃっち",
     "bgmId": "141799",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-21296": {
     "id": "anilist-21296",
@@ -24483,7 +24483,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "SUPER LOVERS",
     "bgmId": "132212",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-21241": {
     "id": "anilist-21241",
@@ -25869,7 +25869,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "オーバーロード",
     "bgmId": "112146",
-    "streamingsCount": 11
+    "streamingsCount": 12
   },
   "anilist-20807": {
     "id": "anilist-20807",
@@ -28531,7 +28531,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "信長協奏曲",
     "bgmId": "103671",
-    "streamingsCount": 2
+    "streamingsCount": 3
   },
   "anilist-20515": {
     "id": "anilist-20515",
@@ -31666,7 +31666,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "みなみけ ただいま",
     "bgmId": "47685",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-15811": {
     "id": "anilist-15811",
@@ -36191,14 +36191,14 @@
   },
   "anilist-10178": {
     "id": "anilist-10178",
-    "titleZh": "大人女子的動畫時光",
+    "titleZh": "滑過河面的風",
     "titleJa": "大人女子のアニメタイム",
     "yearSeason": "2011 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "大人女子のアニメタイム「川面を滑る風」",
+    "bgmId": "12351",
+    "streamingsCount": 1
   },
   "anilist-10500": {
     "id": "anilist-10500",

@@ -1,15 +1,15 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/8/7 下午12:44:14
+執行時間: 2026/8/8 上午11:58:52
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午12:44:14] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [上午11:58:52] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
-✅ 字典檔載入完成，共建立 7979 筆 AniList ID 映射，8528 筆日文標題 100% 精確映射。
+✅ 字典檔載入完成，共建立 7985 筆 AniList ID 映射，8529 筆日文標題 100% 精確映射。
 
 🔍 正在爬取: 2010 年 WINTER 季 (Limit: 50)...
 🚀 取得 50 部動畫資料，進行本地超高速清洗...
@@ -218,7 +218,7 @@ AniSpace 每日任務完整執行 Log
 🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
 ✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3670 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 423 部無對應動畫，開始進行極速正規化比對...
+⚡ 啟動本地程式化標題正規化對照引擎：針對 421 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-171099] "孤獨搖滾！ Re:Re:" ➜ "劇場總集篇 孤獨搖滾！Re: Re:"
@@ -250,17 +250,28 @@ AniSpace 每日任務完整執行 Log
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-8619] "大小姐×執事！OVA" ➜ "管家後宮學園"
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
-📦 成功載入 bangumi-data 字典，映射 1661 筆 AniList ID 及 1712 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 7 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-⏳ 洗滌進度: 7 / 7 (本次成功轉換: 0)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
+📦 成功載入 bangumi-data 字典，映射 1664 筆 AniList ID 及 1716 筆 100% 精確日文標題。
+📦【動畫瘋洗滌檢驗】偵測到 8 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題 (僅寫入 custom_override.json，不覆蓋 anime_data.json): "我的英雄學院 I am a hero too" ➜ "我的英雄學院 FINAL SEASON"
+⏳ 洗滌進度: 8 / 8 (本次成功轉換: 2)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 2 筆作品。
 ✅ 已將 3670 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
 【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3670 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3247 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：423 部 (完整清單已隨信附帶)
+📈 Bangumi 字典對應與授權回填：共 3249 部動畫成功對照字典並無條件整合去重播放授權！
+🛡️ 洗滌成功的動畫 (共 2 部)：
+- 《我的英雄學院 I am a hero too》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=143057
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45530
+- 《超級戀人》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=79845
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=8215
+🎉 新增對應 bangumi_data 的動畫清單 (共 2 部)：
+- 《劇場版 我心裡危險的東西》 ➜ 成功對應至字典：劇場版 僕の心のヤバイやつ (BGM ID: 515869)
+- 《滑過河面的風》 ➜ 成功對應至字典：大人女子のアニメタイム「川面を滑る風」 (BGM ID: 12351)
+🔗 未對應 bangumi_data 動畫數量：421 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
@@ -270,11 +281,13 @@ AniSpace 每日任務完整執行 Log
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午12:59:05] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午12:13:38] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-No relevant translation changes detected.
+[Diff] 發現更官方譯名 anilist-182317: 舊譯名 "劇場版 我內心的糟糕念頭" ➜ 新譯名 "劇場版 我心裡危險的東西"，清除過時的 Override: "劇場版 我內心的糟糕念頭"
+[Diff] 發現更官方譯名 anilist-10178: 舊譯名 "大人女子的動畫時光" ➜ 新譯名 "滑過河面的風"，清除過時的 Override: "大人女子的動畫時光"
+Updated custom_override.json based on translation diffs.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260807.json
+Created daily backup: anime_data_backup_20260808.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -288,71 +301,87 @@ Deleted old backup: anime_data_backup_20260728.json
 Deleted old backup: anime_data_backup_20260729.json
 Deleted old backup: anime_data_backup_20260730.json
 Deleted old backup: anime_data_backup_20260731.json
-Updated dataVersion in package.json and public/data_version.json to: 00120 (120)
+Deleted old backup: anime_data_backup_20260801.json
+Updated dataVersion in package.json and public/data_version.json to: 00121 (121)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午12:59:05] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午12:13:38] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
+📥 [anilist-10178] 已加入批次佇列: 滑過河面的風 (佇列: 1/10)
 
-🎉 Synopsis fetching complete. Processed 0 animes.
+📦 準備進行 AI 翻譯 (批次: 1)...
+✅ [anilist-10178] AI 翻譯完成: 滑過河面的風
+
+🎉 Synopsis fetching complete. Processed 1 animes.
 
 📊 每日任務劇情簡介統計回報:
 - 當前動畫總數: 3670
-- 沒找到對應 bangumi_data 的數量: 423
+- 沒找到對應 bangumi_data 的數量: 421
 - 本次掃描發現對應資料為空的數量: 80
-- 有劇情簡介的動畫總數量: 3253
-- 本次新增 0 筆簡介
+- 有劇情簡介的動畫總數量: 3254
+- 本次新增 1 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午1:00:35] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午12:15:21] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 91 筆原始資料交由 Gemini AI 進行分析與篩選...
-❌ 失效: MUSE 木棉花官方旗艦店
-❌ 失效: 曼迪傳播動漫館
-❌ 失效: eslite 誠品
-❌ 失效: 玩具反斗城 Toysrus
-❌ 失效: TOYeGO 玩具e哥
+準備將 94 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 90 項高價值商品。
+✔️ 正常: MUSE 木棉花官方旗艦店
+✔️ 正常: 曼迪傳播動漫館
+✔️ 正常: eslite 誠品
+✔️ 正常: 玩具反斗城 Toysrus
+✔️ 正常: TOYeGO 玩具e哥
 
 ✅ 檢查與更新完成！已寫入 /home/runner/work/AniSpace/AniSpace/public/affiliates.json 與 /home/runner/work/AniSpace/AniSpace/public/product_images.json
-Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午1:00:59] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午12:17:24] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.2 - (00120)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00121)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.2
-・動畫資料庫版號：(00120)
+・動畫資料庫版號：(00121)
 -------------------------------------
 
 【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3670 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3247 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：423 部 (完整清單已隨信附帶)
+📈 Bangumi 字典對應與授權回填：共 3249 部動畫成功對照字典並無條件整合去重播放授權！
+🛡️ 洗滌成功的動畫 (共 2 部)：
+- 《我的英雄學院 I am a hero too》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=143057
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45530
+- 《超級戀人》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=79845
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=8215
+🎉 新增對應 bangumi_data 的動畫清單 (共 2 部)：
+- 《劇場版 我心裡危險的東西》 ➜ 成功對應至字典：劇場版 僕の心のヤバイやつ (BGM ID: 515869)
+- 《滑過河面的風》 ➜ 成功對應至字典：大人女子のアニメタイム「川面を滑る風」 (BGM ID: 12351)
+🔗 未對應 bangumi_data 動畫數量：421 部 (完整清單已隨信附帶)
 
-【蝦皮推廣連結】完成。正常店鋪: 0，失效店鋪: 5
-⚠️ 失效清單：MUSE 木棉花官方旗艦店, 曼迪傳播動漫館, eslite 誠品, 玩具反斗城 Toysrus, TOYeGO 玩具e哥
-【AI 商品圖】分析與過濾完畢，精選保留 91 項高價值商品。
+【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
+【AI 商品圖】分析與過濾完畢，精選保留 90 項高價值商品。
 
 
 
 【劇情簡介狀態】
 總計收錄: 3670 部動畫
-缺乏簡介: 415 部
-本日新增: 0 筆簡介
+缺乏簡介: 414 部
+本日新增: 1 筆簡介
+新增清單：
+- [anilist-10178] 滑過河面的風
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-8-7.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-8-8.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午1:01:02] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午12:17:29] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3674 URLs.
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.1.2",
   "androidVersionCode": 19,
-  "dataVersion": 122,
+  "dataVersion": 123,
   "type": "module",
   "scripts": {
     "dev": "vite",

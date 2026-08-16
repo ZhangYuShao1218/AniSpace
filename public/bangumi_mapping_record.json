@@ -1860,13 +1860,13 @@
   },
   "anilist-178707": {
     "id": "anilist-178707",
-    "titleZh": "劇場版 魔法科高中的劣等生 四葉繼承篇",
+    "titleZh": "劇場版 魔法科高校的劣等生 四葉繼承篇",
     "titleJa": "劇場版 魔法科高校の劣等生 四葉継承編",
     "yearSeason": "2026 春",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "劇場版 魔法科高校の劣等生 四葉継承編",
+    "bgmId": "501729",
     "streamingsCount": 0
   },
   "anilist-196012": {
@@ -2685,13 +2685,13 @@
   },
   "anilist-177132": {
     "id": "anilist-177132",
-    "titleZh": "花綠青破曉之時",
+    "titleZh": "花綠青綻放的黎明",
     "titleJa": "花緑青が明ける日に",
     "yearSeason": "2026 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "花緑青が明ける日に",
+    "bgmId": "491656",
     "streamingsCount": 0
   },
   "anilist-153800": {
@@ -5182,13 +5182,13 @@
   },
   "anilist-154064": {
     "id": "anilist-154064",
-    "titleZh": "メイクアガール",
+    "titleZh": "伊人制造",
     "titleJa": "メイクアガール",
     "yearSeason": "2025 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "メイクアガール",
+    "bgmId": "398556",
     "streamingsCount": 0
   },
   "anilist-179852": {
@@ -5248,13 +5248,13 @@
   },
   "anilist-177778": {
     "id": "anilist-177778",
-    "titleZh": "ニンジャバットマン対ヤクザリーグ",
+    "titleZh": "忍者蝙蝠俠對極道聯盟",
     "titleJa": "ニンジャバットマン対ヤクザリーグ",
     "yearSeason": "2025 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "ニンジャバットマン対ヤクザリーグ",
+    "bgmId": "497110",
     "streamingsCount": 0
   },
   "anilist-185073": {
@@ -33796,10 +33796,10 @@
     "titleZh": "魚",
     "titleJa": "ギョ",
     "yearSeason": "2012 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "ギョ",
+    "bgmId": "13345",
     "streamingsCount": 0
   },
   "anilist-11697": {
@@ -37324,13 +37324,13 @@
   },
   "anilist-7598": {
     "id": "anilist-7598",
-    "titleZh": "狼人（Loups-Garous）",
+    "titleZh": "應避忌的狼",
     "titleJa": "ルー=ガルー",
     "yearSeason": "2010 夏",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ルー=ガルー",
+    "bgmId": "10649",
     "streamingsCount": 0
   },
   "anilist-8507": {

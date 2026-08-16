@@ -15510,11 +15510,9 @@
     "reason": "no_bgm_id"
   },
   "anilist-10417": {
-    "zh": false,
-    "ja": false,
-    "en": false,
-    "failed": true,
-    "reason": "no_bgm_id"
+    "zh": true,
+    "ja": true,
+    "en": true
   },
   "anilist-12503": {
     "zh": false,
@@ -17066,11 +17064,9 @@
     "reason": "no_bgm_id"
   },
   "anilist-7598": {
-    "zh": false,
-    "ja": false,
-    "en": false,
-    "failed": true,
-    "reason": "no_bgm_id"
+    "zh": true,
+    "ja": true,
+    "en": true
   },
   "anilist-8507": {
     "zh": false,
@@ -18977,9 +18973,9 @@
     "en": false
   },
   "anilist-177132": {
-    "zh": false,
-    "ja": false,
-    "en": false
+    "zh": true,
+    "ja": true,
+    "en": true
   },
   "anilist-177271": {
     "zh": true,
@@ -19137,9 +19133,9 @@
     "en": true
   },
   "anilist-177778": {
-    "zh": false,
-    "ja": false,
-    "en": false
+    "zh": true,
+    "ja": true,
+    "en": true
   },
   "anilist-185073": {
     "zh": true,

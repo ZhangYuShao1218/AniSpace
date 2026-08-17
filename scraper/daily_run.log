@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/8/16 上午11:34:46
+執行時間: 2026/8/17 上午11:35:32
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [上午11:34:46] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [上午11:35:32] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -260,13 +260,6 @@ AniSpace 每日任務完整執行 Log
 📋 本次爬蟲執行結果總結：
 【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3670 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3255 部動畫成功對照字典並無條件整合去重播放授權！
-🎉 新增對應 bangumi_data 的動畫清單 (共 6 部)：
-- 《劇場版 魔法科高校的劣等生 四葉繼承篇》 ➜ 成功對應至字典：劇場版 魔法科高校の劣等生 四葉継承編 (BGM ID: 501729)
-- 《花綠青綻放的黎明》 ➜ 成功對應至字典：花緑青が明ける日に (BGM ID: 491656)
-- 《伊人制造》 ➜ 成功對應至字典：メイクアガール (BGM ID: 398556)
-- 《忍者蝙蝠俠對極道聯盟》 ➜ 成功對應至字典：ニンジャバットマン対ヤクザリーグ (BGM ID: 497110)
-- 《魚》 ➜ 成功對應至字典：ギョ (BGM ID: 13345)
-- 《應避忌的狼》 ➜ 成功對應至字典：ルー=ガルー (BGM ID: 10649)
 🔗 未對應 bangumi_data 動畫數量：415 部 (完整清單已隨信附帶)
 =====================================
 
@@ -277,14 +270,11 @@ AniSpace 每日任務完整執行 Log
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [上午11:46:23] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [上午11:51:29] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-[Diff] 發現更官方譯名 anilist-178707: 舊譯名 "劇場版 魔法科高中的劣等生 四葉繼承篇" ➜ 新譯名 "劇場版 魔法科高校的劣等生 四葉繼承篇"，清除過時的 Override: "劇場版 魔法科高中的劣等生 四葉繼承篇"
-[Diff] 發現更官方譯名 anilist-177132: 舊譯名 "花綠青破曉之時" ➜ 新譯名 "花綠青綻放的黎明"，清除過時的 Override: "花綠青破曉之時"
-[Diff] 發現更官方譯名 anilist-7598: 舊譯名 "狼人（Loups-Garous）" ➜ 新譯名 "應避忌的狼"，清除過時的 Override: "狼人（Loups-Garous）"
-Updated custom_override.json based on translation diffs.
+No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260816.json
+Created daily backup: anime_data_backup_20260817.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -307,40 +297,31 @@ Deleted old backup: anime_data_backup_20260806.json
 Deleted old backup: anime_data_backup_20260807.json
 Deleted old backup: anime_data_backup_20260808.json
 Deleted old backup: anime_data_backup_20260809.json
-Updated dataVersion in package.json and public/data_version.json to: 00129 (129)
+Deleted old backup: anime_data_backup_20260810.json
+Updated dataVersion in package.json and public/data_version.json to: 00130 (130)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [上午11:46:23] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [上午11:51:29] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
-📥 [anilist-177132] 已加入批次佇列: 花綠青綻放的黎明 (佇列: 1/10)
-📥 [anilist-177778] 已加入批次佇列: 忍者蝙蝠俠對極道聯盟 (佇列: 2/10)
-📥 [anilist-10417] 已加入批次佇列: 魚 (佇列: 3/10)
-📥 [anilist-7598] 已加入批次佇列: 應避忌的狼 (佇列: 4/10)
 
-📦 準備進行 AI 翻譯 (批次: 4)...
-✅ [anilist-177132] AI 翻譯完成: 花綠青綻放的黎明
-✅ [anilist-177778] AI 翻譯完成: 忍者蝙蝠俠對極道聯盟
-✅ [anilist-10417] AI 翻譯完成: 魚
-✅ [anilist-7598] AI 翻譯完成: 應避忌的狼
-
-🎉 Synopsis fetching complete. Processed 4 animes.
+🎉 Synopsis fetching complete. Processed 0 animes.
 
 📊 每日任務劇情簡介統計回報:
 - 當前動畫總數: 3670
 - 沒找到對應 bangumi_data 的數量: 415
 - 本次掃描發現對應資料為空的數量: 80
 - 有劇情簡介的動畫總數量: 3258
-- 本次新增 4 筆簡介
+- 本次新增 0 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [上午11:48:27] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [上午11:52:58] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 102 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 95 項高價值商品。
+準備將 101 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 83 項高價值商品。
 ❌ 失效: MUSE 木棉花官方旗艦店
 ❌ 失效: 曼迪傳播動漫館
 ❌ 失效: eslite 誠品
@@ -351,49 +332,37 @@ Updated dataVersion in package.json and public/data_version.json to: 00129 (129)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [上午11:50:35] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [上午11:54:36] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.2 - (00129)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00130)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.2
-・動畫資料庫版號：(00129)
+・動畫資料庫版號：(00130)
 -------------------------------------
 
 【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3670 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3255 部動畫成功對照字典並無條件整合去重播放授權！
-🎉 新增對應 bangumi_data 的動畫清單 (共 6 部)：
-- 《劇場版 魔法科高校的劣等生 四葉繼承篇》 ➜ 成功對應至字典：劇場版 魔法科高校の劣等生 四葉継承編 (BGM ID: 501729)
-- 《花綠青綻放的黎明》 ➜ 成功對應至字典：花緑青が明ける日に (BGM ID: 491656)
-- 《伊人制造》 ➜ 成功對應至字典：メイクアガール (BGM ID: 398556)
-- 《忍者蝙蝠俠對極道聯盟》 ➜ 成功對應至字典：ニンジャバットマン対ヤクザリーグ (BGM ID: 497110)
-- 《魚》 ➜ 成功對應至字典：ギョ (BGM ID: 13345)
-- 《應避忌的狼》 ➜ 成功對應至字典：ルー=ガルー (BGM ID: 10649)
 🔗 未對應 bangumi_data 動畫數量：415 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 0，失效店鋪: 5
 ⚠️ 失效清單：MUSE 木棉花官方旗艦店, 曼迪傳播動漫館, eslite 誠品, 玩具反斗城 Toysrus, TOYeGO 玩具e哥
-【AI 商品圖】分析與過濾完畢，精選保留 95 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 83 項高價值商品。
 
 
 
 【劇情簡介狀態】
 總計收錄: 3670 部動畫
 缺乏簡介: 410 部
-本日新增: 4 筆簡介
-新增清單：
-- [anilist-177132] 花綠青綻放的黎明
-- [anilist-177778] 忍者蝙蝠俠對極道聯盟
-- [anilist-10417] 魚
-- [anilist-7598] 應避忌的狼
+本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-8-16.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-8-17.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [上午11:50:38] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [上午11:54:39] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3674 URLs.
 

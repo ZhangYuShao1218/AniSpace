@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/8/18 上午11:30:43
+執行時間: 2026/8/19 上午11:32:45
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [上午11:30:43] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [上午11:32:45] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -215,10 +215,11 @@ AniSpace 每日任務完整執行 Log
 🔍 正在爬取: 2026 年 FALL 季 (Limit: 60)...
 🚀 取得 60 部動畫資料，進行本地超高速清洗...
 
-🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
-✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3670 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
+🤖 發現 4 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
+✅ AI 翻譯完成，更新了 1 筆資料至 custom_override.json
+✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3671 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 415 部無對應動畫，開始進行極速正規化比對...
+⚡ 啟動本地程式化標題正規化對照引擎：針對 416 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-171099] "孤獨搖滾！ Re:Re:" ➜ "劇場總集篇 孤獨搖滾！Re: Re:"
@@ -254,27 +255,31 @@ AniSpace 每日任務完整執行 Log
 📦【動畫瘋洗滌檢驗】偵測到 6 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
 ⏳ 洗滌進度: 6 / 6 (本次成功轉換: 0)
 ✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
-✅ 已將 3670 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
+✅ 已將 3671 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3670 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3671 筆，新增資料 1 筆，AI 翻譯 1 筆。
 📈 Bangumi 字典對應與授權回填：共 3255 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：415 部 (完整清單已隨信附帶)
+🌟 新增動畫：
+- 章魚嗶的原罪 -謝謝你，明天見-
+🤖 AI 翻譯動畫：
+- 章魚嗶的原罪 -謝謝你，明天見-
+🔗 未對應 bangumi_data 動畫數量：416 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
 ✅ 建構完成！共整理出 1789 個系列，更新了 2169 筆 Metadata 關聯檔案。
 
-✨ 抓取與清洗完成！極速處理完畢。共 3670 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
+✨ 抓取與清洗完成！極速處理完畢。共 3671 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [上午11:47:16] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [上午11:46:23] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
 No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260818.json
+Created daily backup: anime_data_backup_20260819.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -299,30 +304,31 @@ Deleted old backup: anime_data_backup_20260808.json
 Deleted old backup: anime_data_backup_20260809.json
 Deleted old backup: anime_data_backup_20260810.json
 Deleted old backup: anime_data_backup_20260811.json
-Updated dataVersion in package.json and public/data_version.json to: 00131 (131)
+Deleted old backup: anime_data_backup_20260812.json
+Updated dataVersion in package.json and public/data_version.json to: 00132 (132)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [上午11:47:16] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [上午11:46:23] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
 
 🎉 Synopsis fetching complete. Processed 0 animes.
 
 📊 每日任務劇情簡介統計回報:
-- 當前動畫總數: 3670
-- 沒找到對應 bangumi_data 的數量: 415
+- 當前動畫總數: 3671
+- 沒找到對應 bangumi_data 的數量: 416
 - 本次掃描發現對應資料為空的數量: 80
 - 有劇情簡介的動畫總數量: 3258
 - 本次新增 0 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [上午11:48:47] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [上午11:47:53] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 109 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 81 項高價值商品。
+準備將 111 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 85 項高價值商品。
 ❌ 失效: MUSE 木棉花官方旗艦店
 ❌ 失效: 曼迪傳播動漫館
 ❌ 失效: eslite 誠品
@@ -333,39 +339,43 @@ Updated dataVersion in package.json and public/data_version.json to: 00131 (131)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [上午11:50:25] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [上午11:49:40] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.2 - (00131)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00132)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.2
-・動畫資料庫版號：(00131)
+・動畫資料庫版號：(00132)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3670 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3671 筆，新增資料 1 筆，AI 翻譯 1 筆。
 📈 Bangumi 字典對應與授權回填：共 3255 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：415 部 (完整清單已隨信附帶)
+🌟 新增動畫：
+- 章魚嗶的原罪 -謝謝你，明天見-
+🤖 AI 翻譯動畫：
+- 章魚嗶的原罪 -謝謝你，明天見-
+🔗 未對應 bangumi_data 動畫數量：416 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 0，失效店鋪: 5
 ⚠️ 失效清單：MUSE 木棉花官方旗艦店, 曼迪傳播動漫館, eslite 誠品, 玩具反斗城 Toysrus, TOYeGO 玩具e哥
-【AI 商品圖】分析與過濾完畢，精選保留 81 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 85 項高價值商品。
 
 
 
 【劇情簡介狀態】
-總計收錄: 3670 部動畫
-缺乏簡介: 410 部
+總計收錄: 3671 部動畫
+缺乏簡介: 411 部
 本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-8-18.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-8-19.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [上午11:50:28] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [上午11:49:43] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
-Successfully generated sitemap.xml with 3674 URLs.
+Successfully generated sitemap.xml with 3675 URLs.
 
 ✅ 步驟 [6. 自動更新網站地圖 (sitemap)] 執行成功完成。
 

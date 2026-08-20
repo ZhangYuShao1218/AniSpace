@@ -692,6 +692,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-212539": {
+    "id": "anilist-212539",
+    "titleZh": "章魚嗶的原罪 -謝謝你，明天見-",
+    "titleJa": "タコピーの原罪 -ありがとう、また明日-",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-178789": {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
@@ -40368,16 +40379,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-212539": {
-    "id": "anilist-212539",
-    "titleZh": "章魚嗶的原罪 -謝謝你，明天見-",
-    "titleJa": "タコピーの原罪 -ありがとう、また明日-",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

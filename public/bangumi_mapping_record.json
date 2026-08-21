@@ -40379,5 +40379,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-213457": {
+    "id": "anilist-213457",
+    "titleZh": "Fool Night 愚夜",
+    "titleJa": "フールナイト",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

@@ -384,6 +384,12 @@
     "yearSeason": "2026 秋"
   },
   {
+    "id": "anilist-213457",
+    "titleZh": "Fool Night 愚夜",
+    "titleJa": "フールナイト",
+    "yearSeason": "2026 秋"
+  },
+  {
     "id": "anilist-133007",
     "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯之迴天〉",
     "titleJa": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
@@ -2494,11 +2500,5 @@
     "titleZh": "御先祖賛江",
     "titleJa": "御先祖賛江",
     "yearSeason": "1998 秋"
-  },
-  {
-    "id": "anilist-213457",
-    "titleZh": "Fool Night 愚夜",
-    "titleJa": "フールナイト",
-    "yearSeason": "2026 秋"
   }
 ]

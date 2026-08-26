@@ -951,7 +951,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 4
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -2048,7 +2048,7 @@
       {
         "site": "prime",
         "name": "Prime Video",
-        "region": "全球/日本",
+        "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0H1R41VPW"
       }
     ]
@@ -2421,12 +2421,6 @@
       "福利"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=114101"
-      },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
@@ -3367,6 +3361,12 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=46994"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HB7JS9CB"
       },
       {
         "site": "muse_hk",
@@ -4526,6 +4526,12 @@
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=49935"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H8D4LCYX"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -5399,13 +5405,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtR1Jvy3yWXqHYZqVbfpACyF"
+        "url": "https://www.youtube.com/playlist?list=PLWt6quvyLgAI"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjhVqkAt1bFMDpgrRsby7Z_"
+        "url": "https://www.youtube.com/playlist?list=PLC2PAbftnNp8"
       },
       {
         "site": "crunchyroll",
@@ -9934,6 +9940,12 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0307489"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/ten-sura_movie"
       }
     ]
   },
@@ -24400,6 +24412,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27637"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-281"
       }
     ]
   },
@@ -30064,6 +30082,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27198"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-269"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -30345,6 +30369,12 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0D4JVV2Z3"
+      },
+      {
+        "site": "mytv",
+        "name": "myTV SUPER",
+        "region": "港澳",
+        "url": "https://www.mytvsuper.com/tc/programme/towerofgods2_146883/"
       },
       {
         "site": "unext",
@@ -30847,6 +30877,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27176"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-268"
       }
     ]
   },
@@ -36178,6 +36214,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26747"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-253"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -37894,6 +37936,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26811"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-254"
       }
     ]
   },
@@ -37951,6 +37999,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26774"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-251"
       }
     ]
   },
@@ -49567,6 +49621,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25960"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-235"
       }
     ]
   },
@@ -53952,6 +54012,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25620"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/26-171"
       },
       {
         "site": "bilibili",
@@ -67007,6 +67073,12 @@
         "url": "https://www.netflix.com/title/81442047"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GVDHX8DM5/"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -75492,6 +75564,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23657"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-147"
       }
     ]
   },
@@ -80457,6 +80535,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23150"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/199-30"
       },
       {
         "site": "bilibili",
@@ -85702,6 +85786,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22860"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/199-28"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -89282,6 +89372,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23055"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/26-188"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -92535,6 +92631,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22435"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/199-24"
       },
       {
         "site": "bilibili",
@@ -101336,6 +101438,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21826"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-78"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -102035,6 +102143,12 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=98322"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/playlist?list=PLQ22ENDM45hQ"
       },
       {
         "site": "nicovideo",
@@ -115236,6 +115350,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20902"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/19-296"
       },
       {
         "site": "bilibili",
@@ -132398,6 +132518,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11260"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-10wkyfrkuytx"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -137725,6 +137851,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20859"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/143-81"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -141288,6 +141420,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10797"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-13gragggaxej"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -141859,6 +141997,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11515"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/198-3"
       },
       {
         "site": "bilibili",
@@ -148659,6 +148803,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10651"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-8cwxyxikzsj"
       },
       {
         "site": "bilibili",
@@ -156221,6 +156371,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10768"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/198-1"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -157727,6 +157883,12 @@
         "name": "Disney+",
         "region": "全球",
         "url": "https://www.disneyplus.com/series/view/oPxWI7yf6WHt"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H1M81FMD"
       },
       {
         "site": "nicovideo",
@@ -159408,6 +159570,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10642"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-12bcmuytxgcm"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -159619,6 +159787,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10108"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-4pkxnjwwrpn"
       },
       {
         "site": "bilibili",
@@ -165423,6 +165597,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10642"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-12bcmuytxgcm"
       },
       {
         "site": "bilibili",

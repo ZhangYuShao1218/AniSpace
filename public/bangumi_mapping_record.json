@@ -40390,5 +40390,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-15729": {
+    "id": "anilist-15729",
+    "titleZh": "はぐれ勇者の鬼畜美學 恥じらいいっぱい",
+    "titleJa": "はぐれ勇者の鬼畜美学 恥じらいいっぱい",
+    "yearSeason": "2012 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

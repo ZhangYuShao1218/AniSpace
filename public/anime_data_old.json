@@ -609,7 +609,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 3
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -146791,6 +146791,24 @@
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md4341/"
       }
+    ]
+  },
+  {
+    "id": "anilist-15729",
+    "titleZh": "はぐれ勇者の鬼畜美學 恥じらいいっぱい",
+    "titleEn": "Aesthetica of a Rogue Hero Specials",
+    "titleJa": "はぐれ勇者の鬼畜美学 恥じらいいっぱい",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/15729.jpg",
+    "startDate": {
+      "year": 2012,
+      "month": 9,
+      "day": 26
+    },
+    "yearSeason": "2012 秋",
+    "genres": [
+      "喜劇",
+      "福利"
     ]
   },
   {

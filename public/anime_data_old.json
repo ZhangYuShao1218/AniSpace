@@ -1253,6 +1253,25 @@
     ]
   },
   {
+    "id": "anilist-190054",
+    "titleZh": "我的幸福婚約 特別篇",
+    "titleEn": "",
+    "titleJa": "わたしの幸せな結婚 特別篇",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190054-8h0AuqQjwcCL.png",
+    "startDate": {
+      "year": 2026,
+      "month": 10,
+      "day": 25
+    },
+    "yearSeason": "2026 秋",
+    "genres": [
+      "劇情",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
     "titleEn": "Mushoku Tensei: Jobless Reincarnation Season 3",
@@ -1474,6 +1493,7 @@
     "genres": [
       "冒險",
       "動作",
+      "時空輪迴",
       "超能力",
       "超自然"
     ],
@@ -2787,6 +2807,7 @@
     "yearSeason": "2026 夏",
     "genres": [
       "喜劇",
+      "後宮",
       "愛情"
     ],
     "streamings": [
@@ -157224,8 +157245,7 @@
     "yearSeason": "2011 春",
     "genres": [
       "喜劇",
-      "日常",
-      "福利"
+      "日常"
     ],
     "streamings": [
       {

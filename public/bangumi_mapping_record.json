@@ -714,6 +714,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-190054": {
+    "id": "anilist-190054",
+    "titleZh": "我的幸福婚約 特別篇",
+    "titleJa": "わたしの幸せな結婚 特別篇",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-178789": {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
@@ -40401,16 +40412,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-190054": {
-    "id": "anilist-190054",
-    "titleZh": "我的幸福婚約 特別篇",
-    "titleJa": "わたしの幸せな結婚 特別篇",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

@@ -40412,5 +40412,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-106896": {
+    "id": "anilist-106896",
+    "titleZh": "PERSONA5 the Animation: \"Stars and Ours\"",
+    "titleJa": "PERSONA5 the Animation: \"Stars and Ours\"",
+    "yearSeason": "2019 冬",
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "PERSONA5 the Animation Stars and Ours",
+    "bgmId": "270473",
+    "streamingsCount": 3
   }
 }

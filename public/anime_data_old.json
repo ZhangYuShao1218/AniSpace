@@ -355,8 +355,8 @@
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206814-1NJiXCcdPatd.jpg",
     "startDate": {
       "year": 2026,
-      "month": null,
-      "day": null
+      "month": 10,
+      "day": 11
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -4532,7 +4532,8 @@
     "yearSeason": "2026 夏",
     "genres": [
       "喜劇",
-      "日常"
+      "日常",
+      "校園"
     ],
     "streamings": [
       {
@@ -91552,6 +91553,45 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=20631"
+      }
+    ]
+  },
+  {
+    "id": "anilist-106896",
+    "titleZh": "女神異聞錄5 Stars and Ours",
+    "titleEn": "PERSONA5 the Animation: Stars and Ours",
+    "titleJa": "PERSONA5 the Animation: \"Stars and Ours\"",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106896-hNj8pUGTdTcD.png",
+    "startDate": {
+      "year": 2019,
+      "month": 3,
+      "day": 23
+    },
+    "yearSeason": "2019 冬",
+    "genres": [
+      "動作",
+      "奇幻",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0038973"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "全球/日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22534"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "全球/日本",
+        "url": "https://abema.tv/video/title/26-68"
       }
     ]
   },

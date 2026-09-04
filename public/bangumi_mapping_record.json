@@ -18721,6 +18721,17 @@
     "bgmId": "275359",
     "streamingsCount": 2
   },
+  "anilist-106896": {
+    "id": "anilist-106896",
+    "titleZh": "女神異聞錄5 Stars and Ours",
+    "titleJa": "PERSONA5 the Animation: \"Stars and Ours\"",
+    "yearSeason": "2019 冬",
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "PERSONA5 the Animation Stars and Ours",
+    "bgmId": "270473",
+    "streamingsCount": 3
+  },
   "anilist-101291": {
     "id": "anilist-101291",
     "titleZh": "青春豬頭少年不會夢到兔女郎學姊",
@@ -40412,16 +40423,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-106896": {
-    "id": "anilist-106896",
-    "titleZh": "PERSONA5 the Animation: \"Stars and Ours\"",
-    "titleJa": "PERSONA5 the Animation: \"Stars and Ours\"",
-    "yearSeason": "2019 冬",
-    "hasCorrespondingData": true,
-    "matchedType": "B-bangumiDataTitle",
-    "matchedBgmTitle": "PERSONA5 the Animation Stars and Ours",
-    "bgmId": "270473",
-    "streamingsCount": 3
   }
 }

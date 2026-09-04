@@ -262,8 +262,8 @@
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185756-6xlOTE0zL2nV.jpg",
     "startDate": {
       "year": 2026,
-      "month": null,
-      "day": null
+      "month": 9,
+      "day": 27
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -777,7 +777,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 5
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -17778,7 +17778,6 @@
     "genres": [
       "冒險",
       "奇幻",
-      "後宮",
       "時空輪迴"
     ],
     "streamings": [

@@ -18723,7 +18723,7 @@
   },
   "anilist-106896": {
     "id": "anilist-106896",
-    "titleZh": "女神異聞錄5 Stars and Ours",
+    "titleZh": "PERSONA5 the Animation: \"Stars and Ours\"",
     "titleJa": "PERSONA5 the Animation: \"Stars and Ours\"",
     "yearSeason": "2019 冬",
     "hasCorrespondingData": true,
@@ -40423,5 +40423,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-189068": {
+    "id": "anilist-189068",
+    "titleZh": "ミルキー☆ハイウェイ",
+    "titleJa": "ミルキー☆ハイウェイ",
+    "yearSeason": "2022 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

@@ -167,7 +167,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 7
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -758,7 +758,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 5
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -1167,7 +1167,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 4
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -1229,6 +1229,7 @@
     "genres": [
       "劇情",
       "心理",
+      "校園",
       "科幻"
     ]
   },
@@ -1684,6 +1685,7 @@
     "yearSeason": "2026 夏",
     "genres": [
       "冒險",
+      "喜劇",
       "愛情"
     ],
     "streamings": [
@@ -18830,9 +18832,11 @@
     },
     "yearSeason": "2025 夏",
     "genres": [
+      "劇情",
       "動作",
       "奇幻",
-      "憂鬱"
+      "憂鬱",
+      "科幻"
     ],
     "streamings": [
       {
@@ -52811,9 +52815,11 @@
     },
     "yearSeason": "2022 秋",
     "genres": [
+      "劇情",
       "動作",
       "奇幻",
       "憂鬱",
+      "科幻",
       "超能力"
     ],
     "streamings": [
@@ -61732,6 +61738,25 @@
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25184"
       }
+    ]
+  },
+  {
+    "id": "anilist-189068",
+    "titleZh": "ミルキー☆ハイウェイ",
+    "titleEn": "Milky☆Highway",
+    "titleJa": "ミルキー☆ハイウェイ",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189068-11z294O4N9LH.jpg",
+    "startDate": {
+      "year": 2022,
+      "month": 2,
+      "day": 23
+    },
+    "yearSeason": "2022 冬",
+    "genres": [
+      "冒險",
+      "喜劇",
+      "科幻"
     ]
   },
   {
@@ -83562,6 +83587,7 @@
       "劇情",
       "愛情",
       "日常",
+      "時空輪迴",
       "超自然",
       "音樂"
     ],
@@ -145643,6 +145669,7 @@
     "yearSeason": "2012 秋",
     "genres": [
       "動作",
+      "喜劇",
       "校園",
       "運動"
     ],

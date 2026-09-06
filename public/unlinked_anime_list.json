@@ -222,12 +222,6 @@
     "yearSeason": "2026 秋"
   },
   {
-    "id": "anilist-204431",
-    "titleZh": "怪獸8號 鳴海的平日",
-    "titleJa": "怪獣８号 鳴海の平日",
-    "yearSeason": "2026 秋"
-  },
-  {
     "id": "anilist-197543",
     "titleZh": "BanG Dream! Ave Mujica",
     "titleJa": "BanG Dream! Ave Mujica prima aurora",
@@ -418,12 +412,6 @@
     "titleZh": "路人超能100 10週年記念特別映像",
     "titleJa": "モブサイコ100 10周年記念特別映像",
     "yearSeason": "2026 夏"
-  },
-  {
-    "id": "anilist-113971",
-    "titleZh": "機動戰士鋼彈 閃光的哈薩威 喀耳刻的魔女",
-    "titleJa": "機動戦士ガンダム 閃光のハサウェイ キルケーの魔女",
-    "yearSeason": "2026 冬"
   },
   {
     "id": "anilist-187921",
@@ -621,6 +609,12 @@
     "id": "anilist-142794",
     "titleZh": "寶可夢：阿爾宙斯篇章",
     "titleJa": "ポケットモンスター (2019) 神とよばれし アルセウス",
+    "yearSeason": "2022 冬"
+  },
+  {
+    "id": "anilist-189068",
+    "titleZh": "ミルキー☆ハイウェイ",
+    "titleJa": "ミルキー☆ハイウェイ",
     "yearSeason": "2022 冬"
   },
   {
@@ -2518,11 +2512,5 @@
     "titleZh": "御先祖賛江",
     "titleJa": "御先祖賛江",
     "yearSeason": "1998 秋"
-  },
-  {
-    "id": "anilist-189068",
-    "titleZh": "ミルキー☆ハイウェイ",
-    "titleJa": "ミルキー☆ハイウェイ",
-    "yearSeason": "2022 冬"
   }
 ]

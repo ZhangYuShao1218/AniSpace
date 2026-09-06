@@ -18968,9 +18968,9 @@
     "en": true
   },
   "anilist-113971": {
-    "zh": false,
-    "ja": false,
-    "en": false
+    "zh": true,
+    "ja": true,
+    "en": true
   },
   "anilist-177132": {
     "zh": true,
@@ -19238,6 +19238,36 @@
     "en": false
   },
   "anilist-12447": {
+    "zh": false,
+    "ja": false,
+    "en": false
+  },
+  "anilist-212539": {
+    "zh": false,
+    "ja": false,
+    "en": false
+  },
+  "anilist-213457": {
+    "zh": false,
+    "ja": false,
+    "en": false
+  },
+  "anilist-190054": {
+    "zh": false,
+    "ja": false,
+    "en": false
+  },
+  "anilist-189068": {
+    "zh": false,
+    "ja": false,
+    "en": false
+  },
+  "anilist-106896": {
+    "zh": false,
+    "ja": false,
+    "en": false
+  },
+  "anilist-15729": {
     "zh": false,
     "ja": false,
     "en": false

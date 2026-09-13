@@ -17807,11 +17807,9 @@
     "reason": "no_summary"
   },
   "anilist-846": {
-    "zh": false,
-    "ja": false,
-    "en": false,
-    "failed": true,
-    "reason": "no_summary"
+    "zh": true,
+    "ja": true,
+    "en": true
   },
   "anilist-6594": {
     "zh": true,
@@ -19268,6 +19266,11 @@
     "en": false
   },
   "anilist-15729": {
+    "zh": false,
+    "ja": false,
+    "en": false
+  },
+  "anilist-180894": {
     "zh": false,
     "ja": false,
     "en": false

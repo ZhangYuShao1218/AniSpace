@@ -27,7 +27,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 3
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -299,7 +299,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 7
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -435,7 +435,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 3
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -454,7 +454,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 5
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -473,7 +473,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 4
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -517,7 +517,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": 10
+      "day": 9
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -609,7 +609,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": 3
+      "day": 4
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -889,7 +889,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 4
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -1084,7 +1084,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 13
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -1288,7 +1288,7 @@
   {
     "id": "anilist-190054",
     "titleZh": "我的幸福婚約 特別篇",
-    "titleEn": "",
+    "titleEn": "My Happy Marriage Special Episodes",
     "titleJa": "わたしの幸せな結婚 特別篇",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190054-8h0AuqQjwcCL.png",
@@ -1302,6 +1302,25 @@
       "劇情",
       "愛情",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-180894",
+    "titleZh": "蘿梅莉亞戰記～打倒魔王後人類處境好像還是很不妙，於是組織了軍隊～",
+    "titleEn": "Romelia War Chronicle",
+    "titleJa": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png",
+    "startDate": {
+      "year": 2026,
+      "month": 10,
+      "day": 3
+    },
+    "yearSeason": "2026 秋",
+    "genres": [
+      "冒險",
+      "劇情",
+      "奇幻"
     ]
   },
   {
@@ -1746,8 +1765,7 @@
       "劇情",
       "喜劇",
       "愛情",
-      "日常",
-      "校園"
+      "日常"
     ],
     "streamings": [
       {
@@ -1969,6 +1987,7 @@
     "genres": [
       "動作",
       "心理",
+      "福利",
       "科幻"
     ],
     "streamings": [
@@ -2893,7 +2912,8 @@
     "genres": [
       "冒險",
       "動作",
-      "奇幻"
+      "奇幻",
+      "校園"
     ],
     "streamings": [
       {
@@ -3195,8 +3215,6 @@
     "genres": [
       "喜劇",
       "愛情",
-      "校園",
-      "超能力",
       "超自然"
     ],
     "streamings": [
@@ -38098,7 +38116,8 @@
     "genres": [
       "喜劇",
       "奇幻",
-      "愛情"
+      "愛情",
+      "異世界"
     ],
     "streamings": [
       {

@@ -553,8 +553,8 @@
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-kUNSF4ad60C8.jpg",
     "startDate": {
       "year": 2026,
-      "month": 10,
-      "day": 2
+      "month": 9,
+      "day": 27
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -868,7 +868,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 3
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -1765,7 +1765,8 @@
       "劇情",
       "喜劇",
       "愛情",
-      "日常"
+      "日常",
+      "校園"
     ],
     "streamings": [
       {
@@ -7152,6 +7153,7 @@
       "喜劇",
       "後宮",
       "愛情",
+      "校園",
       "福利"
     ],
     "streamings": [

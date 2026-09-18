@@ -35,7 +35,7 @@ try {
 const saveToLocalStorage = () => {
   try {
     localStorage.setItem('anispace_detail_cache_v3', JSON.stringify(MEMORY_CACHE));
-  } catch (e) {
+  } catch {
     // ignore quota exceeded
   }
 };
@@ -124,6 +124,18 @@ export function useRichAnimeDetail(anime?: Anime | null, enabled: boolean = true
       }
 
       // Step 2: Fallback to Jikan API if local fetch failed or 404
+      const applyFallback = () => {
+        if (!isMounted) return;
+        const fallback: RichDetail = {
+          synopsis: (anime as any).userComment ? `備忘記錄：${(anime as any).userComment}` : t('modalNoSynopsis'),
+          studio: '動畫工作室',
+          loading: false
+        };
+        MEMORY_CACHE[cacheKey] = fallback;
+        saveToLocalStorage();
+        setDetail(fallback);
+      };
+
       try {
         const query = anime.titleJa || anime.titleZh;
         const res = await fetch(`https://api.jikan.moe/v4/anime?q=${encodeURIComponent(query)}&limit=1`);
@@ -146,27 +158,11 @@ export function useRichAnimeDetail(anime?: Anime | null, enabled: boolean = true
           MEMORY_CACHE[cacheKey] = fetched;
           saveToLocalStorage();
           setDetail(fetched);
-        } else if (isMounted) {
-          const fallback: RichDetail = {
-            synopsis: (anime as any).userComment ? `備忘記錄：${(anime as any).userComment}` : t('modalNoSynopsis'),
-            studio: '動畫工作室',
-            loading: false
-          };
-          MEMORY_CACHE[cacheKey] = fallback;
-          saveToLocalStorage();
-          setDetail(fallback);
+        } else {
+          applyFallback();
         }
-      } catch (err) {
-        if (isMounted) {
-          const fallback: RichDetail = {
-            synopsis: (anime as any).userComment ? `備忘記錄：${(anime as any).userComment}` : t('modalNoSynopsis'),
-            studio: '動畫工作室',
-            loading: false
-          };
-          MEMORY_CACHE[cacheKey] = fallback;
-          saveToLocalStorage();
-          setDetail(fallback);
-        }
+      } catch {
+        applyFallback();
       }
     };
 

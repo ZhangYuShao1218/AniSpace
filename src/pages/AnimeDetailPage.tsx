@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Star, Clock, Film, ChevronLeft, Layers, Loader2, Play, Heart, Check } from 'lucide-react';
 import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
-import ReviewModal from '@/components/modals/ReviewModal';
 import { getPlatformIcon } from '@/components/core/PlatformIcon';
 import './AnimeDetailPage.css';
+
+const ReviewModal = lazy(() => import('@/components/modals/ReviewModal'));
 
 const AnimeDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -190,12 +191,14 @@ const AnimeDetailPage: React.FC = () => {
         )}
       </div>
 
-      <ReviewModal
-        isOpen={isReviewModalOpen}
-        onClose={() => setIsReviewModalOpen(false)}
-        anime={watchedMap.get(anime.id) || anime}
-        onSave={handleSaveReview}
-      />
+      <Suspense fallback={null}>
+        <ReviewModal
+          isOpen={isReviewModalOpen}
+          onClose={() => setIsReviewModalOpen(false)}
+          anime={watchedMap.get(anime.id) || anime}
+          onSave={handleSaveReview}
+        />
+      </Suspense>
     </div>
   );
 };

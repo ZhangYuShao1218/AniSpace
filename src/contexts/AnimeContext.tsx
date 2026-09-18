@@ -29,7 +29,7 @@ const fetchDataVersion = async (): Promise<number | null> => {
         return json.version;
       }
     }
-  } catch (e) { }
+  } catch { }
   return null;
 };
 
@@ -48,7 +48,7 @@ const fetchAndMergeAnimeData = async (): Promise<Anime[] | null> => {
     if (overrideRes && overrideRes.ok) {
       try {
         overrideData = await overrideRes.json();
-      } catch (e) { }
+      } catch { }
     }
     
     if (baseData && baseData.length > 0) {

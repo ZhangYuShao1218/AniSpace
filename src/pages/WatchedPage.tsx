@@ -32,7 +32,7 @@ const WatchedPage = () => {
   }, [setSearchParams]);
 
   const filteredData = useMemo(() => {
-    let result = watchedList;
+    let result = [...watchedList];
 
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();

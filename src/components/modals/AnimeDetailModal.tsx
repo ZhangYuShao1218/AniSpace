@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef, lazy, Suspense } from 'react';
 import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { X, Star, Clock, Film, Play, Layers, Loader2, Heart, Check } from 'lucide-react';
@@ -7,9 +7,10 @@ import { useAnime } from '@/contexts/AnimeContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useAdMob } from '@/contexts/AdMobContext';
 import { useRichAnimeDetail } from '@/hooks/useRichAnimeDetail';
-import ReviewModal from '@/components/modals/ReviewModal';
 import { getPlatformIcon } from '@/components/core/PlatformIcon';
 import './AnimeDetailModal.css';
+
+const ReviewModal = lazy(() => import('@/components/modals/ReviewModal'));
 
 
 const getSourceTranslation = (source: string, lang: string) => {
@@ -430,12 +431,14 @@ export const AnimeDetailModal: React.FC = () => {
       </div>
 
       {/* 疊加在詳細視窗上的評分短評視窗 (ReviewModal 具有 z-index: 2000) */}
-      <ReviewModal
-        isOpen={isReviewModalOpen}
-        onClose={() => setIsReviewModalOpen(false)}
-        anime={watchedMap.get(anime.id) || anime}
-        onSave={handleSaveReview}
-      />
+      <Suspense fallback={null}>
+        <ReviewModal
+          isOpen={isReviewModalOpen}
+          onClose={() => setIsReviewModalOpen(false)}
+          anime={watchedMap.get(anime.id) || anime}
+          onSave={handleSaveReview}
+        />
+      </Suspense>
     </div>
   );
 

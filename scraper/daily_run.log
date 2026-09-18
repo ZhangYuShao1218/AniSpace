@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/9/17 下午3:59:55
+執行時間: 2026/9/18 下午3:38:02
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午3:59:55] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午3:38:02] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -272,33 +272,11 @@ AniSpace 每日任務完整執行 Log
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午4:12:57] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午3:48:24] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-[Diff] 發現更官方譯名 anilist-178083: 舊譯名 "東京卍復仇者 三天戰爭篇" ➜ 新譯名 "東京復仇者 三天戰爭篇"，清除過時的 Override: "東京卍復仇者 三天戰爭篇"
-[Diff] 發現更官方譯名 anilist-185756: 舊譯名 "轉生貴族憑鑑定技能白手起家 第三季" ➜ 新譯名 "轉生貴族憑鑑定技能扭轉人生 第三季"，清除過時的 Override: "轉生貴族憑鑑定技能白手起家 第三季"
-[Diff] 發現更官方譯名 anilist-205909: 舊譯名 "螢火蟲之婚" ➜ 新譯名 "螢火蟲的出嫁"，清除過時的 Override: "螢火蟲之婚"
-[Diff] 發現更官方譯名 anilist-206814: 舊譯名 "七龍珠超 比魯斯" ➜ 新譯名 "龍珠超 比路斯"，清除過時的 Override: "七龍珠超 比魯斯"
-[Diff] 發現更官方譯名 anilist-212503: 舊譯名 "冰劍魔術師將要掌控世界 II" ➜ 新譯名 "冰劍的魔術師將要統一世界 第二季"，清除過時的 Override: "冰劍魔術師將要掌控世界 II"
-[Diff] 發現更官方譯名 anilist-187402: 舊譯名 "轉生的大聖女決定隱瞞聖女的身分" ➜ 新譯名 "轉生後的大聖女，極力隱瞞聖女的身分"，清除過時的 Override: "轉生的大聖女決定隱瞞聖女的身分"
-[Diff] 發現更官方譯名 anilist-204011: 舊譯名 "PSYREN -末日遊戲-" ➜ 新譯名 "PSYREN－末日遊戲－"，清除過時的 Override: "PSYREN -末日遊戲-"
-[Diff] 發現更官方譯名 anilist-186541: 舊譯名 "醒來後擁有最強裝備和宇宙船，所以想以一戶建為目標作為傭兵自由地生活" ➜ 新譯名 "一覺醒來就有了最強裝備跟太空船 決定以自家獨棟建築為目標當傭兵自由過活"，清除過時的 Override: "醒來後擁有最強裝備和宇宙船，所以想以一戶建為目標作為傭兵自由地生活"
-[Diff] 發現更官方譯名 anilist-212888: 舊譯名 "裝備我最強～裝備的力量～" ➜ 新譯名 "裝備仔"，清除過時的 Override: "裝備我最強～裝備的力量～"
-[Diff] 發現更官方譯名 anilist-209502: 舊譯名 "鹽對應的佐藤同學只對我甜言蜜語" ➜ 新譯名 "冷淡的佐藤同學只對我撒嬌"，清除過時的 Override: "鹽對應的佐藤同學只對我甜言蜜語"
-[Diff] 發現更官方譯名 anilist-207191: 舊譯名 "你好，我是被心上人委託製作迷魂藥的魔女。" ➜ 新譯名 "你好，身為魔女的我，被心上人委託製作迷情藥"，清除過時的 Override: "你好，我是被心上人委託製作迷魂藥的魔女。"
-[Diff] 發現更官方譯名 anilist-195571: 舊譯名 "朱紅色的假面" ➜ 新譯名 "硃色的面具"，清除過時的 Override: "朱紅色的假面"
-[Diff] 發現更官方譯名 anilist-208025: 舊譯名 "和暗黑召喚師交往中" ➜ 新譯名 "與暗黑召喚師秘密戀愛中"，清除過時的 Override: "和暗黑召喚師交往中"
-[Diff] 發現更官方譯名 anilist-211778: 舊譯名 "世界最強的魔女，開始了" ➜ 新譯名 "世界最強的魔女，就此開始"，清除過時的 Override: "世界最強的魔女，開始了"
-[Diff] 發現更官方譯名 anilist-199007: 舊譯名 "#尋找殭屍" ➜ 新譯名 "#尋找殭屍中"，清除過時的 Override: "#尋找殭屍"
-[Diff] 發現更官方譯名 anilist-200455: 舊譯名 "明明是膽小MAX的千金，卻答應了幹練婚約者的賭約" ➜ 新譯名 "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局"，清除過時的 Override: "明明是膽小MAX的千金，卻答應了幹練婚約者的賭約"
-[Diff] 發現更官方譯名 anilist-209499: 舊譯名 "TANK CHAIR-戰車輪椅-" ➜ 新譯名 "戰車椅子-TANK CHAIR-"，清除過時的 Override: "TANK CHAIR-戰車輪椅-"
-[Diff] 發現更官方譯名 anilist-203473: 舊譯名 "恐怖收集家" ➜ 新譯名 "恐怖收集者"，清除過時的 Override: "恐怖收集家"
-[Diff] 發現更官方譯名 anilist-202250: 舊譯名 "借出的魔力以【循環分期】強制徵收" ➜ 新譯名 "用【循環利息】強制收回借出的魔力"，清除過時的 Override: "借出的魔力以【循環分期】強制徵收"
-[Diff] 發現更官方譯名 anilist-213805: 舊譯名 "冰之城壁 第二季" ➜ 新譯名 "冰之城牆 第二季"，清除過時的 Override: "冰之城壁 第二季"
-[Diff] 發現更官方譯名 anilist-205896: 舊譯名 "與信徒為零的女神展開異世界攻略" ➜ 新譯名 "和沒有信徒的女神大人一起攻略異世界"，清除過時的 Override: "與信徒為零的女神展開異世界攻略"
-[Diff] 發現更官方譯名 anilist-206401: 舊譯名 "FX戰士久留美" ➜ 新譯名 "FX 戰士久留美"，清除過時的 Override: "FX戰士久留美"
-Updated custom_override.json based on translation diffs.
+No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260917.json
+Created daily backup: anime_data_backup_20260918.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -353,11 +331,12 @@ Deleted old backup: anime_data_backup_20260907.json
 Deleted old backup: anime_data_backup_20260908.json
 Deleted old backup: anime_data_backup_20260909.json
 Deleted old backup: anime_data_backup_20260910.json
-Updated dataVersion in package.json and public/data_version.json to: 00161 (161)
+Deleted old backup: anime_data_backup_20260911.json
+Updated dataVersion in package.json and public/data_version.json to: 00162 (162)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午4:12:57] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午3:48:24] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
 
 🎉 Synopsis fetching complete. Processed 0 animes.
@@ -371,11 +350,12 @@ Updated dataVersion in package.json and public/data_version.json to: 00161 (161)
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午4:14:29] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午3:49:53] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 113 筆原始資料交由 Gemini AI 進行分析與篩選...
+準備將 152 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 83 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -383,18 +363,17 @@ Updated dataVersion in package.json and public/data_version.json to: 00161 (161)
 ✔️ 正常: TOYeGO 玩具e哥
 
 ✅ 檢查與更新完成！已寫入 /home/runner/work/AniSpace/AniSpace/public/affiliates.json 與 /home/runner/work/AniSpace/AniSpace/public/product_images.json
-Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午4:16:31] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午3:51:46] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.2 - (00161)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00162)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.2
-・動畫資料庫版號：(00161)
+・動畫資料庫版號：(00162)
 -------------------------------------
 
 【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3677 筆，新增資料 0 筆，AI 翻譯 0 筆。
@@ -402,7 +381,7 @@ Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"mess
 🔗 未對應 bangumi_data 動畫數量：420 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 113 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 83 項高價值商品。
 
 
 
@@ -412,11 +391,11 @@ Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"mess
 本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-9-17.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-9-18.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午4:16:36] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午3:51:50] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3681 URLs.
 

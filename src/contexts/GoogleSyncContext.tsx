@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 import { useGoogleLogin, googleLogout } from '@react-oauth/google';
 import { Capacitor } from '@capacitor/core';
 import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
@@ -77,19 +77,6 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       });
     }
   }, []);
-
-  // 自動備份機制
-  useEffect(() => {
-    if (!accessToken || !isLoggedIn || !isAutoSyncEnabled) return;
-
-    // 使用 setTimeout 進行防抖 (debounce)，避免頻繁變動時連續觸發 API
-    const timer = setTimeout(() => {
-      // 偷偷進行備份 (傳入 isAutoSync = true)
-      syncToDrive(true).catch(err => console.error('Auto sync failed:', err));
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, [watchedList, planToWatchList, customAnimeList, corrections, accessToken, isLoggedIn]);
 
   const webLogin = useGoogleLogin({
     onSuccess: (tokenResponse) => {
@@ -261,6 +248,25 @@ export const GoogleSyncProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       setIsSyncing(false);
     }
   };
+
+  // 保持 syncToDrive 最新版本的參照，避免自動備份的防抖 effect 需要把它列為依賴 (那會導致每次 render 都重設計時器)
+  const syncToDriveRef = useRef(syncToDrive);
+  useEffect(() => {
+    syncToDriveRef.current = syncToDrive;
+  });
+
+  // 自動備份機制
+  useEffect(() => {
+    if (!accessToken || !isLoggedIn || !isAutoSyncEnabled) return;
+
+    // 使用 setTimeout 進行防抖 (debounce)，避免頻繁變動時連續觸發 API
+    const timer = setTimeout(() => {
+      // 偷偷進行備份 (傳入 isAutoSync = true)
+      syncToDriveRef.current(true).catch(err => console.error('Auto sync failed:', err));
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [watchedList, planToWatchList, customAnimeList, corrections, accessToken, isLoggedIn, isAutoSyncEnabled]);
 
   const restoreFlow = async (token: string) => {
     setIsSyncing(true);

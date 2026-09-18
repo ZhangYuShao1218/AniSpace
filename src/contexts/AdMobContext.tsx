@@ -188,7 +188,7 @@ export const AdMobProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }, 1000);
 
       return true;
-    } catch (error: any) {
+    } catch {
       // 若第一次顯示失敗（可能還沒準備好或過期），嘗試重新載入後再顯示一次
       try {
         await prepareInterstitialAd();

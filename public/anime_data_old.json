@@ -591,7 +591,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 6
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -829,7 +829,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 7
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -945,7 +945,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 10
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -4140,7 +4140,6 @@
       "劇情",
       "動作",
       "喜劇",
-      "憂鬱",
       "末日",
       "科幻",
       "超能力",
@@ -5607,7 +5606,8 @@
     "yearSeason": "2026 春",
     "genres": [
       "喜劇",
-      "愛情"
+      "愛情",
+      "校園"
     ],
     "streamings": [
       {

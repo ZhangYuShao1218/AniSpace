@@ -330,14 +330,14 @@
   {
     "id": "anilist-204650",
     "titleZh": "桃源暗鬼 日光・華嚴瀑布篇",
-    "titleEn": "Tougen Anki: Nikko Kegon Falls Arc",
+    "titleEn": "TOUGEN ANKI: Nikko Kegon Falls Arc",
     "titleJa": "桃源暗鬼 日光・華厳の滝編",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204650-5qXlU69CHwKA.jpg",
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 2
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -685,7 +685,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 10
     },
     "yearSeason": "2026 秋",
     "genres": [

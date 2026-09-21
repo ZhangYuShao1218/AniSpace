@@ -41,7 +41,8 @@
   },
   "anilist-213657": {
     "source": "manual",
-    "titleZh": "夜櫻家大作戰 第二季 後篇"
+    "titleZh": "夜櫻家大作戰 第二季 後篇",
+    "bangumiDataTitle": "夜桜さんちの大作戦(第2期)第2クール"
   },
   "anilist-159309": {
     "source": "manual",
@@ -663,7 +664,8 @@
   },
   "anilist-199426": {
     "source": "manual",
-    "titleZh": "殺手旅店 第二季"
+    "titleZh": "殺手旅店 第二季",
+    "bangumiDataTitle": "ホテル・インヒューマンズ(第2期)"
   },
   "anilist-198946": {
     "titleZh": "Clevatess Ⅱ－魔獸之王與虛假的勇者傳承－",
@@ -958,7 +960,6 @@
     "source": "ai"
   },
   "anilist-9441": {
-    "titleZh": "夢色蛋糕師SP 專業版",
     "source": "ai"
   },
   "anilist-9515": {
@@ -2347,8 +2348,8 @@
     "source": "ai"
   },
   "anilist-152677": {
-    "titleZh": "偵探已經，死了。第二季",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "探偵はもう、死んでいる。 Season2"
   },
   "anilist-154541": {
     "titleZh": "中高一貫!!鬼滅學園物語 ～鬼滅之宴=特別篇=～",
@@ -2413,7 +2414,6 @@
     "source": "ai"
   },
   "anilist-169581": {
-    "titleZh": "Magical★Explorer 轉生為成人遊戲的小配角，活用遊戲知識自由生活",
     "source": "ai"
   },
   "anilist-170206": {
@@ -2430,8 +2430,8 @@
     "source": "ai"
   },
   "anilist-176314": {
-    "titleZh": "佐佐木與文鳥賢者 第二季",
-    "source": "ai"
+    "titleZh": "佐佐木與文鳥小嗶 Season 2",
+    "source": "gamer"
   },
   "anilist-178083": {
     "source": "ai"
@@ -2443,7 +2443,6 @@
     "source": "ai"
   },
   "anilist-178868": {
-    "titleZh": "魔法騎士雷阿斯 (2026)",
     "source": "ai"
   },
   "anilist-179344": {
@@ -2466,20 +2465,20 @@
     "source": "ai"
   },
   "anilist-185756": {
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "転生貴族、鑑定スキルで成り上がる(第3期)"
   },
   "anilist-186541": {
     "source": "ai"
   },
   "anilist-186742": {
-    "titleZh": "某暗部的少女共棲",
     "source": "ai"
   },
   "anilist-187402": {
-    "source": "ai"
+    "source": "gamer",
+    "titleZh": "轉生後的大聖女，極力隱瞞聖女的身分"
   },
   "anilist-189123": {
-    "titleZh": "藍箱 第二季",
     "source": "ai"
   },
   "anilist-191788": {
@@ -2492,7 +2491,8 @@
   },
   "anilist-195516": {
     "titleZh": "藥師少女的獨語 第三季",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "薬屋のひとりごと(第3期)"
   },
   "anilist-195539": {
     "titleZh": "電馭叛客：邊緣行者 2",
@@ -2557,7 +2557,6 @@
     "source": "ai"
   },
   "anilist-206949": {
-    "titleZh": "凶亂令媛 妮亞・利斯頓",
     "source": "ai"
   },
   "anilist-207191": {
@@ -2568,8 +2567,8 @@
     "source": "ai"
   },
   "anilist-207329": {
-    "titleZh": "被逐出隊伍的作弊級附加魔術師，謳歌著隨心所欲的第二人生。～我不只可以對武器，還能對任何東西賦予『強化點數』，而且能隨時憑我的意思解除效果，但剩下的人們還好嗎？～",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
   },
   "anilist-208025": {
     "source": "ai"
@@ -2610,7 +2609,8 @@
     "source": "ai"
   },
   "anilist-213805": {
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "氷の城壁(第2期)"
   },
   "anilist-125038": {
     "titleZh": "SHADOWS HOUSE-影宅",
@@ -4095,7 +4095,9 @@
     "coverImage": "https://i0.hdslb.com/bfs/bangumi/4270c14cf6a0300e578a50f2b1b96356f29cbb23.jpg"
   },
   "anilist-20447": {
-    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20447-EoQXeygHaVCK.jpg"
+    "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20447-EoQXeygHaVCK.jpg",
+    "titleZh": "流浪神差介紹故事背景宣傳影片STAFFCAST",
+    "source": "gamer"
   },
   "anilist-18671": {
     "coverImage": "https://i0.hdslb.com/bfs/bangumi/b69a9fc2ce1c50915b3158c2f6ac51ed64101b23.jpg"
@@ -5632,7 +5634,6 @@
     "source": "ai"
   },
   "anilist-209219": {
-    "titleZh": "轉生哥布林，有問題想問嗎？",
     "source": "ai"
   },
   "anilist-209463": {
@@ -5666,8 +5667,8 @@
     "source": "ai"
   },
   "anilist-204389": {
-    "titleZh": "野生 Boss 出現了！ 第二季",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "野生のラスボスが現れた！(第2期)"
   },
   "anilist-212539": {
     "titleZh": "章魚嗶的原罪 -謝謝你，明天見-",
@@ -5687,5 +5688,9 @@
   "anilist-180894": {
     "titleZh": "蘿梅莉亞戰記～打倒魔王後人類處境好像還是很不妙，於是組織了軍隊～",
     "source": "ai"
+  },
+  "anilist-179813": {
+    "titleZh": "雞鬥士",
+    "source": "gamer"
   }
 }

@@ -15,6 +15,20 @@
     "genres": [
       "劇情",
       "懸疑"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "全球/日本",
+        "url": "https://ch.nicovideo.jp/kusuriyanohitorigoto3"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0316422"
+      }
     ]
   },
   {
@@ -99,7 +113,7 @@
   },
   {
     "id": "anilist-189123",
-    "titleZh": "藍箱 第二季",
+    "titleZh": "青春之箱 第二季",
     "titleEn": "Blue Box Season 2",
     "titleJa": "アオのハコ Season２",
     "coverImageGamer": "",
@@ -115,6 +129,20 @@
       "日常",
       "校園",
       "運動"
+    ],
+    "streamings": [
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316438"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/aonohako-anime2"
+      }
     ]
   },
   {
@@ -159,7 +187,7 @@
   },
   {
     "id": "anilist-152677",
-    "titleZh": "偵探已經，死了。第二季",
+    "titleZh": "偵探已經，死了。 第二季",
     "titleEn": "The Detective Is Already Dead Season 2",
     "titleJa": "探偵はもう、死んでいる。Season2",
     "coverImageGamer": "",
@@ -176,7 +204,8 @@
       "愛情",
       "懸疑",
       "超自然"
-    ]
+    ],
+    "streamings": []
   },
   {
     "id": "anilist-210482",
@@ -269,6 +298,14 @@
     "genres": [
       "冒險",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "全球/日本",
+        "url": "https://ch.nicovideo.jp/kanteiskill3"
+      }
     ]
   },
   {
@@ -287,14 +324,28 @@
     "genres": [
       "劇情",
       "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/hotaru"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316421"
+      }
     ]
   },
   {
     "id": "anilist-176314",
-    "titleZh": "佐佐木與文鳥賢者 第二季",
+    "titleZh": "佐佐木與文鳥小嗶 第二季",
     "titleEn": "Sasaki and Peeps Season 2",
     "titleJa": "佐々木とピーちゃん シーズン２",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/01/0000138501.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-dvPRzlyafTTZ.jpg",
     "startDate": {
       "year": 2026,
@@ -306,6 +357,14 @@
       "喜劇",
       "奇幻",
       "魔法少女"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=138501"
+      }
     ]
   },
   {
@@ -401,11 +460,25 @@
       "動作",
       "奇幻",
       "校園"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/hyouken2"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316388"
+      }
     ]
   },
   {
     "id": "anilist-178868",
-    "titleZh": "魔法騎士雷阿斯 (2026)",
+    "titleZh": "魔法騎士雷阿斯",
     "titleEn": "Magic Knight Rayearth (2026)",
     "titleJa": "魔法騎士レイアース (2026)",
     "coverImageGamer": "",
@@ -423,14 +496,22 @@
       "異世界",
       "超能力",
       "魔法少女"
+    ],
+    "streamings": [
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316437"
+      }
     ]
   },
   {
     "id": "anilist-187402",
-    "titleZh": "轉生後的大聖女，極力隱瞞聖女的身分",
+    "titleZh": "轉生後的大聖女，極力隱瞞聖女的身份",
     "titleEn": "A Tale of the Secret Saint",
     "titleJa": "転生した大聖女は、聖女であることをひた隠す",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/10/0000144110.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187402-qPbg4OZlQXxL.jpg",
     "startDate": {
       "year": 2026,
@@ -442,6 +523,14 @@
       "冒險",
       "動作",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=144110"
+      }
     ]
   },
   {
@@ -465,7 +554,7 @@
   },
   {
     "id": "anilist-186541",
-    "titleZh": "一覺醒來就有了最強裝備跟太空船 決定以自家獨棟建築為目標當傭兵自由過活",
+    "titleZh": "一覺醒來坐擁神裝和飛船，我決定以買一套獨門獨戶的房子為目標作為傭兵自由地活下去",
     "titleEn": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
     "titleJa": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい",
     "coverImageGamer": "",
@@ -489,7 +578,7 @@
   },
   {
     "id": "anilist-160803",
-    "titleZh": "魔法少女育成計畫 restart",
+    "titleZh": "魔法少女育成計劃 restart",
     "titleEn": "",
     "titleJa": "魔法少女育成計画 restart",
     "coverImageGamer": "",
@@ -509,7 +598,7 @@
   },
   {
     "id": "anilist-186742",
-    "titleZh": "某暗部的少女共棲",
+    "titleZh": "暗部少女共棲",
     "titleEn": "",
     "titleJa": "とある暗部の少女共棲",
     "coverImageGamer": "",
@@ -546,7 +635,7 @@
   },
   {
     "id": "anilist-212888",
-    "titleZh": "裝備仔",
+    "titleZh": "裝備我最強",
     "titleEn": "Overgeared",
     "titleJa": "テムパル～アイテムの力～",
     "coverImageGamer": "",
@@ -562,11 +651,25 @@
       "動作",
       "喜劇",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tempal"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316382"
+      }
     ]
   },
   {
     "id": "anilist-206949",
-    "titleZh": "兇亂令媛 妮亞・利斯頓",
+    "titleZh": "亂世千金倪亞‧利斯頓轉生為嬌弱千金的弒神武人華麗無雙錄",
     "titleEn": "Nia Liston: The Merciless Maiden",
     "titleJa": "凶乱令嬢ニア・リストン",
     "coverImageGamer": "",
@@ -601,7 +704,7 @@
   },
   {
     "id": "anilist-169581",
-    "titleZh": "Magical★Explorer 轉生為成人遊戲的小配角，活用遊戲知識自由生活",
+    "titleZh": "魔法★探險家",
     "titleEn": "Magical Explorer",
     "titleJa": "マジカル★エクスプローラー　エロゲの友人キャラに転生したけど、ゲーム知識使って自由に生きる",
     "coverImageGamer": "",
@@ -659,7 +762,7 @@
   },
   {
     "id": "anilist-207191",
-    "titleZh": "你好，身為魔女的我，被心上人委託製作迷情藥",
+    "titleZh": "你好、我是受心上人所託來做戀愛藥的魔女。",
     "titleEn": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
     "titleJa": "どうも、好きな人に惚れ薬を依頼された魔女です。",
     "coverImageGamer": "",
@@ -677,10 +780,10 @@
   },
   {
     "id": "anilist-195571",
-    "titleZh": "硃色的面具",
+    "titleZh": "朱紅的假面",
     "titleEn": "The Vermilion Mask",
     "titleJa": "朱色の仮面",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/57/0000146157.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195571-Pamu2vEgJtTB.jpg",
     "startDate": {
       "year": 2026,
@@ -692,30 +795,46 @@
       "劇情",
       "動作",
       "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=146157"
+      }
     ]
   },
   {
     "id": "anilist-213657",
-    "titleZh": "夜櫻家大作戰 第二季 後篇",
+    "titleZh": "夜櫻家大作戰 第二季 第2部分",
     "titleEn": "Mission: Yozakura Family Season 2 Part 2",
     "titleJa": "夜桜さんちの大作戦 第2期 第2クール",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/76/0000141776.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213657-810vFC6SN7xd.png",
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 11
     },
     "yearSeason": "2026 秋",
     "genres": [
       "動作",
       "喜劇",
       "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=48566"
+      }
     ]
   },
   {
     "id": "anilist-204431",
-    "titleZh": "怪獸8號 鳴海的平日",
+    "titleZh": "怪獸 8 號 原創短篇動畫 鳴海的平日",
     "titleEn": "Narumi's Week at Work",
     "titleJa": "怪獣８号 鳴海の平日",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/07/0000154107.JPG",
@@ -728,38 +847,6 @@
     "yearSeason": "2026 秋",
     "genres": [
       "日常"
-    ],
-    "streamings": [
-      {
-        "site": "ani_one",
-        "name": "Ani-One YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLM4zo1T79_Zw"
-      },
-      {
-        "site": "ani_one_asia",
-        "name": "Ani-One Asia",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLKKJ9OBjOPq8"
-      },
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51391"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "全球/日本",
-        "url": "https://video.unext.jp/title/SID0305865"
-      },
-      {
-        "site": "danime",
-        "name": "d動畫商城",
-        "region": "全球/日本",
-        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29218"
-      }
     ]
   },
   {
@@ -797,11 +884,19 @@
       "劇情",
       "愛情",
       "福利"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/kanojo-no-tomodachi"
+      }
     ]
   },
   {
     "id": "anilist-208025",
-    "titleZh": "與暗黑召喚師秘密戀愛中",
+    "titleZh": "黑暗召喚師在地下戀愛中",
     "titleEn": "I'm Dating a Dark Summoner",
     "titleJa": "ダークサモナーとデキている",
     "coverImageGamer": "",
@@ -817,11 +912,19 @@
       "奇幻",
       "愛情",
       "福利"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/darksummoner"
+      }
     ]
   },
   {
     "id": "anilist-207329",
-    "titleZh": "被逐出隊伍的作弊級附加魔術師，謳歌著隨心所欲的第二人生。～我不只可以對武器，還能對任何東西賦予『強化點數』，而且能隨時憑我的意思解除效果，但剩下的人們還好嗎？～",
+    "titleZh": "被流放的開掛魔術師謳歌隨心所欲第二人生",
     "titleEn": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
     "titleJa": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
     "coverImageGamer": "",
@@ -837,7 +940,8 @@
       "喜劇",
       "奇幻",
       "日常"
-    ]
+    ],
+    "streamings": []
   },
   {
     "id": "anilist-211778",
@@ -860,7 +964,7 @@
   },
   {
     "id": "anilist-199007",
-    "titleZh": "#尋找殭屍中",
+    "titleZh": "殭屍搜尋中",
     "titleEn": "#I'm Looking For a Zombie",
     "titleJa": "#ゾンビさがしてます",
     "coverImageGamer": "",
@@ -881,7 +985,7 @@
   },
   {
     "id": "anilist-200455",
-    "titleZh": "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局",
+    "titleZh": "弱氣MAX的大小姐、居然接受了鐵腕未婚夫的賭約",
     "titleEn": "Even Though I'm a Super Timid Noble Girl, I Accepted the Bet From My Cunning Fiancé",
     "titleJa": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
     "coverImageGamer": "",
@@ -897,6 +1001,14 @@
       "奇幻",
       "惡役千金",
       "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/yowaki-max"
+      }
     ]
   },
   {
@@ -915,11 +1027,12 @@
     "genres": [
       "劇情",
       "動作"
-    ]
+    ],
+    "streamings": []
   },
   {
     "id": "anilist-209499",
-    "titleZh": "戰車椅子-TANK CHAIR-",
+    "titleZh": "戰車椅子",
     "titleEn": "",
     "titleJa": "TANK CHAIR-戦車椅子-",
     "coverImageGamer": "",
@@ -975,7 +1088,7 @@
   },
   {
     "id": "anilist-202250",
-    "titleZh": "用【循環利息】強制收回借出的魔力",
+    "titleZh": "借出去的魔力要用【分期還款】強制收回",
     "titleEn": "",
     "titleJa": "貸した魔力は【リボ払い】で強制徴収",
     "coverImageGamer": "",
@@ -1010,7 +1123,8 @@
       "喜劇",
       "愛情",
       "日常"
-    ]
+    ],
+    "streamings": []
   },
   {
     "id": "anilist-191656",
@@ -1131,15 +1245,15 @@
   },
   {
     "id": "anilist-209219",
-    "titleZh": "轉生哥布林，有問題想問嗎？",
-    "titleEn": "",
+    "titleZh": "轉生哥布林有什麼問題嗎？",
+    "titleEn": "So What's Wrong with Getting Reborn as a Goblin?",
     "titleJa": "転生ゴブリンだけど質問ある？",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/92/0000150292.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-vU7uIlcKmVlW.jpg",
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": null
+      "day": 5
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -1149,6 +1263,20 @@
       "喜劇",
       "奇幻",
       "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=150292"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316460"
+      }
     ]
   },
   {
@@ -1209,7 +1337,7 @@
   },
   {
     "id": "anilist-206401",
-    "titleZh": "FX 戰士久留美",
+    "titleZh": "FX戰士久留美",
     "titleEn": "FX Fighter Kurumi-chan",
     "titleJa": "FX戦士くるみちゃん",
     "coverImageGamer": "",
@@ -1223,11 +1351,19 @@
     "genres": [
       "劇情",
       "日常"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/fxkurumi"
+      }
     ]
   },
   {
     "id": "anilist-204389",
-    "titleZh": "野生 Boss 出現了！ 第二季",
+    "titleZh": "野生的大魔王出現了！ 第二季",
     "titleEn": "A Wild Last Boss Appeared! Season 2",
     "titleJa": "野生のラスボスが現れた！ 第2期",
     "coverImageGamer": "",
@@ -1243,6 +1379,14 @@
       "動作",
       "奇幻",
       "異世界"
+    ],
+    "streamings": [
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0316400"
+      }
     ]
   },
   {
@@ -2666,6 +2810,7 @@
     "yearSeason": "2026 夏",
     "genres": [
       "劇情",
+      "奇幻",
       "惡役千金",
       "愛情"
     ],
@@ -2793,7 +2938,8 @@
     "genres": [
       "劇情",
       "奇幻",
-      "愛情"
+      "愛情",
+      "憂鬱"
     ],
     "streamings": [
       {
@@ -3914,6 +4060,12 @@
       "時空輪迴"
     ],
     "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H6WVZ6DC"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -7258,7 +7410,7 @@
     "titleZh": "ROOSTER FIGHTER 怒火雞頭",
     "titleEn": "Rooster Fighter",
     "titleJa": "ニワトリ・ファイター",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/82/0000140582.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179813-cLHpUPV1IiEm.jpg",
     "startDate": {
       "year": 2026,
@@ -7274,6 +7426,12 @@
       "超自然"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51378"
+      },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
@@ -9485,6 +9643,12 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81756595"
+      },
+      {
+        "site": "bilibili",
+        "name": "Bilibili",
+        "region": "中國",
+        "url": "https://www.bilibili.com/bangumi/media/md305846190/"
       }
     ]
   },
@@ -11949,6 +12113,14 @@
       "喜劇",
       "科幻",
       "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H8PD4WNK"
+      }
     ]
   },
   {
@@ -12289,6 +12461,14 @@
     "yearSeason": "2026 冬",
     "genres": [
       "劇情"
+    ],
+    "streamings": [
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0318107"
+      }
     ]
   },
   {
@@ -35503,6 +35683,12 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0CVH25RNL"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G9VHN9QWQ/"
+      },
+      {
         "site": "abema",
         "name": "ABEMA",
         "region": "日本",
@@ -49911,6 +50097,12 @@
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=113181"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GQWH0MP94/"
+      },
+      {
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
@@ -50943,6 +51135,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27289"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/189-90"
       }
     ]
   },
@@ -54065,6 +54263,7 @@
     "yearSeason": "2022 夏",
     "genres": [
       "劇情",
+      "後宮",
       "心理",
       "懸疑",
       "校園"
@@ -55067,6 +55266,12 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=113089"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GJ0H7Q8J0/"
       },
       {
         "site": "nicovideo",
@@ -59995,6 +60200,12 @@
         "url": "https://www.crunchyroll.com/series/G1XHJV3MV/"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H2HMTRC5"
+      },
+      {
         "site": "abema",
         "name": "ABEMA",
         "region": "日本",
@@ -64701,7 +64912,7 @@
         "site": "prime",
         "name": "Prime Video",
         "region": "全球",
-        "url": "https://www.amazon.co.jp/gp/video/detail/B09H69JDBL"
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H2HMTRC5"
       },
       {
         "site": "nicovideo",
@@ -65538,6 +65749,12 @@
       "愛情"
     ],
     "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GZJH3DPM1/"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -75701,6 +75918,12 @@
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=111121"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GRVD0ZDQR/"
+      },
+      {
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
@@ -77830,6 +78053,12 @@
         "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRuurOAK7tyvzYBZPcil5Sj"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G9VHN9P7W/"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -79696,16 +79925,16 @@
         "url": "https://video.unext.jp/title/SID0097082"
       },
       {
-        "site": "crunchyroll",
-        "name": "Crunchyroll",
-        "region": "全球/日本",
-        "url": "https://www.crunchyroll.com/series/G62487M9Y/"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "全球/日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26780"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球/日本",
+        "url": "https://www.crunchyroll.com/series/GMTE00328977/"
       }
     ]
   },
@@ -88313,6 +88542,12 @@
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=12079"
       },
       {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/playlist?list=PLLhIibg4edbc"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -88522,6 +88757,12 @@
         "name": "Bilibili",
         "region": "台灣",
         "url": "https://www.bilibili.com/bangumi/media/md28220842/"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GYVD185XY/"
       },
       {
         "site": "nicovideo",
@@ -103626,6 +103867,7 @@
     "yearSeason": "2017 夏",
     "genres": [
       "劇情",
+      "後宮",
       "心理",
       "校園"
     ],
@@ -105153,6 +105395,12 @@
       "校園"
     ],
     "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GYNQZV50Y/"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -107281,6 +107529,12 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrh9f5ut.html"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H37K66GF"
       },
       {
         "site": "nicovideo",
@@ -111612,6 +111866,12 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrh9toi9.html"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H3F53MTQ"
       },
       {
         "site": "nicovideo",
@@ -116754,6 +117014,12 @@
         "url": "https://www.iqiyi.com/a_19rrhak5wl.html"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GYWE2J9JY/"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -117693,6 +117959,12 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrheq40t.html"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GRVNX917Y/"
       },
       {
         "site": "unext",
@@ -122279,6 +122551,12 @@
     ],
     "streamings": [
       {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=21610"
+      },
+      {
         "site": "iqiyi",
         "name": "愛奇藝",
         "region": "亞洲",
@@ -122438,6 +122716,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20169"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/190-30"
       }
     ]
   },
@@ -124284,6 +124568,18 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrhaylad.html"
+      },
+      {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLXD7t-gmTqKA"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLcQazmUNKvRQ"
       },
       {
         "site": "nicovideo",
@@ -126373,7 +126669,7 @@
         "site": "prime",
         "name": "Prime Video",
         "region": "全球",
-        "url": "https://www.amazon.co.jp/gp/video/detail/B0GDTSG931"
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GWGZCC37"
       },
       {
         "site": "muse_hk",
@@ -128579,6 +128875,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11475"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/171-29"
       },
       {
         "site": "bilibili",
@@ -135005,7 +135307,7 @@
     "titleZh": "流浪神差",
     "titleEn": "Noragami",
     "titleJa": "ノラガミ",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/59/0000063959.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20447-EoQXeygHaVCK.jpg",
     "startDate": {
       "year": 2014,
@@ -135020,6 +135322,12 @@
       "超自然"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=9529"
+      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -136995,6 +137303,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21214"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/19-297"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -137629,6 +137943,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21565"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/19-298"
       }
     ]
   },
@@ -138966,7 +139286,7 @@
         "site": "prime",
         "name": "Prime Video",
         "region": "全球",
-        "url": "https://www.amazon.co.jp/gp/video/detail/B0GDTSG931"
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GWGZCC37"
       },
       {
         "site": "muse_hk",
@@ -146395,6 +146715,12 @@
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=12329"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GZ7PWKWB"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -150025,6 +150351,18 @@
         "url": "https://ch.nicovideo.jp/hiiro"
       },
       {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0016474"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29215"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -151170,6 +151508,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20334"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/11-6"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -151318,6 +151662,12 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrjptx89.html"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H5QL9S5V"
       },
       {
         "site": "nicovideo",
@@ -153039,6 +153389,12 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0016788"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29219"
       },
       {
         "site": "bilibili",
@@ -155048,6 +155404,18 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrjpu3yl.html"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GYGP7M8G"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/playlist?list=PLdqrWuC56ggU"
       },
       {
         "site": "nicovideo",
@@ -160638,6 +161006,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28704"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/2-19"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -161404,7 +161778,7 @@
   },
   {
     "id": "anilist-9441",
-    "titleZh": "夢色蛋糕師SP 專業版",
+    "titleZh": "夢色蛋糕師SP Professional",
     "titleEn": "Yumeiro Patissiere SP Professional",
     "titleJa": "夢色パティシエールSP（スペシャル）プロフェッショナル",
     "coverImageGamer": "",
@@ -161418,6 +161792,14 @@
     "genres": [
       "日常",
       "美食"
+    ],
+    "streamings": [
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29244"
+      }
     ]
   },
   {

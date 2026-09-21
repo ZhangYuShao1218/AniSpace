@@ -14433,7 +14433,7 @@
         },
         {
           "site": "tmdb",
-          "id": "tv/20514/season/0"
+          "id": "movie/251627"
         }
       ]
     },
@@ -25392,43 +25392,6 @@
         {
           "site": "aniList",
           "id": "1347"
-        }
-      ]
-    },
-    {
-      "title": "ウインダリア",
-      "titleTranslate": {
-        "zh-Hans": [
-          "渥大利亚"
-        ]
-      },
-      "type": "movie",
-      "lang": "ja",
-      "officialSite": "",
-      "begin": "1987-02-22T16:00:00.000Z",
-      "broadcast": "",
-      "end": "1987-02-22T16:00:00.000Z",
-      "comment": "",
-      "sites": [
-        {
-          "site": "bangumi",
-          "id": "39292"
-        },
-        {
-          "site": "mal",
-          "id": "1130"
-        },
-        {
-          "site": "anidb",
-          "id": "1220"
-        },
-        {
-          "site": "aniList",
-          "id": "1130"
-        },
-        {
-          "site": "tmdb",
-          "id": "movie/52439"
         }
       ]
     },
@@ -39495,7 +39458,7 @@
         },
         {
           "site": "tmdb",
-          "id": "movie/70089"
+          "id": "tv/76822/season/2"
         },
         {
           "site": "mal",
@@ -42357,6 +42320,22 @@
           "id": "29199",
           "begin": "2026-08-31T15:00:00.000Z",
           "broadcast": "R/2026-08-31T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "mal",
+          "id": "5353"
+        },
+        {
+          "site": "aniList",
+          "id": "5353"
+        },
+        {
+          "site": "anidb",
+          "id": "2779"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/202646"
         }
       ]
     },
@@ -45889,6 +45868,22 @@
           "id": "SID0015913",
           "begin": "2026-08-31T15:00:00.000Z",
           "broadcast": "R/2026-08-31T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "mal",
+          "id": "1152"
+        },
+        {
+          "site": "aniList",
+          "id": "1152"
+        },
+        {
+          "site": "anidb",
+          "id": "897"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/45137/season/2"
         }
       ]
     },
@@ -57461,6 +57456,12 @@
         {
           "site": "anidb",
           "id": "686"
+        },
+        {
+          "site": "prime",
+          "id": "B0H7LCN2BN",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -61265,6 +61266,18 @@
         {
           "site": "aniList",
           "id": "1026"
+        },
+        {
+          "site": "unext",
+          "id": "SID0017197",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "danime",
+          "id": "29205",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
         }
       ]
     },
@@ -69916,7 +69929,7 @@
         },
         {
           "site": "viu",
-          "id": "2096126",
+          "id": "2246520",
           "begin": "2018-10-08T16:00:00.000Z",
           "broadcast": "R/2018-10-08T16:00:00.000Z/P7D"
         },
@@ -87166,6 +87179,12 @@
           "id": "GY9PJ5KWR",
           "begin": "",
           "broadcast": ""
+        },
+        {
+          "site": "prime",
+          "id": "B0GVLFPWVH",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -91096,7 +91115,7 @@
         },
         {
           "site": "prime",
-          "id": "B0DMWVRKHL",
+          "id": "B0H6YFPV25",
           "begin": "",
           "broadcast": ""
         },
@@ -94965,7 +94984,8 @@
       "title": "クロノクルセイド",
       "titleTranslate": {
         "en": [
-          "CHRNO CRUSADE"
+          "CHRNO CRUSADE",
+          "Chrono Crusade"
         ],
         "zh-Hans": [
           "圣枪修女"
@@ -95008,6 +95028,12 @@
         {
           "site": "aniList",
           "id": "60"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GYGGXP7EY",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -117894,6 +117920,12 @@
         {
           "site": "aniList",
           "id": "4737"
+        },
+        {
+          "site": "nicovideo",
+          "id": "takanotsume",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -118344,6 +118376,12 @@
         {
           "site": "netflix",
           "id": "80242952",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "prime",
+          "id": "B0H7186LCL",
           "begin": "",
           "broadcast": ""
         }
@@ -119965,6 +120003,18 @@
         {
           "site": "aniList",
           "id": "1230"
+        },
+        {
+          "site": "unext",
+          "id": "SID0013918",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "danime",
+          "id": "29213",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
         }
       ]
     },
@@ -121073,6 +121123,55 @@
       ]
     },
     {
+      "title": "鬼公子炎魔",
+      "titleTranslate": {
+        "zh-Hans": [
+          "鬼公子炎魔"
+        ]
+      },
+      "type": "ova",
+      "lang": "ja",
+      "officialSite": "http://www.k-enma.com/",
+      "begin": "2006-08-24T16:00:00.000Z",
+      "broadcast": "",
+      "end": "2007-03-22T16:00:00.000Z",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "7654"
+        },
+        {
+          "site": "danime",
+          "id": "29214",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "unext",
+          "id": "SID0014446",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "mal",
+          "id": "1556"
+        },
+        {
+          "site": "aniList",
+          "id": "1556"
+        },
+        {
+          "site": "anidb",
+          "id": "4411"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/67580"
+        }
+      ]
+    },
+    {
       "title": "BLACK BLOOD BROTHERS",
       "titleTranslate": {
         "zh-Hans": [
@@ -121340,6 +121439,12 @@
           "id": "28703",
           "begin": "2026-04-30T15:00:00.000Z",
           "broadcast": "R/2026-04-30T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "abema",
+          "id": "2-27",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -122733,6 +122838,12 @@
         {
           "site": "aniList",
           "id": "1482"
+        },
+        {
+          "site": "abema",
+          "id": "172-62",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -123713,6 +123824,12 @@
         {
           "site": "aniList",
           "id": "17291"
+        },
+        {
+          "site": "abema",
+          "id": "190-31",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -126487,6 +126604,12 @@
         {
           "site": "abema",
           "id": "15-13",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "prime",
+          "id": "B01L2L27XI",
           "begin": "",
           "broadcast": ""
         }
@@ -147694,6 +147817,18 @@
         {
           "site": "aniList",
           "id": "5300"
+        },
+        {
+          "site": "muse_hk",
+          "id": "PLdqrWuC56ggU",
+          "begin": "2026-08-26T13:00:06.000Z",
+          "broadcast": "R/2026-08-26T13:00:06.000Z/P7D"
+        },
+        {
+          "site": "prime",
+          "id": "B0H3YMT73P",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -151905,7 +152040,7 @@
         },
         {
           "site": "prime",
-          "id": "B0FR6GDTY3",
+          "id": "B0DNWQXKWY",
           "begin": "",
           "broadcast": ""
         },
@@ -152630,7 +152765,7 @@
         },
         {
           "site": "tmdb",
-          "id": "movie/382667"
+          "id": "tv/34742/season/0"
         }
       ]
     },
@@ -156206,6 +156341,18 @@
         {
           "site": "aniList",
           "id": "6586"
+        },
+        {
+          "site": "danime",
+          "id": "29243",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "unext",
+          "id": "SID0017288",
+          "begin": "2026-09-18T03:00:00.000Z",
+          "broadcast": "R/2026-09-18T03:00:00.000Z/P7D"
         }
       ]
     },
@@ -156904,6 +157051,12 @@
         {
           "site": "aniList",
           "id": "7175"
+        },
+        {
+          "site": "nicovideo",
+          "id": "takanotsume",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -159792,7 +159945,7 @@
         },
         {
           "site": "tmdb",
-          "id": "movie/1012835"
+          "id": "tv/31718/season/0/episode/2"
         },
         {
           "site": "mal",
@@ -166262,6 +166415,12 @@
           "id": "28704",
           "begin": "2026-05-21T15:00:00.000Z",
           "broadcast": "R/2026-05-21T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "abema",
+          "id": "2-19",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -168799,6 +168958,49 @@
         {
           "site": "tmdb",
           "id": "tv/30977/season/0/episode/4"
+        }
+      ]
+    },
+    {
+      "title": "夢色パティシエールSP プロフェッショナル",
+      "titleTranslate": {
+        "zh-Hans": [
+          "梦色蛋糕师SP Professional"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "",
+      "begin": "2010-10-02T16:00:00.000Z",
+      "broadcast": "R/2010-10-02T16:00:00.000Z/P7D",
+      "end": "2010-12-25T16:00:00.000Z",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "425179"
+        },
+        {
+          "site": "danime",
+          "id": "29244",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "mal",
+          "id": "9441"
+        },
+        {
+          "site": "aniList",
+          "id": "9441"
+        },
+        {
+          "site": "anidb",
+          "id": "7922"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/45999/season/2"
         }
       ]
     },
@@ -177693,6 +177895,18 @@
         {
           "site": "aniList",
           "id": "10379"
+        },
+        {
+          "site": "muse_hk",
+          "id": "PLdqrWuC56ggU",
+          "begin": "2026-08-26T13:00:06.000Z",
+          "broadcast": "R/2026-08-26T13:00:06.000Z/P7D"
+        },
+        {
+          "site": "prime",
+          "id": "B0GYGP7M8G",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -181383,6 +181597,12 @@
           "id": "SID0016788",
           "begin": "2026-09-05T03:00:00.000Z",
           "broadcast": "R/2026-09-05T03:00:00.000Z/P7D"
+        },
+        {
+          "site": "danime",
+          "id": "29219",
+          "begin": "2026-09-07T15:00:00.000Z",
+          "broadcast": "R/2026-09-07T15:00:00.000Z/P7D"
         }
       ]
     },
@@ -183732,6 +183952,12 @@
         {
           "site": "aniList",
           "id": "11665"
+        },
+        {
+          "site": "prime",
+          "id": "B0H5QL9S5V",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -183796,6 +184022,12 @@
         {
           "site": "aniList",
           "id": "11433"
+        },
+        {
+          "site": "abema",
+          "id": "11-6",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -185846,6 +186078,18 @@
         {
           "site": "aniList",
           "id": "12461"
+        },
+        {
+          "site": "unext",
+          "id": "SID0016474",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "danime",
+          "id": "29215",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
         }
       ]
     },
@@ -194489,7 +194733,8 @@
           "site": "danime",
           "id": "20431",
           "begin": "2025-07-31T15:00:00.000Z",
-          "broadcast": "R/2025-07-31T15:00:00.000Z/P7D"
+          "broadcast": "R/2025-07-31T15:00:00.000Z/P7D",
+          "comment": "OVA: 29198"
         },
         {
           "site": "tmdb",
@@ -197150,6 +197395,12 @@
         {
           "site": "aniList",
           "id": "11979"
+        },
+        {
+          "site": "prime",
+          "id": "B0GZ7PWKWB",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -204954,6 +205205,12 @@
         {
           "site": "aniList",
           "id": "18155"
+        },
+        {
+          "site": "unext",
+          "id": "SID0091483",
+          "begin": "2026-09-18T03:00:00.000Z",
+          "broadcast": "R/2026-09-18T03:00:00.000Z/P7D"
         }
       ]
     },
@@ -211975,6 +212232,12 @@
         {
           "site": "aniList",
           "id": "18153"
+        },
+        {
+          "site": "abema",
+          "id": "19-297",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -212734,6 +212997,12 @@
         {
           "site": "aniList",
           "id": "19369"
+        },
+        {
+          "site": "abema",
+          "id": "19-298",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -217244,6 +217513,18 @@
         {
           "site": "aniList",
           "id": "20447"
+        },
+        {
+          "site": "gamer",
+          "id": "63959",
+          "begin": "2026-09-11T02:00:00.000Z",
+          "broadcast": "R/2026-09-11T02:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer_hk",
+          "id": "63959",
+          "begin": "2026-09-11T02:00:00.000Z",
+          "broadcast": "R/2026-09-11T02:00:00.000Z/P7D"
         }
       ]
     },
@@ -227356,10 +227637,6 @@
         {
           "site": "aniList",
           "id": "20747"
-        },
-        {
-          "site": "tmdb",
-          "id": "tv/76219/season/0"
         }
       ]
     },
@@ -235337,6 +235614,12 @@
         {
           "site": "aniList",
           "id": "20770"
+        },
+        {
+          "site": "abema",
+          "id": "171-29",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -240715,7 +240998,7 @@
         },
         {
           "site": "prime",
-          "id": "B0GDTSG931",
+          "id": "B0GWGZCC37",
           "begin": "",
           "broadcast": ""
         },
@@ -243143,6 +243426,9 @@
         ],
         "zh-Hant": [
           "果然我的青春戀愛喜劇搞錯了。續"
+        ],
+        "en": [
+          "My Teen Romantic Comedy SNAFU TOO!"
         ]
       },
       "type": "tv",
@@ -243242,6 +243528,18 @@
           "id": "19-78",
           "begin": "",
           "broadcast": ""
+        },
+        {
+          "site": "ani_one",
+          "id": "PLXD7t-gmTqKA",
+          "begin": "2026-09-10T13:00:06.000Z",
+          "broadcast": "R/2026-09-10T13:00:06.000Z/P7D"
+        },
+        {
+          "site": "ani_one_asia",
+          "id": "PLcQazmUNKvRQ",
+          "begin": "2026-09-10T13:00:07.000Z",
+          "broadcast": "R/2026-09-10T13:00:07.000Z/P7D"
         }
       ]
     },
@@ -250975,6 +251273,12 @@
         {
           "site": "aniList",
           "id": "20955"
+        },
+        {
+          "site": "abema",
+          "id": "190-30",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -252693,6 +252997,18 @@
           "id": "19-20",
           "begin": "",
           "broadcast": ""
+        },
+        {
+          "site": "gamer",
+          "id": "74560",
+          "begin": "2026-09-16T03:00:00.000Z",
+          "broadcast": "R/2026-09-16T03:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer_hk",
+          "id": "74560",
+          "begin": "2026-09-16T03:00:00.000Z",
+          "broadcast": "R/2026-09-16T03:00:00.000Z/P7D"
         }
       ]
     },
@@ -260620,7 +260936,8 @@
           "site": "danime",
           "id": "22781",
           "begin": "2025-07-31T15:00:00.000Z",
-          "broadcast": "R/2025-07-31T15:00:00.000Z/P7D"
+          "broadcast": "R/2025-07-31T15:00:00.000Z/P7D",
+          "comment": "OVA: 29198"
         },
         {
           "site": "tmdb",
@@ -263724,6 +264041,9 @@
         ],
         "zh-Hant": [
           "灰與幻想的格林姆迦爾"
+        ],
+        "en": [
+          "Grimgar, Ashes and Illusions"
         ]
       },
       "type": "tv",
@@ -263809,6 +264129,12 @@
         {
           "site": "aniList",
           "id": "21428"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GRVNX917Y",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -266818,6 +267144,12 @@
         {
           "site": "aniList",
           "id": "131641"
+        },
+        {
+          "site": "netflix",
+          "id": "80171922",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -269696,7 +270028,8 @@
           "AnneHappy♪"
         ],
         "en": [
-          "unhappy go lucky!"
+          "unhappy go lucky!",
+          "Anne-Happy"
         ],
         "zh-Hant": [
           "Anne Happy",
@@ -269786,6 +270119,12 @@
           "id": "SID0022991",
           "begin": "2026-05-31T15:00:00.000Z",
           "broadcast": "R/2026-05-31T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GYWE2J9JY",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -270450,6 +270789,12 @@
         {
           "site": "tmdb",
           "id": "tv/66149"
+        },
+        {
+          "site": "abema",
+          "id": "199-60",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -281723,6 +282068,12 @@
         {
           "site": "aniList",
           "id": "21710"
+        },
+        {
+          "site": "prime",
+          "id": "B0H3F53MTQ",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -290793,6 +291144,12 @@
         {
           "site": "aniList",
           "id": "21842"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "G6P83KZM6",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -295938,6 +296295,12 @@
         {
           "site": "aniList",
           "id": "97983"
+        },
+        {
+          "site": "prime",
+          "id": "B0H37K66GF",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -299422,6 +299785,12 @@
         {
           "site": "netflix",
           "id": "80242862",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "prime",
+          "id": "B0H625ZVBL",
           "begin": "",
           "broadcast": ""
         }
@@ -303508,6 +303877,9 @@
         ],
         "zh-Hant": [
           "半獸人的煩惱"
+        ],
+        "en": [
+          "A Centaur's Life"
         ]
       },
       "type": "tv",
@@ -303576,6 +303948,12 @@
         {
           "site": "aniList",
           "id": "98519"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GYNQZV50Y",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -332467,6 +332845,9 @@
       "titleTranslate": {
         "zh-Hans": [
           "偶像大师 SideM 事出有因Mini!"
+        ],
+        "en": [
+          "THE iDOLM@STER SideM Wakeatte Mini!"
         ]
       },
       "type": "tv",
@@ -332526,6 +332907,12 @@
         {
           "site": "aniList",
           "id": "103923"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "G61XQ9716",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -344444,6 +344831,12 @@
         {
           "site": "aniList",
           "id": "106051"
+        },
+        {
+          "site": "muse_hk",
+          "id": "PLLhIibg4edbc",
+          "begin": "2026-09-11T13:30:06.000Z",
+          "broadcast": "R/2026-09-11T13:30:06.000Z/P7D"
         }
       ]
     },
@@ -344800,6 +345193,12 @@
         {
           "site": "aniList",
           "id": "97995"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GYVD185XY",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -352446,6 +352845,9 @@
       "titleTranslate": {
         "zh-Hant": [
           "博多明太！麻辣子醬"
+        ],
+        "en": [
+          "Hakata Mentai! Pirikarako-chan"
         ]
       },
       "type": "tv",
@@ -352495,6 +352897,12 @@
         {
           "site": "aniList",
           "id": "109929"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GR4PQX0WY",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -370572,6 +370980,12 @@
         {
           "site": "aniList",
           "id": "108241"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "G9VHN9P7W",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -373608,6 +374022,9 @@
         ],
         "zh-Hant": [
           "高校之神"
+        ],
+        "en": [
+          "The God of High School"
         ]
       },
       "type": "tv",
@@ -373690,6 +374107,12 @@
         {
           "site": "aniList",
           "id": "116006"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GRVD0ZDQR",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -379702,6 +380125,12 @@
         {
           "site": "aniList",
           "id": "125153"
+        },
+        {
+          "site": "nicovideo",
+          "id": "takanotsume",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -398785,7 +399214,7 @@
         },
         {
           "site": "prime",
-          "id": "B09H69JDBL",
+          "id": "B0H2HMTRC5",
           "begin": "",
           "broadcast": ""
         },
@@ -400567,6 +400996,12 @@
         {
           "site": "netflix",
           "id": "81590011",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "prime",
+          "id": "B0GXHGP4SW",
           "begin": "",
           "broadcast": ""
         }
@@ -406141,6 +406576,12 @@
         {
           "site": "aniList",
           "id": "122052"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GZJH3DPM1",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -408668,6 +409109,12 @@
         {
           "site": "aniList",
           "id": "140700"
+        },
+        {
+          "site": "abema",
+          "id": "189-79",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -410322,6 +410769,12 @@
           "id": "PL2ql078AibHVV9qRwgDOwDcRMnNKgcgPs",
           "begin": "2025-10-24T11:30:06.000Z",
           "broadcast": "R/2025-10-24T11:30:06.000Z/P7D"
+        },
+        {
+          "site": "prime",
+          "id": "B0H2HMTRC5",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -422026,6 +422479,9 @@
         ],
         "zh-Hant": [
           "契約之吻"
+        ],
+        "en": [
+          "Engage Kiss"
         ]
       },
       "type": "tv",
@@ -422103,6 +422559,12 @@
         {
           "site": "aniList",
           "id": "146625"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GJ0H7Q8J0",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -435785,7 +436247,8 @@
           "英雄王,為了窮盡武道而轉生~而後成為世界最強見習騎士♀~"
         ],
         "en": [
-          "Reborn To Master The Blade:From Hero-King To Extraordinary Squire"
+          "Reborn To Master The Blade:From Hero-King To Extraordinary Squire",
+          "Reborn to Master the Blade: From Hero-King to Extraordinary Squire"
         ]
       },
       "type": "tv",
@@ -435875,6 +436338,12 @@
         {
           "site": "aniList",
           "id": "142193"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GQWH0MP94",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -440639,6 +441108,12 @@
         {
           "site": "aniList",
           "id": "142684"
+        },
+        {
+          "site": "abema",
+          "id": "189-90",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -459979,6 +460454,9 @@
         ],
         "zh-Hant": [
           "大雪海的卡那 星之賢者"
+        ],
+        "en": [
+          "Kaina of the Great Snow Sea: Star Sage"
         ]
       },
       "type": "movie",
@@ -460037,6 +460515,12 @@
         {
           "site": "aniList",
           "id": "159886"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GMTE00327660",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -462195,6 +462679,9 @@
       "titleTranslate": {
         "zh-Hans": [
           "邪神与厨二病少女【世纪末篇】"
+        ],
+        "en": [
+          "Dropkick on My Devil!! Apocalypse Day"
         ]
       },
       "type": "tv",
@@ -462214,12 +462701,6 @@
           "id": "SID0097082",
           "begin": "2023-12-26T15:05:00.000Z",
           "broadcast": "R/2023-12-26T15:05:00.000Z/P7D"
-        },
-        {
-          "site": "crunchyroll",
-          "id": "G62487M9Y",
-          "begin": "2023-06-13T13:30:00.000Z",
-          "broadcast": "R/2023-06-13T13:30:00.000Z/P7D"
         },
         {
           "site": "danime",
@@ -462242,6 +462723,12 @@
         {
           "site": "aniList",
           "id": "164551"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GMTE00328977",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -468554,6 +469041,12 @@
           "id": "PLxSscENEp7Jh2nidUJYmABwb5MzYKsCcq",
           "begin": "2026-03-04T12:00:06.000Z",
           "broadcast": "R/2026-03-04T12:00:06.000Z/P7D"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "G9VHN9QWQ",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -482004,6 +482497,9 @@
       "titleTranslate": {
         "zh-Hans": [
           "刀剑乱舞 回 -旋传 亲近的侍从们-"
+        ],
+        "en": [
+          "TOUKEN RANBU KAI DOUDEN"
         ]
       },
       "type": "movie",
@@ -482045,6 +482541,12 @@
         {
           "site": "aniList",
           "id": "177680"
+        },
+        {
+          "site": "crunchyroll",
+          "id": "GMTE00350368",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -482243,6 +482745,12 @@
           "id": "29008",
           "begin": "2026-08-02T15:00:00.000Z",
           "broadcast": "R/2026-08-02T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "prime",
+          "id": "B0H3GCD64W",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -490746,6 +491254,10 @@
           "id": "29174",
           "begin": "2026-08-12T15:00:00.000Z",
           "broadcast": "R/2026-08-12T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "mikan",
+          "id": "3651"
         }
       ]
     },
@@ -497300,7 +497812,7 @@
         },
         {
           "site": "tmdb",
-          "id": "movie/1573526"
+          "id": "movie/1326106"
         },
         {
           "site": "mal",
@@ -509221,6 +509733,12 @@
         {
           "site": "anidb",
           "id": "18773"
+        },
+        {
+          "site": "mighty",
+          "id": "PL2ql078AibHX4XF8l1p2x_mqDEE4AULu7",
+          "begin": "2026-09-14T10:00:06.000Z",
+          "broadcast": "R/2026-09-14T10:00:06.000Z/P7D"
         }
       ]
     },
@@ -518583,6 +519101,12 @@
         {
           "site": "aniList",
           "id": "187166"
+        },
+        {
+          "site": "prime",
+          "id": "B0FR1CBPSR",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -520048,6 +520572,10 @@
         {
           "site": "tmdb",
           "id": "movie/1406657"
+        },
+        {
+          "site": "mikan",
+          "id": "3895"
         }
       ]
     },
@@ -526401,7 +526929,8 @@
       "title": "超かぐや姫！",
       "titleTranslate": {
         "zh-Hans": [
-          "超时空辉夜姬！"
+          "超时空辉夜姬！",
+          "超辉夜姬！"
         ],
         "zh-Hant": [
           "超時空輝耀姬！"
@@ -526447,6 +526976,12 @@
         {
           "site": "tmdb",
           "id": "movie/1575337"
+        },
+        {
+          "site": "bilibili",
+          "id": "305846190",
+          "begin": "2026-01-22T10:00:00.000Z",
+          "broadcast": "R/2026-01-22T10:00:00.000Z/P7D"
         }
       ]
     },
@@ -527164,6 +527699,22 @@
         {
           "site": "mikan",
           "id": "4054"
+        },
+        {
+          "site": "mal",
+          "id": "62277"
+        },
+        {
+          "site": "aniList",
+          "id": "197474"
+        },
+        {
+          "site": "anidb",
+          "id": "19528"
+        },
+        {
+          "site": "tmdb",
+          "id": "movie/1530941"
         }
       ]
     },
@@ -527583,6 +528134,12 @@
         {
           "site": "mikan",
           "id": "4049"
+        },
+        {
+          "site": "prime",
+          "id": "B0H8PD4WNK",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -527620,6 +528177,12 @@
         {
           "site": "tmdb",
           "id": "movie/1279865"
+        },
+        {
+          "site": "unext",
+          "id": "SID0318107",
+          "begin": "2026-09-11T15:00:00.000Z",
+          "broadcast": "R/2026-09-11T15:00:00.000Z/P7D"
         }
       ]
     },
@@ -527653,6 +528216,18 @@
         {
           "site": "mal",
           "id": "62193"
+        },
+        {
+          "site": "nicovideo",
+          "id": "parieto-movie",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "unext",
+          "id": "SID0316732",
+          "begin": "2026-09-17T15:00:00.000Z",
+          "broadcast": "R/2026-09-17T15:00:00.000Z/P7D"
         }
       ]
     },
@@ -527769,6 +528344,18 @@
           "id": "82647303",
           "begin": "2026-06-08T16:00:00.000Z",
           "broadcast": "R/2026-06-08T16:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer",
+          "id": "140582",
+          "begin": "2026-09-14T04:00:00.000Z",
+          "broadcast": "R/2026-09-14T04:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer_hk",
+          "id": "140582",
+          "begin": "2026-09-14T04:00:00.000Z",
+          "broadcast": "R/2026-09-14T04:00:00.000Z/P7D"
         }
       ]
     },
@@ -530850,8 +531437,8 @@
         {
           "site": "gamer",
           "id": "146184",
-          "begin": "",
-          "broadcast": ""
+          "begin": "2026-05-30T17:00:00.000Z",
+          "broadcast": "R/2026-05-30T17:00:00.000Z/P7D"
         },
         {
           "site": "abema",
@@ -534583,8 +535170,8 @@
         {
           "site": "gamer",
           "id": "146564",
-          "begin": "",
-          "broadcast": ""
+          "begin": "2026-04-30T13:00:00.000Z",
+          "broadcast": "R/2026-04-30T13:00:00.000Z/P7D"
         },
         {
           "site": "gamer_hk",
@@ -540274,6 +540861,12 @@
         {
           "site": "bangumi_moe",
           "id": "6a715389b56eb30ad03fd501"
+        },
+        {
+          "site": "prime",
+          "id": "B0H6WVZ6DC",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -541902,6 +542495,60 @@
       ]
     },
     {
+      "title": "SEALOOK 2nd season",
+      "titleTranslate": {},
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.tv-tokyo.co.jp/anime/sealook/",
+      "begin": "2026-07-23T16:00:00.000Z",
+      "broadcast": "R/2026-07-23T16:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "679732"
+        },
+        {
+          "site": "nicovideo",
+          "id": "sealook2",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "パンの赤ちゃん",
+      "titleTranslate": {},
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.ktv.jp/pan-aka-tv/",
+      "begin": "2026-07-03T16:00:00.000Z",
+      "broadcast": "R/2026-07-03T16:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "651872"
+        },
+        {
+          "site": "danime",
+          "id": "29177",
+          "begin": "2026-08-25T15:00:00.000Z",
+          "broadcast": "R/2026-08-25T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "aniList",
+          "id": "212308"
+        },
+        {
+          "site": "mal",
+          "id": "64210"
+        }
+      ]
+    },
+    {
       "title": "Re:ゼロから始める異世界生活 4th season 奪還編",
       "titleTranslate": {
         "zh-Hans": [
@@ -542130,21 +542777,25 @@
       ]
     },
     {
-      "title": "怪獣8号 鳴海の平日",
+      "title": "鳴海の平日",
       "titleTranslate": {
         "zh-Hans": [
+          "怪兽8号 鸣海的平日",
           "怪兽8号 鸣海的日常"
         ],
         "zh-Hant": [
           "怪獸8號 鳴海的平日",
           "怪獸 8 號 原創短篇動畫 鳴海的平日"
+        ],
+        "en": [
+          "Kaiju No. 8: Narumi's Week at Work"
         ]
       },
       "type": "web",
       "lang": "ja",
       "officialSite": "https://kaiju-no8.net/",
-      "begin": "2026-09-04T16:00:00.000Z",
-      "broadcast": "",
+      "begin": "2026-09-05T12:00:00.000Z",
+      "broadcast": "R/2026-09-05T12:00:00.000Z/P7D",
       "end": "",
       "comment": "",
       "sites": [
@@ -542179,14 +542830,1920 @@
         {
           "site": "unext",
           "id": "SID0305865",
-          "begin": "",
-          "broadcast": ""
+          "begin": "2026-09-05T11:00:00.000Z",
+          "broadcast": "R/2026-09-05T11:00:00.000Z/P7D"
         },
         {
           "site": "danime",
           "id": "29218",
           "begin": "2026-09-05T11:00:00.000Z",
           "broadcast": "R/2026-09-05T11:00:00.000Z/P7D"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/207468/season/0/episode/33"
+        },
+        {
+          "site": "prime",
+          "id": "B0HG3MGQXK",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "abema",
+          "id": "19-299",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "ごーすと・みーつ・ぎゃる！",
+      "titleTranslate": {},
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://cf-vanguard.com/anime-ghost_meets_gal/",
+      "begin": "2026-09-04T16:00:00.000Z",
+      "broadcast": "R/2026-09-04T16:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "675448"
+        },
+        {
+          "site": "danime",
+          "id": "29204",
+          "begin": "2026-09-12T00:00:00.000Z",
+          "broadcast": "R/2026-09-12T00:00:00.000Z/P7D"
+        },
+        {
+          "site": "unext",
+          "id": "SID0316467",
+          "begin": "2026-09-12T00:00:00.000Z",
+          "broadcast": "R/2026-09-12T00:00:00.000Z/P7D"
+        }
+      ]
+    },
+    {
+      "title": "転生したら剣でしたⅡ",
+      "titleTranslate": {
+        "en": [
+          "Reincarnated as a Sword Season 2"
+        ],
+        "zh-Hans": [
+          "转生成为魔剑 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://tenken-anime.com/",
+      "begin": "2026-10-07T15:00:00.000Z",
+      "broadcast": "R/2026-10-07T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "412008"
+        }
+      ]
+    },
+    {
+      "title": "獣王武神ダンデヴァイン",
+      "titleTranslate": {
+        "zh-Hans": [
+          "兽王武神丹帝拜恩",
+          "兽王武神DANDIVINE"
+        ],
+        "zh-Hant": [
+          "獸王武神丹帝拜恩"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://gattaishin.com/dandivine/",
+      "begin": "2026-10-07T15:30:00.000Z",
+      "broadcast": "R/2026-10-07T15:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "657778"
+        },
+        {
+          "site": "mal",
+          "id": "64344"
+        }
+      ]
+    },
+    {
+      "title": "凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの武人の華麗なる無双録",
+      "titleTranslate": {
+        "zh-Hans": [
+          "乱世千金倪亚‧利斯顿转生为娇弱千金的弑神武人华丽无双录"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://kyoranreijo-pr.com/",
+      "begin": "2026-10-06T12:25:00.000Z",
+      "broadcast": "R/2026-10-06T12:25:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "624085"
+        },
+        {
+          "site": "aniList",
+          "id": "206949"
+        },
+        {
+          "site": "anidb",
+          "id": "19865"
+        },
+        {
+          "site": "mal",
+          "id": "63382"
+        }
+      ]
+    },
+    {
+      "title": "FX戦士くるみちゃん",
+      "titleTranslate": {
+        "zh-Hans": [
+          "FX战士久留美"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://fxkurumi-info.com/",
+      "begin": "2026-10-01T12:30:00.000Z",
+      "broadcast": "R/2026-10-01T12:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "622288"
+        },
+        {
+          "site": "nicovideo",
+          "id": "fxkurumi",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "貸した魔力は【リボ払い】で強制徴収",
+      "titleTranslate": {
+        "zh-Hans": [
+          "借出去的魔力要用【分期还款】强制收回"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://revo-anime.com/",
+      "begin": "2026-10-03T16:30:00.000Z",
+      "broadcast": "R/2026-10-03T16:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "606716"
+        }
+      ]
+    },
+    {
+      "title": "とある暗部の少女共棲",
+      "titleTranslate": {
+        "zh-Hans": [
+          "某暗部的少女共栖",
+          "暗部共生少女"
+        ],
+        "zh-Hant": [
+          "暗部少女共栖"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://toaru-project.com/item/",
+      "begin": "2026-10-09T13:30:00.000Z",
+      "broadcast": "R/2026-10-09T13:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "537738"
+        },
+        {
+          "site": "aniList",
+          "id": "186742"
+        },
+        {
+          "site": "anidb",
+          "id": "19159"
+        },
+        {
+          "site": "mal",
+          "id": "61014"
+        }
+      ]
+    },
+    {
+      "title": "世界最強の魔女、始めました",
+      "titleTranslate": {
+        "zh-Hans": [
+          "世界最强的魔女，就此开始",
+          "世界最强魔女，始动"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://sekamajo-anime.com/",
+      "begin": "2026-10-07T13:00:00.000Z",
+      "broadcast": "R/2026-10-07T13:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "646154"
+        }
+      ]
+    },
+    {
+      "title": "魔法少女育成計画restart",
+      "titleTranslate": {
+        "zh-Hans": [
+          "魔法少女育成计划 restart",
+          "魔法少女育成计划 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://mahoiku.com/anime/restart",
+      "begin": "2026-10-05T17:00:00.000Z",
+      "broadcast": "R/2026-10-05T17:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "418229"
+        },
+        {
+          "site": "aniList",
+          "id": "160803"
+        },
+        {
+          "site": "anidb",
+          "id": "17839"
+        },
+        {
+          "site": "mal",
+          "id": "54344"
+        }
+      ]
+    },
+    {
+      "title": "生徒会にも穴はある！",
+      "titleTranslate": {
+        "zh-Hans": [
+          "学生会也有洞！",
+          "脑洞学生会！"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://nama-anaru.com/",
+      "begin": "2026-10-03T15:30:00.000Z",
+      "broadcast": "R/2026-10-03T15:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "554779"
+        },
+        {
+          "site": "aniList",
+          "id": "191656"
+        },
+        {
+          "site": "anidb",
+          "id": "19308"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/283938"
+        },
+        {
+          "site": "mal",
+          "id": "61578"
+        }
+      ]
+    },
+    {
+      "title": "マジカル★エクスプローラー",
+      "titleTranslate": {
+        "zh-Hans": [
+          "魔法★探险家"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://majieku.com/",
+      "begin": "2026-10-03T15:00:00.000Z",
+      "broadcast": "R/2026-10-03T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "456078"
+        },
+        {
+          "site": "aniList",
+          "id": "169581"
+        },
+        {
+          "site": "anidb",
+          "id": "18208"
+        },
+        {
+          "site": "mal",
+          "id": "56733"
+        }
+      ]
+    },
+    {
+      "title": "転生した大聖女は、聖女であることをひた隠す",
+      "titleTranslate": {
+        "en": [
+          "A Tale of the Secret Saint"
+        ],
+        "zh-Hans": [
+          "转生后的大圣女，极力隐瞒圣女的身分",
+          "转生了的大圣女，拼死隐瞒自己身为圣女"
+        ],
+        "zh-Hant": [
+          "轉生後的大聖女，極力隱瞞聖女的身份",
+          "轉生後的大聖女，極力隱瞞聖女的身分"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://daiseijo-anime.com/",
+      "begin": "2026-10-03T13:00:00.000Z",
+      "broadcast": "R/2026-10-03T13:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "542007"
+        },
+        {
+          "site": "gamer",
+          "id": "144110",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "gamer_hk",
+          "id": "144110",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "転生ゴブリンだけど質問ある？",
+      "titleTranslate": {
+        "zh-Hans": [
+          "转生成哥布林但有疑问吗？"
+        ],
+        "zh-Hant": [
+          "轉生哥布林有什麼問題嗎？"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://tengobu-anime.com/",
+      "begin": "2026-10-05T13:00:00.000Z",
+      "broadcast": "R/2026-10-05T13:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "634587"
+        },
+        {
+          "site": "unext",
+          "id": "SID0316460",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "gamer",
+          "id": "150292",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "gamer_hk",
+          "id": "150292",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "209219"
+        },
+        {
+          "site": "anidb",
+          "id": "19942"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/316694"
+        },
+        {
+          "site": "mal",
+          "id": "63712"
+        }
+      ]
+    },
+    {
+      "title": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
+      "titleTranslate": {
+        "zh-Hans": [
+          "被流放的开挂魔术师讴歌随心所欲第二人生"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://sh-anime.shochiku.co.jp/chiifuyo-anime/",
+      "begin": "2026-10-06T15:00:00.000Z",
+      "broadcast": "R/2026-10-06T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "625799"
+        }
+      ]
+    },
+    {
+      "title": "おじさんはカワイイものがお好き。",
+      "titleTranslate": {
+        "zh-Hans": [
+          "大叔喜欢可爱小玩意"
+        ],
+        "zh-Hant": [
+          "大叔喜歡可愛小玩意"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://ojikawa.com/",
+      "begin": "2026-10-04T13:00:00.000Z",
+      "broadcast": "R/2026-10-04T13:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "605533"
+        },
+        {
+          "site": "gamer",
+          "id": "148138",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "gamer_hk",
+          "id": "148138",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "魔法騎士レイアース(2026)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "魔法骑士雷阿斯"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://rayearth-anime.com/",
+      "begin": "2026-10-07T14:45:00.000Z",
+      "broadcast": "R/2026-10-07T14:45:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "502123"
+        },
+        {
+          "site": "unext",
+          "id": "SID0316437",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "178868"
+        },
+        {
+          "site": "anidb",
+          "id": "18729"
+        },
+        {
+          "site": "mal",
+          "id": "59204"
+        }
+      ]
+    },
+    {
+      "title": "バーテックスフォース",
+      "titleTranslate": {},
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://vertexforce.jp/",
+      "begin": "2026-10-03T14:30:00.000Z",
+      "broadcast": "R/2026-10-03T14:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "636512"
+        },
+        {
+          "site": "unext",
+          "id": "SID0316404",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "209562"
+        },
+        {
+          "site": "anidb",
+          "id": "19957"
+        },
+        {
+          "site": "mal",
+          "id": "63764"
+        }
+      ]
+    },
+    {
+      "title": "佐々木とピーちゃん Season2",
+      "titleTranslate": {
+        "zh-Hans": [
+          "佐佐木与文鸟小哔 第二季"
+        ],
+        "zh-Hant": [
+          "佐佐木與文鳥小嗶 第二季",
+          "佐佐木與文鳥小嗶 Season 2"
+        ],
+        "en": [
+          "Sasaki and Peeps"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://sasapi-anime.com/",
+      "begin": "2026-10-07T13:00:00.000Z",
+      "broadcast": "R/2026-10-07T13:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "486456"
+        },
+        {
+          "site": "gamer",
+          "id": "138501",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "gamer_hk",
+          "id": "138501",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "176314"
+        },
+        {
+          "site": "anidb",
+          "id": "18563"
+        },
+        {
+          "site": "tmdb",
+          "id": "tv/206630/season/2"
+        },
+        {
+          "site": "mal",
+          "id": "58518"
+        }
+      ]
+    },
+    {
+      "title": "信者ゼロの女神サマと始める異世界攻略",
+      "titleTranslate": {
+        "en": [
+          "Full Clearing Another World under a Goddess with Zero Believers"
+        ],
+        "zh-Hans": [
+          "和没有信徒的女神大人一起攻略异世界"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://zero-believers-anime.com/",
+      "begin": "2026-10-11T14:30:00.000Z",
+      "broadcast": "R/2026-10-11T14:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "621073"
+        }
+      ]
+    },
+    {
+      "title": "ブラッククローバー 2nd Season",
+      "titleTranslate": {
+        "en": [
+          "BLACK CLOVER Second Season"
+        ],
+        "zh-Hans": [
+          "黑色五叶草 第二季",
+          "黑色四叶草 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://bclover.jp/",
+      "begin": "2026-10-03T14:00:00.000Z",
+      "broadcast": "R/2026-10-03T14:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "567896"
+        },
+        {
+          "site": "aniList",
+          "id": "195604"
+        },
+        {
+          "site": "anidb",
+          "id": "19433"
+        },
+        {
+          "site": "mal",
+          "id": "61967"
+        }
+      ]
+    },
+    {
+      "title": "TANK CHAIR-戦車椅子-",
+      "titleTranslate": {
+        "zh-Hans": [
+          "战车椅子"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.tankchair-anime.com/",
+      "begin": "2026-10-04T14:00:00.000Z",
+      "broadcast": "R/2026-10-04T14:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "636023"
+        }
+      ]
+    },
+    {
+      "title": "#ゾンビさがしてます",
+      "titleTranslate": {
+        "zh-Hans": [
+          "僵尸搜寻中"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://zommasu.com/",
+      "begin": "2026-10-03T14:30:00.000Z",
+      "broadcast": "R/2026-10-03T14:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "586255"
+        },
+        {
+          "site": "aniList",
+          "id": "199007"
+        },
+        {
+          "site": "anidb",
+          "id": "19586"
+        },
+        {
+          "site": "mal",
+          "id": "62524"
+        }
+      ]
+    },
+    {
+      "title": "アオアシ Season2",
+      "titleTranslate": {
+        "zh-Hans": [
+          "青之芦苇 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://aoashi-pr.com/",
+      "begin": "2026-10-04T08:00:00.000Z",
+      "broadcast": "R/2026-10-04T08:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "555605"
+        },
+        {
+          "site": "anidb",
+          "id": "19318"
+        },
+        {
+          "site": "mal",
+          "id": "61603"
+        }
+      ]
+    },
+    {
+      "title": "どうも、好きな人に惚れ薬を依頼された魔女です。",
+      "titleTranslate": {
+        "zh-Hans": [
+          "你好、我是受心上人所托来做恋爱药的魔女。"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://horemajo-anime.com/",
+      "begin": "2026-10-05T12:30:00.000Z",
+      "broadcast": "R/2026-10-05T12:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "624923"
+        }
+      ]
+    },
+    {
+      "title": "dreamland",
+      "titleTranslate": {},
+      "type": "web",
+      "lang": "ja",
+      "officialSite": "https://www.dreamland-anime.com/",
+      "begin": "2026-10-17T17:00:00.000Z",
+      "broadcast": "R/2026-10-17T17:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "559080"
+        },
+        {
+          "site": "nicovideo",
+          "id": "dreamland",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "彼方から",
+      "titleTranslate": {
+        "zh-Hans": [
+          "来自远方"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://kanatakara-anime.com/",
+      "begin": "2026-10-04T15:00:00.000Z",
+      "broadcast": "R/2026-10-04T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "636058"
+        }
+      ]
+    },
+    {
+      "title": "ケロロ軍曹☆",
+      "titleTranslate": {
+        "zh-Hans": [
+          "Keroro军曹☆"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.bn-pictures.co.jp/keroro-anime/tv/",
+      "begin": "2026-10-03T00:30:00.000Z",
+      "broadcast": "R/2026-10-03T00:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "617273"
+        },
+        {
+          "site": "mal",
+          "id": "63157"
+        }
+      ]
+    },
+    {
+      "title": "DARK MACHINE THE ANIMATION",
+      "titleTranslate": {},
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.fujitv.co.jp/darkmachine_anime/",
+      "begin": "2026-10-13T16:45:00.000Z",
+      "broadcast": "R/2026-10-13T16:45:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "505550"
+        }
+      ]
+    },
+    {
+      "title": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい",
+      "titleTranslate": {
+        "zh-Hans": [
+          "一觉醒来坐拥神装和飞船，我决定以买一套独门独户的房子为目标作为佣兵自由地活下去"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://saikyosoubi.com/",
+      "begin": "2026-10-04T12:30:00.000Z",
+      "broadcast": "R/2026-10-04T12:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "536270"
+        }
+      ]
+    },
+    {
+      "title": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
+      "titleTranslate": {
+        "zh-Hans": [
+          "弱气MAX的大小姐、居然接受了铁腕未婚夫的赌约",
+          "极致软弱千金小姐，不小心答应了精明未婚夫的赌局"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://yowaki-max-anime.com/",
+      "begin": "2026-10-04T14:30:00.000Z",
+      "broadcast": "R/2026-10-04T14:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "596771"
+        },
+        {
+          "site": "nicovideo",
+          "id": "yowaki-max",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "冰剣の魔術師が世界を統べるⅡ",
+      "titleTranslate": {
+        "zh-Hans": [
+          "冰剑的魔术师将要统一世界 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://hyouken-anime.com/",
+      "begin": "2026-10-08T16:28:00.000Z",
+      "broadcast": "R/2026-10-08T16:28:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "654294"
+        },
+        {
+          "site": "nicovideo",
+          "id": "hyouken2",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "unext",
+          "id": "SID0316388",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "てつりょー！ meet with 鉄道むすめ",
+      "titleTranslate": {
+        "zh-Hans": [
+          "铁旅！邂逅铁道少女",
+          "铁旅！meet with 铁路女孩",
+          "铁旅！meet with 铁道娘"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://tetsuryo-anime.com/",
+      "begin": "2026-10-08T15:00:00.000Z",
+      "broadcast": "R/2026-10-08T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "590553"
+        },
+        {
+          "site": "aniList",
+          "id": "199594"
+        },
+        {
+          "site": "anidb",
+          "id": "19632"
+        },
+        {
+          "site": "mal",
+          "id": "62615"
+        }
+      ]
+    },
+    {
+      "title": "超巡！超条先輩",
+      "titleTranslate": {
+        "zh-Hans": [
+          "超巡！超条前辈"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://chojun-anime.com/",
+      "begin": "2026-10-06T14:00:00.000Z",
+      "broadcast": "R/2026-10-06T14:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "593565"
+        },
+        {
+          "site": "aniList",
+          "id": "200294"
+        },
+        {
+          "site": "anidb",
+          "id": "19649"
+        },
+        {
+          "site": "mal",
+          "id": "62696"
+        }
+      ]
+    },
+    {
+      "title": "ホタルの嫁入り",
+      "titleTranslate": {
+        "zh-Hans": [
+          "萤火虫的出嫁",
+          "萤火虫之婚"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://hotaru-anime.com/",
+      "begin": "2026-10-09T14:30:00.000Z",
+      "broadcast": "R/2026-10-09T14:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "621108"
+        },
+        {
+          "site": "nicovideo",
+          "id": "hotaru",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "unext",
+          "id": "SID0316421",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "205909"
+        },
+        {
+          "site": "anidb",
+          "id": "19823"
+        },
+        {
+          "site": "mal",
+          "id": "63293"
+        }
+      ]
+    },
+    {
+      "title": "帰還者の魔法は特別です(第二期)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "归还者的魔法要特别 第二季"
+        ],
+        "zh-Hant": [
+          "重生者的魔法一定要特別 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://returners-magic.com/",
+      "begin": "2026-10-07T15:45:00.000Z",
+      "broadcast": "R/2026-10-07T15:45:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "471844"
+        }
+      ]
+    },
+    {
+      "title": "ロメリア戦記",
+      "titleTranslate": {
+        "zh-Hans": [
+          "罗梅莉亚战记"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://romelia-senki.com/",
+      "begin": "2026-10-05T14:30:00.000Z",
+      "broadcast": "R/2026-10-05T14:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "511936"
+        },
+        {
+          "site": "unext",
+          "id": "SID0316384",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "パンどろぼう",
+      "titleTranslate": {
+        "zh-Hans": [
+          "神秘面包小子"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://pandorobo-anime.com/",
+      "begin": "2026-10-02T09:40:00.000Z",
+      "broadcast": "R/2026-10-02T09:40:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "563508"
+        }
+      ]
+    },
+    {
+      "title": "塩対応の佐藤さんが俺にだけ甘い",
+      "titleTranslate": {
+        "zh-Hans": [
+          "冷淡的佐藤同学只对我撒娇"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://shioama-anime.com/",
+      "begin": "2026-10-06T13:00:00.000Z",
+      "broadcast": "R/2026-10-06T13:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "634708"
+        },
+        {
+          "site": "aniList",
+          "id": "209502"
+        },
+        {
+          "site": "anidb",
+          "id": "19955"
+        },
+        {
+          "site": "mal",
+          "id": "63754"
+        }
+      ]
+    },
+    {
+      "title": "Battle Spirits [Re] 絶界の空",
+      "titleTranslate": {
+        "zh-Hans": [
+          "战斗之魂[Re] 绝界之空"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.bn-pictures.co.jp/battlespirits/",
+      "begin": "2026-10-06T14:00:00.000Z",
+      "broadcast": "R/2026-10-06T14:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "544378"
+        },
+        {
+          "site": "nicovideo",
+          "id": "battlespirits",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "新テニスの王子様 U-17 WORLD CUP 決勝メンバー決定戦",
+      "titleTranslate": {
+        "zh-Hans": [
+          "新网球王子 U-17 世界杯 决赛成员选拔赛"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://tenipuri.jp/u17/selection-match/",
+      "begin": "2026-09-30T15:00:00.000Z",
+      "broadcast": "R/2026-09-30T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "586941"
+        }
+      ]
+    },
+    {
+      "title": "東京リベンジャーズ 三天戦争編",
+      "titleTranslate": {
+        "zh-Hans": [
+          "东京复仇者 三天战争篇"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://tokyo-revengers-anime.com/",
+      "begin": "2026-10-01T16:23:00.000Z",
+      "broadcast": "R/2026-10-01T16:23:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "499474"
+        },
+        {
+          "site": "aniList",
+          "id": "178083"
+        },
+        {
+          "site": "anidb",
+          "id": "18693"
+        },
+        {
+          "site": "mal",
+          "id": "59088"
+        }
+      ]
+    },
+    {
+      "title": "魔法の姉妹ルルットリリィ(第2クール)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "魔法的姐妹露露和莉莉 第2部分"
+        ],
+        "zh-Hant": [
+          "魔法姊妹露露特莉莉 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.luluttolilly.com/",
+      "begin": "2026-10-04T13:30:00.000Z",
+      "broadcast": "R/2026-10-04T13:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "634210"
+        },
+        {
+          "site": "gamer",
+          "id": "154362",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "gamer_hk",
+          "id": "154362",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "アオのハコ Season2",
+      "titleTranslate": {
+        "zh-Hans": [
+          "青之箱 第二季",
+          "蓝箱 第二季"
+        ],
+        "zh-Hant": [
+          "青春之箱 第二季"
+        ],
+        "en": [
+          "Ao no Hako Season 2",
+          "Blue Box Season 2"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://aonohako-anime.com/",
+      "begin": "2026-10-04T07:30:00.000Z",
+      "broadcast": "R/2026-10-04T07:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "548156"
+        },
+        {
+          "site": "unext",
+          "id": "SID0316438",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "nicovideo",
+          "id": "aonohako-anime2",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "189123"
+        },
+        {
+          "site": "anidb",
+          "id": "19249"
+        },
+        {
+          "site": "mal",
+          "id": "61323"
+        }
+      ]
+    },
+    {
+      "title": "氷の城壁(第2期)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "冰之城墙 第二季"
+        ],
+        "zh-Hant": [
+          "冰之城牆 第二季"
+        ],
+        "en": [
+          "The Ramparts of Ice Season 2"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://korinojoheki-pr.com/",
+      "begin": "2026-10-01T14:56:00.000Z",
+      "broadcast": "R/2026-10-01T14:56:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "665390"
+        }
+      ]
+    },
+    {
+      "title": "転生貴族、鑑定スキルで成り上がる(第3期)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "转生贵族凭鉴定技能扭转人生 第三季",
+          "转生贵族靠着鉴定技能一飞冲天 第三季"
+        ],
+        "zh-Hant": [
+          "轉生貴族憑鑑定技能扭轉人生 第三季"
+        ],
+        "en": [
+          "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://kanteiskill.com/",
+      "begin": "2026-09-26T15:00:00.000Z",
+      "broadcast": "R/2026-09-26T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "530104"
+        },
+        {
+          "site": "nicovideo",
+          "id": "kanteiskill3",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "探偵はもう、死んでいる。 Season2",
+      "titleTranslate": {
+        "zh-Hans": [
+          "侦探已经死了。 第二季",
+          "侦探已死 第二季",
+          "侦探已经，死了。 第二季"
+        ],
+        "zh-Hant": [
+          "偵探已經，死了。 第二季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://tanmoshi-anime.jp/Season2/",
+      "begin": "2026-10-01T13:30:00.000Z",
+      "broadcast": "R/2026-10-01T13:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "393010"
+        }
+      ]
+    },
+    {
+      "title": "夜桜さんちの大作戦(第2期)第2クール",
+      "titleTranslate": {
+        "zh-Hans": [
+          "夜樱家的大作战 第二季 第2部分"
+        ],
+        "zh-Hant": [
+          "夜櫻家大作戰 第二季 第2部分"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://mission-yozakura-family.com/",
+      "begin": "2026-10-11T08:00:00.000Z",
+      "broadcast": "R/2026-10-11T08:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "664389"
+        },
+        {
+          "site": "gamer",
+          "id": "141776",
+          "begin": "2026-10-11T08:00:00.000Z",
+          "broadcast": "R/2026-10-11T08:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer_hk",
+          "id": "141776",
+          "begin": "2026-10-11T08:00:00.000Z",
+          "broadcast": "R/2026-10-11T08:00:00.000Z/P7D"
+        }
+      ]
+    },
+    {
+      "title": "らんま1/2(2026)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "乱马1/2 第三季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://ranma-pr.com/",
+      "begin": "2026-10-03T00:55:00.000Z",
+      "broadcast": "R/2026-10-03T00:55:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "637802"
+        },
+        {
+          "site": "mal",
+          "id": "63801"
+        }
+      ]
+    },
+    {
+      "title": "ホテル・インヒューマンズ(第2期)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "殺手旅店 第二季"
+        ],
+        "zh-Hant": [
+          "殺手旅店 第二季"
+        ],
+        "en": [
+          "HOTEL INHUMANS Season 2"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://hotel-inhumans.com/",
+      "begin": "2026-10-04T14:45:00.000Z",
+      "broadcast": "R/2026-10-04T14:45:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "589775"
+        }
+      ]
+    },
+    {
+      "title": "野生のラスボスが現れた！(第2期)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "野生的大魔王出现了！ 第二季"
+        ],
+        "zh-Hant": [
+          "野生的大魔王出現了！ 第二季"
+        ],
+        "en": [
+          "A Wild Last Boss Appeared! Season 2"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://www.lastboss-anime.com/",
+      "begin": "2026-10-03T13:30:00.000Z",
+      "broadcast": "R/2026-10-03T13:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "616808"
+        },
+        {
+          "site": "unext",
+          "id": "SID0316400",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "千歳くんはラムネ瓶のなか(第2クール)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "弹珠汽水瓶里的千岁同学 第二季",
+          "千岁同学在波子汽水瓶内 第二季"
+        ],
+        "zh-Hant": [
+          "彈珠汽水瓶裡的千歲同學 第二季"
+        ],
+        "en": [
+          "Chitose Is in the Ramune Bottle Season 2"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://chiramune.com/",
+      "begin": "2026-10-12T15:30:00.000Z",
+      "broadcast": "R/2026-10-12T15:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "584847"
+        }
+      ]
+    },
+    {
+      "title": "薬屋のひとりごと(第3期)",
+      "titleTranslate": {
+        "zh-Hans": [
+          "药屋少女的呢喃 第三季",
+          "药师少女的独语 第三季"
+        ],
+        "zh-Hant": [
+          "藥師少女的獨語 第三季"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://kusuriyanohitorigoto.jp/season3/",
+      "begin": "2026-10-02T14:00:00.000Z",
+      "broadcast": "R/2026-10-13T14:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "568244"
+        },
+        {
+          "site": "nicovideo",
+          "id": "kusuriyanohitorigoto3",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "unext",
+          "id": "SID0316422",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "テムパル～アイテムの力～",
+      "titleTranslate": {
+        "zh-Hans": [
+          "装备我最强"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://tempal-anime.net/",
+      "begin": "2026-10-02T14:30:00.000Z",
+      "broadcast": "R/2026-10-02T14:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "657656"
+        },
+        {
+          "site": "nicovideo",
+          "id": "tempal",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "unext",
+          "id": "SID0316382",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "anidb",
+          "id": "20077"
+        },
+        {
+          "site": "mal",
+          "id": "64340"
+        }
+      ]
+    },
+    {
+      "title": "朱色の仮面",
+      "titleTranslate": {
+        "zh-Hans": [
+          "朱红的假面",
+          "朱色的面具"
+        ],
+        "zh-Hant": [
+          "朱紅的假面"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://the-vermilion-mask.com/",
+      "begin": "2026-10-10T08:30:00.000Z",
+      "broadcast": "R/2026-10-10T08:30:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "568525"
+        },
+        {
+          "site": "gamer",
+          "id": "146157",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "gamer_hk",
+          "id": "146157",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "195571"
+        },
+        {
+          "site": "anidb",
+          "id": "19448"
+        },
+        {
+          "site": "mal",
+          "id": "61999"
+        }
+      ]
+    },
+    {
+      "title": "傷だらけ聖女より報復をこめて Season2",
+      "titleTranslate": {
+        "zh-Hans": [
+          "黑化吧！圣女大人 第二季"
+        ],
+        "zh-Hant": [
+          "黑化吧！聖女大人 第二季"
+        ],
+        "en": [
+          "With Vengeance, Sincerely, Your Broken Saintess Season 2"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://animationid.com/kizudarakeseijo/",
+      "begin": "2026-09-30T15:00:00.000Z",
+      "broadcast": "R/2026-09-30T15:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "650428"
+        },
+        {
+          "site": "nicovideo",
+          "id": "kizudarakeseijo2",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪",
+      "titleTranslate": {
+        "zh-Hans": [
+          "不擅交际的未亡人雪女与诅咒戒指"
+        ],
+        "zh-Hant": [
+          "不擅交際的未亡人雪女與詛咒戒指"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://anime-yukionna.af-original.com/",
+      "begin": "2026-10-05T16:05:00.000Z",
+      "broadcast": "R/2026-10-05T16:05:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "656083"
+        },
+        {
+          "site": "nicovideo",
+          "id": "yukionna",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "マウスカーソルで 現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
+      "titleTranslate": {},
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://maukuri.af-original.com/",
+      "begin": "2026-10-03T16:00:00.000Z",
+      "broadcast": "R/2026-10-03T16:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "698032"
+        },
+        {
+          "site": "nicovideo",
+          "id": "maukuri",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "百妖譜　第３期京師篇",
+      "titleTranslate": {
+        "zh-Hans": [
+          "百妖谱·京师篇",
+          "百妖谱 第三季"
+        ]
+      },
+      "type": "web",
+      "lang": "ja",
+      "officialSite": "https://b8station.tv/hyakuyoufu/",
+      "begin": "2026-10-06T16:15:00.000Z",
+      "broadcast": "R/2026-10-06T16:15:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "350795"
+        },
+        {
+          "site": "nicovideo",
+          "id": "hyakuyoufu3",
+          "begin": "",
+          "broadcast": ""
+        }
+      ]
+    },
+    {
+      "title": "彼女の友達",
+      "titleTranslate": {
+        "zh-Hans": [
+          "女友的朋友"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://kanojo-no-tomodachi.deregula.com/",
+      "begin": "2026-10-03T16:05:00.000Z",
+      "broadcast": "R/2026-10-03T16:05:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "647220"
+        },
+        {
+          "site": "nicovideo",
+          "id": "kanojo-no-tomodachi",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "211877"
+        },
+        {
+          "site": "anidb",
+          "id": "20040"
+        },
+        {
+          "site": "mal",
+          "id": "64131"
+        }
+      ]
+    },
+    {
+      "title": "ダークサモナーとデキている",
+      "titleTranslate": {
+        "zh-Hans": [
+          "黑暗召唤师在地下恋爱中"
+        ]
+      },
+      "type": "tv",
+      "lang": "ja",
+      "officialSite": "https://darksummoner.deregula.com/",
+      "begin": "2026-10-03T16:20:00.000Z",
+      "broadcast": "R/2026-10-03T16:20:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "630160"
+        },
+        {
+          "site": "nicovideo",
+          "id": "darksummoner",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "aniList",
+          "id": "208025"
+        },
+        {
+          "site": "anidb",
+          "id": "19908"
+        },
+        {
+          "site": "mal",
+          "id": "63509"
         }
       ]
     }

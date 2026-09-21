@@ -4,21 +4,21 @@
     "titleZh": "藥師少女的獨語 第三季",
     "titleJa": "薬屋のひとりごと 第3期",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "薬屋のひとりごと(第3期)",
+    "bgmId": "568244",
+    "streamingsCount": 2
   },
   "anilist-195604": {
     "id": "anilist-195604",
     "titleZh": "黑色五葉草 第二季",
     "titleJa": "ブラッククローバー 第2期",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ブラッククローバー 2nd Season",
+    "bgmId": "567896",
     "streamingsCount": 0
   },
   "anilist-195539": {
@@ -56,14 +56,14 @@
   },
   "anilist-189123": {
     "id": "anilist-189123",
-    "titleZh": "藍箱 第二季",
+    "titleZh": "青春之箱 第二季",
     "titleJa": "アオのハコ Season２",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "アオのハコ Season2",
+    "bgmId": "548156",
+    "streamingsCount": 2
   },
   "anilist-199340": {
     "id": "anilist-199340",
@@ -81,10 +81,10 @@
     "titleZh": "東京復仇者 三天戰爭篇",
     "titleJa": "東京リベンジャーズ 三天戦争編",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "東京リベンジャーズ 三天戦争編",
+    "bgmId": "499474",
     "streamingsCount": 0
   },
   "anilist-152677": {
@@ -92,10 +92,10 @@
     "titleZh": "偵探已經，死了。第二季",
     "titleJa": "探偵はもう、死んでいる。Season2",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "探偵はもう、死んでいる。 Season2",
+    "bgmId": "393010",
     "streamingsCount": 0
   },
   "anilist-210482": {
@@ -147,33 +147,33 @@
     "titleZh": "轉生貴族憑鑑定技能扭轉人生 第三季",
     "titleJa": "転生貴族、鑑定スキルで成り上がる 第3期",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "転生貴族、鑑定スキルで成り上がる(第3期)",
+    "bgmId": "530104",
+    "streamingsCount": 1
   },
   "anilist-205909": {
     "id": "anilist-205909",
     "titleZh": "螢火蟲的出嫁",
     "titleJa": "ホタルの嫁入り",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ホタルの嫁入り",
+    "bgmId": "621108",
+    "streamingsCount": 2
   },
   "anilist-176314": {
     "id": "anilist-176314",
-    "titleZh": "佐佐木與文鳥賢者 第二季",
+    "titleZh": "佐佐木與文鳥小嗶 第二季",
     "titleJa": "佐々木とピーちゃん シーズン２",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "佐々木とピーちゃん Season2",
+    "bgmId": "486456",
+    "streamingsCount": 1
   },
   "anilist-209872": {
     "id": "anilist-209872",
@@ -224,33 +224,33 @@
     "titleZh": "冰劍的魔術師將要統一世界 第二季",
     "titleJa": "冰剣の魔術師が世界を統べるⅡ",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "冰剣の魔術師が世界を統べるⅡ",
+    "bgmId": "654294",
+    "streamingsCount": 2
   },
   "anilist-178868": {
     "id": "anilist-178868",
-    "titleZh": "魔法騎士雷阿斯 (2026)",
+    "titleZh": "魔法騎士雷阿斯",
     "titleJa": "魔法騎士レイアース (2026)",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "魔法騎士レイアース(2026)",
+    "bgmId": "502123",
+    "streamingsCount": 1
   },
   "anilist-187402": {
     "id": "anilist-187402",
-    "titleZh": "轉生後的大聖女，極力隱瞞聖女的身分",
+    "titleZh": "轉生後的大聖女，極力隱瞞聖女的身份",
     "titleJa": "転生した大聖女は、聖女であることをひた隠す",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "転生した大聖女は、聖女であることをひた隠す",
+    "bgmId": "542007",
+    "streamingsCount": 1
   },
   "anilist-204011": {
     "id": "anilist-204011",
@@ -265,35 +265,35 @@
   },
   "anilist-186541": {
     "id": "anilist-186541",
-    "titleZh": "一覺醒來就有了最強裝備跟太空船 決定以自家獨棟建築為目標當傭兵自由過活",
+    "titleZh": "一覺醒來坐擁神裝和飛船，我決定以買一套獨門獨戶的房子為目標作為傭兵自由地活下去",
     "titleJa": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい",
+    "bgmId": "536270",
     "streamingsCount": 0
   },
   "anilist-160803": {
     "id": "anilist-160803",
-    "titleZh": "魔法少女育成計畫 restart",
+    "titleZh": "魔法少女育成計劃 restart",
     "titleJa": "魔法少女育成計画 restart",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "魔法少女育成計画restart",
+    "bgmId": "418229",
     "streamingsCount": 0
   },
   "anilist-186742": {
     "id": "anilist-186742",
-    "titleZh": "某暗部的少女共棲",
+    "titleZh": "暗部少女共棲",
     "titleJa": "とある暗部の少女共棲",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "とある暗部の少女共棲",
+    "bgmId": "537738",
     "streamingsCount": 0
   },
   "anilist-157330": {
@@ -309,24 +309,24 @@
   },
   "anilist-212888": {
     "id": "anilist-212888",
-    "titleZh": "裝備仔",
+    "titleZh": "裝備我最強",
     "titleJa": "テムパル～アイテムの力～",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "テムパル～アイテムの力～",
+    "bgmId": "657656",
+    "streamingsCount": 2
   },
   "anilist-206949": {
     "id": "anilist-206949",
-    "titleZh": "兇亂令媛 妮亞・利斯頓",
+    "titleZh": "亂世千金倪亞‧利斯頓轉生為嬌弱千金的弒神武人華麗無雙錄",
     "titleJa": "凶乱令嬢ニア・リストン",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "凶乱令嬢ニア・リストン 病弱令嬢に転生した神殺しの武人の華麗なる無双録",
+    "bgmId": "624085",
     "streamingsCount": 0
   },
   "anilist-209502": {
@@ -334,21 +334,21 @@
     "titleZh": "冷淡的佐藤同學只對我撒嬌",
     "titleJa": "塩対応の佐藤さんが俺にだけ甘い",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "塩対応の佐藤さんが俺にだけ甘い",
+    "bgmId": "634708",
     "streamingsCount": 0
   },
   "anilist-169581": {
     "id": "anilist-169581",
-    "titleZh": "Magical★Explorer 轉生為成人遊戲的小配角，活用遊戲知識自由生活",
+    "titleZh": "魔法★探險家",
     "titleJa": "マジカル★エクスプローラー　エロゲの友人キャラに転生したけど、ゲーム知識使って自由に生きる",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "マジカル★エクスプローラー",
+    "bgmId": "456078",
     "streamingsCount": 0
   },
   "anilist-202390": {
@@ -375,47 +375,47 @@
   },
   "anilist-207191": {
     "id": "anilist-207191",
-    "titleZh": "你好，身為魔女的我，被心上人委託製作迷情藥",
+    "titleZh": "你好、我是受心上人所託來做戀愛藥的魔女。",
     "titleJa": "どうも、好きな人に惚れ薬を依頼された魔女です。",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "どうも、好きな人に惚れ薬を依頼された魔女です。",
+    "bgmId": "624923",
     "streamingsCount": 0
   },
   "anilist-195571": {
     "id": "anilist-195571",
-    "titleZh": "硃色的面具",
+    "titleZh": "朱紅的假面",
     "titleJa": "朱色の仮面",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "朱色の仮面",
+    "bgmId": "568525",
+    "streamingsCount": 1
   },
   "anilist-213657": {
     "id": "anilist-213657",
     "titleZh": "夜櫻家大作戰 第二季 後篇",
     "titleJa": "夜桜さんちの大作戦 第2期 第2クール",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "夜桜さんちの大作戦(第2期)第2クール",
+    "bgmId": "664389",
+    "streamingsCount": 1
   },
   "anilist-204431": {
     "id": "anilist-204431",
     "titleZh": "怪獸 8 號 原創短篇動畫 鳴海的平日",
     "titleJa": "怪獣８号 鳴海の平日",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": true,
-    "matchedType": "B-bangumiDataTitle",
-    "matchedBgmTitle": "怪獣8号 鳴海の平日",
-    "bgmId": "616694",
-    "streamingsCount": 5
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   },
   "anilist-197543": {
     "id": "anilist-197543",
@@ -433,32 +433,32 @@
     "titleZh": "女友的朋友",
     "titleJa": "彼女の友達",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "彼女の友達",
+    "bgmId": "647220",
+    "streamingsCount": 1
   },
   "anilist-208025": {
     "id": "anilist-208025",
-    "titleZh": "與暗黑召喚師秘密戀愛中",
+    "titleZh": "黑暗召喚師在地下戀愛中",
     "titleJa": "ダークサモナーとデキている",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "ダークサモナーとデキている",
+    "bgmId": "630160",
+    "streamingsCount": 1
   },
   "anilist-207329": {
     "id": "anilist-207329",
     "titleZh": "被逐出隊伍的作弊級附加魔術師，謳歌著隨心所欲的第二人生。～我不只可以對武器，還能對任何東西賦予『強化點數』，而且能隨時憑我的意思解除效果，但剩下的人們還好嗎？～",
     "titleJa": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
+    "bgmId": "625799",
     "streamingsCount": 0
   },
   "anilist-211778": {
@@ -466,54 +466,54 @@
     "titleZh": "世界最強的魔女，就此開始",
     "titleJa": "世界最強の魔女、始めました",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "世界最強の魔女、始めました",
+    "bgmId": "646154",
     "streamingsCount": 0
   },
   "anilist-199007": {
     "id": "anilist-199007",
-    "titleZh": "#尋找殭屍中",
+    "titleZh": "殭屍搜尋中",
     "titleJa": "#ゾンビさがしてます",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "#ゾンビさがしてます",
+    "bgmId": "586255",
     "streamingsCount": 0
   },
   "anilist-200455": {
     "id": "anilist-200455",
-    "titleZh": "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局",
+    "titleZh": "弱氣MAX的大小姐、居然接受了鐵腕未婚夫的賭約",
     "titleJa": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
+    "bgmId": "596771",
+    "streamingsCount": 1
   },
   "anilist-199426": {
     "id": "anilist-199426",
     "titleZh": "殺手旅店 第二季",
     "titleJa": "ホテル・インヒューマンズ 第2期",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "ホテル・インヒューマンズ(第2期)",
+    "bgmId": "589775",
     "streamingsCount": 0
   },
   "anilist-209499": {
     "id": "anilist-209499",
-    "titleZh": "戰車椅子-TANK CHAIR-",
+    "titleZh": "戰車椅子",
     "titleJa": "TANK CHAIR-戦車椅子-",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "TANK CHAIR-戦車椅子-",
+    "bgmId": "636023",
     "streamingsCount": 0
   },
   "anilist-203473": {
@@ -540,13 +540,13 @@
   },
   "anilist-202250": {
     "id": "anilist-202250",
-    "titleZh": "用【循環利息】強制收回借出的魔力",
+    "titleZh": "借出去的魔力要用【分期還款】強制收回",
     "titleJa": "貸した魔力は【リボ払い】で強制徴収",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "貸した魔力は【リボ払い】で強制徴収",
+    "bgmId": "606716",
     "streamingsCount": 0
   },
   "anilist-213805": {
@@ -554,10 +554,10 @@
     "titleZh": "冰之城牆 第二季",
     "titleJa": "氷の城壁 第2期",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "氷の城壁(第2期)",
+    "bgmId": "665390",
     "streamingsCount": 0
   },
   "anilist-191656": {
@@ -565,10 +565,10 @@
     "titleZh": "學生會也有洞！",
     "titleJa": "生徒会にも穴はある！",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "生徒会にも穴はある！",
+    "bgmId": "554779",
     "streamingsCount": 0
   },
   "anilist-178972": {
@@ -628,24 +628,24 @@
   },
   "anilist-209219": {
     "id": "anilist-209219",
-    "titleZh": "轉生哥布林，有問題想問嗎？",
+    "titleZh": "轉生哥布林有什麼問題嗎？",
     "titleJa": "転生ゴブリンだけど質問ある？",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "転生ゴブリンだけど質問ある？",
+    "bgmId": "634587",
+    "streamingsCount": 2
   },
   "anilist-209463": {
     "id": "anilist-209463",
     "titleZh": "來自遠方",
     "titleJa": "彼方から",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "彼方から",
+    "bgmId": "636058",
     "streamingsCount": 0
   },
   "anilist-205896": {
@@ -653,10 +653,10 @@
     "titleZh": "和沒有信徒的女神大人一起攻略異世界",
     "titleJa": "信者ゼロの女神サマと始める異世界攻略",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "信者ゼロの女神サマと始める異世界攻略",
+    "bgmId": "621073",
     "streamingsCount": 0
   },
   "anilist-212667": {
@@ -664,33 +664,33 @@
     "titleZh": "不擅長與人相處的未亡人雪女小姐與詛咒戒指",
     "titleJa": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪",
+    "bgmId": "656083",
     "streamingsCount": 0
   },
   "anilist-206401": {
     "id": "anilist-206401",
-    "titleZh": "FX 戰士久留美",
+    "titleZh": "FX戰士久留美",
     "titleJa": "FX戦士くるみちゃん",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "FX戦士くるみちゃん",
+    "bgmId": "622288",
+    "streamingsCount": 1
   },
   "anilist-204389": {
     "id": "anilist-204389",
     "titleZh": "野生 Boss 出現了！ 第二季",
     "titleJa": "野生のラスボスが現れた！ 第2期",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "野生のラスボスが現れた！(第2期)",
+    "bgmId": "616808",
+    "streamingsCount": 1
   },
   "anilist-212539": {
     "id": "anilist-212539",
@@ -1229,7 +1229,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "天は赤い河のほとり",
     "bgmId": "627648",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-185692": {
     "id": "anilist-185692",
@@ -1823,7 +1823,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ニワトリ・ファイター",
     "bgmId": "505258",
-    "streamingsCount": 10
+    "streamingsCount": 11
   },
   "anilist-195268": {
     "id": "anilist-195268",
@@ -2197,7 +2197,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "超かぐや姫！",
     "bgmId": "604826",
-    "streamingsCount": 1
+    "streamingsCount": 2
   },
   "anilist-176276": {
     "id": "anilist-176276",
@@ -2670,7 +2670,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "劇場版 暗殺教室 みんなの時間",
     "bgmId": "583746",
-    "streamingsCount": 0
+    "streamingsCount": 1
   },
   "anilist-185753": {
     "id": "anilist-185753",
@@ -2736,7 +2736,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "花緑青が明ける日に",
     "bgmId": "491656",
-    "streamingsCount": 0
+    "streamingsCount": 1
   },
   "anilist-153800": {
     "id": "anilist-153800",
@@ -7004,7 +7004,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ワンルーム、日当たり普通、天使つき。",
     "bgmId": "457945",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-166715": {
     "id": "anilist-166715",
@@ -9644,7 +9644,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "英雄王、武を極めるため転生す ～そして、世界最強の見習い騎士♀～",
     "bgmId": "360345",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-126529": {
     "id": "anilist-126529",
@@ -9853,7 +9853,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "グリッドマン ユニバース",
     "bgmId": "362335",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-155089": {
     "id": "anilist-155089",
@@ -10634,7 +10634,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Engage Kiss",
     "bgmId": "375817",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-136707": {
     "id": "anilist-136707",
@@ -11624,7 +11624,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "現実主義勇者の王国再建記 第二部",
     "bgmId": "350771",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-130591": {
     "id": "anilist-130591",
@@ -12867,7 +12867,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "海賊王女",
     "bgmId": "311310",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-127271": {
     "id": "anilist-127271",
@@ -14924,7 +14924,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
     "bgmId": "305511",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-112301": {
     "id": "anilist-112301",
@@ -15507,7 +15507,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "グレイプニル",
     "bgmId": "276705",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-114043": {
     "id": "anilist-114043",
@@ -17839,7 +17839,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "川柳少女",
     "bgmId": "268510",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-103221": {
     "id": "anilist-103221",
@@ -17894,7 +17894,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "この世の果てで恋を唄う少女YU-NO",
     "bgmId": "204135",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-107418": {
     "id": "anilist-107418",
@@ -21854,7 +21854,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "セントールの悩み",
     "bgmId": "201754",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-98298": {
     "id": "anilist-98298",
@@ -22349,7 +22349,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "夏目友人帳 陸",
     "bgmId": "203387",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-97660": {
     "id": "anilist-97660",
@@ -23416,7 +23416,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "夏目友人帳 伍",
     "bgmId": "174638",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-101102": {
     "id": "anilist-101102",
@@ -24604,7 +24604,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "あんハピ♪",
     "bgmId": "138053",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-21608": {
     "id": "anilist-21608",
@@ -24857,7 +24857,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "灰と幻想のグリムガル",
     "bgmId": "148726",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-9260": {
     "id": "anilist-9260",
@@ -26001,7 +26001,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "干物妹！うまるちゃん",
     "bgmId": "120187",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-21093": {
     "id": "anilist-21093",
@@ -26034,7 +26034,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "六花の勇者",
     "bgmId": "118067",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-20754": {
     "id": "anilist-20754",
@@ -26507,7 +26507,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "やはり俺の青春ラブコメはまちがっている。続",
     "bgmId": "102134",
-    "streamingsCount": 7
+    "streamingsCount": 9
   },
   "anilist-20872": {
     "id": "anilist-20872",
@@ -27618,7 +27618,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "暁のヨナ",
     "bgmId": "107474",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-20631": {
     "id": "anilist-20631",
@@ -29224,7 +29224,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ノラガミ",
     "bgmId": "82572",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-18897": {
     "id": "anilist-18897",
@@ -29785,7 +29785,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "境界の彼方",
     "bgmId": "49278",
-    "streamingsCount": 8
+    "streamingsCount": 9
   },
   "anilist-17895": {
     "id": "anilist-17895",
@@ -29917,7 +29917,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "アウトブレイク・カンパニー",
     "bgmId": "78406",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-12477": {
     "id": "anilist-12477",
@@ -32260,7 +32260,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "魔法少女まどか☆マギカ [後編] 永遠の物語",
     "bgmId": "44692",
-    "streamingsCount": 6
+    "streamingsCount": 7
   },
   "anilist-13331": {
     "id": "anilist-13331",
@@ -33382,7 +33382,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "緋色の欠片",
     "bgmId": "29072",
-    "streamingsCount": 3
+    "streamingsCount": 5
   },
   "anilist-13261": {
     "id": "anilist-13261",
@@ -33712,7 +33712,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "あの夏で待ってる",
     "bgmId": "22657",
-    "streamingsCount": 4
+    "streamingsCount": 5
   },
   "anilist-11319": {
     "id": "anilist-11319",
@@ -33756,7 +33756,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "夏目友人帳 肆",
     "bgmId": "23495",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-11751": {
     "id": "anilist-11751",
@@ -34273,7 +34273,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ベン・トー",
     "bgmId": "19540",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-9936": {
     "id": "anilist-9936",
@@ -34878,7 +34878,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "夏目友人帳 参",
     "bgmId": "12536",
-    "streamingsCount": 5
+    "streamingsCount": 7
   },
   "anilist-10278": {
     "id": "anilist-10278",
@@ -36583,7 +36583,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ポケットモンスター ベストウイッシュ",
     "bgmId": "8401",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-8934": {
     "id": "anilist-8934",
@@ -36840,14 +36840,14 @@
   },
   "anilist-9441": {
     "id": "anilist-9441",
-    "titleZh": "夢色蛋糕師SP 專業版",
+    "titleZh": "夢色蛋糕師SP Professional",
     "titleJa": "夢色パティシエールSP（スペシャル）プロフェッショナル",
     "yearSeason": "2010 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "夢色パティシエールSP プロフェッショナル",
+    "bgmId": "425179",
+    "streamingsCount": 1
   },
   "anilist-9202": {
     "id": "anilist-9202",

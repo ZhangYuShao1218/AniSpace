@@ -190,7 +190,7 @@
     "titleZh": "偵探已經，死了。 第二季",
     "titleEn": "The Detective Is Already Dead Season 2",
     "titleJa": "探偵はもう、死んでいる。Season2",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/75/0000125975.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152677-EnZkUV9MTvfy.jpg",
     "startDate": {
       "year": 2026,
@@ -205,7 +205,14 @@
       "懸疑",
       "超自然"
     ],
-    "streamings": []
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=125975"
+      }
+    ]
   },
   {
     "id": "anilist-210482",
@@ -313,7 +320,7 @@
     "titleZh": "螢火蟲的出嫁",
     "titleEn": "Firefly Wedding",
     "titleJa": "ホタルの嫁入り",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/41/0000149241.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg",
     "startDate": {
       "year": 2026,
@@ -326,6 +333,12 @@
       "愛情"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149241"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -388,10 +401,10 @@
   },
   {
     "id": "anilist-204650",
-    "titleZh": "桃源暗鬼 日光・華嚴瀑布篇",
+    "titleZh": "桃源暗鬼：日光·華嚴瀑布篇",
     "titleEn": "TOUGEN ANKI: Nikko Kegon Falls Arc",
     "titleJa": "桃源暗鬼 日光・華厳の滝編",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/97/0000150697.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204650-5qXlU69CHwKA.jpg",
     "startDate": {
       "year": 2026,
@@ -403,6 +416,14 @@
       "動作",
       "懸疑",
       "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台灣",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=150697"
+      }
     ]
   },
   {
@@ -481,7 +502,7 @@
     "titleZh": "魔法騎士雷阿斯",
     "titleEn": "Magic Knight Rayearth (2026)",
     "titleJa": "魔法騎士レイアース (2026)",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/75/0000140275.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-74PoVpFE9oaO.jpg",
     "startDate": {
       "year": 2026,
@@ -498,6 +519,12 @@
       "魔法少女"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=140275"
+      },
       {
         "site": "unext",
         "name": "U-NEXT",
@@ -535,7 +562,7 @@
   },
   {
     "id": "anilist-204011",
-    "titleZh": "PSYREN－末日遊戲－",
+    "titleZh": "PSYREN -決戰遊戲-",
     "titleEn": "PSYREN",
     "titleJa": "PSYREN -サイレン-",
     "coverImageGamer": "",
@@ -554,10 +581,10 @@
   },
   {
     "id": "anilist-186541",
-    "titleZh": "一覺醒來坐擁神裝和飛船，我決定以買一套獨門獨戶的房子為目標作為傭兵自由地活下去",
+    "titleZh": "一覺醒來就有了最強裝備跟太空船 決定以自家獨棟建築為目標當傭兵自由過活",
     "titleEn": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
     "titleJa": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/83/0000143583.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186541-IEzaavXvkJAc.png",
     "startDate": {
       "year": 2026,
@@ -574,14 +601,22 @@
       "機甲",
       "異世界",
       "科幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=143583"
+      }
     ]
   },
   {
     "id": "anilist-160803",
-    "titleZh": "魔法少女育成計劃 restart",
+    "titleZh": "魔法少女育成計畫 restart",
     "titleEn": "",
     "titleJa": "魔法少女育成計画 restart",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/96/0000142896.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx160803-aBWg5M8qdOMX.jpg",
     "startDate": {
       "year": 2026,
@@ -594,6 +629,14 @@
       "奇幻",
       "驚悚",
       "魔法少女"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=142896"
+      }
     ]
   },
   {
@@ -762,10 +805,10 @@
   },
   {
     "id": "anilist-207191",
-    "titleZh": "你好、我是受心上人所託來做戀愛藥的魔女。",
+    "titleZh": "你好，身為魔女的我，被心上人委託製作迷情藥",
     "titleEn": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
     "titleJa": "どうも、好きな人に惚れ薬を依頼された魔女です。",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/59/0000150359.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-JVPvPlAJED4S.jpg",
     "startDate": {
       "year": 2026,
@@ -776,6 +819,14 @@
     "genres": [
       "奇幻",
       "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=150359"
+      }
     ]
   },
   {
@@ -924,10 +975,10 @@
   },
   {
     "id": "anilist-207329",
-    "titleZh": "被流放的開掛魔術師謳歌隨心所欲第二人生",
+    "titleZh": "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。",
     "titleEn": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
     "titleJa": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/87/0000149687.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207329-SsC5hikUQJ4I.jpg",
     "startDate": {
       "year": 2026,
@@ -941,14 +992,21 @@
       "奇幻",
       "日常"
     ],
-    "streamings": []
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149687"
+      }
+    ]
   },
   {
     "id": "anilist-211778",
     "titleZh": "世界最強的魔女，就此開始",
     "titleEn": "The World's Strongest Witch",
     "titleJa": "世界最強の魔女、始めました",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/78/0000151278.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-5WtVC7WXFduS.png",
     "startDate": {
       "year": 2026,
@@ -960,6 +1018,14 @@
       "動作",
       "喜劇",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=151278"
+      }
     ]
   },
   {
@@ -985,10 +1051,10 @@
   },
   {
     "id": "anilist-200455",
-    "titleZh": "弱氣MAX的大小姐、居然接受了鐵腕未婚夫的賭約",
+    "titleZh": "極致軟弱千金小姐，不小心答應了精明未婚夫的賭局",
     "titleEn": "Even Though I'm a Super Timid Noble Girl, I Accepted the Bet From My Cunning Fiancé",
     "titleJa": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/81/0000147781.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b200455-gpDWDkMAEuM7.jpg",
     "startDate": {
       "year": 2026,
@@ -1003,6 +1069,12 @@
       "愛情"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=147781"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -1337,10 +1409,10 @@
   },
   {
     "id": "anilist-206401",
-    "titleZh": "FX戰士久留美",
+    "titleZh": "FX 戰士久留美",
     "titleEn": "FX Fighter Kurumi-chan",
     "titleJa": "FX戦士くるみちゃん",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/55/0000149355.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206401-tToJHZcMGrvp.jpg",
     "startDate": {
       "year": 2026,
@@ -1353,6 +1425,12 @@
       "日常"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149355"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -2938,8 +3016,7 @@
     "genres": [
       "劇情",
       "奇幻",
-      "愛情",
-      "憂鬱"
+      "愛情"
     ],
     "streamings": [
       {
@@ -12097,10 +12174,10 @@
   },
   {
     "id": "anilist-198373",
-    "titleZh": "劇場版 暗殺教室 大家的時間",
+    "titleZh": "劇場版「暗殺教室」：我們的時光",
     "titleEn": "Assassination Classroom the Movie: Our Time",
     "titleJa": "暗殺教室 みんなの時間",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/24/0000147124.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198373-bJ7PYyknp4ln.jpg",
     "startDate": {
       "year": 2026,
@@ -12115,6 +12192,12 @@
       "超自然"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51514"
+      },
       {
         "site": "prime",
         "name": "Prime Video",
@@ -26891,7 +26974,6 @@
       "愛情",
       "憂鬱",
       "時空輪迴",
-      "異世界",
       "驚悚"
     ],
     "streamings": [
@@ -70498,7 +70580,6 @@
       "愛情",
       "憂鬱",
       "時空輪迴",
-      "異世界",
       "驚悚"
     ],
     "streamings": [
@@ -75660,7 +75741,6 @@
       "心理",
       "憂鬱",
       "時空輪迴",
-      "異世界",
       "驚悚"
     ],
     "streamings": [
@@ -78469,7 +78549,7 @@
     "titleZh": "小書痴的下剋上：為了成為圖書管理員不擇手段！第二季",
     "titleEn": "Ascendance of a Bookworm Part 2",
     "titleJa": "本好きの下剋上 司書になるためには手段を選んでいられません 第2期",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/37/0000109037.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113693-3tHbslFxD47R.jpg",
     "startDate": {
       "year": 2020,
@@ -78488,6 +78568,12 @@
         "name": "Bilibili",
         "region": "台灣",
         "url": "https://www.bilibili.com/bangumi/media/md28228507/"
+      },
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=15151"
       },
       {
         "site": "iqiyi",
@@ -83137,7 +83223,7 @@
     "titleZh": "小書痴的下剋上：為了成為圖書管理員不擇手段！",
     "titleEn": "Ascendance of a Bookworm",
     "titleJa": "本好きの下剋上 司書になるためには手段を選んでいられません",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/29/0000104329.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108268-Dtt82uOi3vq5.jpg",
     "startDate": {
       "year": 2019,
@@ -83162,6 +83248,12 @@
         "name": "木棉花 YouTube",
         "region": "台灣",
         "url": "https://www.youtube.com/playlist?list=PLflwmGrZWmpc"
+      },
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=13834"
       },
       {
         "site": "iqiyi",
@@ -151642,7 +151734,7 @@
     "titleZh": "夏目友人帳 肆",
     "titleEn": "Natsume's Book of Friends Season 4",
     "titleJa": "夏目友人帳 肆",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/01/0000052001.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11665-nfbt94cwKySE.png",
     "startDate": {
       "year": 2012,
@@ -151657,6 +151749,12 @@
       "超自然"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=1289"
+      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -155384,7 +155482,7 @@
     "titleZh": "夏目友人帳 參",
     "titleEn": "Natsume's Book of Friends Season 3",
     "titleJa": "夏目友人帳 参",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/55/0000044655.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10379-lS2Mk6lX4lZr.jpg",
     "startDate": {
       "year": 2011,
@@ -155399,6 +155497,12 @@
       "超自然"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=1276"
+      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -157906,7 +158010,6 @@
     },
     "yearSeason": "2011 春",
     "genres": [
-      "校園",
       "超能力",
       "超自然",
       "運動"

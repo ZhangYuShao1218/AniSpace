@@ -2348,8 +2348,9 @@
     "source": "ai"
   },
   "anilist-152677": {
-    "source": "ai",
-    "bangumiDataTitle": "探偵はもう、死んでいる。 Season2"
+    "source": "gamer",
+    "bangumiDataTitle": "探偵はもう、死んでいる。 Season2",
+    "titleZh": "偵探已經，死了。Season 2"
   },
   "anilist-154541": {
     "titleZh": "中高一貫!!鬼滅學園物語 ～鬼滅之宴=特別篇=～",
@@ -2499,7 +2500,8 @@
     "source": "ai"
   },
   "anilist-195571": {
-    "source": "ai"
+    "source": "gamer",
+    "titleZh": "朱色假面"
   },
   "anilist-195604": {
     "titleZh": "黑色五葉草 第二季",
@@ -2543,8 +2545,8 @@
     "bangumiDataTitle": "怪獣8号 鳴海の平日"
   },
   "anilist-204650": {
-    "titleZh": "桃源暗鬼 日光・華嚴瀑布篇",
-    "source": "ai"
+    "source": "ai",
+    "bangumiDataTitle": "桃源暗鬼～日光・華厳の滝編～"
   },
   "anilist-205909": {
     "source": "ai"

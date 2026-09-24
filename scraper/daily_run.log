@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/9/23 下午3:59:05
+執行時間: 2026/9/24 下午3:50:07
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午3:59:05] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午3:50:07] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -215,15 +215,14 @@ AniSpace 每日任務完整執行 Log
 🔍 正在爬取: 2026 年 FALL 季 (Limit: 60)...
 🚀 取得 60 部動畫資料，進行本地超高速清洗...
 
-🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
+🤖 發現 4 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
+✅ AI 翻譯完成，更新了 1 筆資料至 custom_override.json
 ✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3677 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 379 部無對應動畫，開始進行極速正規化比對...
-⚡ [正規化對照命中] [anilist-204650] "桃源暗鬼 日光・華厳の滝編" ➜ 字典:"桃源暗鬼～日光・華厳の滝編～" (BGM ID: 617948)
-✨ 本地程式化正規化對照執行完畢！共成功對齊 1 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
+⚡ 啟動本地程式化標題正規化對照引擎：針對 378 部無對應動畫，開始進行極速正規化比對...
+✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
-✅ 已將標題正規化對應成功的 1 筆結果寫入 custom_override.json 的 bangumiDataTitle 欄位中！
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-152677] "偵探已經，死了。第二季" ➜ "偵探已經，死了。 第二季"
+🔄 [bangumiDataTitle 匯入翻譯] [anilist-152677] "偵探已經，死了。Season 2" ➜ "偵探已經，死了。 第二季"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-204650] "桃源暗鬼 日光・華嚴瀑布篇" ➜ "桃源暗鬼：日光·華嚴瀑布篇"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-213657] "夜櫻家大作戰 第二季 後篇" ➜ "夜櫻家大作戰 第二季 第2部分"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-207329] "追放されたチート付與魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付與できるし、俺の意思でいつでも効果を解除できるけど、殘った人たち大丈夫？～" ➜ "被放逐的作弊賦予魔術師享受隨心所欲的第二人生。"
@@ -259,41 +258,17 @@ AniSpace 每日任務完整執行 Log
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
 📦 成功載入 bangumi-data 字典，映射 1702 筆 AniList ID 及 1769 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 26 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題 (僅寫入 custom_override.json，不覆蓋 anime_data.json): "偵探已經，死了。 第二季" ➜ "偵探已經，死了。Season 2"
-✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題 (僅寫入 custom_override.json，不覆蓋 anime_data.json): "朱紅的假面" ➜ "朱色假面"
-⏳ 洗滌進度: 25 / 26 (本次成功轉換: 5)
-⏳ 洗滌進度: 26 / 26 (本次成功轉換: 5)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 5 筆作品。
+📦【動畫瘋洗滌檢驗】偵測到 21 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+⏳ 洗滌進度: 21 / 21 (本次成功轉換: 0)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
 ✅ 已將 3677 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3677 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3677 筆，新增資料 0 筆，AI 翻譯 1 筆。
 📈 Bangumi 字典對應與授權回填：共 3299 部動畫成功對照字典並無條件整合去重播放授權！
-⚡ 本地程式化標題正規化自動配對成功 (1 部)：
-- [anilist-204650] "桃源暗鬼 日光・華厳の滝編" ➜ 字典標題 "桃源暗鬼～日光・華厳の滝編～" (BGM ID: 617948)
-🛡️ 洗滌成功的動畫 (共 5 部)：
-- 《劇場版「暗殺教室」：我們的時光》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147124
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51514
-- 《小書痴的下剋上：為了成為圖書管理員不擇手段！第二季》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=109037
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=15151
-- 《小書痴的下剋上：為了成為圖書管理員不擇手段！》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=104329
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=13834
-- 《夏目友人帳 肆》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=52001
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=1289
-- 《夏目友人帳 參》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=44655
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=1276
-🎉 新增對應 bangumi_data 的動畫清單 (共 4 部)：
-- 《桃源暗鬼 日光・華嚴瀑布篇》 ➜ 成功對應至字典：桃源暗鬼～日光・華厳の滝編～ (BGM ID: 617948)
-- 《PSYREN -決戰遊戲-》 ➜ 成功對應至字典：PSYREN -サイレン- (BGM ID: 614640)
-- 《恐怖收集者》 ➜ 成功對應至字典：恐怖コレクター (BGM ID: 613256)
-- 《幻想水滸傳》 ➜ 成功對應至字典：幻想水滸伝 (BGM ID: 541538)
+🤖 AI 翻譯動畫：
+- 桃源暗鬼 日光・華嚴瀑布篇
 🔗 未對應 bangumi_data 動畫數量：378 部 (完整清單已隨信附帶)
 =====================================
 
@@ -304,12 +279,11 @@ AniSpace 每日任務完整執行 Log
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午4:14:25] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午4:00:19] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-[Diff] 發現更官方譯名 anilist-204650: 舊譯名 "桃源暗鬼 日光・華嚴瀑布篇" ➜ 新譯名 "桃源暗鬼：日光·華嚴瀑布篇"，清除過時的 Override: "桃源暗鬼 日光・華嚴瀑布篇"
-Updated custom_override.json based on translation diffs.
+No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260923.json
+Created daily backup: anime_data_backup_20260924.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -370,47 +344,30 @@ Deleted old backup: anime_data_backup_20260913.json
 Deleted old backup: anime_data_backup_20260914.json
 Deleted old backup: anime_data_backup_20260915.json
 Deleted old backup: anime_data_backup_20260916.json
-Updated dataVersion in package.json and public/data_version.json to: 00167 (167)
+Deleted old backup: anime_data_backup_20260917.json
+Updated dataVersion in package.json and public/data_version.json to: 00168 (168)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午4:14:25] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午4:00:19] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
-📥 [anilist-209219] 已加入批次佇列: 轉生哥布林有什麼問題嗎？ (佇列: 1/10)
-📥 [anilist-209463] 已加入批次佇列: 來自遠方 (佇列: 2/10)
-📥 [anilist-205896] 已加入批次佇列: 和沒有信徒的女神大人一起攻略異世界 (佇列: 3/10)
-📥 [anilist-212667] 已加入批次佇列: 不擅長與人相處的未亡人雪女小姐與詛咒戒指 (佇列: 4/10)
-📥 [anilist-206401] 已加入批次佇列: FX 戰士久留美 (佇列: 5/10)
-📥 [anilist-204389] 已加入批次佇列: 野生的大魔王出現了！ 第二季 (佇列: 6/10)
-📥 [anilist-9441] 已加入批次佇列: 夢色蛋糕師SP Professional (佇列: 7/10)
 
-📦 準備進行 AI 翻譯 (批次: 7)...
-⚠️ AI 觸發頻率限制或發生錯誤，強制冷卻 60 秒後重試 (第 1/3 次)...
-✅ [anilist-209219] AI 翻譯完成: 轉生哥布林有什麼問題嗎？
-✅ [anilist-209463] AI 翻譯完成: 來自遠方
-✅ [anilist-205896] AI 翻譯完成: 和沒有信徒的女神大人一起攻略異世界
-✅ [anilist-212667] AI 翻譯完成: 不擅長與人相處的未亡人雪女小姐與詛咒戒指
-✅ [anilist-206401] AI 翻譯完成: FX 戰士久留美
-✅ [anilist-204389] AI 翻譯完成: 野生的大魔王出現了！ 第二季
-✅ [anilist-9441] AI 翻譯完成: 夢色蛋糕師SP Professional
-
-🎉 Synopsis fetching complete. Processed 7 animes.
+🎉 Synopsis fetching complete. Processed 0 animes.
 
 📊 每日任務劇情簡介統計回報:
 - 當前動畫總數: 3677
 - 沒找到對應 bangumi_data 的數量: 378
 - 本次掃描發現對應資料為空的數量: 80
 - 有劇情簡介的動畫總數量: 3267
-- 本次新增 7 筆簡介
+- 本次新增 0 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午4:20:48] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午4:01:49] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 139 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 87 項高價值商品。
+準備將 131 筆原始資料交由 Gemini AI 進行分析與篩選...
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -418,70 +375,42 @@ Updated dataVersion in package.json and public/data_version.json to: 00167 (167)
 ✔️ 正常: TOYeGO 玩具e哥
 
 ✅ 檢查與更新完成！已寫入 /home/runner/work/AniSpace/AniSpace/public/affiliates.json 與 /home/runner/work/AniSpace/AniSpace/public/product_images.json
+Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午4:22:37] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午4:02:17] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.2 - (00167)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00168)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.2
-・動畫資料庫版號：(00167)
+・動畫資料庫版號：(00168)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3677 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3677 筆，新增資料 0 筆，AI 翻譯 1 筆。
 📈 Bangumi 字典對應與授權回填：共 3299 部動畫成功對照字典並無條件整合去重播放授權！
-⚡ 本地程式化標題正規化自動配對成功 (1 部)：
-- [anilist-204650] "桃源暗鬼 日光・華厳の滝編" ➜ 字典標題 "桃源暗鬼～日光・華厳の滝編～" (BGM ID: 617948)
-🛡️ 洗滌成功的動畫 (共 5 部)：
-- 《劇場版「暗殺教室」：我們的時光》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147124
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51514
-- 《小書痴的下剋上：為了成為圖書管理員不擇手段！第二季》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=109037
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=15151
-- 《小書痴的下剋上：為了成為圖書管理員不擇手段！》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=104329
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=13834
-- 《夏目友人帳 肆》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=52001
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=1289
-- 《夏目友人帳 參》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=44655
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=1276
-🎉 新增對應 bangumi_data 的動畫清單 (共 4 部)：
-- 《桃源暗鬼 日光・華嚴瀑布篇》 ➜ 成功對應至字典：桃源暗鬼～日光・華厳の滝編～ (BGM ID: 617948)
-- 《PSYREN -決戰遊戲-》 ➜ 成功對應至字典：PSYREN -サイレン- (BGM ID: 614640)
-- 《恐怖收集者》 ➜ 成功對應至字典：恐怖コレクター (BGM ID: 613256)
-- 《幻想水滸傳》 ➜ 成功對應至字典：幻想水滸伝 (BGM ID: 541538)
+🤖 AI 翻譯動畫：
+- 桃源暗鬼 日光・華嚴瀑布篇
 🔗 未對應 bangumi_data 動畫數量：378 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 87 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 131 項高價值商品。
 
 
 
 【劇情簡介狀態】
 總計收錄: 3677 部動畫
 缺乏簡介: 408 部
-本日新增: 7 筆簡介
-新增清單：
-- [anilist-209219] 轉生哥布林有什麼問題嗎？
-- [anilist-209463] 來自遠方
-- [anilist-205896] 和沒有信徒的女神大人一起攻略異世界
-- [anilist-212667] 不擅長與人相處的未亡人雪女小姐與詛咒戒指
-- [anilist-206401] FX 戰士久留美
-- [anilist-204389] 野生的大魔王出現了！ 第二季
-- [anilist-9441] 夢色蛋糕師SP Professional
+本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-9-23.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-9-24.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午4:22:40] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午4:02:21] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3681 URLs.
 

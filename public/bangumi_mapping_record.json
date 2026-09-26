@@ -101,7 +101,7 @@
   "anilist-210482": {
     "id": "anilist-210482",
     "titleZh": "飆馬野郎 JOJO的奇妙冒險 2nd STAGE",
-    "titleJa": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd - 3rd STAGE",
+    "titleJa": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
     "yearSeason": "2026 秋",
     "hasCorrespondingData": false,
     "matchedType": null,
@@ -1454,7 +1454,7 @@
   "anilist-182205": {
     "id": "anilist-182205",
     "titleZh": "關於我轉生變成史萊姆這檔事 第四季",
-    "titleJa": "転生したらスライムだった件 第4期",
+    "titleJa": "転生したらスライムだった件 第4期 第1&2クール",
     "yearSeason": "2026 春",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
@@ -40445,5 +40445,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-124494": {
+    "id": "anilist-124494",
+    "titleZh": "生化危機：無盡黑暗",
+    "titleJa": "バイオハザード:インフィニットダークネス",
+    "yearSeason": "2021 夏",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "BIOHAZARD：Infinite Darkness",
+    "bgmId": "315898",
+    "streamingsCount": 0
   }
 }

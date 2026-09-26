@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/9/25 下午4:12:26
+執行時間: 2026/9/26 下午4:01:03
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午4:12:26] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午4:01:03] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -216,7 +216,7 @@ AniSpace 每日任務完整執行 Log
 🚀 取得 60 部動畫資料，進行本地超高速清洗...
 
 🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
-✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3677 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
+✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3678 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
 ⚡ 啟動本地程式化標題正規化對照引擎：針對 378 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
@@ -260,28 +260,29 @@ AniSpace 每日任務完整執行 Log
 📦【動畫瘋洗滌檢驗】偵測到 21 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
 ⏳ 洗滌進度: 21 / 21 (本次成功轉換: 0)
 ✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
-✅ 已將 3677 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
+✅ 已將 3678 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3677 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3299 部動畫成功對照字典並無條件整合去重播放授權！
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3678 筆，新增資料 1 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3300 部動畫成功對照字典並無條件整合去重播放授權！
+🌟 新增動畫：
+- 生化危機：無盡黑暗
 🔗 未對應 bangumi_data 動畫數量：378 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1790 個系列，更新了 2173 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1790 個系列，更新了 2176 筆 Metadata 關聯檔案。
 
-✨ 抓取與清洗完成！極速處理完畢。共 3677 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
-⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt 1/5)，等待 5 秒後重試...
+✨ 抓取與清洗完成！極速處理完畢。共 3678 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午4:23:58] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午4:12:35] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
 No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20260925.json
+Created daily backup: anime_data_backup_20260926.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -344,30 +345,37 @@ Deleted old backup: anime_data_backup_20260915.json
 Deleted old backup: anime_data_backup_20260916.json
 Deleted old backup: anime_data_backup_20260917.json
 Deleted old backup: anime_data_backup_20260918.json
-Updated dataVersion in package.json and public/data_version.json to: 00169 (169)
+Deleted old backup: anime_data_backup_20260919.json
+Updated dataVersion in package.json and public/data_version.json to: 00170 (170)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午4:23:58] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午4:12:35] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
+📥 [anilist-124494] 已加入批次佇列: 生化危機：無盡黑暗 (佇列: 1/10)
 
-🎉 Synopsis fetching complete. Processed 0 animes.
+📦 準備進行 AI 翻譯 (批次: 1)...
+⚠️ AI 觸發頻率限制或發生錯誤，強制冷卻 60 秒後重試 (第 1/3 次)...
+⚠️ AI 觸發頻率限制或發生錯誤，強制冷卻 60 秒後重試 (第 2/3 次)...
+✅ [anilist-124494] AI 翻譯完成: 生化危機：無盡黑暗
+
+🎉 Synopsis fetching complete. Processed 1 animes.
 
 📊 每日任務劇情簡介統計回報:
-- 當前動畫總數: 3677
+- 當前動畫總數: 3678
 - 沒找到對應 bangumi_data 的數量: 378
 - 本次掃描發現對應資料為空的數量: 80
-- 有劇情簡介的動畫總數量: 3267
-- 本次新增 0 筆簡介
+- 有劇情簡介的動畫總數量: 3268
+- 本次新增 1 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午4:25:31] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午4:17:02] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 114 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 78 項高價值商品。
+準備將 119 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 84 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -378,38 +386,42 @@ Updated dataVersion in package.json and public/data_version.json to: 00169 (169)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午4:27:23] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午4:18:13] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.2 - (00169)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.2 - (00170)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.2
-・動畫資料庫版號：(00169)
+・動畫資料庫版號：(00170)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3677 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3299 部動畫成功對照字典並無條件整合去重播放授權！
+【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3678 筆，新增資料 1 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3300 部動畫成功對照字典並無條件整合去重播放授權！
+🌟 新增動畫：
+- 生化危機：無盡黑暗
 🔗 未對應 bangumi_data 動畫數量：378 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 78 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 84 項高價值商品。
 
 
 
 【劇情簡介狀態】
-總計收錄: 3677 部動畫
+總計收錄: 3678 部動畫
 缺乏簡介: 408 部
-本日新增: 0 筆簡介
+本日新增: 1 筆簡介
+新增清單：
+- [anilist-124494] 生化危機：無盡黑暗
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-9-25.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-9-26.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午4:27:26] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午4:18:15] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
-Successfully generated sitemap.xml with 3681 URLs.
+Successfully generated sitemap.xml with 3682 URLs.
 
 ✅ 步驟 [6. 自動更新網站地圖 (sitemap)] 執行成功完成。
 

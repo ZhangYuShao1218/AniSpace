@@ -1,6 +1,6 @@
 # AniList 與 bangumi-data 尚未連結之動畫清單
 
-本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3677 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **378 部**動畫條目。
+本清單列出當前資料庫 ([public/anime_data.json](file:///c:/Users/aaron/Documents/WorkSpace/Animation/public/anime_data.json)) 共 3678 部動畫中，尚未能與 `bangumi-data` 字典檔建立對應連結的 **378 部**動畫條目。
 
 > [!NOTE]
 > 這些未連結的條目絕大多數為 **2025/2026 年之後播映的未來新番、續作企劃、OVA、特輯或短期宣傳片**。由於 `bangumi-data` 開源社區主要收錄已開播或當季之正片，對於尚未放送的企劃尚未建檔或標註 AniList ID，因此屬於正常現象。
@@ -11,7 +11,7 @@
 | 2 | `anilist-159042` | 轉生成為魔劍了 第二季 | 転生したら剣でした 第2期 | 2026 秋 |
 | 3 | `anilist-160275` | 來自深淵 甦醒的神秘 | メイドインアビス 目覚める神秘 | 2026 秋 |
 | 4 | `anilist-199340` | 青春豬頭少年不會夢到親愛之友 | 青春ブタ野郎はディアフレンドの夢を見ない | 2026 秋 |
-| 5 | `anilist-210482` | 飆馬野郎 JOJO的奇妙冒險 2nd STAGE | ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd - 3rd STAGE | 2026 秋 |
+| 5 | `anilist-210482` | 飆馬野郎 JOJO的奇妙冒險 2nd STAGE | ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE | 2026 秋 |
 | 6 | `anilist-172192` | 歸還者的魔法特別優異 第二季 | 帰還者の魔法は特別です 第2期 | 2026 秋 |
 | 7 | `anilist-200929` | 藥師少女的獨語 亡妃的秘寶 | 薬屋のひとりごと 亡妃の秘宝 | 2026 秋 |
 | 8 | `anilist-191788` | 青之蘆葦 第二季 | アオアシ 第2期 | 2026 秋 |

@@ -218,7 +218,7 @@
     "id": "anilist-210482",
     "titleZh": "飆馬野郎 JOJO的奇妙冒險 2nd STAGE",
     "titleEn": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
-    "titleJa": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd - 3rd STAGE",
+    "titleJa": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg",
     "startDate": {
@@ -232,6 +232,7 @@
       "劇情",
       "動作",
       "懸疑",
+      "超能力",
       "超自然"
     ]
   },
@@ -754,8 +755,8 @@
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169581-Y6vEnIDIogsJ.jpg",
     "startDate": {
       "year": 2026,
-      "month": 10,
-      "day": 4
+      "month": 9,
+      "day": 26
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -5339,7 +5340,7 @@
     "id": "anilist-182205",
     "titleZh": "關於我轉生變成史萊姆這檔事 第四季",
     "titleEn": "That Time I Got Reincarnated as a Slime Season 4",
-    "titleJa": "転生したらスライムだった件 第4期",
+    "titleJa": "転生したらスライムだった件 第4期 第1&2クール",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/56/0000141656.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182205-q2AeO1owuQbO.jpg",
     "startDate": {
@@ -41933,6 +41934,7 @@
     "yearSeason": "2023 秋",
     "genres": [
       "劇情",
+      "憂鬱",
       "懸疑",
       "日常"
     ],
@@ -67307,6 +67309,25 @@
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md28237005/"
       }
+    ]
+  },
+  {
+    "id": "anilist-124494",
+    "titleZh": "生化危機：無盡黑暗",
+    "titleEn": "Resident Evil: Infinite Darkness",
+    "titleJa": "バイオハザード:インフィニットダークネス",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx124494-YZ8Cslde2tc7.jpg",
+    "startDate": {
+      "year": 2021,
+      "month": 7,
+      "day": 8
+    },
+    "yearSeason": "2021 夏",
+    "genres": [
+      "動作",
+      "恐怖",
+      "科幻"
     ]
   },
   {

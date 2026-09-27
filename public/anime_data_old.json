@@ -1222,7 +1222,7 @@
     "id": "anilist-178972",
     "titleZh": "GROTESQQQUE -怪誕-",
     "titleEn": "",
-    "titleJa": "GROTESQQQUE -グロテスク-",
+    "titleJa": "GROTESQQQUE-グロテスク-",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178972-wk88qoyg9HvZ.jpg",
     "startDate": {
@@ -7655,6 +7655,8 @@
     },
     "yearSeason": "2026 春",
     "genres": [
+      "動作",
+      "喜劇",
       "奇幻"
     ],
     "streamings": [
@@ -32760,6 +32762,7 @@
     },
     "yearSeason": "2024 夏",
     "genres": [
+      "日常",
       "音樂"
     ],
     "streamings": [

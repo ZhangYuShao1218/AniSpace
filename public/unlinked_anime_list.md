@@ -23,7 +23,7 @@
 | 14 | `anilist-194116` | 最終樂章 吹響吧！上低音號 後篇 | 最終楽章 響け！ユーフォニアム後編 | 2026 秋 |
 | 15 | `anilist-204431` | 怪獸 8 號 原創短篇動畫 鳴海的平日 | 怪獣８号 鳴海の平日 | 2026 秋 |
 | 16 | `anilist-197543` | BanG Dream! Ave Mujica | BanG Dream! Ave Mujica prima aurora | 2026 秋 |
-| 17 | `anilist-178972` | GROTESQQQUE -怪誕- | GROTESQQQUE -グロテスク- | 2026 秋 |
+| 17 | `anilist-178972` | GROTESQQQUE -怪誕- | GROTESQQQUE-グロテスク- | 2026 秋 |
 | 18 | `anilist-143103` | 魔法使之夜 | 魔法使いの夜 | 2026 秋 |
 | 19 | `anilist-198727` | 千歲同學在彈珠汽水瓶中 第2季度 | 千歳くんはラムネ瓶のなか 2クール | 2026 秋 |
 | 20 | `anilist-203275` | 惡魔紋章 | デモンズ・クレスト | 2026 秋 |

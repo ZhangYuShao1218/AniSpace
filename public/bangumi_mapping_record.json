@@ -574,7 +574,7 @@
   "anilist-178972": {
     "id": "anilist-178972",
     "titleZh": "GROTESQQQUE -怪誕-",
-    "titleJa": "GROTESQQQUE -グロテスク-",
+    "titleJa": "GROTESQQQUE-グロテスク-",
     "yearSeason": "2026 秋",
     "hasCorrespondingData": false,
     "matchedType": null,
@@ -13220,6 +13220,17 @@
     "matchedBgmTitle": "岬のマヨイガ",
     "bgmId": "318542",
     "streamingsCount": 2
+  },
+  "anilist-124494": {
+    "id": "anilist-124494",
+    "titleZh": "生化危機：無盡黑暗",
+    "titleJa": "バイオハザード:インフィニットダークネス",
+    "yearSeason": "2021 夏",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "BIOHAZARD：Infinite Darkness",
+    "bgmId": "315898",
+    "streamingsCount": 0
   },
   "anilist-120120": {
     "id": "anilist-120120",
@@ -40445,16 +40456,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-124494": {
-    "id": "anilist-124494",
-    "titleZh": "生化危機：無盡黑暗",
-    "titleJa": "バイオハザード:インフィニットダークネス",
-    "yearSeason": "2021 夏",
-    "hasCorrespondingData": true,
-    "matchedType": "A-AniListID",
-    "matchedBgmTitle": "BIOHAZARD：Infinite Darkness",
-    "bgmId": "315898",
-    "streamingsCount": 0
   }
 }

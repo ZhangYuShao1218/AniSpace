@@ -62,7 +62,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [isProcessing, setIsProcessing] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const { accessToken, login } = useGoogleSync();
+  const { isLoggedIn, getAccessToken, login } = useGoogleSync();
   const { t, tTitle } = useLanguage();
   const [customTitle, setCustomTitle] = useState('');
   const [sheetUrlToOpen, setSheetUrlToOpen] = useState<string | null>(null);
@@ -137,7 +137,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
   if (!isOpen) return null;
 
   const handleExportSheet = async () => {
-    if (!accessToken) {
+    if (!isLoggedIn) {
       alert(t('loginRequiredAlert'));
       login();
       return;
@@ -146,6 +146,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, animes,
     setIsProcessing(true);
     try {
       const dataToExport = selectedIds.size > 0 ? selectedAnimes : animes;
+      const accessToken = await getAccessToken();
       const url = await exportToGoogleSheet(accessToken, dataToExport, isWatched);
       
       logEvent('Share', 'Generate_Google_Sheet', `Items: ${dataToExport.length}`);

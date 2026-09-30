@@ -1,6 +1,6 @@
 import groovy.json.JsonSlurper
 
-def packageJsonFile = new File("$rootDir/../../package.json")
+def packageJsonFile = new File("$rootDir/../package.json")
 def packageJson = new JsonSlurper().parseText(packageJsonFile.text)
 
 apply plugin: 'com.android.application'

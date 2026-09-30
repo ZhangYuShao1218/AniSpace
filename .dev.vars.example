@@ -1,0 +1,10 @@
+# Cloudflare Pages Functions 本機開發用的環境變數範例
+# 複製成 .dev.vars 並填入真實值 (.dev.vars 已加入 .gitignore)
+# 正式環境請在 Cloudflare Dashboard → Pages 專案 → Settings → Variables and Secrets 設定
+
+# 與前端 VITE_GOOGLE_CLIENT_ID 相同的「網頁應用程式」OAuth 用戶端 ID
+GOOGLE_CLIENT_ID=xxxxxxxx.apps.googleusercontent.com
+# 該用戶端的密鑰 (Google Cloud Console → API 和服務 → 憑證)
+GOOGLE_CLIENT_SECRET=GOCSPX-xxxxxxxx
+# 32 bytes 隨機金鑰 (base64)，產生方式：node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
+TOKEN_ENC_KEY=

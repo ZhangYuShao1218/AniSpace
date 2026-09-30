@@ -4,6 +4,8 @@
   "name": "anispace",
   "main": "worker/index.ts",
   "compatibility_date": "2025-09-01",
+  // 部署時保留 Dashboard 上設定的變數 (預設 wrangler deploy 會清除未寫在此檔的純文字變數)
+  "keep_vars": true,
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

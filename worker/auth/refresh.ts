@@ -1,11 +1,11 @@
 // POST /api/auth/refresh
 // 讀取 Cookie 中的 refresh token，向 Google 換一組新的 access token
 import {
-  PagesContext, json, requestGoogleToken, isSameOrigin,
+  AuthContext, json, requestGoogleToken, isSameOrigin,
   readRefreshCookie, buildRefreshCookie, clearRefreshCookie,
-} from '../../_shared/googleAuth';
+} from '../googleAuth';
 
-export const onRequestPost = async ({ request, env }: PagesContext) => {
+export const onRequestPost = async ({ request, env }: AuthContext) => {
   if (!isSameOrigin(request)) return json({ error: 'forbidden' }, 403);
 
   const refreshToken = await readRefreshCookie(request, env);

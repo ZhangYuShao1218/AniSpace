@@ -7,9 +7,9 @@ import packageJson from './package.json'
 export default defineConfig({
   plugins: [react()],
   server: {
-    // 本機開發時，/api 轉給 `npx wrangler pages dev dist` (Cloudflare Pages Functions，預設 8788 埠)
+    // 本機開發時，/api 轉給 `npx wrangler dev` (Cloudflare Worker，預設 8787 埠)
     proxy: {
-      '/api': 'http://localhost:8788',
+      '/api': 'http://localhost:8787',
     },
   },
   define: {

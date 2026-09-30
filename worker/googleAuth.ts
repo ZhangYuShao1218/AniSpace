@@ -1,14 +1,15 @@
-// Cloudflare Pages Functions 共用工具：Google OAuth refresh token 的交換 / 加密 / Cookie 處理
-// 此檔案不匯出 onRequest，因此不會被當成路由。
+// Worker 共用工具：Google OAuth refresh token 的交換 / 加密 / Cookie 處理
 
 export interface Env {
   GOOGLE_CLIENT_ID: string;
   GOOGLE_CLIENT_SECRET: string;
   // 32 bytes 的 base64 字串，用來以 AES-GCM 加密 Cookie 中的 refresh token
   TOKEN_ENC_KEY: string;
+  // wrangler.jsonc 中 assets.binding 綁定的靜態資源 (dist)
+  ASSETS: { fetch: (request: Request) => Promise<Response> };
 }
 
-export interface PagesContext {
+export interface AuthContext {
   request: Request;
   env: Env;
 }

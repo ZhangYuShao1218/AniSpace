@@ -1,6 +1,6 @@
-# Cloudflare Pages Functions 本機開發用的環境變數範例
+# Cloudflare Worker 本機開發 (npx wrangler dev) 用的環境變數範例
 # 複製成 .dev.vars 並填入真實值 (.dev.vars 已加入 .gitignore)
-# 正式環境請在 Cloudflare Dashboard → Pages 專案 → Settings → Variables and Secrets 設定
+# 正式環境請在 Cloudflare Dashboard → Worker (anispace) → 設定 → 變數和密碼 設定 (不是「建置變數」)
 
 # 與前端 VITE_GOOGLE_CLIENT_ID 相同的「網頁應用程式」OAuth 用戶端 ID
 GOOGLE_CLIENT_ID=xxxxxxxx.apps.googleusercontent.com

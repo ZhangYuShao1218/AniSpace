@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // 必須與 Cloudflare Dashboard 上的 Worker 名稱一致
+  "name": "anispace",
+  "main": "worker/index.ts",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // 維持原本的 SPA 行為：找不到的路徑回傳 index.html
+    "not_found_handling": "single-page-application",
+    // 只有 /api/* 會先進 Worker，其他靜態檔案直接由 Cloudflare 提供 (不計 Worker 請求數)
+    "run_worker_first": ["/api/*"]
+  }
+  // GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET / TOKEN_ENC_KEY 請在 Dashboard → Worker → 設定 → 變數和密碼 設定
+}

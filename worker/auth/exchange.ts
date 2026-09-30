@@ -1,11 +1,11 @@
 // POST /api/auth/exchange
 // 將前端 GIS auth-code 流程拿到的 code 換成 access token，並把 refresh token 加密存入 HttpOnly Cookie
 import {
-  PagesContext, json, requestGoogleToken, revokeGoogleToken, isSameOrigin,
+  AuthContext, json, requestGoogleToken, revokeGoogleToken, isSameOrigin,
   readRefreshCookie, buildRefreshCookie,
-} from '../../_shared/googleAuth';
+} from '../googleAuth';
 
-export const onRequestPost = async ({ request, env }: PagesContext) => {
+export const onRequestPost = async ({ request, env }: AuthContext) => {
   if (!isSameOrigin(request)) return json({ error: 'forbidden' }, 403);
 
   const { code } = await request.json().catch(() => ({})) as { code?: string };

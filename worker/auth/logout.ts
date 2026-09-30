@@ -1,11 +1,11 @@
 // POST /api/auth/logout
 // 撤銷 refresh token 並清除 Cookie
 import {
-  PagesContext, json, revokeGoogleToken, isSameOrigin,
+  AuthContext, json, revokeGoogleToken, isSameOrigin,
   readRefreshCookie, clearRefreshCookie,
-} from '../../_shared/googleAuth';
+} from '../googleAuth';
 
-export const onRequestPost = async ({ request, env }: PagesContext) => {
+export const onRequestPost = async ({ request, env }: AuthContext) => {
   if (!isSameOrigin(request)) return json({ error: 'forbidden' }, 403);
 
   const refreshToken = await readRefreshCookie(request, env);

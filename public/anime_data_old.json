@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者修行",
+    "titleZh": "悠久愚者阿茲裡的賢者修行",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1991,7 +1991,7 @@
   {
     "id": "anilist-211877",
     "titleZh": "女友的朋友",
-    "titleEn": "",
+    "titleEn": "My Girlfriend's Friend",
     "titleJa": "彼女の友達",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211877-EKreXXh4Xzo0.jpg",
@@ -2264,7 +2264,8 @@
       "劇情",
       "喜劇",
       "愛情",
-      "日常"
+      "日常",
+      "校園"
     ],
     "streamings": []
   },
@@ -2283,6 +2284,7 @@
     "yearSeason": "2026 秋",
     "genres": [
       "喜劇",
+      "後宮",
       "日常",
       "福利"
     ]
@@ -2387,7 +2389,7 @@
   },
   {
     "id": "anilist-209219",
-    "titleZh": "轉生哥布林有什麼問題嗎？",
+    "titleZh": "轉生哥布林有問題嗎？",
     "titleEn": "So What's Wrong with Getting Reborn as a Goblin?",
     "titleJa": "転生ゴブリンだけど質問ある？",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/92/0000150292.JPG",
@@ -2499,7 +2501,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149355"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51705"
       },
       {
         "site": "nicovideo",
@@ -67429,7 +67431,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=116190"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=23363"
       },
       {
         "site": "ani_one_asia",
@@ -125589,7 +125591,7 @@
   {
     "id": "anilist-21415",
     "titleZh": "灰色的樂園 灰色的特典",
-    "titleEn": "The Eden of Grisaia: Grisaia no Tokuten",
+    "titleEn": "",
     "titleJa": "グリザイアの楽園 グリザイアの特典",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21415-OnSv02EhCiJ8.jpg",

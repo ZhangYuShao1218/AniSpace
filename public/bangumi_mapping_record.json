@@ -529,7 +529,7 @@
   },
   "anilist-207328": {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者指南",
+    "titleZh": "悠久愚者阿茲裡的賢者指南",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
@@ -41094,5 +41094,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-214461": {
+    "id": "anilist-214461",
+    "titleZh": "真の聖女である私は追放されました。だからこの國はもう終わりです",
+    "titleJa": "真の聖女である私は追放されました。だからこの国はもう終わりです",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

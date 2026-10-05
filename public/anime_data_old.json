@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲裡的賢者指南",
+    "titleZh": "悠久愚者阿茲里的賢者指引",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1114,15 +1114,39 @@
         "name": "U-NEXT",
         "region": "全球/日本",
         "url": "https://video.unext.jp/title/SID0316422"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "全球/日本",
+        "url": "https://abema.tv/video/title/19-174"
+      },
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球/日本",
+        "url": "https://www.netflix.com/title/81712068"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "全球/日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26610"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球/日本",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HF7Z8QBH"
       }
     ]
   },
   {
     "id": "anilist-195604",
-    "titleZh": "黑色五葉草 第二季",
+    "titleZh": "黑色五葉草 Season 2",
     "titleEn": "Black Clover Season 2",
     "titleJa": "ブラッククローバー 第2期",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/46/0000146146.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-BjvWdT5jOcM6.jpg",
     "startDate": {
       "year": 2026,
@@ -1135,6 +1159,32 @@
       "動作",
       "喜劇",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51777"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GRE50KV36/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/bclover2"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316402"
+      }
     ]
   },
   {
@@ -1229,6 +1279,12 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/aonohako-anime2"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29208"
       }
     ]
   },
@@ -1294,10 +1350,34 @@
     ],
     "streamings": [
       {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLHuZZOeCIsd0"
+      },
+      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://acg.gamer.com.tw/acgDetail.php?s=125975"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/playlist?list=PLLQ9h7qLmFKA"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "全球/日本",
+        "url": "https://ch.nicovideo.jp/tanmoshi-anime2"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0316394"
       }
     ]
   },
@@ -1321,6 +1401,14 @@
       "懸疑",
       "超能力",
       "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球",
+        "url": "https://www.netflix.com/title/82116553"
+      }
     ]
   },
   {
@@ -1382,7 +1470,7 @@
     "titleZh": "轉生貴族憑鑑定技能扭轉人生 第三季",
     "titleEn": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
     "titleJa": "転生貴族、鑑定スキルで成り上がる 第3期",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/64/0000143064.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185756-6xlOTE0zL2nV.jpg",
     "startDate": {
       "year": 2026,
@@ -1396,10 +1484,52 @@
     ],
     "streamings": [
       {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLPPRpUrRqysE"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLfEwGegYhFGY"
+      },
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51574"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "全球/日本",
         "url": "https://ch.nicovideo.jp/kanteiskill3"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "全球/日本",
+        "url": "https://abema.tv/video/title/13-216"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球/日本",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HJ3R7F46"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "全球/日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29227"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0316444"
       }
     ]
   },
@@ -1422,6 +1552,12 @@
     ],
     "streamings": [
       {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLUd1fNk1emfc"
+      },
+      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
@@ -1438,6 +1574,12 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0316421"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/19-300"
       }
     ]
   },
@@ -1461,10 +1603,28 @@
     ],
     "streamings": [
       {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLKfpXGXJdV4Y"
+      },
+      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://acg.gamer.com.tw/acgDetail.php?s=138501"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/sasapi-anime2"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316393"
       }
     ]
   },
@@ -1511,12 +1671,30 @@
         "name": "動畫瘋",
         "region": "台灣",
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51694"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "全球/日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29282"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "全球/日本",
+        "url": "https://ch.nicovideo.jp/tougenanki-anime2"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0316412"
       }
     ]
   },
   {
     "id": "anilist-206814",
-    "titleZh": "龍珠超 比路斯",
+    "titleZh": "龍珠超 比魯斯",
     "titleEn": "Dragon Ball Super: Beerus",
     "titleJa": "ドラゴンボール超 ビルス",
     "coverImageGamer": "",
@@ -1532,6 +1710,14 @@
       "動作",
       "科幻",
       "超能力"
+    ],
+    "streamings": [
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316457"
+      }
     ]
   },
   {
@@ -1554,10 +1740,10 @@
   },
   {
     "id": "anilist-212503",
-    "titleZh": "冰劍的魔術師將要統一世界 第二季",
+    "titleZh": "冰劍的魔術師將要統一世界 2",
     "titleEn": "The Iceblade Sorcerer Shall Rule the World II",
     "titleJa": "冰剣の魔術師が世界を統べるⅡ",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/23/0000151823.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212503-LEd6BaGLBq63.jpg",
     "startDate": {
       "year": 2026,
@@ -1572,6 +1758,12 @@
       "校園"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=151823"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -1619,6 +1811,18 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0316437"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/rayearth-anime"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/172-63"
       }
     ]
   },
@@ -1642,10 +1846,52 @@
     ],
     "streamings": [
       {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLdJFMqSb2_LI"
+      },
+      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51772"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00371633/"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/playlist?list=PLKJfyC5R37AM"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/149-36"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/daiseijo"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316459"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29256"
       }
     ]
   },
@@ -1666,6 +1912,14 @@
       "冒險",
       "動作",
       "科幻"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/psyren"
+      }
     ]
   },
   {
@@ -1696,7 +1950,31 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=143583"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51797"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00384006/"
+      },
+      {
+        "site": "mytv",
+        "name": "myTV SUPER",
+        "region": "港澳",
+        "url": "https://www.mytvsuper.com/tc/programme/rebornasaspacemercenaryiwokeuppilotingthestrongeststarship_147597/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/saikyosoubi"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29268"
       }
     ]
   },
@@ -1725,15 +2003,21 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://acg.gamer.com.tw/acgDetail.php?s=142896"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/173-10"
       }
     ]
   },
   {
     "id": "anilist-186742",
-    "titleZh": "暗部少女共棲",
+    "titleZh": "暗部共生少女",
     "titleEn": "A Certain Dark Item",
     "titleJa": "とある暗部の少女共棲",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/16/0000143816.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186742-Q9IOgWxAxfSR.jpg",
     "startDate": {
       "year": 2026,
@@ -1744,6 +2028,26 @@
     "genres": [
       "動作",
       "科幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=143816"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0318100"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/199-61"
+      }
     ]
   },
   {
@@ -1767,7 +2071,7 @@
   },
   {
     "id": "anilist-212888",
-    "titleZh": "裝備我最強",
+    "titleZh": "裝備仔",
     "titleEn": "Overgeared",
     "titleJa": "テムパル～アイテムの力～",
     "coverImageGamer": "",
@@ -1786,6 +2090,18 @@
     ],
     "streamings": [
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00384004/"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HG7BH892"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -1796,6 +2112,18 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0316382"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/189-91"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29233"
       }
     ]
   },
@@ -1804,7 +2132,7 @@
     "titleZh": "亂世千金倪亞‧利斯頓轉生為嬌弱千金的弒神武人華麗無雙錄",
     "titleEn": "Nia Liston: The Merciless Maiden",
     "titleJa": "凶乱令嬢ニア・リストン",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/16/0000149516.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-OwIba0xC2YQm.jpg",
     "startDate": {
       "year": 2026,
@@ -1814,6 +2142,26 @@
     "yearSeason": "2026 秋",
     "genres": [
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149516"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/kyoranreijo"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0305833"
+      }
     ]
   },
   {
@@ -1821,7 +2169,7 @@
     "titleZh": "冷淡的佐藤同學只對我撒嬌",
     "titleEn": "The Cold Sato-san is Only Sweet to Me",
     "titleJa": "塩対応の佐藤さんが俺にだけ甘い",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/38/0000150438.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-D13zPYnWFwrJ.png",
     "startDate": {
       "year": 2026,
@@ -1832,6 +2180,26 @@
     "genres": [
       "喜劇",
       "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=150438"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/shioama"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316441"
+      }
     ]
   },
   {
@@ -1839,7 +2207,7 @@
     "titleZh": "魔法★探險家",
     "titleEn": "Magical Explorer",
     "titleJa": "マジカル★エクスプローラー　エロゲの友人キャラに転生したけど、ゲーム知識使って自由に生きる",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/38/0000135738.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169581-Y6vEnIDIogsJ.jpg",
     "startDate": {
       "year": 2026,
@@ -1854,6 +2222,38 @@
       "愛情",
       "異世界",
       "福利"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51781"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00384003/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/majieku"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316407"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29276"
+      }
     ]
   },
   {
@@ -1916,6 +2316,18 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://acg.gamer.com.tw/acgDetail.php?s=150359"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/horemajo"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316392"
       }
     ]
   },
@@ -1943,6 +2355,18 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://acg.gamer.com.tw/acgDetail.php?s=146157"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/vermilion-mask"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316423"
       }
     ]
   },
@@ -2088,6 +2512,18 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://acg.gamer.com.tw/acgDetail.php?s=149687"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "全球/日本",
+        "url": "https://ch.nicovideo.jp/chiifuyo"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "全球/日本",
+        "url": "https://video.unext.jp/title/SID0316440"
       }
     ]
   },
@@ -2111,10 +2547,34 @@
     ],
     "streamings": [
       {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLZ6IYbU6gYwI"
+      },
+      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://acg.gamer.com.tw/acgDetail.php?s=151278"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/sekamajo"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316385"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/189-92"
       }
     ]
   },
@@ -2138,6 +2598,26 @@
       "懸疑",
       "末日",
       "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00383996/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/zommasu"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29269"
+      }
     ]
   },
   {
@@ -2157,20 +2637,33 @@
       "喜劇",
       "奇幻",
       "惡役千金",
-      "愛情"
+      "愛情",
+      "異世界"
     ],
     "streamings": [
       {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=147781"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51800"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00365562/"
       },
       {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/yowaki-max"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316451"
       }
     ]
   },
@@ -2191,12 +2684,37 @@
       "劇情",
       "動作"
     ],
-    "streamings": []
+    "streamings": [
+      {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLF-gEpg4TVA0"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLIxzi3955LKI"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "全球/日本",
+        "url": "https://abema.tv/video/title/194-78"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "全球/日本",
+        "url": "https://ch.nicovideo.jp/hotel-inhumans2"
+      }
+    ]
   },
   {
     "id": "anilist-209499",
     "titleZh": "戰車椅子",
-    "titleEn": "",
+    "titleEn": "TANK CHAIR",
     "titleJa": "TANK CHAIR-戦車椅子-",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209499-sxqd8SZtWbFm.jpg",
@@ -2209,6 +2727,20 @@
     "genres": [
       "動作",
       "科幻"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tankchair"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316446"
+      }
     ]
   },
   {
@@ -2232,10 +2764,10 @@
   },
   {
     "id": "anilist-187316",
-    "titleZh": "幻想水滸傳",
+    "titleZh": "The Anime「幻想水滸傳」",
     "titleEn": "",
     "titleJa": "幻想水滸伝",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/43/0000144043.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187316-GUxnlngO2dR2.jpg",
     "startDate": {
       "year": 2026,
@@ -2247,14 +2779,58 @@
       "冒險",
       "動作",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51775"
+      },
+      {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/show/VLPLY75t32XTe4g?sbp=KgtfSFNhWFFrQ0RCZ0AB"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/show/VLPLOojSSStuuYw?sbp=KgthY0ZlRkgwMUk4RUAB"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/11-89"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/suikoden"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316448"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29272"
+      }
     ]
   },
   {
     "id": "anilist-202250",
-    "titleZh": "借出去的魔力要用【分期還款】強制收回",
+    "titleZh": "用【循環利息】強制收回借出的魔力",
     "titleEn": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
     "titleJa": "貸した魔力は【リボ払い】で強制徴収",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/64/0000148164.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-xfuf10GUke6L.jpg",
     "startDate": {
       "year": 2026,
@@ -2266,6 +2842,38 @@
       "冒險",
       "動作",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PLSgM_rxboC3A"
+      },
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51787"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/playlist?list=PLLEenvzkNtkk"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/12-32"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29261"
+      }
     ]
   },
   {
@@ -2288,14 +2896,21 @@
       "日常",
       "校園"
     ],
-    "streamings": []
+    "streamings": [
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球/日本",
+        "url": "https://www.netflix.com/title/82031882"
+      }
+    ]
   },
   {
     "id": "anilist-191656",
     "titleZh": "學生會也有洞！",
     "titleEn": "Even the Student Council Has Its Holes!",
     "titleJa": "生徒会にも穴はある！",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/86/0000144986.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-lICYnO8xvlYw.jpg",
     "startDate": {
       "year": 2026,
@@ -2309,6 +2924,26 @@
       "日常",
       "校園",
       "福利"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=144986"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/nama-anaru"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29285"
+      }
     ]
   },
   {
@@ -2394,7 +3029,7 @@
   },
   {
     "id": "anilist-213658",
-    "titleZh": "鑽石王牌 act2 第二季 後篇",
+    "titleZh": "鑽石王牌 act2 第二季 第2部分",
     "titleEn": "",
     "titleJa": "ダイヤのA actⅡ -Second Season- 第2クール",
     "coverImageGamer": "",
@@ -2407,7 +3042,8 @@
     "yearSeason": "2026 秋",
     "genres": [
       "運動"
-    ]
+    ],
+    "streamings": []
   },
   {
     "id": "anilist-209219",
@@ -2442,6 +3078,18 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0316460"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tengobu"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/149-35"
       }
     ]
   },
@@ -2470,7 +3118,7 @@
     "titleZh": "和沒有信徒的女神大人一起攻略異世界",
     "titleEn": "Full Clearing Another World under a Goddess with Zero Believers",
     "titleJa": "信者ゼロの女神サマと始める異世界攻略",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/62/0000149262.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-BW1GwqXSUyir.jpg",
     "startDate": {
       "year": 2026,
@@ -2481,6 +3129,20 @@
     "genres": [
       "冒險",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149262"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/zero-believers"
+      }
     ]
   },
   {
@@ -2527,10 +3189,40 @@
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51705"
       },
       {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/show/VLPLbmiMK7Ew7Ek?sbp=Kgt3RjZyN1p2ZnhsUUAB"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/show/VLPLTQxh5nM9A2w?sbp=KgtMS2lRNzBMNElHUUAB"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00384001/"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/fxkurumi"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29225"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316450"
       }
     ]
   },
@@ -2539,7 +3231,7 @@
     "titleZh": "野生的大魔王出現了！ 第二季",
     "titleEn": "A Wild Last Boss Appeared! Season 2",
     "titleJa": "野生のラスボスが現れた！ 第2期",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/62/0000141062.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-FIncf04hfw3b.jpg",
     "startDate": {
       "year": 2026,
@@ -2555,10 +3247,28 @@
     ],
     "streamings": [
       {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=45568"
+      },
+      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "全球/日本",
         "url": "https://video.unext.jp/title/SID0316400"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "全球/日本",
+        "url": "https://abema.tv/video/title/11-76"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球/日本",
+        "url": "https://www.crunchyroll.com/series/GT00361955/"
       }
     ]
   },
@@ -2623,7 +3333,7 @@
   },
   {
     "id": "anilist-180894",
-    "titleZh": "蘿梅莉亞戰記～打倒魔王後人類處境好像還是很不妙，於是組織了軍隊～",
+    "titleZh": "羅梅莉亞戰記",
     "titleEn": "Romelia War Chronicle",
     "titleJa": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜",
     "coverImageGamer": "",
@@ -2638,6 +3348,66 @@
       "冒險",
       "劇情",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GT00384007/"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316384"
+      }
+    ]
+  },
+  {
+    "id": "anilist-212799",
+    "titleZh": "七葉樹王國的七名騎士",
+    "titleEn": "The Seven Knights of the Marronnier Kingdom",
+    "titleJa": "マロニエ王国の七人の騎士",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212799-n7WDdic7IL1z.png",
+    "startDate": {
+      "year": 2026,
+      "month": 10,
+      "day": 3
+    },
+    "yearSeason": "2026 秋",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-206774",
+    "titleZh": "既然能用鼠標操控現實，那我要瘋狂點擊女孩子啦",
+    "titleEn": "Now That I Can Control Reality With A Mouse Cursor, I'm Gonna Click Away On The Girls!",
+    "titleJa": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206774-S65hVQp46NUf.jpg",
+    "startDate": {
+      "year": 2026,
+      "month": 10,
+      "day": 5
+    },
+    "yearSeason": "2026 秋",
+    "genres": [
+      "愛情",
+      "福利",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/maukuri"
+      }
     ]
   },
   {
@@ -2668,7 +3438,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrCRdLGLVCIxnrK7N5KvPuo"
+        "url": "https://www.youtube.com/show/VLPLRkSE0VkA2yY?season=3&sbp=CgEzGgAqC3F3TDc4czlhZkxrQAFKDVBTT1N6OTd6OGZ1SUE%253D"
       },
       {
         "site": "gamer",
@@ -2755,13 +3525,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLAl0e7w0_DGA"
+        "url": "https://www.youtube.com/show/VLPLYZoMg5Yyut4?sbp=Kgt3bTQxVzlSLVRad0AB"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLcWpc-sy22u4"
+        "url": "https://www.youtube.com/show/VLPLUNVbAiuyqlo?season=2&sbp=CgEyGgAqC1pvMGdKVURsbDFvQAFKDVBTTmo2bi03NjE3c2s%253D"
       },
       {
         "site": "prime",
@@ -3096,7 +3866,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLe7uzvXO4ti0"
+        "url": "https://www.youtube.com/show/VLPLQcZ8B7Mmr7g?season=2&sbp=CgEyGgAqC0NuWmxfbVJoZzE0QAFKDVBTZnFJVjNXZnppRUE%253D"
       },
       {
         "site": "ani_one_asia",
@@ -3237,7 +4007,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfocbdVYGW3DQghf1aTvBlUI"
+        "url": "https://www.youtube.com/show/VLPLEscO1j7tF5Y?season=2&sbp=CgEyGgAqC3RRVk51YVdPdVlVQAFKDVBTYjVmX0I1WGg5QVE%253D"
       },
       {
         "site": "gamer",
@@ -3261,7 +4031,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcighUKUlNn3LTDhJCrANELu"
+        "url": "https://www.youtube.com/show/VLPLZueOHAwFuHU?season=2&sbp=CgEyGgAqC0J3RGtaYkJVZDlvQAFKDVBTSVVEcmhMNmxzNm8%253D"
       },
       {
         "site": "nicovideo",
@@ -3371,13 +4141,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLHL5YA6rJrAw"
+        "url": "https://www.youtube.com/show/VLPLQSQOwrGLmGw?season=2&sbp=CgEyGgAqC1VtZ0Fvc1drdWY4QAFKDVBTT1hDcDdhUWtfNDA%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLDvQscScOUXg"
+        "url": "https://www.youtube.com/show/VLPLBHP1nuBLHyg?season=2&sbp=CgEyGgAqC0VRM2ZfWWdRSUdRQAFKDVBTWVJEMWFZVkxVOGs%253D"
       },
       {
         "site": "prime",
@@ -3476,7 +4246,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoZ5hCeyp-Dz4aXl3BlCq-n"
+        "url": "https://www.youtube.com/show/VLPLN1GNNGfSwtw?season=3&sbp=CgEzGgAqCzRBMnVHdGx2d1NBQAFKDVBTVDRRNnp5bUx1Y00%253D"
       },
       {
         "site": "prime",
@@ -3495,6 +4265,12 @@
         "name": "Viu",
         "region": "港澳",
         "url": "https://www.viu.com/ott/hk/zh-hk/vod/3199884/"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/show/VLPLZG68aJG70_E?sbp=Kgt5VmxHZzNIbkphb0AB"
       },
       {
         "site": "abema",
@@ -3547,7 +4323,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfo2ORlJXpckMUieNfVj5eOr"
+        "url": "https://www.youtube.com/show/VLPLF0ohuOu__Nk?sbp=KgtlZmlHOWZlRGRCb0AB"
       },
       {
         "site": "gamer",
@@ -3678,7 +4454,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoO1N6VhJ3_piG_VjPT0wK0"
+        "url": "https://www.youtube.com/show/VLPLJXHK7jRKpvs?sbp=KgtJOXFLeHF5Nk94TUAB"
       },
       {
         "site": "gamer",
@@ -4363,7 +5139,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpHcdvvTbOhauZRuRGB4F07"
+        "url": "https://www.youtube.com/show/VLPLWZhenqWa9iQ?sbp=KgszWEtjTHY5al9Oa0AB"
       },
       {
         "site": "gamer",
@@ -4381,7 +5157,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Uci0GqxmyaH-0UJoIxmNsFZz"
+        "url": "https://www.youtube.com/show/VLPLFGqBqXa2Nvg?sbp=KgtaNUlaR1N2TWVkUUAB"
       },
       {
         "site": "nicovideo",
@@ -4436,10 +5212,28 @@
         "url": "https://www.crunchyroll.com/series/GT00371878/"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H7MRQK2Q"
+      },
+      {
         "site": "abema",
         "name": "ABEMA",
         "region": "日本",
         "url": "https://abema.tv/video/title/194-84"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29232"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0305808"
       }
     ]
   },
@@ -4541,7 +5335,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfq_JB8ypDRLDbUYrZlVjG1s"
+        "url": "https://www.youtube.com/show/VLPLB5IGaNuYtaw?sbp=KgtnRURiYmltbS14UUAB"
       },
       {
         "site": "gamer",
@@ -4565,7 +5359,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UciJbiA7zwJpLgBXzEA1TP8x"
+        "url": "https://www.youtube.com/show/VLPLe7e18eNflb4?sbp=Kgt6ZE9JeHAtVmtta0AB"
       },
       {
         "site": "nicovideo",
@@ -4949,7 +5743,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoeIoRnxQylu1cRR5oVylyV"
+        "url": "https://www.youtube.com/show/VLPLGgBQovNZmBU?sbp=KgtMS3BBdXU4dkRJY0AB"
       },
       {
         "site": "gamer",
@@ -5067,6 +5861,12 @@
         "url": "https://www.crunchyroll.com/series/GT00379182/"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H7QZYXY5"
+      },
+      {
         "site": "abema",
         "name": "ABEMA",
         "region": "日本",
@@ -5077,6 +5877,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29098"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0305825"
       }
     ]
   },
@@ -5978,7 +6784,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfo4E0cu7lprR7-cSX8hdebI"
+        "url": "https://www.youtube.com/show/VLPLVR8RQFkWlCI?sbp=KgtXU3RjSWZzUnkta0AB"
       },
       {
         "site": "gamer",
@@ -6002,7 +6808,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucg1F4hSrRBquXxmY2Di7h6N"
+        "url": "https://www.youtube.com/show/VLPLcanHJbOgUD4?sbp=KgtHQnViQnc0TlJKQUAB"
       },
       {
         "site": "nicovideo",
@@ -6250,7 +7056,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpqZyzDYDpR_KW9PaGTUQz2"
+        "url": "https://www.youtube.com/show/VLPLSk_vAoSbcvY?sbp=KgthV3lFbjMxa0JJWUAB"
       },
       {
         "site": "gamer",
@@ -6268,7 +7074,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UciW36BXkTooMFAgu5YVZMcb"
+        "url": "https://www.youtube.com/show/VLPLIAvzb5ng6jI?sbp=Kgs2aUE3Y1JodHNQc0AB"
       },
       {
         "site": "nicovideo",
@@ -6589,7 +7395,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrovYvVuugbKfSUOYN5OEoO"
+        "url": "https://www.youtube.com/show/VLPLUtbPXTItqQo?season=4&sbp=CgE0GgAqC1VKbjVyU2FNTVhBQAFKDVBTTThqTjBibVRxTEk%253D"
       },
       {
         "site": "gamer",
@@ -6659,7 +7465,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfppV3iCQ5hA6KYvNsBYR20q"
+        "url": "https://www.youtube.com/show/VLPLM9fQTIaDdOM?season=2&sbp=CgEyGgAqCzJGOXNFclRGeEFnQAFKDVBTTkVNY2RKT1FycVU%253D"
       },
       {
         "site": "gamer",
@@ -7285,7 +8091,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfo1gYyvMgvZN9w9iWyqcHa5"
+        "url": "https://www.youtube.com/show/VLPLN4DLwnW_rgc?season=2&sbp=CgEyGgAqC1JVSDNuVWJ2WVZVQAFKDVBTREltOVBic3BoVzA%253D"
       },
       {
         "site": "gamer",
@@ -7584,6 +8390,12 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0GQDXG31T"
+      },
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球",
+        "url": "https://www.netflix.com/title/82746393"
       },
       {
         "site": "nicovideo",
@@ -7905,7 +8717,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqN3eyl6PIwUzG-6OLz7wRK"
+        "url": "https://www.youtube.com/show/VLPLNUgajB3ou8c?season=4&sbp=CgE0GgAqC1RHRVBsSW9OdXRnQAFKDVBTUGlPQ0N4WUtWanM%253D"
       },
       {
         "site": "gamer",
@@ -8490,7 +9302,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrDTBsbdtPEx2tXf4QI6_yE"
+        "url": "https://www.youtube.com/show/VLPLEjUYS6Gey-8?sbp=KgtGYnBKWU5LM0dud0AB"
       },
       {
         "site": "gamer",
@@ -8752,6 +9564,7 @@
     "genres": [
       "喜劇",
       "奇幻",
+      "惡役千金",
       "愛情"
     ],
     "streamings": [
@@ -8759,7 +9572,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqRLfW1AdqjPjy_1kUdHF_j"
+        "url": "https://www.youtube.com/show/VLPLfcJlVdmrrb4?season=2&sbp=CgEyGgAqC19nNl9JdGhkSzBVQAFKDVBTUVI0Y1d2OEFRYUk%253D"
       },
       {
         "site": "gamer",
@@ -9262,7 +10075,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSCwgFDBvBpzvZp9oZwYDKA"
+        "url": "https://www.youtube.com/show/VLPLMZJChsUVtwI?sbp=Kgt6NTJ2WTdpTUl0OEAB"
       },
       {
         "site": "ani_one_asia",
@@ -9967,7 +10780,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrEG6SwZldtQ0ji-61uhuOx"
+        "url": "https://www.youtube.com/show/VLPLH3knCg-jp20?season=4&sbp=CgE0GgAqC2VxNHZPMGFIdS1NQAFKDVBTSkVXbkw1amJDZUU%253D"
       },
       {
         "site": "gamer",
@@ -10493,7 +11306,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTXEhWlNbwYQkmPhf7iQ3kF"
+        "url": "https://www.youtube.com/show/VLPLQcZ8B7Mmr7g?sbp=KgtDblpsX21SaGcxNEAB"
       },
       {
         "site": "ani_one_asia",
@@ -10582,7 +11395,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRjyta9TAGFIoc19ASxTKG-"
+        "url": "https://www.youtube.com/show/VLPLafDfoABM-YI?season=3&sbp=CgEzGgAqC1pzS2FGSmN0bUxRQAFKDVBTS1NOTm9vOW1LTnM%253D"
       },
       {
         "site": "ani_one_asia",
@@ -10754,7 +11567,7 @@
   },
   {
     "id": "anilist-190327",
-    "titleZh": "飆馬野郎 JOJO的奇妙冒險",
+    "titleZh": "飆馬野郎 JOJO的奇妙冒險 第一賽段",
     "titleEn": "STEEL BALL RUN JoJo's Bizarre Adventure 1st STAGE",
     "titleJa": "ジョジョの奇妙な冒険 スティール・ボール・ラン 1st STAGE",
     "coverImageGamer": "",
@@ -10924,7 +11737,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfolPxCeXvuIKaQE48aj5Ogg"
+        "url": "https://www.youtube.com/show/VLPLSaOOr2qjLDs?season=2&sbp=CgEyGgAqC0E1MGJRclFpa0lRQAFKDVBTTUdpRTdfOGlFdjg%253D"
       },
       {
         "site": "gamer",
@@ -11421,6 +12234,12 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=114091"
+      },
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球",
+        "url": "https://www.netflix.com/title/83134736"
       },
       {
         "site": "unext",
@@ -13370,6 +14189,12 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0H8PD4WNK"
+      },
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球",
+        "url": "https://www.netflix.com/title/83134734"
       }
     ]
   },
@@ -13746,7 +14571,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoB5Z9O_rA_Hkioi2PNVNI6"
+        "url": "https://www.youtube.com/show/VLPLLuZF9VmIdWk?season=3&sbp=CgEzGgAqC3NpYTEwb2NqNllNQAFKDVBTQ0hINktRR2tKUmc%253D"
       },
       {
         "site": "gamer",
@@ -13824,7 +14649,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfr-b-I9yBNUdn25uxcoLFeV"
+        "url": "https://www.youtube.com/show/VLPLMVg6BTvAvhI?season=3&sbp=CgEzGgAqC2NkQmViUmkzRG9vQAFKDVBTVjRYckFhblRHdUk%253D"
       },
       {
         "site": "gamer",
@@ -14254,7 +15079,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpWlbnKd2cYv5lDh6ZozuZf"
+        "url": "https://www.youtube.com/show/VLPLGCK5MSmbzMY?season=2&sbp=CgEyGgAqCy1vVGMyU1VISWdJQAFKDVBTS0FfWFBWQV92bDA%253D"
       },
       {
         "site": "gamer",
@@ -14616,6 +15441,12 @@
         "url": "https://www.crunchyroll.com/series/GT00361955/"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HDKTGMFX"
+      },
+      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -14626,6 +15457,12 @@
         "name": "ABEMA",
         "region": "日本",
         "url": "https://abema.tv/video/title/11-76"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29178"
       },
       {
         "site": "bilibili",
@@ -14665,13 +15502,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtR_3vjceAHKXiuTaBjvXwsN"
+        "url": "https://www.youtube.com/show/VLPLCTMDtTwWxBs?sbp=Kgs0ZTNvRVJreHA0WUAB"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jgz0nvNyM-z3UVzYpGY70Et"
+        "url": "https://www.youtube.com/show/VLPLFs1uZVXjAys?sbp=KgtwaUt6MnhmYzdLMEAB"
       },
       {
         "site": "crunchyroll",
@@ -14702,6 +15539,12 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0232882"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/chiramune"
       },
       {
         "site": "bilibili",
@@ -14905,12 +15748,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0FKZRM16Q"
-      },
-      {
-        "site": "nicovideo",
-        "name": "NicoNico",
-        "region": "日本",
-        "url": "https://ch.nicovideo.jp/towanoyuugure"
       },
       {
         "site": "unext",
@@ -15211,7 +16048,7 @@
   },
   {
     "id": "anilist-185731",
-    "titleZh": "亂馬1/2 第二季",
+    "titleZh": "亂馬 1/2 第二季",
     "titleEn": "Ranma1/2 (2024) Season 2",
     "titleJa": "らんま1/2 (2024) 第2期",
     "coverImageGamer": "",
@@ -17484,7 +18321,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpaQuLtQo09cA9wIwtq98KN"
+        "url": "https://www.youtube.com/show/VLPLZjJCG7r29gg?season=2&sbp=CgEyGgAqC25pdWxQblc0QkJzQAFKDVBTV1c1c1VJdS1fWTg%253D"
       },
       {
         "site": "gamer",
@@ -17551,6 +18388,12 @@
         "name": "Crunchyroll",
         "region": "全球",
         "url": "https://www.crunchyroll.com/series/GNVHKN92K/"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HFN74P3W"
       }
     ]
   },
@@ -17603,12 +18446,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0200158"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-250"
       },
       {
         "site": "danime",
@@ -18128,12 +18965,6 @@
         "url": "https://video.unext.jp/title/SID0200156"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-248"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -18402,13 +19233,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JiIImQMFiu9H2lp2NZgcKk2"
+        "url": "https://www.youtube.com/show/VLPLBHP1nuBLHyg?sbp=KgtFUTNmX1lnUUlHUUAB"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRBh-g4zUg8HRvO6kC6v9e0"
+        "url": "https://www.youtube.com/show/VLPLQSQOwrGLmGw?sbp=KgtVbWdBb3NXa3VmOEAB"
       },
       {
         "site": "crunchyroll",
@@ -18711,7 +19542,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqbmv2YpVr8gHkKjCB7JxoG"
+        "url": "https://www.youtube.com/show/VLPLIt1_LwCg3No?season=2&sbp=CgEyGgAqC2ZUazBtYzk0NmRrQAFKDVBTV0xBYThXNUhDMEU%253D"
       },
       {
         "site": "gamer",
@@ -18754,12 +19585,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28013"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/420-66"
       }
     ]
   },
@@ -18869,6 +19694,12 @@
         "url": "https://www.netflix.com/title/82172706"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G1XHJV0M7/"
+      },
+      {
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
@@ -18885,12 +19716,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0201744"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/169-148"
       },
       {
         "site": "danime",
@@ -18936,12 +19761,6 @@
         "name": "Disney+",
         "region": "全球",
         "url": "https://www.disneyplus.com/series/view/4ShzABnx3iHw"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-251"
       },
       {
         "site": "unext",
@@ -19038,12 +19857,6 @@
         "url": "https://ch.nicovideo.jp/rurinohouseki"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-249"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -19114,12 +19927,6 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/newpsg"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-296"
       },
       {
         "site": "unext",
@@ -19315,12 +20122,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28020"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/248-25"
       }
     ]
   },
@@ -19466,6 +20267,12 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0F1ZPRTHQ"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GEXH3W2E9/"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -19482,12 +20289,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28031"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-74"
       }
     ]
   },
@@ -19682,12 +20483,6 @@
         "url": "https://video.unext.jp/title/SID0200154"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/11-73"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -19749,12 +20544,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0200134"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/564-15"
       },
       {
         "site": "danime",
@@ -20051,12 +20840,6 @@
         "url": "https://www.viu.com/ott/hk/zh-hk/vod/2642328/"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/143-64"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -20170,12 +20953,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28063"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/115-122"
       }
     ]
   },
@@ -20306,12 +21083,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0200147"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-294"
       },
       {
         "site": "nicovideo",
@@ -20510,12 +21281,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28057"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-268"
       }
     ]
   },
@@ -20554,12 +21319,6 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/busunihanatabawo"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/143-63"
       },
       {
         "site": "unext",
@@ -20604,13 +21363,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQ-GmyngyfBiZiWnpKVcWRk"
+        "url": "https://www.youtube.com/show/VLPLF-gEpg4TVA0?sbp=KgtyaUNYTU9SeHVlOEAB"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjWATZTieze6DkSUxWjo5dG"
+        "url": "https://www.youtube.com/show/VLPLIxzi3955LKI?season=1&sbp=CgExGgBAAUoNUFNLR0N0THZKNHhrOA%253D%253D"
       },
       {
         "site": "prime",
@@ -20778,12 +21537,6 @@
         "url": "https://video.unext.jp/title/SID0200179"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-75"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -20846,12 +21599,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0200135"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/189-82"
       },
       {
         "site": "danime",
@@ -20921,12 +21668,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0200186"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/568-36"
       },
       {
         "site": "danime",
@@ -21210,12 +21951,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0200162"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/171-26"
       },
       {
         "site": "danime",
@@ -21514,12 +22249,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0181219"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/593-12"
       },
       {
         "site": "danime",
@@ -22064,12 +22793,6 @@
         "url": "https://video.unext.jp/title/SID0104177"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/169-144"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -22236,7 +22959,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfruiQLkb3-lDmR3AiNM7sM-"
+        "url": "https://www.youtube.com/show/VLPLHujTHblHqMs?season=2&sbp=CgEyGgAqC2Jfc0U5dGpIX3A0QAFKDVBTTDVtNU5rZlRjQ28%253D"
       },
       {
         "site": "gamer",
@@ -22723,12 +23446,6 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/summerpockets-anime"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-199"
       },
       {
         "site": "unext",
@@ -23266,12 +23983,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0180981"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-240"
       },
       {
         "site": "danime",
@@ -24660,12 +25371,6 @@
         "url": "https://video.unext.jp/title/SID0181272"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/184-186"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -25035,7 +25740,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrz7SGyU-5-7E0gmcQ0mNiF"
+        "url": "https://www.youtube.com/show/VLPLN1GNNGfSwtw?season=2&sbp=CgEyGgAqCzRBMnVHdGx2d1NBQAFKDVBTTnI4M0xYSjd1YW8%253D"
       },
       {
         "site": "gamer",
@@ -25060,6 +25765,12 @@
         "name": "Viu",
         "region": "港澳",
         "url": "https://www.viu.com/ott/hk/zh-hk/vod/2560142/"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/show/VLPLZG68aJG70_E?sbp=Kgt5VmxHZzNIbkphb0AB"
       },
       {
         "site": "nicovideo",
@@ -26297,12 +27008,6 @@
         "url": "https://video.unext.jp/title/SID0163329"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/189-17"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -26707,12 +27412,6 @@
         "url": "https://video.unext.jp/title/SID0163371"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/115-118"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -27096,7 +27795,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JhJgjNYZDJJFH1R3LAsfoq5"
+        "url": "https://www.youtube.com/show/VLPLag9LydleDRc?sbp=Kgtia0gwQ2FuWjc2OEAB"
       },
       {
         "site": "prime",
@@ -28049,7 +28748,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfq5SwaJ7I9QsUglCml7_HDn"
+        "url": "https://www.youtube.com/show/VLPLZjJCG7r29gg?sbp=KgtuaXVsUG5XNEJCc0AB"
       },
       {
         "site": "gamer",
@@ -28306,7 +29005,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgJMTfV7-vC5k0hW4kYaSAi"
+        "url": "https://www.youtube.com/show/VLPLQ9SYtXYNSXQ?season=2&sbp=CgEyGgAqC1N2VVpYeF8xSWV3QAFKDVBTVUNncUV3c0tQeUU%253D"
       },
       {
         "site": "netflix",
@@ -28331,12 +29030,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0157091"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/420-57"
       },
       {
         "site": "danime",
@@ -28479,7 +29172,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpv_EIuCk3K-WwFSDdYvJiE"
+        "url": "https://www.youtube.com/show/VLPLPoYhfUCZwjM?season=2&sbp=CgEyGgAqC1kzcm9VSVhhMkZnQAFKDVBTSU1rbXBEOVA5OTQ%253D"
       },
       {
         "site": "gamer",
@@ -28587,7 +29280,7 @@
   },
   {
     "id": "anilist-170732",
-    "titleZh": "在地下城尋求邂逅是否搞錯了什麼 第五季",
+    "titleZh": "在地下城尋求邂逅是否搞錯了什麼 第五季 豐饒女神篇",
     "titleEn": "Is It Wrong To Try To Pick Up Girls in a Dungeon? V",
     "titleJa": "ダンジョンに出会いを求めるのは間違っているだろうかⅤ 豊穣の女神篇",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/92/0000136292.JPG",
@@ -28610,7 +29303,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOn6N5UjTKca5ohihxhGMl"
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?season=5&sbp=CgE1GgAqC0hidUJ2QlNhbjFRQAFKDVBTS1Bza01CX2lVcjA%253D"
       },
       {
         "site": "gamer",
@@ -29039,12 +29732,6 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0DJL4VYM2"
       },
       {
-        "site": "netflix",
-        "name": "Netflix",
-        "region": "全球",
-        "url": "https://www.netflix.com/title/81943491"
-      },
-      {
         "site": "viu",
         "name": "Viu",
         "region": "港澳",
@@ -29295,6 +29982,12 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0DK7RWR5Z"
       },
       {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球",
+        "url": "https://www.netflix.com/title/81947352"
+      },
+      {
         "site": "viu",
         "name": "Viu",
         "region": "港澳",
@@ -29509,12 +30202,6 @@
         "url": "https://video.unext.jp/title/SID0157093"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/115-116"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -29594,13 +30281,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQN8ozD6yLrglH7f_m1GcAy"
+        "url": "https://www.youtube.com/show/VLPLPPRpUrRqysE?season=2&sbp=CgEyGgAqC09zb19yQ0hUMGRjQAFKDVBTZldiaHdSRklMREk%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JilqikV6J0zGI6PPnMPkzrx"
+        "url": "https://www.youtube.com/show/VLPLbBQtw21CyiI?season=2&sbp=CgEyGgAqCzNpM3lTLVNpUi1rQAFKDVBTQnRuZUtzNXZMd00%253D"
       },
       {
         "site": "prime",
@@ -29625,6 +30312,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27345"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/13-216"
       }
     ]
   },
@@ -30787,7 +31480,7 @@
     "titleZh": "夏目友人帳 柒",
     "titleEn": "Natsume's Book of Friends Season 7",
     "titleJa": "夏目友人帳 漆",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/91/0000133791.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166611-MXGsOlPv2IKj.png",
     "startDate": {
       "year": 2024,
@@ -30802,6 +31495,12 @@
       "超自然"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51515"
+      },
       {
         "site": "prime",
         "name": "Prime Video",
@@ -30938,6 +31637,12 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81944802"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G9VHN9Q7Q/"
       },
       {
         "site": "unext",
@@ -31684,7 +32389,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSbhgEIZUVRyNXF8TIsj0oh"
+        "url": "https://www.youtube.com/show/VLPLafDfoABM-YI?season=2&sbp=CgEyGgAqC1pzS2FGSmN0bUxRQAFKDVBTREpDc2d4NjUtX1k%253D"
       },
       {
         "site": "ani_one_asia",
@@ -31767,7 +32472,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoFTA__HkWbOw28mxjZm67J"
+        "url": "https://www.youtube.com/show/VLPLM9fQTIaDdOM?sbp=KgsyRjlzRXJURnhBZ0AB"
       },
       {
         "site": "gamer",
@@ -32071,12 +32776,6 @@
         "url": "https://video.unext.jp/title/SID0104146"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-267"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -32363,12 +33062,6 @@
         "url": "https://www.crunchyroll.com/series/GQWH0M19X/"
       },
       {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UciKB4mPiCG3FgKrg99tvzbd"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -32447,12 +33140,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27176"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-268"
       }
     ]
   },
@@ -33175,7 +33862,7 @@
         "site": "crunchyroll",
         "name": "Crunchyroll",
         "region": "全球",
-        "url": "https://www.crunchyroll.com/series/GNVHKN9W2/"
+        "url": "https://www.crunchyroll.com/series/G69PXP1EY/"
       },
       {
         "site": "unext",
@@ -33855,12 +34542,6 @@
         "url": "https://video.unext.jp/title/SID0104148"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-265"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -34300,12 +34981,6 @@
         "url": "https://video.unext.jp/title/SID0104529"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/198-11"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -34598,12 +35273,6 @@
         "url": "https://video.unext.jp/title/SID0100076"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-190"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -34741,7 +35410,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfozU6PKHlOwbskdUTFKnGrK"
+        "url": "https://www.youtube.com/show/VLPLRkSE0VkA2yY?season=2&sbp=CgEyGgAqC3F3TDc4czlhZkxrQAFKDVBTWDlOd0llSnB3bHc%253D"
       },
       {
         "site": "netflix",
@@ -34762,10 +35431,10 @@
         "url": "https://www.crunchyroll.com/series/G24H1N3MP/"
       },
       {
-        "site": "viu",
-        "name": "Viu",
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2201268/"
+        "url": "https://www.youtube.com/show/VLPLTtXSbTtUyLs?season=2&sbp=CgEyGgAqC0sydlRGd0tDTnFNQAFKDVBTTTVacmNTRUc5OW8%253D"
       },
       {
         "site": "abema",
@@ -34877,7 +35546,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpr5R-Q4Kshpozv9At50GFj"
+        "url": "https://www.youtube.com/show/VLPLT80W9u3t3Wc?season=3&sbp=CgEzGgAqC2d2OGZ3d0h3cUpRQAFKDVBTT19GQlc3UkF2Q0E%253D"
       },
       {
         "site": "gamer",
@@ -35175,7 +35844,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrBGfIva7w63GfAyl9P7bLS"
+        "url": "https://www.youtube.com/show/VLPLIt1_LwCg3No?sbp=KgtmVGswbWM5NDZka0AB"
       },
       {
         "site": "gamer",
@@ -35212,12 +35881,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0100096"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/420-66"
       },
       {
         "site": "nicovideo",
@@ -35276,12 +35939,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0100059"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-259"
       },
       {
         "site": "danime",
@@ -35488,7 +36145,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfojSHSXqgRys5MG2ctftsnr"
+        "url": "https://www.youtube.com/show/VLPLEjUYS6Gey-8?sbp=KgtGYnBKWU5LM0dud0AB"
       },
       {
         "site": "gamer",
@@ -35575,13 +36232,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Ji3p2oPXSaDlUtzRI0be2_d"
+        "url": "https://www.youtube.com/show/VLPLbBQtw21CyiI?sbp=KgszaTN5Uy1TaVIta0AB"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTpPAmFL_w5IByhmBv8C_9Y"
+        "url": "https://www.youtube.com/show/VLPLPPRpUrRqysE?sbp=KgtPc29fckNIVDBkY0AB"
       },
       {
         "site": "netflix",
@@ -35618,6 +36275,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26979"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/13-216"
       }
     ]
   },
@@ -37846,7 +38509,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqaKn8JdnUc9WbNeapHHbpk"
+        "url": "https://www.youtube.com/show/VLPLUtbPXTItqQo?season=3&sbp=CgEzGgAqC1VKbjVyU2FNTVhBQAFKDVBTZFMwR09WeG02ZUE%253D"
       },
       {
         "site": "gamer",
@@ -38099,12 +38762,6 @@
         "url": "https://abema.tv/video/title/117-36"
       },
       {
-        "site": "nicovideo",
-        "name": "NicoNico",
-        "region": "日本",
-        "url": "https://ch.nicovideo.jp/chiyumahou-anime"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -38211,7 +38868,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrxl14ezgkXinTRaRLCiJlF"
+        "url": "https://www.youtube.com/show/VLPLSaOOr2qjLDs?sbp=KgtBNTBiUXJRaWtJUUAB"
       },
       {
         "site": "gamer",
@@ -39596,12 +40253,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26774"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-251"
       }
     ]
   },
@@ -40171,12 +40822,6 @@
         "name": "myTV SUPER",
         "region": "港澳",
         "url": "https://www.mytvsuper.com/tc/programme/uruseiyatsuraseason2_140303/"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-180"
       },
       {
         "site": "unext",
@@ -40921,7 +41566,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpfxj4siikK9CW8idyJyZo2"
+        "url": "https://www.youtube.com/show/VLPLMVg6BTvAvhI?season=2&sbp=CgEyGgAqC2NkQmViUmkzRG9vQAFKDVBTSmtHV25NLW9jUXM%253D"
       },
       {
         "site": "gamer",
@@ -41080,7 +41725,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpv_EIuCk3K-WwFSDdYvJiE"
+        "url": "https://www.youtube.com/show/VLPLPoYhfUCZwjM?sbp=KgtZM3JvVUlYYTJGZ0AB"
       },
       {
         "site": "gamer",
@@ -41184,7 +41829,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpr7SoZ60tGNPpJvFxWs7I2"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?season=5&sbp=CgE1GgAqC05TNXBuNlkyTDFzQAFKDVBTUXBnSThHVjJ4VGs%253D"
       },
       {
         "site": "gamer",
@@ -41445,7 +42090,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrz7SGyU-5-7E0gmcQ0mNiF"
+        "url": "https://www.youtube.com/show/VLPLN1GNNGfSwtw?sbp=Kgs0QTJ1R3RsdndTQUAB"
       },
       {
         "site": "gamer",
@@ -41475,7 +42120,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UciqVroTsOluxKfoNlN6kCYv"
+        "url": "https://www.youtube.com/show/VLPLZG68aJG70_E?sbp=Kgt5VmxHZzNIbkphb0AB"
       },
       {
         "site": "unext",
@@ -41533,7 +42178,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrZDSMb_GQfYJHoHsb9GpTD"
+        "url": "https://www.youtube.com/show/VLPLBuvsuB4WTOk?season=2&sbp=CgEyGgAqC1B5bVlvMVBDVFI4QAFKDVBTVVc0UUZqdFNpYTg%253D"
       },
       {
         "site": "prime",
@@ -41667,6 +42312,12 @@
     ],
     "streamings": [
       {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/watch?v=cdBebRi3Doo"
+      },
+      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
@@ -41792,12 +42443,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0CGXXF48K"
-      },
-      {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2248138/"
       },
       {
         "site": "muse_hk",
@@ -42670,7 +43315,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqkhJ5dHKSQUB-RYDgaIMtt"
+        "url": "https://www.youtube.com/show/VLPLKnxxCc4vL7Y?season=2&sbp=CgEyGgAqC3JDRkNMbXpYZEFNQAFKDVBTWFhOSGZmMTdhQ3M%253D"
       },
       {
         "site": "gamer",
@@ -42845,7 +43490,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpD93YoQGg_T14SW-J7Wft9"
+        "url": "https://www.youtube.com/show/VLPLDyGQOkhPeig?season=2&sbp=CgEyGgAqC3ZhaENEd2xKdmRvQAFKDVBTV29MVWxyUkNRbjA%253D"
       },
       {
         "site": "gamer",
@@ -43198,12 +43843,6 @@
         "name": "Disney+",
         "region": "全球",
         "url": "https://www.disneyplus.com/series/view/4RjkhBlw98oi"
-      },
-      {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2247897/"
       },
       {
         "site": "mytv",
@@ -44044,7 +44683,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfozU6PKHlOwbskdUTFKnGrK"
+        "url": "https://www.youtube.com/show/VLPLRkSE0VkA2yY?season=2&sbp=CgEyGgAqC3F3TDc4czlhZkxrQAFKDVBTWDlOd0llSnB3bHc%253D"
       },
       {
         "site": "gamer",
@@ -44077,16 +44716,10 @@
         "url": "https://www.crunchyroll.com/series/G24H1N3MP/"
       },
       {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2201268/"
-      },
-      {
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucgmfu7qvmeUR2t3bWSWnHWV"
+        "url": "https://www.youtube.com/show/VLPLTtXSbTtUyLs?season=2&sbp=CgEyGgAqC0sydlRGd0tDTnFNQAFKDVBTTTVacmNTRUc5OW8%253D"
       },
       {
         "site": "nicovideo",
@@ -44153,12 +44786,6 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81680101"
-      },
-      {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2205502/"
       },
       {
         "site": "muse_hk",
@@ -44568,12 +45195,6 @@
         "url": "https://ch.nicovideo.jp/masamuneR"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/247-18"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -44648,12 +45269,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26456"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-46"
       }
     ]
   },
@@ -45247,12 +45862,6 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0H311MKSF"
       },
       {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/444494/"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -45625,7 +46234,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqNmX6DwUR_8W9PxgU4DPGu"
+        "url": "https://www.youtube.com/show/VLPLfcJlVdmrrb4?sbp=KgtfZzZfSXRoZEswVUAB"
       },
       {
         "site": "gamer",
@@ -45834,12 +46443,6 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/5hanayome3"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/189-11"
       },
       {
         "site": "unext",
@@ -46625,12 +47228,6 @@
         "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchRuaTPZS0A9Uk4l36EBkUI"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-168"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -46670,28 +47267,10 @@
         "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqjAUDhsIbXuXCZQckEO7H8"
       },
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=113296"
-      },
-      {
         "site": "prime",
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0C946ZPHQ"
-      },
-      {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2204557/"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucj0FAYYegKBOn2R9i6f2TwW"
       },
       {
         "site": "nicovideo",
@@ -47016,7 +47595,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQ4MUqIQ_WXCfYVD_2OJGHp"
+        "url": "https://www.youtube.com/show/VLPLafDfoABM-YI?sbp=Kgtac0thRkpjdG1MUUAB"
       },
       {
         "site": "netflix",
@@ -48850,7 +49429,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqtjy8x9phtOVhwzEzcmPno"
+        "url": "https://www.youtube.com/show/VLPLapKUJP9wDs4?season=2&sbp=CgEyGgAqC0pBa2xNd0hMS2JjQAFKDVBTUEgwOFF0VEJTR00%253D"
       },
       {
         "site": "gamer",
@@ -49694,7 +50273,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpr7SoZ60tGNPpJvFxWs7I2"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?season=5&sbp=CgE1GgAqC05TNXBuNlkyTDFzQAFKDVBTUXBnSThHVjJ4VGs%253D"
       },
       {
         "site": "gamer",
@@ -50140,7 +50719,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfq1oMcxgfQ7UCMZiOf6KVw1"
+        "url": "https://www.youtube.com/show/VLPLGCK5MSmbzMY?sbp=Kgstb1RjMlNVSElnSUAB"
       },
       {
         "site": "gamer",
@@ -50287,7 +50866,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqBFxHyok2IfmlTcEFiTYJJ"
+        "url": "https://www.youtube.com/show/VLPLN4DLwnW_rgc?sbp=KgtSVUgzblVidllWVUAB"
       },
       {
         "site": "gamer",
@@ -50417,7 +50996,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOn6N5UjTKca5ohihxhGMl"
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?season=4&sbp=CgE0GgAqC0hidUJ2QlNhbjFRQAFKDVBTVVJzSnZLdVhqd1U%253D"
       },
       {
         "site": "gamer",
@@ -50789,6 +51368,12 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0B664VHRR"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GXJHM3PK5/"
+      },
+      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -50851,7 +51436,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoDo5hEQzisdsbyu9xuvhWE"
+        "url": "https://www.youtube.com/show/VLPLLwoe7V6ji9c?season=2&sbp=CgEyGgAqC3IyR1Z0SXl2SGlNQAFKDVBTSjdoR2h1T3ZWU0k%253D"
       },
       {
         "site": "muse_hk",
@@ -50921,7 +51506,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jj9MaNTdXuL-s66E_vJTekh"
+        "url": "https://www.youtube.com/show/VLPLYO-HJWItnyo?sbp=KgtSZ1RpTHZBOUwza0AB"
       },
       {
         "site": "ani_one",
@@ -51127,6 +51712,12 @@
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=113184"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G24H1N8ZN/"
+      },
+      {
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
@@ -51149,12 +51740,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26037"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-20"
       }
     ]
   },
@@ -51219,12 +51804,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25960"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-235"
       }
     ]
   },
@@ -51667,7 +52246,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgZhNUrkpwoksoSLEmTqB6U"
+        "url": "https://www.youtube.com/show/VLPLaQiZj7fLrxA?season=2&sbp=CgEyGgAqC1gzcmJ3eTRFX2FFQAFKDVBTWnpCTXd1QzdRTVU%253D"
       },
       {
         "site": "ani_one",
@@ -51767,12 +52346,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25981"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/54-78"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -51823,12 +52396,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25964"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/194-32"
       }
     ]
   },
@@ -52688,7 +53255,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpfxj4siikK9CW8idyJyZo2"
+        "url": "https://www.youtube.com/show/VLPLMVg6BTvAvhI?sbp=KgtjZEJlYlJpM0Rvb0AB"
       },
       {
         "site": "gamer",
@@ -52763,7 +53330,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jj17JiCvrOBjnjPjb930O2g"
+        "url": "https://www.youtube.com/show/VLPLQ9SYtXYNSXQ?sbp=KgtTdlVaWHhfMUlld0AB"
       },
       {
         "site": "netflix",
@@ -52788,12 +53355,6 @@
         "name": "Crunchyroll",
         "region": "全球",
         "url": "https://www.crunchyroll.com/series/G4PH0WEKE/"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/420-57"
       },
       {
         "site": "unext",
@@ -53000,7 +53561,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfr5jAbazMPNsS9VsfKAKy89"
+        "url": "https://www.youtube.com/show/VLPLNJvc27EkJuc?season=3&sbp=CgEzGgAqC2ZENS1ROThaZ24wQAFKDVBTTWhMT3BaRTYwQ1E%253D"
       },
       {
         "site": "gamer",
@@ -53037,6 +53598,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26670"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/199-59"
       },
       {
         "site": "bilibili",
@@ -53082,12 +53649,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0DL1C6BR2"
-      },
-      {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2230728/"
       },
       {
         "site": "nicovideo",
@@ -53345,13 +53906,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQuG9HYOSp_1iPs4CR0A0pE"
+        "url": "https://www.youtube.com/show/VLPLda0nlUh5ys0?sbp=KgtsYTlnbWVZcjRlQUAB"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Ji52rlnhyo-0mwaSDAKb69P"
+        "url": "https://www.youtube.com/show/VLPLcSpWjb7H0lk?sbp=KgswUlJma0psZkJXa0AB"
       },
       {
         "site": "nicovideo",
@@ -53671,12 +54232,6 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0B7B76RHL"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-180"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -53816,7 +54371,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoFtKMB0kfqNS7HZG28T7p1"
+        "url": "https://www.youtube.com/show/VLPLNUgajB3ou8c?season=3&sbp=CgEzGgAqC1RHRVBsSW9OdXRnQAFKDVBTTE9nMmNhYzg0T00%253D"
       },
       {
         "site": "gamer",
@@ -54291,12 +54846,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25793"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/54-77"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -54721,12 +55270,6 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81765372"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0223321"
       }
     ]
   },
@@ -55532,7 +56075,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqaKn8JdnUc9WbNeapHHbpk"
+        "url": "https://www.youtube.com/show/VLPLUtbPXTItqQo?season=2&sbp=CgEyGgAqC1VKbjVyU2FNTVhBQAFKDVBTVGVtRUl6X2RIcGs%253D"
       },
       {
         "site": "gamer",
@@ -55613,6 +56156,12 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0DQ5YM7FG"
+      },
+      {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球",
+        "url": "https://www.netflix.com/title/81620000"
       },
       {
         "site": "nicovideo",
@@ -55772,12 +56321,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0H118RBD3"
-      },
-      {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/444494/"
       },
       {
         "site": "muse_hk",
@@ -56011,12 +56554,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25680"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-209"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -56061,7 +56598,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOn6N5UjTKca5ohihxhGMl"
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?season=4&sbp=CgE0GgAqC0hidUJ2QlNhbjFRQAFKDVBTVVJzSnZLdVhqd1U%253D"
       },
       {
         "site": "prime",
@@ -56282,12 +56819,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25685"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-16"
       }
     ]
   },
@@ -56473,12 +57004,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25678"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/54-74"
       },
       {
         "site": "bilibili",
@@ -57633,7 +58158,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrCAOTroy2IhYeGg7mYc6wO"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?season=4&sbp=CgE0GgAqC2syT1gzOGpDZmdnQAFKDVBTQkJHTjVzMDFWZnc%253D"
       },
       {
         "site": "gamer",
@@ -58229,7 +58754,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpfxj4siikK9CW8idyJyZo2"
+        "url": "https://www.youtube.com/show/VLPLMVg6BTvAvhI?sbp=KgtjZEJlYlJpM0Rvb0AB"
       },
       {
         "site": "gamer",
@@ -58848,12 +59373,6 @@
         "url": "https://ch.nicovideo.jp/5hanayome-movie"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/189-52"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -58898,7 +59417,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqx9EUZRPnxxNmjIgXlvyl3"
+        "url": "https://www.youtube.com/show/VLPLEscO1j7tF5Y?sbp=Kgt0UVZOdWFXT3VZVUAB"
       },
       {
         "site": "gamer",
@@ -58916,7 +59435,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgaSXSpLXoBgk6gTplvkJos"
+        "url": "https://www.youtube.com/show/VLPLZueOHAwFuHU?sbp=KgtCd0RrWmJCVWQ5b0AB"
       },
       {
         "site": "nicovideo",
@@ -59084,12 +59603,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25320"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-315"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -59226,12 +59739,6 @@
         "url": "https://www.netflix.com/title/81593152"
       },
       {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/2240175/"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -59328,6 +59835,18 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81591873"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FC37F8SR"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G4PH0WX5J/"
       },
       {
         "site": "unext",
@@ -60597,7 +61116,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqyVrqC_zYcwiF-3GEfIdJ3"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?season=3&sbp=CgEzGgAqC2syT1gzOGpDZmdnQAFKDVBTRkVEbGJ1NkF6enc%253D"
       },
       {
         "site": "muse_hk",
@@ -60622,12 +61141,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25330"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-167"
       }
     ]
   },
@@ -61001,6 +61514,12 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0DD825MN9"
       },
       {
+        "site": "netflix",
+        "name": "Netflix",
+        "region": "全球",
+        "url": "https://www.netflix.com/title/81753363"
+      },
+      {
         "site": "viu",
         "name": "Viu",
         "region": "港澳",
@@ -61059,7 +61578,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/playlist?list=PLFlphUH5ofro"
       },
       {
         "site": "gamer",
@@ -61130,6 +61649,12 @@
         "name": "Disney+",
         "region": "全球",
         "url": "https://www.disneyplus.com/series/view/2acpp30VYtWd"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FSCF998K"
       },
       {
         "site": "muse_hk",
@@ -61503,6 +62028,12 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=112963"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G79H23V24/"
       },
       {
         "site": "muse_hk",
@@ -63598,7 +64129,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfozU6PKHlOwbskdUTFKnGrK"
+        "url": "https://www.youtube.com/show/VLPLRkSE0VkA2yY?sbp=Kgtxd0w3OHM5YWZMa0AB"
       },
       {
         "site": "netflix",
@@ -63622,7 +64153,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchnkiDhDLkzSnQ5VQzLvIr2"
+        "url": "https://www.youtube.com/show/VLPLTtXSbTtUyLs?sbp=KgtLMnZURndLQ05xTUAB"
       },
       {
         "site": "abema",
@@ -63838,12 +64369,6 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/tv_anime-86"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-163"
       },
       {
         "site": "unext",
@@ -64440,12 +64965,6 @@
         "url": "https://video.unext.jp/title/SID0061708"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/54-66"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -64730,24 +65249,6 @@
       "福利"
     ],
     "streamings": [
-      {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpST_y3xiggsm9k-VIT_Z5S"
-      },
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112837"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Uch1pVm3ukGPX1wy-efZqS8t"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -65036,22 +65537,10 @@
     ],
     "streamings": [
       {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrmG7eTgN8YzHTQzGQadmVj"
-      },
-      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=113180"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucidnc7fLDplg42rCXt_ckSQ"
       },
       {
         "site": "nicovideo",
@@ -65070,12 +65559,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25046"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-14"
       }
     ]
   },
@@ -65145,12 +65628,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112838"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -65188,12 +65665,6 @@
       "科幻"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112853"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -65307,12 +65778,6 @@
       "音樂"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112848"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -65875,7 +66340,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpr5R-Q4Kshpozv9At50GFj"
+        "url": "https://www.youtube.com/show/VLPLT80W9u3t3Wc?season=2&sbp=CgEyGgAqC2d2OGZ3d0h3cUpRQAFKDVBTUUFZR1dSUTViT2c%253D"
       },
       {
         "site": "gamer",
@@ -66368,7 +66833,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoH5z7lnXUpGrmITnY6MCQo"
+        "url": "https://www.youtube.com/show/VLPLKnxxCc4vL7Y?sbp=KgtyQ0ZDTG16WGRBTUAB"
       },
       {
         "site": "gamer",
@@ -66946,18 +67411,6 @@
         "url": "https://www.bilibili.com/bangumi/media/md28234727/"
       },
       {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrYgrBKdX25r0h8d3IXist1"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucin4gYt5FYbWjLn6NDJ8itB"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -67246,12 +67699,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112754"
-      },
-      {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
@@ -67399,12 +67846,6 @@
         "name": "Bilibili",
         "region": "台灣",
         "url": "https://www.bilibili.com/bangumi/media/md28234707/"
-      },
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112732"
       },
       {
         "site": "unext",
@@ -67616,12 +68057,6 @@
         "url": "https://www.bilibili.com/bangumi/media/md28234734/"
       },
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112742"
-      },
-      {
         "site": "prime",
         "name": "Prime Video",
         "region": "全球",
@@ -67669,6 +68104,12 @@
       "超自然"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=23272"
+      },
       {
         "site": "crunchyroll",
         "name": "Crunchyroll",
@@ -67824,12 +68265,6 @@
         "url": "https://video.unext.jp/title/SID0067493"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-214"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -67866,7 +68301,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrCAOTroy2IhYeGg7mYc6wO"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?season=4&sbp=CgE0GgAqC2syT1gzOGpDZmdnQAFKDVBTQkJHTjVzMDFWZnc%253D"
       },
       {
         "site": "gamer",
@@ -67897,12 +68332,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24793"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-151"
       },
       {
         "site": "bilibili",
@@ -68336,12 +68765,6 @@
         "url": "https://www.bilibili.com/bangumi/media/md28234738/"
       },
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112746"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -68550,6 +68973,12 @@
         "name": "Crunchyroll",
         "region": "全球",
         "url": "https://www.crunchyroll.com/series/G3KHEVMN1/"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0DYWKV627"
       },
       {
         "site": "muse_hk",
@@ -68780,12 +69209,6 @@
         "url": "https://ch.nicovideo.jp/tv_anime-86"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-163"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -68911,6 +69334,12 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=112658"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GXJHM3NW5/"
       },
       {
         "site": "muse_hk",
@@ -69181,7 +69610,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfryRT2cG-BfjZwjsYBmxefQ"
+        "url": "https://www.youtube.com/show/VLPLHujTHblHqMs?sbp=KgtiX3NFOXRqSF9wNEAB"
       },
       {
         "site": "gamer",
@@ -69330,12 +69759,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0056086"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-5"
       }
     ]
   },
@@ -69410,12 +69833,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24554"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-317"
       }
     ]
   },
@@ -69443,7 +69860,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoFtKMB0kfqNS7HZG28T7p1"
+        "url": "https://www.youtube.com/show/VLPLNUgajB3ou8c?season=2&sbp=CgEyGgAqC1RHRVBsSW9OdXRnQAFKDVBTTHFlSVI1ZHZtUFk%253D"
       },
       {
         "site": "gamer",
@@ -69956,7 +70373,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpgwlBB-OyFUGX8MucDMUf3"
+        "url": "https://www.youtube.com/show/VLPLDyGQOkhPeig?sbp=Kgt2YWhDRHdsSnZkb0AB"
       },
       {
         "site": "gamer",
@@ -70654,12 +71071,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28511"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-140"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -70840,7 +71251,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOn6N5UjTKca5ohihxhGMl"
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?season=3&sbp=CgEzGgAqC0hidUJ2QlNhbjFRQAFKDVBTV1NOZDVrNzlEUlk%253D"
       },
       {
         "site": "prime",
@@ -71029,12 +71440,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112717"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -71045,12 +71450,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0065005"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-160"
       },
       {
         "site": "danime",
@@ -71233,12 +71632,6 @@
         "url": "https://www.bilibili.com/bangumi/media/md28234142/"
       },
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112851"
-      },
-      {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
@@ -71288,12 +71681,6 @@
       "奇幻"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=115759"
-      },
       {
         "site": "bilibili_tw",
         "name": "Bilibili",
@@ -71427,7 +71814,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfozU6PKHlOwbskdUTFKnGrK"
+        "url": "https://www.youtube.com/show/VLPLRkSE0VkA2yY?sbp=Kgtxd0w3OHM5YWZMa0AB"
       },
       {
         "site": "gamer",
@@ -71463,7 +71850,7 @@
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchnkiDhDLkzSnQ5VQzLvIr2"
+        "url": "https://www.youtube.com/show/VLPLTtXSbTtUyLs?sbp=KgtLMnZURndLQ05xTUAB"
       },
       {
         "site": "nicovideo",
@@ -71690,7 +72077,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpr5R-Q4Kshpozv9At50GFj"
+        "url": "https://www.youtube.com/show/VLPLT80W9u3t3Wc?season=2&sbp=CgEyGgAqC2d2OGZ3d0h3cUpRQAFKDVBTUUFZR1dSUTViT2c%253D"
       },
       {
         "site": "gamer",
@@ -71966,12 +72353,6 @@
         "url": "https://ch.nicovideo.jp/5hanayome2"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/189-11"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -72060,12 +72441,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24428"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-160"
       },
       {
         "site": "bilibili",
@@ -72306,12 +72681,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24420"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/194-20"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -72356,6 +72725,12 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_ery42cmbyx.html"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GKEH2G492/"
       },
       {
         "site": "muse_hk",
@@ -73533,12 +73908,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=24998"
-      },
-      {
         "site": "prime",
         "name": "Prime Video",
         "region": "全球",
@@ -74112,7 +74481,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?season=4&sbp=CgE0GgAqC05TNXBuNlkyTDFzQAFKDVBTTmVFaVRCczlSRjA%253D"
       },
       {
         "site": "gamer",
@@ -74396,12 +74765,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28121"
       },
       {
-        "site": "nicovideo",
-        "name": "NicoNico",
-        "region": "日本",
-        "url": "https://ch.nicovideo.jp/kimetsu_movie"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -74536,7 +74899,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOn6N5UjTKca5ohihxhGMl"
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?season=3&sbp=CgEzGgAqC0hidUJ2QlNhbjFRQAFKDVBTV1NOZDVrNzlEUlk%253D"
       },
       {
         "site": "gamer",
@@ -74903,12 +75266,6 @@
       "超自然"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112468"
-      },
       {
         "site": "prime",
         "name": "Prime Video",
@@ -75385,7 +75742,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjRhcXt3hp52zWsIcJL6ecv"
+        "url": "https://www.youtube.com/show/VLPLaQiZj7fLrxA?sbp=KgtYM3Jid3k0RV9hRUAB"
       },
       {
         "site": "ani_one",
@@ -75495,7 +75852,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoeLiHX2P_n_2wIsGrs9CD4"
+        "url": "https://www.youtube.com/show/VLPLapKUJP9wDs4?sbp=KgtKQWtsTXdITEtiY0AB"
       },
       {
         "site": "gamer",
@@ -75669,12 +76026,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24664"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-140"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -75701,12 +76052,6 @@
       "奇幻"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112843"
-      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -75798,12 +76143,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112470"
-      },
-      {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
@@ -75858,7 +76197,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfq69XKZkLE1YotYphfxLnUV"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?season=3&sbp=CgEzGgAqC2syT1gzOGpDZmdnQAFKDVBTRkVEbGJ1NkF6enc%253D"
       },
       {
         "site": "gamer",
@@ -75889,12 +76228,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24305"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-123"
       },
       {
         "site": "bilibili",
@@ -76213,12 +76546,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112462"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -76356,12 +76683,6 @@
       "音樂"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112479"
-      },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
@@ -76647,12 +76968,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=29975"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -76663,12 +76978,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26017"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-24"
       },
       {
         "site": "bilibili",
@@ -76757,6 +77066,12 @@
       "日常"
     ],
     "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G6GVN11W6/"
+      },
       {
         "site": "mytv",
         "name": "myTV SUPER",
@@ -77264,12 +77579,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23657"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-147"
       }
     ]
   },
@@ -77301,16 +77610,22 @@
         "url": "https://www.bilibili.com/bangumi/media/md28228474/"
       },
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=104549"
-      },
-      {
         "site": "iqiyi",
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrhlk4v9.html"
+      },
+      {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/show/VLPLYnIF_qxIvEc?season=3&sbp=CgEzGgAqC1Z2MWNpRWZNeHhBQAFKDVBTY2V0ZlN6Z0RyZ00%253D"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLds4eowQSRI8"
       },
       {
         "site": "nicovideo",
@@ -77712,6 +78027,12 @@
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=108673"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G60XNJW4R/"
       },
       {
         "site": "muse_hk",
@@ -79056,12 +79377,6 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B0CZRNC7P2"
       },
       {
-        "site": "mytv",
-        "name": "myTV SUPER",
-        "region": "港澳",
-        "url": "https://www.mytvsuper.com/tc/programme/towerofgods1_146657/"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -79404,6 +79719,12 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/80182054"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G6GG91P26/"
       },
       {
         "site": "unext",
@@ -80006,12 +80327,6 @@
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=103741"
       },
       {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Uci7M3RpDPyR52CK7QEfFKcN"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -80546,12 +80861,6 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrhlz9k5.html"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Ucjl51ygO__WeHCzcMKSEu_a"
       },
       {
         "site": "nicovideo",
@@ -81508,12 +81817,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23159"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/189-17"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -81619,7 +81922,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfok3dfX01PR8UV02_9wminj"
+        "url": "https://www.youtube.com/show/VLPLLwoe7V6ji9c?sbp=KgtyMkdWdEl5dkhpTUAB"
       },
       {
         "site": "gamer",
@@ -81662,12 +81965,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23126"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-204"
       },
       {
         "site": "bilibili",
@@ -82563,7 +82860,7 @@
   },
   {
     "id": "anilist-112125",
-    "titleZh": "期待在地下城邂逅有錯嗎Ⅱ OVA",
+    "titleZh": "在地下城尋求邂逅是否搞錯了什麼 第二季 OVA",
     "titleEn": "Is It Wrong to Try to Pick Up Girls in a Dungeon? II: Is It Wrong to Go Searching for Herbs on a Deserted Island?",
     "titleJa": "ダンジョンに出会いを求めるのは間違っているだろうかⅡ 無人島に薬草を求めるのは間違っているだろうか",
     "coverImageGamer": "",
@@ -82582,6 +82879,12 @@
       "福利"
     ],
     "streamings": [
+      {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?season=2&sbp=CgEyGgAqC0hidUJ2QlNhbjFRQAFKDVBTWXVtRzJqWGpCams%253D"
+      },
       {
         "site": "prime",
         "name": "Prime Video",
@@ -82979,12 +83282,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23169"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/216-13"
       },
       {
         "site": "bilibili",
@@ -83488,6 +83785,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28745"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0308434"
       }
     ]
   },
@@ -84151,12 +84454,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22983"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-129"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -84206,6 +84503,12 @@
         "name": "Ani-One Asia",
         "region": "亞洲",
         "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgoLSAuimgmaCHHlUaua69k"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G6GG91P26/"
       },
       {
         "site": "unext",
@@ -84308,7 +84611,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoFtKMB0kfqNS7HZG28T7p1"
+        "url": "https://www.youtube.com/show/VLPLNUgajB3ou8c?sbp=KgtUR0VQbElvTnV0Z0AB"
       },
       {
         "site": "gamer",
@@ -84674,12 +84977,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=12981"
-      },
-      {
         "site": "bilibili_tw",
         "name": "Bilibili",
         "region": "台灣",
@@ -84714,12 +85011,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22974"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-80"
       },
       {
         "site": "bilibili",
@@ -84897,12 +85188,6 @@
         "url": "https://www.bilibili.com/bangumi/media/md28222949/"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-32"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -85017,18 +85302,6 @@
       "運動"
     ],
     "streamings": [
-      {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpB1mqEDYkVGawyeSL02WWM"
-      },
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=94202"
-      },
       {
         "site": "netflix",
         "name": "Netflix",
@@ -85487,12 +85760,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24324"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/2-22"
       },
       {
         "site": "bilibili",
@@ -86011,18 +86278,6 @@
         "url": "https://www.bilibili.com/bangumi/media/md28222743/"
       },
       {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOwVrUzR61wP1MO_zUBD7R"
-      },
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=106990"
-      },
-      {
         "site": "muse_hk",
         "name": "木棉花 YouTube",
         "region": "港澳",
@@ -86346,12 +86601,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24711"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-28i9ircg5g9"
       }
     ]
   },
@@ -86675,7 +86924,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOn6N5UjTKca5ohihxhGMl"
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?season=2&sbp=CgEyGgAqC0hidUJ2QlNhbjFRQAFKDVBTWXVtRzJqWGpCams%253D"
       },
       {
         "site": "gamer",
@@ -87310,12 +87559,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22859"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-120"
       }
     ]
   },
@@ -87602,12 +87845,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24238"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/169-117"
       }
     ]
   },
@@ -88248,12 +88485,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=35192"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -88532,12 +88763,6 @@
         "url": "https://www.bilibili.com/bangumi/media/md28228871/"
       },
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=103432"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -88685,12 +88910,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26016"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-23"
       },
       {
         "site": "bilibili",
@@ -88907,7 +89126,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?sbp=KgtOUzVwbjZZMkwxc0AB"
       },
       {
         "site": "gamer",
@@ -88978,7 +89197,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpXxM1j_aMxdEdpUXCDscCE"
+        "url": "https://www.youtube.com/show/VLPLLuZF9VmIdWk?season=2&sbp=CgEyGgAqC3NpYTEwb2NqNllNQAFKDVBTTjF0eWl0OWQxWkE%253D"
       },
       {
         "site": "gamer",
@@ -89003,12 +89222,6 @@
         "name": "木棉花 YouTube",
         "region": "港澳",
         "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchDbGo2TvlrSeB2oFvlx6VU"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/420-14"
       },
       {
         "site": "unext",
@@ -89597,12 +89810,6 @@
         "url": "https://video.unext.jp/title/SID0044875"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-258"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -89635,12 +89842,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0044456"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-270"
       },
       {
         "site": "danime",
@@ -89960,12 +90161,6 @@
         "url": "https://www.netflix.com/title/81095103"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-111"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -90280,7 +90475,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoxR8RxcS7OpBFR10wul4ju"
+        "url": "https://www.youtube.com/show/VLPLH3knCg-jp20?season=3&sbp=CgEzGgAqC2VxNHZPMGFIdS1NQAFKDVBTR050THJfX1Rsbms%253D"
       },
       {
         "site": "gamer",
@@ -90946,18 +91141,6 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81757604"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/415-55"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0056973"
       }
     ]
   },
@@ -91028,12 +91211,6 @@
       "運動"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=12082"
-      },
       {
         "site": "bilibili_tw",
         "name": "Bilibili",
@@ -91333,7 +91510,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfr5jAbazMPNsS9VsfKAKy89"
+        "url": "https://www.youtube.com/show/VLPLNJvc27EkJuc?season=2&sbp=CgEyGgAqC2ZENS1ROThaZ24wQAFKDVBTTk43d3hrZWVaXzQ%253D"
       },
       {
         "site": "gamer",
@@ -91471,12 +91648,6 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/5hanayome"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/189-11"
       },
       {
         "site": "unext",
@@ -92159,12 +92330,6 @@
         "url": "https://ani.gamer.com.tw/animeRef.php?sn=98118"
       },
       {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgVheCzoWgik8FW0vT6KF-z"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -92714,12 +92879,6 @@
         "url": "https://video.unext.jp/title/SID0042857"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-259"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -92908,12 +93067,6 @@
       "超自然"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=11400"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -93444,7 +93597,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpr5R-Q4Kshpozv9At50GFj"
+        "url": "https://www.youtube.com/show/VLPLT80W9u3t3Wc?sbp=Kgtndjhmd3dId3FKUUAB"
       },
       {
         "site": "gamer",
@@ -93481,12 +93634,6 @@
         "name": "Crunchyroll",
         "region": "全球",
         "url": "https://www.crunchyroll.com/series/GYZJ43JMR/"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UciRpmwbDag-RV29sU-fCeIc"
       },
       {
         "site": "abema",
@@ -93544,7 +93691,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpqHfDaLZt4KyIksuv_kmON"
+        "url": "https://www.youtube.com/show/VLPLBuvsuB4WTOk?sbp=KgtQeW1ZbzFQQ1RSOEAB"
       },
       {
         "site": "gamer",
@@ -93575,12 +93722,6 @@
         "name": "木棉花 YouTube",
         "region": "港澳",
         "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Uci0RG2CTD8rvazY0Iv241YX"
-      },
-      {
-        "site": "viu",
-        "name": "Viu",
-        "region": "港澳",
-        "url": "https://www.viu.com/ott/hk/zh-hk/vod/109285/"
       },
       {
         "site": "nicovideo",
@@ -93636,7 +93777,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoqki4lMKCWQj93SyjqN6JF"
+        "url": "https://www.youtube.com/show/VLPLQFHWWAdQTe4?season=4&sbp=CgE0GgAqC2UyRGVuNjZxaFJRQAFKDVBTTTVOMGRIbHlYY1U%253D"
       },
       {
         "site": "gamer",
@@ -95843,7 +95984,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?sbp=KgtOUzVwbjZZMkwxc0AB"
       },
       {
         "site": "gamer",
@@ -95967,12 +96108,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23098"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-144"
       }
     ]
   },
@@ -96293,12 +96428,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0035528"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-5"
       },
       {
         "site": "bilibili",
@@ -97235,12 +97364,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23092"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-121"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -98002,12 +98125,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26015"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-22"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -98325,6 +98442,12 @@
         "url": "https://www.iqiyi.com/a_19rrhcadk5.html"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G6GG91P26/"
+      },
+      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -98576,8 +98699,8 @@
   {
     "id": "anilist-97767",
     "titleZh": "惡魔高校 D×D HERO",
-    "titleEn": "",
-    "titleJa": "ハイスクールD×D HERO",
+    "titleEn": "High School DxD HERO",
+    "titleJa": "ハイスクールDxD HERO",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx97767-5PcDorQe0h8w.jpg",
     "startDate": {
@@ -99708,12 +99831,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22110"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-79"
       }
     ]
   },
@@ -101027,12 +101144,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21972"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/168-3"
       }
     ]
   },
@@ -101945,7 +102056,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfr5jAbazMPNsS9VsfKAKy89"
+        "url": "https://www.youtube.com/show/VLPLNJvc27EkJuc?sbp=KgtmRDUtUTk4WmduMEAB"
       },
       {
         "site": "prime",
@@ -102344,7 +102455,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/watch?v=DYFfCuZo7n4"
       },
       {
         "site": "gamer",
@@ -102973,6 +103084,12 @@
         "url": "https://www.netflix.com/title/80182054"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G6GG91P26/"
+      },
+      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -103256,12 +103373,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21826"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-78"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -103345,12 +103456,6 @@
       "日常"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=88010"
-      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -103505,7 +103610,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?sbp=KgtOUzVwbjZZMkwxc0AB"
       },
       {
         "site": "gamer",
@@ -104160,7 +104265,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqvSr-ec0LHcSKeTJth4UjS"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?season=2&sbp=CgEyGgAqC2syT1gzOGpDZmdnQAFKDVBTR2ItSjEzVDNNSjA%253D"
       },
       {
         "site": "gamer",
@@ -104191,12 +104296,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21806"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-57"
       },
       {
         "site": "bilibili",
@@ -104512,12 +104611,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25270"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-213"
       },
       {
         "site": "bilibili",
@@ -105159,7 +105252,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqaKn8JdnUc9WbNeapHHbpk"
+        "url": "https://www.youtube.com/show/VLPLUtbPXTItqQo?sbp=KgtVSm41clNhTU1YQUAB"
       },
       {
         "site": "gamer",
@@ -106191,12 +106284,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=107400"
-      },
-      {
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
@@ -106207,12 +106294,6 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81280998"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgRoVQZScFYYbkkiBcczi6Y"
       },
       {
         "site": "danime",
@@ -106740,12 +106821,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26014"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-21"
       },
       {
         "site": "bilibili",
@@ -107436,12 +107511,6 @@
     ],
     "streamings": [
       {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0038406"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -107481,7 +107550,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?sbp=KgtOUzVwbjZZMkwxc0AB"
       },
       {
         "site": "gamer",
@@ -109507,12 +109576,6 @@
         "url": "https://video.unext.jp/title/SID0034760"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-120"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -109539,12 +109602,6 @@
       "奇幻"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=32214"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -109861,13 +109918,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JipogV7W74-hbDbYaQx78Oq"
+        "url": "https://www.youtube.com/show/VLPLUNVbAiuyqlo?sbp=KgtabzBnSlVEbGwxb0AB"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQ9emXGQ5oqwGwN9gmvazng"
+        "url": "https://www.youtube.com/show/VLPLYZoMg5Yyut4?sbp=Kgt3bTQxVzlSLVRad0AB"
       },
       {
         "site": "crunchyroll",
@@ -110052,12 +110109,6 @@
       "福利"
     ],
     "streamings": [
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-164"
-      },
       {
         "site": "unext",
         "name": "U-NEXT",
@@ -110548,12 +110599,6 @@
       "超自然"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=80044"
-      },
       {
         "site": "prime",
         "name": "Prime Video",
@@ -111895,12 +111940,6 @@
     ],
     "streamings": [
       {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpNCAXEvIn6o7VvMLRU4iqb"
-      },
-      {
         "site": "iqiyi",
         "name": "愛奇藝",
         "region": "亞洲",
@@ -112256,16 +112295,16 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=88010"
-      },
-      {
         "site": "iqiyi",
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrh9uq0d.html"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GN4SW8CP"
       },
       {
         "site": "nicovideo",
@@ -112417,6 +112456,12 @@
         "url": "https://www.iqiyi.com/a_19rrh9ts7p.html"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G65VXM1P6/"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -112462,12 +112507,6 @@
       "憂鬱"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=80520"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -112609,12 +112648,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25265"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/26-127"
       },
       {
         "site": "bilibili",
@@ -112769,7 +112802,7 @@
   },
   {
     "id": "anilist-21660",
-    "titleZh": "期待在地下城邂逅有錯嗎 OVA",
+    "titleZh": "在地下城尋求邂逅是否搞錯了什麼 OVA",
     "titleEn": "Is It Wrong to Try to Pick Up Girls in a Dungeon?: Is It Wrong to Expect a Hot Spring in a Dungeon?",
     "titleJa": "ダンジョンに出会いを求めるのは間違っているだろうか ダンジョンに温泉を求めるのは 間違っているだろうか",
     "coverImageGamer": "",
@@ -112788,6 +112821,12 @@
       "福利"
     ],
     "streamings": [
+      {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?sbp=KgtIYnVCdkJTYW4xUUAB"
+      },
       {
         "site": "prime",
         "name": "Prime Video",
@@ -112875,12 +112914,6 @@
       "福利"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeRef.php?sn=112838"
-      },
       {
         "site": "muse_hk",
         "name": "木棉花 YouTube",
@@ -113400,12 +113433,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=17479"
-      },
-      {
         "site": "iqiyi",
         "name": "愛奇藝",
         "region": "亞洲",
@@ -113697,12 +113724,6 @@
       "運動"
     ],
     "streamings": [
-      {
-        "site": "bilibili_tw",
-        "name": "Bilibili",
-        "region": "台灣",
-        "url": "https://www.bilibili.com/bangumi/media/md4313102/"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -114372,7 +114393,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfr5jAbazMPNsS9VsfKAKy89"
+        "url": "https://www.youtube.com/show/VLPLNJvc27EkJuc?sbp=KgtmRDUtUTk4WmduMEAB"
       },
       {
         "site": "gamer",
@@ -115241,12 +115262,6 @@
         "url": "https://www.iqiyi.com/a_19rrhanrc1.html"
       },
       {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7Uci_hr1cCcnsTuZNiGO2Ytkz"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -115591,7 +115606,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqvSr-ec0LHcSKeTJth4UjS"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?season=2&sbp=CgEyGgAqC2syT1gzOGpDZmdnQAFKDVBTR2ItSjEzVDNNSjA%253D"
       },
       {
         "site": "gamer",
@@ -115628,12 +115643,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20992"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-24ditdrg-nze"
       },
       {
         "site": "bilibili",
@@ -115918,6 +115927,12 @@
       "運動"
     ],
     "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GYX040PKR/"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -116350,7 +116365,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjJSQURgyx2NQaDHdBpueq9"
+        "url": "https://www.youtube.com/show/VLPLIA137b2JUFI?sbp=KgtCeTZXU05vcVdkc0AB"
       },
       {
         "site": "nicovideo",
@@ -116382,7 +116397,7 @@
     "id": "anilist-21404",
     "titleZh": "加速世界 INFINITE BURST",
     "titleEn": "Accel World: Infinite∞Burst",
-    "titleJa": "アクセル・ワールド -インフィニット・バースト-",
+    "titleJa": "アクセル・ワールド INFINITE∞BURST（インフィニット・バースト）",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/42/0000079942.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21404-2jkb1Gidfb18.jpg",
     "startDate": {
@@ -117024,7 +117039,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoqki4lMKCWQj93SyjqN6JF"
+        "url": "https://www.youtube.com/show/VLPLQFHWWAdQTe4?season=3&sbp=CgEzGgAqC2UyRGVuNjZxaFJRQAFKDVBTZWdzbi1PZlRxUXM%253D"
       },
       {
         "site": "gamer",
@@ -117157,12 +117172,6 @@
         "url": "https://video.unext.jp/title/SID0029956"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-110"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -117206,12 +117215,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20902"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-296"
       },
       {
         "site": "bilibili",
@@ -118017,6 +118020,18 @@
         "url": "https://ch.nicovideo.jp/kuromukuro"
       },
       {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0027527"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29262"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -118278,18 +118293,6 @@
       "校園"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台灣",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=78004"
-      },
-      {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrbUc2jYHHBTCGLYGWEwkva"
-      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -119157,7 +119160,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrUmit6EAe4T5EWUGoE59Or"
+        "url": "https://www.youtube.com/show/VLPLX9pMf3VLkCo?season=2&sbp=CgEyGgAqC0FmalNLd1pqNjdRQAFKDVBTQWNUbTZ1alpybFU%253D"
       },
       {
         "site": "gamer",
@@ -119377,6 +119380,12 @@
         "name": "愛奇藝",
         "region": "亞洲",
         "url": "https://www.iqiyi.com/a_19rrhabc71.html"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/199-12"
       }
     ]
   },
@@ -119667,12 +119676,6 @@
       "音樂"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=28699"
-      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -121211,7 +121214,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpXxM1j_aMxdEdpUXCDscCE"
+        "url": "https://www.youtube.com/show/VLPLLuZF9VmIdWk?sbp=KgtzaWExMG9jajZZTUAB"
       },
       {
         "site": "gamer",
@@ -121248,12 +121251,6 @@
         "name": "木棉花 YouTube",
         "region": "港澳",
         "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UchDbGo2TvlrSeB2oFvlx6VU"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/420-14"
       },
       {
         "site": "unext",
@@ -122443,7 +122440,7 @@
     "id": "anilist-21573",
     "titleZh": "惡魔高校D×D BorN：不會復活的不死鳥",
     "titleEn": "",
-    "titleJa": "ハイスクールD×D BorN 蘇らない不死鳥",
+    "titleJa": "ハイスクールDxD BorN 蘇らない不死鳥",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21573-wp806EJfO602.jpg",
     "startDate": {
@@ -122502,12 +122499,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20367"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-28i9ircg5g9"
       }
     ]
   },
@@ -123060,12 +123051,6 @@
         "url": "https://video.unext.jp/title/SID0029290"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-271"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -123334,12 +123319,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21609"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-272"
       }
     ]
   },
@@ -123999,12 +123978,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20169"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/190-30"
       }
     ]
   },
@@ -124731,12 +124704,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=22000"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-3"
       }
     ]
   },
@@ -125123,7 +125090,7 @@
     "id": "anilist-21279",
     "titleZh": "惡魔高校D×D BorN：石踏一榮完全監修！妄想爆乳解除原創動畫",
     "titleEn": "High School DxD BorN: Maximum Titillation OVA",
-    "titleJa": "ハイスクールD×D BorN: 石踏一榮完全監修！妄想爆揺解除オリジナルビデオ",
+    "titleJa": "ハイスクールDxD BorN: 石踏一榮完全監修！妄想爆揺解除オリジナルビデオ",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21279-GRbqjLiXLj0i.jpg",
     "startDate": {
@@ -125512,12 +125479,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20305"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-28i9ircg5g9"
       }
     ]
   },
@@ -125719,7 +125680,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoOn6N5UjTKca5ohihxhGMl"
+        "url": "https://www.youtube.com/show/VLPLT5T-P2Hg_e4?sbp=KgtIYnVCdkJTYW4xUUAB"
       },
       {
         "site": "gamer",
@@ -125856,7 +125817,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLXD7t-gmTqKA"
+        "url": "https://www.youtube.com/show/VLPLYnIF_qxIvEc?season=2&sbp=CgEyGgAqC1Z2MWNpRWZNeHhBQAFKDVBTYXBxZFVtMk5kdHM%253D"
       },
       {
         "site": "ani_one_asia",
@@ -126115,8 +126076,8 @@
   {
     "id": "anilist-20745",
     "titleZh": "High School D×D BorN",
-    "titleEn": "",
-    "titleJa": "ハイスクールD×D BorN",
+    "titleEn": "High School DxD BorN",
+    "titleJa": "ハイスクールDxD BorN",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20745-HzWTPFv0P13I.jpg",
     "startDate": {
@@ -126566,12 +126527,6 @@
     ],
     "streamings": [
       {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0018377"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -126907,7 +126862,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoxR8RxcS7OpBFR10wul4ju"
+        "url": "https://www.youtube.com/show/VLPLH3knCg-jp20?season=2&sbp=CgEyGgAqC2VxNHZPMGFIdS1NQAFKDVBTZTBWY3B3ZzMtTkE%253D"
       },
       {
         "site": "gamer",
@@ -127221,12 +127176,6 @@
       "科幻"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=24142"
-      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -127922,7 +127871,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrUmit6EAe4T5EWUGoE59Or"
+        "url": "https://www.youtube.com/show/VLPLX9pMf3VLkCo?sbp=KgtBZmpTS3daajY3UUAB"
       },
       {
         "site": "gamer",
@@ -127953,12 +127902,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0GWGZCC37"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgmZOiB-pq4hTtAwdpbzySi"
       },
       {
         "site": "abema",
@@ -128487,12 +128430,6 @@
     ],
     "streamings": [
       {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=28105"
-      },
-      {
         "site": "iqiyi",
         "name": "愛奇藝",
         "region": "亞洲",
@@ -128693,7 +128630,7 @@
     "id": "anilist-21103",
     "titleZh": "惡魔高校D×D NEW OVA 胸部，包起來！",
     "titleEn": "",
-    "titleJa": "ハイスクールD×D NEW OVA おっぱい、包みます！",
+    "titleJa": "ハイスクールDxD NEW OVA おっぱい、包みます！",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21103-iVibYXQ4Z4UF.jpg",
     "startDate": {
@@ -129028,6 +128965,12 @@
         "url": "https://www.iqiyi.com/a_19rrhay5rp.html"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GRQ474XZY/"
+      },
+      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -129190,12 +129133,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20085"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-28i9ircg5g9"
       }
     ]
   },
@@ -130158,12 +130095,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11475"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/171-29"
       },
       {
         "site": "bilibili",
@@ -133137,12 +133068,6 @@
         "url": "https://www.iqiyi.com/a_19rrgif9il.html"
       },
       {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0015370"
-      },
-      {
         "site": "danime",
         "name": "d動畫商城",
         "region": "日本",
@@ -133828,12 +133753,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26009"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-18"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -134247,12 +134166,6 @@
     ],
     "streamings": [
       {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpNCAXEvIn6o7VvMLRU4iqb"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -134417,12 +134330,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11260"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-10wkyfrkuytx"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -134432,7 +134339,7 @@
   },
   {
     "id": "anilist-20474",
-    "titleZh": "JOJO 的奇妙冒險 星塵遠徵軍",
+    "titleZh": "JOJO 的奇妙冒險 第二季 星塵遠徵軍",
     "titleEn": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "titleJa": "ジョジョの奇妙な冒険 スターダストクルセイダース",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/01/0000064801.JPG",
@@ -134454,7 +134361,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoqki4lMKCWQj93SyjqN6JF"
+        "url": "https://www.youtube.com/show/VLPLQFHWWAdQTe4?season=2&sbp=CgEyGgAqC2UyRGVuNjZxaFJRQAFKDVBTTjVNSVVXczdic3c%253D"
       },
       {
         "site": "gamer",
@@ -134539,12 +134446,6 @@
       "超自然"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=11177"
-      },
       {
         "site": "prime",
         "name": "Prime Video",
@@ -135256,7 +135157,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpbW9dg5kL4hlE3nhOEtJb_"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?sbp=KgtrMk9YMzhqQ2ZnZ0AB"
       },
       {
         "site": "iqiyi",
@@ -135287,12 +135188,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20052"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-8gjhfxmjumf"
       },
       {
         "site": "bilibili",
@@ -135527,12 +135422,6 @@
       "科幻"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=2564"
-      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -136468,18 +136357,6 @@
         "url": "https://www.netflix.com/title/81757601"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/415-50"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0022691"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -136829,12 +136706,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0CGGVJDG9"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0015369"
       },
       {
         "site": "danime",
@@ -138282,10 +138153,10 @@
   },
   {
     "id": "anilist-20371",
-    "titleZh": "世界第一初戀〜橫澤隆史的場合〜",
+    "titleZh": "世界一初戀～橫澤隆史的情況～",
     "titleEn": "Sekai Ichi Hatsukoi - The World's Greatest First Love: The Case of Takafumi Yokozawa",
     "titleJa": "劇場版 世界一初恋 横澤隆史の場合",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/38/0000059138.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20371-iG1LpppeKFb1.png",
     "startDate": {
       "year": 2014,
@@ -138299,6 +138170,12 @@
       "愛情"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51577"
+      },
       {
         "site": "danime",
         "name": "d動畫商城",
@@ -138584,12 +138461,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21214"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-297"
       },
       {
         "site": "bilibili",
@@ -138878,12 +138749,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11001"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-18jgwwixihhn"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -138916,7 +138781,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?sbp=KgtOUzVwbjZZMkwxc0AB"
       },
       {
         "site": "gamer",
@@ -139226,12 +139091,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21565"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-298"
       }
     ]
   },
@@ -139490,7 +139349,7 @@
       {
         "site": "gamer",
         "name": "動畫瘋",
-        "region": "台港澳",
+        "region": "台灣",
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=840"
       },
       {
@@ -139624,7 +139483,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoxR8RxcS7OpBFR10wul4ju"
+        "url": "https://www.youtube.com/show/VLPLH3knCg-jp20?sbp=KgtlcTR2TzBhSHUtTUAB"
       },
       {
         "site": "gamer",
@@ -139778,12 +139637,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20859"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/143-81"
       },
       {
         "site": "bilibili",
@@ -140545,7 +140398,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrUmit6EAe4T5EWUGoE59Or"
+        "url": "https://www.youtube.com/show/VLPLX9pMf3VLkCo?sbp=KgtBZmpTS3daajY3UUAB"
       },
       {
         "site": "gamer",
@@ -140570,12 +140423,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B0GWGZCC37"
-      },
-      {
-        "site": "muse_hk",
-        "name": "木棉花 YouTube",
-        "region": "港澳",
-        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcgmZOiB-pq4hTtAwdpbzySi"
       },
       {
         "site": "abema",
@@ -140869,8 +140716,8 @@
   {
     "id": "anilist-15451",
     "titleZh": "High School D×D NEW",
-    "titleEn": "",
-    "titleJa": "ハイスクールD×D NEW",
+    "titleEn": "High School DxD NEW",
+    "titleJa": "ハイスクールDxD NEW",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx15451-A5T54vmxUq9t.jpg",
     "startDate": {
@@ -141327,12 +141174,6 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0014606"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-115"
       },
       {
         "site": "danime",
@@ -141977,12 +141818,6 @@
     ],
     "streamings": [
       {
-        "site": "muse_tw",
-        "name": "木棉花 YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpNCAXEvIn6o7VvMLRU4iqb"
-      },
-      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -142253,12 +142088,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26007"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-17"
       },
       {
         "site": "bilibili",
@@ -142808,7 +142637,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN"
+        "url": "https://www.youtube.com/show/VLPLFlphUH5ofro?sbp=KgtOUzVwbjZZMkwxc0AB"
       },
       {
         "site": "gamer",
@@ -142992,7 +142821,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLdghK4X---Hg"
+        "url": "https://www.youtube.com/show/VLPLYnIF_qxIvEc?sbp=KgtWdjFjaUVmTXh4QUAB"
       },
       {
         "site": "ani_one_asia",
@@ -143219,7 +143048,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfqHGpk2XYoW8ywUR0JhfwgI"
+        "url": "https://www.youtube.com/show/VLPLPxqaqPoolfQ?season=2&sbp=CgEyGgAqC1BXX19yVG1nVk13QAFKDVBTUU9yRlRYMlk4Y1k%253D"
       },
       {
         "site": "gamer",
@@ -143344,6 +143173,12 @@
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=129"
       },
       {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GYQ4WX036/"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -143360,12 +143195,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10797"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-13gragggaxej"
       },
       {
         "site": "bilibili",
@@ -143941,12 +143770,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11515"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/198-3"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -144471,18 +144294,6 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B06Y2593G5"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/415-49"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0004956"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -144940,12 +144751,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10994"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/54-71"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -144982,7 +144787,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfpbW9dg5kL4hlE3nhOEtJb_"
+        "url": "https://www.youtube.com/show/VLPLZi7HsS43BmI?sbp=KgtrMk9YMzhqQ2ZnZ0AB"
       },
       {
         "site": "muse_hk",
@@ -145007,12 +144812,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=11141"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/13-10xikapcfmnf"
       },
       {
         "site": "bilibili",
@@ -145064,12 +144863,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10736"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/54-62"
       },
       {
         "site": "bilibili",
@@ -146785,7 +146578,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoqki4lMKCWQj93SyjqN6JF"
+        "url": "https://www.youtube.com/show/VLPLQFHWWAdQTe4?sbp=KgtlMkRlbjY2cWhSUUAB"
       },
       {
         "site": "gamer",
@@ -147223,12 +147016,6 @@
       "超自然"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=27273"
-      },
       {
         "site": "iqiyi",
         "name": "愛奇藝",
@@ -149052,7 +148839,7 @@
     "id": "anilist-12729",
     "titleZh": "惡魔高校D×D OVA",
     "titleEn": "",
-    "titleJa": "ハイスクールD×D OVA",
+    "titleJa": "ハイスクールDxD OVA",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/12729.jpg",
     "startDate": {
@@ -149417,12 +149204,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10513"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-28i9ircg5g9"
       }
     ]
   },
@@ -149593,12 +149374,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10512"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-17h9c6mfw48"
       },
       {
         "site": "bilibili",
@@ -150112,12 +149887,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26005"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-16"
       },
       {
         "site": "bilibili",
@@ -150739,7 +150508,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfq_lTiPoxCQb7E0hNgUz1ZU"
+        "url": "https://www.youtube.com/playlist?list=PLDBpnrXSwLtQ"
       },
       {
         "site": "gamer",
@@ -150971,12 +150740,6 @@
       "科幻"
     ],
     "streamings": [
-      {
-        "site": "gamer",
-        "name": "動畫瘋",
-        "region": "台港澳",
-        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=26143"
-      },
       {
         "site": "crunchyroll",
         "name": "Crunchyroll",
@@ -151219,7 +150982,7 @@
     "id": "anilist-13357",
     "titleZh": "惡魔高校D×D 特別篇",
     "titleEn": "High School DxD: Fantasy Jiggles Unleashed",
-    "titleJa": "ハイスクールD×Dスペシャル",
+    "titleJa": "ハイスクールDxDスペシャル",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/13357.jpg",
     "startDate": {
@@ -151767,12 +151530,6 @@
     ],
     "streamings": [
       {
-        "site": "crunchyroll",
-        "name": "Crunchyroll",
-        "region": "全球",
-        "url": "https://www.crunchyroll.com/series/GYP85GJ1Y/"
-      },
-      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -151990,18 +151747,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B06Y22MR3H"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/415-48"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0004857"
       },
       {
         "site": "bilibili",
@@ -152530,7 +152275,7 @@
     "id": "anilist-11617",
     "titleZh": "High School D×D",
     "titleEn": "High School DxD",
-    "titleJa": "ハイスクールD×D",
+    "titleJa": "ハイスクールDxD",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx11617-nmxMU9Zh3H5R.jpg",
     "startDate": {
@@ -152876,6 +152621,12 @@
       "校園"
     ],
     "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GMEHME53W/"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -153563,6 +153314,12 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24509"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/203-16"
       },
       {
         "site": "bilibili",
@@ -155392,7 +155149,7 @@
     "titleZh": "世界一初戀2",
     "titleEn": "Sekai Ichi Hatsukoi - The World's Greatest First Love Season 2",
     "titleJa": "世界一初恋 2",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/99/0000050099.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11123-USoFLDMkQXT2.png",
     "startDate": {
       "year": 2011,
@@ -155405,6 +155162,12 @@
       "愛情"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51557"
+      },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
@@ -156410,12 +156173,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10406"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/149-28i9ircg5g9"
       }
     ]
   },
@@ -157461,12 +157218,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26003"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-14"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -157629,12 +157380,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26004"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-15"
       },
       {
         "site": "bilibili",
@@ -158416,12 +158161,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10768"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/198-1"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -158969,7 +158708,7 @@
     "titleZh": "世界一初戀",
     "titleEn": "Sekai Ichi Hatsukoi - The World's Greatest First Love",
     "titleJa": "世界一初恋 TV",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/26/0000042026.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9926-AhRNkKBBbsNq.png",
     "startDate": {
       "year": 2011,
@@ -158982,6 +158721,12 @@
       "愛情"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51545"
+      },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
@@ -159691,18 +159436,6 @@
         "url": "https://www.amazon.co.jp/gp/video/detail/B06Y4JWHX4"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/415-47"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0010685"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -159856,10 +159589,10 @@
   },
   {
     "id": "anilist-8063",
-    "titleZh": "世界第一初戀 OAD",
+    "titleZh": "世界一初戀～小野寺律的情況～",
     "titleEn": "",
     "titleJa": "世界一初恋 OVA",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/49/0000034649.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/8063.jpg",
     "startDate": {
       "year": 2011,
@@ -159870,6 +159603,14 @@
     "genres": [
       "喜劇",
       "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51569"
+      }
     ]
   },
   {
@@ -160216,12 +159957,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24122"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/415-23"
       },
       {
         "site": "bilibili",
@@ -161613,12 +161348,6 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10642"
       },
       {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-12bcmuytxgcm"
-      },
-      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -162298,12 +162027,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28704"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/2-19"
       },
       {
         "site": "bilibili",
@@ -163204,7 +162927,7 @@
     "id": "anilist-9563",
     "titleZh": "向陽素描",
     "titleEn": "Hidamari Sketch x Hoshimittsu Specials",
-    "titleJa": "ひだまりスケッチ × ☆☆☆",
+    "titleJa": "ひだまりスケッチ × ☆☆☆ Specials",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9563-v7KaiqWpmPU0.png",
     "startDate": {
@@ -163454,12 +163177,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20043"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/19-126"
       }
     ]
   },
@@ -164132,12 +163849,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26002"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/746-13"
       },
       {
         "site": "bilibili",
@@ -165350,6 +165061,14 @@
       "愛情",
       "校園",
       "福利"
+    ],
+    "streamings": [
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29290"
+      }
     ]
   },
   {
@@ -165976,18 +165695,6 @@
         "name": "Prime Video",
         "region": "全球",
         "url": "https://www.amazon.co.jp/gp/video/detail/B06Y2B762P"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/415-46"
-      },
-      {
-        "site": "unext",
-        "name": "U-NEXT",
-        "region": "日本",
-        "url": "https://video.unext.jp/title/SID0010684"
       },
       {
         "site": "bilibili",
@@ -167677,12 +167384,6 @@
         "name": "d動畫商城",
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=10642"
-      },
-      {
-        "site": "abema",
-        "name": "ABEMA",
-        "region": "日本",
-        "url": "https://abema.tv/video/title/25-12bcmuytxgcm"
       },
       {
         "site": "bilibili",

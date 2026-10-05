@@ -289,7 +289,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲裡的賢者指南",
+    "titleZh": "悠久愚者阿茲里的賢者指引",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "yearSeason": "2027 冬"
   },
@@ -342,6 +342,12 @@
     "yearSeason": "2027 冬"
   },
   {
+    "id": "anilist-214461",
+    "titleZh": "真の聖女である私は追放されました。だからこの國はもう終わりです",
+    "titleJa": "真の聖女である私は追放されました。だからこの国はもう終わりです",
+    "yearSeason": "2027 冬"
+  },
+  {
     "id": "anilist-195539",
     "titleZh": "電馭叛客：邊緣行者 2",
     "titleJa": "サイバーパンク: エッジランナーズ2",
@@ -366,12 +372,6 @@
     "yearSeason": "2026 秋"
   },
   {
-    "id": "anilist-210482",
-    "titleZh": "飆馬野郎 JOJO的奇妙冒險 2nd STAGE",
-    "titleJa": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE",
-    "yearSeason": "2026 秋"
-  },
-  {
     "id": "anilist-172192",
     "titleZh": "歸還者的魔法特別優異 第二季",
     "titleJa": "帰還者の魔法は特別です 第2期",
@@ -393,12 +393,6 @@
     "id": "anilist-209872",
     "titleZh": "亂馬 1/2 (2024) 第三季",
     "titleJa": "らんま1/2 (2024) 第3期",
-    "yearSeason": "2026 秋"
-  },
-  {
-    "id": "anilist-206814",
-    "titleZh": "龍珠超 比路斯",
-    "titleJa": "ドラゴンボール超 ビルス",
     "yearSeason": "2026 秋"
   },
   {
@@ -462,12 +456,6 @@
     "yearSeason": "2026 秋"
   },
   {
-    "id": "anilist-213658",
-    "titleZh": "鑽石王牌 act2 第二季 後篇",
-    "titleJa": "ダイヤのA actⅡ -Second Season- 第2クール",
-    "yearSeason": "2026 秋"
-  },
-  {
     "id": "anilist-212539",
     "titleZh": "章魚嗶的原罪 -謝謝你，明天見-",
     "titleJa": "タコピーの原罪 -ありがとう、また明日-",
@@ -483,12 +471,6 @@
     "id": "anilist-190054",
     "titleZh": "我的幸福婚約 特別篇",
     "titleJa": "わたしの幸せな結婚 特別篇",
-    "yearSeason": "2026 秋"
-  },
-  {
-    "id": "anilist-180894",
-    "titleZh": "蘿梅莉亞戰記～打倒魔王後人類處境好像還是很不妙，於是組織了軍隊～",
-    "titleJa": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜",
     "yearSeason": "2026 秋"
   },
   {
@@ -1274,7 +1256,7 @@
   {
     "id": "anilist-21573",
     "titleZh": "惡魔高校D×D BorN：不會復活的不死鳥",
-    "titleJa": "ハイスクールD×D BorN 蘇らない不死鳥",
+    "titleJa": "ハイスクールDxD BorN 蘇らない不死鳥",
     "yearSeason": "2015 秋"
   },
   {
@@ -1310,7 +1292,7 @@
   {
     "id": "anilist-21279",
     "titleZh": "惡魔高校D×D BorN：石踏一榮完全監修！妄想爆乳解除原創動畫",
-    "titleJa": "ハイスクールD×D BorN: 石踏一榮完全監修！妄想爆揺解除オリジナルビデオ",
+    "titleJa": "ハイスクールDxD BorN: 石踏一榮完全監修！妄想爆揺解除オリジナルビデオ",
     "yearSeason": "2015 夏"
   },
   {
@@ -1370,7 +1352,7 @@
   {
     "id": "anilist-21103",
     "titleZh": "惡魔高校D×D NEW OVA 胸部，包起來！",
-    "titleJa": "ハイスクールD×D NEW OVA おっぱい、包みます！",
+    "titleJa": "ハイスクールDxD NEW OVA おっぱい、包みます！",
     "yearSeason": "2015 冬"
   },
   {
@@ -1838,7 +1820,7 @@
   {
     "id": "anilist-12729",
     "titleZh": "惡魔高校D×D OVA",
-    "titleJa": "ハイスクールD×D OVA",
+    "titleJa": "ハイスクールDxD OVA",
     "yearSeason": "2012 夏"
   },
   {
@@ -1910,7 +1892,7 @@
   {
     "id": "anilist-13357",
     "titleZh": "惡魔高校D×D 特別篇",
-    "titleJa": "ハイスクールD×Dスペシャル",
+    "titleJa": "ハイスクールDxDスペシャル",
     "yearSeason": "2012 春"
   },
   {
@@ -2608,11 +2590,5 @@
     "titleZh": "御先祖賛江",
     "titleJa": "御先祖賛江",
     "yearSeason": "1998 秋"
-  },
-  {
-    "id": "anilist-214461",
-    "titleZh": "真の聖女である私は追放されました。だからこの國はもう終わりです",
-    "titleJa": "真の聖女である私は追放されました。だからこの国はもう終わりです",
-    "yearSeason": "2027 冬"
   }
 ]

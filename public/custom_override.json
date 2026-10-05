@@ -2504,7 +2504,6 @@
     "titleZh": "朱色假面"
   },
   "anilist-195604": {
-    "titleZh": "黑色五葉草 第二季",
     "source": "ai"
   },
   "anilist-197178": {
@@ -5630,10 +5629,10 @@
   },
   "anilist-213658": {
     "titleZh": "鑽石王牌 act2 第二季 後篇",
-    "source": "manual"
+    "source": "manual",
+    "bangumiDataTitle": "ダイヤのA actII -Second Season-(第2クール)"
   },
   "anilist-187316": {
-    "titleZh": "幻想水滸傳",
     "source": "ai"
   },
   "anilist-209219": {
@@ -5671,9 +5670,9 @@
     "source": "ai"
   },
   "anilist-204389": {
-    "source": "ai",
+    "source": "gamer",
     "bangumiDataTitle": "野生のラスボスが現れた！(第2期)",
-    "titleZh": "野生的大魔王現身了！ 第二季"
+    "titleZh": "野生的大魔王出現了！"
   },
   "anilist-212539": {
     "titleZh": "章魚嗶的原罪 -謝謝你，明天見-",
@@ -5691,7 +5690,6 @@
     "bangumiDataTitle": "PERSONA5 the Animation Stars and Ours"
   },
   "anilist-180894": {
-    "titleZh": "蘿梅莉亞戰記～打倒魔王後人類處境好像還是很不妙，於是組織了軍隊～",
     "source": "ai"
   },
   "anilist-179813": {
@@ -5859,7 +5857,8 @@
     "source": "ai"
   },
   "anilist-207328": {
-    "source": "ai"
+    "source": "ai",
+    "titleZh": "悠久愚者阿茲里的賢者指引"
   },
   "anilist-209224": {
     "titleZh": "轉生遊戲世界〈地下城活動〉～玩家從頭開始遊玩【地下城求職指南】～",
@@ -5888,5 +5887,13 @@
   "anilist-217129": {
     "titleZh": "真可憐！名作君 (2027)",
     "source": "ai"
+  },
+  "anilist-20371": {
+    "titleZh": "劇場版 世界一初戀～橫澤隆史的情況～介紹宣傳影片STAFFCAST",
+    "source": "gamer"
+  },
+  "anilist-11123": {
+    "titleZh": "世界一初戀２",
+    "source": "gamer"
   }
 }

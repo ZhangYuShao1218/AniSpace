@@ -529,7 +529,7 @@
   },
   "anilist-207328": {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者指引",
+    "titleZh": "悠久愚者阿茲裡的賢者指引",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
@@ -1255,7 +1255,7 @@
   },
   "anilist-213658": {
     "id": "anilist-213658",
-    "titleZh": "鑽石王牌 act2 第二季 後篇",
+    "titleZh": "鑽石王牌 act2 第二季 第2部分",
     "titleJa": "ダイヤのA actⅡ -Second Season- 第2クール",
     "yearSeason": "2026 秋",
     "hasCorrespondingData": true,
@@ -1284,7 +1284,7 @@
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "彼方から",
     "bgmId": "636058",
-    "streamingsCount": 0
+    "streamingsCount": 4
   },
   "anilist-205896": {
     "id": "anilist-205896",
@@ -1321,7 +1321,7 @@
   },
   "anilist-204389": {
     "id": "anilist-204389",
-    "titleZh": "野生的大魔王現身了！ 第二季",
+    "titleZh": "野生的大魔王出現了！",
     "titleJa": "野生のラスボスが現れた！ 第2期",
     "yearSeason": "2026 秋",
     "hasCorrespondingData": true,
@@ -1373,6 +1373,28 @@
     "matchedBgmTitle": "ロメリア戦記",
     "bgmId": "511936",
     "streamingsCount": 2
+  },
+  "anilist-212799": {
+    "id": "anilist-212799",
+    "titleZh": "七葉樹王國的七名騎士",
+    "titleJa": "マロニエ王国の七人の騎士",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "マロニエ王国の七人の騎士",
+    "bgmId": "657084",
+    "streamingsCount": 0
+  },
+  "anilist-206774": {
+    "id": "anilist-206774",
+    "titleZh": "既然能用鼠標操控現實，那我要瘋狂點擊女孩子啦",
+    "titleJa": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": true,
+    "matchedType": "C-ExactTitleJa",
+    "matchedBgmTitle": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
+    "bgmId": "698032",
+    "streamingsCount": 1
   },
   "anilist-178789": {
     "id": "anilist-178789",
@@ -30350,7 +30372,7 @@
   },
   "anilist-20371": {
     "id": "anilist-20371",
-    "titleZh": "世界一初戀～橫澤隆史的情況～",
+    "titleZh": "劇場版 世界一初戀～橫澤隆史的情況～介紹宣傳影片STAFFCAST",
     "titleJa": "劇場版 世界一初恋 横澤隆史の場合",
     "yearSeason": "2014 冬",
     "hasCorrespondingData": true,
@@ -35124,7 +35146,7 @@
   },
   "anilist-11123": {
     "id": "anilist-11123",
-    "titleZh": "世界一初戀2",
+    "titleZh": "世界一初戀２",
     "titleJa": "世界一初恋 2",
     "yearSeason": "2011 秋",
     "hasCorrespondingData": true,
@@ -41105,27 +41127,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-212799": {
-    "id": "anilist-212799",
-    "titleZh": "七葉樹王國的七名騎士",
-    "titleJa": "マロニエ王国の七人の騎士",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": true,
-    "matchedType": "A-AniListID",
-    "matchedBgmTitle": "マロニエ王国の七人の騎士",
-    "bgmId": "657084",
-    "streamingsCount": 0
-  },
-  "anilist-206774": {
-    "id": "anilist-206774",
-    "titleZh": "既然能用鼠標操控現實，那我要瘋狂點擊女孩子啦",
-    "titleJa": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": true,
-    "matchedType": "C-ExactTitleJa",
-    "matchedBgmTitle": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
-    "bgmId": "698032",
-    "streamingsCount": 1
   }
 }

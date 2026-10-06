@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者指引",
+    "titleZh": "悠久愚者阿茲裡的賢者指引",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1981,7 +1981,7 @@
   {
     "id": "anilist-160803",
     "titleZh": "魔法少女育成計畫 restart",
-    "titleEn": "",
+    "titleEn": "MAGICAL GIRL RAISING PROJECT restart",
     "titleJa": "魔法少女育成計画 restart",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/96/0000142896.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx160803-aBWg5M8qdOMX.jpg",
@@ -2002,7 +2002,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=142896"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51822"
       },
       {
         "site": "abema",
@@ -2315,7 +2315,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=150359"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51816"
       },
       {
         "site": "nicovideo",
@@ -2930,7 +2930,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=144986"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51813"
       },
       {
         "site": "nicovideo",
@@ -3071,7 +3071,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=150292"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51819"
       },
       {
         "site": "unext",
@@ -3096,9 +3096,9 @@
   {
     "id": "anilist-209463",
     "titleZh": "來自遠方",
-    "titleEn": "",
+    "titleEn": "From Far Away",
     "titleJa": "彼方から",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/24/0000150424.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209463-RQKXW6cjI6Dk.jpg",
     "startDate": {
       "year": 2026,
@@ -3111,6 +3111,32 @@
       "奇幻",
       "愛情",
       "異世界"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51806"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/kanatakara"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/11-90"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0316449"
+      }
     ]
   },
   {
@@ -79119,7 +79145,7 @@
   {
     "id": "anilist-121684",
     "titleZh": "巨神與冰華之城",
-    "titleEn": "",
+    "titleEn": "Shiro, the Giant, and the Castle of Ice",
     "titleJa": "巨神と氷華の城",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx121684-VOEm4ipW5uoA.png",
@@ -137616,6 +137642,7 @@
     "genres": [
       "喜劇",
       "日常",
+      "福利",
       "音樂"
     ],
     "streamings": [
@@ -138153,7 +138180,7 @@
   },
   {
     "id": "anilist-20371",
-    "titleZh": "世界一初戀～橫澤隆史的情況～",
+    "titleZh": "劇場版 世界一初戀～橫澤隆史的情況～介紹宣傳影片STAFFCAST",
     "titleEn": "Sekai Ichi Hatsukoi - The World's Greatest First Love: The Case of Takafumi Yokozawa",
     "titleJa": "劇場版 世界一初恋 横澤隆史の場合",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/38/0000059138.JPG",
@@ -155146,7 +155173,7 @@
   },
   {
     "id": "anilist-11123",
-    "titleZh": "世界一初戀2",
+    "titleZh": "世界一初戀２",
     "titleEn": "Sekai Ichi Hatsukoi - The World's Greatest First Love Season 2",
     "titleJa": "世界一初恋 2",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/99/0000050099.JPG",

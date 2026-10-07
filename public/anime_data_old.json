@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲裡的賢者指引",
+    "titleZh": "悠久愚者阿茲里的賢者指南",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1311,7 +1311,7 @@
   {
     "id": "anilist-178083",
     "titleZh": "東京復仇者 三天戰爭篇",
-    "titleEn": "",
+    "titleEn": "Tokyo Revengers: War of the Three Titans Arc",
     "titleJa": "東京リベンジャーズ 三天戦争編",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-ORQ5BtwQsTbY.jpg",
@@ -2148,7 +2148,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149516"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51844"
       },
       {
         "site": "nicovideo",
@@ -2186,7 +2186,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=150438"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51847"
       },
       {
         "site": "nicovideo",
@@ -2511,7 +2511,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149687"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51856"
       },
       {
         "site": "nicovideo",
@@ -3433,6 +3433,39 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/maukuri"
+      }
+    ]
+  },
+  {
+    "id": "anilist-200294",
+    "titleZh": "超巡！超條前輩",
+    "titleEn": "Super Psychic Policeman Chojo",
+    "titleJa": "超巡！超条先輩",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/53/0000147753.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200294-E6KIgkFaJOfG.jpg",
+    "startDate": {
+      "year": 2026,
+      "month": 10,
+      "day": 6
+    },
+    "yearSeason": "2026 秋",
+    "genres": [
+      "喜劇",
+      "日常",
+      "超能力"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51850"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/chojun"
       }
     ]
   },
@@ -6590,7 +6623,9 @@
       "冒險",
       "動作",
       "喜劇",
-      "奇幻"
+      "奇幻",
+      "異世界",
+      "美食"
     ],
     "streamings": [
       {
@@ -148576,6 +148611,39 @@
     "genres": [
       "喜劇",
       "福利"
+    ]
+  },
+  {
+    "id": "anilist-15489",
+    "titleZh": "遊戲王ZEXAL II",
+    "titleEn": "Yu-Gi-Oh! ZEXAL II",
+    "titleJa": "遊☆戯☆王ZEXALⅡ（セカンド）",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15489-bkJWvWqZSKXz.jpg",
+    "startDate": {
+      "year": 2012,
+      "month": 10,
+      "day": 7
+    },
+    "yearSeason": "2012 秋",
+    "genres": [
+      "動作",
+      "奇幻",
+      "憂鬱"
+    ],
+    "streamings": [
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0047526"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23871"
+      }
     ]
   },
   {

@@ -529,7 +529,7 @@
   },
   "anilist-207328": {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者指南",
+    "titleZh": "悠久愚者阿茲裡的賢者指南",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
@@ -1395,6 +1395,17 @@
     "matchedBgmTitle": "マウスカーソルで現実を操作できるようになったので、女の子をいっぱいクリックしまーす",
     "bgmId": "698032",
     "streamingsCount": 1
+  },
+  "anilist-200294": {
+    "id": "anilist-200294",
+    "titleZh": "超巡！超條前輩",
+    "titleJa": "超巡！超条先輩",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "超巡！超条先輩",
+    "bgmId": "593565",
+    "streamingsCount": 2
   },
   "anilist-178789": {
     "id": "anilist-178789",
@@ -33219,6 +33230,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-15489": {
+    "id": "anilist-15489",
+    "titleZh": "遊戲王ZEXAL II",
+    "titleJa": "遊☆戯☆王ZEXALⅡ（セカンド）",
+    "yearSeason": "2012 秋",
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "遊戯王ZEXAL II",
+    "bgmId": "48670",
+    "streamingsCount": 2
+  },
   "anilist-11757": {
     "id": "anilist-11757",
     "titleZh": "刀劍神域 Sword Art Online",
@@ -41127,27 +41149,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-15489": {
-    "id": "anilist-15489",
-    "titleZh": "遊戲王ZEXAL II",
-    "titleJa": "遊☆戯☆王ZEXALⅡ（セカンド）",
-    "yearSeason": "2012 秋",
-    "hasCorrespondingData": true,
-    "matchedType": "A-AniListID",
-    "matchedBgmTitle": "遊戯王ZEXAL II",
-    "bgmId": "48670",
-    "streamingsCount": 2
-  },
-  "anilist-200294": {
-    "id": "anilist-200294",
-    "titleZh": "超巡！超條前輩",
-    "titleJa": "超巡！超条先輩",
-    "yearSeason": "2026 秋",
-    "hasCorrespondingData": true,
-    "matchedType": "A-AniListID",
-    "matchedBgmTitle": "超巡！超条先輩",
-    "bgmId": "593565",
-    "streamingsCount": 2
   }
 }

@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/10/7 下午5:22:55
+執行時間: 2026/10/8 下午5:32:29
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午5:22:55] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午5:32:29] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -218,8 +218,7 @@ AniSpace 每日任務完整執行 Log
 🔍 正在爬取: 2027 年 WINTER 季 (Limit: 60)...
 🚀 取得 58 部動畫資料，進行本地超高速清洗...
 
-🤖 發現 4 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
-✅ AI 翻譯完成，更新了 1 筆資料至 custom_override.json
+🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
 ✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3741 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
 ⚡ 啟動本地程式化標題正規化對照引擎：針對 432 部無對應動畫，開始進行極速正規化比對...
@@ -261,48 +260,44 @@ AniSpace 每日任務完整執行 Log
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
 📦 成功載入 bangumi-data 字典，映射 1660 筆 AniList ID 及 1735 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 14 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-⏳ 洗滌進度: 14 / 14 (本次成功轉換: 4)
+📦【動畫瘋洗滌檢驗】偵測到 10 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+⏳ 洗滌進度: 10 / 10 (本次成功轉換: 4)
 ✅ 動畫瘋網址洗滌完成！本次新成功洗滌 4 筆作品。
 ✅ 已將 3741 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3538 筆，經 ID 比對合併後資料庫共 3741 筆，新增資料 2 筆，AI 翻譯 1 筆。
+【動畫爬蟲】完成。本次實際抓取 3538 筆，經 ID 比對合併後資料庫共 3741 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3309 部動畫成功對照字典並無條件整合去重播放授權！
-🌟 新增動畫：
-- 遊戲王ZEXAL II
-- 超巡！超條前輩
-🤖 AI 翻譯動畫：
-- 悠久愚者阿茲里的賢者指南
 🛡️ 洗滌成功的動畫 (共 4 部)：
-- 《超巡！超條前輩》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147753
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51850
-- 《亂世千金倪亞‧利斯頓轉生為嬌弱千金的弒神武人華麗無雙錄》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=149516
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51844
-- 《冷淡的佐藤同學只對我撒嬌》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=150438
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51847
-- 《被放逐的作弊賦予魔術師享受隨心所欲的第二人生。》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=149687
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51856
+- 《偵探已經，死了。 第二季》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=125975
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51867
+- 《佐佐木與文鳥小嗶 Season 2》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=138501
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51865
+- 《魔法騎士雷阿斯》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=140275
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51872
+- 《世界最強的魔女，就此開始》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=151278
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51866
 🔗 未對應 bangumi_data 動畫數量：432 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1829 個系列，更新了 2193 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1829 個系列，更新了 2195 筆 Metadata 關聯檔案。
 
 ✨ 抓取與清洗完成！極速處理完畢。共 3741 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午5:34:20] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午5:43:04] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-No relevant translation changes detected.
+[Diff] 發現更官方譯名 anilist-207328: 舊譯名 "悠久愚者阿茲里的賢者指南" ➜ 新譯名 "悠久愚者阿茲裡的賢者指南"，清除過時的 Override: "悠久愚者阿茲里的賢者指南"
+Updated custom_override.json based on translation diffs.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261007.json
+Created daily backup: anime_data_backup_20261008.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -377,43 +372,31 @@ Deleted old backup: anime_data_backup_20260927.json
 Deleted old backup: anime_data_backup_20260928.json
 Deleted old backup: anime_data_backup_20260929.json
 Deleted old backup: anime_data_backup_20260930.json
-Updated dataVersion in package.json and public/data_version.json to: 00181 (181)
+Deleted old backup: anime_data_backup_20261001.json
+Updated dataVersion in package.json and public/data_version.json to: 00182 (182)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午5:34:20] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午5:43:04] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
-📥 [anilist-180894] 已加入批次佇列: 羅梅莉亞戰記 (佇列: 1/10)
-📥 [anilist-212799] 已加入批次佇列: 七葉樹王國的七名騎士 (佇列: 2/10)
-📥 [anilist-206774] 已加入批次佇列: 既然能用鼠標操控現實，那我要瘋狂點擊女孩子啦 (佇列: 3/10)
-📥 [anilist-200294] 已加入批次佇列: 超巡！超條前輩 (佇列: 4/10)
-📥 [anilist-15489] 已加入批次佇列: 遊戲王ZEXAL II (佇列: 5/10)
 
-📦 準備進行 AI 翻譯 (批次: 5)...
-⚠️ AI 觸發頻率限制或發生錯誤，強制冷卻 60 秒後重試 (第 1/3 次)...
-✅ [anilist-180894] AI 翻譯完成: 羅梅莉亞戰記
-✅ [anilist-212799] AI 翻譯完成: 七葉樹王國的七名騎士
-✅ [anilist-206774] AI 翻譯完成: 既然能用鼠標操控現實，那我要瘋狂點擊女孩子啦
-✅ [anilist-200294] AI 翻譯完成: 超巡！超條前輩
-✅ [anilist-15489] AI 翻譯完成: 遊戲王ZEXAL II
-
-🎉 Synopsis fetching complete. Processed 5 animes.
+🎉 Synopsis fetching complete. Processed 0 animes.
 
 📊 每日任務劇情簡介統計回報:
 - 當前動畫總數: 3741
 - 沒找到對應 bangumi_data 的數量: 432
 - 本次掃描發現對應資料為空的數量: 81
 - 有劇情簡介的動畫總數量: 3274
-- 本次新增 5 筆簡介
+- 本次新增 0 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午5:37:38] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午5:44:41] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 104 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 87 項高價值商品。
+準備將 90 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 77 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -424,60 +407,49 @@ Updated dataVersion in package.json and public/data_version.json to: 00181 (181)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午5:39:10] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午5:46:55] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00181)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00182)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00181)
+・動畫資料庫版號：(00182)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3538 筆，經 ID 比對合併後資料庫共 3741 筆，新增資料 2 筆，AI 翻譯 1 筆。
+【動畫爬蟲】完成。本次實際抓取 3538 筆，經 ID 比對合併後資料庫共 3741 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3309 部動畫成功對照字典並無條件整合去重播放授權！
-🌟 新增動畫：
-- 遊戲王ZEXAL II
-- 超巡！超條前輩
-🤖 AI 翻譯動畫：
-- 悠久愚者阿茲里的賢者指南
 🛡️ 洗滌成功的動畫 (共 4 部)：
-- 《超巡！超條前輩》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147753
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51850
-- 《亂世千金倪亞‧利斯頓轉生為嬌弱千金的弒神武人華麗無雙錄》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=149516
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51844
-- 《冷淡的佐藤同學只對我撒嬌》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=150438
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51847
-- 《被放逐的作弊賦予魔術師享受隨心所欲的第二人生。》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=149687
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51856
+- 《偵探已經，死了。 第二季》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=125975
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51867
+- 《佐佐木與文鳥小嗶 Season 2》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=138501
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51865
+- 《魔法騎士雷阿斯》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=140275
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51872
+- 《世界最強的魔女，就此開始》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=151278
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51866
 🔗 未對應 bangumi_data 動畫數量：432 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 87 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 77 項高價值商品。
 
 
 
 【劇情簡介狀態】
 總計收錄: 3741 部動畫
 缺乏簡介: 465 部
-本日新增: 5 筆簡介
-新增清單：
-- [anilist-180894] 羅梅莉亞戰記
-- [anilist-212799] 七葉樹王國的七名騎士
-- [anilist-206774] 既然能用鼠標操控現實，那我要瘋狂點擊女孩子啦
-- [anilist-200294] 超巡！超條前輩
-- [anilist-15489] 遊戲王ZEXAL II
+本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-10-7.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-10-8.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午5:39:14] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午5:46:57] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3745 URLs.
 

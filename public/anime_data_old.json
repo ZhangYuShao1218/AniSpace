@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者指南",
+    "titleZh": "悠久愚者阿茲裡的賢者指南",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1359,7 +1359,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=125975"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51867"
       },
       {
         "site": "muse_hk",
@@ -1612,7 +1612,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=138501"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51865"
       },
       {
         "site": "nicovideo",
@@ -1804,7 +1804,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=140275"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51872"
       },
       {
         "site": "unext",
@@ -2141,6 +2141,7 @@
     },
     "yearSeason": "2026 秋",
     "genres": [
+      "動作",
       "奇幻"
     ],
     "streamings": [
@@ -2556,7 +2557,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=151278"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51866"
       },
       {
         "site": "nicovideo",
@@ -163885,7 +163886,8 @@
     "genres": [
       "喜劇",
       "日常",
-      "校園"
+      "校園",
+      "福利"
     ],
     "streamings": [
       {

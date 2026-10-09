@@ -5857,7 +5857,8 @@
     "source": "ai"
   },
   "anilist-207328": {
-    "source": "ai"
+    "source": "ai",
+    "titleZh": "悠久愚者阿茲里的賢者養成日記"
   },
   "anilist-209224": {
     "titleZh": "轉生遊戲世界〈地下城活動〉～玩家從頭開始遊玩【地下城求職指南】～",
@@ -5894,5 +5895,13 @@
   "anilist-11123": {
     "titleZh": "世界一初戀２",
     "source": "gamer"
+  },
+  "anilist-206798": {
+    "titleZh": "同居的劍聖女師父太可愛了，每天都很幸福",
+    "source": "ai"
+  },
+  "anilist-183692": {
+    "titleZh": "機動戰士鋼彈 SEED FREEDOM ZERO",
+    "source": "ai"
   }
 }

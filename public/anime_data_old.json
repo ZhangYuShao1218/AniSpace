@@ -108,7 +108,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 8
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲裡的賢者指南",
+    "titleZh": "悠久愚者阿茲里的賢者養成日記",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1083,6 +1083,47 @@
       "冒險",
       "奇幻",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-206798",
+    "titleZh": "同居的劍聖女師父太可愛了，每天都很幸福",
+    "titleEn": "",
+    "titleJa": "同居している剣聖の女師匠が可愛すぎて毎日幸せです",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206798-WBoAkt6k7sx9.png",
+    "startDate": {
+      "year": 2027,
+      "month": 1,
+      "day": null
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "愛情",
+      "福利"
+    ]
+  },
+  {
+    "id": "anilist-183692",
+    "titleZh": "機動戰士鋼彈 SEED FREEDOM ZERO",
+    "titleEn": "Mobile Suit Gundam SEED FREEDOM ZERO",
+    "titleJa": "機動戦士ガンダムSEED FREEDOM ZERO",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx183692-s7IeQgTDMkI5.jpg",
+    "startDate": {
+      "year": 2027,
+      "month": 1,
+      "day": 15
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "劇情",
+      "動作",
+      "愛情",
+      "機甲",
+      "科幻"
     ]
   },
   {
@@ -1433,7 +1474,7 @@
   {
     "id": "anilist-200929",
     "titleZh": "藥師少女的獨語 亡妃的秘寶",
-    "titleEn": "",
+    "titleEn": "The Apothecary Diaries: The Late Lady’s Treasure",
     "titleJa": "薬屋のひとりごと 亡妃の秘宝",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200929-ZnRFJbEqFbgJ.jpg",
@@ -1762,7 +1803,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=151823"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51914"
       },
       {
         "site": "nicovideo",

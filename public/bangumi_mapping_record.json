@@ -34,7 +34,7 @@
   },
   "anilist-171630": {
     "id": "anilist-171630",
-    "titleZh": "THE ONE PIECE",
+    "titleZh": "航海王",
     "titleJa": "THE ONE PIECE",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
@@ -529,7 +529,7 @@
   },
   "anilist-207328": {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者養成日記",
+    "titleZh": "悠久愚者阿茲裡的賢者養成日記",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
@@ -630,6 +630,28 @@
     "id": "anilist-214461",
     "titleZh": "真の聖女である私は追放されました。だからこの國はもう終わりです",
     "titleJa": "真の聖女である私は追放されました。だからこの国はもう終わりです",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
+  "anilist-206798": {
+    "id": "anilist-206798",
+    "titleZh": "同居的劍聖女師父太可愛了，每天都很幸福",
+    "titleJa": "同居している剣聖の女師匠が可愛すぎて毎日幸せです",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
+  "anilist-183692": {
+    "id": "anilist-183692",
+    "titleZh": "機動戰士鋼彈 SEED FREEDOM ZERO",
+    "titleJa": "機動戦士ガンダムSEED FREEDOM ZERO",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
     "matchedType": null,
@@ -24075,7 +24097,7 @@
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "Occultic;Nine -オカルティック・ナイン-",
-    "bgmId": "174544",
+    "bgmId": "203861",
     "streamingsCount": 5
   },
   "anilist-21803": {
@@ -41149,27 +41171,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-206798": {
-    "id": "anilist-206798",
-    "titleZh": "同居的劍聖女師父太可愛了，每天都很幸福",
-    "titleJa": "同居している剣聖の女師匠が可愛すぎて毎日幸せです",
-    "yearSeason": "2027 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
-  },
-  "anilist-183692": {
-    "id": "anilist-183692",
-    "titleZh": "機動戰士鋼彈 SEED FREEDOM ZERO",
-    "titleJa": "機動戦士ガンダムSEED FREEDOM ZERO",
-    "yearSeason": "2027 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

@@ -64,7 +64,7 @@
   },
   {
     "id": "anilist-171630",
-    "titleZh": "THE ONE PIECE",
+    "titleZh": "航海王",
     "titleEn": "THE ONE PIECE",
     "titleJa": "THE ONE PIECE",
     "coverImageGamer": "",
@@ -581,7 +581,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 4
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲里的賢者養成日記",
+    "titleZh": "悠久愚者阿茲裡的賢者養成日記",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1602,7 +1602,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=149241"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51873"
       },
       {
         "site": "nicovideo",
@@ -2075,7 +2075,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=143816"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51881"
       },
       {
         "site": "unext",
@@ -2254,7 +2254,7 @@
     "startDate": {
       "year": 2026,
       "month": 9,
-      "day": 26
+      "day": 27
     },
     "yearSeason": "2026 秋",
     "genres": [

@@ -910,7 +910,7 @@
   },
   {
     "id": "anilist-207328",
-    "titleZh": "悠久愚者阿茲裡的賢者養成日記",
+    "titleZh": "悠久愚者阿斯利的賢者建言",
     "titleEn": "The Eternal Fool's Words of Wisdom: A Pawsitively Fantastic Adventure",
     "titleJa": "悠久の愚者アズリーの、賢者のすゝめ",
     "coverImageGamer": "",
@@ -1124,6 +1124,26 @@
       "愛情",
       "機甲",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-204747",
+    "titleZh": "一拳超人 第三季 第2季度",
+    "titleEn": "One Punch Man Season 3 Part 2",
+    "titleJa": "ワンパンマン 第3期第2クール",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204747-INMrngH10Kwq.png",
+    "startDate": {
+      "year": 2027,
+      "month": 1,
+      "day": null
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "動作",
+      "喜劇",
+      "科幻",
+      "超自然"
     ]
   },
   {
@@ -2261,6 +2281,7 @@
       "冒險",
       "動作",
       "奇幻",
+      "後宮",
       "愛情",
       "異世界",
       "福利"
@@ -2396,7 +2417,7 @@
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
-        "url": "https://acg.gamer.com.tw/acgDetail.php?s=146157"
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51919"
       },
       {
         "site": "nicovideo",
@@ -2962,7 +2983,6 @@
     "yearSeason": "2026 秋",
     "genres": [
       "喜劇",
-      "後宮",
       "日常",
       "校園",
       "福利"
@@ -21937,7 +21957,8 @@
     },
     "yearSeason": "2025 夏",
     "genres": [
-      "日常"
+      "日常",
+      "校園"
     ],
     "streamings": [
       {
@@ -120328,8 +120349,7 @@
     "genres": [
       "喜劇",
       "愛情",
-      "日常",
-      "校園"
+      "日常"
     ],
     "streamings": [
       {

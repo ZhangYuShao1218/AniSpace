@@ -360,6 +360,12 @@
     "yearSeason": "2027 冬"
   },
   {
+    "id": "anilist-204747",
+    "titleZh": "一拳超人 第三季 第2季度",
+    "titleJa": "ワンパンマン 第3期第2クール",
+    "yearSeason": "2027 冬"
+  },
+  {
     "id": "anilist-195539",
     "titleZh": "電馭叛客：邊緣行者 2",
     "titleJa": "サイバーパンク: エッジランナーズ2",
@@ -489,12 +495,6 @@
     "id": "anilist-133007",
     "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯之迴天〉",
     "titleJa": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-    "yearSeason": "2026 夏"
-  },
-  {
-    "id": "anilist-211308",
-    "titleZh": "緞帶英雄",
-    "titleJa": "THE RIBBON HERO",
     "yearSeason": "2026 夏"
   },
   {
@@ -2604,9 +2604,9 @@
     "yearSeason": "1998 秋"
   },
   {
-    "id": "anilist-204747",
-    "titleZh": "一拳超人 第三季 第2季度",
-    "titleJa": "ワンパンマン 第3期第2クール",
+    "id": "anilist-190244",
+    "titleZh": "約會大作戰 F Last Date",
+    "titleJa": "デート・ア・ライブF Last Date",
     "yearSeason": "2027 冬"
   }
 ]

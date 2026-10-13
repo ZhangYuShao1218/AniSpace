@@ -670,6 +670,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-190244": {
+    "id": "anilist-190244",
+    "titleZh": "約會大作戰 F Last Date",
+    "titleJa": "デート・ア・ライブF Last Date",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-195516": {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
@@ -41182,16 +41193,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-190244": {
-    "id": "anilist-190244",
-    "titleZh": "約會大作戰 F Last Date",
-    "titleJa": "デート・ア・ライブF Last Date",
-    "yearSeason": "2027 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

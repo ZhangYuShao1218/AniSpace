@@ -366,6 +366,12 @@
     "yearSeason": "2027 冬"
   },
   {
+    "id": "anilist-190244",
+    "titleZh": "約會大作戰 F Last Date",
+    "titleJa": "デート・ア・ライブF Last Date",
+    "yearSeason": "2027 冬"
+  },
+  {
     "id": "anilist-195539",
     "titleZh": "電馭叛客：邊緣行者 2",
     "titleJa": "サイバーパンク: エッジランナーズ2",
@@ -2602,11 +2608,5 @@
     "titleZh": "御先祖賛江",
     "titleJa": "御先祖賛江",
     "yearSeason": "1998 秋"
-  },
-  {
-    "id": "anilist-190244",
-    "titleZh": "約會大作戰 F Last Date",
-    "titleJa": "デート・ア・ライブF Last Date",
-    "yearSeason": "2027 冬"
   }
 ]

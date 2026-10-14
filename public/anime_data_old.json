@@ -1171,6 +1171,24 @@
     ]
   },
   {
+    "id": "anilist-214969",
+    "titleZh": "赤ずきん、旅の途中で死體と出會う。",
+    "titleEn": "",
+    "titleJa": "赤ずきん、旅の途中で死体と出会う。",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx214969-1bRdzmZnYFbq.png",
+    "startDate": {
+      "year": 2027,
+      "month": 1,
+      "day": null
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "奇幻",
+      "懸疑"
+    ]
+  },
+  {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
     "titleEn": "The Apothecary Diaries Season 3",
@@ -3013,6 +3031,7 @@
       "冒險",
       "喜劇",
       "奇幻",
+      "後宮",
       "日常"
     ],
     "streamings": [

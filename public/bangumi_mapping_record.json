@@ -41193,5 +41193,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-214969": {
+    "id": "anilist-214969",
+    "titleZh": "赤ずきん、旅の途中で死體と出會う。",
+    "titleJa": "赤ずきん、旅の途中で死体と出会う。",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

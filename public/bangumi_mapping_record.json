@@ -681,6 +681,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-214969": {
+    "id": "anilist-214969",
+    "titleZh": "赤ずきん、旅の途中で死體と出會う。",
+    "titleJa": "赤ずきん、旅の途中で死体と出会う。",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-195516": {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
@@ -1207,7 +1218,7 @@
     "matchedType": "C-ExactTitleJa",
     "matchedBgmTitle": "恐怖コレクター",
     "bgmId": "613256",
-    "streamingsCount": 0
+    "streamingsCount": 2
   },
   "anilist-187316": {
     "id": "anilist-187316",
@@ -41193,16 +41204,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-214969": {
-    "id": "anilist-214969",
-    "titleZh": "赤ずきん、旅の途中で死體と出會う。",
-    "titleJa": "赤ずきん、旅の途中で死体と出会う。",
-    "yearSeason": "2027 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

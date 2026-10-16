@@ -204,7 +204,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 8
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -1189,6 +1189,25 @@
     ]
   },
   {
+    "id": "anilist-205430",
+    "titleZh": "冒険者ライセンスを剝奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する",
+    "titleEn": "",
+    "titleJa": "冒険者ライセンスを剥奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205430-u0DOkPrpzBOI.jpg",
+    "startDate": {
+      "year": 2027,
+      "month": 1,
+      "day": null
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
     "titleEn": "The Apothecary Diaries Season 3",
@@ -2062,6 +2081,7 @@
     "genres": [
       "冒險",
       "奇幻",
+      "憂鬱",
       "機甲",
       "異世界",
       "超能力",

@@ -692,6 +692,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-205430": {
+    "id": "anilist-205430",
+    "titleZh": "冒険者ライセンスを剝奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する",
+    "titleJa": "冒険者ライセンスを剥奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-195516": {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
@@ -41204,16 +41215,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-205430": {
-    "id": "anilist-205430",
-    "titleZh": "冒険者ライセンスを剝奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する",
-    "titleJa": "冒険者ライセンスを剥奪されたおっさんだけど、愛娘ができたのでのんびり人生を謳歌する",
-    "yearSeason": "2027 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

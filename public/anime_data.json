@@ -488,7 +488,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 10
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -900,7 +900,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 10
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -5576,7 +5576,8 @@
     "genres": [
       "冒險",
       "動作",
-      "奇幻"
+      "奇幻",
+      "校園"
     ],
     "streamings": [
       {

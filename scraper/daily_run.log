@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/10/17 下午3:12:47
+執行時間: 2026/10/18 下午3:26:28
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午3:12:47] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午3:26:28] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -36,7 +36,7 @@ AniSpace 每日任務完整執行 Log
 🚀 取得 50 部動畫資料，進行本地超高速清洗...
 
 🔍 正在爬取: 2012 年 WINTER 季 (Limit: 50)...
-🚀 取得 0 部動畫資料，進行本地超高速清洗...
+🚀 取得 50 部動畫資料，進行本地超高速清洗...
 
 🔍 正在爬取: 2012 年 SPRING 季 (Limit: 50)...
 🚀 取得 50 部動畫資料，進行本地超高速清洗...
@@ -267,25 +267,24 @@ AniSpace 每日任務完整執行 Log
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3747 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3747 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3310 部動畫成功對照字典並無條件整合去重播放授權！
 🔗 未對應 bangumi_data 動畫數量：437 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1832 個系列，更新了 2164 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1832 個系列，更新了 2195 筆 Metadata 關聯檔案。
 
 ✨ 抓取與清洗完成！極速處理完畢。共 3747 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
-AniList API error for 2012 WINTER: Unexpected token '<', "<html>
-<h"... is not valid JSON
+⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt 1/5)，等待 5 秒後重試...
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午3:24:54] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午3:39:47] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
 No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261017.json
+Created daily backup: anime_data_backup_20261018.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -370,11 +369,12 @@ Deleted old backup: anime_data_backup_20261007.json
 Deleted old backup: anime_data_backup_20261008.json
 Deleted old backup: anime_data_backup_20261009.json
 Deleted old backup: anime_data_backup_20261010.json
-Updated dataVersion in package.json and public/data_version.json to: 00191 (191)
+Deleted old backup: anime_data_backup_20261011.json
+Updated dataVersion in package.json and public/data_version.json to: 00192 (192)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午3:24:54] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午3:39:47] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
 
 🎉 Synopsis fetching complete. Processed 0 animes.
@@ -388,12 +388,12 @@ Updated dataVersion in package.json and public/data_version.json to: 00191 (191)
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午3:26:27] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午3:41:54] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 113 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 105 項高價值商品。
+準備將 120 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 78 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -404,22 +404,22 @@ Updated dataVersion in package.json and public/data_version.json to: 00191 (191)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午3:28:25] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午3:43:15] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00191)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00192)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00191)
+・動畫資料庫版號：(00192)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3490 筆，經 ID 比對合併後資料庫共 3747 筆，新增資料 0 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3747 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3310 部動畫成功對照字典並無條件整合去重播放授權！
 🔗 未對應 bangumi_data 動畫數量：437 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 105 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 78 項高價值商品。
 
 
 
@@ -429,11 +429,11 @@ Updated dataVersion in package.json and public/data_version.json to: 00191 (191)
 本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-10-17.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-10-18.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午3:28:30] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午3:43:18] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3751 URLs.
 

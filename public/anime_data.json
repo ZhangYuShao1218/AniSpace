@@ -407,7 +407,7 @@
     "id": "anilist-189121",
     "titleZh": "BanG Dream! It's MyGO!!!!! / Ave Mujica (續篇)",
     "titleEn": "",
-    "titleJa": "BanG Dream! It's MyGO!!!!! / Ave Mujica (続編)",
+    "titleJa": "BanG Dream! MyGO!!!!! // Ave Mujica",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189121-m3EHJ33Y8jgT.png",
     "startDate": {
@@ -3256,7 +3256,6 @@
     "genres": [
       "喜劇",
       "奇幻",
-      "惡役千金",
       "愛情",
       "異世界"
     ],
@@ -3908,7 +3907,9 @@
     "yearSeason": "2026 秋",
     "genres": [
       "冒險",
-      "奇幻"
+      "奇幻",
+      "後宮",
+      "異世界"
     ],
     "streamings": [
       {
@@ -8065,7 +8066,6 @@
       "愛情",
       "憂鬱",
       "時空輪迴",
-      "異世界",
       "驚悚"
     ],
     "streamings": [
@@ -99611,7 +99611,8 @@
     "genres": [
       "冒險",
       "動作",
-      "喜劇"
+      "喜劇",
+      "美食"
     ],
     "streamings": [
       {

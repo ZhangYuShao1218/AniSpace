@@ -28,7 +28,7 @@
 | 19 | `anilist-216624` | 起死回生的SSS級獵人 | 死して生きるSSS級ハンター | 2027 冬 |
 | 20 | `anilist-210073` | 黃金神威 最終章 暴走列車篇 | ゴールデンカムイ 最終章 暴走列車編 | 2027 冬 |
 | 21 | `anilist-208766` | BLESS | ブレス | 2027 冬 |
-| 22 | `anilist-189121` | BanG Dream! It's MyGO!!!!! / Ave Mujica (續篇) | BanG Dream! It's MyGO!!!!! / Ave Mujica (続編) | 2027 冬 |
+| 22 | `anilist-189121` | BanG Dream! It's MyGO!!!!! / Ave Mujica (續篇) | BanG Dream! MyGO!!!!! // Ave Mujica | 2027 冬 |
 | 23 | `anilist-207251` | 入間同學入魔了！if Episode of 魔手黨 | 魔入りました！入間くん if Episode of 魔フィア | 2027 冬 |
 | 24 | `anilist-200578` | 一式さんは戀を知りたい。 | 一式さんは恋を知りたい。 | 2027 冬 |
 | 25 | `anilist-197619` | 結界師的一輪華 | 結界師の一輪華 | 2027 冬 |

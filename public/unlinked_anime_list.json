@@ -384,18 +384,6 @@
     "yearSeason": "2027 冬"
   },
   {
-    "id": "anilist-195539",
-    "titleZh": "電馭叛客：邊緣行者 2",
-    "titleJa": "サイバーパンク: エッジランナーズ2",
-    "yearSeason": "2026 秋"
-  },
-  {
-    "id": "anilist-159042",
-    "titleZh": "轉生成為魔劍了 第二季",
-    "titleJa": "転生したら剣でした 第2期",
-    "yearSeason": "2026 秋"
-  },
-  {
     "id": "anilist-160275",
     "titleZh": "來自深淵 甦醒的神秘",
     "titleJa": "メイドインアビス 目覚める神秘",
@@ -423,12 +411,6 @@
     "id": "anilist-191788",
     "titleZh": "青之蘆葦 第二季",
     "titleJa": "アオアシ 第2期",
-    "yearSeason": "2026 秋"
-  },
-  {
-    "id": "anilist-209872",
-    "titleZh": "亂馬 1/2 (2024) 第三季",
-    "titleJa": "らんま1/2 (2024) 第3期",
     "yearSeason": "2026 秋"
   },
   {
@@ -477,12 +459,6 @@
     "id": "anilist-143103",
     "titleZh": "魔法使之夜",
     "titleJa": "魔法使いの夜",
-    "yearSeason": "2026 秋"
-  },
-  {
-    "id": "anilist-198727",
-    "titleZh": "千歲同學在彈珠汽水瓶中 第2季度",
-    "titleJa": "千歳くんはラムネ瓶のなか 2クール",
     "yearSeason": "2026 秋"
   },
   {
@@ -2620,5 +2596,11 @@
     "titleZh": "御先祖賛江",
     "titleJa": "御先祖賛江",
     "yearSeason": "1998 秋"
+  },
+  {
+    "id": "anilist-209980",
+    "titleZh": "異世界でチート能力を手にした俺は、現実世界をも無雙する ～レベルアップは人生を変えた～ 2nd Season",
+    "titleJa": "異世界でチート能力を手にした俺は、現実世界をも無双する ～レベルアップは人生を変えた～ 2nd Season",
+    "yearSeason": "2027 冬"
   }
 ]

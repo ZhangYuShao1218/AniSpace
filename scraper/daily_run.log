@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/10/24 下午3:37:27
+執行時間: 2026/10/25 下午3:49:45
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午3:37:27] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午3:49:45] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -257,56 +257,30 @@ AniSpace 每日任務完整執行 Log
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
 📦 成功載入 bangumi-data 字典，映射 1681 筆 AniList ID 及 1749 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 6 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題 (僅寫入 custom_override.json，不覆蓋 anime_data.json): "千歲同學在彈珠汽水瓶中 第2季度" ➜ "彈珠汽水瓶裡的千歲同學"
-⏳ 洗滌進度: 6 / 6 (本次成功轉換: 5)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 5 筆作品。
+📦【動畫瘋洗滌檢驗】偵測到 1 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+⏳ 洗滌進度: 1 / 1 (本次成功轉換: 0)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
 ✅ 已將 3748 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3748 筆，新增資料 1 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3748 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3314 部動畫成功對照字典並無條件整合去重播放授權！
-🌟 新增動畫：
-- 異世界でチート能力を手にした俺は、現実世界をも無雙する ～レベルアップは人生を変えた～ 2nd Season
-🛡️ 洗滌成功的動畫 (共 5 部)：
-- 《轉生就是劍 第二季》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=129331
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51689
-- 《彈珠汽水瓶裡的千歲同學 第二季》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=140852
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45591
-- 《赤河戀影》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=149879
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=52124
-- 《流浪神差 ARAGOTO》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=76284
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=9541
-- 《甘城輝煌樂園救世主》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=67006
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=5139
-🎉 新增對應 bangumi_data 的動畫清單 (共 4 部)：
-- 《電馭叛客：邊緣行者 2》 ➜ 成功對應至字典：Cyberpunk: Edgerunners 2 (BGM ID: 513878)
-- 《轉生就是劍 第二季》 ➜ 成功對應至字典：転生したら剣でしたⅡ (BGM ID: 412008)
-- 《亂馬 1/2 第三季》 ➜ 成功對應至字典：らんま1/2(2026) (BGM ID: 637802)
-- 《彈珠汽水瓶裡的千歲同學 第二季》 ➜ 成功對應至字典：千歳くんはラムネ瓶のなか(第2クール) (BGM ID: 584847)
 🔗 未對應 bangumi_data 動畫數量：434 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1832 個系列，更新了 2200 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1832 個系列，更新了 2194 筆 Metadata 關聯檔案。
 
 ✨ 抓取與清洗完成！極速處理完畢。共 3748 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午3:47:41] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午4:04:41] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-[Diff] 發現更官方譯名 anilist-159042: 舊譯名 "轉生成為魔劍了 第二季" ➜ 新譯名 "轉生就是劍 第二季"，清除過時的 Override: "轉生成為魔劍了 第二季"
-[Diff] 發現更官方譯名 anilist-209872: 舊譯名 "亂馬 1/2 (2024) 第三季" ➜ 新譯名 "亂馬 1/2 第三季"，清除過時的 Override: "亂馬 1/2 (2024) 第三季"
-Updated custom_override.json based on translation diffs.
+No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261024.json
+Created daily backup: anime_data_backup_20261025.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -398,11 +372,12 @@ Deleted old backup: anime_data_backup_20261014.json
 Deleted old backup: anime_data_backup_20261015.json
 Deleted old backup: anime_data_backup_20261016.json
 Deleted old backup: anime_data_backup_20261017.json
-Updated dataVersion in package.json and public/data_version.json to: 00198 (198)
+Deleted old backup: anime_data_backup_20261018.json
+Updated dataVersion in package.json and public/data_version.json to: 00199 (199)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午3:47:41] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午4:04:42] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
 
 🎉 Synopsis fetching complete. Processed 0 animes.
@@ -416,11 +391,12 @@ Updated dataVersion in package.json and public/data_version.json to: 00198 (198)
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午3:49:15] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午4:06:13] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 104 筆原始資料交由 Gemini AI 進行分析與篩選...
+準備將 110 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 102 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -428,49 +404,25 @@ Updated dataVersion in package.json and public/data_version.json to: 00198 (198)
 ✔️ 正常: TOYeGO 玩具e哥
 
 ✅ 檢查與更新完成！已寫入 /home/runner/work/AniSpace/AniSpace/public/affiliates.json 與 /home/runner/work/AniSpace/AniSpace/public/product_images.json
-Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午3:49:46] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午4:07:57] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00198)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00199)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00198)
+・動畫資料庫版號：(00199)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3748 筆，新增資料 1 筆，AI 翻譯 0 筆。
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3748 筆，新增資料 0 筆，AI 翻譯 0 筆。
 📈 Bangumi 字典對應與授權回填：共 3314 部動畫成功對照字典並無條件整合去重播放授權！
-🌟 新增動畫：
-- 異世界でチート能力を手にした俺は、現実世界をも無雙する ～レベルアップは人生を変えた～ 2nd Season
-🛡️ 洗滌成功的動畫 (共 5 部)：
-- 《轉生就是劍 第二季》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=129331
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=51689
-- 《彈珠汽水瓶裡的千歲同學 第二季》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=140852
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45591
-- 《赤河戀影》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=149879
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=52124
-- 《流浪神差 ARAGOTO》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=76284
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=9541
-- 《甘城輝煌樂園救世主》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=67006
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=5139
-🎉 新增對應 bangumi_data 的動畫清單 (共 4 部)：
-- 《電馭叛客：邊緣行者 2》 ➜ 成功對應至字典：Cyberpunk: Edgerunners 2 (BGM ID: 513878)
-- 《轉生就是劍 第二季》 ➜ 成功對應至字典：転生したら剣でしたⅡ (BGM ID: 412008)
-- 《亂馬 1/2 第三季》 ➜ 成功對應至字典：らんま1/2(2026) (BGM ID: 637802)
-- 《彈珠汽水瓶裡的千歲同學 第二季》 ➜ 成功對應至字典：千歳くんはラムネ瓶のなか(第2クール) (BGM ID: 584847)
 🔗 未對應 bangumi_data 動畫數量：434 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 104 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 102 項高價值商品。
 
 
 
@@ -480,11 +432,11 @@ Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"mess
 本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-10-24.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-10-25.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午3:49:51] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午4:08:03] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3752 URLs.
 

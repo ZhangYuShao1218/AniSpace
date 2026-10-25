@@ -703,6 +703,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-209980": {
+    "id": "anilist-209980",
+    "titleZh": "異世界でチート能力を手にした俺は、現実世界をも無雙する ～レベルアップは人生を変えた～ 2nd Season",
+    "titleJa": "異世界でチート能力を手にした俺は、現実世界をも無双する ～レベルアップは人生を変えた～ 2nd Season",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-195516": {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
@@ -1299,7 +1310,7 @@
   },
   "anilist-198727": {
     "id": "anilist-198727",
-    "titleZh": "彈珠汽水瓶裡的千歲同學 第二季",
+    "titleZh": "彈珠汽水瓶裡的千歲同學",
     "titleJa": "千歳くんはラムネ瓶のなか 2クール",
     "yearSeason": "2026 秋",
     "hasCorrespondingData": true,
@@ -41215,16 +41226,5 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
-  },
-  "anilist-209980": {
-    "id": "anilist-209980",
-    "titleZh": "異世界でチート能力を手にした俺は、現実世界をも無雙する ～レベルアップは人生を変えた～ 2nd Season",
-    "titleJa": "異世界でチート能力を手にした俺は、現実世界をも無双する ～レベルアップは人生を変えた～ 2nd Season",
-    "yearSeason": "2027 冬",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
   }
 }

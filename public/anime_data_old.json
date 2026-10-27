@@ -4100,6 +4100,12 @@
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=51806"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HLB74N6B"
+      },
+      {
         "site": "nicovideo",
         "name": "NicoNico",
         "region": "日本",
@@ -4116,6 +4122,12 @@
         "name": "U-NEXT",
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0316449"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29271"
       }
     ]
   },

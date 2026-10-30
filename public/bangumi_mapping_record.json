@@ -41226,5 +41226,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-17641": {
+    "id": "anilist-17641",
+    "titleZh": "デート・ア・ライブ DATE TO DATE",
+    "titleJa": "デート・ア・ライブ DATE TO DATE",
+    "yearSeason": "2013 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

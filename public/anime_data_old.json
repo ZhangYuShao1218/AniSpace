@@ -563,7 +563,7 @@
     "startDate": {
       "year": 2026,
       "month": 12,
-      "day": null
+      "day": 23
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -142054,6 +142054,28 @@
       "喜劇",
       "日常",
       "運動"
+    ]
+  },
+  {
+    "id": "anilist-17641",
+    "titleZh": "デート・ア・ライブ DATE TO DATE",
+    "titleEn": "Date A Live: Date to Date",
+    "titleJa": "デート・ア・ライブ DATE TO DATE",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17641-q5VVIoHcFZAZ.jpg",
+    "startDate": {
+      "year": 2013,
+      "month": 12,
+      "day": 6
+    },
+    "yearSeason": "2013 秋",
+    "genres": [
+      "喜劇",
+      "後宮",
+      "愛情",
+      "校園",
+      "福利",
+      "科幻"
     ]
   },
   {

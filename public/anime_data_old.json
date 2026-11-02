@@ -956,7 +956,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 7
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -4440,7 +4440,7 @@
     },
     "yearSeason": "2026 秋",
     "genres": [
-      "喜劇",
+      "劇情",
       "奇幻",
       "愛情"
     ],
@@ -4783,7 +4783,6 @@
     "genres": [
       "冒險",
       "動作",
-      "時空輪迴",
       "超能力",
       "超自然"
     ],
@@ -144779,7 +144778,7 @@
   {
     "id": "anilist-15699",
     "titleZh": "襲來！美少女邪神 W",
-    "titleEn": "Nyaruko-san: Another Crawling Chaos W",
+    "titleEn": "Nyarko-san: Another Crawling Chaos W",
     "titleJa": "這いよれ！ニャル子さん W",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/11/0000058111.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15699-x4ifamV2eqrh.jpg",

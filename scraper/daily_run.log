@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/11/4 下午5:57:32
+執行時間: 2026/11/5 下午5:54:50
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午5:57:32] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午5:54:50] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -276,11 +276,11 @@ AniSpace 每日任務完整執行 Log
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午6:08:45] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午6:08:30] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
 No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261104.json
+Created daily backup: anime_data_backup_20261105.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -383,11 +383,12 @@ Deleted old backup: anime_data_backup_20261025.json
 Deleted old backup: anime_data_backup_20261026.json
 Deleted old backup: anime_data_backup_20261027.json
 Deleted old backup: anime_data_backup_20261028.json
-Updated dataVersion in package.json and public/data_version.json to: 00209 (209)
+Deleted old backup: anime_data_backup_20261029.json
+Updated dataVersion in package.json and public/data_version.json to: 00210 (210)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午6:08:45] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午6:08:30] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
 
 🎉 Synopsis fetching complete. Processed 0 animes.
@@ -401,12 +402,12 @@ Updated dataVersion in package.json and public/data_version.json to: 00209 (209)
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午6:10:15] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午6:09:59] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 110 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 100 項高價值商品。
+準備將 112 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 77 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -417,14 +418,14 @@ Updated dataVersion in package.json and public/data_version.json to: 00209 (209)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午6:12:00] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午6:11:39] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00209)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00210)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00209)
+・動畫資料庫版號：(00210)
 -------------------------------------
 
 【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3749 筆，新增資料 0 筆，AI 翻譯 0 筆。
@@ -432,7 +433,7 @@ Updated dataVersion in package.json and public/data_version.json to: 00209 (209)
 🔗 未對應 bangumi_data 動畫數量：435 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 100 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 77 項高價值商品。
 
 
 
@@ -442,11 +443,11 @@ Updated dataVersion in package.json and public/data_version.json to: 00209 (209)
 本日新增: 0 筆簡介
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-4.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-5.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午6:12:03] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午6:11:41] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3753 URLs.
 

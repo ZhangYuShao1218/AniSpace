@@ -1226,6 +1226,27 @@
     ]
   },
   {
+    "id": "anilist-219548",
+    "titleZh": "魂環",
+    "titleEn": "Spirit Circle",
+    "titleJa": "スピリットサークル",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx219548-TJDkwN6I2ahO.png",
+    "startDate": {
+      "year": 2026,
+      "month": 12,
+      "day": null
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "動作",
+      "喜劇",
+      "愛情",
+      "科幻",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
     "titleEn": "The Apothecary Diaries Season 3",
@@ -1947,6 +1968,7 @@
     "genres": [
       "動作",
       "喜劇",
+      "後宮",
       "愛情"
     ],
     "streamings": [
@@ -30259,6 +30281,7 @@
     "yearSeason": "2024 秋",
     "genres": [
       "劇情",
+      "心理",
       "憂鬱"
     ],
     "streamings": [

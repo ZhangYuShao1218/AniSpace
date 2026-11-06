@@ -41237,5 +41237,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-219548": {
+    "id": "anilist-219548",
+    "titleZh": "魂環",
+    "titleJa": "スピリットサークル",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

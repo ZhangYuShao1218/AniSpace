@@ -3,6 +3,9 @@
   "source": "Original",
   "episodes": 3,
   "trailerYoutubeId": "s4dAQP5MlCs",
-  "relatedAnimeIds": [],
+  "relatedAnimeIds": [
+    "anilist-219660",
+    "anilist-219646"
+  ],
   "averageScore": 64
 }

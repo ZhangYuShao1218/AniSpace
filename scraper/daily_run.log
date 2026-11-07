@@ -1,15 +1,15 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/11/6 下午5:56:41
+執行時間: 2026/11/7 下午5:18:11
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午5:56:41] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午5:18:11] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
-✅ 字典檔載入完成，共建立 8243 筆 AniList ID 映射，8860 筆日文標題 100% 精確映射。
+✅ 字典檔載入完成，共建立 8245 筆 AniList ID 映射，8863 筆日文標題 100% 精確映射。
 
 🔍 正在爬取: 2010 年 WINTER 季 (Limit: 50)...
 🚀 取得 50 部動畫資料，進行本地超高速清洗...
@@ -218,11 +218,10 @@ AniSpace 每日任務完整執行 Log
 🔍 正在爬取: 2027 年 WINTER 季 (Limit: 60)...
 🚀 取得 60 部動畫資料，進行本地超高速清洗...
 
-🤖 發現 3 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
-✅ AI 翻譯完成，更新了 1 筆資料至 custom_override.json
+🤖 發現 2 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
 ✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3750 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 436 部無對應動畫，開始進行極速正規化比對...
+⚡ 啟動本地程式化標題正規化對照引擎：針對 435 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-213657] "夜櫻家大作戰 第二季 後篇" ➜ "夜櫻家大作戰 第二季 第2部分"
@@ -257,35 +256,63 @@ AniSpace 每日任務完整執行 Log
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-8619] "大小姐×執事！OVA" ➜ "管家後宮學園"
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
-📦 成功載入 bangumi-data 字典，映射 1681 筆 AniList ID 及 1749 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 1 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-⏳ 洗滌進度: 1 / 1 (本次成功轉換: 0)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
+📦 成功載入 bangumi-data 字典，映射 1685 筆 AniList ID 及 1753 筆 100% 精確日文標題。
+📦【動畫瘋洗滌檢驗】偵測到 3 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+⏳ 洗滌進度: 3 / 3 (本次成功轉換: 2)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 2 筆作品。
 ✅ 已將 3750 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3750 筆，新增資料 1 筆，AI 翻譯 1 筆。
-📈 Bangumi 字典對應與授權回填：共 3314 部動畫成功對照字典並無條件整合去重播放授權！
-🌟 新增動畫：
-- 魂環
-🤖 AI 翻譯動畫：
-- 魂環
-🔗 未對應 bangumi_data 動畫數量：436 部 (完整清單已隨信附帶)
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3750 筆，新增資料 0 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3315 部動畫成功對照字典並無條件整合去重播放授權！
+🛡️ 洗滌成功的動畫 (共 2 部)：
+- 《小林家的龍女僕 S》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=104019
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=52717
+- 《青年黑傑克》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=77058
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=7232
+🎉 新增對應 bangumi_data 的動畫清單 (共 1 部)：
+- 《我的幸福婚姻 特別篇》 ➜ 成功對應至字典：わたしの幸せな結婚 特別篇 (BGM ID: 551304)
+🔗 未對應 bangumi_data 動畫數量：435 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1832 個系列，更新了 2195 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1833 個系列，更新了 2195 筆 Metadata 關聯檔案。
 
 ✨ 抓取與清洗完成！極速處理完畢。共 3750 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午6:05:08] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午5:29:47] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-No relevant translation changes detected.
+[Diff] 發現更官方譯名 anilist-204363: 舊譯名 "坂本日常 第二季" ➜ 新譯名 "SAKAMOTO DAYS 坂本日常 第2季"，清除過時的 Override: "坂本日常 第二季"
+[Diff] 發現更官方譯名 anilist-186822: 舊譯名 "我關注的人不是男生" ➜ 新譯名 "我在意的對象並不是男人"，清除過時的 Override: "我關注的人不是男生"
+[Diff] 發現更官方譯名 anilist-213752: 舊譯名 "婚姻毒素 第二季" ➜ 新譯名 "婚姻劇毒 第二季"，清除過時的 Override: "婚姻毒素 第二季"
+[Diff] 發現更官方譯名 anilist-202564: 舊譯名 "既然要畫的話" ➜ 新譯名 "要畫就要來真的"，清除過時的 Override: "既然要畫的話"
+[Diff] 發現更官方譯名 anilist-196333: 舊譯名 "平屋慢活" ➜ 新譯名 "平屋慢生活"，清除過時的 Override: "平屋慢活"
+[Diff] 發現更官方譯名 anilist-186741: 舊譯名 "姬騎士的小白臉" ➜ 新譯名 "公主騎士的小白臉"，清除過時的 Override: "姬騎士的小白臉"
+[Diff] 發現更官方譯名 anilist-216624: 舊譯名 "起死回生的SSS級獵人" ➜ 新譯名 "SSS級死而復生的獵人"，清除過時的 Override: "起死回生的SSS級獵人"
+[Diff] 發現更官方譯名 anilist-208766: 舊譯名 "BLESS" ➜ 新譯名 "祝福 BLESS"，清除過時的 Override: "BLESS"
+[Diff] 發現更官方譯名 anilist-207251: 舊譯名 "入間同學入魔了！if Episode of 魔手黨" ➜ 新譯名 "入間同學入魔了！ if Episode of 魔手黨"，清除過時的 Override: "入間同學入魔了！if Episode of 魔手黨"
+[Diff] 發現更官方譯名 anilist-213052: 舊譯名 "電擊黛西" ➜ 新譯名 "愛情接合器"，清除過時的 Override: "電擊黛西"
+[Diff] 發現更官方譯名 anilist-174427: 舊譯名 "在充滿喪屍的世界裡只有我不會被襲擊" ➜ 新譯名 "末世孤雄"，清除過時的 Override: "在充滿喪屍的世界裡只有我不會被襲擊"
+[Diff] 發現更官方譯名 anilist-213497: 舊譯名 "酢橘的魔王城" ➜ 新譯名 "啟程的魔王城"，清除過時的 Override: "酢橘的魔王城"
+[Diff] 發現更官方譯名 anilist-194030: 舊譯名 "靠轉蛋增加夥伴 做出最強美少女軍團" ➜ 新譯名 "透過扭蛋增加同伴͏ 組成最強的美少女軍團"，清除過時的 Override: "靠轉蛋增加夥伴 做出最強美少女軍團"
+[Diff] 發現更官方譯名 anilist-198728: 舊譯名 "繼承風之人" ➜ 新譯名 "風之繼承者"，清除過時的 Override: "繼承風之人"
+[Diff] 發現更官方譯名 anilist-197095: 舊譯名 "殘月的梅賽德絲" ➜ 新譯名 "殘月下的梅賽德斯"，清除過時的 Override: "殘月的梅賽德絲"
+[Diff] 發現更官方譯名 anilist-188546: 舊譯名 "我與悠哥！" ➜ 新譯名 "我與悠哥哥！"，清除過時的 Override: "我與悠哥！"
+[Diff] 發現更官方譯名 anilist-185697: 舊譯名 "ARCANADEA" ➜ 新譯名 "ARCANADEA 阿爾卡納蒂亞"，清除過時的 Override: "ARCANADEA"
+[Diff] 發現更官方譯名 anilist-211070: 舊譯名 "筆、手銬與事實婚" ➜ 新譯名 "筆、手銬和事實婚"，清除過時的 Override: "筆、手銬與事實婚"
+[Diff] 發現更官方譯名 anilist-211258: 舊譯名 "中年賢者的異世界生活日記" ➜ 新譯名 "賢者大叔的異世界生活日記"，清除過時的 Override: "中年賢者的異世界生活日記"
+[Diff] 發現更官方譯名 anilist-207328: 舊譯名 "悠久愚者阿斯利的賢者建言" ➜ 新譯名 "悠久愚者·阿茲利的賢者之道"，清除過時的 Override: "悠久愚者阿斯利的賢者建言"
+[Diff] 發現更官方譯名 anilist-209224: 舊譯名 "轉生遊戲世界〈地下城活動〉～玩家從頭開始遊玩【地下城求職指南】～" ➜ 新譯名 "遊戲世界轉生〈地職〉"，清除過時的 Override: "轉生遊戲世界〈地下城活動〉～玩家從頭開始遊玩【地下城求職指南】～"
+[Diff] 發現更官方譯名 anilist-219548: 舊譯名 "魂環" ➜ 新譯名 "Spirit circle-魂環-"，清除過時的 Override: "魂環"
+[Diff] 發現更官方譯名 anilist-190054: 舊譯名 "我的幸福婚約 特別篇" ➜ 新譯名 "我的幸福婚姻 特別篇"，清除過時的 Override: "我的幸福婚約 特別篇"
+Updated custom_override.json based on translation diffs.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261106.json
+Created daily backup: anime_data_backup_20261107.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -390,29 +417,34 @@ Deleted old backup: anime_data_backup_20261027.json
 Deleted old backup: anime_data_backup_20261028.json
 Deleted old backup: anime_data_backup_20261029.json
 Deleted old backup: anime_data_backup_20261030.json
-Updated dataVersion in package.json and public/data_version.json to: 00211 (211)
+Deleted old backup: anime_data_backup_20261031.json
+Updated dataVersion in package.json and public/data_version.json to: 00212 (212)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午6:05:08] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午5:29:47] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
+📥 [anilist-190054] 已加入批次佇列: 我的幸福婚姻 特別篇 (佇列: 1/10)
 
-🎉 Synopsis fetching complete. Processed 0 animes.
+📦 準備進行 AI 翻譯 (批次: 1)...
+✅ [anilist-190054] AI 翻譯完成: 我的幸福婚姻 特別篇
+
+🎉 Synopsis fetching complete. Processed 1 animes.
 
 📊 每日任務劇情簡介統計回報:
 - 當前動畫總數: 3750
-- 沒找到對應 bangumi_data 的數量: 436
+- 沒找到對應 bangumi_data 的數量: 435
 - 本次掃描發現對應資料為空的數量: 81
-- 有劇情簡介的動畫總數量: 3274
-- 本次新增 0 筆簡介
+- 有劇情簡介的動畫總數量: 3275
+- 本次新增 1 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午6:06:40] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午5:31:40] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 110 筆原始資料交由 Gemini AI 進行分析與篩選...
+準備將 109 筆原始資料交由 Gemini AI 進行分析與篩選...
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -424,40 +456,47 @@ Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"mess
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午6:07:14] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午5:32:54] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00211)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00212)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00211)
+・動畫資料庫版號：(00212)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3750 筆，新增資料 1 筆，AI 翻譯 1 筆。
-📈 Bangumi 字典對應與授權回填：共 3314 部動畫成功對照字典並無條件整合去重播放授權！
-🌟 新增動畫：
-- 魂環
-🤖 AI 翻譯動畫：
-- 魂環
-🔗 未對應 bangumi_data 動畫數量：436 部 (完整清單已隨信附帶)
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3750 筆，新增資料 0 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3315 部動畫成功對照字典並無條件整合去重播放授權！
+🛡️ 洗滌成功的動畫 (共 2 部)：
+- 《小林家的龍女僕 S》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=104019
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=52717
+- 《青年黑傑克》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=77058
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=7232
+🎉 新增對應 bangumi_data 的動畫清單 (共 1 部)：
+- 《我的幸福婚姻 特別篇》 ➜ 成功對應至字典：わたしの幸せな結婚 特別篇 (BGM ID: 551304)
+🔗 未對應 bangumi_data 動畫數量：435 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 110 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 109 項高價值商品。
 
 
 
 【劇情簡介狀態】
 總計收錄: 3750 部動畫
-缺乏簡介: 474 部
-本日新增: 0 筆簡介
+缺乏簡介: 473 部
+本日新增: 1 筆簡介
+新增清單：
+- [anilist-190054] 我的幸福婚姻 特別篇
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-6.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-7.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午6:07:17] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午5:32:57] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3754 URLs.
 

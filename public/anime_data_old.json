@@ -9,7 +9,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 9
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -94236,7 +94236,8 @@
     },
     "yearSeason": "2019 冬",
     "genres": [
-      "動作"
+      "動作",
+      "後宮"
     ],
     "streamings": [
       {
@@ -137095,6 +137096,7 @@
     "genres": [
       "喜劇",
       "奇幻",
+      "後宮",
       "校園",
       "福利"
     ],

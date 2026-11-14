@@ -1227,7 +1227,7 @@
   },
   {
     "id": "anilist-219548",
-    "titleZh": "Spirit circle-魂環-",
+    "titleZh": "Spirit circle－魂環－",
     "titleEn": "Spirit Circle",
     "titleJa": "スピリットサークル",
     "coverImageGamer": "",
@@ -1825,7 +1825,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLUd1fNk1emfc"
+        "url": "https://www.youtube.com/show/VLPLCnI4WmC0nmY?season=1&sbp=CgExGgBAAUoNUFNPU1pjX3NHSjc2WQ%253D%253D"
       },
       {
         "site": "gamer",
@@ -2250,6 +2250,12 @@
         "url": "https://www.crunchyroll.com/series/GT00383994/"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HL6Z6B34"
+      },
+      {
         "site": "mytv",
         "name": "myTV SUPER",
         "region": "港澳",
@@ -2304,7 +2310,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLdJFMqSb2_LI"
+        "url": "https://www.youtube.com/show/VLPLJRnp4cBC7uk?season=1&sbp=CgExGgBAAUoNUFNjVkJyMVhXQUptaw%253D%253D"
       },
       {
         "site": "gamer",
@@ -3325,7 +3331,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLZ6IYbU6gYwI"
+        "url": "https://www.youtube.com/show/VLPLAZ-ROApuBlI?season=1&sbp=CgExGgBAAUoNUFNHMlBhU18walVTaw%253D%253D"
       },
       {
         "site": "gamer",
@@ -3733,7 +3739,7 @@
         "site": "muse_tw",
         "name": "木棉花 YouTube",
         "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLSgM_rxboC3A"
+        "url": "https://www.youtube.com/show/VLPLSnSbibtZlYw?season=1&sbp=CgExGgBAAUoNUFNQT2JnQ0VNTkNrWQ%253D%253D"
       },
       {
         "site": "gamer",
@@ -3869,7 +3875,7 @@
   },
   {
     "id": "anilist-178972",
-    "titleZh": "GROTESQQQUE -怪誕-",
+    "titleZh": "GROTESQQQUE -怪異-",
     "titleEn": "",
     "titleJa": "GROTESQQQUE-グロテスク-",
     "coverImageGamer": "",
@@ -3888,7 +3894,8 @@
       "末日",
       "科幻",
       "超自然"
-    ]
+    ],
+    "streamings": []
   },
   {
     "id": "anilist-143103",
@@ -4003,6 +4010,14 @@
       "冒險",
       "動作",
       "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HKZJPNCZ"
+      }
     ]
   },
   {
@@ -8588,6 +8603,12 @@
     ],
     "streamings": [
       {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfoQ_BoRjjGQNdOSgdGSJOem"
+      },
+      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
@@ -9840,13 +9861,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRIjX7F8WQ1wBSDMNN33F_R"
+        "url": "https://www.youtube.com/show/VLPLfZtFe4Bjm2A?season=1&sbp=CgExGgBAAUoNUFNUVE5SaEthZFVwdw%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JiCtTdD2GRMvAmM6RXA2uhH"
+        "url": "https://www.youtube.com/show/VLPLYQviQO5L1Ko?season=1&sbp=CgExGgBAAUoNUFNTbm1TZTVpY0phOA%253D%253D"
       },
       {
         "site": "netflix",
@@ -11205,13 +11226,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRzMEcHGcw3EGiv_Zk2MyWu"
+        "url": "https://www.youtube.com/show/VLPLct340_GkE-o?season=1&sbp=CgExGgBAAUoNUFNRUUVNMy1kb2N4bw%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjlyxvkFA0-OyN6zwDTNjoA"
+        "url": "https://www.youtube.com/show/VLPLQmmbI0UXapg?season=1&sbp=CgExGgBAAUoNUFNWTGNRRFp6ZF9CQQ%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -11358,7 +11379,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jh6jFqpP-B97p7eUzipzZzv"
+        "url": "https://www.youtube.com/show/VLPLBAwKjUt29oE?season=1&sbp=CgExGgBAAUoNUFNmVDRvQWxXcUhVbw%253D%253D"
       },
       {
         "site": "prime",
@@ -12690,7 +12711,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JivLForf2SE-ypFD1wcLNC6"
+        "url": "https://www.youtube.com/show/VLPLIsbFWHTF3GM?season=3&sbp=CgEzGgBAAUoNUFNTbmRTMGw3WTdpVQ%253D%253D"
       },
       {
         "site": "prime",
@@ -13953,13 +13974,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQWYOfdcIjnWmxQY_K0o4Or"
+        "url": "https://www.youtube.com/show/VLPLdb6cQ49Bc6Q?season=2&sbp=CgEyGgBAAUoNUFNEM1U3NUNpYW56SQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JggUBXP_li2EfufYwIJ7q_A"
+        "url": "https://www.youtube.com/show/VLPLFiBuNJnQqHs?season=2&sbp=CgEyGgBAAUoNUFNNeEM5bjhPYnVtbw%253D%253D"
       },
       {
         "site": "prime",
@@ -17991,13 +18012,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQs292Q1LS3DeGZhWTE--GO"
+        "url": "https://www.youtube.com/show/VLPLcdUOcCarxbs?season=2&sbp=CgEyGgBAAUoNUFNadklEMHFlR3gyWQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JhiANaVNyhX1BNijjLOvdbC"
+        "url": "https://www.youtube.com/show/VLPLPWOfWsVnDz8?season=2&sbp=CgEyGgBAAUoNUFNGckVZdFl0TVA1VQ%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -19981,6 +20002,12 @@
         "name": "Netflix",
         "region": "全球",
         "url": "https://www.netflix.com/title/81948057"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0HNDCYW3R"
       },
       {
         "site": "abema",
@@ -26256,7 +26283,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtS2BaEC6FL_cIJJAiQNEjXd"
+        "url": "https://www.youtube.com/show/VLPLUgKwSLp_orM?season=1&sbp=CgExGgBAAUoNUFNCUkZPeVkwWFlPYw%253D%253D"
       },
       {
         "site": "prime",
@@ -28295,6 +28322,7 @@
       "喜劇",
       "憂鬱",
       "懸疑",
+      "校園",
       "超自然"
     ],
     "streamings": [
@@ -30334,7 +30362,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQNpdH94Rb-HrMlO_dvw1As"
+        "url": "https://www.youtube.com/show/VLPLCYEelWlfj1E?season=2&sbp=CgEyGgBAAUoNUFNZTzhrbTBsVFN2Yw%253D%253D"
       },
       {
         "site": "ani_one_asia",
@@ -30473,7 +30501,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgOSk5QmPX6aolSUsXgCMc-"
+        "url": "https://www.youtube.com/playlist?list=PLbtsMntmNR4c"
       },
       {
         "site": "prime",
@@ -32674,13 +32702,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRnwW-V7djYqoMoyQV4ZFYC"
+        "url": "https://www.youtube.com/show/VLPLCbMKQ5MUcNo?season=1&sbp=CgExGgBAAUoNUFNCTHZpZHRJZFN2QQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jj1WcEwx5MbqYoV3zIwGFwd"
+        "url": "https://www.youtube.com/show/VLPLS6vODxtGg88?season=1&sbp=CgExGgBAAUoNUFNKNTRWUDlmb2FuOA%253D%253D"
       },
       {
         "site": "prime",
@@ -33642,13 +33670,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRpwjgFuX7Ye7z4pufE-fTx"
+        "url": "https://www.youtube.com/show/VLPLUZ2gnRumpQA?season=1&sbp=CgExGgBAAUoNUFNaZ3YtUXBGaFV0WQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jj-LKKsOzrbDe7b8sSg37gz"
+        "url": "https://www.youtube.com/show/VLPLHDI0_y9LsJ8?season=1&sbp=CgExGgBAAUoNUFNRX0FmQUt4cjNFcw%253D%253D"
       },
       {
         "site": "netflix",
@@ -33737,7 +33765,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjnfDK89UJui3A9wj9Ib6yF"
+        "url": "https://www.youtube.com/show/VLPLIsbFWHTF3GM?season=2&sbp=CgEyGgBAAUoNUFNjMm4xSHRPX2VmQQ%253D%253D"
       },
       {
         "site": "netflix",
@@ -37072,7 +37100,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JhqZQW_-rc90fYAIV5dymcF"
+        "url": "https://www.youtube.com/show/VLPLcnSvmvQ-Ujo?season=3&sbp=CgEzGgBAAUoNUFNJcGt4UW42UEpVaw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -38092,13 +38120,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRaevkUa7TslqFBBEv3PfN2"
+        "url": "https://www.youtube.com/show/VLPLXH2eZnwvS_U?season=1&sbp=CgExGgBAAUoNUFNZTHNUNWtDaXBtSQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jguls9EnoNrwlzxe7mIBawO"
+        "url": "https://www.youtube.com/show/VLPLT1uyy-SQ0k0?season=1&sbp=CgExGgBAAUoNUFNXejFqOFcyMUF5cw%253D%253D"
       },
       {
         "site": "netflix",
@@ -38790,13 +38818,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgpM3BhpeDhDvAXuIUQjOj6"
+        "url": "https://www.youtube.com/show/VLPLPiZwymWQeZw?season=3&sbp=CgEzGgBAAUoNUFNDV3N5aU0tWUZLZw%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtS9XXLNeCK883vWIQDZIsn6"
+        "url": "https://www.youtube.com/show/VLPLK-KJmQNcSao?season=3&sbp=CgEzGgBAAUoNUFNFVk1ueWtwX21NZw%253D%253D"
       },
       {
         "site": "prime",
@@ -39490,13 +39518,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQLE6zjuaEij73Hah5KMR7d"
+        "url": "https://www.youtube.com/show/VLPLQ80_XgdVAQ4?season=1&sbp=CgExGgBAAUoNUFNIYXJQMDJPaWE0dw%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jgky4y0OA7mpCLeVd16XuuG"
+        "url": "https://www.youtube.com/show/VLPLI2KwCaS-iJY?season=1&sbp=CgExGgBAAUoNUFNIbjgtWHFGMF9XNA%253D%253D"
       },
       {
         "site": "disneyplus",
@@ -41088,13 +41116,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTY-T0z7AofAJGc9vDt9FaU"
+        "url": "https://www.youtube.com/show/VLPLcdUOcCarxbs?season=1&sbp=CgExGgBAAUoNUFNLSThKTkdHSGZwaw%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgkXAKRkC3TZ53T9itBSZdQ"
+        "url": "https://www.youtube.com/show/VLPLPWOfWsVnDz8?season=1&sbp=CgExGgBAAUoNUFNTc3lnR1pLSkFjZw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -41165,7 +41193,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRLC_f6mQR-zl6SNC8GeSBU"
+        "url": "https://www.youtube.com/show/VLPLdvcrG2Zo2X4?season=2&sbp=CgEyGgBAAUoNUFNOalZUdnFvRDBUNA%253D%253D"
       },
       {
         "site": "unext",
@@ -41343,13 +41371,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSZfjYLAqxWYNYWQxadlsSx"
+        "url": "https://www.youtube.com/show/VLPLL5oH5wOOAL8?season=1&sbp=CgExGgBAAUoNUFNRY3VuU3pIaWhXcw%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jix8lSA4pVU_gn3TbjTg1Pb"
+        "url": "https://www.youtube.com/show/VLPLZ8zpbdLyGpU?season=1&sbp=CgExGgBAAUoNUFNJcFJlZGJRN1Ffbw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -41990,13 +42018,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTyUfIl9_yIVoR33gBIOHpc"
+        "url": "https://www.youtube.com/show/VLPLXm2QBr_V7nQ?season=1&sbp=CgExGgBAAUoNUFNXd0RxVHh5WkFGTQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgVdNKD0Q2XtDOs6n1KEceH"
+        "url": "https://www.youtube.com/show/VLPLWhSdLR6m0WA?season=1&sbp=CgExGgBAAUoNUFNhbE9JM2xOMjA2UQ%253D%253D"
       },
       {
         "site": "netflix",
@@ -45329,13 +45357,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRjmdLcoU4r0lFnidd0pN_H"
+        "url": "https://www.youtube.com/show/VLPLByk2mUIcR5c?season=1&sbp=CgExGgBAAUoNUFNIX1phNGttUkZfTQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgkLRaw39-pfV6h1EurdzVs"
+        "url": "https://www.youtube.com/show/VLPLVO2jFuoKbRw?season=1&sbp=CgExGgBAAUoNUFNJZVVBeU1PMU1Ycw%253D%253D"
       },
       {
         "site": "netflix",
@@ -46344,7 +46372,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JhrtC5M6EHH5g_rAh6LXEni"
+        "url": "https://www.youtube.com/playlist?list=PLbtsMntmNR4c"
       },
       {
         "site": "prime",
@@ -48956,7 +48984,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jhas5i3D5PMB2HNS6Z6HJF2"
+        "url": "https://www.youtube.com/show/VLPLIsbFWHTF3GM?season=1&sbp=CgExGgBAAUoNUFNQdjBNVV95bUk0Zw%253D%253D"
       },
       {
         "site": "ani_one",
@@ -49568,7 +49596,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjMsIf4xqkBMZKgb8I5Ojxs"
+        "url": "https://www.youtube.com/show/VLPLSZ1uGD5WhDA?season=1&sbp=CgExGgBAAUoNUFNSWWJCWnFxcTlTVQ%253D%253D"
       },
       {
         "site": "netflix",
@@ -50086,13 +50114,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtR2NMZ8Mq9GaECa4UcOb3cS"
+        "url": "https://www.youtube.com/show/VLPLJ9KRroBbzRA?season=1&sbp=CgExGgBAAUoNUFNCQVZzQzVSbndQSQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jg3i4JfyhDkbbCApEL8MMif"
+        "url": "https://www.youtube.com/show/VLPLRLsBM3YpEBs?season=1&sbp=CgExGgBAAUoNUFNQWDB5Y0dNTGxFcw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -50640,13 +50668,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSmLNzQrV-qzNZcyKS7pMt8"
+        "url": "https://www.youtube.com/show/VLPLKaSt-juviUg?season=2&sbp=CgEyGgBAAUoNUFNIbTlabFZicEdfVQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgY8RwCgV5CVcJGjCjkLkti"
+        "url": "https://www.youtube.com/show/VLPLBlsgmewNdD8?season=2&sbp=CgEyGgBAAUoNUFNiclhIOWZKam1Gcw%253D%253D"
       },
       {
         "site": "netflix",
@@ -52714,13 +52742,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jj08Pchm_nhtXEDemxfm2KW"
+        "url": "https://www.youtube.com/show/VLPLFiBuNJnQqHs?season=1&sbp=CgExGgBAAUoNUFNOSUFlUDdTOEIwRQ%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSNT0hbOqmm0C_MBPWQMsd8"
+        "url": "https://www.youtube.com/show/VLPLdb6cQ49Bc6Q?season=1&sbp=CgExGgBAAUoNUFNNc1cyUnYwY1lDMA%253D%253D"
       },
       {
         "site": "netflix",
@@ -54718,6 +54746,12 @@
         "url": "https://www.youtube.com/show/VLPLQ9SYtXYNSXQ?sbp=KgtTdlVaWHhfMUlld0AB"
       },
       {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/show/VLPLCYEelWlfj1E?season=1&sbp=CgExGgBAAUoNUFNjMTdyR0M3TGZidw%253D%253D"
+      },
+      {
         "site": "netflix",
         "name": "Netflix",
         "region": "全球",
@@ -55098,7 +55132,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jg3pUga3XbHeMfWLXRMGVQY"
+        "url": "https://www.youtube.com/playlist?list=PLbtsMntmNR4c"
       },
       {
         "site": "ani_one",
@@ -55673,13 +55707,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Ji3wXrdHWgPqyTB4q1ukMH-"
+        "url": "https://www.youtube.com/show/VLPLBlsgmewNdD8?season=1&sbp=CgExGgBAAUoNUFNmUGZKVGV5Szh1dw%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtR-xfP90UmKdba2IeM3-6sm"
+        "url": "https://www.youtube.com/show/VLPLKaSt-juviUg?season=1&sbp=CgExGgBAAUoNUFNMYlpvU1RMbzZJSQ%253D%253D"
       },
       {
         "site": "netflix",
@@ -57622,13 +57656,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjqetlKeUq9vjhLa8yg4vBx"
+        "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=4&sbp=CgE0GgBAAUoNUFNWTHJvbDdTYkRvYw%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSVqX4LOFsjP7rnJQIGUdBE"
+        "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=4&sbp=CgE0GgBAAUoNUFNJek9vOUtscVZfTQ%253D%253D"
       },
       {
         "site": "disneyplus",
@@ -62141,7 +62175,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Ji_dqdq_OJX1NNW2ER9u6Tt"
+        "url": "https://www.youtube.com/show/VLPLU_LWWdWk1PQ?season=1&sbp=CgExGgBAAUoNUFNJa3lDY3RYbTNhZw%253D%253D"
       },
       {
         "site": "netflix",
@@ -72093,13 +72127,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgAzPqskHYtlznaK7Q-JpCS"
+        "url": "https://www.youtube.com/show/VLPLYmDIFdECuis?season=2&sbp=CgEyGgBAAUoNUFNSTm56d2NtVE80MA%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtT6Wz9DQ9XztxVzWiXy0TYd"
+        "url": "https://www.youtube.com/show/VLPLURc6xuWouD4?season=2&sbp=CgEyGgBAAUoNUFNUOUFpMzFFaGlTdw%253D%253D"
       },
       {
         "site": "nicovideo",
@@ -74022,7 +74056,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTyT-WuunU--JBkZC-6o5vV"
+        "url": "https://www.youtube.com/show/VLPLdvcrG2Zo2X4?season=1&sbp=CgExGgBAAUoNUFNkWkI3enEweVJmYw%253D%253D"
       },
       {
         "site": "unext",
@@ -74492,13 +74526,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JhsFhLkiHzyfMeO5unNiOEc"
+        "url": "https://www.youtube.com/show/VLPLPiZwymWQeZw?season=2&sbp=CgEyGgBAAUoNUFNWV0d1OC1GcXUzbw%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQa9h9oyOVgk0Q_KBsKnOW5"
+        "url": "https://www.youtube.com/show/VLPLK-KJmQNcSao?season=2&sbp=CgEyGgBAAUoNUFNCUXF4djMtQVhQTQ%253D%253D"
       },
       {
         "site": "prime",
@@ -84845,7 +84879,7 @@
     "id": "anilist-99807",
     "titleZh": "22/7",
     "titleEn": "22/7 (nanabun no nijyuuni)",
-    "titleJa": "22/7 （ナナブンノニジュウニ）",
+    "titleJa": "22/7 (ナナブンノニジュウニ)",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99807-bkaSfYalAcbf.jpg",
     "startDate": {
@@ -97686,13 +97720,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jj-qPvH9bUUeEKo26qicFm_"
+        "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=3&sbp=CgEzGgBAAUoNUFNkS1pxMXJqTlJoSQ%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSHMMuketAA0NW7unfaBbMk"
+        "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=3&sbp=CgEzGgBAAUoNUFNKX1BtX0dDbjh4RQ%253D%253D"
       },
       {
         "site": "disneyplus",
@@ -100154,13 +100188,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgoFEVBdHozDwI-MCXpDoHK"
+        "url": "https://www.youtube.com/show/VLPLYmDIFdECuis?season=1&sbp=CgExGgBAAUoNUFNlbVdWOFQtSmZBdw%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQMix8fos6PNevQ_2b6fBlU"
+        "url": "https://www.youtube.com/show/VLPLURc6xuWouD4?season=1&sbp=CgExGgBAAUoNUFNPZXhtSXcwajhjaw%253D%253D"
       },
       {
         "site": "unext",
@@ -102264,13 +102298,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjWZYyjY91LNUlpFOsDMYJZ"
+        "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=2&sbp=CgEyGgBAAUoNUFNKV1RtY0NDWUsyRQ%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRDClHso-s32r_YQTwLMS3x"
+        "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=2&sbp=CgEyGgBAAUoNUFNTZ3lJSVU5NmlVQQ%253D%253D"
       },
       {
         "site": "disneyplus",
@@ -102378,6 +102412,18 @@
         "url": "https://www.iqiyi.com/a_19rrh1ss1p.html"
       },
       {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLByqFjYQImUs"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLeOeigp2qbjo"
+      },
+      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -102427,13 +102473,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgBf_iGLzsBmPiLZZ-3MffO"
+        "url": "https://www.youtube.com/show/VLPLIb5gaBHNEf8?season=1&sbp=CgExGgBAAUoNUFNBTGIwYjBNNzNaZw%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtQaJ1X7OBHj3-AY7EN7WUJb"
+        "url": "https://www.youtube.com/show/VLPLNJ7K2O2DmZo?season=1&sbp=CgExGgBAAUoNUFNieHVWT1o1VjJwMA%253D%253D"
       },
       {
         "site": "nicovideo",
@@ -102501,13 +102547,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jh5nBsvSq-SCgEhgSYSdNZl"
+        "url": "https://www.youtube.com/show/VLPLPiZwymWQeZw?season=1&sbp=CgExGgBAAUoNUFNINHZWeGpNV3VaSQ%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtScQVd3nudOfH4Zh4aT8inV"
+        "url": "https://www.youtube.com/show/VLPLK-KJmQNcSao?season=1&sbp=CgExGgBAAUoNUFNlalNPclRpc1pTbw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -108486,7 +108532,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jg5jeTyCLow8P_lK9F6XXFn"
+        "url": "https://www.youtube.com/show/VLPLAMpT13ey8FQ?season=1&sbp=CgExGgBAAUoNUFNIbVI2X1QtNXZLaw%253D%253D"
       },
       {
         "site": "nicovideo",
@@ -109373,13 +109419,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JhgECCmAq4rlTGlPT-5AvuA"
+        "url": "https://www.youtube.com/show/VLPLAT8SJDAOdKU?season=1&sbp=CgExGgBAAUoNUFNOdExjLWNVN3o4Yw%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTSgY082GehVYBm37ahyQiZ"
+        "url": "https://www.youtube.com/show/VLPLTM48xo0bDDI?season=1&sbp=CgExGgBAAUoNUFNTU21kV05ZLUxxbw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -111361,7 +111407,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjBrlCcD2AFans0YqvZCF0f"
+        "url": "https://www.youtube.com/show/VLPLcnSvmvQ-Ujo?season=2&sbp=CgEyGgBAAUoNUFNGTDZpSWliTnB4OA%253D%253D"
       },
       {
         "site": "ani_one",
@@ -111978,7 +112024,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jh4rDe7fFRpu8UnFCMR1Vpn"
+        "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=8&sbp=CgE4GgBAAUoNUFNXZ21HS0U3NDZrZw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -112991,6 +113037,12 @@
         "url": "https://www.iqiyi.com/a_19rrh91phx.html"
       },
       {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0F4L6D7NY"
+      },
+      {
         "site": "unext",
         "name": "U-NEXT",
         "region": "日本",
@@ -113045,7 +113097,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JhyjmWrOjshiPzt2wIkDJ2t"
+        "url": "https://www.youtube.com/show/VLPLK4ZfagmZTjQ?season=2&sbp=CgEyGgBAAUoNUFNJQTJiVTZnQzJwWQ%253D%253D"
       },
       {
         "site": "nicovideo",
@@ -119026,6 +119078,12 @@
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=20880"
       },
       {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/15-37"
+      },
+      {
         "site": "bilibili",
         "name": "Bilibili",
         "region": "中國",
@@ -119732,7 +119790,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JglWiR0yhW9tGY-dt5XVAqX"
+        "url": "https://www.youtube.com/show/VLPLK4ZfagmZTjQ?season=1&sbp=CgExGgBAAUoNUFNXSnlFdWVmRHZiVQ%253D%253D"
       },
       {
         "site": "nicovideo",
@@ -120699,7 +120757,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JiyHGbqVQuTTs9ZFqu3wYNM"
+        "url": "https://www.youtube.com/show/VLPLcnSvmvQ-Ujo?season=1&sbp=CgExGgBAAUoNUFNHc0drNWNrcFdSYw%253D%253D"
       },
       {
         "site": "ani_one",
@@ -124892,7 +124950,7 @@
     "titleZh": "青年黑傑克",
     "titleEn": "Young Black Jack",
     "titleJa": "ヤング ブラック・ジャック",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/58/0000077058.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21187-qpdxAWEZcXe2.jpg",
     "startDate": {
       "year": 2015,
@@ -125107,13 +125165,13 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JiIura5SogPzrVGaujqXYsc"
+        "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=1&sbp=CgExGgBAAUoNUFNHYnAzeFJhTU53SQ%253D%253D"
       },
       {
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtR4OFp6jDP90a8a94eqGosU"
+        "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=1&sbp=CgExGgBAAUoNUFNUZU1ueUFTOUgyWQ%253D%253D"
       },
       {
         "site": "disneyplus",
@@ -126237,7 +126295,7 @@
     "titleZh": "WORKING!!迷糊餐廳 第三季",
     "titleEn": "Wagnaria!!3",
     "titleJa": "WORKING!!!",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/71/0000072071.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20819-w8PLekO22Sc8.jpg",
     "startDate": {
       "year": 2015,
@@ -126251,6 +126309,12 @@
       "日常"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=20348"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -127287,7 +127351,7 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTWHzWqrWQ3sVxVvTIYIa69"
+        "url": "https://www.youtube.com/show/VLPLNqloInla5LA?season=1&sbp=CgExGgBAAUoNUFNSb0FONUVzcDFYRQ%253D%253D"
       },
       {
         "site": "unext",
@@ -127945,7 +128009,7 @@
   },
   {
     "id": "anilist-20996",
-    "titleZh": "銀魂°",
+    "titleZh": "銀魂゜",
     "titleEn": "Gintama Season 3",
     "titleJa": "銀魂゜",
     "coverImageGamer": "",
@@ -127968,7 +128032,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JiPOoEgpgbcV_17Y0kLUkyl"
+        "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=7&sbp=CgE3GgBAAUoNUFNCVWNWVTA5NXk3Yw%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -133941,13 +134005,13 @@
         "site": "ani_one",
         "name": "Ani-One YouTube",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtSL5qQkemuo8Gey2FDTy6Vh"
+        "url": "https://www.youtube.com/show/VLPLaCt53lHf2oc?season=1&sbp=CgExGgBAAUoNUFNMQWFmTlFXTGJ5UQ%253D%253D"
       },
       {
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JixhUo7CWyYHQeWj0GuS9BX"
+        "url": "https://www.youtube.com/show/VLPLSZrlpcsz8M4?season=1&sbp=CgExGgBAAUoNUFNOVk9SV2ktOG5IQQ%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -149130,7 +149194,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JgfDq4Lgru96YoEs74JG0oR"
+        "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=6&sbp=CgE2GgBAAUoNUFNOcFdlTGZadXBDQQ%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -156490,7 +156554,7 @@
     "titleZh": "WORKING!!迷糊餐廳 第二季",
     "titleEn": "Wagnaria!!2",
     "titleJa": "WORKING'!!",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/33/0000045733.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10521-dx9L5dLNJXun.jpg",
     "startDate": {
       "year": 2011,
@@ -156503,6 +156567,12 @@
       "日常"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=19725"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",
@@ -159910,7 +159980,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jhr-Or-HSWFpPvjAsFdAKkR"
+        "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=5&sbp=CgE1GgBAAUoNUFNLbWVMMTVldEFBSQ%253D%253D"
       },
       {
         "site": "crunchyroll",
@@ -160837,7 +160907,7 @@
         "site": "ani_one_asia",
         "name": "Ani-One Asia",
         "region": "亞洲",
-        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Ji8EOQoyANo7hiOyXx_n_Ns"
+        "url": "https://www.youtube.com/show/VLPLFmMzi7RzAPs?season=1&sbp=CgExGgBAAUoNUFNCbU5EWEZ0VVNsZw%253D%253D"
       },
       {
         "site": "nicovideo",
@@ -166783,7 +166853,7 @@
     "titleZh": "WORKING!!迷糊餐廳",
     "titleEn": "Wagnaria!!",
     "titleJa": "WORKING!!",
-    "coverImageGamer": "",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/13/0000030413.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6956-Nxs7H25yHLNS.jpg",
     "startDate": {
       "year": 2010,
@@ -166796,6 +166866,12 @@
       "日常"
     ],
     "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=19712"
+      },
       {
         "site": "nicovideo",
         "name": "NicoNico",

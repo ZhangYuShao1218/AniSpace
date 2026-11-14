@@ -1,15 +1,15 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/11/13 下午6:05:36
+執行時間: 2026/11/14 下午5:31:09
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午6:05:36] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午5:31:09] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
-✅ 字典檔載入完成，共建立 8245 筆 AniList ID 映射，8863 筆日文標題 100% 精確映射。
+✅ 字典檔載入完成，共建立 8246 筆 AniList ID 映射，8866 筆日文標題 100% 精確映射。
 
 🔍 正在爬取: 2010 年 WINTER 季 (Limit: 50)...
 🚀 取得 50 部動畫資料，進行本地超高速清洗...
@@ -221,10 +221,13 @@ AniSpace 每日任務完整執行 Log
 🤖 發現 2 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
 ✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3750 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 435 部無對應動畫，開始進行極速正規化比對...
-✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
+⚡ 啟動本地程式化標題正規化對照引擎：針對 434 部無對應動畫，開始進行極速正規化比對...
+⚡ [正規化對照命中] [anilist-178972] "GROTESQQQUE-グロテスク-" ➜ 字典:"GROTESQQQUE -グロテスク-" (BGM ID: 502499)
+✨ 本地程式化正規化對照執行完畢！共成功對齊 1 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
+✅ 已將標題正規化對應成功的 1 筆結果寫入 custom_override.json 的 bangumiDataTitle 欄位中！
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-213657] "夜櫻家大作戰 第二季 後篇" ➜ "夜櫻家大作戰 第二季 第2部分"
+🔄 [bangumiDataTitle 匯入翻譯] [anilist-178972] "GROTESQQQUE -怪誕-" ➜ "GROTESQQQUE -怪異-"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-204389] "野生的大魔王出現了！" ➜ "野生的大魔王出現了！ 第二季"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-171099] "孤獨搖滾！ Re:Re:" ➜ "劇場總集篇 孤獨搖滾！Re: Re:"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-133124] "劇場版 Free!–the Final Stroke– 後編" ➜ "劇場版 Free! 男子游泳部 -the Final Stroke- 後篇"
@@ -256,17 +259,32 @@ AniSpace 每日任務完整執行 Log
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-8619] "大小姐×執事！OVA" ➜ "管家後宮學園"
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
-📦 成功載入 bangumi-data 字典，映射 1685 筆 AniList ID 及 1753 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 1 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-⏳ 洗滌進度: 1 / 1 (本次成功轉換: 0)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
+📦 成功載入 bangumi-data 字典，映射 1691 筆 AniList ID 及 1759 筆 100% 精確日文標題。
+📦【動畫瘋洗滌檢驗】偵測到 4 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+⏳ 洗滌進度: 4 / 4 (本次成功轉換: 3)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 3 筆作品。
 ✅ 已將 3750 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
 【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3750 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3315 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：435 部 (完整清單已隨信附帶)
+📈 Bangumi 字典對應與授權回填：共 3317 部動畫成功對照字典並無條件整合去重播放授權！
+⚡ 本地程式化標題正規化自動配對成功 (1 部)：
+- [anilist-178972] "GROTESQQQUE-グロテスク-" ➜ 字典標題 "GROTESQQQUE -グロテスク-" (BGM ID: 502499)
+🛡️ 洗滌成功的動畫 (共 3 部)：
+- 《WORKING!!迷糊餐廳 第三季》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=72071
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=20348
+- 《WORKING!!迷糊餐廳 第二季》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=45733
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=19725
+- 《WORKING!!迷糊餐廳》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=30413
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=19712
+🎉 新增對應 bangumi_data 的動畫清單 (共 2 部)：
+- 《GROTESQQQUE -怪誕-》 ➜ 成功對應至字典：GROTESQQQUE -グロテスク- (BGM ID: 502499)
+- 《惡魔紋章》 ➜ 成功對應至字典：デモンズ・クレスト (BGM ID: 612608)
+🔗 未對應 bangumi_data 動畫數量：433 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
@@ -276,11 +294,12 @@ AniSpace 每日任務完整執行 Log
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午6:19:13] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午5:42:50] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
-No relevant translation changes detected.
+[Diff] 發現更官方譯名 anilist-178972: 舊譯名 "GROTESQQQUE -怪誕-" ➜ 新譯名 "GROTESQQQUE -怪異-"，清除過時的 Override: "GROTESQQQUE -怪誕-"
+Updated custom_override.json based on translation diffs.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261113.json
+Created daily backup: anime_data_backup_20261114.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -392,30 +411,35 @@ Deleted old backup: anime_data_backup_20261103.json
 Deleted old backup: anime_data_backup_20261104.json
 Deleted old backup: anime_data_backup_20261105.json
 Deleted old backup: anime_data_backup_20261106.json
-Updated dataVersion in package.json and public/data_version.json to: 00218 (218)
+Deleted old backup: anime_data_backup_20261107.json
+Updated dataVersion in package.json and public/data_version.json to: 00219 (219)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午6:19:13] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午5:42:50] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
+📥 [anilist-203275] 已加入批次佇列: 惡魔紋章 (佇列: 1/10)
 
-🎉 Synopsis fetching complete. Processed 0 animes.
+📦 準備進行 AI 翻譯 (批次: 1)...
+✅ [anilist-203275] AI 翻譯完成: 惡魔紋章
+
+🎉 Synopsis fetching complete. Processed 1 animes.
 
 📊 每日任務劇情簡介統計回報:
 - 當前動畫總數: 3750
-- 沒找到對應 bangumi_data 的數量: 435
+- 沒找到對應 bangumi_data 的數量: 433
 - 本次掃描發現對應資料為空的數量: 81
-- 有劇情簡介的動畫總數量: 3275
-- 本次新增 0 筆簡介
+- 有劇情簡介的動畫總數量: 3276
+- 本次新增 1 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午6:20:48] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午5:44:36] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
 準備將 122 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 107 項高價值商品。
+✅ Gemini AI 分析完成！保留了 77 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -426,36 +450,53 @@ Updated dataVersion in package.json and public/data_version.json to: 00218 (218)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午6:22:17] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午5:45:57] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00218)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00219)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00218)
+・動畫資料庫版號：(00219)
 -------------------------------------
 
 【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3750 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3315 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：435 部 (完整清單已隨信附帶)
+📈 Bangumi 字典對應與授權回填：共 3317 部動畫成功對照字典並無條件整合去重播放授權！
+⚡ 本地程式化標題正規化自動配對成功 (1 部)：
+- [anilist-178972] "GROTESQQQUE-グロテスク-" ➜ 字典標題 "GROTESQQQUE -グロテスク-" (BGM ID: 502499)
+🛡️ 洗滌成功的動畫 (共 3 部)：
+- 《WORKING!!迷糊餐廳 第三季》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=72071
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=20348
+- 《WORKING!!迷糊餐廳 第二季》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=45733
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=19725
+- 《WORKING!!迷糊餐廳》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=30413
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=19712
+🎉 新增對應 bangumi_data 的動畫清單 (共 2 部)：
+- 《GROTESQQQUE -怪誕-》 ➜ 成功對應至字典：GROTESQQQUE -グロテスク- (BGM ID: 502499)
+- 《惡魔紋章》 ➜ 成功對應至字典：デモンズ・クレスト (BGM ID: 612608)
+🔗 未對應 bangumi_data 動畫數量：433 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 107 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 77 項高價值商品。
 
 
 
 【劇情簡介狀態】
 總計收錄: 3750 部動畫
-缺乏簡介: 473 部
-本日新增: 0 筆簡介
+缺乏簡介: 472 部
+本日新增: 1 筆簡介
+新增清單：
+- [anilist-203275] 惡魔紋章
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-13.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-14.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午6:22:20] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午5:46:00] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
 Successfully generated sitemap.xml with 3754 URLs.
 

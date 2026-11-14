@@ -716,7 +716,7 @@
   },
   "anilist-219548": {
     "id": "anilist-219548",
-    "titleZh": "Spirit circle-魂環-",
+    "titleZh": "Spirit circle－魂環－",
     "titleJa": "スピリットサークル",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
@@ -965,7 +965,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "魔法騎士レイアース(2026)",
     "bgmId": "502123",
-    "streamingsCount": 9
+    "streamingsCount": 10
   },
   "anilist-187402": {
     "id": "anilist-187402",
@@ -1302,10 +1302,10 @@
     "titleZh": "GROTESQQQUE -怪誕-",
     "titleJa": "GROTESQQQUE-グロテスク-",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
+    "hasCorrespondingData": true,
+    "matchedType": "B-bangumiDataTitle",
+    "matchedBgmTitle": "GROTESQQQUE -グロテスク-",
+    "bgmId": "502499",
     "streamingsCount": 0
   },
   "anilist-143103": {
@@ -1335,11 +1335,11 @@
     "titleZh": "惡魔紋章",
     "titleJa": "デモンズ・クレスト",
     "yearSeason": "2026 秋",
-    "hasCorrespondingData": false,
-    "matchedType": null,
-    "matchedBgmTitle": null,
-    "bgmId": null,
-    "streamingsCount": 0
+    "hasCorrespondingData": true,
+    "matchedType": "A-AniListID",
+    "matchedBgmTitle": "デモンズ・クレスト",
+    "bgmId": "612608",
+    "streamingsCount": 1
   },
   "anilist-213658": {
     "id": "anilist-213658",
@@ -2230,7 +2230,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "転生したらスライムだった件 第4期",
     "bgmId": "515594",
-    "streamingsCount": 7
+    "streamingsCount": 8
   },
   "anilist-180745": {
     "id": "anilist-180745",
@@ -4254,7 +4254,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "光が死んだ夏",
     "bgmId": "496086",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-185407": {
     "id": "anilist-185407",
@@ -10700,7 +10700,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "ブルーロック",
     "bgmId": "341163",
-    "streamingsCount": 11
+    "streamingsCount": 12
   },
   "anilist-130298": {
     "id": "anilist-130298",
@@ -17096,7 +17096,7 @@
   "anilist-99807": {
     "id": "anilist-99807",
     "titleZh": "22/7",
-    "titleJa": "22/7 （ナナブンノニジュウニ）",
+    "titleJa": "22/7 (ナナブンノニジュウニ)",
     "yearSeason": "2020 冬",
     "hasCorrespondingData": true,
     "matchedType": "A-AniListID",
@@ -21260,7 +21260,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "からかい上手の高木さん",
     "bgmId": "219200",
-    "streamingsCount": 4
+    "streamingsCount": 6
   },
   "anilist-99426": {
     "id": "anilist-99426",
@@ -23746,7 +23746,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "弱虫ペダル NEW GENERATION",
     "bgmId": "148181",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-21836": {
     "id": "anilist-21836",
@@ -25165,7 +25165,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "双星の陰陽師",
     "bgmId": "155778",
-    "streamingsCount": 5
+    "streamingsCount": 6
   },
   "anilist-21394": {
     "id": "anilist-21394",
@@ -26969,7 +26969,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "WORKING!!!",
     "bgmId": "110648",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-21104": {
     "id": "anilist-21104",
@@ -27380,7 +27380,7 @@
   },
   "anilist-20996": {
     "id": "anilist-20996",
-    "titleZh": "銀魂°",
+    "titleZh": "銀魂゜",
     "titleJa": "銀魂゜",
     "yearSeason": "2015 春",
     "hasCorrespondingData": true,
@@ -35131,7 +35131,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "WORKING'!!",
     "bgmId": "20547",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-6773": {
     "id": "anilist-6773",
@@ -38376,7 +38376,7 @@
     "matchedType": "A-AniListID",
     "matchedBgmTitle": "WORKING!!",
     "bgmId": "4255",
-    "streamingsCount": 3
+    "streamingsCount": 4
   },
   "anilist-6114": {
     "id": "anilist-6114",

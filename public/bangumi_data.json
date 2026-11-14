@@ -63481,7 +63481,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhMJ1XmulIYgeMJw1S3AYAa",
+          "id": "PLTsm-skRQ4Jk",
+          "url": "https://www.youtube.com/show/VLPLTsm-skRQ4Jk?season=1&sbp=CgExGgBAAUoNUFNZYjdpbjJmQldoUQ%253D%253D",
           "begin": "2025-08-09T12:00:06.000Z",
           "broadcast": "R/2025-08-09T12:00:06.000Z/P7D"
         },
@@ -70722,7 +70723,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jg_IjS0KTi62YpVqxFFtl2t",
+          "id": "PLTsm-skRQ4Jk",
+          "url": "https://www.youtube.com/show/VLPLTsm-skRQ4Jk?season=2&sbp=CgEyGgBAAUoNUFNMWHhFRVhqN2xZcw%253D%253D",
           "begin": "2025-08-22T12:00:06.000Z",
           "broadcast": "R/2025-08-22T12:00:06.000Z/P7D"
         },
@@ -77198,7 +77200,8 @@
           "site": "gamer",
           "id": "155019",
           "begin": "2026-10-16T04:00:00.000Z",
-          "broadcast": "R/2026-10-16T04:00:00.000Z/P7D"
+          "broadcast": "R/2026-10-16T04:00:00.000Z/P7D",
+          "comment": "Extra Stage 2: 155252"
         }
       ]
     },
@@ -98599,14 +98602,14 @@
           "id": "17730",
           "begin": "2026-06-01T04:00:00.000Z",
           "broadcast": "R/2026-06-01T04:00:00.000Z/P7D",
-          "comment": "第二季: 153084, 第三季: 154639"
+          "comment": "第二季: 153084, 第三季: 154639, 第四季: 155251"
         },
         {
           "site": "gamer_hk",
           "id": "17730",
           "begin": "2026-06-01T04:00:00.000Z",
           "broadcast": "R/2026-06-01T04:00:00.000Z/P7D",
-          "comment": "第二季: 153084, 第三季: 154639"
+          "comment": "第二季: 153084, 第三季: 154639, 第四季: 155251"
         },
         {
           "site": "mighty",
@@ -99741,6 +99744,12 @@
         {
           "site": "dmhy",
           "id": "头文|Initial"
+        },
+        {
+          "site": "gamer",
+          "id": "58226",
+          "begin": "2026-11-06T04:00:00.000Z",
+          "broadcast": "R/2026-11-06T04:00:00.000Z/P7D"
         }
       ]
     },
@@ -117906,10 +117915,10 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JjYz_Mr7sak82-ImkZfxLO1",
+          "id": "PLb8bhrLPtZdc",
+          "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=1&sbp=CgExGgBAAUoNUFNkVUdZU1dDRkxERQ%253D%253D",
           "begin": "2023-09-21T01:55:10.000Z",
-          "broadcast": "R/2023-09-21T01:55:10.000Z/P7D",
-          "comment": "#53-99: PLxSscENEp7JibnGLzxdM-ftMb74lnghSz, #100-150: PLxSscENEp7JiO3ZM-4pFsJ2c8VwnslLJg, #151-201: PLxSscENEp7Jhwyjh_CUvG9Y3Mw2ccdv3q"
+          "broadcast": "R/2023-09-21T01:55:10.000Z/P7D"
         },
         {
           "site": "danime",
@@ -162688,6 +162697,18 @@
         {
           "site": "acgnx",
           "id": "working|糊餐"
+        },
+        {
+          "site": "gamer",
+          "id": "30413",
+          "begin": "2026-11-11T04:00:00.000Z",
+          "broadcast": "R/2026-11-11T04:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer_hk",
+          "id": "30413",
+          "begin": "2026-11-11T04:00:00.000Z",
+          "broadcast": "R/2026-11-11T04:00:00.000Z/P7D"
         }
       ]
     },
@@ -175146,7 +175167,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Ji8EOQoyANo7hiOyXx_n_Ns",
+          "id": "PLFmMzi7RzAPs",
+          "url": "https://www.youtube.com/show/VLPLFmMzi7RzAPs?season=1&sbp=CgExGgBAAUoNUFNCbU5EWEZ0VVNsZw%253D%253D",
           "begin": "2024-06-10T13:00:07.000Z",
           "broadcast": "R/2024-06-10T13:00:07.000Z/P7D"
         },
@@ -176911,7 +176933,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jhr-Or-HSWFpPvjAsFdAKkR",
+          "id": "PLb8bhrLPtZdc",
+          "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=5&sbp=CgE1GgBAAUoNUFNLbWVMMTVldEFBSQ%253D%253D",
           "begin": "2025-02-27T05:21:15.000Z",
           "broadcast": "R/2025-02-27T05:21:15.000Z/P7D"
         },
@@ -181226,6 +181249,18 @@
         {
           "site": "acgnx",
           "id": "rking'|rking´|RKING′|RKING`|rking’"
+        },
+        {
+          "site": "gamer",
+          "id": "45733",
+          "begin": "2026-11-11T04:00:00.000Z",
+          "broadcast": "R/2026-11-11T04:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer_hk",
+          "id": "45733",
+          "begin": "2026-11-11T04:00:00.000Z",
+          "broadcast": "R/2026-11-11T04:00:00.000Z/P7D"
         }
       ]
     },
@@ -199008,6 +199043,12 @@
       "titleTranslate": {
         "zh-Hans": [
           "银魂' 延长战"
+        ],
+        "zh-Hant": [
+          "銀魂' 延長戰"
+        ],
+        "en": [
+          "Gintama' Enchousen"
         ]
       },
       "type": "tv",
@@ -199040,7 +199081,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgfDq4Lgru96YoEs74JG0oR",
+          "id": "PLb8bhrLPtZdc",
+          "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=6&sbp=CgE2GgBAAUoNUFNOcFdlTGZadXBDQQ%253D%253D",
           "begin": "2025-03-05T07:27:18.000Z",
           "broadcast": "R/2025-03-05T07:27:18.000Z/P7D"
         },
@@ -232480,13 +232522,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtSL5qQkemuo8Gey2FDTy6Vh",
+          "id": "PLaCt53lHf2oc",
+          "url": "https://www.youtube.com/show/VLPLaCt53lHf2oc?season=1&sbp=CgExGgBAAUoNUFNMQWFmTlFXTGJ5UQ%253D%253D",
           "begin": "2022-08-28T16:00:00.000Z",
           "broadcast": "R/2022-08-28T16:00:00.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JixhUo7CWyYHQeWj0GuS9BX",
+          "id": "PLSZrlpcsz8M4",
+          "url": "https://www.youtube.com/show/VLPLSZrlpcsz8M4?season=1&sbp=CgExGgBAAUoNUFNOVk9SV2ktOG5IQQ%253D%253D",
           "begin": "2022-12-07T16:00:00.000Z",
           "broadcast": "R/2022-12-07T16:00:00.000Z/P7D"
         },
@@ -248107,7 +248151,8 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtTWHzWqrWQ3sVxVvTIYIa69",
+          "id": "PLNqloInla5LA",
+          "url": "https://www.youtube.com/show/VLPLNqloInla5LA?season=1&sbp=CgExGgBAAUoNUFNSb0FONUVzcDFYRQ%253D%253D",
           "begin": "2023-04-03T16:00:00.000Z",
           "broadcast": "R/2023-04-03T16:00:00.000Z/P7D"
         },
@@ -250049,8 +250094,11 @@
           "銀魂 第3期",
           "银魂 第三季"
         ],
+        "zh-Hant": [
+          "銀魂゜"
+        ],
         "en": [
-          "Gintama"
+          "Gintama Maru"
         ]
       },
       "type": "tv",
@@ -250103,7 +250151,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JiPOoEgpgbcV_17Y0kLUkyl",
+          "id": "PLb8bhrLPtZdc",
+          "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=7&sbp=CgE3GgBAAUoNUFNCVWNWVTA5NXk3Yw%253D%253D",
           "begin": "2025-03-05T09:34:28.000Z",
           "broadcast": "R/2025-03-05T09:34:28.000Z/P7D"
         },
@@ -254486,6 +254535,18 @@
         {
           "site": "acgnx",
           "id": "working|糊餐"
+        },
+        {
+          "site": "gamer",
+          "id": "72071",
+          "begin": "2026-11-11T04:00:00.000Z",
+          "broadcast": "R/2026-11-11T04:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer_hk",
+          "id": "72071",
+          "begin": "2026-11-11T04:00:00.000Z",
+          "broadcast": "R/2026-11-11T04:00:00.000Z/P7D"
         }
       ]
     },
@@ -255833,13 +255894,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JiIura5SogPzrVGaujqXYsc",
+          "id": "PLdvyrFJk5RJA",
+          "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=1&sbp=CgExGgBAAUoNUFNHYnAzeFJhTU53SQ%253D%253D",
           "begin": "2021-07-04T16:00:00.000Z",
           "broadcast": "R/2021-07-04T16:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtR4OFp6jDP90a8a94eqGosU",
+          "id": "PLJKpiXmAqcvU",
+          "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=1&sbp=CgExGgBAAUoNUFNUZU1ueUFTOUgyWQ%253D%253D",
           "begin": "2022-09-26T16:00:00.000Z",
           "broadcast": "R/2022-09-26T16:00:00.000Z/P7D"
         },
@@ -259903,6 +259966,12 @@
         },
         {
           "site": "gamer_hk",
+          "id": "77058",
+          "begin": "2026-11-06T04:00:00.000Z",
+          "broadcast": "R/2026-11-06T04:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer",
           "id": "77058",
           "begin": "2026-11-06T04:00:00.000Z",
           "broadcast": "R/2026-11-06T04:00:00.000Z/P7D"
@@ -269254,7 +269323,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JiyHGbqVQuTTs9ZFqu3wYNM",
+          "id": "PLcnSvmvQ-Ujo",
+          "url": "https://www.youtube.com/show/VLPLcnSvmvQ-Ujo?season=1&sbp=CgExGgBAAUoNUFNHc0drNWNrcFdSYw%253D%253D",
           "begin": "2020-10-18T16:00:00.000Z",
           "broadcast": "R/2020-10-18T16:00:00.000Z/P7D"
         },
@@ -274094,7 +274164,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JglWiR0yhW9tGY-dt5XVAqX",
+          "id": "PLK4ZfagmZTjQ",
+          "url": "https://www.youtube.com/show/VLPLK4ZfagmZTjQ?season=1&sbp=CgExGgBAAUoNUFNXSnlFdWVmRHZiVQ%253D%253D",
           "begin": "2019-10-29T16:00:00.000Z",
           "broadcast": "R/2019-10-29T16:00:00.000Z/P7D"
         },
@@ -274238,6 +274309,12 @@
         {
           "site": "acgnx",
           "id": "雙星 陰陽"
+        },
+        {
+          "site": "abema",
+          "id": "15-37",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -293946,6 +294023,12 @@
         {
           "site": "acgnx",
           "id": "Yowamushi New"
+        },
+        {
+          "site": "prime",
+          "id": "B0F4L6D7NY",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -293988,7 +294071,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JjBrlCcD2AFans0YqvZCF0f",
+          "id": "PLcnSvmvQ-Ujo",
+          "url": "https://www.youtube.com/show/VLPLcnSvmvQ-Ujo?season=2&sbp=CgEyGgBAAUoNUFNGTDZpSWliTnB4OA%253D%253D",
           "begin": "2020-12-27T16:00:00.000Z",
           "broadcast": "R/2020-12-27T16:00:00.000Z/P7D"
         },
@@ -295700,6 +295784,12 @@
       "titleTranslate": {
         "zh-Hans": [
           "银魂."
+        ],
+        "zh-Hant": [
+          "銀魂."
+        ],
+        "en": [
+          "Gintama Period"
         ]
       },
       "type": "tv",
@@ -295745,7 +295835,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jh4rDe7fFRpu8UnFCMR1Vpn",
+          "id": "PLb8bhrLPtZdc",
+          "url": "https://www.youtube.com/show/VLPLb8bhrLPtZdc?season=8&sbp=CgE4GgBAAUoNUFNXZ21HS0U3NDZrZw%253D%253D",
           "begin": "2025-04-01T04:23:22.000Z",
           "broadcast": "R/2025-04-01T04:23:22.000Z/P7D"
         },
@@ -296544,7 +296635,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhyjmWrOjshiPzt2wIkDJ2t",
+          "id": "PLK4ZfagmZTjQ",
+          "url": "https://www.youtube.com/show/VLPLK4ZfagmZTjQ?season=2&sbp=CgEyGgBAAUoNUFNJQTJiVTZnQzJwWQ%253D%253D",
           "begin": "2019-11-07T16:00:00.000Z",
           "broadcast": "R/2019-11-07T16:00:00.000Z/P7D"
         },
@@ -300246,13 +300338,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhgECCmAq4rlTGlPT-5AvuA",
+          "id": "PLAT8SJDAOdKU",
+          "url": "https://www.youtube.com/show/VLPLAT8SJDAOdKU?season=1&sbp=CgExGgBAAUoNUFNOdExjLWNVN3o4Yw%253D%253D",
           "begin": "2019-12-16T16:00:00.000Z",
           "broadcast": "R/2019-12-16T16:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtTSgY082GehVYBm37ahyQiZ",
+          "id": "PLTM48xo0bDDI",
+          "url": "https://www.youtube.com/show/VLPLTM48xo0bDDI?season=1&sbp=CgExGgBAAUoNUFNTU21kV05ZLUxxbw%253D%253D",
           "begin": "2022-07-24T16:00:00.000Z",
           "broadcast": "R/2022-07-24T16:00:00.000Z/P7D"
         },
@@ -306437,7 +306531,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jg5jeTyCLow8P_lK9F6XXFn",
+          "id": "PLAMpT13ey8FQ",
+          "url": "https://www.youtube.com/show/VLPLAMpT13ey8FQ?season=1&sbp=CgExGgBAAUoNUFNIbVI2X1QtNXZLaw%253D%253D",
           "begin": "2024-11-17T12:30:07.000Z",
           "broadcast": "R/2024-11-17T12:30:07.000Z/P7D"
         },
@@ -320011,6 +320106,12 @@
       "titleTranslate": {
         "zh-Hans": [
           "擅长捉弄的高木同学"
+        ],
+        "zh-Hant": [
+          "擅長捉弄人的高木同學"
+        ],
+        "en": [
+          "Teasing Master Takagi-san"
         ]
       },
       "type": "tv",
@@ -320077,6 +320178,18 @@
         {
           "site": "acgnx",
           "id": "捉弄"
+        },
+        {
+          "site": "ani_one",
+          "id": "PLByqFjYQImUs",
+          "begin": "2026-10-31T12:00:07.000Z",
+          "broadcast": "R/2026-10-31T12:00:07.000Z/P7D"
+        },
+        {
+          "site": "ani_one_asia",
+          "id": "PLeOeigp2qbjo",
+          "begin": "2026-10-30T12:00:11.000Z",
+          "broadcast": "R/2026-10-30T12:00:11.000Z/P7D"
         }
       ]
     },
@@ -320206,13 +320319,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jh5nBsvSq-SCgEhgSYSdNZl",
+          "id": "PLPiZwymWQeZw",
+          "url": "https://www.youtube.com/show/VLPLPiZwymWQeZw?season=1&sbp=CgExGgBAAUoNUFNINHZWeGpNV3VaSQ%253D%253D",
           "begin": "2020-12-23T16:00:00.000Z",
           "broadcast": "R/2020-12-23T16:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtScQVd3nudOfH4Zh4aT8inV",
+          "id": "PLK-KJmQNcSao",
+          "url": "https://www.youtube.com/show/VLPLK-KJmQNcSao?season=1&sbp=CgExGgBAAUoNUFNlalNPclRpc1pTbw%253D%253D",
           "begin": "2022-06-28T16:00:00.000Z",
           "broadcast": "R/2022-06-28T16:00:00.000Z/P7D"
         },
@@ -320532,13 +320647,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgBf_iGLzsBmPiLZZ-3MffO",
+          "id": "PLIb5gaBHNEf8",
+          "url": "https://www.youtube.com/show/VLPLIb5gaBHNEf8?season=1&sbp=CgExGgBAAUoNUFNBTGIwYjBNNzNaZw%253D%253D",
           "begin": "2020-05-26T16:00:00.000Z",
           "broadcast": "R/2020-05-26T16:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtQaJ1X7OBHj3-AY7EN7WUJb",
+          "id": "PLNJ7K2O2DmZo",
+          "url": "https://www.youtube.com/show/VLPLNJ7K2O2DmZo?season=1&sbp=CgExGgBAAUoNUFNieHVWT1o1VjJwMA%253D%253D",
           "begin": "2022-06-25T16:00:00.000Z",
           "broadcast": "R/2022-06-25T16:00:00.000Z/P7D"
         },
@@ -321445,13 +321562,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JjWZYyjY91LNUlpFOsDMYJZ",
+          "id": "PLdvyrFJk5RJA",
+          "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=2&sbp=CgEyGgBAAUoNUFNKV1RtY0NDWUsyRQ%253D%253D",
           "begin": "2020-02-20T16:00:00.000Z",
           "broadcast": "R/2020-02-20T16:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRDClHso-s32r_YQTwLMS3x",
+          "id": "PLJKpiXmAqcvU",
+          "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=2&sbp=CgEyGgBAAUoNUFNTZ3lJSVU5NmlVQQ%253D%253D",
           "begin": "2022-10-01T16:00:00.000Z",
           "broadcast": "R/2022-10-01T16:00:00.000Z/P7D"
         },
@@ -329799,13 +329918,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgoFEVBdHozDwI-MCXpDoHK",
+          "id": "PLYmDIFdECuis",
+          "url": "https://www.youtube.com/show/VLPLYmDIFdECuis?season=1&sbp=CgExGgBAAUoNUFNlbVdWOFQtSmZBdw%253D%253D",
           "begin": "2021-04-01T12:30:04.000Z",
           "broadcast": "R/2021-04-01T12:30:04.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtQMix8fos6PNevQ_2b6fBlU",
+          "id": "PLURc6xuWouD4",
+          "url": "https://www.youtube.com/show/VLPLURc6xuWouD4?season=1&sbp=CgExGgBAAUoNUFNPZXhtSXcwajhjaw%253D%253D",
           "begin": "2025-03-11T01:19:45.000Z",
           "broadcast": "R/2025-03-11T01:19:45.000Z/P7D"
         },
@@ -335777,13 +335898,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jj-qPvH9bUUeEKo26qicFm_",
+          "id": "PLdvyrFJk5RJA",
+          "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=3&sbp=CgEzGgBAAUoNUFNkS1pxMXJqTlJoSQ%253D%253D",
           "begin": "2021-11-01T16:00:00.000Z",
           "broadcast": "R/2021-11-01T16:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtSHMMuketAA0NW7unfaBbMk",
+          "id": "PLJKpiXmAqcvU",
+          "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=3&sbp=CgEzGgBAAUoNUFNKX1BtX0dDbjh4RQ%253D%253D",
           "begin": "2022-10-01T16:00:00.000Z",
           "broadcast": "R/2022-10-01T16:00:00.000Z/P7D"
         },
@@ -363319,6 +363442,35 @@
         {
           "site": "aniList",
           "id": "112036"
+        }
+      ]
+    },
+    {
+      "title": "罗小黑战记",
+      "titleTranslate": {
+        "zh-Hans": [
+          "罗小黑战记 电影版",
+          "罗小黑战记大电影",
+          "羅小黒戦記"
+        ]
+      },
+      "type": "movie",
+      "lang": "ja",
+      "officialSite": "https://luoxiaohei-movie.com/",
+      "begin": "2019-09-06T16:00:00.000Z",
+      "broadcast": "",
+      "end": "2019-09-06T17:41:00.000Z",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "159725"
+        },
+        {
+          "site": "danime",
+          "id": "27735",
+          "begin": "2025-03-18T03:00:00.000Z",
+          "broadcast": "R/2025-03-18T03:00:00.000Z/P7D"
         }
       ]
     },
@@ -392241,13 +392393,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhsFhLkiHzyfMeO5unNiOEc",
+          "id": "PLPiZwymWQeZw",
+          "url": "https://www.youtube.com/show/VLPLPiZwymWQeZw?season=2&sbp=CgEyGgBAAUoNUFNWV0d1OC1GcXUzbw%253D%253D",
           "begin": "2021-01-07T15:00:00.000Z",
           "broadcast": "R/2021-01-07T15:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtQa9h9oyOVgk0Q_KBsKnOW5",
+          "id": "PLK-KJmQNcSao",
+          "url": "https://www.youtube.com/show/VLPLK-KJmQNcSao?season=2&sbp=CgEyGgBAAUoNUFNCUXF4djMtQVhQTQ%253D%253D",
           "begin": "2022-07-20T16:00:00.000Z",
           "broadcast": "R/2022-07-20T16:00:00.000Z/P7D"
         },
@@ -392517,7 +392671,8 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtTyT-WuunU--JBkZC-6o5vV",
+          "id": "PLdvcrG2Zo2X4",
+          "url": "https://www.youtube.com/show/VLPLdvcrG2Zo2X4?season=1&sbp=CgExGgBAAUoNUFNkWkI3enEweVJmYw%253D%253D",
           "begin": "2025-09-08T12:00:06.000Z",
           "broadcast": "R/2025-09-08T12:00:06.000Z/P7D"
         },
@@ -398693,6 +398848,12 @@
           "id": "155253",
           "begin": "2026-11-06T04:00:00.000Z",
           "broadcast": "R/2026-11-06T04:00:00.000Z/P7D"
+        },
+        {
+          "site": "gamer",
+          "id": "155253",
+          "begin": "2026-11-06T04:00:00.000Z",
+          "broadcast": "R/2026-11-06T04:00:00.000Z/P7D"
         }
       ]
     },
@@ -403252,7 +403413,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgAzPqskHYtlznaK7Q-JpCS",
+          "id": "PLYmDIFdECuis",
+          "url": "https://www.youtube.com/show/VLPLYmDIFdECuis?season=2&sbp=CgEyGgBAAUoNUFNSTm56d2NtVE80MA%253D%253D",
           "begin": "2021-04-04T15:00:00.000Z",
           "broadcast": "R/2021-04-04T15:00:00.000Z/P7D"
         },
@@ -403294,7 +403456,8 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtT6Wz9DQ9XztxVzWiXy0TYd",
+          "id": "PLURc6xuWouD4",
+          "url": "https://www.youtube.com/show/VLPLURc6xuWouD4?season=2&sbp=CgEyGgBAAUoNUFNUOUFpMzFFaGlTdw%253D%253D",
           "begin": "2025-04-26T12:30:06.000Z",
           "broadcast": "R/2025-04-26T12:30:06.000Z/P7D"
         },
@@ -406032,7 +406195,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhHilZTy4u4rr_s8-nEM1-8",
+          "id": "PLfApBtGhOULU",
+          "url": "https://www.youtube.com/show/VLPLfApBtGhOULU?season=1&sbp=CgExGgBAAUoNUFNNaGxSN3B1R2F6RQ%253D%253D",
           "begin": "2021-07-04T12:30:00.000Z",
           "broadcast": "R/2021-07-04T12:30:00.000Z/P7D"
         },
@@ -414523,7 +414687,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jjq1It2qijsPwyFuM1n1mZJ",
+          "id": "PLBRNdiO3lfZ4",
+          "url": "https://www.youtube.com/show/VLPLBRNdiO3lfZ4?season=1&sbp=CgExGgBAAUoNUFNROGthUk5sSjNfQQ%253D%253D",
           "begin": "2024-11-05T12:00:06.000Z",
           "broadcast": "R/2024-11-05T12:00:06.000Z/P7D"
         },
@@ -424970,7 +425135,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Ji_dqdq_OJX1NNW2ER9u6Tt",
+          "id": "PLU_LWWdWk1PQ",
+          "url": "https://www.youtube.com/show/VLPLU_LWWdWk1PQ?season=1&sbp=CgExGgBAAUoNUFNJa3lDY3RYbTNhZw%253D%253D",
           "begin": "2022-04-10T12:00:00.000Z",
           "broadcast": "R/2022-04-10T12:00:00.000Z/P7D"
         },
@@ -428933,7 +429099,7 @@
           "id": "120421",
           "begin": "2023-12-22T08:10:00.000Z",
           "broadcast": "R/2023-12-22T08:10:00.000Z/P7D",
-          "comment": "第四季 (#363~): 154943"
+          "comment": "第三季(#241~362): 155241, 第四季 (#363~): 154943"
         },
         {
           "site": "abema",
@@ -433327,7 +433493,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JjqetlKeUq9vjhLa8yg4vBx",
+          "id": "PLdvyrFJk5RJA",
+          "url": "https://www.youtube.com/show/VLPLdvyrFJk5RJA?season=4&sbp=CgE0GgBAAUoNUFNWTHJvbDdTYkRvYw%253D%253D",
           "begin": "2022-07-05T14:00:00.000Z",
           "broadcast": "R/2022-07-05T14:00:00.000Z/P7D"
         },
@@ -433339,7 +433506,8 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtSVqX4LOFsjP7rnJQIGUdBE",
+          "id": "PLJKpiXmAqcvU",
+          "url": "https://www.youtube.com/show/VLPLJKpiXmAqcvU?season=4&sbp=CgE0GgBAAUoNUFNJek9vOUtscVZfTQ%253D%253D",
           "begin": "2022-09-26T16:00:00.000Z",
           "broadcast": "R/2022-09-26T16:00:00.000Z/P7D"
         },
@@ -440321,13 +440489,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Ji3wXrdHWgPqyTB4q1ukMH-",
+          "id": "PLBlsgmewNdD8",
+          "url": "https://www.youtube.com/show/VLPLBlsgmewNdD8?season=1&sbp=CgExGgBAAUoNUFNmUGZKVGV5Szh1dw%253D%253D",
           "begin": "2022-10-02T09:00:00.000Z",
           "broadcast": "R/2022-10-02T09:00:00.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtR-xfP90UmKdba2IeM3-6sm",
+          "id": "PLKaSt-juviUg",
+          "url": "https://www.youtube.com/show/VLPLKaSt-juviUg?season=1&sbp=CgExGgBAAUoNUFNMYlpvU1RMbzZJSQ%253D%253D",
           "begin": "2022-10-02T09:00:00.000Z",
           "broadcast": "R/2022-10-02T09:00:00.000Z/P7D"
         },
@@ -441125,6 +441295,13 @@
         {
           "site": "acgnx",
           "id": "BLUE LOCK"
+        },
+        {
+          "site": "ani_one",
+          "id": "PLCYEelWlfj1E",
+          "url": "https://www.youtube.com/show/VLPLCYEelWlfj1E?season=1&sbp=CgExGgBAAUoNUFNjMTdyR0M3TGZidw%253D%253D",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -441775,9 +441952,10 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jg3pUga3XbHeMfWLXRMGVQY",
+          "id": "PLbtsMntmNR4c",
           "begin": "2022-10-10T16:30:00.000Z",
-          "broadcast": "R/2022-10-10T16:30:00.000Z/P7D"
+          "broadcast": "R/2022-10-10T16:30:00.000Z/P7D",
+          "comment": "Ultra: PLxSscENEp7Jg3pUga3XbHeMfWLXRMGVQY"
         },
         {
           "site": "bilibili_hk_mo_tw",
@@ -443441,7 +443619,7 @@
         },
         {
           "site": "danime",
-          "id": "27735",
+          "id": "25835",
           "begin": "2025-03-18T03:00:00.000Z",
           "broadcast": "R/2025-03-18T03:00:00.000Z/P7D"
         },
@@ -448843,14 +449021,16 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jj08Pchm_nhtXEDemxfm2KW",
+          "id": "PLFiBuNJnQqHs",
+          "url": "https://www.youtube.com/show/VLPLFiBuNJnQqHs?season=1&sbp=CgExGgBAAUoNUFNOSUFlUDdTOEIwRQ%253D%253D",
           "begin": "2023-01-07T15:30:00.000Z",
           "broadcast": "R/2023-01-07T15:30:00.000Z/P7D",
           "comment": "會員限定: PLxSscENEp7JgZya2bMfgi-2i95rSvUfjL"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtSNT0hbOqmm0C_MBPWQMsd8",
+          "id": "PLdb6cQ49Bc6Q",
+          "url": "https://www.youtube.com/show/VLPLdb6cQ49Bc6Q?season=1&sbp=CgExGgBAAUoNUFNNc1cyUnYwY1lDMA%253D%253D",
           "begin": "2023-01-07T15:30:00.000Z",
           "broadcast": "R/2023-01-07T15:30:00.000Z/P7D",
           "comment": "會員限定: PLC18xlbCdwtRS88vOB2QTUCbsbYAdxF4e"
@@ -452560,13 +452740,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtR2NMZ8Mq9GaECa4UcOb3cS",
+          "id": "PLJ9KRroBbzRA",
+          "url": "https://www.youtube.com/show/VLPLJ9KRroBbzRA?season=1&sbp=CgExGgBAAUoNUFNCQVZzQzVSbndQSQ%253D%253D",
           "begin": "2023-04-08T17:30:00.000Z",
           "broadcast": "R/2023-04-08T17:30:00.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jg3i4JfyhDkbbCApEL8MMif",
+          "id": "PLRLsBM3YpEBs",
+          "url": "https://www.youtube.com/show/VLPLRLsBM3YpEBs?season=1&sbp=CgExGgBAAUoNUFNQWDB5Y0dNTGxFcw%253D%253D",
           "begin": "2023-04-08T17:30:00.000Z",
           "broadcast": "R/2023-04-08T17:30:00.000Z/P7D"
         },
@@ -454038,11 +454220,12 @@
           "id": "PLC18xlbCdwtSU3vRZzLcnwWb1MhsPFPSh",
           "begin": "2026-05-25T13:00:06.000Z",
           "broadcast": "R/2026-05-25T13:00:06.000Z/P7D",
-          "comment": "會員限定: PLC18xlbCdwtRK-Kcok1wN_tBsoHSjDxGD"
+          "comment": "會員限定: PLcgwjdC1W0vQ"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JjMsIf4xqkBMZKgb8I5Ojxs",
+          "id": "PLSZ1uGD5WhDA",
+          "url": "https://www.youtube.com/show/VLPLSZ1uGD5WhDA?season=1&sbp=CgExGgBAAUoNUFNSWWJCWnFxcTlTVQ%253D%253D",
           "begin": "2023-04-05T16:00:00.000Z",
           "broadcast": "R/2023-04-05T16:00:00.000Z/P7D"
         },
@@ -455850,7 +456033,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jhas5i3D5PMB2HNS6Z6HJF2",
+          "id": "PLIsbFWHTF3GM",
+          "url": "https://www.youtube.com/show/VLPLIsbFWHTF3GM?season=1&sbp=CgExGgBAAUoNUFNQdjBNVV95bUk0Zw%253D%253D",
           "begin": "2023-04-12T15:00:00.000Z",
           "broadcast": "R/2023-04-12T15:00:00.000Z/P7D"
         },
@@ -457124,13 +457308,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtSmLNzQrV-qzNZcyKS7pMt8",
+          "id": "PLKaSt-juviUg",
+          "url": "https://www.youtube.com/show/VLPLKaSt-juviUg?season=2&sbp=CgEyGgBAAUoNUFNIbTlabFZicEdfVQ%253D%253D",
           "begin": "2023-04-09T09:00:00.000Z",
           "broadcast": "R/2023-04-09T09:00:00.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgY8RwCgV5CVcJGjCjkLkti",
+          "id": "PLBlsgmewNdD8",
+          "url": "https://www.youtube.com/show/VLPLBlsgmewNdD8?season=2&sbp=CgEyGgBAAUoNUFNiclhIOWZKam1Gcw%253D%253D",
           "begin": "2023-04-09T09:00:00.000Z",
           "broadcast": "R/2023-04-09T09:00:00.000Z/P7D"
         },
@@ -461289,9 +461475,10 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhrtC5M6EHH5g_rAh6LXEni",
+          "id": "PLbtsMntmNR4c",
           "begin": "2023-07-08T15:30:00.000Z",
-          "broadcast": "R/2023-07-08T15:30:00.000Z/P7D"
+          "broadcast": "R/2023-07-08T15:30:00.000Z/P7D",
+          "comment": "Ultra: PLxSscENEp7JhrtC5M6EHH5g_rAh6LXEni"
         },
         {
           "site": "gamer",
@@ -465073,8 +465260,7 @@
       "titleTranslate": {
         "zh-Hans": [
           "大小姐和看门犬",
-          "大小姐与看门狗",
-          "大小姐和看門犬"
+          "大小姐与看门狗"
         ],
         "zh-Hant": [
           "大小姐和看門犬"
@@ -465098,13 +465284,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRjmdLcoU4r0lFnidd0pN_H",
+          "id": "PLByk2mUIcR5c",
+          "url": "https://www.youtube.com/show/VLPLByk2mUIcR5c?season=1&sbp=CgExGgBAAUoNUFNIX1phNGttUkZfTQ%253D%253D",
           "begin": "2023-09-28T16:30:00.000Z",
           "broadcast": "R/2023-09-28T16:30:00.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgkLRaw39-pfV6h1EurdzVs",
+          "id": "PLVO2jFuoKbRw",
+          "url": "https://www.youtube.com/show/VLPLVO2jFuoKbRw?season=1&sbp=CgExGgBAAUoNUFNJZVVBeU1PMU1Ycw%253D%253D",
           "begin": "2023-09-28T16:30:00.000Z",
           "broadcast": "R/2023-09-28T16:30:00.000Z/P7D"
         },
@@ -475080,13 +475268,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtTY-T0z7AofAJGc9vDt9FaU",
+          "id": "PLcdUOcCarxbs",
+          "url": "https://www.youtube.com/show/VLPLcdUOcCarxbs?season=1&sbp=CgExGgBAAUoNUFNLSThKTkdHSGZwaw%253D%253D",
           "begin": "2024-01-06T13:00:08.000Z",
           "broadcast": "R/2024-01-06T13:00:08.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgkXAKRkC3TZ53T9itBSZdQ",
+          "id": "PLPWOfWsVnDz8",
+          "url": "https://www.youtube.com/show/VLPLPWOfWsVnDz8?season=1&sbp=CgExGgBAAUoNUFNTc3lnR1pLSkFjZw%253D%253D",
           "begin": "2024-01-06T13:00:12.000Z",
           "broadcast": "R/2024-01-06T13:00:12.000Z/P7D"
         },
@@ -475774,13 +475964,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtSZfjYLAqxWYNYWQxadlsSx",
+          "id": "PLL5oH5wOOAL8",
+          "url": "https://www.youtube.com/show/VLPLL5oH5wOOAL8?season=1&sbp=CgExGgBAAUoNUFNRY3VuU3pIaWhXcw%253D%253D",
           "begin": "2024-01-10T17:00:09.000Z",
           "broadcast": "R/2024-01-10T17:00:09.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jix8lSA4pVU_gn3TbjTg1Pb",
+          "id": "PLZ8zpbdLyGpU",
+          "url": "https://www.youtube.com/show/VLPLZ8zpbdLyGpU?season=1&sbp=CgExGgBAAUoNUFNJcFJlZGJRN1Ffbw%253D%253D",
           "begin": "2024-01-10T17:00:09.000Z",
           "broadcast": "R/2024-01-10T17:00:09.000Z/P7D"
         },
@@ -476786,7 +476978,8 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRLC_f6mQR-zl6SNC8GeSBU",
+          "id": "PLdvcrG2Zo2X4",
+          "url": "https://www.youtube.com/show/VLPLdvcrG2Zo2X4?season=2&sbp=CgEyGgBAAUoNUFNOalZUdnFvRDBUNA%253D%253D",
           "begin": "2024-01-03T12:30:07.000Z",
           "broadcast": "R/2024-01-03T12:30:07.000Z/P7D"
         },
@@ -477504,13 +477697,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtTyUfIl9_yIVoR33gBIOHpc",
+          "id": "PLXm2QBr_V7nQ",
+          "url": "https://www.youtube.com/show/VLPLXm2QBr_V7nQ?season=1&sbp=CgExGgBAAUoNUFNXd0RxVHh5WkFGTQ%253D%253D",
           "begin": "2024-01-10T15:00:07.000Z",
           "broadcast": "R/2024-01-10T15:00:07.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgVdNKD0Q2XtDOs6n1KEceH",
+          "id": "PLWhSdLR6m0WA",
+          "url": "https://www.youtube.com/show/VLPLWhSdLR6m0WA?season=1&sbp=CgExGgBAAUoNUFNhbE9JM2xOMjA2UQ%253D%253D",
           "begin": "2024-07-03T15:00:07.000Z",
           "broadcast": "R/2024-07-03T15:00:07.000Z/P7D"
         },
@@ -481700,13 +481895,15 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgpM3BhpeDhDvAXuIUQjOj6",
+          "id": "PLPiZwymWQeZw",
+          "url": "https://www.youtube.com/show/VLPLPiZwymWQeZw?season=3&sbp=CgEzGgBAAUoNUFNDV3N5aU0tWUZLZw%253D%253D",
           "begin": "2024-04-04T14:30:07.000Z",
           "broadcast": "R/2024-04-04T14:30:07.000Z/P7D"
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtS9XXLNeCK883vWIQDZIsn6",
+          "id": "PLK-KJmQNcSao",
+          "url": "https://www.youtube.com/show/VLPLK-KJmQNcSao?season=3&sbp=CgEzGgBAAUoNUFNFVk1ueWtwX21NZw%253D%253D",
           "begin": "2024-04-04T14:30:07.000Z",
           "broadcast": "R/2024-04-04T14:30:07.000Z/P7D"
         },
@@ -482033,7 +482230,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhqZQW_-rc90fYAIV5dymcF",
+          "id": "PLcnSvmvQ-Ujo",
+          "url": "https://www.youtube.com/show/VLPLcnSvmvQ-Ujo?season=3&sbp=CgEzGgBAAUoNUFNJcGt4UW42UEpVaw%253D%253D",
           "begin": "2024-04-10T15:00:08.000Z",
           "broadcast": "R/2024-04-10T15:00:08.000Z/P7D"
         },
@@ -483803,13 +484001,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRaevkUa7TslqFBBEv3PfN2",
+          "id": "PLXH2eZnwvS_U",
+          "url": "https://www.youtube.com/show/VLPLXH2eZnwvS_U?season=1&sbp=CgExGgBAAUoNUFNZTHNUNWtDaXBtSQ%253D%253D",
           "begin": "2024-04-23T16:00:08.000Z",
           "broadcast": "R/2024-04-23T16:00:08.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jguls9EnoNrwlzxe7mIBawO",
+          "id": "PLT1uyy-SQ0k0",
+          "url": "https://www.youtube.com/show/VLPLT1uyy-SQ0k0?season=1&sbp=CgExGgBAAUoNUFNXejFqOFcyMUF5cw%253D%253D",
           "begin": "2024-04-09T15:30:07.000Z",
           "broadcast": "R/2024-04-09T15:30:07.000Z/P7D"
         },
@@ -485871,13 +486071,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtQLE6zjuaEij73Hah5KMR7d",
+          "id": "PLQ80_XgdVAQ4",
+          "url": "https://www.youtube.com/show/VLPLQ80_XgdVAQ4?season=1&sbp=CgExGgBAAUoNUFNIYXJQMDJPaWE0dw%253D%253D",
           "begin": "2024-04-09T15:00:07.000Z",
           "broadcast": "R/2024-04-09T15:00:07.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jgky4y0OA7mpCLeVd16XuuG",
+          "id": "PLI2KwCaS-iJY",
+          "url": "https://www.youtube.com/show/VLPLI2KwCaS-iJY?season=1&sbp=CgExGgBAAUoNUFNIbjgtWHFGMF9XNA%253D%253D",
           "begin": "2024-04-09T15:00:07.000Z",
           "broadcast": "R/2024-04-09T15:00:07.000Z/P7D"
         },
@@ -490009,13 +490211,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRpwjgFuX7Ye7z4pufE-fTx",
+          "id": "PLUZ2gnRumpQA",
+          "url": "https://www.youtube.com/show/VLPLUZ2gnRumpQA?season=1&sbp=CgExGgBAAUoNUFNaZ3YtUXBGaFV0WQ%253D%253D",
           "begin": "2024-07-03T14:30:06.000Z",
           "broadcast": "R/2024-07-03T14:30:06.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jj-LKKsOzrbDe7b8sSg37gz",
+          "id": "PLHDI0_y9LsJ8",
+          "url": "https://www.youtube.com/show/VLPLHDI0_y9LsJ8?season=1&sbp=CgExGgBAAUoNUFNRX0FmQUt4cjNFcw%253D%253D",
           "begin": "2024-07-03T14:30:06.000Z",
           "broadcast": "R/2024-07-03T14:30:06.000Z/P7D"
         },
@@ -493266,13 +493470,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtTJ4K9PFAHWWV6jqpBux-tJ",
+          "id": "PLXm2QBr_V7nQ",
+          "url": "https://www.youtube.com/show/VLPLXm2QBr_V7nQ?season=2&sbp=CgEyGgBAAUoNUFNGM3QxNXpTbEhqSQ%253D%253D",
           "begin": "2024-07-17T15:00:07.000Z",
           "broadcast": "R/2024-07-17T15:00:07.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jg7-Gjeh9OSWOtADRl__bLB",
+          "id": "PLWhSdLR6m0WA",
+          "url": "https://www.youtube.com/show/VLPLWhSdLR6m0WA?season=2&sbp=CgEyGgBAAUoNUFNZNzRBUjI5cDJ0dw%253D%253D",
           "begin": "2024-07-24T15:00:06.000Z",
           "broadcast": "R/2024-07-24T15:00:06.000Z/P7D"
         },
@@ -494140,7 +494346,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JjnfDK89UJui3A9wj9Ib6yF",
+          "id": "PLIsbFWHTF3GM",
+          "url": "https://www.youtube.com/show/VLPLIsbFWHTF3GM?season=2&sbp=CgEyGgBAAUoNUFNjMm4xSHRPX2VmQQ%253D%253D",
           "begin": "2024-10-03T07:14:37.000Z",
           "broadcast": "R/2024-10-03T07:14:37.000Z/P7D"
         },
@@ -497219,16 +497426,19 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtQNpdH94Rb-HrMlO_dvw1As",
+          "id": "PLCYEelWlfj1E",
+          "url": "https://www.youtube.com/show/VLPLCYEelWlfj1E?season=2&sbp=CgEyGgBAAUoNUFNZTzhrbTBsVFN2Yw%253D%253D",
           "begin": "2024-12-27T11:27:09.000Z",
-          "broadcast": "R/2024-12-27T11:27:09.000Z/P7D"
+          "broadcast": "R/2024-12-27T11:27:09.000Z/P7D",
+          "comment": "Ultra: PLC18xlbCdwtQNpdH94Rb-HrMlO_dvw1As"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLQ9SYtXYNSXQ",
+          "id": "PLX7YGNPZPsBk",
           "url": "https://www.youtube.com/show/VLPLQ9SYtXYNSXQ?season=2&sbp=CgEyGgAqC1N2VVpYeF8xSWV3QAFKDVBTVUNncUV3c0tQeUU%253D",
           "begin": "2024-12-27T08:49:30.000Z",
-          "broadcast": "R/2024-12-27T08:49:30.000Z/P7D"
+          "broadcast": "R/2024-12-27T08:49:30.000Z/P7D",
+          "comment": "Ultra: PLQ9SYtXYNSXQ"
         },
         {
           "site": "gamer_hk",
@@ -498274,8 +498484,7 @@
       "title": "妖怪学校の先生はじめました！",
       "titleTranslate": {
         "zh-Hans": [
-          "妖怪学校的新人教师！",
-          "妖怪學校的菜鳥老師！"
+          "妖怪学校的新人教师！"
         ],
         "zh-Hant": [
           "妖怪學校的菜鳥老師!"
@@ -498314,13 +498523,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRnwW-V7djYqoMoyQV4ZFYC",
+          "id": "PLCbMKQ5MUcNo",
+          "url": "https://www.youtube.com/show/VLPLCbMKQ5MUcNo?season=1&sbp=CgExGgBAAUoNUFNCTHZpZHRJZFN2QQ%253D%253D",
           "begin": "2024-10-08T14:00:06.000Z",
           "broadcast": "R/2024-10-08T14:00:06.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jj1WcEwx5MbqYoV3zIwGFwd",
+          "id": "PLS6vODxtGg88",
+          "url": "https://www.youtube.com/show/VLPLS6vODxtGg88?season=1&sbp=CgExGgBAAUoNUFNKNTRWUDlmb2FuOA%253D%253D",
           "begin": "2024-10-08T14:30:06.000Z",
           "broadcast": "R/2024-10-08T14:30:06.000Z/P7D"
         },
@@ -499580,9 +499791,10 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JgOSk5QmPX6aolSUsXgCMc-",
+          "id": "PLbtsMntmNR4c",
           "begin": "2024-12-27T09:12:57.000Z",
-          "broadcast": "R/2024-12-27T09:12:57.000Z/P7D"
+          "broadcast": "R/2024-12-27T09:12:57.000Z/P7D",
+          "comment": "Ultra: PLxSscENEp7JgOSk5QmPX6aolSUsXgCMc-"
         },
         {
           "site": "gamer_hk",
@@ -511972,7 +512184,8 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtS2BaEC6FL_cIJJAiQNEjXd",
+          "id": "PLUgKwSLp_orM",
+          "url": "https://www.youtube.com/show/VLPLUgKwSLp_orM?season=1&sbp=CgExGgBAAUoNUFNCUkZPeVkwWFlPYw%253D%253D",
           "begin": "2025-04-06T14:30:06.000Z",
           "broadcast": "R/2025-04-06T14:30:06.000Z/P7D"
         },
@@ -524387,6 +524600,12 @@
           "id": "29387",
           "begin": "2026-11-05T15:00:00.000Z",
           "broadcast": "R/2026-11-05T15:00:00.000Z/P7D"
+        },
+        {
+          "site": "prime",
+          "id": "B0HNDCYW3R",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -526669,7 +526888,7 @@
       ]
     },
     {
-      "title": "罗小黑战记2",
+      "title": "羅小黒戦記2 ぼくらが望む未来",
       "titleTranslate": {
         "zh-Hans": [
           "罗小黑战记2"
@@ -526706,6 +526925,12 @@
         {
           "site": "aniList",
           "id": "166475"
+        },
+        {
+          "site": "danime",
+          "id": "29407",
+          "begin": "2026-11-06T15:00:00.000Z",
+          "broadcast": "R/2026-11-06T15:00:00.000Z/P7D"
         }
       ]
     },
@@ -529080,13 +529305,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtQs292Q1LS3DeGZhWTE--GO",
+          "id": "PLcdUOcCarxbs",
+          "url": "https://www.youtube.com/show/VLPLcdUOcCarxbs?season=2&sbp=CgEyGgBAAUoNUFNadklEMHFlR3gyWQ%253D%253D",
           "begin": "2025-10-04T12:30:06.000Z",
           "broadcast": "R/2025-10-04T12:30:06.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JhiANaVNyhX1BNijjLOvdbC",
+          "id": "PLPWOfWsVnDz8",
+          "url": "https://www.youtube.com/show/VLPLPWOfWsVnDz8?season=2&sbp=CgEyGgBAAUoNUFNGckVZdFl0TVA1VQ%253D%253D",
           "begin": "2025-10-04T12:30:06.000Z",
           "broadcast": "R/2025-10-04T12:30:06.000Z/P7D"
         },
@@ -531570,6 +531797,9 @@
         ],
         "zh-Hant": [
           "怪物彈珠 終焉世界 重裝上陣"
+        ],
+        "en": [
+          "Strike World: Deadverse Reloaded the Anime"
         ]
       },
       "type": "tv",
@@ -531639,6 +531869,19 @@
         {
           "site": "dmhy",
           "id": "怪物彈珠"
+        },
+        {
+          "site": "ani_one_asia",
+          "id": "PLZt5PRchTShk",
+          "begin": "2026-11-13T12:00:07.000Z",
+          "broadcast": "R/2026-11-13T12:00:07.000Z/P7D"
+        },
+        {
+          "site": "ani_one",
+          "id": "PLZ2CIg3ueCRI",
+          "url": "https://www.youtube.com/show/VLPLZ2CIg3ueCRI?season=1&sbp=CgExGgBAAUoNUFNJcGk1aXBEMGR1Zw%253D%253D",
+          "begin": "2026-11-14T12:00:00.000Z",
+          "broadcast": "R/2026-11-14T12:00:00.000Z/P7D"
         }
       ]
     },
@@ -539818,13 +540061,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtQWYOfdcIjnWmxQY_K0o4Or",
+          "id": "PLdb6cQ49Bc6Q",
+          "url": "https://www.youtube.com/show/VLPLdb6cQ49Bc6Q?season=2&sbp=CgEyGgBAAUoNUFNEM1U3NUNpYW56SQ%253D%253D",
           "begin": "2026-01-10T15:00:06.000Z",
           "broadcast": "R/2026-01-10T15:00:06.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JggUBXP_li2EfufYwIJ7q_A",
+          "id": "PLFiBuNJnQqHs",
+          "url": "https://www.youtube.com/show/VLPLFiBuNJnQqHs?season=2&sbp=CgEyGgBAAUoNUFNNeEM5bjhPYnVtbw%253D%253D",
           "begin": "2026-01-10T15:00:06.000Z",
           "broadcast": "R/2026-01-10T15:00:06.000Z/P7D"
         },
@@ -542235,6 +542480,9 @@
         ],
         "zh-Hant": [
           "【我推的孩子】 第三季"
+        ],
+        "en": [
+          "【OSHI NO KO】(Season 3)"
         ]
       },
       "type": "tv",
@@ -542258,7 +542506,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JivLForf2SE-ypFD1wcLNC6",
+          "id": "PLIsbFWHTF3GM",
+          "url": "https://www.youtube.com/show/VLPLIsbFWHTF3GM?season=3&sbp=CgEzGgBAAUoNUFNTbmRTMGw3WTdpVQ%253D%253D",
           "begin": "",
           "broadcast": ""
         },
@@ -545844,14 +546093,16 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRIjX7F8WQ1wBSDMNN33F_R",
+          "id": "PLfZtFe4Bjm2A",
+          "url": "https://www.youtube.com/show/VLPLfZtFe4Bjm2A?season=1&sbp=CgExGgBAAUoNUFNUVE5SaEthZFVwdw%253D%253D",
           "begin": "2026-04-04T16:00:06.000Z",
           "broadcast": "R/2026-04-04T16:00:06.000Z/P7D",
           "comment": "朱音小落語: PLC18xlbCdwtQwaWtaitrJLey6lxNvZX9H"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JiCtTdD2GRMvAmM6RXA2uhH",
+          "id": "PLYQviQO5L1Ko",
+          "url": "https://www.youtube.com/show/VLPLYQviQO5L1Ko?season=1&sbp=CgExGgBAAUoNUFNTbm1TZTVpY0phOA%253D%253D",
           "begin": "2026-04-04T16:00:06.000Z",
           "broadcast": "R/2026-04-04T16:00:06.000Z/P7D"
         },
@@ -546841,13 +547092,15 @@
         },
         {
           "site": "ani_one",
-          "id": "PLC18xlbCdwtRzMEcHGcw3EGiv_Zk2MyWu",
+          "id": "PLct340_GkE-o",
+          "url": "https://www.youtube.com/show/VLPLct340_GkE-o?season=1&sbp=CgExGgBAAUoNUFNRUUVNMy1kb2N4bw%253D%253D",
           "begin": "2026-04-04T16:30:06.000Z",
           "broadcast": "R/2026-04-04T16:30:06.000Z/P7D"
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7JjlyxvkFA0-OyN6zwDTNjoA",
+          "id": "PLQmmbI0UXapg",
+          "url": "https://www.youtube.com/show/VLPLQmmbI0UXapg?season=1&sbp=CgExGgBAAUoNUFNWTGNRRFp6ZF9CQQ%253D%253D",
           "begin": "2026-04-04T16:30:06.000Z",
           "broadcast": "R/2026-04-04T16:30:06.000Z/P7D"
         },
@@ -547406,7 +547659,8 @@
         },
         {
           "site": "ani_one_asia",
-          "id": "PLxSscENEp7Jh6jFqpP-B97p7eUzipzZzv",
+          "id": "PLBAwKjUt29oE",
+          "url": "https://www.youtube.com/show/VLPLBAwKjUt29oE?season=1&sbp=CgExGgBAAUoNUFNmVDRvQWxXcUhVbw%253D%253D",
           "begin": "2026-04-06T04:00:00.000Z",
           "broadcast": "R/2026-04-06T04:00:00.000Z/P7D"
         },
@@ -548668,6 +548922,12 @@
         {
           "site": "dmhy",
           "id": "庫茲馬 哆囉囉"
+        },
+        {
+          "site": "netflix",
+          "id": "83143708",
+          "begin": "2026-11-12T00:00:00.000Z",
+          "broadcast": "R/2026-11-12T00:00:00.000Z/P7D"
         }
       ]
     },
@@ -550688,8 +550948,8 @@
         {
           "site": "netflix",
           "id": "81766575",
-          "begin": "",
-          "broadcast": ""
+          "begin": "2024-04-06T16:00:00.000Z",
+          "broadcast": "R/2024-04-06T16:00:00.000Z/P7D"
         },
         {
           "site": "muse_hk",
@@ -551151,6 +551411,12 @@
         {
           "site": "dmhy",
           "id": "轉生 史萊姆"
+        },
+        {
+          "site": "muse_tw",
+          "id": "PL12UaAf_xzfoQ_BoRjjGQNdOSgdGSJOem",
+          "begin": "2026-11-09T14:00:09.000Z",
+          "broadcast": "R/2026-11-09T14:00:09.000Z/P7D"
         }
       ]
     },
@@ -561844,7 +562110,8 @@
         },
         {
           "site": "muse_tw",
-          "id": "PLSgM_rxboC3A",
+          "id": "PLSnSbibtZlYw",
+          "url": "https://www.youtube.com/show/VLPLSnSbibtZlYw?season=1&sbp=CgExGgBAAUoNUFNQT2JnQ0VNTkNrWQ%253D%253D",
           "begin": "2026-10-03T18:00:11.000Z",
           "broadcast": "R/2026-10-03T18:00:11.000Z/P7D"
         },
@@ -561970,8 +562237,8 @@
         {
           "site": "muse_tw",
           "id": "PLBFWoq0JqkGE",
-          "begin": "",
-          "broadcast": ""
+          "begin": "2026-10-16T15:30:07.000Z",
+          "broadcast": "R/2026-10-16T15:30:07.000Z/P7D"
         },
         {
           "site": "danime",
@@ -562043,7 +562310,8 @@
         },
         {
           "site": "muse_tw",
-          "id": "PLZ6IYbU6gYwI",
+          "id": "PLAZ-ROApuBlI",
+          "url": "https://www.youtube.com/show/VLPLAZ-ROApuBlI?season=1&sbp=CgExGgBAAUoNUFNHMlBhU18walVTaw%253D%253D",
           "begin": "2026-10-07T13:00:10.000Z",
           "broadcast": "R/2026-10-07T13:00:10.000Z/P7D"
         },
@@ -562493,7 +562761,8 @@
         },
         {
           "site": "muse_tw",
-          "id": "PLdJFMqSb2_LI",
+          "id": "PLJRnp4cBC7uk",
+          "url": "https://www.youtube.com/show/VLPLJRnp4cBC7uk?season=1&sbp=CgExGgBAAUoNUFNjVkJyMVhXQUptaw%253D%253D",
           "begin": "2026-10-10T13:00:08.000Z",
           "broadcast": "R/2026-10-10T13:00:08.000Z/P7D"
         },
@@ -562986,6 +563255,12 @@
         {
           "site": "dmhy",
           "id": "魔法騎士 雷阿斯"
+        },
+        {
+          "site": "prime",
+          "id": "B0HL6Z6B34",
+          "begin": "",
+          "broadcast": ""
         }
       ]
     },
@@ -564738,12 +565013,10 @@
       "titleTranslate": {
         "zh-Hans": [
           "萤火虫的出嫁",
-          "萤火虫之婚",
-          "Firefly Wedding"
+          "萤火虫之婚"
         ],
         "zh-Hant": [
-          "螢火蟲的出嫁",
-          "Firefly Wedding"
+          "螢火蟲的出嫁"
         ],
         "en": [
           "Firefly Wedding"
@@ -564809,9 +565082,10 @@
         },
         {
           "site": "muse_tw",
-          "id": "PLUd1fNk1emfc",
-          "begin": "",
-          "broadcast": ""
+          "id": "PLCnI4WmC0nmY",
+          "url": "https://www.youtube.com/show/VLPLCnI4WmC0nmY?season=1&sbp=CgExGgBAAUoNUFNPU1pjX3NHSjc2WQ%253D%253D",
+          "begin": "2026-10-09T16:00:08.000Z",
+          "broadcast": "R/2026-10-09T16:00:08.000Z/P7D"
         },
         {
           "site": "bangumi_moe",
@@ -568585,6 +568859,92 @@
           "id": "cf-vanguard-divinezu",
           "begin": "",
           "broadcast": ""
+        },
+        {
+          "site": "danime",
+          "id": "29390",
+          "begin": "2026-11-06T23:30:00.000Z",
+          "broadcast": "R/2026-11-06T23:30:00.000Z/P7D"
+        },
+        {
+          "site": "anibt",
+          "id": "640765"
+        }
+      ]
+    },
+    {
+      "title": "デモンズ・クレスト",
+      "titleTranslate": {
+        "zh-Hans": [
+          "恶魔纹章"
+        ]
+      },
+      "type": "web",
+      "lang": "ja",
+      "officialSite": "https://demonscrest-anime.com/",
+      "begin": "2026-11-05T16:00:00.000Z",
+      "broadcast": "R/2026-11-05T16:00:00.000Z/P7D",
+      "end": "",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "612608"
+        },
+        {
+          "site": "prime",
+          "id": "B0HKZJPNCZ",
+          "begin": "",
+          "broadcast": ""
+        },
+        {
+          "site": "mal",
+          "id": "63045"
+        },
+        {
+          "site": "aniList",
+          "id": "203275"
+        },
+        {
+          "site": "anidb",
+          "id": "19751"
+        },
+        {
+          "site": "mikan",
+          "id": "4129"
+        },
+        {
+          "site": "anibt",
+          "id": "612608"
+        }
+      ]
+    },
+    {
+      "title": "GROTESQQQUE -グロテスク-",
+      "titleTranslate": {
+        "zh-Hans": [
+          "GROTESQQQUE -怪异-"
+        ]
+      },
+      "type": "movie",
+      "lang": "ja",
+      "officialSite": "https://movie-gtq123.com/",
+      "begin": "2026-11-05T16:00:00.000Z",
+      "broadcast": "",
+      "end": "2026-11-05T16:00:00.000Z",
+      "comment": "",
+      "sites": [
+        {
+          "site": "bangumi",
+          "id": "502499"
+        },
+        {
+          "site": "mikan",
+          "id": "4128"
+        },
+        {
+          "site": "anibt",
+          "id": "502499"
         }
       ]
     }

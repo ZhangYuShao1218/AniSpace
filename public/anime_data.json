@@ -12282,6 +12282,24 @@
     ]
   },
   {
+    "id": "anilist-210032",
+    "titleZh": "刃牙道 第2クール",
+    "titleEn": "BAKI-DOU: The Invincible Samurai Part 2",
+    "titleJa": "刃牙道 第2クール",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210032-EOvyzhh2ATNs.jpg",
+    "startDate": {
+      "year": 2026,
+      "month": 6,
+      "day": 18
+    },
+    "yearSeason": "2026 春",
+    "genres": [
+      "動作",
+      "運動"
+    ]
+  },
+  {
     "id": "anilist-172463",
     "titleZh": "咒術迴戰 死滅迴遊 前篇",
     "titleEn": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",

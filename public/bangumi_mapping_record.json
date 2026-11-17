@@ -41248,5 +41248,16 @@
     "matchedBgmTitle": "メジャー 第1シリーズ",
     "bgmId": "2885",
     "streamingsCount": 5
+  },
+  "anilist-210032": {
+    "id": "anilist-210032",
+    "titleZh": "刃牙道 第2クール",
+    "titleJa": "刃牙道 第2クール",
+    "yearSeason": "2026 春",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
   }
 }

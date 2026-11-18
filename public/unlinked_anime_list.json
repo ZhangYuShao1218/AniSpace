@@ -498,6 +498,12 @@
     "yearSeason": "2026 夏"
   },
   {
+    "id": "anilist-210032",
+    "titleZh": "刃牙道 第二季度",
+    "titleJa": "刃牙道 第2クール",
+    "yearSeason": "2026 春"
+  },
+  {
     "id": "anilist-187921",
     "titleZh": "終末的女武神III",
     "titleJa": "終末のワルキューレ III",
@@ -2598,9 +2604,9 @@
     "yearSeason": "1998 秋"
   },
   {
-    "id": "anilist-210032",
-    "titleZh": "刃牙道 第2クール",
-    "titleJa": "刃牙道 第2クール",
-    "yearSeason": "2026 春"
+    "id": "anilist-183960",
+    "titleZh": "異世界神棍 ―維持HP1的最強最速迷宮攻略―",
+    "titleJa": "異世界マンチキン ―HP1のままで最強最速ダンジョン攻略―",
+    "yearSeason": "2027 冬"
   }
 ]

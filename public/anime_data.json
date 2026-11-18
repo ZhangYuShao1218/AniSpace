@@ -90,7 +90,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 19
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -647,7 +647,7 @@
   {
     "id": "anilist-187303",
     "titleZh": "巨人大小姐",
-    "titleEn": "",
+    "titleEn": "Giant Ojosama",
     "titleJa": "ジャイアントお嬢様",
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187303-ZY8i5D8JA5cB.jpg",
@@ -916,7 +916,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 9
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -1244,6 +1244,25 @@
       "愛情",
       "科幻",
       "超自然"
+    ]
+  },
+  {
+    "id": "anilist-183960",
+    "titleZh": "異世界神棍 ―維持HP1的最強最速迷宮攻略―",
+    "titleEn": "Otherworldly Munchkin: Let's Speedrun the Dungeon with Only 1 HP!",
+    "titleJa": "異世界マンチキン ―HP1のままで最強最速ダンジョン攻略―",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx183960-qvkHfCrO6cAq.jpg",
+    "startDate": {
+      "year": 2027,
+      "month": 1,
+      "day": 7
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "冒險",
+      "動作",
+      "奇幻"
     ]
   },
   {
@@ -3651,7 +3670,7 @@
   {
     "id": "anilist-187316",
     "titleZh": "The Anime「幻想水滸傳」",
-    "titleEn": "",
+    "titleEn": "Suikoden",
     "titleJa": "幻想水滸伝",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/43/0000144043.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187316-GUxnlngO2dR2.jpg",
@@ -12283,7 +12302,7 @@
   },
   {
     "id": "anilist-210032",
-    "titleZh": "刃牙道 第2クール",
+    "titleZh": "刃牙道 第二季度",
     "titleEn": "BAKI-DOU: The Invincible Samurai Part 2",
     "titleJa": "刃牙道 第2クール",
     "coverImageGamer": "",
@@ -118579,7 +118598,6 @@
       "愛情",
       "憂鬱",
       "時空輪迴",
-      "異世界",
       "驚悚"
     ],
     "streamings": [

@@ -2848,6 +2848,17 @@
     "bgmId": "631963",
     "streamingsCount": 1
   },
+  "anilist-210032": {
+    "id": "anilist-210032",
+    "titleZh": "刃牙道 第二季度",
+    "titleJa": "刃牙道 第2クール",
+    "yearSeason": "2026 春",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-172463": {
     "id": "anilist-172463",
     "titleZh": "咒術迴戰 死滅迴遊 前篇",
@@ -41249,11 +41260,11 @@
     "bgmId": "2885",
     "streamingsCount": 5
   },
-  "anilist-210032": {
-    "id": "anilist-210032",
-    "titleZh": "刃牙道 第2クール",
-    "titleJa": "刃牙道 第2クール",
-    "yearSeason": "2026 春",
+  "anilist-183960": {
+    "id": "anilist-183960",
+    "titleZh": "異世界神棍 ―維持HP1的最強最速迷宮攻略―",
+    "titleJa": "異世界マンチキン ―HP1のままで最強最速ダンジョン攻略―",
+    "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
     "matchedType": null,
     "matchedBgmTitle": null,

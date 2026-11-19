@@ -725,6 +725,17 @@
     "bgmId": null,
     "streamingsCount": 0
   },
+  "anilist-183960": {
+    "id": "anilist-183960",
+    "titleZh": "異世界神棍 ―維持HP1的最強最速迷宮攻略―",
+    "titleJa": "異世界マンチキン ―HP1のままで最強最速ダンジョン攻略―",
+    "yearSeason": "2027 冬",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-195516": {
     "id": "anilist-195516",
     "titleZh": "藥師少女的獨語 第三季",
@@ -41260,10 +41271,10 @@
     "bgmId": "2885",
     "streamingsCount": 5
   },
-  "anilist-183960": {
-    "id": "anilist-183960",
-    "titleZh": "異世界神棍 ―維持HP1的最強最速迷宮攻略―",
-    "titleJa": "異世界マンチキン ―HP1のままで最強最速ダンジョン攻略―",
+  "anilist-181951": {
+    "id": "anilist-181951",
+    "titleZh": "狼與香辛料 MERCHANT MEETS THE WISE WOLF 第二季",
+    "titleJa": "狼と香辛料 MERCHANT MEETS THE WISE WOLF 2期",
     "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
     "matchedType": null,

@@ -1256,13 +1256,32 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": 7
+      "day": 8
     },
     "yearSeason": "2027 冬",
     "genres": [
       "冒險",
       "動作",
       "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-181951",
+    "titleZh": "狼與香辛料 MERCHANT MEETS THE WISE WOLF 第二季",
+    "titleEn": "",
+    "titleJa": "狼と香辛料 MERCHANT MEETS THE WISE WOLF 2期",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181951-jTcWy5CUkS7L.jpg",
+    "startDate": {
+      "year": 2027,
+      "month": 1,
+      "day": null
+    },
+    "yearSeason": "2027 冬",
+    "genres": [
+      "冒險",
+      "奇幻",
+      "愛情"
     ]
   },
   {
@@ -3797,7 +3816,7 @@
     "startDate": {
       "year": 2026,
       "month": 10,
-      "day": 1
+      "day": 2
     },
     "yearSeason": "2026 秋",
     "genres": [
@@ -80045,6 +80064,7 @@
       "劇情",
       "後宮",
       "愛情",
+      "懸疑",
       "科幻",
       "超能力"
     ],

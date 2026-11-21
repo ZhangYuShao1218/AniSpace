@@ -549,7 +549,11 @@
       "day": null
     },
     "yearSeason": "2027 冬",
-    "genres": []
+    "genres": [
+      "動作",
+      "喜劇",
+      "超自然"
+    ]
   },
   {
     "id": "anilist-202282",
@@ -633,9 +637,9 @@
     "coverImageGamer": "",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202503-U8b43fpnu9EI.png",
     "startDate": {
-      "year": 2027,
-      "month": 1,
-      "day": null
+      "year": 2026,
+      "month": 12,
+      "day": 31
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -1196,7 +1200,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 8
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -118618,6 +118622,7 @@
       "愛情",
       "憂鬱",
       "時空輪迴",
+      "異世界",
       "驚悚"
     ],
     "streamings": [

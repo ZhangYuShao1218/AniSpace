@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/11/22 下午6:23:06
+執行時間: 2026/11/23 下午7:21:28
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午6:23:06] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午7:21:28] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -219,9 +219,9 @@ AniSpace 每日任務完整執行 Log
 🚀 取得 60 部動畫資料，進行本地超高速清洗...
 
 🤖 發現 2 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
-✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3753 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
+✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3767 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 436 部無對應動畫，開始進行極速正規化比對...
+⚡ 啟動本地程式化標題正規化對照引擎：針對 446 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-213657] "夜櫻家大作戰 第二季 後篇" ➜ "夜櫻家大作戰 第二季 第2部分"
@@ -258,30 +258,53 @@ AniSpace 每日任務完整執行 Log
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
 📦 成功載入 bangumi-data 字典，映射 1691 筆 AniList ID 及 1759 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 1 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-⏳ 洗滌進度: 1 / 1 (本次成功轉換: 0)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 0 筆作品。
-✅ 已將 3753 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
+📦【動畫瘋洗滌檢驗】偵測到 3 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+⏳ 洗滌進度: 3 / 3 (本次成功轉換: 2)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 2 筆作品。
+✅ 已將 3767 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3753 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3317 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：436 部 (完整清單已隨信附帶)
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3767 筆，新增資料 14 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3321 部動畫成功對照字典並無條件整合去重播放授權！
+🌟 新增動畫：
+- 哪吒之魔童鬧海
+- 失業魔王
+- 凸變英雄X
+- 超能立方
+- 鯤吞天下之掌門歸來
+- 이 별에 필요한
+- 詭秘之主 小丑篇​
+- 龍族II 悼亡者之瞳
+- 魔法公主的小煩惱
+- 放開那個女巫
+- 仙王的日常生活 第五季
+- 詭秘之主 特別篇
+- 記憶管理局 (2026)
+- 時光代理人 第三季 Part One
+🛡️ 洗滌成功的動畫 (共 2 部)：
+- 《龍族II 悼亡者之瞳》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147240
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45538
+- 《魔法公主的小煩惱》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147102
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45604
+🔗 未對應 bangumi_data 動畫數量：446 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1834 個系列，更新了 2196 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1847 個系列，更新了 2187 筆 Metadata 關聯檔案。
 
-✨ 抓取與清洗完成！極速處理完畢。共 3753 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
+✨ 抓取與清洗完成！極速處理完畢。共 3767 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
+⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt 1/5)，等待 5 秒後重試...
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午6:33:45] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午7:36:47] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
 No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261122.json
+Created daily backup: anime_data_backup_20261123.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -402,30 +425,42 @@ Deleted old backup: anime_data_backup_20261112.json
 Deleted old backup: anime_data_backup_20261113.json
 Deleted old backup: anime_data_backup_20261114.json
 Deleted old backup: anime_data_backup_20261115.json
-Updated dataVersion in package.json and public/data_version.json to: 00227 (227)
+Deleted old backup: anime_data_backup_20261116.json
+Updated dataVersion in package.json and public/data_version.json to: 00228 (228)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午6:33:45] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午7:36:47] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
+📥 [anilist-165530] 已加入批次佇列: 魔法公主的小煩惱 (佇列: 1/10)
+📥 [anilist-157692] 已加入批次佇列: 龍族II 悼亡者之瞳 (佇列: 2/10)
+📥 [anilist-156092] 已加入批次佇列: 凸變英雄X (佇列: 3/10)
+📥 [anilist-191974] 已加入批次佇列: 鯤吞天下之掌門歸來 (佇列: 4/10)
 
-🎉 Synopsis fetching complete. Processed 0 animes.
+📦 準備進行 AI 翻譯 (批次: 4)...
+⚠️ AI 觸發頻率限制或發生錯誤，強制冷卻 60 秒後重試 (第 1/3 次)...
+✅ [anilist-165530] AI 翻譯完成: 魔法公主的小煩惱
+✅ [anilist-157692] AI 翻譯完成: 龍族II 悼亡者之瞳
+✅ [anilist-156092] AI 翻譯完成: 凸變英雄X
+✅ [anilist-191974] AI 翻譯完成: 鯤吞天下之掌門歸來
+
+🎉 Synopsis fetching complete. Processed 4 animes.
 
 📊 每日任務劇情簡介統計回報:
-- 當前動畫總數: 3753
-- 沒找到對應 bangumi_data 的數量: 436
+- 當前動畫總數: 3767
+- 沒找到對應 bangumi_data 的數量: 446
 - 本次掃描發現對應資料為空的數量: 81
-- 有劇情簡介的動畫總數量: 3276
-- 本次新增 0 筆簡介
+- 有劇情簡介的動畫總數量: 3280
+- 本次新增 4 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午6:35:17] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午7:45:56] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 113 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 75 項高價值商品。
+準備將 117 筆原始資料交由 Gemini AI 進行分析與篩選...
+✅ Gemini AI 分析完成！保留了 76 項高價值商品。
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -436,38 +471,65 @@ Updated dataVersion in package.json and public/data_version.json to: 00227 (227)
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午6:36:54] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午7:47:42] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00227)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00228)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00227)
+・動畫資料庫版號：(00228)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3753 筆，新增資料 0 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3317 部動畫成功對照字典並無條件整合去重播放授權！
-🔗 未對應 bangumi_data 動畫數量：436 部 (完整清單已隨信附帶)
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3767 筆，新增資料 14 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3321 部動畫成功對照字典並無條件整合去重播放授權！
+🌟 新增動畫：
+- 哪吒之魔童鬧海
+- 失業魔王
+- 凸變英雄X
+- 超能立方
+- 鯤吞天下之掌門歸來
+- 이 별에 필요한
+- 詭秘之主 小丑篇​
+- 龍族II 悼亡者之瞳
+- 魔法公主的小煩惱
+- 放開那個女巫
+- 仙王的日常生活 第五季
+- 詭秘之主 特別篇
+- 記憶管理局 (2026)
+- 時光代理人 第三季 Part One
+🛡️ 洗滌成功的動畫 (共 2 部)：
+- 《龍族II 悼亡者之瞳》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147240
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45538
+- 《魔法公主的小煩惱》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147102
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45604
+🔗 未對應 bangumi_data 動畫數量：446 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 75 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 76 項高價值商品。
 
 
 
 【劇情簡介狀態】
-總計收錄: 3753 部動畫
-缺乏簡介: 475 部
-本日新增: 0 筆簡介
+總計收錄: 3767 部動畫
+缺乏簡介: 485 部
+本日新增: 4 筆簡介
+新增清單：
+- [anilist-165530] 魔法公主的小煩惱
+- [anilist-157692] 龍族II 悼亡者之瞳
+- [anilist-156092] 凸變英雄X
+- [anilist-191974] 鯤吞天下之掌門歸來
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-22.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-23.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午6:36:59] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午7:47:45] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
-Successfully generated sitemap.xml with 3757 URLs.
+Successfully generated sitemap.xml with 3771 URLs.
 
 ✅ 步驟 [6. 自動更新網站地圖 (sitemap)] 執行成功完成。
 

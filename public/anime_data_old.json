@@ -7940,8 +7940,8 @@
     "titleZh": "盜墓王",
     "titleEn": "Tomb Raider King",
     "titleJa": "도굴왕",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/39/0000149339.JPG",
     "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184356-SlFIstXUXJYP.png",
-    "coverImageGamer": "",
     "startDate": {
       "year": 2026,
       "month": 7,
@@ -7956,64 +7956,64 @@
     ],
     "streamings": [
       {
-        "site": "ani_one",
-        "name": "Ani-One YouTube",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLUJFQAoO5V4k"
-      },
-      {
-        "site": "ani_one_asia",
-        "name": "Ani-One Asia",
-        "region": "台灣",
-        "url": "https://www.youtube.com/playlist?list=PLRwxYv2koIzY"
-      },
-      {
         "site": "gamer",
         "name": "動畫瘋",
         "region": "台港澳",
         "url": "https://ani.gamer.com.tw/animeVideo.php?sn=49945"
       },
       {
-        "site": "nicovideo",
-        "name": "Niconico",
-        "region": "全球/日本",
-        "url": "https://ch.nicovideo.jp/tombraiderking"
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLUJFQAoO5V4k"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLRwxYv2koIzY"
       },
       {
         "site": "crunchyroll",
         "name": "Crunchyroll",
-        "region": "全球/日本",
+        "region": "全球",
         "url": "https://www.crunchyroll.com/series/GT00378123/"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FWK4FHRT"
       },
       {
         "site": "mytv",
         "name": "myTV SUPER",
-        "region": "全球/日本",
+        "region": "港澳",
         "url": "https://www.mytvsuper.com/tc/programme/tombraiderkin_146761/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tombraiderking"
       },
       {
         "site": "abema",
         "name": "ABEMA",
-        "region": "全球/日本",
+        "region": "日本",
         "url": "https://abema.tv/video/title/25-330"
       },
       {
         "site": "unext",
         "name": "U-NEXT",
-        "region": "全球/日本",
+        "region": "日本",
         "url": "https://video.unext.jp/title/SID0305803"
       },
       {
         "site": "danime",
-        "name": "dアニメストア",
-        "region": "全球/日本",
+        "name": "d動畫商城",
+        "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29139"
-      },
-      {
-        "site": "prime",
-        "name": "Prime Video",
-        "region": "全球/日本",
-        "url": "https://www.amazon.co.jp/gp/video/detail/B0FWK4FHRT"
       }
     ]
   },
@@ -8418,6 +8418,50 @@
         "region": "日本",
         "url": "https://abema.tv/video/title/283-38"
       }
+    ]
+  },
+  {
+    "id": "anilist-141953",
+    "titleZh": "記憶管理局 (2026)",
+    "titleEn": "False Memory (2026)",
+    "titleJa": "记忆管理局 (2026)",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141953-S3RozQSOxzrw.png",
+    "startDate": {
+      "year": 2026,
+      "month": 8,
+      "day": 2
+    },
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "動作",
+      "心理",
+      "憂鬱",
+      "懸疑",
+      "科幻"
+    ]
+  },
+  {
+    "id": "anilist-191832",
+    "titleZh": "時光代理人 第三季 Part One",
+    "titleEn": "Link Click Season 3 Part 1",
+    "titleJa": "时光代理人 第三季 Part One",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191832-bsnCaLNVjzEw.png",
+    "startDate": {
+      "year": 2026,
+      "month": 8,
+      "day": 14
+    },
+    "yearSeason": "2026 夏",
+    "genres": [
+      "劇情",
+      "懸疑",
+      "時空輪迴",
+      "超能力",
+      "超自然",
+      "驚悚"
     ]
   },
   {
@@ -12342,6 +12386,28 @@
     ]
   },
   {
+    "id": "anilist-199448",
+    "titleZh": "詭秘之主 特別篇",
+    "titleEn": "Lord of Mysteries Specials",
+    "titleJa": "诡秘之主 特别篇",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199448-BuqzEdkuPSEm.png",
+    "startDate": {
+      "year": 2026,
+      "month": 6,
+      "day": 20
+    },
+    "yearSeason": "2026 春",
+    "genres": [
+      "劇情",
+      "動作",
+      "奇幻",
+      "懸疑",
+      "超自然",
+      "驚悚"
+    ]
+  },
+  {
     "id": "anilist-172463",
     "titleZh": "咒術迴戰 死滅迴遊 前篇",
     "titleEn": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",
@@ -15914,6 +15980,46 @@
         "region": "日本",
         "url": "https://video.unext.jp/title/SID0318107"
       }
+    ]
+  },
+  {
+    "id": "anilist-137662",
+    "titleZh": "放開那個女巫",
+    "titleEn": "Release that Witch",
+    "titleJa": "放开那个女巫",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137662-iZigHTc71wi7.png",
+    "startDate": {
+      "year": 2026,
+      "month": 3,
+      "day": 3
+    },
+    "yearSeason": "2026 冬",
+    "genres": [
+      "冒險",
+      "動作",
+      "奇幻",
+      "愛情",
+      "異世界"
+    ]
+  },
+  {
+    "id": "anilist-185857",
+    "titleZh": "仙王的日常生活 第五季",
+    "titleEn": "The Daily Life of the Immortal King Season 5",
+    "titleJa": "仙王的日常生活 第五季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185857-n92z26zypwGh.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 12,
+      "day": 14
+    },
+    "yearSeason": "2026 冬",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻"
     ]
   },
   {
@@ -19565,6 +19671,75 @@
         "name": "Bilibili",
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md27709550/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-165530",
+    "titleZh": "魔法公主的小煩惱",
+    "titleEn": "The Fated Magical Princess: Who Made Me a Princess",
+    "titleJa": "魔法公主的小烦恼",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/02/0000147102.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx165530-Ku7VZt2NCIgf.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 9,
+      "day": 28
+    },
+    "yearSeason": "2025 秋",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "muse_tw",
+        "name": "木棉花 YouTube",
+        "region": "台灣",
+        "url": "https://www.youtube.com/playlist?list=PL12UaAf_xzfrkFp59HdaWT-EEWAmY2394"
+      },
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=45604"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FT73GL7R"
+      },
+      {
+        "site": "muse_hk",
+        "name": "木棉花 YouTube",
+        "region": "港澳",
+        "url": "https://www.youtube.com/playlist?list=PLuxqoToY7UcjPNZ7iq2w1ak6c7nB5KEtF"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/aruhime-anime"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0234928"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/25-300"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28278"
       }
     ]
   },
@@ -23395,6 +23570,87 @@
     ]
   },
   {
+    "id": "anilist-137667",
+    "titleZh": "詭秘之主 小丑篇​",
+    "titleEn": "Lord of Mysteries",
+    "titleJa": "诡秘之主 小丑篇​",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137667-xQxzQRAerw53.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 6,
+      "day": 28
+    },
+    "yearSeason": "2025 夏",
+    "genres": [
+      "劇情",
+      "動作",
+      "奇幻",
+      "懸疑",
+      "異世界",
+      "超自然",
+      "驚悚"
+    ]
+  },
+  {
+    "id": "anilist-157692",
+    "titleZh": "龍族II 悼亡者之瞳",
+    "titleEn": "Dragon Raja II -The Mourner's Eyes-",
+    "titleJa": "龙族 第二季",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/40/0000147240.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157692-lihmnuJGcbM6.png",
+    "startDate": {
+      "year": 2025,
+      "month": 7,
+      "day": 18
+    },
+    "yearSeason": "2025 夏",
+    "genres": [
+      "冒險",
+      "劇情",
+      "動作",
+      "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=45538"
+      },
+      {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtTvLdp1bEzbtYqSUk2lZq37"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jjx_TiPymhI9of6quG_2lvV"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FRSDZD7X"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0232878"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28304"
+      }
+    ]
+  },
+  {
     "id": "anilist-149118",
     "titleZh": "炎炎消防隊 參之章",
     "titleEn": "Fire Force Season 3",
@@ -26816,6 +27072,144 @@
     ]
   },
   {
+    "id": "anilist-156092",
+    "titleZh": "凸變英雄X",
+    "titleEn": "To Be Hero X",
+    "titleJa": "凸变英雄X",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156092-yHqgQZOF2mbg.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 4,
+      "day": 6
+    },
+    "yearSeason": "2025 春",
+    "genres": [
+      "劇情",
+      "動作",
+      "憂鬱",
+      "懸疑",
+      "超能力",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FG8L1H8Z"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GQWH0M1J3/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tbhx"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0181245"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27865"
+      }
+    ]
+  },
+  {
+    "id": "anilist-166442",
+    "titleZh": "超能立方",
+    "titleEn": "Super Cube",
+    "titleJa": "超能立方",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166442-JTkdzIQpgf8M.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 3,
+      "day": 21
+    },
+    "yearSeason": "2025 春",
+    "genres": [
+      "冒險",
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-191974",
+    "titleZh": "鯤吞天下之掌門歸來",
+    "titleEn": "The All-devouring Whale: Homecoming",
+    "titleJa": "鲲吞天下之掌门归来",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191974-1tqbmtbkCpJ1.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 5,
+      "day": 1
+    },
+    "yearSeason": "2025 春",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0DSTHCGYW"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tenseisoushu"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0200171"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28058"
+      }
+    ]
+  },
+  {
+    "id": "anilist-192002",
+    "titleZh": "이 별에 필요한",
+    "titleEn": "Lost in Starlight",
+    "titleJa": "이 별에 필요한",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192002-sZCUa2OSDhZi.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 5,
+      "day": 30
+    },
+    "yearSeason": "2025 春",
+    "genres": [
+      "劇情",
+      "愛情",
+      "科幻",
+      "音樂"
+    ]
+  },
+  {
     "id": "anilist-176496",
     "titleZh": "我獨自升級 第二季 －起於闇影－",
     "titleEn": "Solo Leveling Season 2 -Arise from the Shadow-",
@@ -30141,6 +30535,46 @@
     "genres": [
       "動作",
       "喜劇"
+    ]
+  },
+  {
+    "id": "anilist-186861",
+    "titleZh": "哪吒之魔童鬧海",
+    "titleEn": "Ne Zha 2",
+    "titleJa": "哪吒之魔童闹海",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186861-3zhIhilJvbJz.jpg",
+    "startDate": {
+      "year": 2025,
+      "month": 1,
+      "day": 29
+    },
+    "yearSeason": "2025 冬",
+    "genres": [
+      "劇情",
+      "動作",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-168244",
+    "titleZh": "失業魔王",
+    "titleEn": "The Laid Off Demon",
+    "titleJa": "失业魔王",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168244-Iyo6GRxzMF2n.png",
+    "startDate": {
+      "year": 2025,
+      "month": 2,
+      "day": 5
+    },
+    "yearSeason": "2025 冬",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "愛情"
     ]
   },
   {
@@ -126283,6 +126717,7 @@
     },
     "yearSeason": "2015 夏",
     "genres": [
+      "喜劇",
       "日常"
     ],
     "streamings": [

@@ -1,11 +1,11 @@
 =====================================
 AniSpace 每日任務完整執行 Log
-執行時間: 2026/11/23 下午7:21:28
+執行時間: 2026/11/24 下午8:58:19
 =====================================
 
 🚀 開始執行 AniSpace 完整每日自動化排程...
 
-▶ [下午7:21:28] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
+▶ [下午8:58:19] 執行步驟: 1. 爬取最新動畫與洗滌 (anime_crawler)
 -------------------------------------
 📦 正在下載 bangumi-data 字典檔...
 💾 已將 bangumi-data 完整字典檔寫入本地: /home/runner/work/AniSpace/AniSpace/public/bangumi_data.json
@@ -219,9 +219,9 @@ AniSpace 每日任務完整執行 Log
 🚀 取得 60 部動畫資料，進行本地超高速清洗...
 
 🤖 發現 2 部近期動畫缺乏翻譯，開始呼叫 Gemini AI...
-✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3767 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
+✅ 已將所有動畫是否有對應 bangumi_data 資料之紀錄 (3833 筆) 寫入額外 JSON: public/bangumi_mapping_record.json
 
-⚡ 啟動本地程式化標題正規化對照引擎：針對 446 部無對應動畫，開始進行極速正規化比對...
+⚡ 啟動本地程式化標題正規化對照引擎：針對 480 部無對應動畫，開始進行極速正規化比對...
 ✨ 本地程式化正規化對照執行完畢！共成功對齊 0 部動畫 (耗時近乎 0 秒，零 Token 消耗)！
 
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-213657] "夜櫻家大作戰 第二季 後篇" ➜ "夜櫻家大作戰 第二季 第2部分"
@@ -231,15 +231,11 @@ AniSpace 每日任務完整執行 Log
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-133124] "劇場版 Free!–the Final Stroke– 後編" ➜ "劇場版 Free! 男子游泳部 -the Final Stroke- 後篇"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-131681] "進擊的巨人 The Final Season 後篇" ➜ "進擊的巨人 Final Season"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-107203] "劇場版 Free!–the Final Stroke– 前編" ➜ "劇場版 Free! 男子游泳部 -the Final Stroke- 前篇"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-118125] "邪神與廚二病少女’ 千歲篇" ➜ "邪神與廚二病少女【世紀末篇】"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-106918] "ロード・エルメロイⅡ世の事件簿 {魔眼蒐集列車} Grace note" ➜ "艾梅洛閣下II世事件簿-魔眼蒐集列車Grace note-"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-102649] "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 - 罪與罰" ➜ "PSYCHO-PASS 心靈判官 Sinners of the System Case.1 罪與罰"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-104990] "PSYCHO-PASS サイコパス Sinners of the System Case.3 - 恩讐の彼方に____" ➜ "PSYCHO-PASS 心靈判官 Sinners of the System Case.3 恩仇的彼方"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-106896] "PERSONA5 the Animation: "Stars and Ours"" ➜ "女神異聞錄5 Stars and Ours"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-106169] "PERSONA5 the Animation: Dark Sun…" ➜ "女神異聞錄5 Dark Sun…"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-20791] "Fate/stay night[Heaven's Feel] Ⅰ.presage flower" ➜ "Fate/stay night [Heaven's Feel] I. 預示之花"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-98663] "甲鐵城的卡巴內裡 總集篇｛後篇｝燃燒的生命" ➜ "甲鐵城的卡巴內利 總集篇 後篇 燃燒的生命"
-🔄 [bangumiDataTitle 匯入翻譯] [anilist-98662] "甲鉄城のカバネリ 総集編｛前編｝集う光" ➜ "甲鐵城的卡巴內利 總集篇 前篇 聚光"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-21732] "planetarian～小小的星之夢～" ➜ "星之夢"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-21853] "出包王女 Darkness 2nd" ➜ "出包王女Darkness 2nd"
 🔄 [bangumiDataTitle 匯入翻譯] [anilist-21178] "Code Geass 亡國的阿基德 最終章：獻給所愛之人" ➜ "Code Geass 亡國的阿基德 最終章「致我所愛」"
@@ -258,53 +254,102 @@ AniSpace 每日任務完整執行 Log
 
 🔍 開始執行增量式動畫瘋網址洗滌與快取檢查...
 📦 成功載入 bangumi-data 字典，映射 1691 筆 AniList ID 及 1759 筆 100% 精確日文標題。
-📦【動畫瘋洗滌檢驗】偵測到 3 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
-⏳ 洗滌進度: 3 / 3 (本次成功轉換: 2)
-✅ 動畫瘋網址洗滌完成！本次新成功洗滌 2 筆作品。
-✅ 已將 3767 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
+📦【動畫瘋洗滌檢驗】偵測到 2 筆尚未正確綁定為動畫瘋播放連結的項目，啟動溫和單線程平穩檢閱洗滌（間隔 1 秒，防封鎖）...
+✏️ [繁中標題校正] 進入百科頁面第一件事，將繁體中文翻譯同步為巴哈百科官方標題 (僅寫入 custom_override.json，不覆蓋 anime_data.json): "龍族 -The Blazing Dawn-" ➜ "龍族"
+⏳ 洗滌進度: 2 / 2 (本次成功轉換: 1)
+✅ 動畫瘋網址洗滌完成！本次新成功洗滌 1 筆作品。
+✅ 已將 3833 筆 Bangumi 字典對應紀錄與回填統計寫入 public/bangumi_mapping_record.json！
 
 =====================================
 📋 本次爬蟲執行結果總結：
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3767 筆，新增資料 14 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3321 部動畫成功對照字典並無條件整合去重播放授權！
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3833 筆，新增資料 66 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3353 部動畫成功對照字典並無條件整合去重播放授權！
 🌟 新增動畫：
-- 哪吒之魔童鬧海
-- 失業魔王
-- 凸變英雄X
-- 超能立方
-- 鯤吞天下之掌門歸來
-- 이 별에 필요한
-- 詭秘之主 小丑篇​
-- 龍族II 悼亡者之瞳
-- 魔法公主的小煩惱
-- 放開那個女巫
-- 仙王的日常生活 第五季
-- 詭秘之主 特別篇
-- 記憶管理局 (2026)
-- 時光代理人 第三季 Part One
-🛡️ 洗滌成功的動畫 (共 2 部)：
-- 《龍族II 悼亡者之瞳》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147240
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45538
-- 《魔法公主的小煩惱》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147102
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45604
-🔗 未對應 bangumi_data 動畫數量：446 部 (完整清單已隨信附帶)
+- 妖怪名單
+- 愛神巧克力ING...
+- 鎮魂街
+- 一人之下
+- 靈契
+- 全職法師
+- 凸變英雄
+- 時空使徒
+- 全職高手
+- 全職法師 第2季
+- 一人之下 第二季
+- 理想禁區
+- 연애하루전
+- 全職高手 特別篇
+- 凸變英雄
+- 實驗品家庭
+- 魔道祖師 前塵篇
+- 刺客伍六七
+- 通靈妃
+- 全職法師 第3季
+- 萌妻食神
+- 邪王追妻
+- 魔道祖師 第2季
+- 羅小黑戰記 我選擇的未來
+- 全職高手之巔峰榮耀
+- 伍六七之最強髮型師
+- 仙王的日常生活
+- 萬聖街
+- 全職法師 第4季
+- 一人之下 3
+- 百妖譜
+- 霧山五行 灼源神火
+- 記憶管理局
+- 穿書自救指南 修雅篇
+- 魔道祖師Q
+- 一念永恆
+- 天寶伏妖錄
+- 民調局異聞錄
+- 凡人修仙傳
+- 斗羅大陸 星斗獻祭
+- 天官賜福
+- 全職高手2
+- 英雄再臨
+- 伍六七之玄武國篇
+- 天官賜福 特別篇
+- 時光代理人
+- 時光代理人 番外篇
+- 魔道祖師 第三季
+- 全職法師 第5季
+- 仙王的日常生活 第二季
+- 大王饒命
+- 萬聖街 第3季
+- 最後的召喚師
+- 龍族 -The Blazing Dawn-
+- 食草老龍被冠以惡龍之名
+- 외모지상주의
+- 仙王的日常生活 第三季
+- 伍六七之暗影宿命
+- 愛上她的理由
+- 鏢人
+- 時光代理人 -LINK CLICK- 第二季
+- 四格勇者
+- 天官賜福 第二季
+- 仙王的日常生活 第四季
+- 大王饒命 第二季
+- 時光代理人 英都篇
+🛡️ 洗滌成功的動畫 (共 1 部)：
+- 《龍族 -The Blazing Dawn-》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=138047
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=37879
+🔗 未對應 bangumi_data 動畫數量：480 部 (完整清單已隨信附帶)
 =====================================
 
 🔄 正在建構全系列關聯圖 (Franchise Graph)...
-✅ 建構完成！共整理出 1847 個系列，更新了 2187 筆 Metadata 關聯檔案。
+✅ 建構完成！共整理出 1882 個系列，更新了 2192 筆 Metadata 關聯檔案。
 
-✨ 抓取與清洗完成！極速處理完畢。共 3767 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
-⚠️ Gemini API 請求遇到暫時性忙碌 (Attempt 1/5)，等待 5 秒後重試...
+✨ 抓取與清洗完成！極速處理完畢。共 3833 筆資料已儲存至 /home/runner/work/AniSpace/AniSpace/public/anime_data.json
 
 ✅ 步驟 [1. 爬取最新動畫與洗滌 (anime_crawler)] 執行成功完成。
 
-▶ [下午7:36:47] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
+▶ [下午9:08:44] 執行步驟: 2. 後處理比對與 Override 清理 (post_process)
 -------------------------------------
 No relevant translation changes detected.
 Overwrote anime_data_old.json with latest data.
-Created daily backup: anime_data_backup_20261123.json
+Created daily backup: anime_data_backup_20261124.json
 Deleted old backup: anime_data_backup_20260718.json
 Deleted old backup: anime_data_backup_20260719.json
 Deleted old backup: anime_data_backup_20260720.json
@@ -426,41 +471,100 @@ Deleted old backup: anime_data_backup_20261113.json
 Deleted old backup: anime_data_backup_20261114.json
 Deleted old backup: anime_data_backup_20261115.json
 Deleted old backup: anime_data_backup_20261116.json
-Updated dataVersion in package.json and public/data_version.json to: 00228 (228)
+Deleted old backup: anime_data_backup_20261117.json
+Updated dataVersion in package.json and public/data_version.json to: 00229 (229)
 
 ✅ 步驟 [2. 後處理比對與 Override 清理 (post_process)] 執行成功完成。
 
-▶ [下午7:36:47] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
+▶ [下午9:08:45] 執行步驟: 3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)
 -------------------------------------
-📥 [anilist-165530] 已加入批次佇列: 魔法公主的小煩惱 (佇列: 1/10)
-📥 [anilist-157692] 已加入批次佇列: 龍族II 悼亡者之瞳 (佇列: 2/10)
-📥 [anilist-156092] 已加入批次佇列: 凸變英雄X (佇列: 3/10)
-📥 [anilist-191974] 已加入批次佇列: 鯤吞天下之掌門歸來 (佇列: 4/10)
+📥 [anilist-170166] 已加入批次佇列: 時光代理人 英都篇 (佇列: 1/10)
+📥 [anilist-156110] 已加入批次佇列: 仙王的日常生活 第四季 (佇列: 2/10)
+📥 [anilist-127976] 已加入批次佇列: 天官賜福 第二季 (佇列: 3/10)
+📥 [anilist-136484] 已加入批次佇列: 時光代理人 -LINK CLICK- 第二季 (佇列: 4/10)
+📥 [anilist-156111] 已加入批次佇列: 愛上她的理由 (佇列: 5/10)
+📥 [anilist-141852] 已加入批次佇列: 仙王的日常生活 第三季 (佇列: 6/10)
+📥 [anilist-122511] 已加入批次佇列: 龍族 -The Blazing Dawn- (佇列: 7/10)
+📥 [anilist-141879] 已加入批次佇列: 食草老龍被冠以惡龍之名 (佇列: 8/10)
+📥 [anilist-114108] 已加入批次佇列: 最後的召喚師 (佇列: 9/10)
+📥 [anilist-126357] 已加入批次佇列: 仙王的日常生活 第二季 (佇列: 10/10)
 
-📦 準備進行 AI 翻譯 (批次: 4)...
-⚠️ AI 觸發頻率限制或發生錯誤，強制冷卻 60 秒後重試 (第 1/3 次)...
-✅ [anilist-165530] AI 翻譯完成: 魔法公主的小煩惱
-✅ [anilist-157692] AI 翻譯完成: 龍族II 悼亡者之瞳
-✅ [anilist-156092] AI 翻譯完成: 凸變英雄X
-✅ [anilist-191974] AI 翻譯完成: 鯤吞天下之掌門歸來
+📦 準備進行 AI 翻譯 (批次: 10)...
+✅ [anilist-170166] AI 翻譯完成: 時光代理人 英都篇
+✅ [anilist-156110] AI 翻譯完成: 仙王的日常生活 第四季
+✅ [anilist-127976] AI 翻譯完成: 天官賜福 第二季
+✅ [anilist-136484] AI 翻譯完成: 時光代理人 -LINK CLICK- 第二季
+✅ [anilist-156111] AI 翻譯完成: 愛上她的理由
+✅ [anilist-141852] AI 翻譯完成: 仙王的日常生活 第三季
+✅ [anilist-122511] AI 翻譯完成: 龍族 -The Blazing Dawn-
+✅ [anilist-141879] AI 翻譯完成: 食草老龍被冠以惡龍之名
+✅ [anilist-114108] AI 翻譯完成: 最後的召喚師
+✅ [anilist-126357] AI 翻譯完成: 仙王的日常生活 第二季
+📥 [anilist-126403] 已加入批次佇列: 時光代理人 (佇列: 1/10)
+📥 [anilist-113260] 已加入批次佇列: 天官賜福 (佇列: 2/10)
+📥 [anilist-108978] 已加入批次佇列: 穿書自救指南 修雅篇 (佇列: 3/10)
+📥 [anilist-120343] 已加入批次佇列: 魔道祖師Q (佇列: 4/10)
+📥 [anilist-114555] 已加入批次佇列: 萬聖街 (佇列: 5/10)
+📥 [anilist-114136] 已加入批次佇列: 百妖譜 (佇列: 6/10)
+📥 [anilist-114121] 已加入批次佇列: 仙王的日常生活 (佇列: 7/10)
+📥 [anilist-112023] 已加入批次佇列: 羅小黑戰記 我選擇的未來 (佇列: 8/10)
+📥 [anilist-101973] 已加入批次佇列: 萌妻食神 (佇列: 9/10)
+📥 [anilist-101972] 已加入批次佇列: 魔道祖師 前塵篇 (佇列: 10/10)
 
-🎉 Synopsis fetching complete. Processed 4 animes.
+📦 準備進行 AI 翻譯 (批次: 10)...
+✅ [anilist-126403] AI 翻譯完成: 時光代理人
+✅ [anilist-113260] AI 翻譯完成: 天官賜福
+✅ [anilist-108978] AI 翻譯完成: 穿書自救指南 修雅篇
+✅ [anilist-120343] AI 翻譯完成: 魔道祖師Q
+✅ [anilist-114555] AI 翻譯完成: 萬聖街
+✅ [anilist-114136] AI 翻譯完成: 百妖譜
+✅ [anilist-114121] AI 翻譯完成: 仙王的日常生活
+✅ [anilist-112023] AI 翻譯完成: 羅小黑戰記 我選擇的未來
+✅ [anilist-101973] AI 翻譯完成: 萌妻食神
+✅ [anilist-101972] AI 翻譯完成: 魔道祖師 前塵篇
+📥 [anilist-98575] 已加入批次佇列: 凸變英雄 (佇列: 1/10)
+📥 [anilist-98477] 已加入批次佇列: 實驗品家庭 (佇列: 2/10)
+📥 [anilist-98574] 已加入批次佇列: 一人之下 第二季 (佇列: 3/10)
+📥 [anilist-100226] 已加入批次佇列: 理想禁區 (佇列: 4/10)
+📥 [anilist-97616] 已加入批次佇列: 凸變英雄 (佇列: 5/10)
+📥 [anilist-97591] 已加入批次佇列: 時空使徒 (佇列: 6/10)
+📥 [anilist-21840] 已加入批次佇列: 一人之下 (佇列: 7/10)
+📥 [anilist-98031] 已加入批次佇列: 靈契 (佇列: 8/10)
+📥 [anilist-21364] 已加入批次佇列: GATE 奇幻自衛隊 第二季 (佇列: 9/10)
+📥 [anilist-21818] 已加入批次佇列: 愛神巧克力ING... (佇列: 10/10)
+
+📦 準備進行 AI 翻譯 (批次: 10)...
+✅ [anilist-98575] AI 翻譯完成: 凸變英雄
+✅ [anilist-98477] AI 翻譯完成: 實驗品家庭
+✅ [anilist-98574] AI 翻譯完成: 一人之下 第二季
+✅ [anilist-100226] AI 翻譯完成: 理想禁區
+✅ [anilist-97616] AI 翻譯完成: 凸變英雄
+✅ [anilist-97591] AI 翻譯完成: 時空使徒
+✅ [anilist-21840] AI 翻譯完成: 一人之下
+✅ [anilist-98031] AI 翻譯完成: 靈契
+✅ [anilist-21364] AI 翻譯完成: GATE 奇幻自衛隊 第二季
+✅ [anilist-21818] AI 翻譯完成: 愛神巧克力ING...
+📥 [anilist-98862] 已加入批次佇列: 妖怪名單 (佇列: 1/10)
+
+📦 準備進行 AI 翻譯 (批次: 1)...
+✅ [anilist-98862] AI 翻譯完成: 妖怪名單
+
+🎉 Synopsis fetching complete. Processed 31 animes.
 
 📊 每日任務劇情簡介統計回報:
-- 當前動畫總數: 3767
-- 沒找到對應 bangumi_data 的數量: 446
-- 本次掃描發現對應資料為空的數量: 81
-- 有劇情簡介的動畫總數量: 3280
-- 本次新增 4 筆簡介
+- 當前動畫總數: 3833
+- 沒找到對應 bangumi_data 的數量: 480
+- 本次掃描發現對應資料為空的數量: 82
+- 有劇情簡介的動畫總數量: 3311
+- 本次新增 31 筆簡介
 
 ✅ 步驟 [3. 劇情簡介多國語系抓取與 AI 翻譯 (fetch_synopsis)] 執行成功完成。
 
-▶ [下午7:45:56] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
+▶ [下午9:14:54] 執行步驟: 4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)
 -------------------------------------
 ====================================
 啟動 Puppeteer 真實商品爬蟲系統...
-準備將 117 筆原始資料交由 Gemini AI 進行分析與篩選...
-✅ Gemini AI 分析完成！保留了 76 項高價值商品。
+準備將 116 筆原始資料交由 Gemini AI 進行分析與篩選...
 ✔️ 正常: MUSE 木棉花官方旗艦店
 ✔️ 正常: 曼迪傳播動漫館
 ✔️ 正常: eslite 誠品
@@ -468,68 +572,145 @@ Updated dataVersion in package.json and public/data_version.json to: 00228 (228)
 ✔️ 正常: TOYeGO 玩具e哥
 
 ✅ 檢查與更新完成！已寫入 /home/runner/work/AniSpace/AniSpace/public/affiliates.json 與 /home/runner/work/AniSpace/AniSpace/public/product_images.json
+Gemini AI 過濾失敗，將退回傳統過濾模式: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
 
 ✅ 步驟 [4. 蝦皮周邊比價監控與 AI 分析 (shopee_checker)] 執行成功完成。
 
-▶ [下午7:47:42] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
+▶ [下午9:15:21] 執行步驟: 5. 每日總結 Email 寄送 (email_report)
 -------------------------------------
 
 =====================================
-📧 每日執行總結報告摘要 [v1.1.3 - (00228)] (同步印表)：
+📧 每日執行總結報告摘要 [v1.1.3 - (00229)] (同步印表)：
 📌 當前系統版本資訊
 ・應用程式版本號：v1.1.3
-・動畫資料庫版號：(00228)
+・動畫資料庫版號：(00229)
 -------------------------------------
 
-【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3767 筆，新增資料 14 筆，AI 翻譯 0 筆。
-📈 Bangumi 字典對應與授權回填：共 3321 部動畫成功對照字典並無條件整合去重播放授權！
+【動畫爬蟲】完成。本次實際抓取 3540 筆，經 ID 比對合併後資料庫共 3833 筆，新增資料 66 筆，AI 翻譯 0 筆。
+📈 Bangumi 字典對應與授權回填：共 3353 部動畫成功對照字典並無條件整合去重播放授權！
 🌟 新增動畫：
-- 哪吒之魔童鬧海
-- 失業魔王
-- 凸變英雄X
-- 超能立方
-- 鯤吞天下之掌門歸來
-- 이 별에 필요한
-- 詭秘之主 小丑篇​
-- 龍族II 悼亡者之瞳
-- 魔法公主的小煩惱
-- 放開那個女巫
-- 仙王的日常生活 第五季
-- 詭秘之主 特別篇
-- 記憶管理局 (2026)
-- 時光代理人 第三季 Part One
-🛡️ 洗滌成功的動畫 (共 2 部)：
-- 《龍族II 悼亡者之瞳》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147240
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45538
-- 《魔法公主的小煩惱》
-  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=147102
-  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=45604
-🔗 未對應 bangumi_data 動畫數量：446 部 (完整清單已隨信附帶)
+- 妖怪名單
+- 愛神巧克力ING...
+- 鎮魂街
+- 一人之下
+- 靈契
+- 全職法師
+- 凸變英雄
+- 時空使徒
+- 全職高手
+- 全職法師 第2季
+- 一人之下 第二季
+- 理想禁區
+- 연애하루전
+- 全職高手 特別篇
+- 凸變英雄
+- 實驗品家庭
+- 魔道祖師 前塵篇
+- 刺客伍六七
+- 通靈妃
+- 全職法師 第3季
+- 萌妻食神
+- 邪王追妻
+- 魔道祖師 第2季
+- 羅小黑戰記 我選擇的未來
+- 全職高手之巔峰榮耀
+- 伍六七之最強髮型師
+- 仙王的日常生活
+- 萬聖街
+- 全職法師 第4季
+- 一人之下 3
+- 百妖譜
+- 霧山五行 灼源神火
+- 記憶管理局
+- 穿書自救指南 修雅篇
+- 魔道祖師Q
+- 一念永恆
+- 天寶伏妖錄
+- 民調局異聞錄
+- 凡人修仙傳
+- 斗羅大陸 星斗獻祭
+- 天官賜福
+- 全職高手2
+- 英雄再臨
+- 伍六七之玄武國篇
+- 天官賜福 特別篇
+- 時光代理人
+- 時光代理人 番外篇
+- 魔道祖師 第三季
+- 全職法師 第5季
+- 仙王的日常生活 第二季
+- 大王饒命
+- 萬聖街 第3季
+- 最後的召喚師
+- 龍族 -The Blazing Dawn-
+- 食草老龍被冠以惡龍之名
+- 외모지상주의
+- 仙王的日常生活 第三季
+- 伍六七之暗影宿命
+- 愛上她的理由
+- 鏢人
+- 時光代理人 -LINK CLICK- 第二季
+- 四格勇者
+- 天官賜福 第二季
+- 仙王的日常生活 第四季
+- 大王饒命 第二季
+- 時光代理人 英都篇
+🛡️ 洗滌成功的動畫 (共 1 部)：
+- 《龍族 -The Blazing Dawn-》
+  ・洗滌前：https://acg.gamer.com.tw/acgDetail.php?s=138047
+  ・洗滌後：https://ani.gamer.com.tw/animeVideo.php?sn=37879
+🔗 未對應 bangumi_data 動畫數量：480 部 (完整清單已隨信附帶)
 
 【蝦皮推廣連結】完成。正常店鋪: 5，失效店鋪: 0
-【AI 商品圖】分析與過濾完畢，精選保留 76 項高價值商品。
+【AI 商品圖】分析與過濾完畢，精選保留 116 項高價值商品。
 
 
 
 【劇情簡介狀態】
-總計收錄: 3767 部動畫
-缺乏簡介: 485 部
-本日新增: 4 筆簡介
+總計收錄: 3833 部動畫
+缺乏簡介: 520 部
+本日新增: 31 筆簡介
 新增清單：
-- [anilist-165530] 魔法公主的小煩惱
-- [anilist-157692] 龍族II 悼亡者之瞳
-- [anilist-156092] 凸變英雄X
-- [anilist-191974] 鯤吞天下之掌門歸來
+- [anilist-170166] 時光代理人 英都篇
+- [anilist-156110] 仙王的日常生活 第四季
+- [anilist-127976] 天官賜福 第二季
+- [anilist-136484] 時光代理人 -LINK CLICK- 第二季
+- [anilist-156111] 愛上她的理由
+- [anilist-141852] 仙王的日常生活 第三季
+- [anilist-122511] 龍族 -The Blazing Dawn-
+- [anilist-141879] 食草老龍被冠以惡龍之名
+- [anilist-114108] 最後的召喚師
+- [anilist-126357] 仙王的日常生活 第二季
+- [anilist-126403] 時光代理人
+- [anilist-113260] 天官賜福
+- [anilist-108978] 穿書自救指南 修雅篇
+- [anilist-120343] 魔道祖師Q
+- [anilist-114555] 萬聖街
+- [anilist-114136] 百妖譜
+- [anilist-114121] 仙王的日常生活
+- [anilist-112023] 羅小黑戰記 我選擇的未來
+- [anilist-101973] 萌妻食神
+- [anilist-101972] 魔道祖師 前塵篇
+- [anilist-98575] 凸變英雄
+- [anilist-98477] 實驗品家庭
+- [anilist-98574] 一人之下 第二季
+- [anilist-100226] 理想禁區
+- [anilist-97616] 凸變英雄
+- [anilist-97591] 時空使徒
+- [anilist-21840] 一人之下
+- [anilist-98031] 靈契
+- [anilist-21364] GATE 奇幻自衛隊 第二季
+- [anilist-21818] 愛神巧克力ING...
+- [anilist-98862] 妖怪名單
 =====================================
 
-✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-23.log, unlinked_anime_list.md）
+✅ 成功寄送每日執行總結報告 Email！（已隨信附帶附件：daily_run_2026-11-24.log, unlinked_anime_list.md）
 
 ✅ 步驟 [5. 每日總結 Email 寄送 (email_report)] 執行成功完成。
 
-▶ [下午7:47:45] 執行步驟: 6. 自動更新網站地圖 (sitemap)
+▶ [下午9:15:23] 執行步驟: 6. 自動更新網站地圖 (sitemap)
 -------------------------------------
-Successfully generated sitemap.xml with 3771 URLs.
+Successfully generated sitemap.xml with 3837 URLs.
 
 ✅ 步驟 [6. 自動更新網站地圖 (sitemap)] 執行成功完成。
 

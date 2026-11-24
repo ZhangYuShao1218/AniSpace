@@ -510,10 +510,40 @@
     "yearSeason": "2026 夏"
   },
   {
+    "id": "anilist-141953",
+    "titleZh": "記憶管理局 (2026)",
+    "titleJa": "记忆管理局 (2026)",
+    "yearSeason": "2026 夏"
+  },
+  {
+    "id": "anilist-191832",
+    "titleZh": "時光代理人 第三季 Part One",
+    "titleJa": "时光代理人 第三季 Part One",
+    "yearSeason": "2026 夏"
+  },
+  {
     "id": "anilist-210032",
     "titleZh": "刃牙道 第二季度",
     "titleJa": "刃牙道 第2クール",
     "yearSeason": "2026 春"
+  },
+  {
+    "id": "anilist-199448",
+    "titleZh": "詭秘之主 特別篇",
+    "titleJa": "诡秘之主 特别篇",
+    "yearSeason": "2026 春"
+  },
+  {
+    "id": "anilist-137662",
+    "titleZh": "放開那個女巫",
+    "titleJa": "放开那个女巫",
+    "yearSeason": "2026 冬"
+  },
+  {
+    "id": "anilist-185857",
+    "titleZh": "仙王的日常生活 第五季",
+    "titleJa": "仙王的日常生活 第五季",
+    "yearSeason": "2026 冬"
   },
   {
     "id": "anilist-187921",
@@ -534,6 +564,12 @@
     "yearSeason": "2025 秋"
   },
   {
+    "id": "anilist-137667",
+    "titleZh": "詭秘之主 小丑篇​",
+    "titleJa": "诡秘之主 小丑篇​",
+    "yearSeason": "2025 夏"
+  },
+  {
     "id": "anilist-181244",
     "titleZh": "為美好的世界獻上祝福！3 BONUS STAGE",
     "titleJa": "この素晴らしい世界に祝福を！３ーBONUS STAGEー",
@@ -549,6 +585,18 @@
     "id": "anilist-189513",
     "titleZh": "葬送のフリーレン ～●●の魔法～ 2クール",
     "titleJa": "葬送のフリーレン ～●●の魔法～ 2クール",
+    "yearSeason": "2025 春"
+  },
+  {
+    "id": "anilist-166442",
+    "titleZh": "超能立方",
+    "titleJa": "超能立方",
+    "yearSeason": "2025 春"
+  },
+  {
+    "id": "anilist-192002",
+    "titleZh": "이 별에 필요한",
+    "titleJa": "이 별에 필요한",
     "yearSeason": "2025 春"
   },
   {
@@ -573,6 +621,18 @@
     "id": "anilist-194403",
     "titleZh": "僕のヒーローアカデミア THE MOVIE ユアネクスト《A PIECE OF CAKE》",
     "titleJa": "僕のヒーローアカデミア THE MOVIE ユアネクスト《A PIECE OF CAKE》",
+    "yearSeason": "2025 冬"
+  },
+  {
+    "id": "anilist-186861",
+    "titleZh": "哪吒之魔童鬧海",
+    "titleJa": "哪吒之魔童闹海",
+    "yearSeason": "2025 冬"
+  },
+  {
+    "id": "anilist-168244",
+    "titleZh": "失業魔王",
+    "titleJa": "失业魔王",
     "yearSeason": "2025 冬"
   },
   {
@@ -2616,63 +2676,207 @@
     "yearSeason": "1998 秋"
   },
   {
-    "id": "anilist-186861",
-    "titleZh": "哪吒之魔童鬧海",
-    "titleJa": "哪吒之魔童闹海",
-    "yearSeason": "2025 冬"
+    "id": "anilist-99707",
+    "titleZh": "鎮魂街",
+    "titleJa": "镇魂街",
+    "yearSeason": "2016 春"
   },
   {
-    "id": "anilist-168244",
-    "titleZh": "失業魔王",
-    "titleJa": "失业魔王",
-    "yearSeason": "2025 冬"
+    "id": "anilist-99200",
+    "titleZh": "全職法師",
+    "titleJa": "全职法师",
+    "yearSeason": "2016 秋"
   },
   {
-    "id": "anilist-166442",
-    "titleZh": "超能立方",
-    "titleJa": "超能立方",
-    "yearSeason": "2025 春"
+    "id": "anilist-98861",
+    "titleZh": "全職高手",
+    "titleJa": "全职高手",
+    "yearSeason": "2017 春"
   },
   {
-    "id": "anilist-192002",
-    "titleZh": "이 별에 필요한",
-    "titleJa": "이 별에 필요한",
-    "yearSeason": "2025 春"
+    "id": "anilist-100294",
+    "titleZh": "全職法師 第2季",
+    "titleJa": "全职法师 第2季",
+    "yearSeason": "2017 秋"
   },
   {
-    "id": "anilist-137667",
-    "titleZh": "詭秘之主 小丑篇​",
-    "titleJa": "诡秘之主 小丑篇​",
-    "yearSeason": "2025 夏"
+    "id": "anilist-102425",
+    "titleZh": "연애하루전",
+    "titleJa": "연애하루전",
+    "yearSeason": "2018 冬"
   },
   {
-    "id": "anilist-137662",
-    "titleZh": "放開那個女巫",
-    "titleJa": "放开那个女巫",
-    "yearSeason": "2026 冬"
+    "id": "anilist-101410",
+    "titleZh": "全職高手 特別篇",
+    "titleJa": "全职高手 特别篇",
+    "yearSeason": "2018 春"
   },
   {
-    "id": "anilist-185857",
-    "titleZh": "仙王的日常生活 第五季",
-    "titleJa": "仙王的日常生活 第五季",
-    "yearSeason": "2026 冬"
+    "id": "anilist-107912",
+    "titleZh": "刺客伍六七",
+    "titleJa": "刺客伍六七",
+    "yearSeason": "2018 秋"
   },
   {
-    "id": "anilist-199448",
-    "titleZh": "詭秘之主 特別篇",
-    "titleJa": "诡秘之主 特别篇",
-    "yearSeason": "2026 春"
+    "id": "anilist-99935",
+    "titleZh": "通靈妃",
+    "titleJa": "通灵妃",
+    "yearSeason": "2018 秋"
   },
   {
-    "id": "anilist-141953",
-    "titleZh": "記憶管理局 (2026)",
-    "titleJa": "记忆管理局 (2026)",
-    "yearSeason": "2026 夏"
+    "id": "anilist-104745",
+    "titleZh": "全職法師 第3季",
+    "titleJa": "全职法师 第3季",
+    "yearSeason": "2018 秋"
   },
   {
-    "id": "anilist-191832",
-    "titleZh": "時光代理人 第三季 Part One",
-    "titleJa": "时光代理人 第三季 Part One",
-    "yearSeason": "2026 夏"
+    "id": "anilist-107743",
+    "titleZh": "邪王追妻",
+    "titleJa": "邪王追妻",
+    "yearSeason": "2019 冬"
+  },
+  {
+    "id": "anilist-108981",
+    "titleZh": "全職高手之巔峰榮耀",
+    "titleJa": "全职高手之巅峰荣耀",
+    "yearSeason": "2019 夏"
+  },
+  {
+    "id": "anilist-113290",
+    "titleZh": "伍六七之最強髮型師",
+    "titleJa": "伍六七之最强发型师",
+    "yearSeason": "2019 秋"
+  },
+  {
+    "id": "anilist-115800",
+    "titleZh": "全職法師 第4季",
+    "titleJa": "全职法师 第4季",
+    "yearSeason": "2020 春"
+  },
+  {
+    "id": "anilist-105401",
+    "titleZh": "一人之下 3",
+    "titleJa": "一人之下 3",
+    "yearSeason": "2020 春"
+  },
+  {
+    "id": "anilist-107069",
+    "titleZh": "霧山五行 灼源神火",
+    "titleJa": "雾山五行 灼源神火",
+    "yearSeason": "2020 夏"
+  },
+  {
+    "id": "anilist-141950",
+    "titleZh": "記憶管理局",
+    "titleJa": "记忆管理局",
+    "yearSeason": "2020 夏"
+  },
+  {
+    "id": "anilist-110595",
+    "titleZh": "一念永恆",
+    "titleJa": "一念永恒",
+    "yearSeason": "2020 夏"
+  },
+  {
+    "id": "anilist-116182",
+    "titleZh": "天寶伏妖錄",
+    "titleJa": "天宝伏妖录",
+    "yearSeason": "2020 夏"
+  },
+  {
+    "id": "anilist-110699",
+    "titleZh": "民調局異聞錄",
+    "titleJa": "民调局异闻录",
+    "yearSeason": "2020 夏"
+  },
+  {
+    "id": "anilist-115844",
+    "titleZh": "凡人修仙傳",
+    "titleJa": "凡人修仙传",
+    "yearSeason": "2020 夏"
+  },
+  {
+    "id": "anilist-129350",
+    "titleZh": "斗羅大陸 星斗獻祭",
+    "titleJa": "斗罗大陆 星斗献祭",
+    "yearSeason": "2020 夏"
+  },
+  {
+    "id": "anilist-102997",
+    "titleZh": "全職高手2",
+    "titleJa": "全职高手2",
+    "yearSeason": "2020 秋"
+  },
+  {
+    "id": "anilist-120193",
+    "titleZh": "英雄再臨",
+    "titleJa": "英雄再临",
+    "yearSeason": "2020 秋"
+  },
+  {
+    "id": "anilist-127595",
+    "titleZh": "伍六七之玄武國篇",
+    "titleJa": "伍六七之玄武国篇",
+    "yearSeason": "2021 冬"
+  },
+  {
+    "id": "anilist-126356",
+    "titleZh": "天官賜福 特別篇",
+    "titleJa": "天官赐福 特别篇",
+    "yearSeason": "2021 冬"
+  },
+  {
+    "id": "anilist-136145",
+    "titleZh": "時光代理人 番外篇",
+    "titleJa": "时光代理人 番外篇",
+    "yearSeason": "2021 春"
+  },
+  {
+    "id": "anilist-122671",
+    "titleZh": "全職法師 第5季",
+    "titleJa": "全职法师 第5季",
+    "yearSeason": "2021 夏"
+  },
+  {
+    "id": "anilist-120220",
+    "titleZh": "大王饒命",
+    "titleJa": "大王饶命",
+    "yearSeason": "2021 秋"
+  },
+  {
+    "id": "anilist-137740",
+    "titleZh": "萬聖街 第3季",
+    "titleJa": "万圣街 第3季",
+    "yearSeason": "2022 冬"
+  },
+  {
+    "id": "anilist-158539",
+    "titleZh": "외모지상주의",
+    "titleJa": "외모지상주의",
+    "yearSeason": "2022 秋"
+  },
+  {
+    "id": "anilist-159490",
+    "titleZh": "伍六七之暗影宿命",
+    "titleJa": "伍六七之暗影宿命",
+    "yearSeason": "2023 冬"
+  },
+  {
+    "id": "anilist-122508",
+    "titleZh": "鏢人",
+    "titleJa": "镖人",
+    "yearSeason": "2023 春"
+  },
+  {
+    "id": "anilist-156096",
+    "titleZh": "四格勇者",
+    "titleJa": "四格勇者",
+    "yearSeason": "2023 夏"
+  },
+  {
+    "id": "anilist-146543",
+    "titleZh": "大王饒命 第二季",
+    "titleJa": "大王饶命 第二季",
+    "yearSeason": "2024 冬"
   }
 ]

@@ -736,7 +736,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 10
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -4253,7 +4253,6 @@
     "genres": [
       "冒險",
       "奇幻",
-      "後宮",
       "異世界"
     ],
     "streamings": [
@@ -30578,6 +30577,61 @@
     ]
   },
   {
+    "id": "anilist-170166",
+    "titleZh": "時光代理人 英都篇",
+    "titleEn": "Link Click: Bridon Arc",
+    "titleJa": "时光代理人英都篇",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170166-VpX7l0Horthq.jpg",
+    "startDate": {
+      "year": 2024,
+      "month": 12,
+      "day": 27
+    },
+    "yearSeason": "2025 冬",
+    "genres": [
+      "劇情",
+      "憂鬱",
+      "懸疑",
+      "時空輪迴",
+      "超能力",
+      "超自然",
+      "驚悚"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GKCDM9C3"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GP5HJ8E81/"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0251575"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/link-click3"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28629"
+      }
+    ]
+  },
+  {
     "id": "anilist-171018",
     "titleZh": "膽大黨",
     "titleEn": "DAN DA DAN",
@@ -43246,6 +43300,64 @@
     ]
   },
   {
+    "id": "anilist-156110",
+    "titleZh": "仙王的日常生活 第四季",
+    "titleEn": "The Daily Life of the Immortal King Season 4",
+    "titleJa": "仙王的日常生活 第四季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b156110-LN58r4yQpDGV.jpg",
+    "startDate": {
+      "year": 2023,
+      "month": 12,
+      "day": 17
+    },
+    "yearSeason": "2024 冬",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0H71F323J"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28641"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0308944"
+      }
+    ]
+  },
+  {
+    "id": "anilist-146543",
+    "titleZh": "大王饒命 第二季",
+    "titleEn": "",
+    "titleJa": "大王饶命 第二季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146543-xPM6Q1II9Iol.png",
+    "startDate": {
+      "year": 2023,
+      "month": 12,
+      "day": 30
+    },
+    "yearSeason": "2024 冬",
+    "genres": [
+      "動作",
+      "奇幻",
+      "超能力"
+    ]
+  },
+  {
     "id": "anilist-154587",
     "titleZh": "葬送的芙莉蓮",
     "titleEn": "Frieren: Beyond Journey’s End",
@@ -46445,6 +46557,41 @@
     ]
   },
   {
+    "id": "anilist-127976",
+    "titleZh": "天官賜福 第二季",
+    "titleEn": "Heaven Official's Blessing Season 2",
+    "titleJa": "天官赐福 第二季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127976-zmag82H3ygcI.jpg",
+    "startDate": {
+      "year": 2023,
+      "month": 10,
+      "day": 18
+    },
+    "yearSeason": "2023 秋",
+    "genres": [
+      "冒險",
+      "劇情",
+      "奇幻",
+      "愛情",
+      "憂鬱"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tgcf-anime2"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26824"
+      }
+    ]
+  },
+  {
     "id": "anilist-145064",
     "titleZh": "咒術迴戰 第二季",
     "titleEn": "JUJUTSU KAISEN Season 2",
@@ -49294,6 +49441,87 @@
     ]
   },
   {
+    "id": "anilist-136484",
+    "titleZh": "時光代理人 -LINK CLICK- 第二季",
+    "titleEn": "Link Click Season 2",
+    "titleJa": "时光代理人 第二季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136484-QiHcF64PVWQi.jpg",
+    "startDate": {
+      "year": 2023,
+      "month": 7,
+      "day": 14
+    },
+    "yearSeason": "2023 夏",
+    "genres": [
+      "劇情",
+      "憂鬱",
+      "懸疑",
+      "時空輪迴",
+      "超能力",
+      "超自然",
+      "驚悚"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0CWXS6LBM"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GP5HJ8E81/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/link-click2"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0100068"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27072"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/26-159"
+      }
+    ]
+  },
+  {
+    "id": "anilist-156096",
+    "titleZh": "四格勇者",
+    "titleEn": "4 CUT HERO",
+    "titleJa": "四格勇者",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156096-GMhNhYtsXGhV.jpg",
+    "startDate": {
+      "year": 2023,
+      "month": 7,
+      "day": 17
+    },
+    "yearSeason": "2023 夏",
+    "genres": [
+      "冒險",
+      "動作",
+      "喜劇",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-145139",
     "titleZh": "鬼滅之刃 刀匠村篇",
     "titleEn": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
@@ -50541,7 +50769,6 @@
     },
     "yearSeason": "2023 春",
     "genres": [
-      "喜劇",
       "奇幻",
       "愛情",
       "懸疑",
@@ -52068,6 +52295,63 @@
     "yearSeason": "2023 春",
     "genres": [
       "劇情"
+    ]
+  },
+  {
+    "id": "anilist-156111",
+    "titleZh": "愛上她的理由",
+    "titleEn": "The Girl Downstairs",
+    "titleJa": "爱上她的理由",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156111-ZABTgci6m9sN.png",
+    "startDate": {
+      "year": 2023,
+      "month": 4,
+      "day": 20
+    },
+    "yearSeason": "2023 春",
+    "genres": [
+      "劇情",
+      "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0CWD7436V"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0104172"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27216"
+      }
+    ]
+  },
+  {
+    "id": "anilist-122508",
+    "titleZh": "鏢人",
+    "titleEn": "",
+    "titleJa": "镖人",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx122508-abXsQzAGwPzN.jpg",
+    "startDate": {
+      "year": 2023,
+      "month": 6,
+      "day": 1
+    },
+    "yearSeason": "2023 春",
+    "genres": [
+      "冒險",
+      "劇情",
+      "動作"
     ]
   },
   {
@@ -55044,6 +55328,27 @@
     ]
   },
   {
+    "id": "anilist-159490",
+    "titleZh": "伍六七之暗影宿命",
+    "titleEn": "Scissor Seven Season 4",
+    "titleJa": "伍六七之暗影宿命",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159490-X5BrF7DubUr4.png",
+    "startDate": {
+      "year": 2023,
+      "month": 1,
+      "day": 18
+    },
+    "yearSeason": "2023 冬",
+    "genres": [
+      "劇情",
+      "動作",
+      "喜劇",
+      "懸疑",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-127230",
     "titleZh": "鏈鋸人",
     "titleEn": "Chainsaw Man",
@@ -57882,6 +58187,67 @@
     ]
   },
   {
+    "id": "anilist-158539",
+    "titleZh": "외모지상주의",
+    "titleEn": "Lookism",
+    "titleJa": "외모지상주의",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158539-jcLUcvqALA08.jpg",
+    "startDate": {
+      "year": 2022,
+      "month": 12,
+      "day": 8
+    },
+    "yearSeason": "2022 秋",
+    "genres": [
+      "劇情",
+      "動作",
+      "喜劇",
+      "校園",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-141852",
+    "titleZh": "仙王的日常生活 第三季",
+    "titleEn": "The Daily Life of the Immortal King Season 3",
+    "titleJa": "仙王的日常生活 第三季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141852-tgLX8S7fqy3G.png",
+    "startDate": {
+      "year": 2022,
+      "month": 9,
+      "day": 30
+    },
+    "yearSeason": "2022 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "校園"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GWK3X91L"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28640"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0282796"
+      }
+    ]
+  },
+  {
     "id": "anilist-120377",
     "titleZh": "電馭叛客：邊緣行者",
     "titleEn": "Cyberpunk: Edgerunners",
@@ -60658,6 +61024,114 @@
         "name": "Bilibili",
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md28338635/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-122511",
+    "titleZh": "龍族 -The Blazing Dawn-",
+    "titleEn": "Dragon Raja -The Blazing Dawn-",
+    "titleJa": "龙族",
+    "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/47/0000138047.JPG",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx122511-h6FpxJGfKx3I.jpg",
+    "startDate": {
+      "year": 2022,
+      "month": 8,
+      "day": 19
+    },
+    "yearSeason": "2022 夏",
+    "genres": [
+      "劇情",
+      "動作",
+      "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "gamer",
+        "name": "動畫瘋",
+        "region": "台港澳",
+        "url": "https://ani.gamer.com.tw/animeVideo.php?sn=37879"
+      },
+      {
+        "site": "ani_one",
+        "name": "Ani-One YouTube",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLC18xlbCdwtRfAcEuEfIFM00zax8BuR-q"
+      },
+      {
+        "site": "ani_one_asia",
+        "name": "Ani-One Asia",
+        "region": "亞洲",
+        "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jh9bnM7dAqwoNbJd1FzJ4tx"
+      },
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0CZRMYX1V"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/ryuzoku-anime"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0100069"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=27056"
+      }
+    ]
+  },
+  {
+    "id": "anilist-141879",
+    "titleZh": "食草老龍被冠以惡龍之名",
+    "titleEn": "A Herbivorous Dragon of 5,000 Years Gets Unfairly Villainized",
+    "titleJa": "食草老龙被冠以恶龙之名",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141879-ZSBb6aYbrIHS.png",
+    "startDate": {
+      "year": 2022,
+      "month": 7,
+      "day": 30
+    },
+    "yearSeason": "2022 夏",
+    "genres": [
+      "冒險",
+      "喜劇",
+      "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FQ9S95D9"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G1XHJV2NJ/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/soushokudragon"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0077104"
       }
     ]
   },
@@ -63496,6 +63970,50 @@
     ]
   },
   {
+    "id": "anilist-114108",
+    "titleZh": "最後的召喚師",
+    "titleEn": "THE LAST SUMMONER",
+    "titleJa": "最后的召唤师",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114108-Qe5wwJQr5H4O.jpg",
+    "startDate": {
+      "year": 2022,
+      "month": 4,
+      "day": 26
+    },
+    "yearSeason": "2022 春",
+    "genres": [
+      "動作",
+      "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GG5H5X05J/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/the_last_summoner"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0076935"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25979"
+      }
+    ]
+  },
+  {
     "id": "anilist-131681",
     "titleZh": "進擊的巨人 Final Season",
     "titleEn": "Attack on Titan Final Season Part 2",
@@ -65856,6 +66374,26 @@
       "冒險",
       "喜劇",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-137740",
+    "titleZh": "萬聖街 第3季",
+    "titleEn": "All Saints Street 3",
+    "titleJa": "万圣街 第3季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137740-x9BeehdeeaZz.jpg",
+    "startDate": {
+      "year": 2022,
+      "month": 1,
+      "day": 26
+    },
+    "yearSeason": "2022 冬",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "日常",
+      "超自然"
     ]
   },
   {
@@ -68274,6 +68812,65 @@
         "region": "日本",
         "url": "https://abema.tv/video/title/481-7"
       }
+    ]
+  },
+  {
+    "id": "anilist-126357",
+    "titleZh": "仙王的日常生活 第二季",
+    "titleEn": "The Daily Life of the Immortal King Season 2",
+    "titleJa": "仙王的日常生活 第二季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126357-gqjGyFI0pUtC.png",
+    "startDate": {
+      "year": 2021,
+      "month": 10,
+      "day": 30
+    },
+    "yearSeason": "2021 秋",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "超能力"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0GFVWQW2R"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28532"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0260743"
+      }
+    ]
+  },
+  {
+    "id": "anilist-120220",
+    "titleZh": "大王饒命",
+    "titleEn": "",
+    "titleJa": "大王饶命",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120220-sdm29OEAijm7.jpg",
+    "startDate": {
+      "year": 2021,
+      "month": 12,
+      "day": 3
+    },
+    "yearSeason": "2021 秋",
+    "genres": [
+      "動作",
+      "奇幻",
+      "超能力"
     ]
   },
   {
@@ -70913,6 +71510,61 @@
       "動作",
       "恐怖",
       "科幻"
+    ]
+  },
+  {
+    "id": "anilist-121467",
+    "titleZh": "魔道祖師 第三季",
+    "titleEn": "The Founder of Diabolism: Final Season",
+    "titleJa": "魔道祖师 第三季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx121467-Et0U1jXLfuYf.jpg",
+    "startDate": {
+      "year": 2021,
+      "month": 8,
+      "day": 7
+    },
+    "yearSeason": "2021 夏",
+    "genres": [
+      "冒險",
+      "劇情",
+      "動作",
+      "奇幻",
+      "憂鬱",
+      "懸疑",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/mdzs2"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26096"
+      }
+    ]
+  },
+  {
+    "id": "anilist-122671",
+    "titleZh": "全職法師 第5季",
+    "titleEn": "",
+    "titleJa": "全职法师 第5季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx122671-0ie6U9LGaILt.png",
+    "startDate": {
+      "year": 2021,
+      "month": 7,
+      "day": 28
+    },
+    "yearSeason": "2021 夏",
+    "genres": [
+      "動作",
+      "奇幻"
     ]
   },
   {
@@ -73722,6 +74374,92 @@
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24587"
       }
+    ]
+  },
+  {
+    "id": "anilist-126403",
+    "titleZh": "時光代理人",
+    "titleEn": "Link Click",
+    "titleJa": "时光代理人",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126403-BfVSRzWUtVFW.png",
+    "startDate": {
+      "year": 2021,
+      "month": 4,
+      "day": 30
+    },
+    "yearSeason": "2021 春",
+    "genres": [
+      "劇情",
+      "憂鬱",
+      "懸疑",
+      "時空輪迴",
+      "超能力",
+      "超自然",
+      "驚悚"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FR3WFFY8"
+      },
+      {
+        "site": "disneyplus",
+        "name": "Disney+",
+        "region": "全球",
+        "url": "https://www.disneyplus.com/series/view/3pyQ9PNQeYEX"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GP5HJ8E81/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/LINK_CLICK"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0063365"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25203"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/26-159"
+      }
+    ]
+  },
+  {
+    "id": "anilist-136145",
+    "titleZh": "時光代理人 番外篇",
+    "titleEn": "LINK CLICK Episode 5.5",
+    "titleJa": "时光代理人 番外篇",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136145-guWKltDngjIu.jpg",
+    "startDate": {
+      "year": 2021,
+      "month": 5,
+      "day": 28
+    },
+    "yearSeason": "2021 春",
+    "genres": [
+      "懸疑",
+      "時空輪迴",
+      "超自然"
     ]
   },
   {
@@ -76639,6 +77377,44 @@
     ]
   },
   {
+    "id": "anilist-127595",
+    "titleZh": "伍六七之玄武國篇",
+    "titleEn": "Scissor Seven Season 3",
+    "titleJa": "伍六七之玄武国篇",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127595-PXUt146nepcP.png",
+    "startDate": {
+      "year": 2021,
+      "month": 1,
+      "day": 27
+    },
+    "yearSeason": "2021 冬",
+    "genres": [
+      "動作",
+      "喜劇",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-126356",
+    "titleZh": "天官賜福 特別篇",
+    "titleEn": "Heaven Official's Blessing Special Episode",
+    "titleJa": "天官赐福 特别篇",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126356-Nt66D91sH3Cu.png",
+    "startDate": {
+      "year": 2021,
+      "month": 2,
+      "day": 16
+    },
+    "yearSeason": "2021 冬",
+    "genres": [
+      "劇情",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
     "id": "anilist-113415",
     "titleZh": "咒術迴戰",
     "titleEn": "JUJUTSU KAISEN",
@@ -79256,6 +80032,83 @@
     ]
   },
   {
+    "id": "anilist-113260",
+    "titleZh": "天官賜福",
+    "titleEn": "Heaven Official's Blessing",
+    "titleJa": "天官赐福",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113260-4LPAAKCSJe8f.jpg",
+    "startDate": {
+      "year": 2020,
+      "month": 10,
+      "day": 31
+    },
+    "yearSeason": "2020 秋",
+    "genres": [
+      "冒險",
+      "劇情",
+      "奇幻",
+      "愛情"
+    ],
+    "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/G79H23XX8/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tgcf-anime"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24830"
+      }
+    ]
+  },
+  {
+    "id": "anilist-102997",
+    "titleZh": "全職高手2",
+    "titleEn": "The King's Avatar S2",
+    "titleJa": "全职高手2",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx102997-M638Ly1gxVmG.png",
+    "startDate": {
+      "year": 2020,
+      "month": 9,
+      "day": 25
+    },
+    "yearSeason": "2020 秋",
+    "genres": [
+      "劇情",
+      "動作"
+    ]
+  },
+  {
+    "id": "anilist-120193",
+    "titleZh": "英雄再臨",
+    "titleEn": "",
+    "titleJa": "英雄再临",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120193-KAMiBZ4Nw3xA.png",
+    "startDate": {
+      "year": 2020,
+      "month": 10,
+      "day": 18
+    },
+    "yearSeason": "2020 秋",
+    "genres": [
+      "動作",
+      "奇幻",
+      "科幻"
+    ]
+  },
+  {
     "id": "anilist-108632",
     "titleZh": "Re：從零開始的異世界生活 第二季",
     "titleEn": "Re:ZERO -Starting Life in Another World- Season 2",
@@ -81304,6 +82157,205 @@
     "genres": [
       "愛情",
       "異世界"
+    ]
+  },
+  {
+    "id": "anilist-107069",
+    "titleZh": "霧山五行 灼源神火",
+    "titleEn": "",
+    "titleJa": "雾山五行 灼源神火",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107069-mABDNDDtWWiW.png",
+    "startDate": {
+      "year": 2020,
+      "month": 7,
+      "day": 26
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "劇情",
+      "動作",
+      "奇幻",
+      "憂鬱",
+      "超能力"
+    ]
+  },
+  {
+    "id": "anilist-141950",
+    "titleZh": "記憶管理局",
+    "titleEn": "False Memory",
+    "titleJa": "记忆管理局",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141950-zAmZROOecLLP.jpg",
+    "startDate": {
+      "year": 2020,
+      "month": 9,
+      "day": 30
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "動作",
+      "心理",
+      "懸疑"
+    ]
+  },
+  {
+    "id": "anilist-108978",
+    "titleZh": "穿書自救指南 修雅篇",
+    "titleEn": "Scumbag System",
+    "titleJa": "穿书自救指南",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108978-GtIXqzO8RaAz.png",
+    "startDate": {
+      "year": 2020,
+      "month": 9,
+      "day": 10
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "冒險",
+      "劇情",
+      "動作",
+      "奇幻",
+      "異世界",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GDKHZEJ82/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/kuzuakuyaku"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0092056"
+      }
+    ]
+  },
+  {
+    "id": "anilist-120343",
+    "titleZh": "魔道祖師Q",
+    "titleEn": "The Master of Diabolism Q",
+    "titleJa": "魔道祖师Q",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120343-8zVgrYFOl7GV.png",
+    "startDate": {
+      "year": 2020,
+      "month": 7,
+      "day": 31
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-110595",
+    "titleZh": "一念永恆",
+    "titleEn": "",
+    "titleJa": "一念永恒",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110595-vHd33fbqdK6B.png",
+    "startDate": {
+      "year": 2020,
+      "month": 8,
+      "day": 12
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "後宮"
+    ]
+  },
+  {
+    "id": "anilist-116182",
+    "titleZh": "天寶伏妖錄",
+    "titleEn": "Legend of Exorcism",
+    "titleJa": "天宝伏妖录",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116182-W5Uj5asq3KSI.jpg",
+    "startDate": {
+      "year": 2020,
+      "month": 7,
+      "day": 5
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-110699",
+    "titleZh": "民調局異聞錄",
+    "titleEn": "Bureau of Paranormal Investigation",
+    "titleJa": "民调局异闻录",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110699-b3eAF20wVjAT.png",
+    "startDate": {
+      "year": 2020,
+      "month": 8,
+      "day": 7
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "動作",
+      "超自然",
+      "驚悚"
+    ]
+  },
+  {
+    "id": "anilist-115844",
+    "titleZh": "凡人修仙傳",
+    "titleEn": "A Record Of Mortal's Journey To Immortality",
+    "titleJa": "凡人修仙传",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx115844-UFnSJplzMwRr.png",
+    "startDate": {
+      "year": 2020,
+      "month": 7,
+      "day": 25
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "冒險",
+      "動作",
+      "奇幻",
+      "愛情"
+    ]
+  },
+  {
+    "id": "anilist-129350",
+    "titleZh": "斗羅大陸 星斗獻祭",
+    "titleEn": "",
+    "titleJa": "斗罗大陆 星斗献祭",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129350-pacPQReq3nWl.png",
+    "startDate": {
+      "year": 2020,
+      "month": 8,
+      "day": 22
+    },
+    "yearSeason": "2020 夏",
+    "genres": [
+      "冒險",
+      "動作",
+      "奇幻",
+      "愛情",
+      "超自然"
     ]
   },
   {
@@ -83697,6 +84749,124 @@
         "name": "Bilibili",
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md28228420/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-114555",
+    "titleZh": "萬聖街",
+    "titleEn": "All Saints Street",
+    "titleJa": "万圣街",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114555-2Srjv4lqeGYA.png",
+    "startDate": {
+      "year": 2020,
+      "month": 4,
+      "day": 1
+    },
+    "yearSeason": "2020 春",
+    "genres": [
+      "喜劇",
+      "奇幻",
+      "日常",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/banseigai"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25803"
+      }
+    ]
+  },
+  {
+    "id": "anilist-115800",
+    "titleZh": "全職法師 第4季",
+    "titleEn": "",
+    "titleJa": "全职法师 第4季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx115800-IUbsQeRT92YC.jpg",
+    "startDate": {
+      "year": 2020,
+      "month": 5,
+      "day": 27
+    },
+    "yearSeason": "2020 春",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-105401",
+    "titleZh": "一人之下 3",
+    "titleEn": "",
+    "titleJa": "一人之下 3",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105401-Wwj6ZWHUdOuo.png",
+    "startDate": {
+      "year": 2020,
+      "month": 4,
+      "day": 24
+    },
+    "yearSeason": "2020 春",
+    "genres": [
+      "劇情",
+      "動作",
+      "心理",
+      "懸疑",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-114136",
+    "titleZh": "百妖譜",
+    "titleEn": "Fairies Albums",
+    "titleJa": "百妖谱",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114136-9bmTbEk4aV4x.png",
+    "startDate": {
+      "year": 2020,
+      "month": 4,
+      "day": 25
+    },
+    "yearSeason": "2020 春",
+    "genres": [
+      "奇幻",
+      "懸疑",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0CNZLCPQH"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/hyakuyoufu"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0072223"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26825"
       }
     ]
   },
@@ -86126,6 +87296,66 @@
         "name": "Bilibili",
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md28228721/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-114121",
+    "titleZh": "仙王的日常生活",
+    "titleEn": "The Daily Life of the Immortal King",
+    "titleJa": "仙王的日常生活",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114121-vxWVgIBlBjox.png",
+    "startDate": {
+      "year": 2020,
+      "month": 1,
+      "day": 18
+    },
+    "yearSeason": "2020 冬",
+    "genres": [
+      "冒險",
+      "動作",
+      "喜劇",
+      "奇幻",
+      "校園",
+      "超能力"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FTHPT2GV"
+      },
+      {
+        "site": "crunchyroll",
+        "name": "Crunchyroll",
+        "region": "全球",
+        "url": "https://www.crunchyroll.com/series/GZJH3DJ8E/"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/hujiboku"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0232896"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28307"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/54-109"
       }
     ]
   },
@@ -88653,6 +89883,28 @@
     ]
   },
   {
+    "id": "anilist-113290",
+    "titleZh": "伍六七之最強髮型師",
+    "titleEn": "Scissor Seven Season 2",
+    "titleJa": "伍六七之最强发型师",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113290-zsH3Ni7M7STm.jpg",
+    "startDate": {
+      "year": 2019,
+      "month": 10,
+      "day": 23
+    },
+    "yearSeason": "2019 秋",
+    "genres": [
+      "劇情",
+      "動作",
+      "喜劇",
+      "懸疑",
+      "超能力",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-105333",
     "titleZh": "Dr.STONE 新石紀",
     "titleEn": "Dr. STONE",
@@ -91063,6 +92315,87 @@
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md28226981/"
       }
+    ]
+  },
+  {
+    "id": "anilist-104458",
+    "titleZh": "魔道祖師 第2季",
+    "titleEn": "The Founder of Diabolism 2",
+    "titleJa": "魔道祖师 第二季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104458-b3PRaVB0vBM9.png",
+    "startDate": {
+      "year": 2019,
+      "month": 8,
+      "day": 3
+    },
+    "yearSeason": "2019 夏",
+    "genres": [
+      "冒險",
+      "劇情",
+      "動作",
+      "奇幻",
+      "憂鬱",
+      "懸疑",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-112023",
+    "titleZh": "羅小黑戰記 我選擇的未來",
+    "titleEn": "The Legend of Hei",
+    "titleJa": "罗小黑战记大电影",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112023-jAzTavYOx3zq.png",
+    "startDate": {
+      "year": 2019,
+      "month": 9,
+      "day": 7
+    },
+    "yearSeason": "2019 夏",
+    "genres": [
+      "冒險",
+      "動作",
+      "奇幻"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/luoxiaohei-tv"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=25835"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0073663"
+      }
+    ]
+  },
+  {
+    "id": "anilist-108981",
+    "titleZh": "全職高手之巔峰榮耀",
+    "titleEn": "The King's Avatar: For the Glory",
+    "titleJa": "全职高手之巅峰荣耀",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108981-NLg2V6l0Eb2H.jpg",
+    "startDate": {
+      "year": 2019,
+      "month": 8,
+      "day": 16
+    },
+    "yearSeason": "2019 夏",
+    "genres": [
+      "劇情",
+      "動作",
+      "憂鬱"
     ]
   },
   {
@@ -95556,6 +96889,75 @@
     ]
   },
   {
+    "id": "anilist-101973",
+    "titleZh": "萌妻食神",
+    "titleEn": "Cinderella Chef",
+    "titleJa": "萌妻食神",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101973-phinH9pL2wV8.png",
+    "startDate": {
+      "year": 2018,
+      "month": 12,
+      "day": 29
+    },
+    "yearSeason": "2019 冬",
+    "genres": [
+      "冒險",
+      "劇情",
+      "喜劇",
+      "愛情",
+      "美食"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/cinderella_chef"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0232894"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28306"
+      },
+      {
+        "site": "abema",
+        "name": "ABEMA",
+        "region": "日本",
+        "url": "https://abema.tv/video/title/54-110"
+      }
+    ]
+  },
+  {
+    "id": "anilist-107743",
+    "titleZh": "邪王追妻",
+    "titleEn": "",
+    "titleJa": "邪王追妻",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107743-JHs3OOzzgSuO.png",
+    "startDate": {
+      "year": 2019,
+      "month": 1,
+      "day": 24
+    },
+    "yearSeason": "2019 冬",
+    "genres": [
+      "劇情",
+      "動作",
+      "喜劇",
+      "奇幻",
+      "愛情",
+      "異世界"
+    ]
+  },
+  {
     "id": "anilist-101291",
     "titleZh": "青春豬頭少年不會夢到兔女郎學姊",
     "titleEn": "Rascal Does Not Dream of Bunny Girl Senpai",
@@ -98028,6 +99430,64 @@
     ]
   },
   {
+    "id": "anilist-107912",
+    "titleZh": "刺客伍六七",
+    "titleEn": "Scissor Seven",
+    "titleJa": "刺客伍六七",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107912-pLrOL1AzEIEt.jpg",
+    "startDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 25
+    },
+    "yearSeason": "2018 秋",
+    "genres": [
+      "劇情",
+      "動作",
+      "喜劇",
+      "愛情",
+      "懸疑"
+    ]
+  },
+  {
+    "id": "anilist-99935",
+    "titleZh": "通靈妃",
+    "titleEn": "Psychic Princess",
+    "titleJa": "通灵妃",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99935-lQ2IPS31bJSK.jpg",
+    "startDate": {
+      "year": 2018,
+      "month": 11,
+      "day": 30
+    },
+    "yearSeason": "2018 秋",
+    "genres": [
+      "喜劇",
+      "愛情",
+      "超自然"
+    ]
+  },
+  {
+    "id": "anilist-104745",
+    "titleZh": "全職法師 第3季",
+    "titleEn": "Full-Time Magister S3",
+    "titleJa": "全职法师 第3季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104745-nhUQ61TomI4D.jpg",
+    "startDate": {
+      "year": 2018,
+      "month": 10,
+      "day": 12
+    },
+    "yearSeason": "2018 秋",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
     "id": "anilist-99147",
     "titleZh": "進擊的巨人 第三季",
     "titleEn": "Attack on Titan Season 3",
@@ -100268,6 +101728,37 @@
         "name": "NicoNico",
         "region": "日本",
         "url": "https://ch.nicovideo.jp/k-seven-stories"
+      }
+    ]
+  },
+  {
+    "id": "anilist-101972",
+    "titleZh": "魔道祖師 前塵篇",
+    "titleEn": "The Founder of Diabolism",
+    "titleJa": "魔道祖师",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx101972-dep8Bcte5jQd.jpg",
+    "startDate": {
+      "year": 2018,
+      "month": 7,
+      "day": 9
+    },
+    "yearSeason": "2018 夏",
+    "genres": [
+      "冒險",
+      "劇情",
+      "動作",
+      "奇幻",
+      "憂鬱",
+      "懸疑",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=24456"
       }
     ]
   },
@@ -102568,6 +104059,86 @@
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md78312/"
       }
+    ]
+  },
+  {
+    "id": "anilist-101410",
+    "titleZh": "全職高手 特別篇",
+    "titleEn": "",
+    "titleJa": "全职高手 特别篇",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101410-DS14ggjKRPoU.png",
+    "startDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 26
+    },
+    "yearSeason": "2018 春",
+    "genres": [
+      "動作",
+      "喜劇"
+    ]
+  },
+  {
+    "id": "anilist-98575",
+    "titleZh": "凸變英雄",
+    "titleEn": "To Be Heroine",
+    "titleJa": "凸变英雄LEAF",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98575-dcsUXxHePLLx.jpg",
+    "startDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 14
+    },
+    "yearSeason": "2018 春",
+    "genres": [
+      "喜劇"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/TO_BE_HEROINE"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0035009"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=23221"
+      },
+      {
+        "site": "bilibili",
+        "name": "Bilibili",
+        "region": "中國",
+        "url": "https://www.bilibili.com/bangumi/media/md23352/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-98477",
+    "titleZh": "實驗品家庭",
+    "titleEn": "Frankenstein Family",
+    "titleJa": "实验品家庭",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98477-D89t4S2WDmxv.jpg",
+    "startDate": {
+      "year": 2018,
+      "month": 4,
+      "day": 9
+    },
+    "yearSeason": "2018 春",
+    "genres": [
+      "日常",
+      "科幻",
+      "超自然"
     ]
   },
   {
@@ -105011,6 +106582,24 @@
     ]
   },
   {
+    "id": "anilist-102425",
+    "titleZh": "연애하루전",
+    "titleEn": "A Day Before Us",
+    "titleJa": "연애하루전",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx102425-GNArxcTC0XVu.png",
+    "startDate": {
+      "year": 2018,
+      "month": 1,
+      "day": 12
+    },
+    "yearSeason": "2018 冬",
+    "genres": [
+      "愛情",
+      "日常"
+    ]
+  },
+  {
     "id": "anilist-97940",
     "titleZh": "黑色五葉草",
     "titleEn": "Black Clover",
@@ -107304,6 +108893,84 @@
         "name": "Bilibili",
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md6447/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-100294",
+    "titleZh": "全職法師 第2季",
+    "titleEn": "Full-Time Magister S2",
+    "titleJa": "全职法师 第2季",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100294-Am3ipeQmJEkM.jpg",
+    "startDate": {
+      "year": 2017,
+      "month": 9,
+      "day": 15
+    },
+    "yearSeason": "2017 秋",
+    "genres": [
+      "動作",
+      "奇幻",
+      "愛情",
+      "校園"
+    ]
+  },
+  {
+    "id": "anilist-98574",
+    "titleZh": "一人之下 第二季",
+    "titleEn": "Hitori no Shita - The Outcast 2",
+    "titleJa": "一人之下 2",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98574-OdP0ZLENsVo5.jpg",
+    "startDate": {
+      "year": 2017,
+      "month": 10,
+      "day": 27
+    },
+    "yearSeason": "2017 秋",
+    "genres": [
+      "動作",
+      "超能力",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "bilibili",
+        "name": "Bilibili",
+        "region": "中國",
+        "url": "https://www.bilibili.com/bangumi/media/md23292/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-100226",
+    "titleZh": "理想禁區",
+    "titleEn": "EVIL OR LIVE",
+    "titleJa": "理想禁区",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100226-4xiHIx3aeEaT.jpg",
+    "startDate": {
+      "year": 2017,
+      "month": 10,
+      "day": 11
+    },
+    "yearSeason": "2017 秋",
+    "genres": [
+      "恐怖"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/EVIL_OR_LIVE"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21795"
       }
     ]
   },
@@ -111875,6 +113542,24 @@
     ]
   },
   {
+    "id": "anilist-98861",
+    "titleZh": "全職高手",
+    "titleEn": "The King's Avatar",
+    "titleJa": "全职高手",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98861-MMwQxW1S8WkF.jpg",
+    "startDate": {
+      "year": 2017,
+      "month": 4,
+      "day": 7
+    },
+    "yearSeason": "2017 春",
+    "genres": [
+      "劇情",
+      "動作"
+    ]
+  },
+  {
     "id": "anilist-21699",
     "titleZh": "為美好的世界獻上祝福！2",
     "titleEn": "KONOSUBA -God's blessing on this wonderful world! 2",
@@ -116439,6 +118124,102 @@
     ]
   },
   {
+    "id": "anilist-99200",
+    "titleZh": "全職法師",
+    "titleEn": "Full-Time Magister",
+    "titleJa": "全职法师",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99200-DuLcVrpoGq8w.png",
+    "startDate": {
+      "year": 2016,
+      "month": 9,
+      "day": 2
+    },
+    "yearSeason": "2016 秋",
+    "genres": [
+      "動作",
+      "奇幻"
+    ]
+  },
+  {
+    "id": "anilist-97616",
+    "titleZh": "凸變英雄",
+    "titleEn": "TO BE HERO",
+    "titleJa": "凸变英雄BABA",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97616-JgCHJDKyMGo1.jpg",
+    "startDate": {
+      "year": 2016,
+      "month": 10,
+      "day": 5
+    },
+    "yearSeason": "2016 秋",
+    "genres": [
+      "喜劇",
+      "超能力"
+    ],
+    "streamings": [
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/tobe-hero"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0026770"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=21166"
+      },
+      {
+        "site": "bilibili",
+        "name": "Bilibili",
+        "region": "中國",
+        "url": "https://www.bilibili.com/bangumi/media/md5430/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-97591",
+    "titleZh": "時空使徒",
+    "titleEn": "Bloodivores",
+    "titleJa": "时空使徒",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97591-sw6OKNV8zkM3.png",
+    "startDate": {
+      "year": 2016,
+      "month": 9,
+      "day": 30
+    },
+    "yearSeason": "2016 秋",
+    "genres": [
+      "動作",
+      "懸疑",
+      "超能力",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "iqiyi",
+        "name": "愛奇藝",
+        "region": "亞洲",
+        "url": "https://www.iqiyi.com/a_19rrh9utkd.html"
+      },
+      {
+        "site": "bilibili",
+        "name": "Bilibili",
+        "region": "中國",
+        "url": "https://www.bilibili.com/bangumi/media/md5572/"
+      }
+    ]
+  },
+  {
     "id": "anilist-21519",
     "titleZh": "你的名字。",
     "titleEn": "Your Name.",
@@ -118947,6 +120728,66 @@
     ]
   },
   {
+    "id": "anilist-21840",
+    "titleZh": "一人之下",
+    "titleEn": "Hitori no Shita - The Outcast",
+    "titleJa": "一人之下",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21840-e2qT7G7TYaCX.png",
+    "startDate": {
+      "year": 2016,
+      "month": 7,
+      "day": 8
+    },
+    "yearSeason": "2016 夏",
+    "genres": [
+      "冒險",
+      "動作",
+      "超能力",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "iqiyi",
+        "name": "愛奇藝",
+        "region": "亞洲",
+        "url": "https://www.iqiyi.com/a_19rrhal2yd.html"
+      },
+      {
+        "site": "bilibili",
+        "name": "Bilibili",
+        "region": "中國",
+        "url": "https://www.bilibili.com/bangumi/media/md5050/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-98031",
+    "titleZh": "靈契",
+    "titleEn": "Spiritpact",
+    "titleJa": "灵契",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b98031-daSmrvb3DQw8.png",
+    "startDate": {
+      "year": 2016,
+      "month": 6,
+      "day": 21
+    },
+    "yearSeason": "2016 夏",
+    "genres": [
+      "動作",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "iqiyi",
+        "name": "愛奇藝",
+        "region": "亞洲",
+        "url": "https://www.iqiyi.com/a_19rrh92o0t.html"
+      }
+    ]
+  },
+  {
     "id": "anilist-21459",
     "titleZh": "我的英雄學院",
     "titleEn": "My Hero Academia",
@@ -121172,6 +123013,26 @@
     ]
   },
   {
+    "id": "anilist-99707",
+    "titleZh": "鎮魂街",
+    "titleEn": "Rakshasa Street",
+    "titleJa": "镇魂街",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99707-VpuVWgyNltUV.png",
+    "startDate": {
+      "year": 2016,
+      "month": 4,
+      "day": 28
+    },
+    "yearSeason": "2016 春",
+    "genres": [
+      "劇情",
+      "動作",
+      "超能力",
+      "超自然"
+    ]
+  },
+  {
     "id": "anilist-21234",
     "titleZh": "只有我不存在的城市",
     "titleEn": "ERASED",
@@ -123373,6 +125234,34 @@
         "name": "Bilibili",
         "region": "中國",
         "url": "https://www.bilibili.com/bangumi/media/md319395/"
+      }
+    ]
+  },
+  {
+    "id": "anilist-21818",
+    "titleZh": "愛神巧克力ING...",
+    "titleEn": "",
+    "titleJa": "爱神巧克力ING...",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21818-19F99CzDm0Vw.jpg",
+    "startDate": {
+      "year": 2015,
+      "month": 12,
+      "day": 2
+    },
+    "yearSeason": "2016 冬",
+    "genres": [
+      "喜劇",
+      "後宮",
+      "愛情",
+      "福利"
+    ],
+    "streamings": [
+      {
+        "site": "iqiyi",
+        "name": "愛奇藝",
+        "region": "亞洲",
+        "url": "https://www.iqiyi.com/a_19rrhbh6vt.html"
       }
     ]
   },
@@ -132042,6 +133931,35 @@
     "genres": [
       "後宮",
       "愛情"
+    ]
+  },
+  {
+    "id": "anilist-98862",
+    "titleZh": "妖怪名單",
+    "titleEn": "",
+    "titleJa": "妖怪名单",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98862-rG7yNCpFlwTg.jpg",
+    "startDate": {
+      "year": 2014,
+      "month": 12,
+      "day": 12
+    },
+    "yearSeason": "2015 冬",
+    "genres": [
+      "動作",
+      "喜劇",
+      "奇幻",
+      "愛情",
+      "福利"
+    ],
+    "streamings": [
+      {
+        "site": "iqiyi",
+        "name": "愛奇藝",
+        "region": "亞洲",
+        "url": "https://www.iqiyi.com/a_19rrhc233h.html"
+      }
     ]
   },
   {

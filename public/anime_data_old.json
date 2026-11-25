@@ -167,7 +167,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 9
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -243,7 +243,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 9
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -315,7 +315,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 3
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -775,7 +775,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 6
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -827,7 +827,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 10
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -61029,7 +61029,7 @@
   },
   {
     "id": "anilist-122511",
-    "titleZh": "龍族 -The Blazing Dawn-",
+    "titleZh": "龍族",
     "titleEn": "Dragon Raja -The Blazing Dawn-",
     "titleJa": "龙族",
     "coverImageGamer": "https://p2.bahamut.com.tw/B/ACG/c/47/0000138047.JPG",
@@ -165625,6 +165625,53 @@
     "yearSeason": "2011 冬",
     "genres": [
       "喜劇"
+    ]
+  },
+  {
+    "id": "anilist-102663",
+    "titleZh": "羅小黑戰記",
+    "titleEn": "The Legend of Luoxiaohei",
+    "titleJa": "罗小黑战记",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx102663-gYYp2lg0ehVG.png",
+    "startDate": {
+      "year": 2011,
+      "month": 3,
+      "day": 17
+    },
+    "yearSeason": "2011 冬",
+    "genres": [
+      "冒險",
+      "動作",
+      "喜劇",
+      "日常",
+      "超自然"
+    ],
+    "streamings": [
+      {
+        "site": "prime",
+        "name": "Prime Video",
+        "region": "全球",
+        "url": "https://www.amazon.co.jp/gp/video/detail/B0FQZTG3FQ"
+      },
+      {
+        "site": "nicovideo",
+        "name": "NicoNico",
+        "region": "日本",
+        "url": "https://ch.nicovideo.jp/luoxiaohei-anime"
+      },
+      {
+        "site": "unext",
+        "name": "U-NEXT",
+        "region": "日本",
+        "url": "https://video.unext.jp/title/SID0232879"
+      },
+      {
+        "site": "danime",
+        "name": "d動畫商城",
+        "region": "日本",
+        "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=28301"
+      }
     ]
   },
   {

@@ -621,7 +621,7 @@
     "startDate": {
       "year": 2027,
       "month": 1,
-      "day": null
+      "day": 1
     },
     "yearSeason": "2027 冬",
     "genres": [
@@ -3977,7 +3977,8 @@
     "genres": [
       "喜劇",
       "後宮",
-      "愛情"
+      "愛情",
+      "校園"
     ],
     "streamings": [
       {
@@ -4481,6 +4482,7 @@
     "genres": [
       "劇情",
       "心理",
+      "末日",
       "科幻",
       "驚悚"
     ]
@@ -4696,6 +4698,25 @@
         "region": "日本",
         "url": "https://animestore.docomo.ne.jp/animestore/ci_pc?workId=29292"
       }
+    ]
+  },
+  {
+    "id": "anilist-195448",
+    "titleZh": "〈物語〉系列 Off & Monster Season 業物語 火憐食人魔",
+    "titleEn": "",
+    "titleJa": "〈物語〉シリーズ オフ&モンスターシーズン 業物語 かれんオウガ",
+    "coverImageGamer": "",
+    "coverImageAniList": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195448-tdRfXlBhpWF0.jpg",
+    "startDate": {
+      "year": 2026,
+      "month": 12,
+      "day": 31
+    },
+    "yearSeason": "2026 秋",
+    "genres": [
+      "劇情",
+      "懸疑",
+      "超自然"
     ]
   },
   {

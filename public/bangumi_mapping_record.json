@@ -1517,6 +1517,17 @@
     "bgmId": "593565",
     "streamingsCount": 7
   },
+  "anilist-195448": {
+    "id": "anilist-195448",
+    "titleZh": "〈物語〉系列 Off & Monster Season 業物語 火憐食人魔",
+    "titleJa": "〈物語〉シリーズ オフ&モンスターシーズン 業物語 かれんオウガ",
+    "yearSeason": "2026 秋",
+    "hasCorrespondingData": false,
+    "matchedType": null,
+    "matchedBgmTitle": null,
+    "bgmId": null,
+    "streamingsCount": 0
+  },
   "anilist-178789": {
     "id": "anilist-178789",
     "titleZh": "無職轉生Ⅲ ～到了異世界就拿出真本事～",
@@ -42173,11 +42184,11 @@
     "bgmId": "2885",
     "streamingsCount": 5
   },
-  "anilist-195448": {
-    "id": "anilist-195448",
-    "titleZh": "〈物語〉系列 Off & Monster Season 業物語 火憐食人魔",
-    "titleJa": "〈物語〉シリーズ オフ&モンスターシーズン 業物語 かれんオウガ",
-    "yearSeason": "2026 秋",
+  "anilist-217011": {
+    "id": "anilist-217011",
+    "titleZh": "貓と竜 第2期",
+    "titleJa": "猫と竜 第2期",
+    "yearSeason": "2027 冬",
     "hasCorrespondingData": false,
     "matchedType": null,
     "matchedBgmTitle": null,
